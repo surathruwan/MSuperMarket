@@ -12,14 +12,7 @@ using System.Data;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.IO;
 
-//enum COLUMN_ID
-//{
-//    COLUMN_ID_ITEM_NAME = 0,
-//    COLUMN_ID_UNIT_PRICE = 1,
-//    COLUMN_ID_QUANTITY = 2,
-//    COLUMN_ID_DISCOUNT = 3,
-//    COLUMN_ID_SUB_TOTAL = 4
-//};
+
 
 namespace inventory
 {
@@ -40,7 +33,7 @@ namespace inventory
 
             InitOrderCartHeaders();
 
-            //tabControl1.TabPages.Remove(tabPage1);
+           
         }
 
         public void InitOrderCartHeaders()
@@ -57,9 +50,9 @@ namespace inventory
 
         private void inv_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'supermarketDataSet2.recordsellingdetails' table. You can move, or remove it, as needed.
+            
             this.recordsellingdetailsTableAdapter.Fill(this.supermarketDataSet2.recordsellingdetails);
-            // TODO: This line of code loads data into the 'supermarketDataSet1.orders' table. You can move, or remove it, as needed.
+            
             this.ordersTableAdapter.Fill(this.supermarketDataSet1.orders);
 
             count_accout();
@@ -653,24 +646,6 @@ namespace inventory
         }
 
 
-        
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //Discount Method
         public void DiscountItemWise()
         {
@@ -907,59 +882,7 @@ namespace inventory
             }
 
         }
-        //public void AddItemtoCart()
-        //{
-        //    try
-        //    {
-
-        //        if ((validateform() == false))
-        //        {
-        //            if (CheckDuplicate() == false)
-        //            {
-        //                int n = orderCart.Rows.Add();
-
-
-        //                orderCart.Rows[n].Cells[0].Value = DlblDescription.Text;
-        //                orderCart.Rows[n].Cells[1].Value = txtPrice.Text;
-        //                orderCart.Rows[n].Cells[2].Value = txtQty.Text;
-        //                float newPrice = float.Parse(txtPrice.Text);
-        //                float Original = float.Parse(DlblPrice.Text);
-        //                orderCart.Rows[n].Cells[3].Value = Original - newPrice;
-
-
-        //                String Sqty = txtQty.Text;
-        //                String Sprice = txtPrice.Text;
-
-
-        //                float qty = float.Parse(Sqty);
-        //                float tot = float.Parse(Sprice);
-
-        //                float amount = qty * tot;
-
-
-        //                txtQty.Text = "";
-        //                txtItem.Text = "";
-        //                txtPrice.Text = "";
-
-        //                txtDiscount.Text = "";
-
-
-        //                string strAmount = Convert.ToString(amount);
-        //                orderCart.Rows[n].Cells[4].Value = amount;
-
-        //            }
-        //            else
-        //            {
-        //                clearFields();
-        //            }
-
-        //    }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
+     
         //When Row Added Calculate the amount
         public void AddedAndCal()
         {
@@ -1214,12 +1137,6 @@ namespace inventory
 
                     lblAmount.Text = sum.ToString();
 
-
-
-
-
-
-
                 }
                 catch (Exception ex)
                 {
@@ -1228,9 +1145,7 @@ namespace inventory
             }
 
         }
-        //Boolean
-     
-
+ 
         //old Value Bill Calc
 
         public void CalPrice()
@@ -1342,8 +1257,6 @@ namespace inventory
             DeleteItem();
             }
 
-
-
         }
         //Getters Setters
         public string OrderID
@@ -1408,20 +1321,10 @@ namespace inventory
                     Discount = this.orderCart.Rows[i].Cells[3].Value.ToString();
                     subAmount = this.orderCart.Rows[i].Cells[4].Value.ToString();
 
-
-
-                    //string Datestr = DateTime.Now.ToString("yyyy-MM-dd");
-
-
-                 
-               
-
-                 cmd2 = new MySqlCommand(@"INSERT INTO supermarket.orderdetails(OrderID,ItemName,Unitprice,Quantity,Discount,SubTotal) VALUES ('" + OrderID + "','" + ItemName + "','" + UnitPrice + "','" + Quantity + "','" + Discount + "','" + subAmount + "')", conn);
+                    cmd2 = new MySqlCommand(@"INSERT INTO supermarket.orderdetails(OrderID,ItemName,Unitprice,Quantity,Discount,SubTotal) VALUES ('" + OrderID + "','" + ItemName + "','" + UnitPrice + "','" + Quantity + "','" + Discount + "','" + subAmount + "')", conn);
 
                     cmd2.ExecuteNonQuery();
-               
-            }
-
+               }
 
                 MySqlCommand cmd1 = conn.CreateCommand();
                 cmd1 = new MySqlCommand("INSERT INTO supermarket.orders(OrderID,Customer,Phone,ToBuy,TotalAmount,orderDate,Address) VALUES ('" + OrderID + "','" + CustomerName + "','" + Mobile + "','" + ToBuy + "','" + TotalAmount + "','"+TimeTest.Text+"','" + Address + "')", conn);
@@ -1436,8 +1339,6 @@ namespace inventory
 
         }
 
-        //Quotation Validation()
-      
 
         //Stock Check
         public bool StockChecker()
@@ -1479,18 +1380,13 @@ namespace inventory
 
         }
 
-
-
         public void DeleteItem()
         {
             try
             {
-                
-
+         
                     orderCart.Rows.Clear();
-
-                
-                       
+         
             }
             catch (Exception ex)
             {
@@ -1549,9 +1445,7 @@ namespace inventory
                 DataSet ds = new DataSet();
                 adapter.Fill(ds, "orderDetails");
                 orderCart.DataSource = ds.Tables["orderDetails"];
-                //orderCart.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 orderCart.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
-                //orderCart.Columns.Clear();
                 conn.Close();
             }
             catch (Exception ex)
@@ -1587,14 +1481,10 @@ namespace inventory
                     orderCart.DataSource = null;
                 }
 
-
-
-                
-
                 if (orderCart.ColumnCount == 5)
                 {
-                   // InitOrderCartHeaders();
-                       AddItemtoCart();
+                  
+                    AddItemtoCart();
                     orderCart.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 }
                 if (orderCart.ColumnCount == 0)
@@ -1653,9 +1543,6 @@ namespace inventory
             LoadOrderTable();
         }
 
-      
-
-
         private void radIteam1_CheckedChanged(object sender, EventArgs e)
         {
             txtItem.Text = "";
@@ -1680,7 +1567,6 @@ namespace inventory
                     SearchPriceItemName();
                     //getDetails();
                     txtQty1.Text = "1";
-
 
                 }
                 
@@ -1747,32 +1633,22 @@ namespace inventory
                 {
                     int n = cartQuotation.Rows.Add();
 
-                    
-
                     cartQuotation.Rows[n].Cells[0].Value = txtSearchItem.Text;
                     cartQuotation.Rows[n].Cells[1].Value = txtPrice1.Text;
                     cartQuotation.Rows[n].Cells[2].Value = txtQty1.Text;
-                    
-
-
+    
                     String Sqty = txtQty1.Text;
                     String Sprice = txtPrice1.Text;
-
 
                     float qty = float.Parse(Sqty);
                     float tot = float.Parse(Sprice);
 
                     float amount = qty * tot;
 
-                    
                     txtQty1.Text = "";
-                    
                     txtPrice1.Text = "";
-                    
                     txtDiscount1.Text = "";
                     txtSearchItem.Text = "";
-
-
                     string strAmount = Convert.ToString(amount);
                     cartQuotation.Rows[n].Cells[3].Value = amount;
 
@@ -1781,14 +1657,12 @@ namespace inventory
                 {
                     clearFields();
                 }
-            
-
+   
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             checker();
-
 
         }
 
