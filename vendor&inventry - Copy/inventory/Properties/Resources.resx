@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Aha-Soft-Business-Toolbar-Payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aha-Soft-Business-Toolbar-Payment1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIconblue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIconblue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iconsmind-Outline-Money-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconsmind-Outline-Money-21.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Help_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Help-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Custom-Icon-Design-Flatastic-8-Attachment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom-Icon-Design-Flatastic-8-Attachment1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Visualpharm-Must-Have-Stock-Index-Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visualpharm-Must-Have-Stock-Index-Up1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Return_Purchase_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Return Purchase-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ampeross-Qetto-2-Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ampeross-Qetto-2-Search1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Treetog-Junior-User-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Treetog-Junior-User-group1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attention_md__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\attention-md (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\capture1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons8-Ios7-Finance-Money-Box1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons8-Ios7-Finance-Money-Box2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons8-Ios7-Finance-Money-Bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons8-Ios7-Finance-Money-Bag1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons8-Ios7-Finance-Money-Box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons8-Ios7-Finance-Money-Box1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Actions_edit_delete_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Actions-edit-delete-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invalid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iconsmind-Outline-Mail-Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconsmind-Outline-Mail-Money1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Awicons-Vista-Artistic-Chart-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Awicons-Vista-Artistic-Chart-search1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="valid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\valid.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="office_building_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\office-building-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_image_icon_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no-image-icon-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Custom-Icon-Design-Mono-General-4-Upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom-Icon-Design-Mono-General-4-Upload1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="receipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\receipt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIcoS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIcoS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Sell_Stock_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Sell Stock-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marcus-Roberto-Google-Play-Gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marcus-Roberto-Google-Play-Gmail1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Notification_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Notification-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question_mark_5_xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question-mark-5-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSMSl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MSMSl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\22.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons8-Windows-8-Editing-Line-Width" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons8-Windows-8-Editing-Line-Width1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIconSmalls1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIconSmalls1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Move_Stock_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Move Stock-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iconsmind-Outline-Money-Bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconsmind-Outline-Money-Bag1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attention_md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\attention-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIcon11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_Sell_Stock_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Sell Stock-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSMSLogoSbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MSMSLogoSbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIconSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIconSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIconblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIconblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-Microsoft Excel-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Microsoft Excel-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerServiceIcons_03_EE6634_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomerServiceIcons-03-EE6634.svg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmsIconSmalls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmsIconSmalls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Visualpharm-Must-Have-Stock-Index-Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visualpharm-Must-Have-Stock-Index-Down1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-Report Card-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Report Card-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

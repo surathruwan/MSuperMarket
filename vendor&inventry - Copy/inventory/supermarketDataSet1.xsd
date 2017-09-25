@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="supermarketDataSet1" targetNamespace="http://tempuri.org/supermarketDataSet1.xsd" xmlns:mstns="http://tempuri.org/supermarketDataSet1.xsd" xmlns="http://tempuri.org/supermarketDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="supermarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="supermarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.inventory.Properties.Settings.GlobalReference.Default.supermarketConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ordersTableAdapter" GeneratorDataComponentClassName="ordersTableAdapter" Name="orders" UserDataComponentName="ordersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="supermarketConnectionString (Settings)" DbObjectName="supermarket.orders" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `OrderID`, `Customer`, `Phone`, `ToBuy`, `TotalAmount`, `orderDate` FROM `orders`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="Customer" DataSetColumn="Customer" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="ToBuy" DataSetColumn="ToBuy" />
+              <Mapping SourceColumn="TotalAmount" DataSetColumn="TotalAmount" />
+              <Mapping SourceColumn="orderDate" DataSetColumn="orderDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="supermarketDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="supermarketDataSet1" msprop:Generator_UserDSName="supermarketDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="orders" msprop:Generator_TableClassName="ordersDataTable" msprop:Generator_TableVarName="tableorders" msprop:Generator_TablePropName="orders" msprop:Generator_RowDeletingName="ordersRowDeleting" msprop:Generator_RowChangingName="ordersRowChanging" msprop:Generator_RowEvHandlerName="ordersRowChangeEventHandler" msprop:Generator_RowDeletedName="ordersRowDeleted" msprop:Generator_UserTableName="orders" msprop:Generator_RowChangedName="ordersRowChanged" msprop:Generator_RowEvArgName="ordersRowChangeEvent" msprop:Generator_RowClassName="ordersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToBuy" msprop:Generator_ColumnVarNameInTable="columnToBuy" msprop:Generator_ColumnPropNameInRow="ToBuy" msprop:Generator_ColumnPropNameInTable="ToBuyColumn" msprop:Generator_UserColumnName="ToBuy">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:float" minOccurs="0" />
+              <xs:element name="orderDate" msprop:Generator_ColumnVarNameInTable="columnorderDate" msprop:Generator_ColumnPropNameInRow="orderDate" msprop:Generator_ColumnPropNameInTable="orderDateColumn" msprop:Generator_UserColumnName="orderDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

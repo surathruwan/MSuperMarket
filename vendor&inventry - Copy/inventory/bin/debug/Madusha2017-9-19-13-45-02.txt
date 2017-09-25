@@ -1,0 +1,12 @@
+	 	 MADUSHA SUPERMARKET 	 	
+--------------------------------------------------
+1:45:02 PM	 	Tuesday, September 19, 2017
+Cashier: Mr.Upali
+
+	Item Name	 Item Code  Price  Quantity 
+
+	oven plus 26	 123130    117890      2    
+--------------------------------------------------
+	 Total Amount 	 	 	
+	 Down Payment 	 	 	
+	 Balance 	 	 	

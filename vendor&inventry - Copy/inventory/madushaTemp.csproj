@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE477F5A-9DA9-4BD5-9C67-905C6863FD30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inventory</RootNamespace>
+    <AssemblyName>inventory</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib">
+      <HintPath>..\New folder\BarcodeLib\bin\Debug\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\..\..\..\..\Desktop\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture, Version=1.0.2395.24959, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addform.Designer.cs">
+      <DependentUpon>addform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdviceOfDispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdviceOfDispatch.designer.cs">
+      <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="categoryform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categoryform.Designer.cs">
+      <DependentUpon>categoryform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="debtors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="debtors.designer.cs">
+      <DependentUpon>debtors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteform.Designer.cs">
+      <DependentUpon>deleteform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAttendance.designer.cs">
+      <DependentUpon>EditAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="email.designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emaild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emaild.designer.cs">
+      <DependentUpon>Emaild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="barcode.Designer.cs">
+      <DependentUpon>barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="LeaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaveForm.designer.cs">
+      <DependentUpon>LeaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PosAdmin.designer.cs">
+      <DependentUpon>PosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repair.designer.cs">
+      <DependentUpon>repair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendEmail.designer.cs">
+      <DependentUpon>sendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supermarketDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supermarketDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supermarketDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supermarketDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supermarketDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supermarketDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SuppEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppEmail.designer.cs">
+      <DependentUpon>SuppEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newcatsub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newcatsub.Designer.cs">
+      <DependentUpon>newcatsub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notificationform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notificationform.Designer.cs">
+      <DependentUpon>notificationform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="returnfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnfrm.Designer.cs">
+      <DependentUpon>returnfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subcatform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subcatform.Designer.cs">
+      <DependentUpon>subcatform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateform.Designer.cs">
+      <DependentUpon>updateform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upitem.Designer.cs">
+      <DependentUpon>upitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehicle_availa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicle_availa.designer.cs">
+      <DependentUpon>vehicle_availa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor.designer.cs">
+      <DependentUpon>Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebCam.cs" />
+    <EmbeddedResource Include="addform.resx">
+      <DependentUpon>addform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdviceOfDispatch.resx">
+      <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="barcode.resx">
+      <DependentUpon>barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categoryform.resx">
+      <DependentUpon>categoryform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="debtors.resx">
+      <DependentUpon>debtors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAttendance.resx">
+      <DependentUpon>EditAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="email.resx">
+      <DependentUpon>email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emaild.resx">
+      <DependentUpon>Emaild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaveForm.resx">
+      <DependentUpon>LeaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PosAdmin.resx">
+      <DependentUpon>PosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repair.resx">
+      <DependentUpon>repair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendEmail.resx">
+      <DependentUpon>sendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppEmail.resx">
+      <DependentUpon>SuppEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newcatsub.resx">
+      <DependentUpon>newcatsub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="subcatform.resx">
+      <DependentUpon>subcatform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateform.resx">
+      <DependentUpon>updateform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upitem.resx">
+      <DependentUpon>upitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicle_availa.resx">
+      <DependentUpon>vehicle_availa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor.resx">
+      <DependentUpon>Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="supermarketDataSet.xsc">
+      <DependentUpon>supermarketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supermarketDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supermarketDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supermarketDataSet.xss">
+      <DependentUpon>supermarketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supermarketDataSet1.xsc">
+      <DependentUpon>supermarketDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supermarketDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supermarketDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supermarketDataSet1.xss">
+      <DependentUpon>supermarketDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supermarketDataSet2.xsc">
+      <DependentUpon>supermarketDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="supermarketDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supermarketDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supermarketDataSet2.xss">
+      <DependentUpon>supermarketDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIconblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIconblue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIconSmalls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIconSmalls1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIcoS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSMSl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSMSLogoSbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msmsIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valid.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention-md %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerServiceIcons-03-EE6634.svg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Help-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Move Stock-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Notification-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Return Purchase-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Sell Stock-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Sell Stock-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-image-icon-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office-building-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark-5-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ampeross-Qetto-2-Search1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mono-General-4-Upload1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcus-Roberto-Google-Play-Gmail1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-8-Attachment1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Treetog-Junior-User-group1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Business-Toolbar-Payment1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Microsoft Excel-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Mail-Money1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Finance-Money-Box1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Windows-8-Editing-Line-Width1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Finance-Money-Box2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Finance-Money-Bag1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Money-21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Money-Bag1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Awicons-Vista-Artistic-Chart-search1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visualpharm-Must-Have-Stock-Index-Up1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visualpharm-Must-Have-Stock-Index-Down1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Report Card-96.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
