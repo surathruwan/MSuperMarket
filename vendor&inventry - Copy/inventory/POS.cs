@@ -24,7 +24,7 @@ namespace inventory
             panel1.Visible = false;
             panel2.Visible = false;
             panel3.Visible = false;
-           // panel4.Visible = false;
+           
             panel5.Visible = false;
             panel6.Visible = false;
             panel7.Visible = false;
@@ -39,7 +39,8 @@ namespace inventory
         private void POS_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'supermarketDataSet.item' table. You can move, or remove it, as needed.
-            this.itemTableAdapter.Fill(this.supermarketDataSet.item);
+            //this.itemTableAdapter.Fill(this.supermarketDataSet.item);
+            LoadDate();
 
             count_accout();
             timer1.Start();
