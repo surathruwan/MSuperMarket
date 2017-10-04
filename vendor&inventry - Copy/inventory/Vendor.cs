@@ -17,7 +17,7 @@ namespace vendor_management
 {
     public partial class Vendor : Form
     {
-        //made a chang
+        
 
         //SSlmode =none because it gave an error in connecting
         string constring = "Sslmode=none;datasource=localhost;port=3306;username=root;password=  ";
