@@ -209,7 +209,7 @@
             this.TimeTest.TabIndex = 34;
             this.TimeTest.Text = "Time";
             this.TimeTest.Visible = false;
-            this.TimeTest.Click += new System.EventHandler(this.TimeTest_Click);
+           // this.TimeTest.Click += new System.EventHandler(this.TimeTest_Click);
             // 
             // panel4
             // 
@@ -302,7 +302,7 @@
             this.txtDiscount.Size = new System.Drawing.Size(111, 24);
             this.txtDiscount.TabIndex = 5;
             this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
-            this.txtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiscount_KeyPress);
+//            this.txtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiscount_KeyPress);
             this.txtDiscount.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDiscount_KeyUp);
             // 
             // label11
@@ -848,7 +848,7 @@
             this.bunifuMaterialTextbox1.TabIndex = 0;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuMaterialTextbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuMaterialTextbox1_KeyPress);
-            this.bunifuMaterialTextbox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox1_KeyUp);
+            //this.bunifuMaterialTextbox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox1_KeyUp);
             // 
             // label2
             // 

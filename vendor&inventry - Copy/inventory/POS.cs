@@ -15,7 +15,6 @@ namespace inventory
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-
         }
 
 
@@ -24,7 +23,6 @@ namespace inventory
             panel1.Visible = false;
             panel2.Visible = false;
             panel3.Visible = false;
-           
             panel5.Visible = false;
             panel6.Visible = false;
             panel7.Visible = false;
@@ -38,28 +36,12 @@ namespace inventory
 
         private void POS_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'supermarketDataSet.item' table. You can move, or remove it, as needed.
-            //this.itemTableAdapter.Fill(this.supermarketDataSet.item);
             LoadDate();
-
             count_accout();
             timer1.Start();
-
-
-
         }
 
-        private void btnCustomerQuotation_Click(object sender, EventArgs e)
-        {
-           
-
-        }
-
-
-      
-
-
-
+       
         private void txtDescription_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
@@ -69,25 +51,14 @@ namespace inventory
 
         }
 
-
-
         //Methods
-
-        
-        
-
-
         //auto complete text boxes
         void ItemsAutoComplete()
         {
             txtDescription.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtDescription.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-
-
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
-
-
             string sqlquery = "SELECT Item_name from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -96,26 +67,18 @@ namespace inventory
             {
                 conn.Open();
                 msReader = cmd.ExecuteReader(); ;
-
                 while (msReader.Read())
                 {
                     string sname = msReader.GetString(0);
                     coll.Add(sname);
                 }
-
-
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
-
             }
-
             txtDescription.AutoCompleteCustomSource = coll;
-
         }
-
 
         //auto complete text boxes using Barcode
         void ItemBarcodeAutoComplete()
@@ -123,15 +86,10 @@ namespace inventory
             txtBarcode.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtBarcode.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-
-
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
-
-
             string sqlquery = "SELECT Barcode from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
-
             try
             {
                 conn.Open();
@@ -141,21 +99,14 @@ namespace inventory
                 {
                     string sname = msReader.GetString(0);
                     coll.Add(sname);
-                    
-                
                 }
-               
-
-            }
+           }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
-
             }
-
-            txtBarcode.AutoCompleteCustomSource = coll;
-            
+                txtBarcode.AutoCompleteCustomSource = coll;
         }
 
         //auto complete text boxes
@@ -164,11 +115,7 @@ namespace inventory
             txtCode.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtCode.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-
-
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
-
-
             string sqlquery = "SELECT Item_code from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -183,14 +130,11 @@ namespace inventory
                     string sname = msReader.GetString(0);
                     coll.Add(sname);
                 }
-
-
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
-
+            
             }
 
             txtCode.AutoCompleteCustomSource = coll;
@@ -203,8 +147,6 @@ namespace inventory
             try
             {
                 MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-                
-
                 string query = "select ID from supermarket.invoicerecords order by ID";
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand(query, conn);
@@ -243,13 +185,10 @@ namespace inventory
         //Check Same Item in Bucket
         public bool CheckDuplicate()
         {
-
-
             //Boolean to check if he has row has been
             bool Found = false;
             if (cart.Rows.Count > 0)
             {
-
                 //Check if the product Id exists with the same Price
                 foreach (DataGridViewRow row in cart.Rows)
                 {
@@ -264,10 +203,7 @@ namespace inventory
                 if (!Found)
                 {
                     Found = false;
-                    //Add the row to grid view
-                    //cart.Rows.Add(txtDescription.Text, txtCode.Text,txtPrice.Text, 1,1000);
                 }
-
             }
             else
             {
@@ -293,27 +229,21 @@ namespace inventory
         public void AddItemtoCart()
         {
 
-
             if (barcodeCheck() &&(validateform() == false))
             {
                 if (CheckDuplicate() == false)
                 {
                     int n = cart.Rows.Add();
-
-
                     cart.Rows[n].Cells[0].Value = txtDescription.Text;
                     cart.Rows[n].Cells[1].Value = txtCode.Text;
                     cart.Rows[n].Cells[2].Value = txtPrice.Text;
                     cart.Rows[n].Cells[3].Value = txtQty.Text;
 
-
                     String Sqty = txtQty.Text;
                     String Sprice = txtPrice.Text;
 
-
                     float qty = float.Parse(Sqty);
                     float tot = float.Parse(Sprice);
-
                     float amount = qty * tot;
 
                     txtBarcode.Text = "";
@@ -345,43 +275,29 @@ namespace inventory
             cmd.Parameters.AddWithValue("@barcode", this.txtBarcode.Text);
             cmd.Parameters.AddWithValue("@description", this.txtDescription.Text);
             conn.Open();
-
-
             MySqlDataReader myReader;
             myReader = cmd.ExecuteReader(); ;
-
             if (myReader.HasRows)
             {
-                
-                    return true;
-               
+                return true;
             }
-
             else
             {
                 MessageBox.Show("Item doesnot exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
-                 
-            
-           
         }
-       
-
+ 
         //Search item via Barcode
 
         public void SearchBarcode()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-
-           MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode LIKE '" + txtBarcode.Text + "%' ", conn);
-           
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode LIKE '" + txtBarcode.Text + "%' ", conn);
             conn.Open();
             DataTable catetable = new DataTable();
             adapter.Fill(catetable);
-
-
 
             BindingSource source = new BindingSource();
             source.DataSource = catetable;
@@ -394,7 +310,6 @@ namespace inventory
             {
                 txtCode.Text = r[1].ToString();
                 txtPrice.Text = r[2].ToString();
-
                 txtQty.Text = "1";
                 txtDescription.Text = r[0].ToString();
                 detailsGrid.AllowUserToAddRows = false;
@@ -406,22 +321,14 @@ namespace inventory
         public void SearchPriceBarcode()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-
-           
             conn.Open();
-            
             MySqlCommand cmd = conn.CreateCommand();
-            
             cmd.CommandText = ("SELECT Rprice from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
             MySqlDataReader r = cmd.ExecuteReader();
 
             while (r.Read())
             {
-
-                txtPrice.Text = r[0].ToString();
-
-               
-                
+                txtPrice.Text = r[0].ToString();    
             }
         }
 
@@ -434,12 +341,8 @@ namespace inventory
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
                 cmd.CommandText = "SELECT Surname,initials from supermarket.loyaltycustomer where Mobile LIKE '" + bunifuMaterialTextbox1.Text + "%' ";
-
-
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
-
-
                 if (Dataread.HasRows)
                 {
                     lblName.Text = Dataread[1].ToString() + " " + Dataread[0].ToString();
@@ -453,9 +356,7 @@ namespace inventory
             {
                 MessageBox.Show(ex.Message);
             }
-            }
-
-
+       }
         //Row added to the Cart Table and Calculate the Total Amount
 
         public void AddedAndCal()
@@ -480,10 +381,8 @@ namespace inventory
 
                     }
 
-                    
-
                         lblAmount.Text = sum.ToString();
-                    
+          
                 }
                 //MessageBox.Show(sum.ToString());
             }
@@ -518,10 +417,8 @@ namespace inventory
             {
                 MessageBox.Show(ex.Message);
 
-
             }
         }
-
 
         //Validation
         public bool Regexp(string re, Bunifu.Framework.UI.BunifuMaterialTextbox tb, PictureBox pc, string s)
@@ -569,8 +466,7 @@ namespace inventory
         }
 
         //phone Number Length validate
-
-        public bool ValidatePhoneNumber(string mobile)
+         public bool ValidatePhoneNumber(string mobile)
         {
             //Accepts only 10 digits,
             Regex pattern = new Regex(@"(?<!\d)\d{10}(?!\d)");
@@ -625,11 +521,7 @@ namespace inventory
                 conn.Open();
                 for (int i = 0; i < cart.Rows.Count; i++)
                 {
-                    
-
-                    
-
-                    
+              
                     MySqlCommand cmd2 = conn.CreateCommand();
 
                     Barcode = this.txtBarcode.Text;
@@ -646,8 +538,6 @@ namespace inventory
                     TotalAmount = this.lblAmount.Text;
                     string Datestr = DateTime.Now.ToString("yyyy-MM-dd");
 
-                    
-
                     cmd2 = new MySqlCommand(@"INSERT INTO supermarket.recordsellingdetails(InvoiceID,ItemName,Qty,unitprice,SubTotal,date) VALUES ('" + OrderID + "','" + ItemName + "','" + Quantity + "','" + Price + "','" + subAmount + "','" + Datestr + "')", conn);
                     
                     cmd2.ExecuteNonQuery();
@@ -657,18 +547,18 @@ namespace inventory
                 cmd1 = new MySqlCommand(@"INSERT INTO supermarket.invoicerecords(InvoiceID,Customer,Total) VALUES ('" + OrderID + "','" + CustomerName + "','"+ TotalAmount +"')", conn);
                 cmd1.ExecuteNonQuery();
                 MessageBox.Show("Order Done Succesfully", "Madusha Super Market", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                count_accout();
+                printer();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-
         }
         //decrement qty Value
         public bool DecrementQtyValue()
         {
-
 
             //Boolean to check if he has row has been
             bool Found = false;
@@ -689,16 +579,13 @@ namespace inventory
                 if (!Found)
                 {
                     Found = false;
-                    //Add the row to grid view
-                    //cart.Rows.Add(txtDescription.Text, txtCode.Text,txtPrice.Text, 1,1000);
+                    
                 }
 
             }
             else
             {
-                //Add the row to grid view for the first time
-                //cart.Rows.Add(txtDescription.Text, txtCode.Text, txtPrice.Text, 1, 1000);
-                //cart.Rows.Add(textBox_ProductId.Text, textBox_Price.Text, 1);
+               
             }
             return Found;
 
@@ -709,7 +596,6 @@ namespace inventory
         {
             try
             {
-
 
                 if (this.cart.SelectedRows.Count > 0)
                 {
@@ -732,8 +618,6 @@ namespace inventory
         {
             try
             {
-
-
                 if (this.cart.SelectedRows.Count > 0)
                 {
                     
@@ -755,8 +639,6 @@ namespace inventory
         {
             try
             {
-
-
                 if (this.cart.SelectedRows.Count > 0)
                 {
                     string value = cart.CurrentRow.Cells[4].Value.ToString();
@@ -800,23 +682,21 @@ namespace inventory
                         result = false;
                         dr.Close();
 
-                }
+                    }
 
                     else
                     {
 
                         MessageBox.Show("Not Sufficient to process order Right now !! ", "Madusha SuperMarket", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         result = true;
-                    break;
-                    dr.Close();
+                        break;
+                        dr.Close();
                     
                     }
 
                 }
 
-           
-                return result;
-           
+            return result;
         }
             
 
@@ -829,21 +709,14 @@ namespace inventory
             conn.Open();
             for (int i = 0; i < cart.Rows.Count; i++)
             {
-               
-           
+              
                 MySqlCommand cmd = new MySqlCommand("Update madusha.item  set sqty= sqty - @qty   where Item_code= @itemcode ", conn);
                 
                 cmd.Parameters.AddWithValue("@itemcode", this.cart.Rows[i].Cells[1].Value.ToString());
                 cmd.Parameters.AddWithValue("@qty", this.cart.Rows[i].Cells[3].Value.ToString());
                 cmd.ExecuteNonQuery();
-
-
-
-                
             }
-            //MessageBox.Show("Update Sucessfully");
-
-
+          
         }
 
         private void txtQty_KeyPress(object sender, KeyPressEventArgs e)
@@ -858,13 +731,6 @@ namespace inventory
         private void txtBarcode_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !( e.KeyChar == (char)Keys.Back || char.IsNumber(e.KeyChar));
-
-            //if (e.KeyChar == 13)
-            //{
-            //    AddItemtoCart();
-            //}
-
-
 
         }
 
@@ -886,8 +752,6 @@ namespace inventory
                 DataTable catetable = new DataTable();
                 adapter.Fill(catetable);
 
-
-
                 BindingSource source = new BindingSource();
                 source.DataSource = catetable;
                 conn.Close();
@@ -905,15 +769,8 @@ namespace inventory
 
         private void cart_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
-
-            AddedAndCal();
-
-
+             AddedAndCal();
         }
-
-
-
-
 
         private void txtCash_TextChanged(object sender, EventArgs e)
         {
@@ -935,24 +792,15 @@ namespace inventory
             e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back) ;
         }
 
-        private void txtDiscount_KeyPress(object sender, KeyPressEventArgs e)
-        {
-          //  e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back) || char.IsLetter(e.KeyChar);
-        }
-
         private void bunifuMaterialTextbox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-           
-
-
+          
             e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back);
 
             if (bunifuMaterialTextbox1.Text.Length == 10)
             {
                 if (e.KeyChar == 13)
                 {
-
-
                     Regexp(@"(?<!\d)\d{10}(?!\d)", bunifuMaterialTextbox1, pictureBox1, "Please Enter 10 digits Phone Number");
 
                 }
@@ -973,7 +821,8 @@ namespace inventory
                         
                         StockUpdate();
                         SendData();
-                        cart.Rows.Clear();                    }
+                        cart.Rows.Clear();
+                    }
                 
                 else
                 {
@@ -994,7 +843,7 @@ namespace inventory
             if (e.KeyChar == 'd' - 96)
           
             {
-                
+           
                 RemoveItem();
             }
         }
@@ -1025,10 +874,6 @@ namespace inventory
                 txtDiscount.Focus();
             }
 
-
-
-
-
         }
         //**Important :: When qty cahnged sub total will be changed
         private void cart_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -1037,11 +882,10 @@ namespace inventory
 
             try
             {
-                
+        
                 for (int i = 0; i < cart.Rows.Count; i++)
                 {    
-                  
-
+                 
                  //Total Amount Label will be updated
                  double total = Convert.ToDouble(cart.Rows[i].Cells[2].Value) * Convert.ToDouble(cart.Rows[i].Cells[3].Value);
                  cart.Rows[i].Cells[4].Value = total;
@@ -1049,13 +893,7 @@ namespace inventory
                  }
 
                 lblAmount.Text = sum.ToString();
-
-               
-
-
-
-
-                
+  
             }
             catch(Exception ex)
             {
@@ -1073,8 +911,6 @@ namespace inventory
                         if (Convert.ToInt16(cart.SelectedRows[0].Cells[3].Value.ToString()) > 1)
                         {
                             ReduceItemQuantity();
-
-
 
                         }
                         else
@@ -1106,63 +942,19 @@ namespace inventory
            
         }
 
-        private void bunifuTileButton6_Click(object sender, EventArgs e)
-        {
-            var installedPrinters = PrinterSettings.InstalledPrinters; //I have choosed a printername from 'installedPrinters'
-            try {
-                
-                
-                try
-                {
-                    
-                    int height = (cart.RowCount) * 10 + 50;
-                    MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "EPSON UB-U03II"; //Specify the printer to use.
-
-                    MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
-                    MadushaPrintDocument.Print();
-                   
-                    
-                    
-                }
-            finally
-            {
-               
-                   // MessageBox.Show("data Exported");
-                }
-
-        }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+       
         //Printer Configured to print Receipt
         public void printer()
         {
             var installedPrinters = PrinterSettings.InstalledPrinters; //I have choosed a printername from 'installedPrinters'
             try
             {
-
-
-                try
-                {
-
                     int height = (cart.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
                     MadushaPrintDocument.PrinterSettings.PrinterName = "Canon iP2800 series"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();
-
-
-
-                }
-                finally
-                {
-
-                    // MessageBox.Show("data Exported");
-                }
 
             }
             catch (Exception ex)
@@ -1176,7 +968,6 @@ namespace inventory
         private void MadushaPrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
          
-
             DateTime time = DateTime.Now;
             string formatD = "yyyy-MM-dd";
             
@@ -1229,18 +1020,6 @@ namespace inventory
 
         }
 
-        private void btnSettlePayement_Click(object sender, EventArgs e)
-        {
-            
-            MadushaPrintPreviewDialog.Document = MadushaPrintDocument;
-            int height = (cart.RowCount) * 10 +50 ;
-            MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-            MadushaPrintDocument.PrinterSettings.PrinterName = "Microsoft Print to PDF"; //Specify the printer to use.
-            MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
-            MadushaPrintPreviewDialog.ShowDialog();
-            
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeTest.Text= DateTime.Now.ToLongTimeString();
@@ -1280,7 +1059,6 @@ namespace inventory
                 {
                     txtDiscount.MaxLength = 5;
 
-
                 }
             }
         }
@@ -1318,32 +1096,25 @@ namespace inventory
             loadForm(new PosAdmin());
         }
 
-       
-
         private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (listBox1.SelectedItem.ToString() == "Print Receipt			F5")
             {
                 printer();
-                //MessageBox.Show("Hi");
+               
             }
 
             else if (listBox1.SelectedItem.ToString() == "More Option			F6")
             {
                 loadForm(new PosAdmin());
 
-
-
             }
         }
         //LoadItemTable
         public void LoadDate()
         {
-           
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-
             MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from item", conn);
-
             try
             {
                 conn.Open();
@@ -1359,18 +1130,6 @@ namespace inventory
             }
         }
 
-        private void TimeTest_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuMaterialTextbox1_KeyUp(object sender, KeyEventArgs e)
-        {
-            //if (e.KeyCode == Keys.F1)
-            //{
-            //    SearchCustomer();
-            //}
-        }
     }
     }
 
