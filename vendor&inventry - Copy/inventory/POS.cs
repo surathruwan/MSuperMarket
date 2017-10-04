@@ -9,6 +9,8 @@ namespace inventory
 {
     public partial class POS : Form
     {
+
+        ///hiii
         private StreamReader streamToPrint;
          MainForm ourMain = new MainForm();
         public POS()
