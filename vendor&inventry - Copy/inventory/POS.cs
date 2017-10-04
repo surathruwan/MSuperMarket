@@ -9,8 +9,8 @@ namespace inventory
 {
     public partial class POS : Form
     {
-       
-        
+        private StreamReader streamToPrint;
+         MainForm ourMain = new MainForm();
         public POS()
         {
             InitializeComponent();
@@ -24,6 +24,7 @@ namespace inventory
             panel1.Visible = false;
             panel2.Visible = false;
             panel3.Visible = false;
+           
             panel5.Visible = false;
             panel6.Visible = false;
             panel7.Visible = false;
@@ -37,30 +38,56 @@ namespace inventory
 
         private void POS_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'supermarketDataSet.item' table. You can move, or remove it, as needed.
+            //this.itemTableAdapter.Fill(this.supermarketDataSet.item);
             LoadDate();
+
             count_accout();
             timer1.Start();
+
+
+
         }
+
+        private void btnCustomerQuotation_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+
+      
+
+
 
         private void txtDescription_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
             {
-              ItemsAutoComplete();
+                ItemsAutoComplete();
             }
 
         }
 
 
 
-        //Method
+        //Methods
+
+        
+        
+
+
         //auto complete text boxes
         void ItemsAutoComplete()
         {
             txtDescription.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtDescription.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
+
+
             string sqlquery = "SELECT Item_name from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -96,23 +123,35 @@ namespace inventory
             txtBarcode.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtBarcode.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
+
+
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
+
+
             string sqlquery = "SELECT Barcode from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
+
             try
             {
                 conn.Open();
                 msReader = cmd.ExecuteReader(); ;
+
                 while (msReader.Read())
                 {
                     string sname = msReader.GetString(0);
                     coll.Add(sname);
+                    
+                
                 }
+               
+
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
+
             }
 
             txtBarcode.AutoCompleteCustomSource = coll;
@@ -125,10 +164,15 @@ namespace inventory
             txtCode.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtCode.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
+
+
             string sqlquery = "SELECT Item_code from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
+
             try
             {
                 conn.Open();
@@ -139,11 +183,16 @@ namespace inventory
                     string sname = msReader.GetString(0);
                     coll.Add(sname);
                 }
+
+
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
+
             }
+
             txtCode.AutoCompleteCustomSource = coll;
 
         }
@@ -608,7 +657,6 @@ namespace inventory
                 cmd1 = new MySqlCommand(@"INSERT INTO supermarket.invoicerecords(InvoiceID,Customer,Total) VALUES ('" + OrderID + "','" + CustomerName + "','"+ TotalAmount +"')", conn);
                 cmd1.ExecuteNonQuery();
                 MessageBox.Show("Order Done Succesfully", "Madusha Super Market", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                count_accout();
             }
             catch (Exception ex)
             {
@@ -925,9 +973,7 @@ namespace inventory
                         
                         StockUpdate();
                         SendData();
-                        
-                        cart.Rows.Clear();
-                    }
+                        cart.Rows.Clear();                    }
                 
                 else
                 {
