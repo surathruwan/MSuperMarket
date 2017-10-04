@@ -203,6 +203,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalesMethod.cs" />
     <Compile Include="sendEmail.cs">
       <SubType>Form</SubType>
     </Compile>
