@@ -167,6 +167,7 @@ namespace madushaTemp
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
+            webcam.Stop();
             this.Close();
         }
 
