@@ -29,7 +29,7 @@ namespace madushaTemp
         string item_name;
         string cust_id;
         int a,b,c,d,h;
-
+        //ruchira
         MySqlConnection myConn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
         public repair()
         {
