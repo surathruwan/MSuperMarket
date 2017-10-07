@@ -50,6 +50,10 @@ namespace inventory
             {
                 ItemsAutoComplete();
             }
+            if (e.KeyCode == Keys.Insert)
+            {
+                AddItemtoCart();
+            }
 
         }
 
@@ -724,10 +728,7 @@ namespace inventory
         private void txtQty_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back) || char.IsLetter(e.KeyChar);
-            if (e.KeyChar == 13)
-            {
-                AddItemtoCart();
-            }
+            
         }
 
         private void txtBarcode_KeyPress(object sender, KeyPressEventArgs e)
@@ -766,6 +767,10 @@ namespace inventory
             if (e.KeyCode == Keys.F1)
             {
                 ItemsCodeAutoComplete();
+            }
+            if (e.KeyCode == Keys.Insert)
+            {
+                AddItemtoCart();
             }
         }
 
@@ -1087,9 +1092,14 @@ namespace inventory
                 SearchPriceBarcode();
 
             }
-            else if (e.KeyCode == Keys.F3)
+           if (e.KeyCode == Keys.F3)
             {
                 txtBarcode.Focus();
+            }
+
+            if (e.KeyCode == Keys.Insert)
+            {
+                AddItemtoCart();
             }
         }
 
@@ -1132,6 +1142,13 @@ namespace inventory
             }
         }
 
+        private void txtQty_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Insert)
+            {
+                AddItemtoCart();
+            }
+        }
     }
     }
 
