@@ -288,6 +288,7 @@
             this.txtPrice.Size = new System.Drawing.Size(147, 29);
             this.txtPrice.TabIndex = 4;
             this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
+            this.txtPrice.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPrice_KeyUp);
             // 
             // txtDiscount
             // 

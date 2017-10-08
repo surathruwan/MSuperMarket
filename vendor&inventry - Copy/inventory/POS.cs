@@ -1148,6 +1148,15 @@ namespace inventory
                 LoadDate();
             }
         }
+
+        private void txtPrice_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Insert)
+            {
+                AddItemtoCart();
+                LoadDate();
+            }
+        }
     }
     }
 
