@@ -343,7 +343,7 @@ namespace madushaTemp
                         condb.Open();
                         myReader = cmddb.ExecuteReader();
 
-                        MessageBox.Show("Data Inserted Successfully !! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Inserted !!!!!!! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
