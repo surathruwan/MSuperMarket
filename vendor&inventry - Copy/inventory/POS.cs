@@ -861,22 +861,20 @@ namespace inventory
             {
                 cart.Focus();
             }
-            else if (e.KeyCode == Keys.Back)
+            if (e.KeyCode == Keys.Back)
             {
                 txtBarcode.Text = "";
                 clearFields();
                 LoadDate();
             }
 
-            else if (e.KeyCode == Keys.Insert)
+             if (e.KeyCode == Keys.Insert)
             {
                 AddItemtoCart();
                 LoadDate();
-
-
             }
 
-            else if (e.KeyCode == Keys.F3)
+            if (e.KeyCode == Keys.F3)
             {
                 txtDiscount.Focus();
             }
@@ -1147,6 +1145,7 @@ namespace inventory
             if (e.KeyCode == Keys.Insert)
             {
                 AddItemtoCart();
+                LoadDate();
             }
         }
     }
