@@ -2341,18 +2341,24 @@ namespace madushaTemp
 
         private void btngeneratesticker_Click(object sender, EventArgs e)
         {
-            BarcodeLib.Barcode barcode = new BarcodeLib.Barcode()
+            if (txtino.Text != "")
             {
-                IncludeLabel = true,
-                Alignment = AlignmentPositions.CENTER,
-                Width = 390,
-                Height = 150,
-                RotateFlipType = RotateFlipType.RotateNoneFlipNone,
-                BackColor = Color.White,
-                ForeColor = Color.Black,
-            };
+                BarcodeLib.Barcode barcode = new BarcodeLib.Barcode()
+                {
+                    IncludeLabel = true,
+                    Alignment = AlignmentPositions.CENTER,
+                    Width = 390,
+                    Height = 150,
+                    RotateFlipType = RotateFlipType.RotateNoneFlipNone,
+                    BackColor = Color.White,
+                    ForeColor = Color.Black,
+                };
 
-            puty.Image = barcode.Encode(TYPE.CODE128B, txtino.Text);
+                puty.Image = barcode.Encode(TYPE.CODE128B, txtino.Text);
+            }
+            else {
+                MessageBox.Show("Please a Invoice","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
 
         

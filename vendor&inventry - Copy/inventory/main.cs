@@ -723,7 +723,7 @@ namespace inventory
 
         private void gr_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+            //helloooooooo
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.gr.Rows[e.RowIndex];
