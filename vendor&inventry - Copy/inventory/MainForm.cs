@@ -19,7 +19,7 @@ namespace inventory
 
             timer1.Start();
             panel4.Controls.Clear();
-            madushaTemp.Employee VM = new madushaTemp.Employee();
+            madushaTemp.TestForm VM = new madushaTemp.TestForm();
             VM.TopLevel = false;
             VM.AutoScroll = true;
             panel4.Controls.Add(VM);
@@ -179,6 +179,7 @@ namespace inventory
         {
             try
             {
+                Session.windUpSession();
                 panel4.Controls.Clear();
                 login l = new login();
                 l.Show();
