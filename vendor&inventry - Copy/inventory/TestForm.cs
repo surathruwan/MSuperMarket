@@ -23,7 +23,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Drawing.Printing;
 using System.Xml.Linq;
-
+using inventory;
 
 namespace madushaTemp
 {
@@ -45,8 +45,23 @@ namespace madushaTemp
         public TestForm()
         {
             InitializeComponent();
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                //button1.Enabled = false;
+               // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+               // tabControl1.TabPages.Remove(tabPage4);
 
-            
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage4);
+               // ((Control)this.tabPage2).Enabled = false;
+            }
+            else { }
+
             chart1.Visible = false;
             chart3.Visible = false;
             chart2.Visible = false;
