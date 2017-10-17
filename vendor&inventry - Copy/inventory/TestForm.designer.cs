@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -60,20 +61,23 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.tblhide = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btninvoice = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cmbprepare = new System.Windows.Forms.ComboBox();
+            this.btncustomercopy = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtnoi = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtgtot = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtivalue = new System.Windows.Forms.Label();
+            this.btniconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -81,12 +85,16 @@
             this.datei = new System.Windows.Forms.DateTimePicker();
             this.lblbal = new System.Windows.Forms.Label();
             this.txtwmonths = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnSuspend = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtdpay = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.tableinstallments = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label34 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtoid = new System.Windows.Forms.Label();
+            this.btnsearchitem = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -106,16 +114,22 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtdis = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label77 = new System.Windows.Forms.Label();
+            this.btnadd = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btndelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnupdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnexecute = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.r6 = new System.Windows.Forms.RadioButton();
             this.r3 = new System.Windows.Forms.RadioButton();
             this.lbl3 = new System.Windows.Forms.Label();
             this.r36 = new System.Windows.Forms.RadioButton();
+            this.btniclear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.r24 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.r12 = new System.Windows.Forms.RadioButton();
@@ -131,7 +145,11 @@
             this.lbl6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.txtnicsearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtaddress2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtjob1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtaddress1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -140,8 +158,12 @@
             this.txtphone2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtphone1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtname1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnnicsearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.label90 = new System.Windows.Forms.Label();
+            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label91 = new System.Windows.Forms.Label();
+            this.btnsuslist = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btncconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -169,14 +191,26 @@
             this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.piccus = new System.Windows.Forms.PictureBox();
+            this.btnclearsei = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label16 = new System.Windows.Forms.Label();
+            this.bunifuThinButton214 = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton21 = new System.Windows.Forms.PictureBox();
+            this.btngeneratesticker = new System.Windows.Forms.PictureBox();
+            this.puty = new System.Windows.Forms.PictureBox();
             this.txtnn = new System.Windows.Forms.Label();
             this.lbltot = new System.Windows.Forms.Label();
             this.lblscount = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txtino = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btndeleteSeized = new Bunifu.Framework.UI.BunifuThinButton2();
             this.datese = new System.Windows.Forms.DateTimePicker();
+            this.btnaddSeized = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableseized = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtnicse = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtbal = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -191,22 +225,28 @@
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.btnprintrecep = new System.Windows.Forms.PictureBox();
             this.lbl = new System.Windows.Forms.Label();
             this.dfg = new System.Windows.Forms.Label();
             this.radsumm = new System.Windows.Forms.RadioButton();
             this.radsumm1 = new System.Windows.Forms.RadioButton();
             this.lblin = new System.Windows.Forms.Label();
             this.dates = new System.Windows.Forms.DateTimePicker();
+            this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label38 = new System.Windows.Forms.Label();
             this.tblinssummary = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.tblinscust = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dateto = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label96 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.datefrom = new System.Windows.Forms.DateTimePicker();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bunifuCards8 = new Bunifu.Framework.UI.BunifuCards();
@@ -215,20 +255,26 @@
             this.tblseizedhide = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label26 = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
+            this.btnupdateie = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnaddex = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radgenchat = new System.Windows.Forms.RadioButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label60 = new System.Windows.Forms.Label();
             this.cmbinex = new System.Windows.Forms.ComboBox();
             this.tblei = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
+            this.btnseized = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.dateseizedselect = new System.Windows.Forms.DateTimePicker();
             this.txtamt = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.dateie = new System.Windows.Forms.DateTimePicker();
+            this.btndeleteei = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.radexp = new System.Windows.Forms.RadioButton();
@@ -238,20 +284,29 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.Spanel = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.lblbtot = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label71 = new System.Windows.Forms.Label();
             this.lblpcount = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.lblcount = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label83 = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label70 = new System.Windows.Forms.Label();
+            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
             this.cmdaccno = new System.Windows.Forms.ComboBox();
             this.cmdbuyer = new System.Windows.Forms.ComboBox();
             this.cmdbranch = new System.Windows.Forms.ComboBox();
@@ -259,9 +314,13 @@
             this.txtpurp = new System.Windows.Forms.RichTextBox();
             this.radbnpa = new System.Windows.Forms.RadioButton();
             this.radbpa = new System.Windows.Forms.RadioButton();
+            this.btnaddbank = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tblbank = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuThinButton222 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.datetak = new System.Windows.Forms.DateTimePicker();
             this.datecom = new System.Windows.Forms.DateTimePicker();
+            this.bunifuThinButton219 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnupdatebank = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtlamt = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblbid = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -282,119 +341,60 @@
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cmbchart = new System.Windows.Forms.ComboBox();
+            this.btnchartgene = new System.Windows.Forms.PictureBox();
             this.label68 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.cmbyearselect = new System.Windows.Forms.ComboBox();
             this.cmbmonthselect = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.radioButton15 = new System.Windows.Forms.RadioButton();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.radfin = new System.Windows.Forms.RadioButton();
             this.label69 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label107 = new System.Windows.Forms.Label();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.label108 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label106 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.label104 = new System.Windows.Forms.Label();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.label105 = new System.Windows.Forms.Label();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.txtaddy = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.cmbyear = new System.Windows.Forms.ComboBox();
+            this.bunifuThinButton230 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label67 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.MadushaPrintDocument = new System.Drawing.Printing.PrintDocument();
-            this.btninvoice = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btncustomercopy = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btniconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSuspend = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnsearchitem = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnadd = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btndelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnupdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnexecute = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btniclear = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnnicsearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnsuslist = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btncconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.piccus = new System.Windows.Forms.PictureBox();
-            this.btnclearsei = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton214 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton21 = new System.Windows.Forms.PictureBox();
-            this.btngeneratesticker = new System.Windows.Forms.PictureBox();
-            this.puty = new System.Windows.Forms.PictureBox();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btndeleteSeized = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnaddSeized = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnprintrecep = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.btnupdateie = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnaddex = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnseized = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.btndeleteei = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnaddbank = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton222 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton219 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnupdatebank = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnchartgene = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton230 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -404,23 +404,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableinstallments)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).BeginInit();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.bunifuCards5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.piccus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableseized)).BeginInit();
             this.panel6.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinssummary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinscust)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.bunifuCards8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -429,16 +447,24 @@
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblei)).BeginInit();
             this.groupBox19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel8.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.Spanel.SuspendLayout();
             this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblbank)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.bunifuCards10.SuspendLayout();
@@ -447,54 +473,28 @@
             this.panel28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).BeginInit();
             this.panel12.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.piccus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             this.SuspendLayout();
@@ -619,6 +619,32 @@
             this.tblhide.Size = new System.Drawing.Size(53, 60);
             this.tblhide.TabIndex = 58;
             // 
+            // btninvoice
+            // 
+            this.btninvoice.ActiveBorderThickness = 1;
+            this.btninvoice.ActiveCornerRadius = 20;
+            this.btninvoice.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btninvoice.ActiveForecolor = System.Drawing.Color.White;
+            this.btninvoice.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btninvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btninvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninvoice.BackgroundImage")));
+            this.btninvoice.ButtonText = "Invoice";
+            this.btninvoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btninvoice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btninvoice.IdleBorderThickness = 1;
+            this.btninvoice.IdleCornerRadius = 20;
+            this.btninvoice.IdleFillColor = System.Drawing.Color.White;
+            this.btninvoice.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btninvoice.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btninvoice.Location = new System.Drawing.Point(50, 368);
+            this.btninvoice.Margin = new System.Windows.Forms.Padding(5);
+            this.btninvoice.Name = "btninvoice";
+            this.btninvoice.Size = new System.Drawing.Size(105, 41);
+            this.btninvoice.TabIndex = 57;
+            this.btninvoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btninvoice.Click += new System.EventHandler(this.btninvoice_Click);
+            // 
             // cmbprepare
             // 
             this.cmbprepare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
@@ -632,6 +658,57 @@
             this.cmbprepare.Size = new System.Drawing.Size(93, 26);
             this.cmbprepare.TabIndex = 56;
             this.cmbprepare.Text = "Select an option";
+            // 
+            // btncustomercopy
+            // 
+            this.btncustomercopy.ActiveBorderThickness = 1;
+            this.btncustomercopy.ActiveCornerRadius = 20;
+            this.btncustomercopy.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncustomercopy.ActiveForecolor = System.Drawing.Color.White;
+            this.btncustomercopy.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncustomercopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btncustomercopy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncustomercopy.BackgroundImage")));
+            this.btncustomercopy.ButtonText = "Customer Copy";
+            this.btncustomercopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncustomercopy.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncustomercopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncustomercopy.IdleBorderThickness = 1;
+            this.btncustomercopy.IdleCornerRadius = 20;
+            this.btncustomercopy.IdleFillColor = System.Drawing.Color.White;
+            this.btncustomercopy.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncustomercopy.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncustomercopy.Location = new System.Drawing.Point(207, 368);
+            this.btncustomercopy.Margin = new System.Windows.Forms.Padding(5);
+            this.btncustomercopy.Name = "btncustomercopy";
+            this.btncustomercopy.Size = new System.Drawing.Size(151, 41);
+            this.btncustomercopy.TabIndex = 54;
+            this.btncustomercopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncustomercopy.Click += new System.EventHandler(this.btncustomercopy_Click);
+            // 
+            // bunifuThinButton217
+            // 
+            this.bunifuThinButton217.ActiveBorderThickness = 1;
+            this.bunifuThinButton217.ActiveCornerRadius = 20;
+            this.bunifuThinButton217.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton217.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton217.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton217.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton217.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton217.BackgroundImage")));
+            this.bunifuThinButton217.ButtonText = "Company Copy";
+            this.bunifuThinButton217.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton217.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton217.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton217.IdleBorderThickness = 1;
+            this.bunifuThinButton217.IdleCornerRadius = 20;
+            this.bunifuThinButton217.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton217.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton217.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton217.Location = new System.Drawing.Point(406, 368);
+            this.bunifuThinButton217.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton217.Name = "bunifuThinButton217";
+            this.bunifuThinButton217.Size = new System.Drawing.Size(151, 41);
+            this.bunifuThinButton217.TabIndex = 53;
+            this.bunifuThinButton217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtnoi
             // 
@@ -695,6 +772,32 @@
             this.txtivalue.Name = "txtivalue";
             this.txtivalue.Size = new System.Drawing.Size(0, 18);
             this.txtivalue.TabIndex = 46;
+            // 
+            // btniconfirm
+            // 
+            this.btniconfirm.ActiveBorderThickness = 1;
+            this.btniconfirm.ActiveCornerRadius = 20;
+            this.btniconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniconfirm.ActiveForecolor = System.Drawing.Color.White;
+            this.btniconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btniconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniconfirm.BackgroundImage")));
+            this.btniconfirm.ButtonText = "Confirm";
+            this.btniconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btniconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniconfirm.IdleBorderThickness = 1;
+            this.btniconfirm.IdleCornerRadius = 20;
+            this.btniconfirm.IdleFillColor = System.Drawing.Color.White;
+            this.btniconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniconfirm.Location = new System.Drawing.Point(82, 317);
+            this.btniconfirm.Margin = new System.Windows.Forms.Padding(5);
+            this.btniconfirm.Name = "btniconfirm";
+            this.btniconfirm.Size = new System.Drawing.Size(106, 41);
+            this.btniconfirm.TabIndex = 45;
+            this.btniconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btniconfirm.Click += new System.EventHandler(this.btniconfirm_Click);
             // 
             // label12
             // 
@@ -778,6 +881,58 @@
             this.txtwmonths.TabIndex = 18;
             this.txtwmonths.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtwmonths.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtwmonths_KeyPress);
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "Clear";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton24.Location = new System.Drawing.Point(360, 317);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(105, 41);
+            this.bunifuThinButton24.TabIndex = 37;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
+            // 
+            // btnSuspend
+            // 
+            this.btnSuspend.ActiveBorderThickness = 1;
+            this.btnSuspend.ActiveCornerRadius = 20;
+            this.btnSuspend.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnSuspend.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSuspend.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnSuspend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnSuspend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuspend.BackgroundImage")));
+            this.btnSuspend.ButtonText = "Suspend";
+            this.btnSuspend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuspend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnSuspend.IdleBorderThickness = 1;
+            this.btnSuspend.IdleCornerRadius = 20;
+            this.btnSuspend.IdleFillColor = System.Drawing.Color.White;
+            this.btnSuspend.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnSuspend.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnSuspend.Location = new System.Drawing.Point(225, 317);
+            this.btnSuspend.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSuspend.Name = "btnSuspend";
+            this.btnSuspend.Size = new System.Drawing.Size(97, 41);
+            this.btnSuspend.TabIndex = 35;
+            this.btnSuspend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSuspend.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // txtdpay
             // 
@@ -886,6 +1041,20 @@
             this.groupBox14.Text = "Item Selection";
             this.groupBox14.Enter += new System.EventHandler(this.groupBox14_Enter);
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuImageButton1.Image = global::inventory.Properties.Resources.plus;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(144, 25);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 26);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 80;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // txtoid
             // 
             this.txtoid.AutoSize = true;
@@ -894,6 +1063,20 @@
             this.txtoid.Size = new System.Drawing.Size(33, 12);
             this.txtoid.TabIndex = 79;
             this.txtoid.Text = "1000";
+            // 
+            // btnsearchitem
+            // 
+            this.btnsearchitem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnsearchitem.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.btnsearchitem.ImageActive = null;
+            this.btnsearchitem.Location = new System.Drawing.Point(214, 52);
+            this.btnsearchitem.Name = "btnsearchitem";
+            this.btnsearchitem.Size = new System.Drawing.Size(30, 26);
+            this.btnsearchitem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnsearchitem.TabIndex = 78;
+            this.btnsearchitem.TabStop = false;
+            this.btnsearchitem.Zoom = 10;
+            this.btnsearchitem.Click += new System.EventHandler(this.btnsearchitem_Click);
             // 
             // label1
             // 
@@ -1163,6 +1346,110 @@
             this.label77.TabIndex = 25;
             this.label77.Text = "Final Amount";
             // 
+            // btnadd
+            // 
+            this.btnadd.ActiveBorderThickness = 1;
+            this.btnadd.ActiveCornerRadius = 20;
+            this.btnadd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.ActiveForecolor = System.Drawing.Color.White;
+            this.btnadd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnadd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadd.BackgroundImage")));
+            this.btnadd.ButtonText = "Add";
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.IdleBorderThickness = 1;
+            this.btnadd.IdleCornerRadius = 20;
+            this.btnadd.IdleFillColor = System.Drawing.Color.White;
+            this.btnadd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnadd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnadd.Location = new System.Drawing.Point(21, 388);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(116, 41);
+            this.btnadd.TabIndex = 20;
+            this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.ActiveBorderThickness = 1;
+            this.btndelete.ActiveCornerRadius = 20;
+            this.btndelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btndelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndelete.BackgroundImage")));
+            this.btndelete.ButtonText = "Delete";
+            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.IdleBorderThickness = 1;
+            this.btndelete.IdleCornerRadius = 20;
+            this.btndelete.IdleFillColor = System.Drawing.Color.White;
+            this.btndelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndelete.Location = new System.Drawing.Point(273, 388);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(5);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(116, 41);
+            this.btndelete.TabIndex = 22;
+            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndelete.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.ActiveBorderThickness = 1;
+            this.btnupdate.ActiveCornerRadius = 20;
+            this.btnupdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdate.BackgroundImage")));
+            this.btnupdate.ButtonText = "Update";
+            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.IdleBorderThickness = 1;
+            this.btnupdate.IdleCornerRadius = 20;
+            this.btnupdate.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdate.Location = new System.Drawing.Point(147, 388);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(116, 41);
+            this.btnupdate.TabIndex = 23;
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // btnexecute
+            // 
+            this.btnexecute.ActiveBorderThickness = 1;
+            this.btnexecute.ActiveCornerRadius = 20;
+            this.btnexecute.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnexecute.ActiveForecolor = System.Drawing.Color.White;
+            this.btnexecute.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnexecute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnexecute.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexecute.BackgroundImage")));
+            this.btnexecute.ButtonText = "Execute";
+            this.btnexecute.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexecute.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexecute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnexecute.IdleBorderThickness = 1;
+            this.btnexecute.IdleCornerRadius = 20;
+            this.btnexecute.IdleFillColor = System.Drawing.Color.White;
+            this.btnexecute.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnexecute.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnexecute.Location = new System.Drawing.Point(399, 388);
+            this.btnexecute.Margin = new System.Windows.Forms.Padding(5);
+            this.btnexecute.Name = "btnexecute";
+            this.btnexecute.Size = new System.Drawing.Size(116, 41);
+            this.btnexecute.TabIndex = 24;
+            this.btnexecute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnexecute.Click += new System.EventHandler(this.btnexecute_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label22);
@@ -1251,6 +1538,18 @@
             this.label17.Text = "Months";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::inventory.Properties.Resources.Aha_Soft_Business_Toolbar_Payment;
+            this.pictureBox1.Location = new System.Drawing.Point(126, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 30);
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // r6
             // 
             this.r6.AutoSize = true;
@@ -1297,6 +1596,32 @@
             this.r36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.r36.UseVisualStyleBackColor = true;
             this.r36.CheckedChanged += new System.EventHandler(this.r36_CheckedChanged);
+            // 
+            // btniclear
+            // 
+            this.btniclear.ActiveBorderThickness = 1;
+            this.btniclear.ActiveCornerRadius = 20;
+            this.btniclear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniclear.ActiveForecolor = System.Drawing.Color.White;
+            this.btniclear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btniclear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniclear.BackgroundImage")));
+            this.btniclear.ButtonText = "Clear";
+            this.btniclear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btniclear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniclear.IdleBorderThickness = 1;
+            this.btniclear.IdleCornerRadius = 20;
+            this.btniclear.IdleFillColor = System.Drawing.Color.White;
+            this.btniclear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniclear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniclear.Location = new System.Drawing.Point(33, 193);
+            this.btniclear.Margin = new System.Windows.Forms.Padding(5);
+            this.btniclear.Name = "btniclear";
+            this.btniclear.Size = new System.Drawing.Size(116, 41);
+            this.btniclear.TabIndex = 35;
+            this.btniclear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btniclear.Click += new System.EventHandler(this.btniclear_Click);
             // 
             // r24
             // 
@@ -1498,6 +1823,34 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Customer Registration";
             // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Location = new System.Drawing.Point(754, 115);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox27.TabIndex = 92;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Location = new System.Drawing.Point(754, 148);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox26.TabIndex = 91;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Location = new System.Drawing.Point(214, 23);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox25.TabIndex = 90;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Click += new System.EventHandler(this.pictureBox25_Click);
+            // 
             // txtnicsearch
             // 
             this.txtnicsearch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1516,6 +1869,20 @@
             this.txtnicsearch.Size = new System.Drawing.Size(150, 33);
             this.txtnicsearch.TabIndex = 88;
             this.txtnicsearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuImageButton3.Image = global::inventory.Properties.Resources.Treetog_Junior_User_group;
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(298, 23);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(32, 26);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 87;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // txtaddress2
             // 
@@ -1674,6 +2041,20 @@
             this.txtname1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtname1.OnValueChanged += new System.EventHandler(this.txtname1_OnValueChanged);
             // 
+            // btnnicsearch
+            // 
+            this.btnnicsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnnicsearch.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.btnnicsearch.ImageActive = null;
+            this.btnnicsearch.Location = new System.Drawing.Point(257, 23);
+            this.btnnicsearch.Name = "btnnicsearch";
+            this.btnnicsearch.Size = new System.Drawing.Size(30, 26);
+            this.btnnicsearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnnicsearch.TabIndex = 77;
+            this.btnnicsearch.TabStop = false;
+            this.btnnicsearch.Zoom = 10;
+            this.btnnicsearch.Click += new System.EventHandler(this.btnnicsearch_Click);
+            // 
             // label90
             // 
             this.label90.AutoSize = true;
@@ -1685,6 +2066,32 @@
             this.label90.TabIndex = 75;
             this.label90.Text = "Job 2";
             // 
+            // bunifuThinButton26
+            // 
+            this.bunifuThinButton26.ActiveBorderThickness = 1;
+            this.bunifuThinButton26.ActiveCornerRadius = 20;
+            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
+            this.bunifuThinButton26.ButtonText = "Clear";
+            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.IdleBorderThickness = 1;
+            this.bunifuThinButton26.IdleCornerRadius = 20;
+            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton26.Location = new System.Drawing.Point(421, 182);
+            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton26.Name = "bunifuThinButton26";
+            this.bunifuThinButton26.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton26.TabIndex = 36;
+            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton26.Click += new System.EventHandler(this.bunifuThinButton26_Click);
+            // 
             // label91
             // 
             this.label91.AutoSize = true;
@@ -1695,6 +2102,58 @@
             this.label91.Size = new System.Drawing.Size(63, 18);
             this.label91.TabIndex = 73;
             this.label91.Text = "Phone 2";
+            // 
+            // btnsuslist
+            // 
+            this.btnsuslist.ActiveBorderThickness = 1;
+            this.btnsuslist.ActiveCornerRadius = 20;
+            this.btnsuslist.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnsuslist.ActiveForecolor = System.Drawing.Color.White;
+            this.btnsuslist.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnsuslist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnsuslist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsuslist.BackgroundImage")));
+            this.btnsuslist.ButtonText = "Suspension List";
+            this.btnsuslist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsuslist.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuslist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnsuslist.IdleBorderThickness = 1;
+            this.btnsuslist.IdleCornerRadius = 20;
+            this.btnsuslist.IdleFillColor = System.Drawing.Color.White;
+            this.btnsuslist.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnsuslist.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnsuslist.Location = new System.Drawing.Point(547, 182);
+            this.btnsuslist.Margin = new System.Windows.Forms.Padding(5);
+            this.btnsuslist.Name = "btnsuslist";
+            this.btnsuslist.Size = new System.Drawing.Size(129, 41);
+            this.btnsuslist.TabIndex = 47;
+            this.btnsuslist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsuslist.Click += new System.EventHandler(this.bunifuThinButton21_Click_1);
+            // 
+            // btncconfirm
+            // 
+            this.btncconfirm.ActiveBorderThickness = 1;
+            this.btncconfirm.ActiveCornerRadius = 20;
+            this.btncconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncconfirm.ActiveForecolor = System.Drawing.Color.White;
+            this.btncconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btncconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncconfirm.BackgroundImage")));
+            this.btncconfirm.ButtonText = "Update";
+            this.btncconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncconfirm.IdleBorderThickness = 1;
+            this.btncconfirm.IdleCornerRadius = 20;
+            this.btncconfirm.IdleFillColor = System.Drawing.Color.White;
+            this.btncconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncconfirm.Location = new System.Drawing.Point(295, 182);
+            this.btncconfirm.Margin = new System.Windows.Forms.Padding(5);
+            this.btncconfirm.Name = "btncconfirm";
+            this.btncconfirm.Size = new System.Drawing.Size(116, 41);
+            this.btncconfirm.TabIndex = 37;
+            this.btncconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncconfirm.Click += new System.EventHandler(this.btncconfirm_Click);
             // 
             // label92
             // 
@@ -1960,6 +2419,7 @@
             this.bunifuCards5.ShadowDepth = 20;
             this.bunifuCards5.Size = new System.Drawing.Size(1218, 708);
             this.bunifuCards5.TabIndex = 0;
+            this.bunifuCards5.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards5_Paint);
             // 
             // panel7
             // 
@@ -2009,6 +2469,41 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Seized Stock";
             // 
+            // piccus
+            // 
+            this.piccus.Location = new System.Drawing.Point(256, 105);
+            this.piccus.Name = "piccus";
+            this.piccus.Size = new System.Drawing.Size(37, 31);
+            this.piccus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.piccus.TabIndex = 91;
+            this.piccus.TabStop = false;
+            // 
+            // btnclearsei
+            // 
+            this.btnclearsei.ActiveBorderThickness = 1;
+            this.btnclearsei.ActiveCornerRadius = 20;
+            this.btnclearsei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnclearsei.ActiveForecolor = System.Drawing.Color.White;
+            this.btnclearsei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnclearsei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnclearsei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnclearsei.BackgroundImage")));
+            this.btnclearsei.ButtonText = "Clear";
+            this.btnclearsei.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnclearsei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclearsei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnclearsei.IdleBorderThickness = 1;
+            this.btnclearsei.IdleCornerRadius = 20;
+            this.btnclearsei.IdleFillColor = System.Drawing.Color.White;
+            this.btnclearsei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnclearsei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnclearsei.Location = new System.Drawing.Point(8, 260);
+            this.btnclearsei.Margin = new System.Windows.Forms.Padding(5);
+            this.btnclearsei.Name = "btnclearsei";
+            this.btnclearsei.Size = new System.Drawing.Size(116, 41);
+            this.btnclearsei.TabIndex = 60;
+            this.btnclearsei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnclearsei.Click += new System.EventHandler(this.btnclearsei_Click);
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -2018,6 +2513,48 @@
             this.label16.Size = new System.Drawing.Size(100, 15);
             this.label16.TabIndex = 59;
             this.label16.Text = "Seized Stock List";
+            // 
+            // bunifuThinButton214
+            // 
+            this.bunifuThinButton214.Image = global::inventory.Properties.Resources._3;
+            this.bunifuThinButton214.Location = new System.Drawing.Point(140, 260);
+            this.bunifuThinButton214.Name = "bunifuThinButton214";
+            this.bunifuThinButton214.Size = new System.Drawing.Size(48, 48);
+            this.bunifuThinButton214.TabIndex = 58;
+            this.bunifuThinButton214.TabStop = false;
+            this.bunifuThinButton214.Click += new System.EventHandler(this.bunifuThinButton214_Click_1);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.Image = global::inventory.Properties.Resources.save1;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(434, 174);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(63, 46);
+            this.bunifuThinButton21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.bunifuThinButton21.TabIndex = 57;
+            this.bunifuThinButton21.TabStop = false;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click_3);
+            // 
+            // btngeneratesticker
+            // 
+            this.btngeneratesticker.Image = global::inventory.Properties.Resources.barcode;
+            this.btngeneratesticker.Location = new System.Drawing.Point(340, 175);
+            this.btngeneratesticker.Name = "btngeneratesticker";
+            this.btngeneratesticker.Size = new System.Drawing.Size(63, 46);
+            this.btngeneratesticker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btngeneratesticker.TabIndex = 56;
+            this.btngeneratesticker.TabStop = false;
+            this.btngeneratesticker.Click += new System.EventHandler(this.btngeneratesticker_Click);
+            // 
+            // puty
+            // 
+            this.puty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.puty.Location = new System.Drawing.Point(298, 11);
+            this.puty.Name = "puty";
+            this.puty.Size = new System.Drawing.Size(263, 158);
+            this.puty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.puty.TabIndex = 54;
+            this.puty.TabStop = false;
             // 
             // txtnn
             // 
@@ -2067,6 +2604,26 @@
             this.label33.TabIndex = 50;
             this.label33.Text = "Recievable Amount";
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel24.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Mail_Money;
+            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel24.Location = new System.Drawing.Point(307, 229);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(34, 34);
+            this.panel24.TabIndex = 49;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.White;
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox11.Location = new System.Drawing.Point(294, 249);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(141, 59);
+            this.pictureBox11.TabIndex = 48;
+            this.pictureBox11.TabStop = false;
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -2079,6 +2636,26 @@
             this.label27.TabIndex = 47;
             this.label27.Text = "No Of Items Seized";
             this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel23.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box;
+            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel23.Location = new System.Drawing.Point(462, 229);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(34, 34);
+            this.panel23.TabIndex = 46;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.White;
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox10.Location = new System.Drawing.Point(449, 248);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(141, 60);
+            this.pictureBox10.TabIndex = 16;
+            this.pictureBox10.TabStop = false;
             // 
             // txtino
             // 
@@ -2099,6 +2676,32 @@
             this.txtino.OnValueChanged += new System.EventHandler(this.txtino_OnValueChanged);
             this.txtino.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuMetroTextbox1_KeyPress);
             // 
+            // btndeleteSeized
+            // 
+            this.btndeleteSeized.ActiveBorderThickness = 1;
+            this.btndeleteSeized.ActiveCornerRadius = 20;
+            this.btndeleteSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteSeized.ActiveForecolor = System.Drawing.Color.White;
+            this.btndeleteSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndeleteSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteSeized.BackgroundImage")));
+            this.btndeleteSeized.ButtonText = "Delete";
+            this.btndeleteSeized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndeleteSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeleteSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteSeized.IdleBorderThickness = 1;
+            this.btndeleteSeized.IdleCornerRadius = 20;
+            this.btndeleteSeized.IdleFillColor = System.Drawing.Color.White;
+            this.btndeleteSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteSeized.Location = new System.Drawing.Point(131, 214);
+            this.btndeleteSeized.Margin = new System.Windows.Forms.Padding(5);
+            this.btndeleteSeized.Name = "btndeleteSeized";
+            this.btndeleteSeized.Size = new System.Drawing.Size(116, 41);
+            this.btndeleteSeized.TabIndex = 43;
+            this.btndeleteSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndeleteSeized.Click += new System.EventHandler(this.btndeleteSeized_Click);
+            // 
             // datese
             // 
             this.datese.CustomFormat = "yyyy-MM-dd";
@@ -2107,6 +2710,32 @@
             this.datese.Name = "datese";
             this.datese.Size = new System.Drawing.Size(107, 20);
             this.datese.TabIndex = 42;
+            // 
+            // btnaddSeized
+            // 
+            this.btnaddSeized.ActiveBorderThickness = 1;
+            this.btnaddSeized.ActiveCornerRadius = 20;
+            this.btnaddSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddSeized.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnaddSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddSeized.BackgroundImage")));
+            this.btnaddSeized.ButtonText = "Add ";
+            this.btnaddSeized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddSeized.IdleBorderThickness = 1;
+            this.btnaddSeized.IdleCornerRadius = 20;
+            this.btnaddSeized.IdleFillColor = System.Drawing.Color.White;
+            this.btnaddSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddSeized.Location = new System.Drawing.Point(8, 214);
+            this.btnaddSeized.Margin = new System.Windows.Forms.Padding(5);
+            this.btnaddSeized.Name = "btnaddSeized";
+            this.btnaddSeized.Size = new System.Drawing.Size(116, 41);
+            this.btnaddSeized.TabIndex = 40;
+            this.btnaddSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnaddSeized.Click += new System.EventHandler(this.btnaddSeized_Click);
             // 
             // tableseized
             // 
@@ -2319,6 +2948,17 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Summary Card";
             // 
+            // btnprintrecep
+            // 
+            this.btnprintrecep.Image = global::inventory.Properties.Resources.receipt;
+            this.btnprintrecep.Location = new System.Drawing.Point(152, 138);
+            this.btnprintrecep.Name = "btnprintrecep";
+            this.btnprintrecep.Size = new System.Drawing.Size(48, 48);
+            this.btnprintrecep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnprintrecep.TabIndex = 46;
+            this.btnprintrecep.TabStop = false;
+            this.btnprintrecep.Click += new System.EventHandler(this.btnprintrecep_Click);
+            // 
             // lbl
             // 
             this.lbl.AutoSize = true;
@@ -2382,6 +3022,32 @@
             this.dates.Name = "dates";
             this.dates.Size = new System.Drawing.Size(107, 20);
             this.dates.TabIndex = 40;
+            // 
+            // bunifuThinButton211
+            // 
+            this.bunifuThinButton211.ActiveBorderThickness = 1;
+            this.bunifuThinButton211.ActiveCornerRadius = 20;
+            this.bunifuThinButton211.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton211.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton211.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton211.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
+            this.bunifuThinButton211.ButtonText = "Update";
+            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton211.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton211.IdleBorderThickness = 1;
+            this.bunifuThinButton211.IdleCornerRadius = 20;
+            this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton211.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton211.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton211.Location = new System.Drawing.Point(12, 152);
+            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton211.Name = "bunifuThinButton211";
+            this.bunifuThinButton211.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton211.TabIndex = 38;
+            this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton211.Click += new System.EventHandler(this.bunifuThinButton211_Click);
             // 
             // label38
             // 
@@ -2487,6 +3153,58 @@
             this.tblinscust.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblinscust_CellContentClick);
             this.tblinscust.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblinscust_CellContentDoubleClick);
             // 
+            // bunifuThinButton29
+            // 
+            this.bunifuThinButton29.ActiveBorderThickness = 1;
+            this.bunifuThinButton29.ActiveCornerRadius = 20;
+            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
+            this.bunifuThinButton29.ButtonText = "Refresh";
+            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.IdleBorderThickness = 1;
+            this.bunifuThinButton29.IdleCornerRadius = 20;
+            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.Location = new System.Drawing.Point(177, 61);
+            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton29.Name = "bunifuThinButton29";
+            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton29.TabIndex = 33;
+            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
+            // 
+            // bunifuThinButton28
+            // 
+            this.bunifuThinButton28.ActiveBorderThickness = 1;
+            this.bunifuThinButton28.ActiveCornerRadius = 20;
+            this.bunifuThinButton28.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton28.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton28.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton28.BackgroundImage")));
+            this.bunifuThinButton28.ButtonText = "Search";
+            this.bunifuThinButton28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton28.IdleBorderThickness = 1;
+            this.bunifuThinButton28.IdleCornerRadius = 20;
+            this.bunifuThinButton28.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton28.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton28.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton28.Location = new System.Drawing.Point(44, 61);
+            this.bunifuThinButton28.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton28.Name = "bunifuThinButton28";
+            this.bunifuThinButton28.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton28.TabIndex = 32;
+            this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton28.Click += new System.EventHandler(this.bunifuThinButton28_Click);
+            // 
             // dateto
             // 
             this.dateto.CustomFormat = "yyyy-MM-dd";
@@ -2528,6 +3246,26 @@
             this.label76.Size = new System.Drawing.Size(24, 12);
             this.label76.TabIndex = 38;
             this.label76.Text = "PDF";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::inventory.Properties.Resources._31;
+            this.pictureBox12.Location = new System.Drawing.Point(23, 22);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox12.TabIndex = 27;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::inventory.Properties.Resources.icons8_Microsoft_Excel_48;
+            this.pictureBox13.Location = new System.Drawing.Point(102, 22);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox13.TabIndex = 26;
+            this.pictureBox13.TabStop = false;
             // 
             // datefrom
             // 
@@ -2655,6 +3393,58 @@
             this.lblid.TabIndex = 164;
             this.lblid.Text = "10";
             // 
+            // btnupdateie
+            // 
+            this.btnupdateie.ActiveBorderThickness = 1;
+            this.btnupdateie.ActiveCornerRadius = 20;
+            this.btnupdateie.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdateie.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdateie.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdateie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdateie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdateie.BackgroundImage")));
+            this.btnupdateie.ButtonText = "Update";
+            this.btnupdateie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdateie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdateie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdateie.IdleBorderThickness = 1;
+            this.btnupdateie.IdleCornerRadius = 20;
+            this.btnupdateie.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdateie.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdateie.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdateie.Location = new System.Drawing.Point(133, 219);
+            this.btnupdateie.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdateie.Name = "btnupdateie";
+            this.btnupdateie.Size = new System.Drawing.Size(116, 41);
+            this.btnupdateie.TabIndex = 163;
+            this.btnupdateie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdateie.Click += new System.EventHandler(this.btnupdateie_Click);
+            // 
+            // btnaddex
+            // 
+            this.btnaddex.ActiveBorderThickness = 1;
+            this.btnaddex.ActiveCornerRadius = 20;
+            this.btnaddex.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddex.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddex.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnaddex.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddex.BackgroundImage")));
+            this.btnaddex.ButtonText = "Add";
+            this.btnaddex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddex.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddex.IdleBorderThickness = 1;
+            this.btnaddex.IdleCornerRadius = 20;
+            this.btnaddex.IdleFillColor = System.Drawing.Color.White;
+            this.btnaddex.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddex.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddex.Location = new System.Drawing.Point(7, 219);
+            this.btnaddex.Margin = new System.Windows.Forms.Padding(5);
+            this.btnaddex.Name = "btnaddex";
+            this.btnaddex.Size = new System.Drawing.Size(116, 41);
+            this.btnaddex.TabIndex = 162;
+            this.btnaddex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnaddex.Click += new System.EventHandler(this.btnaddex_Click);
+            // 
             // panel26
             // 
             this.panel26.Controls.Add(this.panel27);
@@ -2719,6 +3509,16 @@
             this.radgenchat.TabStop = true;
             this.radgenchat.Text = "Monthly";
             this.radgenchat.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
+            this.pictureBox2.Location = new System.Drawing.Point(393, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox2.TabIndex = 161;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // label60
             // 
@@ -2820,6 +3620,26 @@
             this.label99.TabIndex = 156;
             this.label99.Text = "PDF";
             // 
+            // btnseized
+            // 
+            this.btnseized.Image = global::inventory.Properties.Resources._3;
+            this.btnseized.Location = new System.Drawing.Point(143, 19);
+            this.btnseized.Name = "btnseized";
+            this.btnseized.Size = new System.Drawing.Size(48, 48);
+            this.btnseized.TabIndex = 155;
+            this.btnseized.TabStop = false;
+            this.btnseized.Click += new System.EventHandler(this.btnseized_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::inventory.Properties.Resources.icons8_Microsoft_Excel_48;
+            this.pictureBox15.Location = new System.Drawing.Point(222, 19);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox15.TabIndex = 154;
+            this.pictureBox15.TabStop = false;
+            // 
             // dateseizedselect
             // 
             this.dateseizedselect.CustomFormat = "yyyy-MM-dd";
@@ -2855,6 +3675,32 @@
             this.dateie.Name = "dateie";
             this.dateie.Size = new System.Drawing.Size(155, 20);
             this.dateie.TabIndex = 149;
+            // 
+            // btndeleteei
+            // 
+            this.btndeleteei.ActiveBorderThickness = 1;
+            this.btndeleteei.ActiveCornerRadius = 20;
+            this.btndeleteei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteei.ActiveForecolor = System.Drawing.Color.White;
+            this.btndeleteei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndeleteei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteei.BackgroundImage")));
+            this.btndeleteei.ButtonText = "Delete";
+            this.btndeleteei.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndeleteei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeleteei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteei.IdleBorderThickness = 1;
+            this.btndeleteei.IdleCornerRadius = 20;
+            this.btndeleteei.IdleFillColor = System.Drawing.Color.White;
+            this.btndeleteei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteei.Location = new System.Drawing.Point(259, 219);
+            this.btndeleteei.Margin = new System.Windows.Forms.Padding(5);
+            this.btndeleteei.Name = "btndeleteei";
+            this.btndeleteei.Size = new System.Drawing.Size(116, 41);
+            this.btndeleteei.TabIndex = 139;
+            this.btndeleteei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndeleteei.Click += new System.EventHandler(this.btndeleteei_Click);
             // 
             // label62
             // 
@@ -2990,6 +3836,16 @@
             this.Spanel.Size = new System.Drawing.Size(629, 267);
             this.Spanel.TabIndex = 161;
             // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel19.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_Bag;
+            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel19.Location = new System.Drawing.Point(392, 140);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(53, 47);
+            this.panel19.TabIndex = 19;
+            // 
             // panel20
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -3023,6 +3879,27 @@
             this.lblbtot.Size = new System.Drawing.Size(76, 22);
             this.lblbtot.TabIndex = 9;
             this.lblbtot.Text = "200000";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel16.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Bag;
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel16.Location = new System.Drawing.Point(392, 10);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(53, 47);
+            this.panel16.TabIndex = 17;
             // 
             // panel18
             // 
@@ -3058,6 +3935,27 @@
             this.lblpcount.TabIndex = 9;
             this.lblpcount.Text = "15000";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel13.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box1;
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel13.Location = new System.Drawing.Point(66, 10);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(53, 47);
+            this.panel13.TabIndex = 15;
+            // 
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -3091,6 +3989,27 @@
             this.lblcount.Size = new System.Drawing.Size(21, 22);
             this.lblcount.TabIndex = 9;
             this.lblcount.Text = "5";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel17.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_2;
+            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel17.Location = new System.Drawing.Point(65, 140);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(53, 47);
+            this.panel17.TabIndex = 13;
             // 
             // panel15
             // 
@@ -3126,6 +4045,17 @@
             this.lbldate.TabIndex = 9;
             this.lbldate.Text = "2017-08-12";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.MistyRose;
@@ -3144,6 +4074,21 @@
             this.label70.Size = new System.Drawing.Size(14, 108);
             this.label70.TabIndex = 6;
             this.label70.Text = "D\r\nA\r\nS\r\nH\r\nB\r\nO\r\nA\r\nR\r\nD\r\n";
+            // 
+            // bunifuImageButton5
+            // 
+            this.bunifuImageButton5.BackColor = System.Drawing.Color.MistyRose;
+            this.bunifuImageButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuImageButton5.Image = global::inventory.Properties.Resources.Icons8_Windows_8_Editing_Line_Width;
+            this.bunifuImageButton5.ImageActive = null;
+            this.bunifuImageButton5.Location = new System.Drawing.Point(0, 0);
+            this.bunifuImageButton5.Name = "bunifuImageButton5";
+            this.bunifuImageButton5.Size = new System.Drawing.Size(29, 38);
+            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton5.TabIndex = 5;
+            this.bunifuImageButton5.TabStop = false;
+            this.bunifuImageButton5.Zoom = 10;
+            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click_1);
             // 
             // cmdaccno
             // 
@@ -3238,6 +4183,32 @@
             this.radbpa.UseVisualStyleBackColor = true;
             this.radbpa.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
+            // btnaddbank
+            // 
+            this.btnaddbank.ActiveBorderThickness = 1;
+            this.btnaddbank.ActiveCornerRadius = 20;
+            this.btnaddbank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddbank.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddbank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddbank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnaddbank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddbank.BackgroundImage")));
+            this.btnaddbank.ButtonText = "Add";
+            this.btnaddbank.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddbank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddbank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddbank.IdleBorderThickness = 1;
+            this.btnaddbank.IdleCornerRadius = 20;
+            this.btnaddbank.IdleFillColor = System.Drawing.Color.White;
+            this.btnaddbank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddbank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddbank.Location = new System.Drawing.Point(101, 244);
+            this.btnaddbank.Margin = new System.Windows.Forms.Padding(5);
+            this.btnaddbank.Name = "btnaddbank";
+            this.btnaddbank.Size = new System.Drawing.Size(116, 41);
+            this.btnaddbank.TabIndex = 152;
+            this.btnaddbank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnaddbank.Click += new System.EventHandler(this.btnaddbank_Click);
+            // 
             // tblbank
             // 
             this.tblbank.AllowUserToAddRows = false;
@@ -3271,6 +4242,31 @@
             this.tblbank.TabIndex = 151;
             this.tblbank.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblbank_CellContentClick);
             // 
+            // bunifuThinButton222
+            // 
+            this.bunifuThinButton222.ActiveBorderThickness = 1;
+            this.bunifuThinButton222.ActiveCornerRadius = 20;
+            this.bunifuThinButton222.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton222.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton222.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton222.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton222.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton222.BackgroundImage")));
+            this.bunifuThinButton222.ButtonText = "Loan Summary";
+            this.bunifuThinButton222.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton222.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton222.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton222.IdleBorderThickness = 1;
+            this.bunifuThinButton222.IdleCornerRadius = 20;
+            this.bunifuThinButton222.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton222.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton222.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton222.Location = new System.Drawing.Point(479, 244);
+            this.bunifuThinButton222.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton222.Name = "bunifuThinButton222";
+            this.bunifuThinButton222.Size = new System.Drawing.Size(147, 41);
+            this.bunifuThinButton222.TabIndex = 139;
+            this.bunifuThinButton222.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // datetak
             // 
             this.datetak.CustomFormat = "yyyy-MM-dd";
@@ -3291,6 +4287,58 @@
             this.datecom.Name = "datecom";
             this.datecom.Size = new System.Drawing.Size(137, 20);
             this.datecom.TabIndex = 143;
+            // 
+            // bunifuThinButton219
+            // 
+            this.bunifuThinButton219.ActiveBorderThickness = 1;
+            this.bunifuThinButton219.ActiveCornerRadius = 20;
+            this.bunifuThinButton219.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton219.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton219.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton219.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton219.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton219.BackgroundImage")));
+            this.bunifuThinButton219.ButtonText = "Delete";
+            this.bunifuThinButton219.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton219.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton219.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton219.IdleBorderThickness = 1;
+            this.bunifuThinButton219.IdleCornerRadius = 20;
+            this.bunifuThinButton219.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton219.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton219.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton219.Location = new System.Drawing.Point(353, 244);
+            this.bunifuThinButton219.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton219.Name = "bunifuThinButton219";
+            this.bunifuThinButton219.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton219.TabIndex = 136;
+            this.bunifuThinButton219.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton219.Click += new System.EventHandler(this.bunifuThinButton219_Click);
+            // 
+            // btnupdatebank
+            // 
+            this.btnupdatebank.ActiveBorderThickness = 1;
+            this.btnupdatebank.ActiveCornerRadius = 20;
+            this.btnupdatebank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdatebank.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdatebank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdatebank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdatebank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdatebank.BackgroundImage")));
+            this.btnupdatebank.ButtonText = "Update";
+            this.btnupdatebank.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdatebank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdatebank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdatebank.IdleBorderThickness = 1;
+            this.btnupdatebank.IdleCornerRadius = 20;
+            this.btnupdatebank.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdatebank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdatebank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdatebank.Location = new System.Drawing.Point(227, 244);
+            this.btnupdatebank.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdatebank.Name = "btnupdatebank";
+            this.btnupdatebank.Size = new System.Drawing.Size(116, 41);
+            this.btnupdatebank.TabIndex = 134;
+            this.btnupdatebank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdatebank.Click += new System.EventHandler(this.btnupdatebank_Click);
             // 
             // txtlamt
             // 
@@ -3558,6 +4606,16 @@
             this.cmbchart.TabIndex = 157;
             this.cmbchart.Text = "Select an option";
             // 
+            // btnchartgene
+            // 
+            this.btnchartgene.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
+            this.btnchartgene.Location = new System.Drawing.Point(285, 19);
+            this.btnchartgene.Name = "btnchartgene";
+            this.btnchartgene.Size = new System.Drawing.Size(41, 39);
+            this.btnchartgene.TabIndex = 156;
+            this.btnchartgene.TabStop = false;
+            this.btnchartgene.Click += new System.EventHandler(this.btnchartgene_Click);
+            // 
             // label68
             // 
             this.label68.AutoSize = true;
@@ -3639,6 +4697,26 @@
             this.cmbmonthselect.TabIndex = 154;
             this.cmbmonthselect.Text = "Select an option";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Down;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Location = new System.Drawing.Point(340, 160);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(53, 47);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel21.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Up;
+            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel21.Location = new System.Drawing.Point(85, 160);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(53, 47);
+            this.panel21.TabIndex = 151;
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -3673,6 +4751,17 @@
             this.label73.TabIndex = 11;
             this.label73.Text = "Net Loss";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
             // panel22
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -3706,6 +4795,17 @@
             this.label75.Size = new System.Drawing.Size(89, 23);
             this.label75.TabIndex = 12;
             this.label75.Text = "Net Profit";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox8.TabIndex = 8;
+            this.pictureBox8.TabStop = false;
             // 
             // label64
             // 
@@ -3774,6 +4874,25 @@
             this.label101.TabIndex = 42;
             this.label101.Text = "PDF";
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::inventory.Properties.Resources._3;
+            this.pictureBox16.Location = new System.Drawing.Point(36, 24);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox16.TabIndex = 41;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::inventory.Properties.Resources.icons8_Microsoft_Excel_48;
+            this.pictureBox17.Location = new System.Drawing.Point(115, 24);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox17.TabIndex = 40;
+            this.pictureBox17.TabStop = false;
+            // 
             // radfin
             // 
             this.radfin.AutoSize = true;
@@ -3832,6 +4951,25 @@
             this.label107.TabIndex = 49;
             this.label107.Text = "EXCEL";
             // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(44, 29);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox23.TabIndex = 47;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
+            this.pictureBox24.Location = new System.Drawing.Point(107, 29);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox24.TabIndex = 46;
+            this.pictureBox24.TabStop = false;
+            // 
             // label108
             // 
             this.label108.AutoSize = true;
@@ -3867,6 +5005,16 @@
             this.label106.TabIndex = 45;
             this.label106.Text = "TEXT";
             // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::inventory.Properties.Resources.text_icon;
+            this.pictureBox22.Location = new System.Drawing.Point(138, 29);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox22.TabIndex = 44;
+            this.pictureBox22.TabStop = false;
+            // 
             // label104
             // 
             this.label104.AutoSize = true;
@@ -3877,6 +5025,15 @@
             this.label104.TabIndex = 43;
             this.label104.Text = "EXCEL";
             // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(10, 29);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox20.TabIndex = 41;
+            this.pictureBox20.TabStop = false;
+            // 
             // label105
             // 
             this.label105.AutoSize = true;
@@ -3886,6 +5043,16 @@
             this.label105.Size = new System.Drawing.Size(24, 12);
             this.label105.TabIndex = 42;
             this.label105.Text = "PDF";
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Location = new System.Drawing.Point(73, 29);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox21.TabIndex = 40;
+            this.pictureBox21.TabStop = false;
             // 
             // groupBox6
             // 
@@ -3920,6 +5087,25 @@
             this.label103.TabIndex = 42;
             this.label103.Text = "PDF";
             // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(37, 29);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox18.TabIndex = 41;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(116, 29);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox19.TabIndex = 40;
+            this.pictureBox19.TabStop = false;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.pictureBox29);
@@ -3934,6 +5120,28 @@
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Annual Financial Statement";
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::inventory.Properties.Resources.minus;
+            this.pictureBox29.Location = new System.Drawing.Point(231, 54);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox29.TabIndex = 158;
+            this.pictureBox29.TabStop = false;
+            this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::inventory.Properties.Resources.plus;
+            this.pictureBox28.Location = new System.Drawing.Point(187, 53);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox28.TabIndex = 157;
+            this.pictureBox28.TabStop = false;
+            this.pictureBox28.Click += new System.EventHandler(this.pictureBox28_Click);
             // 
             // txtaddy
             // 
@@ -3968,1232 +5176,6 @@
             this.cmbyear.TabIndex = 57;
             this.cmbyear.Text = "Select an option";
             // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(5, 23);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(38, 18);
-            this.label67.TabIndex = 0;
-            this.label67.Text = "Year";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // btninvoice
-            // 
-            this.btninvoice.ActiveBorderThickness = 1;
-            this.btninvoice.ActiveCornerRadius = 20;
-            this.btninvoice.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btninvoice.ActiveForecolor = System.Drawing.Color.White;
-            this.btninvoice.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btninvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btninvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninvoice.BackgroundImage")));
-            this.btninvoice.ButtonText = "Invoice";
-            this.btninvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btninvoice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btninvoice.IdleBorderThickness = 1;
-            this.btninvoice.IdleCornerRadius = 20;
-            this.btninvoice.IdleFillColor = System.Drawing.Color.White;
-            this.btninvoice.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btninvoice.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btninvoice.Location = new System.Drawing.Point(50, 368);
-            this.btninvoice.Margin = new System.Windows.Forms.Padding(5);
-            this.btninvoice.Name = "btninvoice";
-            this.btninvoice.Size = new System.Drawing.Size(105, 41);
-            this.btninvoice.TabIndex = 57;
-            this.btninvoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btninvoice.Click += new System.EventHandler(this.btninvoice_Click);
-            // 
-            // btncustomercopy
-            // 
-            this.btncustomercopy.ActiveBorderThickness = 1;
-            this.btncustomercopy.ActiveCornerRadius = 20;
-            this.btncustomercopy.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncustomercopy.ActiveForecolor = System.Drawing.Color.White;
-            this.btncustomercopy.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncustomercopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btncustomercopy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncustomercopy.BackgroundImage")));
-            this.btncustomercopy.ButtonText = "Customer Copy";
-            this.btncustomercopy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncustomercopy.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncustomercopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncustomercopy.IdleBorderThickness = 1;
-            this.btncustomercopy.IdleCornerRadius = 20;
-            this.btncustomercopy.IdleFillColor = System.Drawing.Color.White;
-            this.btncustomercopy.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncustomercopy.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncustomercopy.Location = new System.Drawing.Point(207, 368);
-            this.btncustomercopy.Margin = new System.Windows.Forms.Padding(5);
-            this.btncustomercopy.Name = "btncustomercopy";
-            this.btncustomercopy.Size = new System.Drawing.Size(151, 41);
-            this.btncustomercopy.TabIndex = 54;
-            this.btncustomercopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btncustomercopy.Click += new System.EventHandler(this.btncustomercopy_Click);
-            // 
-            // bunifuThinButton217
-            // 
-            this.bunifuThinButton217.ActiveBorderThickness = 1;
-            this.bunifuThinButton217.ActiveCornerRadius = 20;
-            this.bunifuThinButton217.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton217.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton217.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton217.BackgroundImage")));
-            this.bunifuThinButton217.ButtonText = "Company Copy";
-            this.bunifuThinButton217.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton217.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton217.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.IdleBorderThickness = 1;
-            this.bunifuThinButton217.IdleCornerRadius = 20;
-            this.bunifuThinButton217.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton217.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton217.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton217.Location = new System.Drawing.Point(406, 368);
-            this.bunifuThinButton217.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton217.Name = "bunifuThinButton217";
-            this.bunifuThinButton217.Size = new System.Drawing.Size(151, 41);
-            this.bunifuThinButton217.TabIndex = 53;
-            this.bunifuThinButton217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btniconfirm
-            // 
-            this.btniconfirm.ActiveBorderThickness = 1;
-            this.btniconfirm.ActiveCornerRadius = 20;
-            this.btniconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniconfirm.ActiveForecolor = System.Drawing.Color.White;
-            this.btniconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btniconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniconfirm.BackgroundImage")));
-            this.btniconfirm.ButtonText = "Confirm";
-            this.btniconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btniconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniconfirm.IdleBorderThickness = 1;
-            this.btniconfirm.IdleCornerRadius = 20;
-            this.btniconfirm.IdleFillColor = System.Drawing.Color.White;
-            this.btniconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniconfirm.Location = new System.Drawing.Point(82, 317);
-            this.btniconfirm.Margin = new System.Windows.Forms.Padding(5);
-            this.btniconfirm.Name = "btniconfirm";
-            this.btniconfirm.Size = new System.Drawing.Size(106, 41);
-            this.btniconfirm.TabIndex = 45;
-            this.btniconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btniconfirm.Click += new System.EventHandler(this.btniconfirm_Click);
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Clear";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton24.Location = new System.Drawing.Point(360, 317);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(105, 41);
-            this.bunifuThinButton24.TabIndex = 37;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
-            // 
-            // btnSuspend
-            // 
-            this.btnSuspend.ActiveBorderThickness = 1;
-            this.btnSuspend.ActiveCornerRadius = 20;
-            this.btnSuspend.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnSuspend.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSuspend.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnSuspend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnSuspend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuspend.BackgroundImage")));
-            this.btnSuspend.ButtonText = "Suspend";
-            this.btnSuspend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuspend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnSuspend.IdleBorderThickness = 1;
-            this.btnSuspend.IdleCornerRadius = 20;
-            this.btnSuspend.IdleFillColor = System.Drawing.Color.White;
-            this.btnSuspend.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnSuspend.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnSuspend.Location = new System.Drawing.Point(225, 317);
-            this.btnSuspend.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSuspend.Name = "btnSuspend";
-            this.btnSuspend.Size = new System.Drawing.Size(97, 41);
-            this.btnSuspend.TabIndex = 35;
-            this.btnSuspend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSuspend.Click += new System.EventHandler(this.bunifuThinButton22_Click);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuImageButton1.Image = global::inventory.Properties.Resources.plus;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(144, 25);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 26);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 80;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // btnsearchitem
-            // 
-            this.btnsearchitem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnsearchitem.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.btnsearchitem.ImageActive = null;
-            this.btnsearchitem.Location = new System.Drawing.Point(214, 52);
-            this.btnsearchitem.Name = "btnsearchitem";
-            this.btnsearchitem.Size = new System.Drawing.Size(30, 26);
-            this.btnsearchitem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnsearchitem.TabIndex = 78;
-            this.btnsearchitem.TabStop = false;
-            this.btnsearchitem.Zoom = 10;
-            this.btnsearchitem.Click += new System.EventHandler(this.btnsearchitem_Click);
-            // 
-            // btnadd
-            // 
-            this.btnadd.ActiveBorderThickness = 1;
-            this.btnadd.ActiveCornerRadius = 20;
-            this.btnadd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnadd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnadd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadd.BackgroundImage")));
-            this.btnadd.ButtonText = "Add";
-            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.IdleBorderThickness = 1;
-            this.btnadd.IdleCornerRadius = 20;
-            this.btnadd.IdleFillColor = System.Drawing.Color.White;
-            this.btnadd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnadd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnadd.Location = new System.Drawing.Point(21, 388);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(116, 41);
-            this.btnadd.TabIndex = 20;
-            this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.ActiveBorderThickness = 1;
-            this.btndelete.ActiveCornerRadius = 20;
-            this.btndelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btndelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndelete.BackgroundImage")));
-            this.btndelete.ButtonText = "Delete";
-            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.IdleBorderThickness = 1;
-            this.btndelete.IdleCornerRadius = 20;
-            this.btndelete.IdleFillColor = System.Drawing.Color.White;
-            this.btndelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndelete.Location = new System.Drawing.Point(273, 388);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(5);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(116, 41);
-            this.btndelete.TabIndex = 22;
-            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndelete.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.ActiveBorderThickness = 1;
-            this.btnupdate.ActiveCornerRadius = 20;
-            this.btnupdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdate.BackgroundImage")));
-            this.btnupdate.ButtonText = "Update";
-            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.IdleBorderThickness = 1;
-            this.btnupdate.IdleCornerRadius = 20;
-            this.btnupdate.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdate.Location = new System.Drawing.Point(147, 388);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(116, 41);
-            this.btnupdate.TabIndex = 23;
-            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
-            // 
-            // btnexecute
-            // 
-            this.btnexecute.ActiveBorderThickness = 1;
-            this.btnexecute.ActiveCornerRadius = 20;
-            this.btnexecute.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnexecute.ActiveForecolor = System.Drawing.Color.White;
-            this.btnexecute.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnexecute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnexecute.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexecute.BackgroundImage")));
-            this.btnexecute.ButtonText = "Execute";
-            this.btnexecute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexecute.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexecute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnexecute.IdleBorderThickness = 1;
-            this.btnexecute.IdleCornerRadius = 20;
-            this.btnexecute.IdleFillColor = System.Drawing.Color.White;
-            this.btnexecute.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnexecute.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnexecute.Location = new System.Drawing.Point(399, 388);
-            this.btnexecute.Margin = new System.Windows.Forms.Padding(5);
-            this.btnexecute.Name = "btnexecute";
-            this.btnexecute.Size = new System.Drawing.Size(116, 41);
-            this.btnexecute.TabIndex = 24;
-            this.btnexecute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnexecute.Click += new System.EventHandler(this.btnexecute_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::inventory.Properties.Resources.Aha_Soft_Business_Toolbar_Payment;
-            this.pictureBox1.Location = new System.Drawing.Point(126, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 30);
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btniclear
-            // 
-            this.btniclear.ActiveBorderThickness = 1;
-            this.btniclear.ActiveCornerRadius = 20;
-            this.btniclear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniclear.ActiveForecolor = System.Drawing.Color.White;
-            this.btniclear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btniclear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniclear.BackgroundImage")));
-            this.btniclear.ButtonText = "Clear";
-            this.btniclear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btniclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniclear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniclear.IdleBorderThickness = 1;
-            this.btniclear.IdleCornerRadius = 20;
-            this.btniclear.IdleFillColor = System.Drawing.Color.White;
-            this.btniclear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniclear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniclear.Location = new System.Drawing.Point(33, 193);
-            this.btniclear.Margin = new System.Windows.Forms.Padding(5);
-            this.btniclear.Name = "btniclear";
-            this.btniclear.Size = new System.Drawing.Size(116, 41);
-            this.btniclear.TabIndex = 35;
-            this.btniclear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btniclear.Click += new System.EventHandler(this.btniclear_Click);
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Location = new System.Drawing.Point(754, 115);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(37, 31);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox27.TabIndex = 92;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Location = new System.Drawing.Point(754, 148);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(37, 31);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox26.TabIndex = 91;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Location = new System.Drawing.Point(214, 23);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(37, 31);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox25.TabIndex = 90;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Click += new System.EventHandler(this.pictureBox25_Click);
-            // 
-            // bunifuImageButton3
-            // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuImageButton3.Image = global::inventory.Properties.Resources.Treetog_Junior_User_group;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(298, 23);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(32, 26);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 87;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
-            // 
-            // btnnicsearch
-            // 
-            this.btnnicsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnnicsearch.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.btnnicsearch.ImageActive = null;
-            this.btnnicsearch.Location = new System.Drawing.Point(257, 23);
-            this.btnnicsearch.Name = "btnnicsearch";
-            this.btnnicsearch.Size = new System.Drawing.Size(30, 26);
-            this.btnnicsearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnnicsearch.TabIndex = 77;
-            this.btnnicsearch.TabStop = false;
-            this.btnnicsearch.Zoom = 10;
-            this.btnnicsearch.Click += new System.EventHandler(this.btnnicsearch_Click);
-            // 
-            // bunifuThinButton26
-            // 
-            this.bunifuThinButton26.ActiveBorderThickness = 1;
-            this.bunifuThinButton26.ActiveCornerRadius = 20;
-            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
-            this.bunifuThinButton26.ButtonText = "Clear";
-            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.IdleBorderThickness = 1;
-            this.bunifuThinButton26.IdleCornerRadius = 20;
-            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton26.Location = new System.Drawing.Point(421, 182);
-            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton26.Name = "bunifuThinButton26";
-            this.bunifuThinButton26.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton26.TabIndex = 36;
-            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton26.Click += new System.EventHandler(this.bunifuThinButton26_Click);
-            // 
-            // btnsuslist
-            // 
-            this.btnsuslist.ActiveBorderThickness = 1;
-            this.btnsuslist.ActiveCornerRadius = 20;
-            this.btnsuslist.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnsuslist.ActiveForecolor = System.Drawing.Color.White;
-            this.btnsuslist.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnsuslist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnsuslist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsuslist.BackgroundImage")));
-            this.btnsuslist.ButtonText = "Suspension List";
-            this.btnsuslist.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsuslist.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsuslist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnsuslist.IdleBorderThickness = 1;
-            this.btnsuslist.IdleCornerRadius = 20;
-            this.btnsuslist.IdleFillColor = System.Drawing.Color.White;
-            this.btnsuslist.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnsuslist.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnsuslist.Location = new System.Drawing.Point(547, 182);
-            this.btnsuslist.Margin = new System.Windows.Forms.Padding(5);
-            this.btnsuslist.Name = "btnsuslist";
-            this.btnsuslist.Size = new System.Drawing.Size(129, 41);
-            this.btnsuslist.TabIndex = 47;
-            this.btnsuslist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnsuslist.Click += new System.EventHandler(this.bunifuThinButton21_Click_1);
-            // 
-            // btncconfirm
-            // 
-            this.btncconfirm.ActiveBorderThickness = 1;
-            this.btncconfirm.ActiveCornerRadius = 20;
-            this.btncconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncconfirm.ActiveForecolor = System.Drawing.Color.White;
-            this.btncconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btncconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncconfirm.BackgroundImage")));
-            this.btncconfirm.ButtonText = "Update";
-            this.btncconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncconfirm.IdleBorderThickness = 1;
-            this.btncconfirm.IdleCornerRadius = 20;
-            this.btncconfirm.IdleFillColor = System.Drawing.Color.White;
-            this.btncconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncconfirm.Location = new System.Drawing.Point(295, 182);
-            this.btncconfirm.Margin = new System.Windows.Forms.Padding(5);
-            this.btncconfirm.Name = "btncconfirm";
-            this.btncconfirm.Size = new System.Drawing.Size(116, 41);
-            this.btncconfirm.TabIndex = 37;
-            this.btncconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btncconfirm.Click += new System.EventHandler(this.btncconfirm_Click);
-            // 
-            // piccus
-            // 
-            this.piccus.Location = new System.Drawing.Point(256, 105);
-            this.piccus.Name = "piccus";
-            this.piccus.Size = new System.Drawing.Size(37, 31);
-            this.piccus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.piccus.TabIndex = 91;
-            this.piccus.TabStop = false;
-            // 
-            // btnclearsei
-            // 
-            this.btnclearsei.ActiveBorderThickness = 1;
-            this.btnclearsei.ActiveCornerRadius = 20;
-            this.btnclearsei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnclearsei.ActiveForecolor = System.Drawing.Color.White;
-            this.btnclearsei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnclearsei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnclearsei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnclearsei.BackgroundImage")));
-            this.btnclearsei.ButtonText = "Clear";
-            this.btnclearsei.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnclearsei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclearsei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnclearsei.IdleBorderThickness = 1;
-            this.btnclearsei.IdleCornerRadius = 20;
-            this.btnclearsei.IdleFillColor = System.Drawing.Color.White;
-            this.btnclearsei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnclearsei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnclearsei.Location = new System.Drawing.Point(8, 260);
-            this.btnclearsei.Margin = new System.Windows.Forms.Padding(5);
-            this.btnclearsei.Name = "btnclearsei";
-            this.btnclearsei.Size = new System.Drawing.Size(116, 41);
-            this.btnclearsei.TabIndex = 60;
-            this.btnclearsei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnclearsei.Click += new System.EventHandler(this.btnclearsei_Click);
-            // 
-            // bunifuThinButton214
-            // 
-            this.bunifuThinButton214.Image = global::inventory.Properties.Resources._3;
-            this.bunifuThinButton214.Location = new System.Drawing.Point(140, 260);
-            this.bunifuThinButton214.Name = "bunifuThinButton214";
-            this.bunifuThinButton214.Size = new System.Drawing.Size(48, 48);
-            this.bunifuThinButton214.TabIndex = 58;
-            this.bunifuThinButton214.TabStop = false;
-            this.bunifuThinButton214.Click += new System.EventHandler(this.bunifuThinButton214_Click_1);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.Image = global::inventory.Properties.Resources.save1;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(434, 174);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(63, 46);
-            this.bunifuThinButton21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.bunifuThinButton21.TabIndex = 57;
-            this.bunifuThinButton21.TabStop = false;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click_3);
-            // 
-            // btngeneratesticker
-            // 
-            this.btngeneratesticker.Image = global::inventory.Properties.Resources.barcode;
-            this.btngeneratesticker.Location = new System.Drawing.Point(340, 175);
-            this.btngeneratesticker.Name = "btngeneratesticker";
-            this.btngeneratesticker.Size = new System.Drawing.Size(63, 46);
-            this.btngeneratesticker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btngeneratesticker.TabIndex = 56;
-            this.btngeneratesticker.TabStop = false;
-            this.btngeneratesticker.Click += new System.EventHandler(this.btngeneratesticker_Click);
-            // 
-            // puty
-            // 
-            this.puty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.puty.Location = new System.Drawing.Point(298, 11);
-            this.puty.Name = "puty";
-            this.puty.Size = new System.Drawing.Size(263, 158);
-            this.puty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.puty.TabIndex = 54;
-            this.puty.TabStop = false;
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel24.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Mail_Money;
-            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel24.Location = new System.Drawing.Point(307, 229);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(34, 34);
-            this.panel24.TabIndex = 49;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox11.Location = new System.Drawing.Point(294, 249);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(141, 59);
-            this.pictureBox11.TabIndex = 48;
-            this.pictureBox11.TabStop = false;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel23.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box;
-            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel23.Location = new System.Drawing.Point(462, 229);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(34, 34);
-            this.panel23.TabIndex = 46;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.White;
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox10.Location = new System.Drawing.Point(449, 248);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(141, 60);
-            this.pictureBox10.TabIndex = 16;
-            this.pictureBox10.TabStop = false;
-            // 
-            // btndeleteSeized
-            // 
-            this.btndeleteSeized.ActiveBorderThickness = 1;
-            this.btndeleteSeized.ActiveCornerRadius = 20;
-            this.btndeleteSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteSeized.ActiveForecolor = System.Drawing.Color.White;
-            this.btndeleteSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndeleteSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteSeized.BackgroundImage")));
-            this.btndeleteSeized.ButtonText = "Delete";
-            this.btndeleteSeized.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndeleteSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndeleteSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteSeized.IdleBorderThickness = 1;
-            this.btndeleteSeized.IdleCornerRadius = 20;
-            this.btndeleteSeized.IdleFillColor = System.Drawing.Color.White;
-            this.btndeleteSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteSeized.Location = new System.Drawing.Point(131, 214);
-            this.btndeleteSeized.Margin = new System.Windows.Forms.Padding(5);
-            this.btndeleteSeized.Name = "btndeleteSeized";
-            this.btndeleteSeized.Size = new System.Drawing.Size(116, 41);
-            this.btndeleteSeized.TabIndex = 43;
-            this.btndeleteSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndeleteSeized.Click += new System.EventHandler(this.btndeleteSeized_Click);
-            // 
-            // btnaddSeized
-            // 
-            this.btnaddSeized.ActiveBorderThickness = 1;
-            this.btnaddSeized.ActiveCornerRadius = 20;
-            this.btnaddSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddSeized.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnaddSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddSeized.BackgroundImage")));
-            this.btnaddSeized.ButtonText = "Add ";
-            this.btnaddSeized.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddSeized.IdleBorderThickness = 1;
-            this.btnaddSeized.IdleCornerRadius = 20;
-            this.btnaddSeized.IdleFillColor = System.Drawing.Color.White;
-            this.btnaddSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddSeized.Location = new System.Drawing.Point(8, 214);
-            this.btnaddSeized.Margin = new System.Windows.Forms.Padding(5);
-            this.btnaddSeized.Name = "btnaddSeized";
-            this.btnaddSeized.Size = new System.Drawing.Size(116, 41);
-            this.btnaddSeized.TabIndex = 40;
-            this.btnaddSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnaddSeized.Click += new System.EventHandler(this.btnaddSeized_Click);
-            // 
-            // btnprintrecep
-            // 
-            this.btnprintrecep.Image = global::inventory.Properties.Resources.receipt;
-            this.btnprintrecep.Location = new System.Drawing.Point(152, 138);
-            this.btnprintrecep.Name = "btnprintrecep";
-            this.btnprintrecep.Size = new System.Drawing.Size(48, 48);
-            this.btnprintrecep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnprintrecep.TabIndex = 46;
-            this.btnprintrecep.TabStop = false;
-            this.btnprintrecep.Click += new System.EventHandler(this.btnprintrecep_Click);
-            // 
-            // bunifuThinButton211
-            // 
-            this.bunifuThinButton211.ActiveBorderThickness = 1;
-            this.bunifuThinButton211.ActiveCornerRadius = 20;
-            this.bunifuThinButton211.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton211.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton211.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton211.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
-            this.bunifuThinButton211.ButtonText = "Update";
-            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton211.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton211.IdleBorderThickness = 1;
-            this.bunifuThinButton211.IdleCornerRadius = 20;
-            this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton211.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton211.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton211.Location = new System.Drawing.Point(12, 152);
-            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton211.Name = "bunifuThinButton211";
-            this.bunifuThinButton211.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton211.TabIndex = 38;
-            this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton211.Click += new System.EventHandler(this.bunifuThinButton211_Click);
-            // 
-            // bunifuThinButton29
-            // 
-            this.bunifuThinButton29.ActiveBorderThickness = 1;
-            this.bunifuThinButton29.ActiveCornerRadius = 20;
-            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
-            this.bunifuThinButton29.ButtonText = "Refresh";
-            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.IdleBorderThickness = 1;
-            this.bunifuThinButton29.IdleCornerRadius = 20;
-            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.Location = new System.Drawing.Point(177, 61);
-            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton29.Name = "bunifuThinButton29";
-            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton29.TabIndex = 33;
-            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
-            // 
-            // bunifuThinButton28
-            // 
-            this.bunifuThinButton28.ActiveBorderThickness = 1;
-            this.bunifuThinButton28.ActiveCornerRadius = 20;
-            this.bunifuThinButton28.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton28.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton28.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton28.BackgroundImage")));
-            this.bunifuThinButton28.ButtonText = "Search";
-            this.bunifuThinButton28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton28.IdleBorderThickness = 1;
-            this.bunifuThinButton28.IdleCornerRadius = 20;
-            this.bunifuThinButton28.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton28.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton28.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton28.Location = new System.Drawing.Point(44, 61);
-            this.bunifuThinButton28.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton28.Name = "bunifuThinButton28";
-            this.bunifuThinButton28.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton28.TabIndex = 32;
-            this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton28.Click += new System.EventHandler(this.bunifuThinButton28_Click);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::inventory.Properties.Resources._31;
-            this.pictureBox12.Location = new System.Drawing.Point(23, 22);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox12.TabIndex = 27;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::inventory.Properties.Resources.icons8_Microsoft_Excel_48;
-            this.pictureBox13.Location = new System.Drawing.Point(102, 22);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox13.TabIndex = 26;
-            this.pictureBox13.TabStop = false;
-            // 
-            // btnupdateie
-            // 
-            this.btnupdateie.ActiveBorderThickness = 1;
-            this.btnupdateie.ActiveCornerRadius = 20;
-            this.btnupdateie.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdateie.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdateie.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdateie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdateie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdateie.BackgroundImage")));
-            this.btnupdateie.ButtonText = "Update";
-            this.btnupdateie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdateie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdateie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdateie.IdleBorderThickness = 1;
-            this.btnupdateie.IdleCornerRadius = 20;
-            this.btnupdateie.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdateie.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdateie.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdateie.Location = new System.Drawing.Point(133, 219);
-            this.btnupdateie.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdateie.Name = "btnupdateie";
-            this.btnupdateie.Size = new System.Drawing.Size(116, 41);
-            this.btnupdateie.TabIndex = 163;
-            this.btnupdateie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdateie.Click += new System.EventHandler(this.btnupdateie_Click);
-            // 
-            // btnaddex
-            // 
-            this.btnaddex.ActiveBorderThickness = 1;
-            this.btnaddex.ActiveCornerRadius = 20;
-            this.btnaddex.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddex.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddex.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnaddex.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddex.BackgroundImage")));
-            this.btnaddex.ButtonText = "Add";
-            this.btnaddex.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddex.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddex.IdleBorderThickness = 1;
-            this.btnaddex.IdleCornerRadius = 20;
-            this.btnaddex.IdleFillColor = System.Drawing.Color.White;
-            this.btnaddex.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddex.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddex.Location = new System.Drawing.Point(7, 219);
-            this.btnaddex.Margin = new System.Windows.Forms.Padding(5);
-            this.btnaddex.Name = "btnaddex";
-            this.btnaddex.Size = new System.Drawing.Size(116, 41);
-            this.btnaddex.TabIndex = 162;
-            this.btnaddex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnaddex.Click += new System.EventHandler(this.btnaddex_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
-            this.pictureBox2.Location = new System.Drawing.Point(393, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox2.TabIndex = 161;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
-            // 
-            // btnseized
-            // 
-            this.btnseized.Image = global::inventory.Properties.Resources._3;
-            this.btnseized.Location = new System.Drawing.Point(143, 19);
-            this.btnseized.Name = "btnseized";
-            this.btnseized.Size = new System.Drawing.Size(48, 48);
-            this.btnseized.TabIndex = 155;
-            this.btnseized.TabStop = false;
-            this.btnseized.Click += new System.EventHandler(this.btnseized_Click);
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::inventory.Properties.Resources.icons8_Microsoft_Excel_48;
-            this.pictureBox15.Location = new System.Drawing.Point(222, 19);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox15.TabIndex = 154;
-            this.pictureBox15.TabStop = false;
-            // 
-            // btndeleteei
-            // 
-            this.btndeleteei.ActiveBorderThickness = 1;
-            this.btndeleteei.ActiveCornerRadius = 20;
-            this.btndeleteei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteei.ActiveForecolor = System.Drawing.Color.White;
-            this.btndeleteei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndeleteei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteei.BackgroundImage")));
-            this.btndeleteei.ButtonText = "Delete";
-            this.btndeleteei.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndeleteei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndeleteei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteei.IdleBorderThickness = 1;
-            this.btndeleteei.IdleCornerRadius = 20;
-            this.btndeleteei.IdleFillColor = System.Drawing.Color.White;
-            this.btndeleteei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteei.Location = new System.Drawing.Point(259, 219);
-            this.btndeleteei.Margin = new System.Windows.Forms.Padding(5);
-            this.btndeleteei.Name = "btndeleteei";
-            this.btndeleteei.Size = new System.Drawing.Size(116, 41);
-            this.btndeleteei.TabIndex = 139;
-            this.btndeleteei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndeleteei.Click += new System.EventHandler(this.btndeleteei_Click);
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel19.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_Bag;
-            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel19.Location = new System.Drawing.Point(392, 140);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(53, 47);
-            this.panel19.TabIndex = 19;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel16.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Bag;
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel16.Location = new System.Drawing.Point(392, 10);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(53, 47);
-            this.panel16.TabIndex = 17;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel13.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box1;
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel13.Location = new System.Drawing.Point(66, 10);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(53, 47);
-            this.panel13.TabIndex = 15;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.SlateBlue;
-            this.panel17.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_2;
-            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel17.Location = new System.Drawing.Point(65, 140);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(53, 47);
-            this.panel17.TabIndex = 13;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // bunifuImageButton5
-            // 
-            this.bunifuImageButton5.BackColor = System.Drawing.Color.MistyRose;
-            this.bunifuImageButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuImageButton5.Image = global::inventory.Properties.Resources.Icons8_Windows_8_Editing_Line_Width;
-            this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(0, 0);
-            this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(29, 38);
-            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton5.TabIndex = 5;
-            this.bunifuImageButton5.TabStop = false;
-            this.bunifuImageButton5.Zoom = 10;
-            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click_1);
-            // 
-            // btnaddbank
-            // 
-            this.btnaddbank.ActiveBorderThickness = 1;
-            this.btnaddbank.ActiveCornerRadius = 20;
-            this.btnaddbank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddbank.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddbank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddbank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnaddbank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddbank.BackgroundImage")));
-            this.btnaddbank.ButtonText = "Add";
-            this.btnaddbank.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddbank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddbank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddbank.IdleBorderThickness = 1;
-            this.btnaddbank.IdleCornerRadius = 20;
-            this.btnaddbank.IdleFillColor = System.Drawing.Color.White;
-            this.btnaddbank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddbank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddbank.Location = new System.Drawing.Point(101, 244);
-            this.btnaddbank.Margin = new System.Windows.Forms.Padding(5);
-            this.btnaddbank.Name = "btnaddbank";
-            this.btnaddbank.Size = new System.Drawing.Size(116, 41);
-            this.btnaddbank.TabIndex = 152;
-            this.btnaddbank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnaddbank.Click += new System.EventHandler(this.btnaddbank_Click);
-            // 
-            // bunifuThinButton222
-            // 
-            this.bunifuThinButton222.ActiveBorderThickness = 1;
-            this.bunifuThinButton222.ActiveCornerRadius = 20;
-            this.bunifuThinButton222.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton222.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton222.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton222.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton222.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton222.BackgroundImage")));
-            this.bunifuThinButton222.ButtonText = "Loan Summary";
-            this.bunifuThinButton222.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton222.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton222.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton222.IdleBorderThickness = 1;
-            this.bunifuThinButton222.IdleCornerRadius = 20;
-            this.bunifuThinButton222.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton222.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton222.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton222.Location = new System.Drawing.Point(479, 244);
-            this.bunifuThinButton222.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton222.Name = "bunifuThinButton222";
-            this.bunifuThinButton222.Size = new System.Drawing.Size(147, 41);
-            this.bunifuThinButton222.TabIndex = 139;
-            this.bunifuThinButton222.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton219
-            // 
-            this.bunifuThinButton219.ActiveBorderThickness = 1;
-            this.bunifuThinButton219.ActiveCornerRadius = 20;
-            this.bunifuThinButton219.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton219.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton219.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton219.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton219.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton219.BackgroundImage")));
-            this.bunifuThinButton219.ButtonText = "Delete";
-            this.bunifuThinButton219.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton219.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton219.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton219.IdleBorderThickness = 1;
-            this.bunifuThinButton219.IdleCornerRadius = 20;
-            this.bunifuThinButton219.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton219.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton219.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton219.Location = new System.Drawing.Point(353, 244);
-            this.bunifuThinButton219.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton219.Name = "bunifuThinButton219";
-            this.bunifuThinButton219.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton219.TabIndex = 136;
-            this.bunifuThinButton219.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton219.Click += new System.EventHandler(this.bunifuThinButton219_Click);
-            // 
-            // btnupdatebank
-            // 
-            this.btnupdatebank.ActiveBorderThickness = 1;
-            this.btnupdatebank.ActiveCornerRadius = 20;
-            this.btnupdatebank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdatebank.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdatebank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdatebank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdatebank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdatebank.BackgroundImage")));
-            this.btnupdatebank.ButtonText = "Update";
-            this.btnupdatebank.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdatebank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdatebank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdatebank.IdleBorderThickness = 1;
-            this.btnupdatebank.IdleCornerRadius = 20;
-            this.btnupdatebank.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdatebank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdatebank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdatebank.Location = new System.Drawing.Point(227, 244);
-            this.btnupdatebank.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdatebank.Name = "btnupdatebank";
-            this.btnupdatebank.Size = new System.Drawing.Size(116, 41);
-            this.btnupdatebank.TabIndex = 134;
-            this.btnupdatebank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdatebank.Click += new System.EventHandler(this.btnupdatebank_Click);
-            // 
-            // btnchartgene
-            // 
-            this.btnchartgene.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
-            this.btnchartgene.Location = new System.Drawing.Point(285, 19);
-            this.btnchartgene.Name = "btnchartgene";
-            this.btnchartgene.Size = new System.Drawing.Size(41, 39);
-            this.btnchartgene.TabIndex = 156;
-            this.btnchartgene.TabStop = false;
-            this.btnchartgene.Click += new System.EventHandler(this.btnchartgene_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Down;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(340, 160);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(53, 47);
-            this.panel2.TabIndex = 19;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel21.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Up;
-            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel21.Location = new System.Drawing.Point(85, 160);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(53, 47);
-            this.panel21.TabIndex = 151;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.White;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::inventory.Properties.Resources._3;
-            this.pictureBox16.Location = new System.Drawing.Point(36, 24);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox16.TabIndex = 41;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::inventory.Properties.Resources.icons8_Microsoft_Excel_48;
-            this.pictureBox17.Location = new System.Drawing.Point(115, 24);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox17.TabIndex = 40;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(44, 29);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox23.TabIndex = 47;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(107, 29);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox24.TabIndex = 46;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::inventory.Properties.Resources.text_icon;
-            this.pictureBox22.Location = new System.Drawing.Point(138, 29);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox22.TabIndex = 44;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(10, 29);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox20.TabIndex = 41;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(73, 29);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox21.TabIndex = 40;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(37, 29);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox18.TabIndex = 41;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(116, 29);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox19.TabIndex = 40;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::inventory.Properties.Resources.minus;
-            this.pictureBox29.Location = new System.Drawing.Point(231, 54);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox29.TabIndex = 158;
-            this.pictureBox29.TabStop = false;
-            this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::inventory.Properties.Resources.plus;
-            this.pictureBox28.Location = new System.Drawing.Point(187, 53);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox28.TabIndex = 157;
-            this.pictureBox28.TabStop = false;
-            this.pictureBox28.Click += new System.EventHandler(this.pictureBox28_Click);
-            // 
             // bunifuThinButton230
             // 
             this.bunifuThinButton230.ActiveBorderThickness = 1;
@@ -5219,6 +5201,25 @@
             this.bunifuThinButton230.TabIndex = 143;
             this.bunifuThinButton230.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(5, 23);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(38, 18);
+            this.label67.TabIndex = 0;
+            this.label67.Text = "Year";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5239,29 +5240,47 @@
             this.panel4.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).EndInit();
             this.groupBox11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.bunifuCards5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.piccus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableseized)).EndInit();
             this.panel6.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinssummary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinscust)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.bunifuCards8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -5272,23 +5291,31 @@
             this.panel26.PerformLayout();
             this.panel27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblei)).EndInit();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel8.ResumeLayout(false);
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.Spanel.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblbank)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.bunifuCards10.ResumeLayout(false);
@@ -5298,62 +5325,36 @@
             this.panel28.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).EndInit();
             this.panel12.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel11.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.piccus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             this.ResumeLayout(false);
