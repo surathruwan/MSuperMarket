@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -52,6 +54,7 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 =======
 =======
+>>>>>>> 060d594f824f645832ad2f5348bd5a7a252b51f1
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -106,6 +109,9 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+<<<<<<< HEAD
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
+=======
 C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -216,3 +222,4 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 >>>>>>> 9bb18892f77ccac2b030b3f2d5a91e3fc46ef665
 >>>>>>> d880dc608bef186bbcdbd82183086535c5046afd
 >>>>>>> 546493fd559a9260a4b72d618e7d78cd1e9dc681
+>>>>>>> 060d594f824f645832ad2f5348bd5a7a252b51f1
