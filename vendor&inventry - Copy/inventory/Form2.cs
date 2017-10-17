@@ -16,7 +16,7 @@ using System.Net;
 namespace madushaTemp
 {
     
-
+    
     public partial class Form2 : Form
     {
         public Boolean cat = true;
@@ -343,7 +343,7 @@ namespace madushaTemp
                         condb.Open();
                         myReader = cmddb.ExecuteReader();
 
-                        MessageBox.Show("Data Inserted Successfully !! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Inserted !!!!!!! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
