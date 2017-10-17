@@ -71,6 +71,18 @@ namespace inventory
 
         }
 
+        public static string UserLabel()
+        {
+            if (userType == "admin")
+            { return "admin"; }
+            else if (userType == "cashier")
+            {
+                return "cashier";
+            }
+            else { return "doperator"; }
+
+        }
+
         public static void windUpSession()
         {
 

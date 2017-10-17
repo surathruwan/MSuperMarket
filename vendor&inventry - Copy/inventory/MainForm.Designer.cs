@@ -56,6 +56,7 @@ namespace inventory
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -432,6 +433,7 @@ namespace inventory
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.panel2.Controls.Add(this.lblname);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.timeLabel);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -456,9 +458,9 @@ namespace inventory
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(574, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 17);
+            this.label2.Size = new System.Drawing.Size(92, 17);
             this.label2.TabIndex = 9;
-            this.label2.Text = "--- Logged As : upali  ---";
+            this.label2.Text = " Logged As : ";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // timeLabel
@@ -600,6 +602,18 @@ namespace inventory
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.lblname.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblname.Location = new System.Drawing.Point(659, 11);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(48, 17);
+            this.lblname.TabIndex = 10;
+            this.lblname.Text = "admin";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -655,6 +669,7 @@ namespace inventory
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton9;
+        private System.Windows.Forms.Label lblname;
     }
 }
 
