@@ -26,6 +26,9 @@ namespace madushaTemp
         {
             InitializeComponent();
 
+            //string stat;
+
+
             int v = Session.getUser();
             if (v == 1)
             {
@@ -886,7 +889,7 @@ namespace madushaTemp
 
             if (txtvtype.SelectedItem.ToString() == "lorry")
             {
-                double p1 = distance * lorryprice;
+                double p1 = (distance * lorryprice)-(1*lorryprice);
                 textBox2.Text = Convert.ToString(p1);
 
 
@@ -894,7 +897,7 @@ namespace madushaTemp
 
             else if (txtvtype.SelectedItem.ToString() == "threewheeler")
             {
-                double p2 = distance * threewprice;
+                double p2 = (distance * threewprice)-(1*threewprice);
                 textBox2.Text = Convert.ToString(p2);
 
 
@@ -903,7 +906,7 @@ namespace madushaTemp
             else if (txtvtype.SelectedItem.ToString() == "bike")
             {
 
-                double p3 = distance * bikeprice;
+                double p3 = (distance * bikeprice)-(1*bikeprice);
                 textBox2.Text = Convert.ToString(p3);
 
             }
