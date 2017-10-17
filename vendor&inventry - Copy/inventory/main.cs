@@ -33,21 +33,21 @@ namespace inventory
             if (v == 1)
             {
                 // btncconfirm.Visible = false;
-                //button1.Enabled = false;
-                // ((Control)this.tabPage1).Enabled = false;
-                //tabPage1.Enabled = false;
-                 tabControl1.TabPages.Remove(tabPage2);
+              
 
             }
             else if (v == 2)
             {
-                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage3);
                 tabControl1.TabPages.Remove(tabPage4);
-                // ((Control)this.tabPage2).Enabled = false;
+                tabControl1.TabPages.Remove(tabPage6);
+                tabControl1.TabPages.Remove(tabPage7);
+               
             }
             else
             {
-
+                tabControl1.TabPages.Remove(tabPage5);
+                tabControl1.TabPages.Remove(tabPage6);
 
             }
 
