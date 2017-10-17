@@ -28,6 +28,30 @@ namespace inventory
         public main()
         {
             InitializeComponent();
+
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                // btncconfirm.Visible = false;
+                //button1.Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+                 tabControl1.TabPages.Remove(tabPage2);
+
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage4);
+                // ((Control)this.tabPage2).Enabled = false;
+            }
+            else
+            {
+
+
+            }
+
+
             loadtable();
             wrun();
             srun();
@@ -723,7 +747,7 @@ namespace inventory
 
         private void gr_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+            //helloooooooo
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.gr.Rows[e.RowIndex];

@@ -23,7 +23,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Drawing.Printing;
 using System.Xml.Linq;
-
+using inventory;
 
 namespace madushaTemp
 {
@@ -45,8 +45,27 @@ namespace madushaTemp
         public TestForm()
         {
             InitializeComponent();
+            int v = Session.getUser();
+            if (v == 1)
+            {
+               // btncconfirm.Visible = false;
+                //button1.Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+                // tabControl1.TabPages.Remove(tabPage4);
 
-            
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage4);
+               // ((Control)this.tabPage2).Enabled = false;
+            }
+            else {
+
+
+            }
+
             chart1.Visible = false;
             chart3.Visible = false;
             chart2.Visible = false;
@@ -2341,18 +2360,24 @@ namespace madushaTemp
 
         private void btngeneratesticker_Click(object sender, EventArgs e)
         {
-            BarcodeLib.Barcode barcode = new BarcodeLib.Barcode()
+            if (txtino.Text != "")
             {
-                IncludeLabel = true,
-                Alignment = AlignmentPositions.CENTER,
-                Width = 390,
-                Height = 150,
-                RotateFlipType = RotateFlipType.RotateNoneFlipNone,
-                BackColor = Color.White,
-                ForeColor = Color.Black,
-            };
+                BarcodeLib.Barcode barcode = new BarcodeLib.Barcode()
+                {
+                    IncludeLabel = true,
+                    Alignment = AlignmentPositions.CENTER,
+                    Width = 390,
+                    Height = 150,
+                    RotateFlipType = RotateFlipType.RotateNoneFlipNone,
+                    BackColor = Color.White,
+                    ForeColor = Color.Black,
+                };
 
-            puty.Image = barcode.Encode(TYPE.CODE128B, txtino.Text);
+                puty.Image = barcode.Encode(TYPE.CODE128B, txtino.Text);
+            }
+            else {
+                MessageBox.Show("Please a Invoice","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
 
         
