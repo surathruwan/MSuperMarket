@@ -25,7 +25,8 @@ namespace inventory
             panel4.Controls.Add(VM);
             VM.Show();
 
-
+            string u = Session.UserLabel();
+            lblname.Text = u;
         }
 
         //load form to panel
@@ -185,15 +186,14 @@ namespace inventory
                 l.Show();
                 //this.Close();
             }
-            catch (Exception)
+            catch (Exception c)
             {
 
-                throw;
+                MessageBox.Show(c.Message);
             }
             
-
-
-
                 }
+
+
     }
 }
