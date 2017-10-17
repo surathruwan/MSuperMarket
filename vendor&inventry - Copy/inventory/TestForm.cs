@@ -98,9 +98,9 @@ namespace madushaTemp
             tableLoadEI();
             tableLoadInstallmntformload();
 
-            
+            datei.MinDate = DateTime.Now;
 
-           // chartLoadIExp();
+            // chartLoadIExp();
             //chartLoadProLos();
 
 

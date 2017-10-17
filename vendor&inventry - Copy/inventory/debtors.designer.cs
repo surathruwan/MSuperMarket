@@ -28,17 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(debtors));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(debtors));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picphon = new System.Windows.Forms.PictureBox();
+            this.picemail = new System.Windows.Forms.PictureBox();
+            this.picerror = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblup = new System.Windows.Forms.Label();
+            this.uploadNic = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblpathpicnicf = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.nicpic = new System.Windows.Forms.PictureBox();
+            this.picface = new System.Windows.Forms.PictureBox();
+            this.nicsearchcust = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtsearchcust = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label78 = new System.Windows.Forms.Label();
+            this.btnadd = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btndelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnupdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtaddress = new System.Windows.Forms.RichTextBox();
             this.dobpicker = new System.Windows.Forms.DateTimePicker();
             this.tablcust = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -59,37 +73,15 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.minimizeButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.picphon = new System.Windows.Forms.PictureBox();
-            this.picemail = new System.Windows.Forms.PictureBox();
-            this.picerror = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.uploadNic = new Bunifu.Framework.UI.BunifuImageButton();
-            this.nicpic = new System.Windows.Forms.PictureBox();
-            this.picface = new System.Windows.Forms.PictureBox();
-            this.nicsearchcust = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnadd = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btndelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnupdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label8 = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablcust)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picphon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picemail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picerror)).BeginInit();
@@ -100,6 +92,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.nicpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picface)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nicsearchcust)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablcust)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -164,6 +164,92 @@
             this.panel1.Size = new System.Drawing.Size(995, 534);
             this.panel1.TabIndex = 1;
             // 
+            // picphon
+            // 
+            this.picphon.Location = new System.Drawing.Point(271, 277);
+            this.picphon.Name = "picphon";
+            this.picphon.Size = new System.Drawing.Size(37, 31);
+            this.picphon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picphon.TabIndex = 125;
+            this.picphon.TabStop = false;
+            // 
+            // picemail
+            // 
+            this.picemail.Location = new System.Drawing.Point(350, 240);
+            this.picemail.Name = "picemail";
+            this.picemail.Size = new System.Drawing.Size(37, 31);
+            this.picemail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picemail.TabIndex = 124;
+            this.picemail.TabStop = false;
+            // 
+            // picerror
+            // 
+            this.picerror.Location = new System.Drawing.Point(271, 21);
+            this.picerror.Name = "picerror";
+            this.picerror.Size = new System.Drawing.Size(37, 31);
+            this.picerror.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picerror.TabIndex = 123;
+            this.picerror.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::inventory.Properties.Resources.save;
+            this.pictureBox4.Location = new System.Drawing.Point(588, 480);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(56, 47);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 122;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::inventory.Properties.Resources.stop;
+            this.pictureBox3.Location = new System.Drawing.Point(505, 479);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 121;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::inventory.Properties.Resources.capture;
+            this.pictureBox1.Location = new System.Drawing.Point(422, 480);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 120;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // bunifuThinButton29
+            // 
+            this.bunifuThinButton29.ActiveBorderThickness = 1;
+            this.bunifuThinButton29.ActiveCornerRadius = 20;
+            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
+            this.bunifuThinButton29.ButtonText = "Refresh";
+            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.IdleBorderThickness = 1;
+            this.bunifuThinButton29.IdleCornerRadius = 20;
+            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.Location = new System.Drawing.Point(689, -4);
+            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton29.Name = "bunifuThinButton29";
+            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton29.TabIndex = 117;
+            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
+            // 
             // lblup
             // 
             this.lblup.AutoSize = true;
@@ -174,6 +260,20 @@
             this.lblup.Size = new System.Drawing.Size(90, 13);
             this.lblup.TabIndex = 116;
             this.lblup.Text = "Insert Your Image";
+            // 
+            // uploadNic
+            // 
+            this.uploadNic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.uploadNic.Image = global::inventory.Properties.Resources.Custom_Icon_Design_Mono_General_4_Upload;
+            this.uploadNic.ImageActive = null;
+            this.uploadNic.Location = new System.Drawing.Point(161, 428);
+            this.uploadNic.Name = "uploadNic";
+            this.uploadNic.Size = new System.Drawing.Size(28, 20);
+            this.uploadNic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.uploadNic.TabIndex = 115;
+            this.uploadNic.TabStop = false;
+            this.uploadNic.Zoom = 10;
+            this.uploadNic.Click += new System.EventHandler(this.uploadNic_Click);
             // 
             // lblpathpicnicf
             // 
@@ -195,6 +295,39 @@
             this.label16.Size = new System.Drawing.Size(81, 18);
             this.label16.TabIndex = 113;
             this.label16.Text = " NIC Image";
+            // 
+            // nicpic
+            // 
+            this.nicpic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.nicpic.Location = new System.Drawing.Point(689, 304);
+            this.nicpic.Name = "nicpic";
+            this.nicpic.Size = new System.Drawing.Size(296, 173);
+            this.nicpic.TabIndex = 111;
+            this.nicpic.TabStop = false;
+            // 
+            // picface
+            // 
+            this.picface.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picface.Location = new System.Drawing.Point(391, 304);
+            this.picface.Name = "picface";
+            this.picface.Size = new System.Drawing.Size(283, 173);
+            this.picface.TabIndex = 110;
+            this.picface.TabStop = false;
+            this.picface.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // nicsearchcust
+            // 
+            this.nicsearchcust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.nicsearchcust.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.nicsearchcust.ImageActive = null;
+            this.nicsearchcust.Location = new System.Drawing.Point(644, 7);
+            this.nicsearchcust.Name = "nicsearchcust";
+            this.nicsearchcust.Size = new System.Drawing.Size(30, 26);
+            this.nicsearchcust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.nicsearchcust.TabIndex = 109;
+            this.nicsearchcust.TabStop = false;
+            this.nicsearchcust.Zoom = 10;
+            this.nicsearchcust.Click += new System.EventHandler(this.nicsearchcust_Click);
             // 
             // txtsearchcust
             // 
@@ -224,6 +357,84 @@
             this.label78.TabIndex = 108;
             this.label78.Text = "NIC";
             // 
+            // btnadd
+            // 
+            this.btnadd.ActiveBorderThickness = 1;
+            this.btnadd.ActiveCornerRadius = 20;
+            this.btnadd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.ActiveForecolor = System.Drawing.Color.White;
+            this.btnadd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnadd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadd.BackgroundImage")));
+            this.btnadd.ButtonText = "Add";
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.IdleBorderThickness = 1;
+            this.btnadd.IdleCornerRadius = 20;
+            this.btnadd.IdleFillColor = System.Drawing.Color.White;
+            this.btnadd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnadd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnadd.Location = new System.Drawing.Point(6, 481);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(116, 41);
+            this.btnadd.TabIndex = 104;
+            this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.ActiveBorderThickness = 1;
+            this.btndelete.ActiveCornerRadius = 20;
+            this.btndelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btndelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndelete.BackgroundImage")));
+            this.btndelete.ButtonText = "Delete";
+            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.IdleBorderThickness = 1;
+            this.btndelete.IdleCornerRadius = 20;
+            this.btndelete.IdleFillColor = System.Drawing.Color.White;
+            this.btndelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndelete.Location = new System.Drawing.Point(258, 481);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(5);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(116, 41);
+            this.btndelete.TabIndex = 105;
+            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.ActiveBorderThickness = 1;
+            this.btnupdate.ActiveCornerRadius = 20;
+            this.btnupdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdate.BackgroundImage")));
+            this.btnupdate.ButtonText = "Update";
+            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.IdleBorderThickness = 1;
+            this.btnupdate.IdleCornerRadius = 20;
+            this.btnupdate.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdate.Location = new System.Drawing.Point(132, 481);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(116, 41);
+            this.btnupdate.TabIndex = 106;
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
             // txtaddress
             // 
             this.txtaddress.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F);
@@ -238,10 +449,10 @@
             this.dobpicker.CustomFormat = "yyyy-MM-dd";
             this.dobpicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dobpicker.Location = new System.Drawing.Point(157, 317);
-            this.dobpicker.MaxDate = new System.DateTime(2017, 9, 20, 0, 0, 0, 0);
             this.dobpicker.Name = "dobpicker";
             this.dobpicker.Size = new System.Drawing.Size(107, 20);
             this.dobpicker.TabIndex = 102;
+            this.dobpicker.Value = new System.DateTime(2017, 10, 17, 0, 0, 0, 0);
             // 
             // tablcust
             // 
@@ -298,7 +509,7 @@
             this.txtcity.Location = new System.Drawing.Point(157, 386);
             this.txtcity.Margin = new System.Windows.Forms.Padding(4);
             this.txtcity.Name = "txtcity";
-            this.txtcity.Size = new System.Drawing.Size(107, 26);
+            this.txtcity.Size = new System.Drawing.Size(152, 26);
             this.txtcity.TabIndex = 101;
             this.txtcity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -315,7 +526,7 @@
             this.txtjob.Location = new System.Drawing.Point(157, 349);
             this.txtjob.Margin = new System.Windows.Forms.Padding(4);
             this.txtjob.Name = "txtjob";
-            this.txtjob.Size = new System.Drawing.Size(107, 26);
+            this.txtjob.Size = new System.Drawing.Size(152, 26);
             this.txtjob.TabIndex = 100;
             this.txtjob.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -517,20 +728,8 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1009, 42);
+            this.panel4.Size = new System.Drawing.Size(1054, 42);
             this.panel4.TabIndex = 34;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.label8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label8.Location = new System.Drawing.Point(41, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(155, 17);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Customer Registration";
             // 
             // pictureBox2
             // 
@@ -547,7 +746,7 @@
             this.minimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.minimizeButton.Image = ((System.Drawing.Image)(resources.GetObject("minimizeButton.Image")));
             this.minimizeButton.ImageActive = null;
-            this.minimizeButton.Location = new System.Drawing.Point(939, 0);
+            this.minimizeButton.Location = new System.Drawing.Point(984, 0);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(20, 42);
             this.minimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -562,7 +761,7 @@
             this.bunifuImageButton3.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(959, 0);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(1004, 0);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
             this.bunifuImageButton3.Size = new System.Drawing.Size(10, 42);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -576,7 +775,7 @@
             this.bunifuImageButton2.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(969, 0);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1014, 0);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(10, 42);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -590,7 +789,7 @@
             this.ExitButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
             this.ExitButton.ImageActive = null;
-            this.ExitButton.Location = new System.Drawing.Point(979, 0);
+            this.ExitButton.Location = new System.Drawing.Point(1024, 0);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(20, 42);
             this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -605,7 +804,7 @@
             this.bunifuImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(999, 0);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1044, 0);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(10, 42);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -613,223 +812,24 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // picphon
+            // label8
             // 
-            this.picphon.Location = new System.Drawing.Point(271, 277);
-            this.picphon.Name = "picphon";
-            this.picphon.Size = new System.Drawing.Size(37, 31);
-            this.picphon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picphon.TabIndex = 125;
-            this.picphon.TabStop = false;
-            // 
-            // picemail
-            // 
-            this.picemail.Location = new System.Drawing.Point(350, 240);
-            this.picemail.Name = "picemail";
-            this.picemail.Size = new System.Drawing.Size(37, 31);
-            this.picemail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picemail.TabIndex = 124;
-            this.picemail.TabStop = false;
-            // 
-            // picerror
-            // 
-            this.picerror.Location = new System.Drawing.Point(271, 21);
-            this.picerror.Name = "picerror";
-            this.picerror.Size = new System.Drawing.Size(37, 31);
-            this.picerror.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picerror.TabIndex = 123;
-            this.picerror.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::inventory.Properties.Resources.save;
-            this.pictureBox4.Location = new System.Drawing.Point(588, 480);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(56, 47);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 122;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::inventory.Properties.Resources.stop;
-            this.pictureBox3.Location = new System.Drawing.Point(505, 479);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 121;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::inventory.Properties.Resources.capture;
-            this.pictureBox1.Location = new System.Drawing.Point(422, 480);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 120;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // bunifuThinButton29
-            // 
-            this.bunifuThinButton29.ActiveBorderThickness = 1;
-            this.bunifuThinButton29.ActiveCornerRadius = 20;
-            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
-            this.bunifuThinButton29.ButtonText = "Refresh";
-            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.IdleBorderThickness = 1;
-            this.bunifuThinButton29.IdleCornerRadius = 20;
-            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.Location = new System.Drawing.Point(689, -4);
-            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton29.Name = "bunifuThinButton29";
-            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton29.TabIndex = 117;
-            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
-            // 
-            // uploadNic
-            // 
-            this.uploadNic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.uploadNic.Image = global::inventory.Properties.Resources.Custom_Icon_Design_Mono_General_4_Upload;
-            this.uploadNic.ImageActive = null;
-            this.uploadNic.Location = new System.Drawing.Point(161, 428);
-            this.uploadNic.Name = "uploadNic";
-            this.uploadNic.Size = new System.Drawing.Size(28, 20);
-            this.uploadNic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.uploadNic.TabIndex = 115;
-            this.uploadNic.TabStop = false;
-            this.uploadNic.Zoom = 10;
-            this.uploadNic.Click += new System.EventHandler(this.uploadNic_Click);
-            // 
-            // nicpic
-            // 
-            this.nicpic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.nicpic.Location = new System.Drawing.Point(689, 304);
-            this.nicpic.Name = "nicpic";
-            this.nicpic.Size = new System.Drawing.Size(296, 173);
-            this.nicpic.TabIndex = 111;
-            this.nicpic.TabStop = false;
-            // 
-            // picface
-            // 
-            this.picface.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picface.Location = new System.Drawing.Point(391, 304);
-            this.picface.Name = "picface";
-            this.picface.Size = new System.Drawing.Size(283, 173);
-            this.picface.TabIndex = 110;
-            this.picface.TabStop = false;
-            this.picface.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // nicsearchcust
-            // 
-            this.nicsearchcust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.nicsearchcust.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.nicsearchcust.ImageActive = null;
-            this.nicsearchcust.Location = new System.Drawing.Point(644, 7);
-            this.nicsearchcust.Name = "nicsearchcust";
-            this.nicsearchcust.Size = new System.Drawing.Size(30, 26);
-            this.nicsearchcust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nicsearchcust.TabIndex = 109;
-            this.nicsearchcust.TabStop = false;
-            this.nicsearchcust.Zoom = 10;
-            this.nicsearchcust.Click += new System.EventHandler(this.nicsearchcust_Click);
-            // 
-            // btnadd
-            // 
-            this.btnadd.ActiveBorderThickness = 1;
-            this.btnadd.ActiveCornerRadius = 20;
-            this.btnadd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnadd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnadd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadd.BackgroundImage")));
-            this.btnadd.ButtonText = "Add";
-            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.IdleBorderThickness = 1;
-            this.btnadd.IdleCornerRadius = 20;
-            this.btnadd.IdleFillColor = System.Drawing.Color.White;
-            this.btnadd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnadd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnadd.Location = new System.Drawing.Point(6, 481);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(116, 41);
-            this.btnadd.TabIndex = 104;
-            this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.ActiveBorderThickness = 1;
-            this.btndelete.ActiveCornerRadius = 20;
-            this.btndelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btndelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndelete.BackgroundImage")));
-            this.btndelete.ButtonText = "Delete";
-            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.IdleBorderThickness = 1;
-            this.btndelete.IdleCornerRadius = 20;
-            this.btndelete.IdleFillColor = System.Drawing.Color.White;
-            this.btndelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndelete.Location = new System.Drawing.Point(258, 481);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(5);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(116, 41);
-            this.btndelete.TabIndex = 105;
-            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.ActiveBorderThickness = 1;
-            this.btnupdate.ActiveCornerRadius = 20;
-            this.btnupdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdate.BackgroundImage")));
-            this.btnupdate.ButtonText = "Update";
-            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.IdleBorderThickness = 1;
-            this.btnupdate.IdleCornerRadius = 20;
-            this.btnupdate.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdate.Location = new System.Drawing.Point(132, 481);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(116, 41);
-            this.btnupdate.TabIndex = 106;
-            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.label8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label8.Location = new System.Drawing.Point(41, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(155, 17);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Customer Registration";
             // 
             // debtors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.ClientSize = new System.Drawing.Size(1009, 596);
+            this.ClientSize = new System.Drawing.Size(1054, 596);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.bunifuCards1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -841,15 +841,6 @@
             this.bunifuCards1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablcust)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picphon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picemail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picerror)).EndInit();
@@ -860,6 +851,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.nicpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picface)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nicsearchcust)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablcust)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
