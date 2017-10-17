@@ -12,6 +12,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Xml;
 using System.Net;
+using inventory;
 
 namespace madushaTemp
 {
@@ -24,12 +25,38 @@ namespace madushaTemp
         public Form2()
         {
             InitializeComponent();
+
+            //string stat;
+
+
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                //button1.Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+                // tabControl1.TabPages.Remove(tabPage4);
+
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage4);
+                // ((Control)this.tabPage2).Enabled = false;
+            }
+            else { }
+
+
+
+
             LoadTableDelivery_request();
             FillCombo();
             LoadTableDriver_Availability();
             LoadTableShedule();
            
             bunifuCustomLabel43.Text= IncrementID("MS/PO/0000009", 9);
+
+
         }
 
 
@@ -109,7 +136,7 @@ namespace madushaTemp
         {
             string st = "datasource=localhost;port=3306;username=root";
             MySqlConnection condb = new MySqlConnection(st);
-            MySqlCommand cmddb = new MySqlCommand("select  o.OrderID,o.Customer,o.OrderDate,o.address,o.ToBuy,d.driver_name,dr.delivery_date,dr.availability from supermarket.orders o ,supermarket.delivery_request d,supermarket.driver_availability dr where o.OrderID=d.order_id and dr.driver_name=d.driver_name and o.ToBuy='Home Delivery';", condb);
+            MySqlCommand cmddb = new MySqlCommand("select  o.OrderID,o.Customer,o.OrderDate,o.address,o.ToBuy,d.driver_name,dr.delivery_date,dr.status from supermarket.orders o ,supermarket.delivery_request d,supermarket.driver_availability dr where o.OrderID=d.order_id and dr.driver_name=d.driver_name and o.ToBuy='Home Delivery';", condb);
 
             try
             {
@@ -862,7 +889,7 @@ namespace madushaTemp
 
             if (txtvtype.SelectedItem.ToString() == "lorry")
             {
-                double p1 = distance * lorryprice;
+                double p1 = (distance * lorryprice)-(1*lorryprice);
                 textBox2.Text = Convert.ToString(p1);
 
 
@@ -870,7 +897,7 @@ namespace madushaTemp
 
             else if (txtvtype.SelectedItem.ToString() == "threewheeler")
             {
-                double p2 = distance * threewprice;
+                double p2 = (distance * threewprice)-(1*threewprice);
                 textBox2.Text = Convert.ToString(p2);
 
 
@@ -879,7 +906,7 @@ namespace madushaTemp
             else if (txtvtype.SelectedItem.ToString() == "bike")
             {
 
-                double p3 = distance * bikeprice;
+                double p3 = (distance * bikeprice)-(1*bikeprice);
                 textBox2.Text = Convert.ToString(p3);
 
             }

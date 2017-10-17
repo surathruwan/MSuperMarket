@@ -3012,6 +3012,11 @@ namespace madushaTemp
 
         }
 
+        private void bunifuCards5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             chartLoadIExp();
