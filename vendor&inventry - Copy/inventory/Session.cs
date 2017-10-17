@@ -22,10 +22,7 @@ namespace inventory
             if (!isSessionStarted())
             {
                 userName = username;
-
-
-
-
+                
                 MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
                 MySqlCommand cmd = new MySqlCommand("SELECT type from supermarket.users WHERE user = '" + username + "'", conn);
                 MySqlDataReader dr;
@@ -52,6 +49,7 @@ namespace inventory
                 }
                 catch (Exception o)
                 {
+                    
                     MessageBox.Show(o.Message);
                 }
 

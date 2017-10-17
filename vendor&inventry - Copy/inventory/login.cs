@@ -46,13 +46,13 @@ namespace inventory
 
                 if (count == 1)
                 {
-                   
+                    Session.startSession(us.Text);
                     MainForm F2 = new MainForm();
                     F2.Show();
                     us.Text = "";
                     pw.Text = "";
                     this.WindowState = FormWindowState.Minimized;
-                    //this.Close();
+                    this.Hide();
 
                 }
                 else

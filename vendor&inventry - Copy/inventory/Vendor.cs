@@ -97,7 +97,11 @@ namespace vendor_management
             {
                 pc.Image = null;
                 // n.SetToolTip(pc, "valid entry");
-                z = 1;
+
+                if (z != -99)
+                {
+                    z = 1;
+                }
             }
         }
         void fillCombo()
@@ -236,7 +240,7 @@ namespace vendor_management
             }
 
 
-            else
+            else if(z == 1)
             {
                 try
                 {
