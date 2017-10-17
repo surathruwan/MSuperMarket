@@ -186,10 +186,10 @@ namespace inventory
                 l.Show();
                 //this.Close();
             }
-            catch (Exception)
+            catch (Exception c)
             {
 
-                throw;
+                MessageBox.Show(c.Message);
             }
             
                 }
