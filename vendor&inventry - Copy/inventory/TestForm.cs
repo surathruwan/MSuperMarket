@@ -48,10 +48,11 @@ namespace madushaTemp
             int v = Session.getUser();
             if (v == 1)
             {
+               // btncconfirm.Visible = false;
                 //button1.Enabled = false;
-               // ((Control)this.tabPage1).Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
                 //tabPage1.Enabled = false;
-               // tabControl1.TabPages.Remove(tabPage4);
+                // tabControl1.TabPages.Remove(tabPage4);
 
             }
             else if (v == 2)
@@ -60,7 +61,10 @@ namespace madushaTemp
                 tabControl1.TabPages.Remove(tabPage4);
                // ((Control)this.tabPage2).Enabled = false;
             }
-            else { }
+            else {
+
+
+            }
 
             chart1.Visible = false;
             chart3.Visible = false;
