@@ -92,10 +92,9 @@ namespace madushaTemp
                 bunifuCustomDataGrid1.Columns[9].Width = 170;
                 condb.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -123,10 +122,9 @@ namespace madushaTemp
                 bunifuCustomDataGrid2.Columns[3].Width = 150;
                 condb.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -136,7 +134,7 @@ namespace madushaTemp
         {
             string st = "datasource=localhost;port=3306;username=root";
             MySqlConnection condb = new MySqlConnection(st);
-            MySqlCommand cmddb = new MySqlCommand("select  o.OrderID,o.Customer,o.OrderDate,o.address,o.ToBuy,d.driver_name,dr.delivery_date,dr.status from supermarket.orders o ,supermarket.delivery_request d,supermarket.driver_availability dr where o.OrderID=d.order_id and dr.driver_name=d.driver_name and o.ToBuy='Home Delivery';", condb);
+            MySqlCommand cmddb = new MySqlCommand("select  o.OrderID,o.Customer,o.OrderDate,o.address,o.ToBuy,d.driver_name,dr.delivery_date,dr.availability from supermarket.orders o ,supermarket.delivery_request d,supermarket.driver_availability dr where o.OrderID=d.order_id and dr.driver_name=d.driver_name and o.ToBuy='Home Delivery';", condb);
 
             try
             {
@@ -151,10 +149,10 @@ namespace madushaTemp
                 sd.Update(dbdataset);
                 condb.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -180,10 +178,10 @@ namespace madushaTemp
                 dataGridView1.Columns[1].Width = 150;
                 condb.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -218,10 +216,10 @@ namespace madushaTemp
 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
 
@@ -315,10 +313,10 @@ namespace madushaTemp
                 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
 
@@ -491,10 +489,10 @@ namespace madushaTemp
                     }
                 }
 
-                catch (Exception)
+                catch (Exception ex)
                 {
 
-                    throw;
+                    MessageBox.Show(ex.Message.ToString(), "Error");
                 }
             }
           
@@ -564,10 +562,10 @@ namespace madushaTemp
 
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
 
-                    throw;
+                    MessageBox.Show(ex.Message.ToString(), "Error");
                 }
             }
         }
@@ -868,10 +866,10 @@ namespace madushaTemp
 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
 
