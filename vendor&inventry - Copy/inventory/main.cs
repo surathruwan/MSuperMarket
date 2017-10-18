@@ -78,16 +78,8 @@ namespace inventory
                 string Date = DateTime.Now.ToLongTimeString();
                 string Time = DateTime.Now.ToLongDateString();
                 String Datestr = DateTime.Now.ToString("yyyy-M-dd-HH-mm-ss");
-<<<<<<< HEAD
                 string total = rettot.Text;
                 string path = System.IO.Path.Combine(@"", "ReturnNote" + Datestr + ".txt");
-=======
-               // string total = rettot.Text;
-                //string cash = txtdpay.Text;
-               // string balance = lblbal.Text;
-                //string prepare = cmbprepare.Text;
-                string path = System.IO.Path.Combine("", "Madusha" + Datestr + ".txt");
->>>>>>> 0dc2b4e847ca029005ffc60b7e5c33f9545991a4
                 TextWriter writer = new StreamWriter(path);
                 writer.WriteLine("\t \t MADUSHA SUPERMARKET \t \t");
                 writer.WriteLine("--------------------------------------------------");
@@ -98,7 +90,6 @@ namespace inventory
                 writer.WriteLine("Item Name\t Item Code\t Price\t Quantity ");
                 for (int i = 0; i < ret.Rows.Count-1; i++)
                 {
-<<<<<<< HEAD
                     writer.Write(ret.Rows[i].Cells[1].Value.ToString() + "\t\t" +
                     ret.Rows[i].Cells[2].Value.ToString() + " \t " + 
                     ret.Rows[i].Cells[3].Value.ToString() + "\t  " +
@@ -107,21 +98,6 @@ namespace inventory
                     writer.WriteLine("--------------------------------------------------");
                 }
                 writer.WriteLine("Total Amount \t \t \t" + total);
-=======
-                    writer.Write("\t" + ret.Rows[i].Cells[1].Value.ToString() + "\t" + " " +
-                    ret.Rows[i].Cells[2].Value.ToString() + "  " + "  " +
-                    ret.Rows[i].Cells[3].Value.ToString() + "  " + "    " +
-                    
-                    ret.Rows[i].Cells[4].Value.ToString() + "   " + " ");
-
-                    writer.WriteLine("");
-                    writer.WriteLine("--------------------------------------------------");
-                }
-               // writer.WriteLine("\t Total Amount \t \t \t" + total);
-                //writer.WriteLine("\t Down Payment \t \t \t" + cash);
-                //writer.WriteLine("\t Balance \t \t \t" + balance);
-
->>>>>>> 0dc2b4e847ca029005ffc60b7e5c33f9545991a4
                 writer.Close();
                 //MessageBox.Show("data Exported");
             }
@@ -1342,7 +1318,7 @@ namespace inventory
                 MessageBox.Show(ex.Message);
             }
 
-            //resetret();
+            resetret();
         }
 
         private void bunifuThinButton213_Click(object sender, EventArgs e)
