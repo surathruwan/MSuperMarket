@@ -71,7 +71,7 @@ namespace inventory
 
         }
       
-       /* public void ConvertText()
+       public void ConvertText()
         {
             try
             {
@@ -82,7 +82,7 @@ namespace inventory
                 //string cash = txtdpay.Text;
                // string balance = lblbal.Text;
                 //string prepare = cmbprepare.Text;
-                string path = System.IO.Path.Combine("C:\\Users\\Hp\\Desktop", "Madusha" + Datestr + ".txt");
+                string path = System.IO.Path.Combine(@"", "Madusha" + Datestr + ".txt");
                 TextWriter writer = new StreamWriter(path);
                 writer.WriteLine("\t \t MADUSHA SUPERMARKET \t \t");
                 writer.WriteLine("--------------------------------------------------");
@@ -113,7 +113,6 @@ namespace inventory
                 MessageBox.Show(ex.Message);
             }
         }
-        */
         void reset()
         {
 
@@ -1422,7 +1421,7 @@ namespace inventory
                      MessageBox.Show(ex.Message);
                  }
 
-               // ConvertText();
+                ConvertText();
                 MessageBox.Show("Done");
                 resetret();
                 this.ret.Rows.Clear();
