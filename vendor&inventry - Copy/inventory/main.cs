@@ -78,11 +78,11 @@ namespace inventory
                 string Date = DateTime.Now.ToLongTimeString();
                 string Time = DateTime.Now.ToLongDateString();
                 String Datestr = DateTime.Now.ToString("yyyy-M-dd-HH-mm-ss");
-                string total = rettot.Text;
+               // string total = rettot.Text;
                 //string cash = txtdpay.Text;
                // string balance = lblbal.Text;
                 //string prepare = cmbprepare.Text;
-                string path = System.IO.Path.Combine(@"", "Madusha" + Datestr + ".txt");
+                string path = System.IO.Path.Combine("", "Madusha" + Datestr + ".txt");
                 TextWriter writer = new StreamWriter(path);
                 writer.WriteLine("\t \t MADUSHA SUPERMARKET \t \t");
                 writer.WriteLine("--------------------------------------------------");
@@ -98,10 +98,11 @@ namespace inventory
                     ret.Rows[i].Cells[3].Value.ToString() + "  " + "    " +
                     
                     ret.Rows[i].Cells[4].Value.ToString() + "   " + " ");
+
                     writer.WriteLine("");
                     writer.WriteLine("--------------------------------------------------");
                 }
-                writer.WriteLine("\t Total Amount \t \t \t" + total);
+               // writer.WriteLine("\t Total Amount \t \t \t" + total);
                 //writer.WriteLine("\t Down Payment \t \t \t" + cash);
                 //writer.WriteLine("\t Balance \t \t \t" + balance);
 
@@ -1325,7 +1326,7 @@ namespace inventory
                 MessageBox.Show(ex.Message);
             }
 
-            resetret();
+            //resetret();
         }
 
         private void bunifuThinButton213_Click(object sender, EventArgs e)
