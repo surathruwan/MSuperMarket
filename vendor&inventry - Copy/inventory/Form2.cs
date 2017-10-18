@@ -94,7 +94,8 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                throw;
+                //MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -105,7 +106,7 @@ namespace madushaTemp
         {
             string st = "datasource=localhost;port=3306;username=root";
             MySqlConnection condb = new MySqlConnection(st);
-            MySqlCommand cmddb = new MySqlCommand("select * from supermarket.driver_availability ;", condb);
+            MySqlCommand cmddb = new MySqlCommand("select driver_id,driver_name,delivery_date,availability as status from supermarket.driver_availability ;", condb);
 
             try
             {
@@ -118,13 +119,14 @@ namespace madushaTemp
                 bsource.DataSource = dbdataset;
                 bunifuCustomDataGrid2.DataSource = bsource;
                 sd.Update(dbdataset);
-                bunifuCustomDataGrid2.Columns[1].Width = 150;
-                bunifuCustomDataGrid2.Columns[3].Width = 150;
+
+
                 condb.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                throw;
+                // MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -134,7 +136,7 @@ namespace madushaTemp
         {
             string st = "datasource=localhost;port=3306;username=root";
             MySqlConnection condb = new MySqlConnection(st);
-            MySqlCommand cmddb = new MySqlCommand("select  o.OrderID,o.Customer,o.OrderDate,o.address,o.ToBuy,d.driver_name,dr.delivery_date,dr.availability from supermarket.orders o ,supermarket.delivery_request d,supermarket.driver_availability dr where o.OrderID=d.order_id and dr.driver_name=d.driver_name and o.ToBuy='Home Delivery';", condb);
+            MySqlCommand cmddb = new MySqlCommand("select  o.OrderID,o.Customer,o.OrderDate,o.address,o.ToBuy,d.driver_name,dr.delivery_date,dr.availability as status from supermarket.orders o ,supermarket.delivery_request d,supermarket.driver_availability dr where o.OrderID=d.order_id and dr.driver_name=d.driver_name and o.ToBuy='Home Delivery';", condb);
 
             try
             {
@@ -151,8 +153,8 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                throw;
+               // MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -180,8 +182,8 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                throw;
+                //MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
         }
@@ -218,8 +220,8 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                throw;
+                // MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
 
@@ -278,7 +280,7 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString(), "Error");
+               // MessageBox.Show(ex.Message.ToString(), "Error");
                 throw;
             }
 
@@ -315,8 +317,9 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
+                throw;
 
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                //  MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
 
@@ -382,9 +385,9 @@ namespace madushaTemp
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message.ToString(), "Error");
+                      //  MessageBox.Show(ex.Message.ToString(), "Error");
 
-                        //throw;
+                        throw;
                     }
 
                 }
@@ -491,8 +494,8 @@ namespace madushaTemp
 
                 catch (Exception ex)
                 {
-
-                    MessageBox.Show(ex.Message.ToString(), "Error");
+                    throw;
+                    //  MessageBox.Show(ex.Message.ToString(), "Error");
                 }
             }
           
@@ -564,8 +567,8 @@ namespace madushaTemp
                 }
                 catch (Exception ex)
                 {
-
-                    MessageBox.Show(ex.Message.ToString(), "Error");
+                    throw;
+                    // MessageBox.Show(ex.Message.ToString(), "Error");
                 }
             }
         }
@@ -627,7 +630,7 @@ namespace madushaTemp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message.ToString(), "Error");
+                    //MessageBox.Show(ex.Message.ToString(), "Error");
                     throw;
                 }
 
@@ -868,8 +871,8 @@ namespace madushaTemp
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                throw;
+                // MessageBox.Show(ex.Message.ToString(), "Error");
             }
 
 
@@ -941,8 +944,8 @@ namespace madushaTemp
 
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message);
+                throw;
+                // MessageBox.Show(ex.Message);
             }
 
 
@@ -1152,7 +1155,7 @@ namespace madushaTemp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message.ToString(), "Error");
+                   // MessageBox.Show(ex.Message.ToString(), "Error");
                     throw;
                 }
             }
@@ -1207,8 +1210,8 @@ namespace madushaTemp
 
                 catch (Exception ex)
                 {
-
-                    MessageBox.Show(ex.Message);
+                    throw;
+                    // MessageBox.Show(ex.Message);
                 }
 
 
@@ -1276,8 +1279,8 @@ namespace madushaTemp
 
                 catch (Exception ex)
                 {
-
-                    MessageBox.Show(ex.Message);
+                    throw;
+                    // MessageBox.Show(ex.Message);
 
 
                 }

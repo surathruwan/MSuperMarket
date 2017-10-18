@@ -24,9 +24,9 @@ namespace inventory
             VM.AutoScroll = true;
             panel4.Controls.Add(VM);
             VM.Show();
-
+            string i = login.getUsername();
             string u = Session.UserLabel();
-            lblname.Text = u;
+            lblname.Text = i;
         }
 
         //load form to panel
@@ -184,7 +184,7 @@ namespace inventory
                 panel4.Controls.Clear();
                 login l = new login();
                 l.Show();
-                //this.Close();
+                this.Hide();
             }
             catch (Exception c)
             {
