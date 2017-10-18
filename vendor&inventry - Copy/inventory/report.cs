@@ -75,7 +75,15 @@ namespace inventory
 
 
         }
-        private void groupBox2_Enter(object sender, EventArgs e)
+//        public void fillYear(ComboBox item) {
+//            for (int i = 1950; i <= currentYear; i++)
+//            {
+                
+//                item.Content = i;
+//                myCombobox.Items.Add(item);
+//            }
+//}
+    private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
@@ -114,6 +122,11 @@ namespace inventory
                 chartLoadProLosPie();
 
             }
+
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
 
         }
     }

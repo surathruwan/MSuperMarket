@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(report));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.minimizeButton = new Bunifu.Framework.UI.BunifuImageButton();
@@ -44,7 +44,6 @@
             this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuDropdown5 = new Bunifu.Framework.UI.BunifuDropdown();
@@ -70,9 +69,10 @@
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.cmbchart = new System.Windows.Forms.ComboBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.cmbchart = new System.Windows.Forms.ComboBox();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
@@ -80,13 +80,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -199,22 +199,6 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(1225, 401);
             this.bunifuCards1.TabIndex = 6;
-            // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(864, 60);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Count";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(300, 297);
-            this.chart1.TabIndex = 7;
-            this.chart1.Text = "chart1";
             // 
             // groupBox3
             // 
@@ -588,6 +572,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton21.TabIndex = 51;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // groupBox11
             // 
@@ -648,6 +633,37 @@
             this.panel1.Size = new System.Drawing.Size(1204, 403);
             this.panel1.TabIndex = 57;
             // 
+            // chart2
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(864, 60);
+            this.chart2.Name = "chart2";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Count";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(300, 297);
+            this.chart2.TabIndex = 159;
+            this.chart2.Text = "chart2";
+            // 
+            // cmbchart
+            // 
+            this.cmbchart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.cmbchart.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbchart.FormattingEnabled = true;
+            this.cmbchart.Items.AddRange(new object[] {
+            "Bar Chart",
+            "Pie Chart"});
+            this.cmbchart.Location = new System.Drawing.Point(890, 19);
+            this.cmbchart.Name = "cmbchart";
+            this.cmbchart.Size = new System.Drawing.Size(121, 26);
+            this.cmbchart.TabIndex = 158;
+            this.cmbchart.Text = "Select an option";
+            // 
             // bunifuThinButton24
             // 
             this.bunifuThinButton24.ActiveBorderThickness = 1;
@@ -674,36 +690,21 @@
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
-            // cmbchart
+            // chart1
             // 
-            this.cmbchart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.cmbchart.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbchart.FormattingEnabled = true;
-            this.cmbchart.Items.AddRange(new object[] {
-            "Bar Chart",
-            "Pie Chart"});
-            this.cmbchart.Location = new System.Drawing.Point(890, 19);
-            this.cmbchart.Name = "cmbchart";
-            this.cmbchart.Size = new System.Drawing.Size(121, 26);
-            this.cmbchart.TabIndex = 158;
-            this.cmbchart.Text = "Select an option";
-            // 
-            // chart2
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(864, 60);
-            this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Count";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(300, 297);
-            this.chart2.TabIndex = 159;
-            this.chart2.Text = "chart2";
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(864, 60);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Count";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(300, 297);
+            this.chart1.TabIndex = 7;
+            this.chart1.Text = "chart1";
             // 
             // report
             // 
@@ -725,7 +726,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -735,6 +735,7 @@
             this.groupBox11.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
