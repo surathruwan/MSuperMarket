@@ -184,7 +184,7 @@ namespace inventory
                 panel4.Controls.Clear();
                 login l = new login();
                 l.Show();
-                //this.Close();
+                this.Hide();
             }
             catch (Exception c)
             {
