@@ -51,7 +51,6 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 <<<<<<< HEAD
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 =======
-=======
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -216,3 +215,6 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 >>>>>>> 9bb18892f77ccac2b030b3f2d5a91e3fc46ef665
 >>>>>>> d880dc608bef186bbcdbd82183086535c5046afd
 >>>>>>> 546493fd559a9260a4b72d618e7d78cd1e9dc681
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.Shared.dll
