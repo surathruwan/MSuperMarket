@@ -14,7 +14,7 @@ using System.Net.Mail;
 using System.Text.RegularExpressions;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-namespace madushaTemp
+namespace inventory
 {
 
     public partial class repair : Form
@@ -49,7 +49,8 @@ namespace madushaTemp
             txtt3from.Text = "ruchidhana@gmail.com";
             tableFullSpareParts.RowTemplate.Height = 80;
 
-
+            btnleft.Hide();
+            btnright.Hide();
             try
             {
 
@@ -552,7 +553,7 @@ namespace madushaTemp
 
             loadpanel2sendtooriginal();
             loadneedtosend();
-
+                    btnright.Hide();
 
                 }
             }
@@ -997,6 +998,7 @@ namespace madushaTemp
 
             loadneedtosend();
             loadpanel2sendtooriginal();
+            btnleft.Hide();
         }
 
         private void datagridpanel2sendto_CellContentClick(object sender, DataGridViewCellEventArgs e)
