@@ -36,6 +36,34 @@ namespace inventory
 
 
             InitializeComponent();
+
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                // btncconfirm.Visible = false;
+                //button1.Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+                // tabControl1.TabPages.Remove(tabPage4);
+
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage4);
+                // ((Control)this.tabPage2).Enabled = false;
+              
+                
+            }
+            else
+            {
+                tabControl1.TabPages.Remove(tabPage1);
+                tabControl1.TabPages.Remove(tabPage4);
+
+            }
+
+
+
             //loadcustItem();
             loaddatagridneedtosendtemp();
             loadneedtosend();
