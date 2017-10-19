@@ -90,6 +90,7 @@ namespace inventory
             userName = null;
             userType = null;
 
+
         }
 
 

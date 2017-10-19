@@ -43,6 +43,7 @@ namespace inventory
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblname = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -56,7 +57,6 @@ namespace inventory
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lblname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -450,6 +450,18 @@ namespace inventory
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.lblname.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblname.Location = new System.Drawing.Point(659, 11);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(48, 17);
+            this.lblname.TabIndex = 10;
+            this.lblname.Text = "admin";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -601,18 +613,6 @@ namespace inventory
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.lblname.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblname.Location = new System.Drawing.Point(659, 11);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(48, 17);
-            this.lblname.TabIndex = 10;
-            this.lblname.Text = "admin";
             // 
             // MainForm
             // 

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(report));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.minimizeButton = new Bunifu.Framework.UI.BunifuImageButton();
@@ -44,10 +44,7 @@
             this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown5 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -55,14 +52,10 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuDropdown6 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label64 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -70,9 +63,16 @@
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.cmbchart = new System.Windows.Forms.ComboBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.cmbchart = new System.Windows.Forms.ComboBox();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.y1 = new System.Windows.Forms.ComboBox();
+            this.m1 = new System.Windows.Forms.ComboBox();
+            this.m2 = new System.Windows.Forms.ComboBox();
+            this.y2 = new System.Windows.Forms.ComboBox();
+            this.m3 = new System.Windows.Forms.ComboBox();
+            this.y3 = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
@@ -80,13 +80,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -200,26 +200,10 @@
             this.bunifuCards1.Size = new System.Drawing.Size(1225, 401);
             this.bunifuCards1.TabIndex = 6;
             // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(864, 60);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Count";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(300, 297);
-            this.chart1.TabIndex = 7;
-            this.chart1.Text = "chart1";
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.bunifuDropdown4);
-            this.groupBox3.Controls.Add(this.bunifuDropdown5);
+            this.groupBox3.Controls.Add(this.m3);
+            this.groupBox3.Controls.Add(this.y3);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.bunifuThinButton23);
@@ -230,55 +214,6 @@
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Good Transfer Report";
-            // 
-            // bunifuDropdown4
-            // 
-            this.bunifuDropdown4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown4.BorderRadius = 3;
-            this.bunifuDropdown4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown4.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown4.Items = new string[] {
-        "January ",
-        "February ",
-        "March ",
-        "April ",
-        "May ",
-        "June",
-        "July ",
-        "August ",
-        "September ",
-        "October ",
-        "November ",
-        "December "};
-            this.bunifuDropdown4.Location = new System.Drawing.Point(92, 114);
-            this.bunifuDropdown4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuDropdown4.Name = "bunifuDropdown4";
-            this.bunifuDropdown4.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown4.onHoverColor = System.Drawing.Color.Indigo;
-            this.bunifuDropdown4.selectedIndex = 0;
-            this.bunifuDropdown4.Size = new System.Drawing.Size(140, 24);
-            this.bunifuDropdown4.TabIndex = 158;
-            // 
-            // bunifuDropdown5
-            // 
-            this.bunifuDropdown5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown5.BorderRadius = 3;
-            this.bunifuDropdown5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown5.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown5.Items = new string[] {
-        "2015",
-        "2016",
-        "2017"};
-            this.bunifuDropdown5.Location = new System.Drawing.Point(92, 77);
-            this.bunifuDropdown5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuDropdown5.Name = "bunifuDropdown5";
-            this.bunifuDropdown5.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown5.onHoverColor = System.Drawing.Color.Indigo;
-            this.bunifuDropdown5.selectedIndex = 0;
-            this.bunifuDropdown5.Size = new System.Drawing.Size(140, 24);
-            this.bunifuDropdown5.TabIndex = 157;
             // 
             // label3
             // 
@@ -329,11 +264,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.m2);
+            this.groupBox2.Controls.Add(this.y2);
             this.groupBox2.Controls.Add(this.radioButton5);
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.bunifuDropdown1);
-            this.groupBox2.Controls.Add(this.bunifuDropdown3);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.bunifuThinButton22);
@@ -382,55 +317,6 @@
             this.radioButton3.Text = "Supplier";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // bunifuDropdown1
-            // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[] {
-        "January ",
-        "February ",
-        "March ",
-        "April ",
-        "May ",
-        "June",
-        "July ",
-        "August ",
-        "September ",
-        "October ",
-        "November ",
-        "December "};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(92, 114);
-            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.Indigo;
-            this.bunifuDropdown1.selectedIndex = 0;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(147, 24);
-            this.bunifuDropdown1.TabIndex = 158;
-            // 
-            // bunifuDropdown3
-            // 
-            this.bunifuDropdown3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.BorderRadius = 3;
-            this.bunifuDropdown3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown3.Items = new string[] {
-        "2015",
-        "2016",
-        "2017"};
-            this.bunifuDropdown3.Location = new System.Drawing.Point(92, 77);
-            this.bunifuDropdown3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown3.onHoverColor = System.Drawing.Color.Indigo;
-            this.bunifuDropdown3.selectedIndex = 0;
-            this.bunifuDropdown3.Size = new System.Drawing.Size(147, 24);
-            this.bunifuDropdown3.TabIndex = 157;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -477,11 +363,12 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton22.TabIndex = 51;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.bunifuDropdown6);
-            this.groupBox1.Controls.Add(this.bunifuDropdown2);
+            this.groupBox1.Controls.Add(this.m1);
+            this.groupBox1.Controls.Add(this.y1);
             this.groupBox1.Controls.Add(this.label64);
             this.groupBox1.Controls.Add(this.label61);
             this.groupBox1.Controls.Add(this.bunifuThinButton21);
@@ -492,55 +379,6 @@
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stock Report";
-            // 
-            // bunifuDropdown6
-            // 
-            this.bunifuDropdown6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown6.BorderRadius = 3;
-            this.bunifuDropdown6.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown6.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown6.Items = new string[] {
-        "January ",
-        "February ",
-        "March ",
-        "April ",
-        "May ",
-        "June",
-        "July ",
-        "August ",
-        "September ",
-        "October ",
-        "November ",
-        "December "};
-            this.bunifuDropdown6.Location = new System.Drawing.Point(86, 85);
-            this.bunifuDropdown6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuDropdown6.Name = "bunifuDropdown6";
-            this.bunifuDropdown6.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown6.onHoverColor = System.Drawing.Color.Indigo;
-            this.bunifuDropdown6.selectedIndex = 0;
-            this.bunifuDropdown6.Size = new System.Drawing.Size(121, 24);
-            this.bunifuDropdown6.TabIndex = 158;
-            // 
-            // bunifuDropdown2
-            // 
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[] {
-        "2015",
-        "2016",
-        "2017"};
-            this.bunifuDropdown2.Location = new System.Drawing.Point(86, 48);
-            this.bunifuDropdown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.Indigo;
-            this.bunifuDropdown2.selectedIndex = 0;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(121, 24);
-            this.bunifuDropdown2.TabIndex = 157;
             // 
             // label64
             // 
@@ -588,6 +426,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton21.TabIndex = 51;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // groupBox11
             // 
@@ -648,6 +487,37 @@
             this.panel1.Size = new System.Drawing.Size(1204, 403);
             this.panel1.TabIndex = 57;
             // 
+            // chart2
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(864, 60);
+            this.chart2.Name = "chart2";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Count";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(300, 297);
+            this.chart2.TabIndex = 159;
+            this.chart2.Text = "chart2";
+            // 
+            // cmbchart
+            // 
+            this.cmbchart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.cmbchart.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbchart.FormattingEnabled = true;
+            this.cmbchart.Items.AddRange(new object[] {
+            "Bar Chart",
+            "Pie Chart"});
+            this.cmbchart.Location = new System.Drawing.Point(890, 19);
+            this.cmbchart.Name = "cmbchart";
+            this.cmbchart.Size = new System.Drawing.Size(121, 26);
+            this.cmbchart.TabIndex = 158;
+            this.cmbchart.Text = "Select an option";
+            // 
             // bunifuThinButton24
             // 
             this.bunifuThinButton24.ActiveBorderThickness = 1;
@@ -674,36 +544,69 @@
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
-            // cmbchart
+            // chart1
             // 
-            this.cmbchart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.cmbchart.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbchart.FormattingEnabled = true;
-            this.cmbchart.Items.AddRange(new object[] {
-            "Bar Chart",
-            "Pie Chart"});
-            this.cmbchart.Location = new System.Drawing.Point(890, 19);
-            this.cmbchart.Name = "cmbchart";
-            this.cmbchart.Size = new System.Drawing.Size(121, 26);
-            this.cmbchart.TabIndex = 158;
-            this.cmbchart.Text = "Select an option";
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(864, 60);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Count";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(300, 297);
+            this.chart1.TabIndex = 7;
+            this.chart1.Text = "chart1";
             // 
-            // chart2
+            // y1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(864, 60);
-            this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Count";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(300, 297);
-            this.chart2.TabIndex = 159;
-            this.chart2.Text = "chart2";
+            this.y1.FormattingEnabled = true;
+            this.y1.Location = new System.Drawing.Point(86, 52);
+            this.y1.Name = "y1";
+            this.y1.Size = new System.Drawing.Size(121, 26);
+            this.y1.TabIndex = 159;
+            // 
+            // m1
+            // 
+            this.m1.FormattingEnabled = true;
+            this.m1.Location = new System.Drawing.Point(86, 83);
+            this.m1.Name = "m1";
+            this.m1.Size = new System.Drawing.Size(121, 26);
+            this.m1.TabIndex = 160;
+            // 
+            // m2
+            // 
+            this.m2.FormattingEnabled = true;
+            this.m2.Location = new System.Drawing.Point(99, 114);
+            this.m2.Name = "m2";
+            this.m2.Size = new System.Drawing.Size(121, 26);
+            this.m2.TabIndex = 163;
+            // 
+            // y2
+            // 
+            this.y2.FormattingEnabled = true;
+            this.y2.Location = new System.Drawing.Point(99, 83);
+            this.y2.Name = "y2";
+            this.y2.Size = new System.Drawing.Size(121, 26);
+            this.y2.TabIndex = 162;
+            // 
+            // m3
+            // 
+            this.m3.FormattingEnabled = true;
+            this.m3.Location = new System.Drawing.Point(89, 114);
+            this.m3.Name = "m3";
+            this.m3.Size = new System.Drawing.Size(121, 26);
+            this.m3.TabIndex = 162;
+            // 
+            // y3
+            // 
+            this.y3.FormattingEnabled = true;
+            this.y3.Location = new System.Drawing.Point(89, 83);
+            this.y3.Name = "y3";
+            this.y3.Size = new System.Drawing.Size(121, 26);
+            this.y3.TabIndex = 161;
             // 
             // report
             // 
@@ -725,7 +628,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -735,6 +637,7 @@
             this.groupBox11.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -751,14 +654,10 @@
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown6;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label61;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
@@ -768,8 +667,6 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown4;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
@@ -778,5 +675,11 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private System.Windows.Forms.ComboBox cmbchart;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.ComboBox m3;
+        private System.Windows.Forms.ComboBox y3;
+        private System.Windows.Forms.ComboBox m2;
+        private System.Windows.Forms.ComboBox y2;
+        private System.Windows.Forms.ComboBox m1;
+        private System.Windows.Forms.ComboBox y1;
     }
 }

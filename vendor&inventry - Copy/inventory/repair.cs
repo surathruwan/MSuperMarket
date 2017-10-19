@@ -14,7 +14,7 @@ using System.Net.Mail;
 using System.Text.RegularExpressions;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-namespace madushaTemp
+namespace inventory
 {
 
     public partial class repair : Form
@@ -36,6 +36,34 @@ namespace madushaTemp
 
 
             InitializeComponent();
+
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                // btncconfirm.Visible = false;
+                //button1.Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+                // tabControl1.TabPages.Remove(tabPage4);
+
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage4);
+                // ((Control)this.tabPage2).Enabled = false;
+              
+                
+            }
+            else
+            {
+                tabControl1.TabPages.Remove(tabPage1);
+                tabControl1.TabPages.Remove(tabPage4);
+
+            }
+
+
+
             //loadcustItem();
             loaddatagridneedtosendtemp();
             loadneedtosend();
@@ -49,7 +77,8 @@ namespace madushaTemp
             txtt3from.Text = "ruchidhana@gmail.com";
             tableFullSpareParts.RowTemplate.Height = 80;
 
-
+            btnleft.Hide();
+            btnright.Hide();
             try
             {
 
@@ -552,7 +581,7 @@ namespace madushaTemp
 
             loadpanel2sendtooriginal();
             loadneedtosend();
-
+                    btnright.Hide();
 
                 }
             }
@@ -997,6 +1026,7 @@ namespace madushaTemp
 
             loadneedtosend();
             loadpanel2sendtooriginal();
+            btnleft.Hide();
         }
 
         private void datagridpanel2sendto_CellContentClick(object sender, DataGridViewCellEventArgs e)

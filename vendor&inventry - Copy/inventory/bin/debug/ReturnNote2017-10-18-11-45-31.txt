@@ -1,0 +1,9 @@
+	 	 MADUSHA SUPERMARKET 	 	
+--------------------------------------------------
+11:45:31 AM	 	Wednesday, October 18, 2017
+Cashier: upali
+
+	Item Name	 Item Code  Price  Quantity 
+	2017-08-29	 1    12000      5    
+--------------------------------------------------
+	 Total Amount 	 	 	11995.00
