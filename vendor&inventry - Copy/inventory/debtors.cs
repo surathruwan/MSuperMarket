@@ -22,6 +22,7 @@ namespace madushaTemp
         public debtors()
         {
             InitializeComponent();
+            dobpicker.MaxDate = DateTime.Now;
             tableLoadCustomer();
 
             ToolTip n = new ToolTip();
@@ -35,6 +36,7 @@ namespace madushaTemp
         }
         String picLoc1;
         WebCam webcam;
+
 
         public string nic
         { get; set; }
@@ -167,6 +169,7 @@ namespace madushaTemp
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
+            webcam.Stop();
             this.Close();
         }
 

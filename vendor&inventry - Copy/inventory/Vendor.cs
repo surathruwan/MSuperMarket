@@ -21,7 +21,7 @@ namespace vendor_management
 
         //SSlmode =none because it gave an error in connecting
         string constring = "Sslmode=none;datasource=localhost;port=3306;username=root;password=  ";
-
+        
 
 
         public Vendor()
@@ -38,10 +38,16 @@ namespace vendor_management
 
 
             date.MinDate = DateTime.Now;
+            pictureBox1.Image = null;
+            pictureBox2.Image = null;
+            pictureBox3.Image = null;
+            pictureBox4.Image = null;
+            pictureBox5.Image = null;
+            pictureBox6.Image = null;
 
         }
-        public int z = 0;
-
+        public int z = 1;
+        
         public string code
         { get; set; }
         public string Vname
@@ -85,6 +91,7 @@ namespace vendor_management
             ToolTip buttonToolTip = new ToolTip();
             ToolTip n = new ToolTip();
             Regex regex = new Regex(re);
+            
             if (!regex.IsMatch(tb.Text))
             {
 
@@ -97,7 +104,10 @@ namespace vendor_management
             {
                 pc.Image = null;
                 // n.SetToolTip(pc, "valid entry");
-                z = 1;
+
+                
+                    z = 1;
+                
             }
         }
         void fillCombo()
@@ -222,7 +232,7 @@ namespace vendor_management
             Regexp(@"^([\w]+)@([\w]+)\.([\w]+)$", email_txt, pictureBox1, "Email should consist @,.");
             Regexp(@"^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$", pNum_txt, pictureBox2, "Mobile should consist 10 digits");
             Regexp(@"^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$", telephone_txt, pictureBox3, "Telephone should consist 10 digits");
-            Regexp(@"^[A-Z]{2}[1-9]{4}$", vCode_txt, pictureBox4, "Vendor code length should be 6 ");
+            Regexp(@"^[A-Z]{2}[0-9]{4}$", vCode_txt, pictureBox4, "Vendor code length should be 6 ");
             Regexp(@"^[0-9]{12}$", accNo_txt, pictureBox6, "Account number length should be 12");
             Regexp(@"^[0-9]{10}$", faxNo_txt, pictureBox5, "Fax number length should be null or 10");
 
@@ -236,7 +246,7 @@ namespace vendor_management
             }
 
 
-            else
+            else if((pictureBox1.Image==null)&&(pictureBox2.Image == null)&&(pictureBox3.Image == null)&&(pictureBox4.Image == null) &&(pictureBox5.Image == null) &&(pictureBox6.Image == null)) 
             {
                 try
                 {
@@ -283,7 +293,7 @@ namespace vendor_management
             Regexp(@"^([\w]+)@([\w]+)\.([\w]+)$", email_txt, pictureBox1, "Email should consist @,.");
             Regexp(@"^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$", pNum_txt, pictureBox2, "Mobile should consist 10 digits");
             Regexp(@"^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$", telephone_txt, pictureBox3, "Telephone should consist 10 digits");
-            Regexp(@"^[A-Z]{2}[1-9]{4}$", vCode_txt, pictureBox4, "Vendor code length should be 6 ");
+            Regexp(@"^[A-Z]{2}[0-9]{4}$", vCode_txt, pictureBox4, "Vendor code length should be 6 ");
             Regexp(@"^[0-9]{12}$", accNo_txt, pictureBox6, "Account number length should be 12");
             Regexp(@"^[0-9]{10}$", faxNo_txt, pictureBox5, "Fax number length should be null or 10");
 
@@ -297,7 +307,8 @@ namespace vendor_management
 
 
 
-            else
+            else if ((pictureBox1.Image == null) && (pictureBox2.Image == null) && (pictureBox3.Image == null) && (pictureBox4.Image == null) && (pictureBox5.Image == null) && (pictureBox6.Image == null))
+
             {
                 try
                 {

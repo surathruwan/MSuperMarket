@@ -19,13 +19,14 @@ namespace inventory
 
             timer1.Start();
             panel4.Controls.Clear();
-            madushaTemp.Employee VM = new madushaTemp.Employee();
+            madushaTemp.TestForm VM = new madushaTemp.TestForm();
             VM.TopLevel = false;
             VM.AutoScroll = true;
             panel4.Controls.Add(VM);
             VM.Show();
-
-
+            string i = login.getUsername();
+            string u = Session.UserLabel();
+            lblname.Text = i;
         }
 
         //load form to panel
@@ -179,20 +180,20 @@ namespace inventory
         {
             try
             {
+                Session.windUpSession();
                 panel4.Controls.Clear();
                 login l = new login();
                 l.Show();
-                //this.Close();
+                this.Hide();
             }
-            catch (Exception)
+            catch (Exception c)
             {
 
-                throw;
+                MessageBox.Show(c.Message);
             }
             
-
-
-
                 }
+
+
     }
 }

@@ -28,6 +28,30 @@ namespace inventory
         public main()
         {
             InitializeComponent();
+
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                // btncconfirm.Visible = false;
+              
+
+            }
+            else if (v == 2)
+            {
+                tabControl1.TabPages.Remove(tabPage3);
+                tabControl1.TabPages.Remove(tabPage4);
+                tabControl1.TabPages.Remove(tabPage6);
+                tabControl1.TabPages.Remove(tabPage7);
+               
+            }
+            else
+            {
+                tabControl1.TabPages.Remove(tabPage5);
+                tabControl1.TabPages.Remove(tabPage6);
+
+            }
+
+
             loadtable();
             wrun();
             srun();
@@ -47,7 +71,7 @@ namespace inventory
 
         }
       
-       /* public void ConvertText()
+       public void ConvertText()
         {
             try
             {
@@ -55,41 +79,33 @@ namespace inventory
                 string Time = DateTime.Now.ToLongDateString();
                 String Datestr = DateTime.Now.ToString("yyyy-M-dd-HH-mm-ss");
                 string total = rettot.Text;
-                //string cash = txtdpay.Text;
-               // string balance = lblbal.Text;
-                //string prepare = cmbprepare.Text;
-                string path = System.IO.Path.Combine("C:\\Users\\Hp\\Desktop", "Madusha" + Datestr + ".txt");
+                string path = System.IO.Path.Combine(@"", "ReturnNote" + Datestr + ".txt");
                 TextWriter writer = new StreamWriter(path);
                 writer.WriteLine("\t \t MADUSHA SUPERMARKET \t \t");
                 writer.WriteLine("--------------------------------------------------");
                 writer.WriteLine("" + Date + "\t \t" + Time);
-               // writer.WriteLine("Cashier: " + prepare);
+                writer.WriteLine("Cashier: " + login.getUsername());
                 writer.WriteLine("");
 
-                writer.WriteLine("\tItem Name\t Item Code  Price  Quantity ");
-                for (int i = 0; i < ret.Rows.Count; i++)
+                writer.WriteLine("Item Name\t Item Code\t Price\t Quantity ");
+                for (int i = 0; i < ret.Rows.Count-1; i++)
                 {
-                    writer.Write("\t" + ret.Rows[i].Cells[1].Value.ToString() + "\t" + " " +
-                    ret.Rows[i].Cells[2].Value.ToString() + "  " + "  " +
-                    ret.Rows[i].Cells[3].Value.ToString() + "  " + "    " +
-                    
-                    ret.Rows[i].Cells[4].Value.ToString() + "   " + " ");
+                    writer.Write(ret.Rows[i].Cells[1].Value.ToString() + "\t\t" +
+                    ret.Rows[i].Cells[2].Value.ToString() + " \t " + 
+                    ret.Rows[i].Cells[3].Value.ToString() + "\t  " +
+                    ret.Rows[i].Cells[4].Value.ToString() + "\t   ");
                     writer.WriteLine("");
                     writer.WriteLine("--------------------------------------------------");
                 }
-                writer.WriteLine("\t Total Amount \t \t \t" + total);
-                //writer.WriteLine("\t Down Payment \t \t \t" + cash);
-                //writer.WriteLine("\t Balance \t \t \t" + balance);
-
+                writer.WriteLine("Total Amount \t \t \t" + total);
                 writer.Close();
-                MessageBox.Show("data Exported");
+                //MessageBox.Show("data Exported");
             }
-            catch (IOException ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        */
         void reset()
         {
 
@@ -723,7 +739,7 @@ namespace inventory
 
         private void gr_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+            //helloooooooo
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.gr.Rows[e.RowIndex];
@@ -1398,10 +1414,10 @@ namespace inventory
                      MessageBox.Show(ex.Message);
                  }
 
-               // ConvertText();
+                ConvertText();
                 MessageBox.Show("Done");
                 resetret();
-                this.ret.Rows.Clear();
+                ret.Rows.Clear();
                 int x = 0;
                 rettot.Text = x.ToString("0.00");
 

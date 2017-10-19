@@ -209,6 +209,7 @@
     <Compile Include="sendEmail.designer.cs">
       <DependentUpon>sendEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="supermarketDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

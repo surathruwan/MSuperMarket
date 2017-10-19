@@ -1,11 +1,11 @@
 	 	 MADUSHA SUPERMARKET 	 	
 --------------------------------------------------
-8:47:47 AM	 	Wednesday, September 20, 2017
-Cashier: Mrs.Nishi 
+10:36:29 PM	 	Tuesday, October 17, 2017
+Cashier: Mr.Upali
 
 	Item Name	 Item Code  Price  Quantity 
 
-	Iron 1007	 50002    8000      2    
+	Iron 1001	 50002    8000      2    
 --------------------------------------------------
 	 Total Amount 	 	 	15680
 	 Down Payment 	 	 	10000

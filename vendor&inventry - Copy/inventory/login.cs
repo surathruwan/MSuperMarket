@@ -13,6 +13,7 @@ namespace inventory
 {
     public partial class login : Form
     {
+        private static String user = null;
         public login()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace inventory
                 MySqlConnection dbcon = new MySqlConnection(con);
 
                 MySqlCommand cm = new MySqlCommand("Select * from supermarket.users where user='" + us.Text + "' and password='" + pw.Text + "'", dbcon);
-
+                 user = us.Text;
                 dbcon.Open();
                 DataSet d = new DataSet();
                 MySqlDataReader sdr = cm.ExecuteReader();
@@ -46,13 +47,13 @@ namespace inventory
 
                 if (count == 1)
                 {
-                   
+                    Session.startSession(us.Text);
                     MainForm F2 = new MainForm();
                     F2.Show();
                     us.Text = "";
                     pw.Text = "";
                     this.WindowState = FormWindowState.Minimized;
-                    //this.Close();
+                    this.Hide();
 
                 }
                 else
@@ -65,6 +66,8 @@ namespace inventory
                 MessageBox.Show(ex.Message);
             }
         }
+         
+        public static string getUsername() { return user; }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
