@@ -144,7 +144,7 @@ namespace inventory
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             panel4.Controls.Clear();
-            madushaTemp.repair VM = new madushaTemp.repair();
+            inventory.repair VM = new inventory.repair();
             VM.TopLevel = false;
             VM.AutoScroll = true;
             panel4.Controls.Add(VM);
