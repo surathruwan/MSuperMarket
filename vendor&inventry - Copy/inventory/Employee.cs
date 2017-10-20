@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Net.Mail;
-
+using inventory;
 
 namespace madushaTemp
 {
@@ -25,8 +25,30 @@ namespace madushaTemp
         public Employee()
         {
             InitializeComponent();
+            int v = Session.getUser();
+            if (v == 1)
+            {
+                // btncconfirm.Visible = false;
+                //button1.Enabled = false;
+                // ((Control)this.tabPage1).Enabled = false;
+                //tabPage1.Enabled = false;
+                // tabControl1.TabPages.Remove(tabPage4);
 
-     
+            }
+            else if (v == 2)
+            {
+                //button2.Enabled = false;
+                tabControl1.TabPages.Remove(tabPage3);
+                tabControl1.TabPages.Remove(Reports); }
+
+            else
+            {
+                tabControl1.TabPages.Remove(tabPage3);
+                tabControl1.TabPages.Remove(Reports);
+
+            }
+
+
 
             loadtable();
             loadtable2();
