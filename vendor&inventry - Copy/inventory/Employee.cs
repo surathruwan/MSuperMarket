@@ -39,15 +39,16 @@ namespace madushaTemp
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage3);
-                tabControl1.TabPages.Remove(Reports); }
+                tabControl1.TabPages.Remove(Reports);
+                // ((Control)this.tabPage2).Enabled = false;
 
+            }
             else
             {
                 tabControl1.TabPages.Remove(tabPage3);
                 tabControl1.TabPages.Remove(Reports);
 
             }
-
 
 
             loadtable();
