@@ -1,4 +1,4 @@
-﻿namespace madushaTemp
+﻿namespace inventory
 {
     partial class repair
     {
@@ -344,7 +344,7 @@
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = false;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(1201, 688);
+            this.bunifuCards2.Size = new System.Drawing.Size(1202, 737);
             this.bunifuCards2.TabIndex = 14;
             this.bunifuCards2.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards2_Paint);
             // 
@@ -360,6 +360,8 @@
             // 
             // datagridneedtosendtemp
             // 
+            this.datagridneedtosendtemp.AllowUserToAddRows = false;
+            this.datagridneedtosendtemp.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.datagridneedtosendtemp.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.datagridneedtosendtemp.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -402,6 +404,8 @@
             // 
             // datagridcustitem
             // 
+            this.datagridcustitem.AllowUserToAddRows = false;
+            this.datagridcustitem.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.datagridcustitem.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.datagridcustitem.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -544,7 +548,7 @@
             this.listBoxt11.ItemHeight = 20;
             this.listBoxt11.Location = new System.Drawing.Point(532, 212);
             this.listBoxt11.Name = "listBoxt11";
-            this.listBoxt11.Size = new System.Drawing.Size(204, 104);
+            this.listBoxt11.Size = new System.Drawing.Size(204, 84);
             this.listBoxt11.TabIndex = 94;
             this.listBoxt11.Visible = false;
             this.listBoxt11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseClick);
@@ -635,6 +639,11 @@
             this.txtt1noofdays.Name = "txtt1noofdays";
             this.txtt1noofdays.Size = new System.Drawing.Size(200, 24);
             this.txtt1noofdays.TabIndex = 11;
+            this.txtt1noofdays.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label14
             // 
@@ -1320,7 +1329,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1202, 698);
+            this.tabPage2.Size = new System.Drawing.Size(1498, 948);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Send Item";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1427,6 +1436,8 @@
             // 
             // bunifuCustomDataGrid5
             // 
+            this.bunifuCustomDataGrid5.AllowUserToAddRows = false;
+            this.bunifuCustomDataGrid5.AllowUserToDeleteRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid5.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid5.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -1447,6 +1458,7 @@
             this.bunifuCustomDataGrid5.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid5.Location = new System.Drawing.Point(9, 49);
             this.bunifuCustomDataGrid5.Name = "bunifuCustomDataGrid5";
+            this.bunifuCustomDataGrid5.ReadOnly = true;
             this.bunifuCustomDataGrid5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid5.RowHeadersVisible = false;
             this.bunifuCustomDataGrid5.RowHeadersWidth = 35;
@@ -1494,6 +1506,8 @@
             // 
             // datagridpanel2sendto
             // 
+            this.datagridpanel2sendto.AllowUserToAddRows = false;
+            this.datagridpanel2sendto.AllowUserToDeleteRows = false;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.datagridpanel2sendto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.datagridpanel2sendto.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -1536,6 +1550,8 @@
             // 
             // datagridpanel2sendtooriginal
             // 
+            this.datagridpanel2sendtooriginal.AllowUserToAddRows = false;
+            this.datagridpanel2sendtooriginal.AllowUserToDeleteRows = false;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.datagridpanel2sendtooriginal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.datagridpanel2sendtooriginal.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -1731,7 +1747,7 @@
             this.tabPage3.Controls.Add(this.bunifuCards3);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1202, 698);
+            this.tabPage3.Size = new System.Drawing.Size(1498, 948);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Customer Notify";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2043,6 +2059,8 @@
             // 
             // tablepanel3statuschanging
             // 
+            this.tablepanel3statuschanging.AllowUserToAddRows = false;
+            this.tablepanel3statuschanging.AllowUserToDeleteRows = false;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tablepanel3statuschanging.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.tablepanel3statuschanging.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -2124,6 +2142,8 @@
             // 
             // tablet3messagesend
             // 
+            this.tablet3messagesend.AllowUserToAddRows = false;
+            this.tablet3messagesend.AllowUserToDeleteRows = false;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tablet3messagesend.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.tablet3messagesend.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -2521,7 +2541,7 @@
             this.tabPage4.Controls.Add(this.bunifuCards4);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1202, 698);
+            this.tabPage4.Size = new System.Drawing.Size(1498, 948);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Onshelf Repairing";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -2583,6 +2603,8 @@
             // 
             // tableselecteditem
             // 
+            this.tableselecteditem.AllowUserToAddRows = false;
+            this.tableselecteditem.AllowUserToDeleteRows = false;
             dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tableselecteditem.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.tableselecteditem.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -2830,6 +2852,8 @@
             // 
             // tableFullSpareParts
             // 
+            this.tableFullSpareParts.AllowUserToAddRows = false;
+            this.tableFullSpareParts.AllowUserToDeleteRows = false;
             dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tableFullSpareParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.tableFullSpareParts.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -3290,7 +3314,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(164)))), ((int)(((byte)(214)))));
-            this.ClientSize = new System.Drawing.Size(1206, 726);
+            this.ClientSize = new System.Drawing.Size(1209, 752);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "repair";

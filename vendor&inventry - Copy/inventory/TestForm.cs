@@ -59,10 +59,18 @@ namespace madushaTemp
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage4);
-               // ((Control)this.tabPage2).Enabled = false;
+                // ((Control)this.tabPage2).Enabled = false;
+                bunifuThinButton214.Enabled = false;
+                pictureBox12.Enabled = false;
+                btnseized.Enabled = false;
+                tblinscust.Enabled = false;
+                tableseized.Enabled = false;
+                btnprintrecep.Enabled = false;
+                tblei.Enabled = false;
             }
             else {
-
+                tabControl1.TabPages.Remove(tabPage1);
+                tabControl1.TabPages.Remove(tabPage4);
 
             }
 
@@ -98,9 +106,9 @@ namespace madushaTemp
             tableLoadEI();
             tableLoadInstallmntformload();
 
-            
+            datei.MinDate = DateTime.Now;
 
-           // chartLoadIExp();
+            // chartLoadIExp();
             //chartLoadProLos();
 
 
@@ -3009,6 +3017,11 @@ namespace madushaTemp
             doc.Close();
 
             System.Diagnostics.Process.Start(@"aUnPaid_List.pdf");
+
+        }
+
+        private void bunifuCards5_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
