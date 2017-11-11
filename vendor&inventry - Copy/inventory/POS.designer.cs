@@ -81,8 +81,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblBalanceAmount1 = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
@@ -107,6 +105,8 @@
             this.MadushaPrintDocument = new System.Drawing.Printing.PrintDocument();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.itemTableAdapter = new inventory.supermarketDataSetTableAdapters.itemTableAdapter();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -673,25 +673,6 @@
             this.panel6.Size = new System.Drawing.Size(343, 232);
             this.panel6.TabIndex = 1;
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox3.Location = new System.Drawing.Point(145, 150);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 29);
-            this.textBox3.TabIndex = 47;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label20.Location = new System.Drawing.Point(3, 153);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(117, 33);
-            this.label20.TabIndex = 46;
-            this.label20.Text = "Points";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(301, 111);
@@ -921,6 +902,25 @@
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
             // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label20.Location = new System.Drawing.Point(3, 153);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(117, 33);
+            this.label20.TabIndex = 46;
+            this.label20.Text = "Points";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.textBox3.Location = new System.Drawing.Point(145, 150);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(153, 29);
+            this.textBox3.TabIndex = 47;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1028,8 +1028,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemcodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rpriceDataGridViewTextBoxColumn;
@@ -1056,6 +1054,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label20;
         //private newdbmadushaDataSetTableAdapters.itemTableAdapter itemTableAdapter1;
     }
 }
