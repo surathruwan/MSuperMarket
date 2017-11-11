@@ -1157,6 +1157,12 @@ namespace inventory
                 LoadDate();
             }
         }
+
+    public void discountLevel()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from discountlevel", conn);
+        }
     }
     }
 
