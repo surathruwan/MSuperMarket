@@ -2495,7 +2495,7 @@ namespace madushaTemp
         {
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aSeized_Goods.pdf", FileMode.Create));
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\aSeized_Goods.pdf", FileMode.Create));
             doc.Open();
             
             MessageBox.Show("PDF Created Sucessfuly!!","",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -2578,7 +2578,7 @@ namespace madushaTemp
 
             doc.Close();
 
-            System.Diagnostics.Process.Start(@"aSeized_Goods.pdf");
+            System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\aSeized_Goods.pdf");
 
         }
 
