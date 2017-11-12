@@ -13,7 +13,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Drawing.Printing;
 using System.Windows.Forms;
-
+using System.Diagnostics;
 
 namespace inventory
 {
@@ -100,6 +100,10 @@ namespace inventory
                 writer.WriteLine("Total Amount \t \t \t" + total);
                 writer.Close();
                 //MessageBox.Show("data Exported");
+
+                ProcessStartInfo psi = new ProcessStartInfo("ReturnNote" + Datestr + ".txt");
+                psi.Verb = "print";
+                Process.Start(psi);
             }
             catch (Exception ex)
             {
@@ -1011,14 +1015,14 @@ namespace inventory
                     // string a = null;
                     string con = "datasource=localhost;port=3306;username=root";
                     MySqlConnection dbcon = new MySqlConnection(con);
-                    MySqlCommand cm = new MySqlCommand("insert into supermarket.item(Item_name,Barcode,Category,Sub_category,Brand,Wprice,Rprice,Description,Warrenty,image,wqty,sqty,roqty,tqty,Floor,shelf,freeIssue,packSize,createdD,modifiedD,modifiedBy,lastPD,lastSD,updatable,discount) values('" + aname.Text + "','" + abcode.Text + "','" + catcombo.Text + "','" + subcombo.Text + "','" + abrand.Text + "','" + whpr.Text + "','" + rpr.Text + "','" + ades.Text + "','" + awarrenty.Text + "',@IMG,0,0,'" + roq.Text + "','" + tqty.Text + "','" + afloor.Text + "','" + ashelf.Text + "','" + issue.Text + "','" + psize.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + "Upali Kariyawasam" + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + upd + "','" + dist + "')", dbcon);
+                    MySqlCommand cm = new MySqlCommand("insert into supermarket.item(Item_name,Barcode,Category,Sub_category,Brand,Wprice,Rprice,Description,Warrenty,image,wqty,sqty,roqty,tqty,Floor,shelf,freeIssue,packSize,createdD,modifiedD,modifiedBy,lastPD,lastSD,updatable,discount) values('" + aname.Text + "','" + abcode.Text + "','" + catcombo.Text + "','" + subcombo.Text + "','" + abrand.Text + "','" + whpr.Text + "','" + rpr.Text + "','" + ades.Text + "','" + awarrenty.Text + "',@IMG,0,0,'" + roq.Text + "','" + tqty.Text + "','" + afloor.Text + "','" + ashelf.Text + "','" + issue.Text + "','" + psize.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + login.getUsername() + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + upd + "','" + dist + "')", dbcon);
                     MySqlDataReader r;
                     try
                     {
                         dbcon.Open();
                         cm.Parameters.Add(new MySqlParameter("@IMG", imageBt));
                         r = cm.ExecuteReader();
-                        MessageBox.Show("Inserted successfully!");
+                        MessageBox.Show("Inserted successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         while (r.Read())
                         {
 
@@ -1199,7 +1203,7 @@ namespace inventory
                         MySqlCommand cmd = new MySqlCommand("Update supermarket.Item set wqty=wqty+'" + Convert.ToInt32(snqty.Text) + "' where Item_code='" + scode.Text + "'", dbcon);
                         MySqlDataReader r;
                         r = cmd.ExecuteReader();
-                        MessageBox.Show("Updated successfully!");
+                        MessageBox.Show("Updated successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         r.Close();
 
                         MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.stock values('" + scode.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + spname.Text + "','" + spid.Text + "','" + sup.Text + "','" + snqty.Text + "')", dbcon);
@@ -1249,7 +1253,7 @@ namespace inventory
                 {
                     dbcon.Open();
                     r = cm.ExecuteReader();
-                    MessageBox.Show("Deleted successfully!");
+                    MessageBox.Show("Deleted successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadtable();
                     resetview();
                     while (r.Read())
@@ -1415,13 +1419,13 @@ namespace inventory
                  }
 
                 ConvertText();
-                MessageBox.Show("Done");
+            //    MessageBox.Show("Done");
                 resetret();
                 ret.Rows.Clear();
                 int x = 0;
                 rettot.Text = x.ToString("0.00");
 
-
+            
 
 
         }
@@ -1607,7 +1611,7 @@ namespace inventory
                 MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "')", dbcon);
                 MySqlDataReader r2;
                 r2 = cmd2.ExecuteReader();
-                MessageBox.Show("Transfered successfully!");
+                MessageBox.Show("Transfered successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 r2.Close();
 
@@ -1790,7 +1794,7 @@ namespace inventory
                 MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.defItem values('" + dcode.Text + "','" + dbcode.Text + "','" + dsid.Text + "','" + dq.Text + "','" + dreas.Text + "','" + ddate.Text + "')", dbcon);
                 MySqlDataReader r2;
                 r2 = cmd2.ExecuteReader();
-                MessageBox.Show("Inserted successfully!");
+                MessageBox.Show("Inserted successfully!" ,"",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1842,7 +1846,34 @@ namespace inventory
 
         private void spname_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (!(spname.Text.Length == 0))
+            {
+
+                try
+                {
+                    string con = "datasource=localhost;port=3306;username=root";
+                    MySqlConnection dbcon = new MySqlConnection(con);
+
+                    MySqlCommand cm = new MySqlCommand("Select code from supermarket.vendor where fullname='" + spname.Text + "'", dbcon);
+
+                    dbcon.Open();
+                    DataSet d = new DataSet();
+                    MySqlDataReader sdr = cm.ExecuteReader();
+
+                    while (sdr.Read())
+                    {
+                        spid.Text = sdr["code"].ToString();
+
+                    }
+                    dbcon.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+            }
 
         }
 
@@ -3281,6 +3312,48 @@ namespace inventory
         private void rbrand_OnValueChanged(object sender, EventArgs e)
         {
             rbrand.Enabled = false;
+        }
+
+        private void dsname_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!(dsname.Text.Length == 0))
+            {
+
+                try
+                {
+                    string con = "datasource=localhost;port=3306;username=root";
+                    MySqlConnection dbcon = new MySqlConnection(con);
+
+                    MySqlCommand cm = new MySqlCommand("Select code from supermarket.vendor where fullname='" + dsname.Text + "'", dbcon);
+
+                    dbcon.Open();
+                    DataSet d = new DataSet();
+                    MySqlDataReader sdr = cm.ExecuteReader();
+
+                    while (sdr.Read())
+                    {
+                        dsid.Text = sdr["code"].ToString();
+
+                    }
+                    dbcon.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+            }
+        }
+
+        private void dsid_OnValueChanged(object sender, EventArgs e)
+        {
+            dsid.Enabled = false;
+        }
+
+        private void spid_OnValueChanged(object sender, EventArgs e)
+        {
+           spid.Enabled = false;
         }
     }
 }

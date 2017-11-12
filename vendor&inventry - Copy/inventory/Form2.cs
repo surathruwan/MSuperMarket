@@ -41,7 +41,7 @@ namespace madushaTemp
             else if (v == 2)
             {
                 //button2.Enabled = false;
-                tabControl1.TabPages.Remove(tabPage4);
+                tabControl1.TabPages.Remove(tabPage5);
                 // ((Control)this.tabPage2).Enabled = false;
             }
             else { }
