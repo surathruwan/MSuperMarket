@@ -195,7 +195,7 @@ namespace inventory
                     {
                         dbcon.Open();
                         r = cm.ExecuteReader();
-                        MessageBox.Show("Updated successfully!");
+                        MessageBox.Show("Updated successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         while (r.Read())
                         {
 
