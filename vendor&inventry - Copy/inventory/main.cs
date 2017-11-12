@@ -13,7 +13,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Drawing.Printing;
 using System.Windows.Forms;
-
+using System.Diagnostics;
 
 namespace inventory
 {
@@ -100,6 +100,10 @@ namespace inventory
                 writer.WriteLine("Total Amount \t \t \t" + total);
                 writer.Close();
                 //MessageBox.Show("data Exported");
+
+                ProcessStartInfo psi = new ProcessStartInfo("ReturnNote" + Datestr + ".txt");
+                psi.Verb = "print";
+                Process.Start(psi);
             }
             catch (Exception ex)
             {
@@ -1011,7 +1015,7 @@ namespace inventory
                     // string a = null;
                     string con = "datasource=localhost;port=3306;username=root";
                     MySqlConnection dbcon = new MySqlConnection(con);
-                    MySqlCommand cm = new MySqlCommand("insert into supermarket.item(Item_name,Barcode,Category,Sub_category,Brand,Wprice,Rprice,Description,Warrenty,image,wqty,sqty,roqty,tqty,Floor,shelf,freeIssue,packSize,createdD,modifiedD,modifiedBy,lastPD,lastSD,updatable,discount) values('" + aname.Text + "','" + abcode.Text + "','" + catcombo.Text + "','" + subcombo.Text + "','" + abrand.Text + "','" + whpr.Text + "','" + rpr.Text + "','" + ades.Text + "','" + awarrenty.Text + "',@IMG,0,0,'" + roq.Text + "','" + tqty.Text + "','" + afloor.Text + "','" + ashelf.Text + "','" + issue.Text + "','" + psize.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + "Upali Kariyawasam" + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + upd + "','" + dist + "')", dbcon);
+                    MySqlCommand cm = new MySqlCommand("insert into supermarket.item(Item_name,Barcode,Category,Sub_category,Brand,Wprice,Rprice,Description,Warrenty,image,wqty,sqty,roqty,tqty,Floor,shelf,freeIssue,packSize,createdD,modifiedD,modifiedBy,lastPD,lastSD,updatable,discount) values('" + aname.Text + "','" + abcode.Text + "','" + catcombo.Text + "','" + subcombo.Text + "','" + abrand.Text + "','" + whpr.Text + "','" + rpr.Text + "','" + ades.Text + "','" + awarrenty.Text + "',@IMG,0,0,'" + roq.Text + "','" + tqty.Text + "','" + afloor.Text + "','" + ashelf.Text + "','" + issue.Text + "','" + psize.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + login.getUsername() + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + upd + "','" + dist + "')", dbcon);
                     MySqlDataReader r;
                     try
                     {
@@ -1415,13 +1419,13 @@ namespace inventory
                  }
 
                 ConvertText();
-                MessageBox.Show("Done");
+            //    MessageBox.Show("Done");
                 resetret();
                 ret.Rows.Clear();
                 int x = 0;
                 rettot.Text = x.ToString("0.00");
 
-
+            
 
 
         }
