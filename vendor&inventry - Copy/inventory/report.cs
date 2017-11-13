@@ -34,7 +34,6 @@ namespace inventory
         }
         public void chartLoadProLosBar()
         {
-            chart1.Series["Count"].Points.Clear();
             chart1.Visible = true;
 
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -65,9 +64,8 @@ namespace inventory
 
         public void chartLoadProLosPie()
         {
-            chart2.Series["Count"].Points.Clear();
+
             chart1.Visible = true;
-            
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
             MySqlCommand cmd = new MySqlCommand("select count(*) as 'count',Category from supermarket.item group by Category ;", conn);
             MySqlDataReader myR;

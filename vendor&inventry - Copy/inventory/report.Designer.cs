@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(report));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.minimizeButton = new Bunifu.Framework.UI.BunifuImageButton();
@@ -45,15 +45,11 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton27 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.m3 = new System.Windows.Forms.ComboBox();
             this.y3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.m2 = new System.Windows.Forms.ComboBox();
             this.y2 = new System.Windows.Forms.ComboBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -62,7 +58,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.m1 = new System.Windows.Forms.ComboBox();
             this.y1 = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
@@ -74,6 +69,11 @@
             this.cmbchart = new System.Windows.Forms.ComboBox();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton27 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
@@ -215,72 +215,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Good Transfer Report";
             // 
-            // bunifuThinButton26
-            // 
-            this.bunifuThinButton26.ActiveBorderThickness = 1;
-            this.bunifuThinButton26.ActiveCornerRadius = 20;
-            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
-            this.bunifuThinButton26.ButtonText = "Generate For Year";
-            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton26.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bunifuThinButton26.IdleBorderThickness = 1;
-            this.bunifuThinButton26.IdleCornerRadius = 20;
-            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton26.Location = new System.Drawing.Point(28, 217);
-            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton26.Name = "bunifuThinButton26";
-            this.bunifuThinButton26.Size = new System.Drawing.Size(185, 41);
-            this.bunifuThinButton26.TabIndex = 164;
-            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton27
-            // 
-            this.bunifuThinButton27.ActiveBorderThickness = 1;
-            this.bunifuThinButton27.ActiveCornerRadius = 20;
-            this.bunifuThinButton27.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton27.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton27.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton27.BackgroundImage")));
-            this.bunifuThinButton27.ButtonText = "Generate For Month";
-            this.bunifuThinButton27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton27.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bunifuThinButton27.IdleBorderThickness = 1;
-            this.bunifuThinButton27.IdleCornerRadius = 20;
-            this.bunifuThinButton27.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton27.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton27.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton27.Location = new System.Drawing.Point(28, 164);
-            this.bunifuThinButton27.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton27.Name = "bunifuThinButton27";
-            this.bunifuThinButton27.Size = new System.Drawing.Size(185, 41);
-            this.bunifuThinButton27.TabIndex = 163;
-            this.bunifuThinButton27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // m3
             // 
-            this.m3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.m3.FormattingEnabled = true;
             this.m3.Location = new System.Drawing.Point(92, 103);
             this.m3.Name = "m3";
-            this.m3.Size = new System.Drawing.Size(121, 20);
+            this.m3.Size = new System.Drawing.Size(121, 26);
             this.m3.TabIndex = 162;
             // 
             // y3
             // 
-            this.y3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.y3.FormattingEnabled = true;
             this.y3.Location = new System.Drawing.Point(92, 54);
             this.y3.Name = "y3";
-            this.y3.Size = new System.Drawing.Size(121, 20);
+            this.y3.Size = new System.Drawing.Size(121, 26);
             this.y3.TabIndex = 161;
             // 
             // label3
@@ -325,72 +273,20 @@
             this.groupBox2.Text = "Return Goods Report";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Generate For Year";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(35, 217);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(185, 41);
-            this.bunifuThinButton22.TabIndex = 165;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton23
-            // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Generate For Month";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton23.Location = new System.Drawing.Point(35, 164);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(185, 41);
-            this.bunifuThinButton23.TabIndex = 164;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // m2
             // 
-            this.m2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.m2.FormattingEnabled = true;
             this.m2.Location = new System.Drawing.Point(99, 114);
             this.m2.Name = "m2";
-            this.m2.Size = new System.Drawing.Size(121, 20);
+            this.m2.Size = new System.Drawing.Size(121, 26);
             this.m2.TabIndex = 163;
             // 
             // y2
             // 
-            this.y2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.y2.FormattingEnabled = true;
             this.y2.Location = new System.Drawing.Point(99, 83);
             this.y2.Name = "y2";
-            this.y2.Size = new System.Drawing.Size(121, 20);
+            this.y2.Size = new System.Drawing.Size(121, 26);
             this.y2.TabIndex = 162;
             // 
             // radioButton5
@@ -467,48 +363,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stock Report";
             // 
-            // bunifuThinButton25
-            // 
-            this.bunifuThinButton25.ActiveBorderThickness = 1;
-            this.bunifuThinButton25.ActiveCornerRadius = 20;
-            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "Generate For Year";
-            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton25.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bunifuThinButton25.IdleBorderThickness = 1;
-            this.bunifuThinButton25.IdleCornerRadius = 20;
-            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton25.Location = new System.Drawing.Point(22, 217);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(185, 41);
-            this.bunifuThinButton25.TabIndex = 161;
-            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
-            // 
             // m1
             // 
-            this.m1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.m1.FormattingEnabled = true;
             this.m1.Location = new System.Drawing.Point(86, 103);
             this.m1.Name = "m1";
-            this.m1.Size = new System.Drawing.Size(121, 20);
+            this.m1.Size = new System.Drawing.Size(121, 26);
             this.m1.TabIndex = 160;
             // 
             // y1
             // 
-            this.y1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.y1.FormattingEnabled = true;
             this.y1.Location = new System.Drawing.Point(86, 52);
             this.y1.Name = "y1";
-            this.y1.Size = new System.Drawing.Size(121, 20);
+            this.y1.Size = new System.Drawing.Size(121, 26);
             this.y1.TabIndex = 159;
             // 
             // label64
@@ -584,17 +452,17 @@
             // 
             // chart2
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(864, 60);
             this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Legend = "Legend1";
-            series3.Name = "Count";
-            this.chart2.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Count";
+            this.chart2.Series.Add(series1);
             this.chart2.Size = new System.Drawing.Size(300, 297);
             this.chart2.TabIndex = 159;
             this.chart2.Text = "chart2";
@@ -641,19 +509,144 @@
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(864, 60);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Count";
-            this.chart1.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Count";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(300, 297);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "chart1";
+            // 
+            // bunifuThinButton25
+            // 
+            this.bunifuThinButton25.ActiveBorderThickness = 1;
+            this.bunifuThinButton25.ActiveCornerRadius = 20;
+            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
+            this.bunifuThinButton25.ButtonText = "Generate For Year";
+            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton25.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuThinButton25.IdleBorderThickness = 1;
+            this.bunifuThinButton25.IdleCornerRadius = 20;
+            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton25.Location = new System.Drawing.Point(22, 217);
+            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton25.Name = "bunifuThinButton25";
+            this.bunifuThinButton25.Size = new System.Drawing.Size(185, 41);
+            this.bunifuThinButton25.TabIndex = 161;
+            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Generate For Year";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton22.Location = new System.Drawing.Point(35, 217);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(185, 41);
+            this.bunifuThinButton22.TabIndex = 165;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton23
+            // 
+            this.bunifuThinButton23.ActiveBorderThickness = 1;
+            this.bunifuThinButton23.ActiveCornerRadius = 20;
+            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
+            this.bunifuThinButton23.ButtonText = "Generate For Month";
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton23.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuThinButton23.IdleBorderThickness = 1;
+            this.bunifuThinButton23.IdleCornerRadius = 20;
+            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton23.Location = new System.Drawing.Point(35, 164);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Name = "bunifuThinButton23";
+            this.bunifuThinButton23.Size = new System.Drawing.Size(185, 41);
+            this.bunifuThinButton23.TabIndex = 164;
+            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton26
+            // 
+            this.bunifuThinButton26.ActiveBorderThickness = 1;
+            this.bunifuThinButton26.ActiveCornerRadius = 20;
+            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
+            this.bunifuThinButton26.ButtonText = "Generate For Year";
+            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton26.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuThinButton26.IdleBorderThickness = 1;
+            this.bunifuThinButton26.IdleCornerRadius = 20;
+            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton26.Location = new System.Drawing.Point(28, 217);
+            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton26.Name = "bunifuThinButton26";
+            this.bunifuThinButton26.Size = new System.Drawing.Size(185, 41);
+            this.bunifuThinButton26.TabIndex = 164;
+            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton27
+            // 
+            this.bunifuThinButton27.ActiveBorderThickness = 1;
+            this.bunifuThinButton27.ActiveCornerRadius = 20;
+            this.bunifuThinButton27.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton27.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton27.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton27.BackgroundImage")));
+            this.bunifuThinButton27.ButtonText = "Generate For Month";
+            this.bunifuThinButton27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton27.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuThinButton27.IdleBorderThickness = 1;
+            this.bunifuThinButton27.IdleCornerRadius = 20;
+            this.bunifuThinButton27.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton27.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton27.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton27.Location = new System.Drawing.Point(28, 164);
+            this.bunifuThinButton27.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton27.Name = "bunifuThinButton27";
+            this.bunifuThinButton27.Size = new System.Drawing.Size(185, 41);
+            this.bunifuThinButton27.TabIndex = 163;
+            this.bunifuThinButton27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // report
             // 
