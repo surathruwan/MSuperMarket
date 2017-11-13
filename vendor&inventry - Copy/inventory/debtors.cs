@@ -25,6 +25,10 @@ namespace madushaTemp
             dobpicker.MaxDate = DateTime.Now;
             tableLoadCustomer();
 
+            webcam = new WebCam();
+            webcam.InitializeWebCam(ref picface);
+            webcam.Start();
+
             ToolTip n = new ToolTip();
             n.SetToolTip(pictureBox1, "Capture Image");
 
@@ -160,16 +164,16 @@ namespace madushaTemp
              search("");
 
 
-            webcam = new WebCam();
-            webcam.InitializeWebCam(ref picface);
-            webcam.Start();
+            //webcam = new WebCam();
+            //webcam.InitializeWebCam(ref picface);
+            //webcam.Start();
 
 
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            webcam.Stop();
+            //webcam.Stop();
             this.Close();
         }
 
