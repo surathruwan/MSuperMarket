@@ -67,7 +67,36 @@ namespace inventory
             ret.Columns[2].Width = 70;
             acode.Visible = false;
             hidetb.Visible = false;
+            fillemp();
 
+
+        }
+        void fillemp()
+        {
+
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
+            MySqlCommand cm = new MySqlCommand("Select distinct full_name from supermarket.employee_details", dbcon);
+            MySqlDataReader r;
+
+            try
+            {
+                dbcon.Open();
+                r = cm.ExecuteReader();
+
+                while (r.Read())
+                {
+                    string cat = r.GetString("full_name");
+
+                    gby.Items.Add(cat);
+                   
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
       
@@ -1888,15 +1917,15 @@ namespace inventory
                 tmq.Text = (Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)).ToString();
                 if (Convert.ToInt32(tsc.Text) == Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show("No Missing Items found");
+                    MessageBox.Show("No Missing Items found", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else if (Convert.ToInt32(tsc.Text) < Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing");
+                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Showroom count");
+                    MessageBox.Show("Invalid Showroom count" ,"", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 
@@ -2068,7 +2097,7 @@ namespace inventory
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"ItemList.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created sucessfuly!!");
+            //MessageBox.Show("PDF Created sucessfuly!!");
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2460,6 +2489,7 @@ namespace inventory
             pdfReport("ITEM LIST-Floor 1","Select Item_code as 'code', Item_name as 'Item', sqty as 'Quantity', Floor, Rprice as 'Price', (Rprice * sqty) as 'Total' from supermarket.Item where Floor = 1 and sqty > 0","1floor.pdf");
 
 
+<<<<<<< HEAD
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -2511,6 +2541,59 @@ namespace inventory
             }
         }
 
+=======
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Floor 2", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=2 and sqty>0", "f2.pdf");
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Floor 3", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=3 and sqty>0", "f3.pdf");
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Floor 4","Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=4 and sqty>0", "f4.pdf");
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Warehouse","Select Item_code as 'code',Item_name as 'Item',wqty as 'Quantity',Rprice as 'Price',(Rprice*wqty) as 'Total' from supermarket.Item where wqty>0", "wh.pdf");
+
+        }
+
+        private void abrand_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void abcode_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tqty_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tqty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+>>>>>>> 3ca929cf3d3e9219e670c23a64ee910511dceda3
         private void roq_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
@@ -2937,6 +3020,21 @@ namespace inventory
         private void spid_OnValueChanged(object sender, EventArgs e)
         {
            spid.Enabled = false;
+        }
+
+        private void rqty_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rded_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datei_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
