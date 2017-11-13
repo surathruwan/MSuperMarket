@@ -67,7 +67,36 @@ namespace inventory
             ret.Columns[2].Width = 70;
             acode.Visible = false;
             hidetb.Visible = false;
+            fillemp();
 
+
+        }
+        void fillemp()
+        {
+
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
+            MySqlCommand cm = new MySqlCommand("Select distinct full_name from supermarket.employee_details", dbcon);
+            MySqlDataReader r;
+
+            try
+            {
+                dbcon.Open();
+                r = cm.ExecuteReader();
+
+                while (r.Read())
+                {
+                    string cat = r.GetString("full_name");
+
+                    gby.Items.Add(cat);
+                   
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
       
@@ -1888,15 +1917,15 @@ namespace inventory
                 tmq.Text = (Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)).ToString();
                 if (Convert.ToInt32(tsc.Text) == Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show("No Missing Items found");
+                    MessageBox.Show("No Missing Items found", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else if (Convert.ToInt32(tsc.Text) < Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing");
+                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Showroom count");
+                    MessageBox.Show("Invalid Showroom count" ,"", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 
@@ -2068,7 +2097,7 @@ namespace inventory
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"ItemList.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created sucessfuly!!");
+            //MessageBox.Show("PDF Created sucessfuly!!");
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2937,6 +2966,21 @@ namespace inventory
         private void spid_OnValueChanged(object sender, EventArgs e)
         {
            spid.Enabled = false;
+        }
+
+        private void rqty_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rded_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datei_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
