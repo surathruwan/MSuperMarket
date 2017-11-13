@@ -37,13 +37,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.pack = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel125 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -238,8 +238,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.bunifuThinButton225 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.wro = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.cv = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel11 = new System.Windows.Forms.Panel();
             this.bunifuThinButton226 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -387,7 +385,6 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.gsr = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.gby = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel99 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.gamnt = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel98 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -459,6 +456,8 @@
             this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel20 = new System.Windows.Forms.Panel();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gby = new System.Windows.Forms.ComboBox();
+            this.wro = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCards1.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sgr)).BeginInit();
@@ -510,7 +509,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.wro)).BeginInit();
             this.panel11.SuspendLayout();
             this.bunifuCards7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -571,6 +569,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wro)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -621,6 +620,7 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(1191, 624);
             this.bunifuCards1.TabIndex = 6;
+            this.bunifuCards1.UseWaitCursor = true;
             this.bunifuCards1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards1_Paint);
             // 
             // pack
@@ -631,6 +631,7 @@
             this.pack.Name = "pack";
             this.pack.Size = new System.Drawing.Size(0, 18);
             this.pack.TabIndex = 57;
+            this.pack.UseWaitCursor = true;
             // 
             // bunifuCustomLabel125
             // 
@@ -642,6 +643,7 @@
             this.bunifuCustomLabel125.Size = new System.Drawing.Size(84, 18);
             this.bunifuCustomLabel125.TabIndex = 56;
             this.bunifuCustomLabel125.Text = "Pack Size";
+            this.bunifuCustomLabel125.UseWaitCursor = true;
             this.bunifuCustomLabel125.Click += new System.EventHandler(this.bunifuCustomLabel125_Click);
             // 
             // roqty
@@ -652,6 +654,7 @@
             this.roqty.Name = "roqty";
             this.roqty.Size = new System.Drawing.Size(0, 18);
             this.roqty.TabIndex = 55;
+            this.roqty.UseWaitCursor = true;
             // 
             // freeissue
             // 
@@ -661,6 +664,7 @@
             this.freeissue.Name = "freeissue";
             this.freeissue.Size = new System.Drawing.Size(0, 18);
             this.freeissue.TabIndex = 53;
+            this.freeissue.UseWaitCursor = true;
             // 
             // bunifuCustomLabel129
             // 
@@ -672,6 +676,7 @@
             this.bunifuCustomLabel129.Size = new System.Drawing.Size(87, 18);
             this.bunifuCustomLabel129.TabIndex = 52;
             this.bunifuCustomLabel129.Text = "Free Issue";
+            this.bunifuCustomLabel129.UseWaitCursor = true;
             // 
             // Shelf
             // 
@@ -681,6 +686,7 @@
             this.Shelf.Name = "Shelf";
             this.Shelf.Size = new System.Drawing.Size(0, 18);
             this.Shelf.TabIndex = 42;
+            this.Shelf.UseWaitCursor = true;
             // 
             // bunifuCustomLabel18
             // 
@@ -692,6 +698,7 @@
             this.bunifuCustomLabel18.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel18.TabIndex = 41;
             this.bunifuCustomLabel18.Text = "Shelf";
+            this.bunifuCustomLabel18.UseWaitCursor = true;
             // 
             // floor
             // 
@@ -701,6 +708,7 @@
             this.floor.Name = "floor";
             this.floor.Size = new System.Drawing.Size(0, 18);
             this.floor.TabIndex = 40;
+            this.floor.UseWaitCursor = true;
             // 
             // bunifuCustomLabel20
             // 
@@ -712,6 +720,7 @@
             this.bunifuCustomLabel20.Size = new System.Drawing.Size(48, 18);
             this.bunifuCustomLabel20.TabIndex = 39;
             this.bunifuCustomLabel20.Text = "Floor";
+            this.bunifuCustomLabel20.UseWaitCursor = true;
             // 
             // warrenty
             // 
@@ -721,6 +730,7 @@
             this.warrenty.Name = "warrenty";
             this.warrenty.Size = new System.Drawing.Size(0, 18);
             this.warrenty.TabIndex = 23;
+            this.warrenty.UseWaitCursor = true;
             // 
             // bunifuCustomLabel17
             // 
@@ -732,6 +742,7 @@
             this.bunifuCustomLabel17.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel17.TabIndex = 22;
             this.bunifuCustomLabel17.Text = "Warrenty";
+            this.bunifuCustomLabel17.UseWaitCursor = true;
             // 
             // rprice
             // 
@@ -741,6 +752,7 @@
             this.rprice.Name = "rprice";
             this.rprice.Size = new System.Drawing.Size(0, 18);
             this.rprice.TabIndex = 17;
+            this.rprice.UseWaitCursor = true;
             // 
             // qty
             // 
@@ -750,6 +762,7 @@
             this.qty.Name = "qty";
             this.qty.Size = new System.Drawing.Size(0, 18);
             this.qty.TabIndex = 21;
+            this.qty.UseWaitCursor = true;
             // 
             // bunifuCustomLabel10
             // 
@@ -761,6 +774,7 @@
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(95, 18);
             this.bunifuCustomLabel10.TabIndex = 16;
             this.bunifuCustomLabel10.Text = "Retail Price";
+            this.bunifuCustomLabel10.UseWaitCursor = true;
             // 
             // wprice
             // 
@@ -770,6 +784,7 @@
             this.wprice.Name = "wprice";
             this.wprice.Size = new System.Drawing.Size(0, 18);
             this.wprice.TabIndex = 15;
+            this.wprice.UseWaitCursor = true;
             // 
             // bunifuCustomLabel12
             // 
@@ -781,6 +796,7 @@
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(141, 18);
             this.bunifuCustomLabel12.TabIndex = 20;
             this.bunifuCustomLabel12.Text = "Available Quantity";
+            this.bunifuCustomLabel12.UseWaitCursor = true;
             // 
             // bunifuCustomLabel9
             // 
@@ -792,6 +808,7 @@
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(138, 18);
             this.bunifuCustomLabel9.TabIndex = 14;
             this.bunifuCustomLabel9.Text = "Whole Sale Price";
+            this.bunifuCustomLabel9.UseWaitCursor = true;
             // 
             // description
             // 
@@ -801,6 +818,7 @@
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(0, 18);
             this.description.TabIndex = 13;
+            this.description.UseWaitCursor = true;
             // 
             // bunifuCustomLabel8
             // 
@@ -812,6 +830,7 @@
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(94, 18);
             this.bunifuCustomLabel8.TabIndex = 12;
             this.bunifuCustomLabel8.Text = "Description";
+            this.bunifuCustomLabel8.UseWaitCursor = true;
             // 
             // brand
             // 
@@ -821,6 +840,7 @@
             this.brand.Name = "brand";
             this.brand.Size = new System.Drawing.Size(0, 18);
             this.brand.TabIndex = 11;
+            this.brand.UseWaitCursor = true;
             // 
             // bunifuCustomLabel7
             // 
@@ -832,6 +852,7 @@
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel7.TabIndex = 10;
             this.bunifuCustomLabel7.Text = "Brand";
+            this.bunifuCustomLabel7.UseWaitCursor = true;
             // 
             // sub
             // 
@@ -841,6 +862,7 @@
             this.sub.Name = "sub";
             this.sub.Size = new System.Drawing.Size(0, 18);
             this.sub.TabIndex = 9;
+            this.sub.UseWaitCursor = true;
             // 
             // bunifuCustomLabel6
             // 
@@ -852,6 +874,7 @@
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel6.TabIndex = 8;
             this.bunifuCustomLabel6.Text = "Sub Category";
+            this.bunifuCustomLabel6.UseWaitCursor = true;
             // 
             // category
             // 
@@ -861,6 +884,7 @@
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(0, 18);
             this.category.TabIndex = 7;
+            this.category.UseWaitCursor = true;
             // 
             // bunifuCustomLabel5
             // 
@@ -872,6 +896,7 @@
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel5.TabIndex = 6;
             this.bunifuCustomLabel5.Text = "Category";
+            this.bunifuCustomLabel5.UseWaitCursor = true;
             // 
             // code
             // 
@@ -881,6 +906,7 @@
             this.code.Name = "code";
             this.code.Size = new System.Drawing.Size(0, 18);
             this.code.TabIndex = 5;
+            this.code.UseWaitCursor = true;
             // 
             // bunifuCustomLabel4
             // 
@@ -892,6 +918,7 @@
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(82, 18);
             this.bunifuCustomLabel4.TabIndex = 4;
             this.bunifuCustomLabel4.Text = "Item code";
+            this.bunifuCustomLabel4.UseWaitCursor = true;
             // 
             // name
             // 
@@ -901,6 +928,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(0, 18);
             this.name.TabIndex = 3;
+            this.name.UseWaitCursor = true;
             // 
             // bunifuCustomLabel2
             // 
@@ -912,6 +940,7 @@
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel2.TabIndex = 2;
             this.bunifuCustomLabel2.Text = "Name";
+            this.bunifuCustomLabel2.UseWaitCursor = true;
             // 
             // groupBox16
             // 
@@ -924,6 +953,7 @@
             this.groupBox16.Size = new System.Drawing.Size(613, 173);
             this.groupBox16.TabIndex = 59;
             this.groupBox16.TabStop = false;
+            this.groupBox16.UseWaitCursor = true;
             // 
             // sgr
             // 
@@ -952,6 +982,7 @@
             this.sgr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.sgr.Size = new System.Drawing.Size(540, 111);
             this.sgr.TabIndex = 25;
+            this.sgr.UseWaitCursor = true;
             // 
             // bunifuCustomLabel15
             // 
@@ -964,6 +995,7 @@
             this.bunifuCustomLabel15.TabIndex = 23;
             this.bunifuCustomLabel15.Text = "Stock List";
             this.bunifuCustomLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel15.UseWaitCursor = true;
             // 
             // panel22
             // 
@@ -972,6 +1004,7 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(600, 136);
             this.panel22.TabIndex = 26;
+            this.panel22.UseWaitCursor = true;
             // 
             // panel1
             // 
@@ -981,6 +1014,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(644, 605);
             this.panel1.TabIndex = 60;
+            this.panel1.UseWaitCursor = true;
             // 
             // groupBox14
             // 
@@ -999,6 +1033,7 @@
             this.groupBox14.Size = new System.Drawing.Size(613, 409);
             this.groupBox14.TabIndex = 58;
             this.groupBox14.TabStop = false;
+            this.groupBox14.UseWaitCursor = true;
             this.groupBox14.Enter += new System.EventHandler(this.groupBox14_Enter);
             // 
             // brcd
@@ -1009,6 +1044,7 @@
             this.brcd.Name = "brcd";
             this.brcd.Size = new System.Drawing.Size(0, 18);
             this.brcd.TabIndex = 68;
+            this.brcd.UseWaitCursor = true;
             // 
             // bunifuCustomLabel24
             // 
@@ -1020,6 +1056,7 @@
             this.bunifuCustomLabel24.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel24.TabIndex = 55;
             this.bunifuCustomLabel24.Text = "Barcode Id";
+            this.bunifuCustomLabel24.UseWaitCursor = true;
             // 
             // Barcode
             // 
@@ -1031,7 +1068,7 @@
             this.Barcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.Barcode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Barcode.BackgroundImage")));
             this.Barcode.ButtonText = "Generate Barcode";
-            this.Barcode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Barcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Barcode.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Barcode.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Barcode.IdleBorderThickness = 1;
@@ -1045,6 +1082,7 @@
             this.Barcode.Size = new System.Drawing.Size(173, 41);
             this.Barcode.TabIndex = 52;
             this.Barcode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Barcode.UseWaitCursor = true;
             this.Barcode.Click += new System.EventHandler(this.Barcode_Click);
             // 
             // pictureBox1
@@ -1054,6 +1092,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(210, 173);
             this.pictureBox1.TabIndex = 49;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
             // bunifuCustomLabel1
             // 
@@ -1066,6 +1105,7 @@
             this.bunifuCustomLabel1.TabIndex = 1;
             this.bunifuCustomLabel1.Text = "Item Details";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel1.UseWaitCursor = true;
             this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // panel2
@@ -1075,6 +1115,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(238, 196);
             this.panel2.TabIndex = 50;
+            this.panel2.UseWaitCursor = true;
             // 
             // bunifuThinButton22
             // 
@@ -1086,7 +1127,7 @@
             this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
             this.bunifuThinButton22.ButtonText = "Delete";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton22.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton22.IdleBorderThickness = 1;
@@ -1100,6 +1141,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton22.TabIndex = 51;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.UseWaitCursor = true;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click_2);
             // 
             // bunifuThinButton23
@@ -1112,7 +1154,7 @@
             this.bunifuThinButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
             this.bunifuThinButton23.ButtonText = "Edit";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton23.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton23.IdleBorderThickness = 1;
@@ -1126,6 +1168,7 @@
             this.bunifuThinButton23.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton23.TabIndex = 50;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.UseWaitCursor = true;
             this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click_1);
             // 
             // bunifuCustomLabel127
@@ -1138,6 +1181,7 @@
             this.bunifuCustomLabel127.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel127.TabIndex = 54;
             this.bunifuCustomLabel127.Text = "R.O. Quantity";
+            this.bunifuCustomLabel127.UseWaitCursor = true;
             // 
             // bunifuCards3
             // 
@@ -1154,6 +1198,7 @@
             this.bunifuCards3.ShadowDepth = 20;
             this.bunifuCards3.Size = new System.Drawing.Size(518, 229);
             this.bunifuCards3.TabIndex = 23;
+            this.bunifuCards3.UseWaitCursor = true;
             // 
             // groupBox17
             // 
@@ -1165,6 +1210,7 @@
             this.groupBox17.Size = new System.Drawing.Size(515, 229);
             this.groupBox17.TabIndex = 25;
             this.groupBox17.TabStop = false;
+            this.groupBox17.UseWaitCursor = true;
             // 
             // bunifuCustomLabel11
             // 
@@ -1177,6 +1223,7 @@
             this.bunifuCustomLabel11.TabIndex = 22;
             this.bunifuCustomLabel11.Text = "Select Item ";
             this.bunifuCustomLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel11.UseWaitCursor = true;
             // 
             // panel4
             // 
@@ -1189,6 +1236,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(506, 216);
             this.panel4.TabIndex = 24;
+            this.panel4.UseWaitCursor = true;
             // 
             // pictureBox12
             // 
@@ -1198,6 +1246,7 @@
             this.pictureBox12.Size = new System.Drawing.Size(33, 28);
             this.pictureBox12.TabIndex = 28;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.UseWaitCursor = true;
             this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // gr
@@ -1218,7 +1267,7 @@
             this.gr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1232,9 +1281,11 @@
             this.gr.Name = "gr";
             this.gr.ReadOnly = true;
             this.gr.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gr.RowHeadersVisible = false;
             this.gr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gr.Size = new System.Drawing.Size(482, 158);
+            this.gr.Size = new System.Drawing.Size(481, 158);
             this.gr.TabIndex = 24;
+            this.gr.UseWaitCursor = true;
             this.gr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gr_CellContentClick_1);
             this.gr.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gr_CellContentClick_1);
             // 
@@ -1248,7 +1299,7 @@
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Refresh";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton21.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton21.IdleBorderThickness = 1;
@@ -1262,6 +1313,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(116, 37);
             this.bunifuThinButton21.TabIndex = 23;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.UseWaitCursor = true;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // panel23
@@ -1271,6 +1323,7 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(492, 176);
             this.panel23.TabIndex = 25;
+            this.panel23.UseWaitCursor = true;
             // 
             // comboBox1
             // 
@@ -1283,6 +1336,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(254, 33);
             this.comboBox1.TabIndex = 22;
+            this.comboBox1.UseWaitCursor = true;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // subbox
@@ -1295,6 +1349,7 @@
             this.subbox.Name = "subbox";
             this.subbox.Size = new System.Drawing.Size(240, 33);
             this.subbox.TabIndex = 30;
+            this.subbox.UseWaitCursor = true;
             this.subbox.SelectedIndexChanged += new System.EventHandler(this.subbox_SelectedIndexChanged);
             // 
             // bunifuCustomLabel14
@@ -1308,6 +1363,7 @@
             this.bunifuCustomLabel14.Size = new System.Drawing.Size(88, 20);
             this.bunifuCustomLabel14.TabIndex = 22;
             this.bunifuCustomLabel14.Text = "Item code :";
+            this.bunifuCustomLabel14.UseWaitCursor = true;
             // 
             // tabPage2
             // 
@@ -1317,13 +1373,14 @@
             this.tabPage2.Controls.Add(this.subbox);
             this.tabPage2.Controls.Add(this.bunifuFlatButton1);
             this.tabPage2.Controls.Add(this.bunifuCards12);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1211, 685);
+            this.tabPage2.Size = new System.Drawing.Size(1198, 701);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "View Item Details";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.UseWaitCursor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // bunifuCards2
@@ -1341,6 +1398,7 @@
             this.bunifuCards2.ShadowDepth = 20;
             this.bunifuCards2.Size = new System.Drawing.Size(518, 373);
             this.bunifuCards2.TabIndex = 25;
+            this.bunifuCards2.UseWaitCursor = true;
             // 
             // panel3
             // 
@@ -1353,6 +1411,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(512, 358);
             this.panel3.TabIndex = 52;
+            this.panel3.UseWaitCursor = true;
             // 
             // groupBox6
             // 
@@ -1380,6 +1439,7 @@
             this.groupBox6.TabIndex = 49;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Price Levels";
+            this.groupBox6.UseWaitCursor = true;
             // 
             // bunifuCustomLabel13
             // 
@@ -1391,6 +1451,7 @@
             this.bunifuCustomLabel13.Size = new System.Drawing.Size(47, 18);
             this.bunifuCustomLabel13.TabIndex = 67;
             this.bunifuCustomLabel13.Text = "Price";
+            this.bunifuCustomLabel13.UseWaitCursor = true;
             // 
             // bunifuCustomLabel95
             // 
@@ -1402,6 +1463,7 @@
             this.bunifuCustomLabel95.Size = new System.Drawing.Size(70, 18);
             this.bunifuCustomLabel95.TabIndex = 66;
             this.bunifuCustomLabel95.Text = "Quantity";
+            this.bunifuCustomLabel95.UseWaitCursor = true;
             // 
             // bunifuCustomLabel96
             // 
@@ -1413,6 +1475,7 @@
             this.bunifuCustomLabel96.Size = new System.Drawing.Size(47, 18);
             this.bunifuCustomLabel96.TabIndex = 65;
             this.bunifuCustomLabel96.Text = "Level";
+            this.bunifuCustomLabel96.UseWaitCursor = true;
             // 
             // bunifuProgressBar2
             // 
@@ -1425,6 +1488,7 @@
             this.bunifuProgressBar2.ProgressColor = System.Drawing.Color.Teal;
             this.bunifuProgressBar2.Size = new System.Drawing.Size(238, 10);
             this.bunifuProgressBar2.TabIndex = 64;
+            this.bunifuProgressBar2.UseWaitCursor = true;
             this.bunifuProgressBar2.Value = 0;
             // 
             // p4
@@ -1433,7 +1497,7 @@
             this.p4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p4.BorderThickness = 2;
-            this.p4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.p4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.p4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p4.isPassword = false;
@@ -1443,6 +1507,7 @@
             this.p4.Size = new System.Drawing.Size(81, 26);
             this.p4.TabIndex = 63;
             this.p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.p4.UseWaitCursor = true;
             this.p4.OnValueChanged += new System.EventHandler(this.p4_OnValueChanged);
             // 
             // q4
@@ -1451,7 +1516,7 @@
             this.q4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q4.BorderThickness = 2;
-            this.q4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.q4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.q4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q4.isPassword = false;
@@ -1461,6 +1526,7 @@
             this.q4.Size = new System.Drawing.Size(81, 26);
             this.q4.TabIndex = 62;
             this.q4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.q4.UseWaitCursor = true;
             this.q4.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox35_OnValueChanged);
             // 
             // p3
@@ -1469,7 +1535,7 @@
             this.p3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p3.BorderThickness = 2;
-            this.p3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.p3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.p3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p3.isPassword = false;
@@ -1479,6 +1545,7 @@
             this.p3.Size = new System.Drawing.Size(81, 26);
             this.p3.TabIndex = 61;
             this.p3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.p3.UseWaitCursor = true;
             this.p3.OnValueChanged += new System.EventHandler(this.p3_OnValueChanged);
             // 
             // q3
@@ -1487,7 +1554,7 @@
             this.q3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q3.BorderThickness = 2;
-            this.q3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.q3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.q3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q3.isPassword = false;
@@ -1497,6 +1564,7 @@
             this.q3.Size = new System.Drawing.Size(81, 26);
             this.q3.TabIndex = 60;
             this.q3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.q3.UseWaitCursor = true;
             this.q3.OnValueChanged += new System.EventHandler(this.q3_OnValueChanged);
             // 
             // p2
@@ -1505,7 +1573,7 @@
             this.p2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p2.BorderThickness = 2;
-            this.p2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.p2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p2.isPassword = false;
@@ -1515,6 +1583,7 @@
             this.p2.Size = new System.Drawing.Size(81, 26);
             this.p2.TabIndex = 59;
             this.p2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.p2.UseWaitCursor = true;
             this.p2.OnValueChanged += new System.EventHandler(this.p2_OnValueChanged);
             // 
             // q2
@@ -1523,7 +1592,7 @@
             this.q2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q2.BorderThickness = 2;
-            this.q2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.q2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.q2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q2.isPassword = false;
@@ -1533,6 +1602,7 @@
             this.q2.Size = new System.Drawing.Size(81, 26);
             this.q2.TabIndex = 58;
             this.q2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.q2.UseWaitCursor = true;
             this.q2.OnValueChanged += new System.EventHandler(this.q2_OnValueChanged);
             // 
             // p1
@@ -1541,7 +1611,7 @@
             this.p1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p1.BorderThickness = 2;
-            this.p1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.p1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p1.isPassword = false;
@@ -1551,6 +1621,7 @@
             this.p1.Size = new System.Drawing.Size(81, 26);
             this.p1.TabIndex = 57;
             this.p1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.p1.UseWaitCursor = true;
             this.p1.OnValueChanged += new System.EventHandler(this.p1_OnValueChanged);
             // 
             // q1
@@ -1559,7 +1630,7 @@
             this.q1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q1.BorderThickness = 2;
-            this.q1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.q1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.q1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.q1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q1.isPassword = false;
@@ -1569,6 +1640,7 @@
             this.q1.Size = new System.Drawing.Size(81, 26);
             this.q1.TabIndex = 56;
             this.q1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.q1.UseWaitCursor = true;
             this.q1.OnValueChanged += new System.EventHandler(this.q1_OnValueChanged);
             // 
             // bunifuCustomLabel97
@@ -1581,6 +1653,7 @@
             this.bunifuCustomLabel97.Size = new System.Drawing.Size(57, 18);
             this.bunifuCustomLabel97.TabIndex = 55;
             this.bunifuCustomLabel97.Text = "Fourth";
+            this.bunifuCustomLabel97.UseWaitCursor = true;
             // 
             // bunifuCustomLabel100
             // 
@@ -1592,6 +1665,7 @@
             this.bunifuCustomLabel100.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel100.TabIndex = 54;
             this.bunifuCustomLabel100.Text = "Third";
+            this.bunifuCustomLabel100.UseWaitCursor = true;
             // 
             // bunifuCustomLabel101
             // 
@@ -1603,6 +1677,7 @@
             this.bunifuCustomLabel101.Size = new System.Drawing.Size(65, 18);
             this.bunifuCustomLabel101.TabIndex = 53;
             this.bunifuCustomLabel101.Text = "Second";
+            this.bunifuCustomLabel101.UseWaitCursor = true;
             // 
             // bunifuCustomLabel102
             // 
@@ -1614,13 +1689,14 @@
             this.bunifuCustomLabel102.Size = new System.Drawing.Size(42, 18);
             this.bunifuCustomLabel102.TabIndex = 52;
             this.bunifuCustomLabel102.Text = "First";
+            this.bunifuCustomLabel102.UseWaitCursor = true;
             // 
             // bunifuTileButton1
             // 
             this.bunifuTileButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuTileButton1.color = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuTileButton1.colorActive = System.Drawing.SystemColors.HotTrack;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
             this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
@@ -1633,6 +1709,7 @@
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(142, 130);
             this.bunifuTileButton1.TabIndex = 51;
+            this.bunifuTileButton1.UseWaitCursor = true;
             this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click_1);
             // 
             // groupBox7
@@ -1656,6 +1733,7 @@
             this.groupBox7.TabIndex = 50;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Operational Details";
+            this.groupBox7.UseWaitCursor = true;
             // 
             // groupBox8
             // 
@@ -1670,6 +1748,7 @@
             this.groupBox8.TabIndex = 62;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Current Stock";
+            this.groupBox8.UseWaitCursor = true;
             // 
             // sr
             // 
@@ -1679,6 +1758,7 @@
             this.sr.Name = "sr";
             this.sr.Size = new System.Drawing.Size(0, 18);
             this.sr.TabIndex = 57;
+            this.sr.UseWaitCursor = true;
             // 
             // bunifuCustomLabel123
             // 
@@ -1690,6 +1770,7 @@
             this.bunifuCustomLabel123.Size = new System.Drawing.Size(90, 18);
             this.bunifuCustomLabel123.TabIndex = 56;
             this.bunifuCustomLabel123.Text = "Showroom";
+            this.bunifuCustomLabel123.UseWaitCursor = true;
             // 
             // wh
             // 
@@ -1699,6 +1780,7 @@
             this.wh.Name = "wh";
             this.wh.Size = new System.Drawing.Size(0, 18);
             this.wh.TabIndex = 55;
+            this.wh.UseWaitCursor = true;
             // 
             // bunifuCustomLabel121
             // 
@@ -1710,6 +1792,7 @@
             this.bunifuCustomLabel121.Size = new System.Drawing.Size(94, 18);
             this.bunifuCustomLabel121.TabIndex = 54;
             this.bunifuCustomLabel121.Text = "Warehouse";
+            this.bunifuCustomLabel121.UseWaitCursor = true;
             // 
             // lastSD
             // 
@@ -1719,6 +1802,7 @@
             this.lastSD.Name = "lastSD";
             this.lastSD.Size = new System.Drawing.Size(0, 18);
             this.lastSD.TabIndex = 61;
+            this.lastSD.UseWaitCursor = true;
             // 
             // bunifuCustomLabel119
             // 
@@ -1730,6 +1814,7 @@
             this.bunifuCustomLabel119.Size = new System.Drawing.Size(119, 18);
             this.bunifuCustomLabel119.TabIndex = 60;
             this.bunifuCustomLabel119.Text = "Last Sold Date";
+            this.bunifuCustomLabel119.UseWaitCursor = true;
             // 
             // lastPD
             // 
@@ -1739,6 +1824,7 @@
             this.lastPD.Name = "lastPD";
             this.lastPD.Size = new System.Drawing.Size(0, 18);
             this.lastPD.TabIndex = 59;
+            this.lastPD.UseWaitCursor = true;
             // 
             // bunifuCustomLabel117
             // 
@@ -1750,6 +1836,7 @@
             this.bunifuCustomLabel117.Size = new System.Drawing.Size(165, 18);
             this.bunifuCustomLabel117.TabIndex = 58;
             this.bunifuCustomLabel117.Text = "Last Purchased Date";
+            this.bunifuCustomLabel117.UseWaitCursor = true;
             // 
             // modifiedBy
             // 
@@ -1759,6 +1846,7 @@
             this.modifiedBy.Name = "modifiedBy";
             this.modifiedBy.Size = new System.Drawing.Size(0, 18);
             this.modifiedBy.TabIndex = 57;
+            this.modifiedBy.UseWaitCursor = true;
             // 
             // bunifuCustomLabel114
             // 
@@ -1770,6 +1858,7 @@
             this.bunifuCustomLabel114.Size = new System.Drawing.Size(96, 18);
             this.bunifuCustomLabel114.TabIndex = 56;
             this.bunifuCustomLabel114.Text = "Modified By";
+            this.bunifuCustomLabel114.UseWaitCursor = true;
             // 
             // modifiedD
             // 
@@ -1779,6 +1868,7 @@
             this.modifiedD.Name = "modifiedD";
             this.modifiedD.Size = new System.Drawing.Size(0, 18);
             this.modifiedD.TabIndex = 55;
+            this.modifiedD.UseWaitCursor = true;
             // 
             // bunifuCustomLabel107
             // 
@@ -1790,6 +1880,7 @@
             this.bunifuCustomLabel107.Size = new System.Drawing.Size(149, 18);
             this.bunifuCustomLabel107.TabIndex = 54;
             this.bunifuCustomLabel107.Text = "Last Modified Date";
+            this.bunifuCustomLabel107.UseWaitCursor = true;
             // 
             // createdD
             // 
@@ -1799,6 +1890,7 @@
             this.createdD.Name = "createdD";
             this.createdD.Size = new System.Drawing.Size(0, 18);
             this.createdD.TabIndex = 53;
+            this.createdD.UseWaitCursor = true;
             // 
             // bunifuCustomLabel116
             // 
@@ -1810,6 +1902,7 @@
             this.bunifuCustomLabel116.Size = new System.Drawing.Size(107, 18);
             this.bunifuCustomLabel116.TabIndex = 52;
             this.bunifuCustomLabel116.Text = "Created Date";
+            this.bunifuCustomLabel116.UseWaitCursor = true;
             // 
             // panel5
             // 
@@ -1818,6 +1911,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(160, 141);
             this.panel5.TabIndex = 52;
+            this.panel5.UseWaitCursor = true;
             // 
             // bunifuFlatButton1
             // 
@@ -1826,7 +1920,7 @@
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "Exit";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
@@ -1853,6 +1947,7 @@
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.UseWaitCursor = true;
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuCards12
@@ -1873,6 +1968,7 @@
             this.bunifuCards12.ShadowDepth = 20;
             this.bunifuCards12.Size = new System.Drawing.Size(1207, 700);
             this.bunifuCards12.TabIndex = 25;
+            this.bunifuCards12.UseWaitCursor = true;
             // 
             // bcode
             // 
@@ -1884,9 +1980,10 @@
             this.bcode.Location = new System.Drawing.Point(937, 15);
             this.bcode.Margin = new System.Windows.Forms.Padding(6);
             this.bcode.Name = "bcode";
-            this.bcode.Size = new System.Drawing.Size(256, 29);
+            this.bcode.Size = new System.Drawing.Size(252, 34);
             this.bcode.TabIndex = 33;
             this.bcode.text = "";
+            this.bcode.UseWaitCursor = true;
             this.bcode.OnTextChange += new System.EventHandler(this.bcode_OnTextChange_1);
             // 
             // icode
@@ -1899,9 +1996,10 @@
             this.icode.Location = new System.Drawing.Point(596, 14);
             this.icode.Margin = new System.Windows.Forms.Padding(5);
             this.icode.Name = "icode";
-            this.icode.Size = new System.Drawing.Size(251, 30);
+            this.icode.Size = new System.Drawing.Size(244, 36);
             this.icode.TabIndex = 2;
             this.icode.text = "";
+            this.icode.UseWaitCursor = true;
             this.icode.OnTextChange += new System.EventHandler(this.bunifuTextbox1_OnTextChange);
             // 
             // bunifuCustomLabel16
@@ -1915,6 +2013,7 @@
             this.bunifuCustomLabel16.Size = new System.Drawing.Size(77, 20);
             this.bunifuCustomLabel16.TabIndex = 34;
             this.bunifuCustomLabel16.Text = "Barcode :";
+            this.bunifuCustomLabel16.UseWaitCursor = true;
             // 
             // tabControl1
             // 
@@ -1924,23 +2023,25 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-4, 2);
+            this.tabControl1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            this.tabControl1.Location = new System.Drawing.Point(-3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1219, 714);
+            this.tabControl1.Size = new System.Drawing.Size(1206, 726);
             this.tabControl1.TabIndex = 39;
+            this.tabControl1.UseWaitCursor = true;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.tabPage3.Controls.Add(this.bunifuCards5);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1211, 685);
+            this.tabPage3.Size = new System.Drawing.Size(1198, 701);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "New Item";
+            this.tabPage3.UseWaitCursor = true;
             // 
             // bunifuCards5
             // 
@@ -1957,6 +2058,7 @@
             this.bunifuCards5.ShadowDepth = 20;
             this.bunifuCards5.Size = new System.Drawing.Size(1173, 675);
             this.bunifuCards5.TabIndex = 1;
+            this.bunifuCards5.UseWaitCursor = true;
             // 
             // bunifuCards6
             // 
@@ -1979,6 +2081,7 @@
             this.bunifuCards6.ShadowDepth = 20;
             this.bunifuCards6.Size = new System.Drawing.Size(1145, 629);
             this.bunifuCards6.TabIndex = 42;
+            this.bunifuCards6.UseWaitCursor = true;
             // 
             // bunifuThinButton29
             // 
@@ -1990,7 +2093,7 @@
             this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
             this.bunifuThinButton29.ButtonText = "Submit";
-            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton29.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton29.IdleBorderThickness = 1;
@@ -2004,6 +2107,7 @@
             this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton29.TabIndex = 36;
             this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton29.UseWaitCursor = true;
             this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
             // 
             // bunifuThinButton211
@@ -2016,7 +2120,7 @@
             this.bunifuThinButton211.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
             this.bunifuThinButton211.ButtonText = "Reset";
-            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton211.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton211.IdleBorderThickness = 1;
@@ -2030,6 +2134,7 @@
             this.bunifuThinButton211.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton211.TabIndex = 52;
             this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton211.UseWaitCursor = true;
             this.bunifuThinButton211.Click += new System.EventHandler(this.bunifuThinButton211_Click);
             // 
             // groupBox9
@@ -2045,6 +2150,7 @@
             this.groupBox9.TabIndex = 48;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Controlling Details";
+            this.groupBox9.UseWaitCursor = true;
             // 
             // dis
             // 
@@ -2058,6 +2164,7 @@
             this.dis.Name = "dis";
             this.dis.Size = new System.Drawing.Size(20, 20);
             this.dis.TabIndex = 56;
+            this.dis.UseWaitCursor = true;
             // 
             // bunifuCustomLabel131
             // 
@@ -2069,6 +2176,7 @@
             this.bunifuCustomLabel131.Size = new System.Drawing.Size(129, 18);
             this.bunifuCustomLabel131.TabIndex = 55;
             this.bunifuCustomLabel131.Text = "Allow Discounts";
+            this.bunifuCustomLabel131.UseWaitCursor = true;
             // 
             // up
             // 
@@ -2082,6 +2190,7 @@
             this.up.Name = "up";
             this.up.Size = new System.Drawing.Size(20, 20);
             this.up.TabIndex = 54;
+            this.up.UseWaitCursor = true;
             // 
             // bunifuCustomLabel130
             // 
@@ -2093,6 +2202,7 @@
             this.bunifuCustomLabel130.Size = new System.Drawing.Size(115, 18);
             this.bunifuCustomLabel130.TabIndex = 53;
             this.bunifuCustomLabel130.Text = "Allow Updates";
+            this.bunifuCustomLabel130.UseWaitCursor = true;
             // 
             // gb3
             // 
@@ -2107,6 +2217,7 @@
             this.gb3.TabIndex = 46;
             this.gb3.TabStop = false;
             this.gb3.Text = "Image";
+            this.gb3.UseWaitCursor = true;
             this.gb3.Enter += new System.EventHandler(this.gb3_Enter);
             // 
             // imgpath
@@ -2117,6 +2228,7 @@
             this.imgpath.Name = "imgpath";
             this.imgpath.Size = new System.Drawing.Size(0, 15);
             this.imgpath.TabIndex = 47;
+            this.imgpath.UseWaitCursor = true;
             // 
             // bunifuThinButton24
             // 
@@ -2128,7 +2240,7 @@
             this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
             this.bunifuThinButton24.ButtonText = "Browse";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton24.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton24.IdleBorderThickness = 1;
@@ -2142,6 +2254,7 @@
             this.bunifuThinButton24.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton24.TabIndex = 46;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.UseWaitCursor = true;
             this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // pic
@@ -2152,6 +2265,7 @@
             this.pic.Size = new System.Drawing.Size(224, 223);
             this.pic.TabIndex = 45;
             this.pic.TabStop = false;
+            this.pic.UseWaitCursor = true;
             // 
             // panel24
             // 
@@ -2160,6 +2274,7 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(240, 234);
             this.panel24.TabIndex = 48;
+            this.panel24.UseWaitCursor = true;
             // 
             // groupBox2
             // 
@@ -2179,6 +2294,7 @@
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Price Details";
+            this.groupBox2.UseWaitCursor = true;
             // 
             // wpe
             // 
@@ -2188,6 +2304,7 @@
             this.wpe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.wpe.TabIndex = 60;
             this.wpe.TabStop = false;
+            this.wpe.UseWaitCursor = true;
             // 
             // rpe
             // 
@@ -2197,6 +2314,7 @@
             this.rpe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.rpe.TabIndex = 59;
             this.rpe.TabStop = false;
+            this.rpe.UseWaitCursor = true;
             // 
             // pse
             // 
@@ -2206,6 +2324,7 @@
             this.pse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pse.TabIndex = 58;
             this.pse.TabStop = false;
+            this.pse.UseWaitCursor = true;
             // 
             // whpr
             // 
@@ -2213,8 +2332,8 @@
             this.whpr.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.whpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.whpr.BorderThickness = 2;
-            this.whpr.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.whpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.whpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.whpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.whpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.whpr.isPassword = false;
             this.whpr.Location = new System.Drawing.Point(172, 81);
@@ -2223,6 +2342,7 @@
             this.whpr.Size = new System.Drawing.Size(282, 26);
             this.whpr.TabIndex = 27;
             this.whpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.whpr.UseWaitCursor = true;
             this.whpr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.whpr_KeyPress);
             // 
             // rpr
@@ -2231,8 +2351,8 @@
             this.rpr.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rpr.BorderThickness = 2;
-            this.rpr.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rpr.isPassword = false;
             this.rpr.Location = new System.Drawing.Point(172, 51);
@@ -2241,6 +2361,7 @@
             this.rpr.Size = new System.Drawing.Size(282, 26);
             this.rpr.TabIndex = 26;
             this.rpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rpr.UseWaitCursor = true;
             this.rpr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rpr_KeyPress);
             // 
             // psize
@@ -2249,8 +2370,8 @@
             this.psize.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.psize.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.psize.BorderThickness = 2;
-            this.psize.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.psize.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psize.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.psize.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.psize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.psize.isPassword = false;
             this.psize.Location = new System.Drawing.Point(172, 23);
@@ -2259,6 +2380,7 @@
             this.psize.Size = new System.Drawing.Size(282, 26);
             this.psize.TabIndex = 25;
             this.psize.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.psize.UseWaitCursor = true;
             this.psize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.psize_KeyPress);
             // 
             // bunifuCustomLabel31
@@ -2271,6 +2393,7 @@
             this.bunifuCustomLabel31.Size = new System.Drawing.Size(82, 18);
             this.bunifuCustomLabel31.TabIndex = 21;
             this.bunifuCustomLabel31.Text = "Wh. Price";
+            this.bunifuCustomLabel31.UseWaitCursor = true;
             // 
             // bunifuCustomLabel33
             // 
@@ -2282,6 +2405,7 @@
             this.bunifuCustomLabel33.Size = new System.Drawing.Size(126, 18);
             this.bunifuCustomLabel33.TabIndex = 4;
             this.bunifuCustomLabel33.Text = "Each Ret. Price";
+            this.bunifuCustomLabel33.UseWaitCursor = true;
             // 
             // bunifuCustomLabel36
             // 
@@ -2293,6 +2417,7 @@
             this.bunifuCustomLabel36.Size = new System.Drawing.Size(84, 18);
             this.bunifuCustomLabel36.TabIndex = 6;
             this.bunifuCustomLabel36.Text = "Pack Size";
+            this.bunifuCustomLabel36.UseWaitCursor = true;
             // 
             // panel6
             // 
@@ -2302,6 +2427,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(550, 424);
             this.panel6.TabIndex = 54;
+            this.panel6.UseWaitCursor = true;
             // 
             // groupBox1
             // 
@@ -2341,6 +2467,7 @@
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Master Details";
+            this.groupBox1.UseWaitCursor = true;
             // 
             // bce
             // 
@@ -2350,6 +2477,7 @@
             this.bce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.bce.TabIndex = 63;
             this.bce.TabStop = false;
+            this.bce.UseWaitCursor = true;
             // 
             // abcode
             // 
@@ -2357,8 +2485,8 @@
             this.abcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.abcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.abcode.BorderThickness = 2;
-            this.abcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.abcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.abcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.abcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.abcode.isPassword = false;
             this.abcode.Location = new System.Drawing.Point(172, 149);
@@ -2367,6 +2495,7 @@
             this.abcode.Size = new System.Drawing.Size(281, 26);
             this.abcode.TabIndex = 62;
             this.abcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.abcode.UseWaitCursor = true;
             this.abcode.OnValueChanged += new System.EventHandler(this.abcode_OnValueChanged);
             this.abcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.abcode_KeyPress_1);
             // 
@@ -2380,6 +2509,7 @@
             this.bunifuCustomLabel23.Size = new System.Drawing.Size(71, 18);
             this.bunifuCustomLabel23.TabIndex = 61;
             this.bunifuCustomLabel23.Text = "Barcode";
+            this.bunifuCustomLabel23.UseWaitCursor = true;
             // 
             // acode
             // 
@@ -2387,7 +2517,7 @@
             this.acode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.acode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.acode.BorderThickness = 2;
-            this.acode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.acode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.acode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.acode.isPassword = false;
@@ -2397,6 +2527,7 @@
             this.acode.Size = new System.Drawing.Size(281, 26);
             this.acode.TabIndex = 60;
             this.acode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.acode.UseWaitCursor = true;
             this.acode.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox1_OnValueChanged);
             // 
             // roe
@@ -2407,6 +2538,7 @@
             this.roe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.roe.TabIndex = 58;
             this.roe.TabStop = false;
+            this.roe.UseWaitCursor = true;
             // 
             // tqe
             // 
@@ -2416,11 +2548,12 @@
             this.tqe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.tqe.TabIndex = 57;
             this.tqe.TabStop = false;
+            this.tqe.UseWaitCursor = true;
             // 
             // afloor
             // 
             this.afloor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.afloor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.afloor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.afloor.FormattingEnabled = true;
             this.afloor.Items.AddRange(new object[] {
             "1",
@@ -2429,8 +2562,9 @@
             "4"});
             this.afloor.Location = new System.Drawing.Point(172, 319);
             this.afloor.Name = "afloor";
-            this.afloor.Size = new System.Drawing.Size(281, 26);
+            this.afloor.Size = new System.Drawing.Size(281, 20);
             this.afloor.TabIndex = 23;
+            this.afloor.UseWaitCursor = true;
             this.afloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.afloor_KeyPress);
             // 
             // ashelf
@@ -2439,8 +2573,8 @@
             this.ashelf.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ashelf.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ashelf.BorderThickness = 2;
-            this.ashelf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ashelf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ashelf.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.ashelf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ashelf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ashelf.isPassword = false;
             this.ashelf.Location = new System.Drawing.Point(173, 348);
@@ -2449,6 +2583,7 @@
             this.ashelf.Size = new System.Drawing.Size(281, 26);
             this.ashelf.TabIndex = 24;
             this.ashelf.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ashelf.UseWaitCursor = true;
             // 
             // bunifuCustomLabel44
             // 
@@ -2460,6 +2595,7 @@
             this.bunifuCustomLabel44.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel44.TabIndex = 54;
             this.bunifuCustomLabel44.Text = "Shelf";
+            this.bunifuCustomLabel44.UseWaitCursor = true;
             // 
             // bunifuCustomLabel43
             // 
@@ -2471,6 +2607,7 @@
             this.bunifuCustomLabel43.Size = new System.Drawing.Size(48, 18);
             this.bunifuCustomLabel43.TabIndex = 52;
             this.bunifuCustomLabel43.Text = "Floor";
+            this.bunifuCustomLabel43.UseWaitCursor = true;
             // 
             // roq
             // 
@@ -2478,8 +2615,8 @@
             this.roq.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.roq.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.roq.BorderThickness = 2;
-            this.roq.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.roq.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roq.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.roq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.roq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.roq.isPassword = false;
             this.roq.Location = new System.Drawing.Point(172, 289);
@@ -2488,6 +2625,7 @@
             this.roq.Size = new System.Drawing.Size(281, 26);
             this.roq.TabIndex = 22;
             this.roq.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.roq.UseWaitCursor = true;
             this.roq.OnValueChanged += new System.EventHandler(this.roq_OnValueChanged);
             this.roq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.roq_KeyPress);
             // 
@@ -2501,6 +2639,7 @@
             this.bunifuCustomLabel42.Size = new System.Drawing.Size(105, 18);
             this.bunifuCustomLabel42.TabIndex = 50;
             this.bunifuCustomLabel42.Text = "R.O.Quantity";
+            this.bunifuCustomLabel42.UseWaitCursor = true;
             // 
             // tqty
             // 
@@ -2508,8 +2647,8 @@
             this.tqty.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tqty.BorderThickness = 2;
-            this.tqty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tqty.isPassword = false;
             this.tqty.Location = new System.Drawing.Point(172, 260);
@@ -2518,6 +2657,7 @@
             this.tqty.Size = new System.Drawing.Size(281, 26);
             this.tqty.TabIndex = 21;
             this.tqty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tqty.UseWaitCursor = true;
             this.tqty.OnValueChanged += new System.EventHandler(this.tqty_OnValueChanged);
             this.tqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tqty_KeyPress);
             // 
@@ -2527,8 +2667,8 @@
             this.issue.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.issue.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.issue.BorderThickness = 2;
-            this.issue.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.issue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issue.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.issue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.issue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.issue.isPassword = false;
             this.issue.Location = new System.Drawing.Point(172, 232);
@@ -2537,6 +2677,7 @@
             this.issue.Size = new System.Drawing.Size(281, 26);
             this.issue.TabIndex = 20;
             this.issue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.issue.UseWaitCursor = true;
             // 
             // awarrenty
             // 
@@ -2544,8 +2685,8 @@
             this.awarrenty.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.awarrenty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.awarrenty.BorderThickness = 2;
-            this.awarrenty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.awarrenty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.awarrenty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.awarrenty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.awarrenty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.awarrenty.isPassword = false;
             this.awarrenty.Location = new System.Drawing.Point(172, 205);
@@ -2554,6 +2695,7 @@
             this.awarrenty.Size = new System.Drawing.Size(281, 26);
             this.awarrenty.TabIndex = 19;
             this.awarrenty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.awarrenty.UseWaitCursor = true;
             // 
             // ades
             // 
@@ -2561,8 +2703,8 @@
             this.ades.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ades.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ades.BorderThickness = 2;
-            this.ades.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ades.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ades.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.ades.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ades.isPassword = false;
             this.ades.Location = new System.Drawing.Point(172, 177);
@@ -2571,6 +2713,7 @@
             this.ades.Size = new System.Drawing.Size(281, 26);
             this.ades.TabIndex = 18;
             this.ades.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ades.UseWaitCursor = true;
             // 
             // bunifuMetroTextbox6
             // 
@@ -2578,7 +2721,7 @@
             this.bunifuMetroTextbox6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox6.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.bunifuMetroTextbox6.BorderThickness = 2;
-            this.bunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuMetroTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMetroTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox6.isPassword = false;
@@ -2588,6 +2731,7 @@
             this.bunifuMetroTextbox6.Size = new System.Drawing.Size(281, 26);
             this.bunifuMetroTextbox6.TabIndex = 46;
             this.bunifuMetroTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMetroTextbox6.UseWaitCursor = true;
             // 
             // aname
             // 
@@ -2595,8 +2739,8 @@
             this.aname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aname.BorderThickness = 2;
-            this.aname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.aname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.aname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aname.isPassword = false;
             this.aname.Location = new System.Drawing.Point(172, 119);
@@ -2605,6 +2749,7 @@
             this.aname.Size = new System.Drawing.Size(281, 26);
             this.aname.TabIndex = 15;
             this.aname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.aname.UseWaitCursor = true;
             this.aname.OnValueChanged += new System.EventHandler(this.aname_OnValueChanged);
             // 
             // bunifuCustomLabel30
@@ -2617,6 +2762,7 @@
             this.bunifuCustomLabel30.Size = new System.Drawing.Size(138, 18);
             this.bunifuCustomLabel30.TabIndex = 42;
             this.bunifuCustomLabel30.Text = "Transfer Quantity";
+            this.bunifuCustomLabel30.UseWaitCursor = true;
             // 
             // bunifuCustomLabel28
             // 
@@ -2628,6 +2774,7 @@
             this.bunifuCustomLabel28.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel28.TabIndex = 3;
             this.bunifuCustomLabel28.Text = "Category";
+            this.bunifuCustomLabel28.UseWaitCursor = true;
             // 
             // abrand
             // 
@@ -2635,8 +2782,8 @@
             this.abrand.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.abrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.abrand.BorderThickness = 2;
-            this.abrand.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.abrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.abrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.abrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.abrand.isPassword = false;
             this.abrand.Location = new System.Drawing.Point(172, 88);
@@ -2645,6 +2792,7 @@
             this.abrand.Size = new System.Drawing.Size(281, 26);
             this.abrand.TabIndex = 14;
             this.abrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.abrand.UseWaitCursor = true;
             this.abrand.Enter += new System.EventHandler(this.abrand_Enter);
             this.abrand.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.abrand_KeyPress_1);
             // 
@@ -2658,16 +2806,18 @@
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel3.TabIndex = 21;
             this.bunifuCustomLabel3.Text = "Warrenty";
+            this.bunifuCustomLabel3.UseWaitCursor = true;
             // 
             // subcombo
             // 
             this.subcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.subcombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.subcombo.FormattingEnabled = true;
             this.subcombo.Location = new System.Drawing.Point(172, 56);
             this.subcombo.Name = "subcombo";
-            this.subcombo.Size = new System.Drawing.Size(281, 26);
+            this.subcombo.Size = new System.Drawing.Size(281, 20);
             this.subcombo.TabIndex = 13;
+            this.subcombo.UseWaitCursor = true;
             // 
             // fis
             // 
@@ -2679,16 +2829,18 @@
             this.fis.Size = new System.Drawing.Size(87, 18);
             this.fis.TabIndex = 40;
             this.fis.Text = "Free Issue";
+            this.fis.UseWaitCursor = true;
             // 
             // catcombo
             // 
             this.catcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.catcombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.catcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.catcombo.FormattingEnabled = true;
             this.catcombo.Location = new System.Drawing.Point(172, 24);
             this.catcombo.Name = "catcombo";
-            this.catcombo.Size = new System.Drawing.Size(281, 26);
+            this.catcombo.Size = new System.Drawing.Size(281, 20);
             this.catcombo.TabIndex = 12;
+            this.catcombo.UseWaitCursor = true;
             this.catcombo.SelectedIndexChanged += new System.EventHandler(this.catcombo_SelectedIndexChanged_1);
             // 
             // bunifuCustomLabel27
@@ -2701,6 +2853,7 @@
             this.bunifuCustomLabel27.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel27.TabIndex = 4;
             this.bunifuCustomLabel27.Text = "Item Name";
+            this.bunifuCustomLabel27.UseWaitCursor = true;
             // 
             // bunifuCustomLabel19
             // 
@@ -2712,6 +2865,7 @@
             this.bunifuCustomLabel19.Size = new System.Drawing.Size(94, 18);
             this.bunifuCustomLabel19.TabIndex = 11;
             this.bunifuCustomLabel19.Text = "Description";
+            this.bunifuCustomLabel19.UseWaitCursor = true;
             // 
             // bunifuCustomLabel26
             // 
@@ -2723,6 +2877,7 @@
             this.bunifuCustomLabel26.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel26.TabIndex = 5;
             this.bunifuCustomLabel26.Text = "Sub Category";
+            this.bunifuCustomLabel26.UseWaitCursor = true;
             // 
             // bunifuCustomLabel25
             // 
@@ -2734,6 +2889,7 @@
             this.bunifuCustomLabel25.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel25.TabIndex = 6;
             this.bunifuCustomLabel25.Text = "Brand";
+            this.bunifuCustomLabel25.UseWaitCursor = true;
             this.bunifuCustomLabel25.Click += new System.EventHandler(this.bunifuCustomLabel25_Click);
             // 
             // panel7
@@ -2743,6 +2899,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(550, 171);
             this.panel7.TabIndex = 55;
+            this.panel7.UseWaitCursor = true;
             // 
             // panel8
             // 
@@ -2752,6 +2909,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(582, 601);
             this.panel8.TabIndex = 56;
+            this.panel8.UseWaitCursor = true;
             // 
             // groupBox3
             // 
@@ -2786,6 +2944,7 @@
             this.groupBox3.TabIndex = 47;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Price Levels";
+            this.groupBox3.UseWaitCursor = true;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // p4e
@@ -2796,6 +2955,7 @@
             this.p4e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.p4e.TabIndex = 75;
             this.p4e.TabStop = false;
+            this.p4e.UseWaitCursor = true;
             // 
             // p3e
             // 
@@ -2805,6 +2965,7 @@
             this.p3e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.p3e.TabIndex = 74;
             this.p3e.TabStop = false;
+            this.p3e.UseWaitCursor = true;
             // 
             // p2e
             // 
@@ -2814,6 +2975,7 @@
             this.p2e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.p2e.TabIndex = 73;
             this.p2e.TabStop = false;
+            this.p2e.UseWaitCursor = true;
             // 
             // p1e
             // 
@@ -2823,6 +2985,7 @@
             this.p1e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.p1e.TabIndex = 72;
             this.p1e.TabStop = false;
+            this.p1e.UseWaitCursor = true;
             // 
             // q4e
             // 
@@ -2832,6 +2995,7 @@
             this.q4e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.q4e.TabIndex = 71;
             this.q4e.TabStop = false;
+            this.q4e.UseWaitCursor = true;
             // 
             // q3e
             // 
@@ -2841,6 +3005,7 @@
             this.q3e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.q3e.TabIndex = 70;
             this.q3e.TabStop = false;
+            this.q3e.UseWaitCursor = true;
             // 
             // q2e
             // 
@@ -2850,6 +3015,7 @@
             this.q2e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.q2e.TabIndex = 69;
             this.q2e.TabStop = false;
+            this.q2e.UseWaitCursor = true;
             // 
             // q1e
             // 
@@ -2859,6 +3025,7 @@
             this.q1e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.q1e.TabIndex = 68;
             this.q1e.TabStop = false;
+            this.q1e.UseWaitCursor = true;
             // 
             // bunifuCustomLabel51
             // 
@@ -2870,6 +3037,7 @@
             this.bunifuCustomLabel51.Size = new System.Drawing.Size(47, 18);
             this.bunifuCustomLabel51.TabIndex = 67;
             this.bunifuCustomLabel51.Text = "Price";
+            this.bunifuCustomLabel51.UseWaitCursor = true;
             // 
             // bunifuCustomLabel50
             // 
@@ -2881,6 +3049,7 @@
             this.bunifuCustomLabel50.Size = new System.Drawing.Size(70, 18);
             this.bunifuCustomLabel50.TabIndex = 66;
             this.bunifuCustomLabel50.Text = "Quantity";
+            this.bunifuCustomLabel50.UseWaitCursor = true;
             // 
             // bunifuCustomLabel49
             // 
@@ -2892,6 +3061,7 @@
             this.bunifuCustomLabel49.Size = new System.Drawing.Size(47, 18);
             this.bunifuCustomLabel49.TabIndex = 65;
             this.bunifuCustomLabel49.Text = "Level";
+            this.bunifuCustomLabel49.UseWaitCursor = true;
             // 
             // bunifuProgressBar1
             // 
@@ -2904,6 +3074,7 @@
             this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
             this.bunifuProgressBar1.Size = new System.Drawing.Size(415, 10);
             this.bunifuProgressBar1.TabIndex = 64;
+            this.bunifuProgressBar1.UseWaitCursor = true;
             this.bunifuProgressBar1.Value = 0;
             // 
             // ap4
@@ -2912,8 +3083,8 @@
             this.ap4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap4.BorderThickness = 2;
-            this.ap4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ap4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.ap4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap4.isPassword = false;
             this.ap4.Location = new System.Drawing.Point(262, 173);
@@ -2922,6 +3093,7 @@
             this.ap4.Size = new System.Drawing.Size(130, 26);
             this.ap4.TabIndex = 35;
             this.ap4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ap4.UseWaitCursor = true;
             this.ap4.OnValueChanged += new System.EventHandler(this.ap4_OnValueChanged);
             this.ap4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ap4_KeyPress);
             // 
@@ -2931,8 +3103,8 @@
             this.aq4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq4.BorderThickness = 2;
-            this.aq4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.aq4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.aq4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq4.isPassword = false;
             this.aq4.Location = new System.Drawing.Point(86, 173);
@@ -2941,6 +3113,7 @@
             this.aq4.Size = new System.Drawing.Size(110, 26);
             this.aq4.TabIndex = 34;
             this.aq4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.aq4.UseWaitCursor = true;
             this.aq4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aq4_KeyPress);
             // 
             // ap3
@@ -2949,8 +3122,8 @@
             this.ap3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap3.BorderThickness = 2;
-            this.ap3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ap3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.ap3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap3.isPassword = false;
             this.ap3.Location = new System.Drawing.Point(262, 139);
@@ -2959,6 +3132,7 @@
             this.ap3.Size = new System.Drawing.Size(130, 26);
             this.ap3.TabIndex = 33;
             this.ap3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ap3.UseWaitCursor = true;
             this.ap3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ap3_KeyPress);
             // 
             // aq3
@@ -2967,8 +3141,8 @@
             this.aq3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq3.BorderThickness = 2;
-            this.aq3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.aq3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.aq3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq3.isPassword = false;
             this.aq3.Location = new System.Drawing.Point(86, 139);
@@ -2977,6 +3151,7 @@
             this.aq3.Size = new System.Drawing.Size(110, 26);
             this.aq3.TabIndex = 32;
             this.aq3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.aq3.UseWaitCursor = true;
             this.aq3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aq3_KeyPress);
             // 
             // ap2
@@ -2985,8 +3160,8 @@
             this.ap2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap2.BorderThickness = 2;
-            this.ap2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ap2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.ap2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap2.isPassword = false;
             this.ap2.Location = new System.Drawing.Point(262, 105);
@@ -2995,6 +3170,7 @@
             this.ap2.Size = new System.Drawing.Size(130, 26);
             this.ap2.TabIndex = 31;
             this.ap2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ap2.UseWaitCursor = true;
             this.ap2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ap2_KeyPress);
             // 
             // aq2
@@ -3003,8 +3179,8 @@
             this.aq2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq2.BorderThickness = 2;
-            this.aq2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.aq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.aq2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq2.isPassword = false;
             this.aq2.Location = new System.Drawing.Point(86, 105);
@@ -3013,6 +3189,7 @@
             this.aq2.Size = new System.Drawing.Size(110, 26);
             this.aq2.TabIndex = 30;
             this.aq2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.aq2.UseWaitCursor = true;
             this.aq2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aq2_KeyPress);
             // 
             // ap1
@@ -3021,8 +3198,8 @@
             this.ap1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap1.BorderThickness = 2;
-            this.ap1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ap1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.ap1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap1.isPassword = false;
             this.ap1.Location = new System.Drawing.Point(262, 72);
@@ -3031,6 +3208,7 @@
             this.ap1.Size = new System.Drawing.Size(130, 26);
             this.ap1.TabIndex = 29;
             this.ap1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ap1.UseWaitCursor = true;
             this.ap1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ap1_KeyPress);
             // 
             // aq1
@@ -3039,8 +3217,8 @@
             this.aq1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq1.BorderThickness = 2;
-            this.aq1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.aq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.aq1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq1.isPassword = false;
             this.aq1.Location = new System.Drawing.Point(86, 72);
@@ -3049,6 +3227,7 @@
             this.aq1.Size = new System.Drawing.Size(110, 26);
             this.aq1.TabIndex = 28;
             this.aq1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.aq1.UseWaitCursor = true;
             this.aq1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aq1_KeyPress);
             // 
             // bunifuCustomLabel48
@@ -3061,6 +3240,7 @@
             this.bunifuCustomLabel48.Size = new System.Drawing.Size(57, 18);
             this.bunifuCustomLabel48.TabIndex = 55;
             this.bunifuCustomLabel48.Text = "Fourth";
+            this.bunifuCustomLabel48.UseWaitCursor = true;
             // 
             // bunifuCustomLabel47
             // 
@@ -3072,6 +3252,7 @@
             this.bunifuCustomLabel47.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel47.TabIndex = 54;
             this.bunifuCustomLabel47.Text = "Third";
+            this.bunifuCustomLabel47.UseWaitCursor = true;
             // 
             // bunifuCustomLabel46
             // 
@@ -3083,6 +3264,7 @@
             this.bunifuCustomLabel46.Size = new System.Drawing.Size(65, 18);
             this.bunifuCustomLabel46.TabIndex = 53;
             this.bunifuCustomLabel46.Text = "Second";
+            this.bunifuCustomLabel46.UseWaitCursor = true;
             // 
             // bunifuCustomLabel45
             // 
@@ -3094,6 +3276,7 @@
             this.bunifuCustomLabel45.Size = new System.Drawing.Size(42, 18);
             this.bunifuCustomLabel45.TabIndex = 52;
             this.bunifuCustomLabel45.Text = "First";
+            this.bunifuCustomLabel45.UseWaitCursor = true;
             // 
             // bunifuCustomLabel29
             // 
@@ -3106,17 +3289,19 @@
             this.bunifuCustomLabel29.TabIndex = 2;
             this.bunifuCustomLabel29.Text = "Add New Item";
             this.bunifuCustomLabel29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel29.UseWaitCursor = true;
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.tabPage4.Controls.Add(this.bunifuCards14);
             this.tabPage4.Controls.Add(this.bunifuCards7);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 21);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1211, 685);
+            this.tabPage4.Size = new System.Drawing.Size(1198, 701);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "New Stock";
+            this.tabPage4.UseWaitCursor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // bunifuCards14
@@ -3139,6 +3324,7 @@
             this.bunifuCards14.ShadowDepth = 20;
             this.bunifuCards14.Size = new System.Drawing.Size(642, 683);
             this.bunifuCards14.TabIndex = 3;
+            this.bunifuCards14.UseWaitCursor = true;
             // 
             // sro
             // 
@@ -3149,7 +3335,7 @@
             this.sro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -3163,8 +3349,10 @@
             this.sro.Location = new System.Drawing.Point(54, 439);
             this.sro.Name = "sro";
             this.sro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.sro.RowHeadersVisible = false;
             this.sro.Size = new System.Drawing.Size(494, 179);
             this.sro.TabIndex = 159;
+            this.sro.UseWaitCursor = true;
             // 
             // bunifuCustomLabel139
             // 
@@ -3177,6 +3365,7 @@
             this.bunifuCustomLabel139.TabIndex = 3;
             this.bunifuCustomLabel139.Text = "Showroom Running out Items";
             this.bunifuCustomLabel139.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel139.UseWaitCursor = true;
             // 
             // pictureBox4
             // 
@@ -3186,6 +3375,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(63, 66);
             this.pictureBox4.TabIndex = 158;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.UseWaitCursor = true;
             // 
             // bunifuCustomLabel162
             // 
@@ -3198,6 +3388,7 @@
             this.bunifuCustomLabel162.TabIndex = 2;
             this.bunifuCustomLabel162.Text = "Warehouse Running out Items";
             this.bunifuCustomLabel162.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel162.UseWaitCursor = true;
             this.bunifuCustomLabel162.Click += new System.EventHandler(this.bunifuCustomLabel162_Click);
             // 
             // pictureBox3
@@ -3208,6 +3399,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(63, 66);
             this.pictureBox3.TabIndex = 157;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.UseWaitCursor = true;
             // 
             // panel10
             // 
@@ -3218,6 +3410,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(565, 336);
             this.panel10.TabIndex = 160;
+            this.panel10.UseWaitCursor = true;
             // 
             // bunifuThinButton225
             // 
@@ -3229,7 +3422,7 @@
             this.bunifuThinButton225.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton225.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton225.BackgroundImage")));
             this.bunifuThinButton225.ButtonText = "Refresh";
-            this.bunifuThinButton225.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton225.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton225.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton225.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton225.IdleBorderThickness = 1;
@@ -3243,6 +3436,7 @@
             this.bunifuThinButton225.Size = new System.Drawing.Size(116, 37);
             this.bunifuThinButton225.TabIndex = 24;
             this.bunifuThinButton225.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton225.UseWaitCursor = true;
             this.bunifuThinButton225.Click += new System.EventHandler(this.bunifuThinButton225_Click);
             // 
             // panel12
@@ -3253,42 +3447,7 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(526, 239);
             this.panel12.TabIndex = 0;
-            // 
-            // wro
-            // 
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.wro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.wro.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.wro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.wro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.wro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.wro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.wro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cv});
-            this.wro.DoubleBuffered = true;
-            this.wro.EnableHeadersVisualStyles = false;
-            this.wro.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
-            this.wro.HeaderForeColor = System.Drawing.Color.White;
-            this.wro.Location = new System.Drawing.Point(14, 15);
-            this.wro.Name = "wro";
-            this.wro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.wro.Size = new System.Drawing.Size(494, 206);
-            this.wro.TabIndex = 25;
-            this.wro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.wro_CellContentClick);
-            this.wro.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.wro_CellValueChanged);
-            // 
-            // cv
-            // 
-            this.cv.HeaderText = "";
-            this.cv.Name = "cv";
-            this.cv.Width = 40;
+            this.panel12.UseWaitCursor = true;
             // 
             // panel11
             // 
@@ -3299,6 +3458,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(565, 299);
             this.panel11.TabIndex = 161;
+            this.panel11.UseWaitCursor = true;
             // 
             // bunifuThinButton226
             // 
@@ -3310,7 +3470,7 @@
             this.bunifuThinButton226.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton226.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton226.BackgroundImage")));
             this.bunifuThinButton226.ButtonText = "Refresh";
-            this.bunifuThinButton226.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton226.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton226.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton226.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton226.IdleBorderThickness = 1;
@@ -3324,6 +3484,7 @@
             this.bunifuThinButton226.Size = new System.Drawing.Size(116, 37);
             this.bunifuThinButton226.TabIndex = 25;
             this.bunifuThinButton226.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton226.UseWaitCursor = true;
             this.bunifuThinButton226.Click += new System.EventHandler(this.bunifuThinButton226_Click);
             // 
             // panel13
@@ -3333,6 +3494,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(526, 209);
             this.panel13.TabIndex = 0;
+            this.panel13.UseWaitCursor = true;
             // 
             // bunifuCards7
             // 
@@ -3371,6 +3533,7 @@
             this.bunifuCards7.ShadowDepth = 20;
             this.bunifuCards7.Size = new System.Drawing.Size(607, 686);
             this.bunifuCards7.TabIndex = 2;
+            this.bunifuCards7.UseWaitCursor = true;
             // 
             // bunifuCustomLabel66
             // 
@@ -3383,6 +3546,7 @@
             this.bunifuCustomLabel66.TabIndex = 2;
             this.bunifuCustomLabel66.Text = "Stock Update";
             this.bunifuCustomLabel66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel66.UseWaitCursor = true;
             // 
             // stqty
             // 
@@ -3390,8 +3554,8 @@
             this.stqty.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.stqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.stqty.BorderThickness = 2;
-            this.stqty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.stqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.stqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.stqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.stqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.stqty.isPassword = false;
             this.stqty.Location = new System.Drawing.Point(272, 461);
@@ -3400,6 +3564,7 @@
             this.stqty.Size = new System.Drawing.Size(240, 26);
             this.stqty.TabIndex = 70;
             this.stqty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.stqty.UseWaitCursor = true;
             this.stqty.OnValueChanged += new System.EventHandler(this.stqty_OnValueChanged);
             this.stqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.stqty_KeyPress);
             // 
@@ -3409,8 +3574,8 @@
             this.sup.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sup.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sup.BorderThickness = 2;
-            this.sup.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sup.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sup.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.sup.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sup.isPassword = false;
             this.sup.Location = new System.Drawing.Point(271, 495);
@@ -3419,6 +3584,7 @@
             this.sup.Size = new System.Drawing.Size(240, 26);
             this.sup.TabIndex = 69;
             this.sup.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sup.UseWaitCursor = true;
             this.sup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sup_KeyPress);
             // 
             // snqty
@@ -3427,8 +3593,8 @@
             this.snqty.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.snqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.snqty.BorderThickness = 2;
-            this.snqty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.snqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.snqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.snqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.snqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.snqty.isPassword = false;
             this.snqty.Location = new System.Drawing.Point(271, 427);
@@ -3437,6 +3603,7 @@
             this.snqty.Size = new System.Drawing.Size(240, 26);
             this.snqty.TabIndex = 68;
             this.snqty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.snqty.UseWaitCursor = true;
             this.snqty.OnValueChanged += new System.EventHandler(this.snqty_OnValueChanged);
             this.snqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.snqty_KeyPress);
             // 
@@ -3446,8 +3613,8 @@
             this.saqty.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.saqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.saqty.BorderThickness = 2;
-            this.saqty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.saqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.saqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.saqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.saqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.saqty.isPassword = false;
             this.saqty.Location = new System.Drawing.Point(271, 393);
@@ -3456,6 +3623,7 @@
             this.saqty.Size = new System.Drawing.Size(240, 26);
             this.saqty.TabIndex = 67;
             this.saqty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.saqty.UseWaitCursor = true;
             this.saqty.OnValueChanged += new System.EventHandler(this.saqty_OnValueChanged);
             this.saqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.saqty_KeyPress);
             // 
@@ -3465,8 +3633,8 @@
             this.srpr.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.srpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.srpr.BorderThickness = 2;
-            this.srpr.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.srpr.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.srpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.srpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.srpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.srpr.isPassword = false;
             this.srpr.Location = new System.Drawing.Point(271, 296);
@@ -3475,6 +3643,7 @@
             this.srpr.Size = new System.Drawing.Size(240, 26);
             this.srpr.TabIndex = 64;
             this.srpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.srpr.UseWaitCursor = true;
             this.srpr.OnValueChanged += new System.EventHandler(this.srpr_OnValueChanged);
             this.srpr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.srpr_KeyPress);
             // 
@@ -3484,8 +3653,8 @@
             this.sbrand.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sbrand.BorderThickness = 2;
-            this.sbrand.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.sbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sbrand.isPassword = false;
             this.sbrand.Location = new System.Drawing.Point(271, 262);
@@ -3494,6 +3663,7 @@
             this.sbrand.Size = new System.Drawing.Size(240, 26);
             this.sbrand.TabIndex = 63;
             this.sbrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sbrand.UseWaitCursor = true;
             this.sbrand.OnValueChanged += new System.EventHandler(this.sbrand_OnValueChanged);
             // 
             // sname
@@ -3502,8 +3672,8 @@
             this.sname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sname.BorderThickness = 2;
-            this.sname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.sname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sname.isPassword = false;
             this.sname.Location = new System.Drawing.Point(271, 168);
@@ -3512,6 +3682,7 @@
             this.sname.Size = new System.Drawing.Size(240, 26);
             this.sname.TabIndex = 62;
             this.sname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sname.UseWaitCursor = true;
             this.sname.OnValueChanged += new System.EventHandler(this.sname_OnValueChanged);
             // 
             // scode
@@ -3520,8 +3691,8 @@
             this.scode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.scode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.scode.BorderThickness = 2;
-            this.scode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.scode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.scode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.scode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.scode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.scode.isPassword = false;
             this.scode.Location = new System.Drawing.Point(271, 100);
@@ -3530,6 +3701,7 @@
             this.scode.Size = new System.Drawing.Size(240, 26);
             this.scode.TabIndex = 60;
             this.scode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.scode.UseWaitCursor = true;
             this.scode.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox61_OnValueChanged);
             this.scode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.scode_KeyPress);
             // 
@@ -3543,6 +3715,7 @@
             this.bunifuCustomLabel52.Size = new System.Drawing.Size(93, 18);
             this.bunifuCustomLabel52.TabIndex = 37;
             this.bunifuCustomLabel52.Text = "Retail price";
+            this.bunifuCustomLabel52.UseWaitCursor = true;
             // 
             // bunifuCustomLabel54
             // 
@@ -3554,6 +3727,7 @@
             this.bunifuCustomLabel54.Size = new System.Drawing.Size(82, 18);
             this.bunifuCustomLabel54.TabIndex = 32;
             this.bunifuCustomLabel54.Text = "Unit Price";
+            this.bunifuCustomLabel54.UseWaitCursor = true;
             // 
             // bunifuCustomLabel55
             // 
@@ -3565,6 +3739,7 @@
             this.bunifuCustomLabel55.Size = new System.Drawing.Size(113, 18);
             this.bunifuCustomLabel55.TabIndex = 31;
             this.bunifuCustomLabel55.Text = "Total Quantity";
+            this.bunifuCustomLabel55.UseWaitCursor = true;
             // 
             // bunifuCustomLabel56
             // 
@@ -3576,6 +3751,7 @@
             this.bunifuCustomLabel56.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel56.TabIndex = 29;
             this.bunifuCustomLabel56.Text = "Item Name";
+            this.bunifuCustomLabel56.UseWaitCursor = true;
             // 
             // bunifuCustomLabel58
             // 
@@ -3587,6 +3763,7 @@
             this.bunifuCustomLabel58.Size = new System.Drawing.Size(85, 18);
             this.bunifuCustomLabel58.TabIndex = 25;
             this.bunifuCustomLabel58.Text = "Item Code";
+            this.bunifuCustomLabel58.UseWaitCursor = true;
             // 
             // bunifuCustomLabel59
             // 
@@ -3598,25 +3775,32 @@
             this.bunifuCustomLabel59.Size = new System.Drawing.Size(108, 18);
             this.bunifuCustomLabel59.TabIndex = 21;
             this.bunifuCustomLabel59.Text = "New Quantity";
+            this.bunifuCustomLabel59.UseWaitCursor = true;
             // 
             // ssubcombo
             // 
             this.ssubcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.ssubcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ssubcombo.FormattingEnabled = true;
             this.ssubcombo.Location = new System.Drawing.Point(271, 231);
             this.ssubcombo.Name = "ssubcombo";
-            this.ssubcombo.Size = new System.Drawing.Size(240, 24);
+            this.ssubcombo.Size = new System.Drawing.Size(240, 20);
             this.ssubcombo.TabIndex = 13;
+            this.ssubcombo.Text = "Select Sub Category";
+            this.ssubcombo.UseWaitCursor = true;
             this.ssubcombo.SelectedIndexChanged += new System.EventHandler(this.ssubcombo_SelectedIndexChanged);
             // 
             // scatcombo
             // 
             this.scatcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.scatcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.scatcombo.FormattingEnabled = true;
             this.scatcombo.Location = new System.Drawing.Point(271, 201);
             this.scatcombo.Name = "scatcombo";
-            this.scatcombo.Size = new System.Drawing.Size(240, 24);
+            this.scatcombo.Size = new System.Drawing.Size(240, 20);
             this.scatcombo.TabIndex = 12;
+            this.scatcombo.Text = "Select Category";
+            this.scatcombo.UseWaitCursor = true;
             this.scatcombo.SelectedIndexChanged += new System.EventHandler(this.scatcombo_SelectedIndexChanged);
             // 
             // bunifuCustomLabel60
@@ -3629,6 +3813,7 @@
             this.bunifuCustomLabel60.Size = new System.Drawing.Size(141, 18);
             this.bunifuCustomLabel60.TabIndex = 11;
             this.bunifuCustomLabel60.Text = "Available Quantity";
+            this.bunifuCustomLabel60.UseWaitCursor = true;
             // 
             // bunifuCustomLabel61
             // 
@@ -3640,6 +3825,7 @@
             this.bunifuCustomLabel61.Size = new System.Drawing.Size(90, 18);
             this.bunifuCustomLabel61.TabIndex = 10;
             this.bunifuCustomLabel61.Text = "Supplier ID";
+            this.bunifuCustomLabel61.UseWaitCursor = true;
             // 
             // bunifuCustomLabel62
             // 
@@ -3651,6 +3837,7 @@
             this.bunifuCustomLabel62.Size = new System.Drawing.Size(118, 18);
             this.bunifuCustomLabel62.TabIndex = 9;
             this.bunifuCustomLabel62.Text = "Supplier Name";
+            this.bunifuCustomLabel62.UseWaitCursor = true;
             // 
             // bunifuCustomLabel63
             // 
@@ -3662,6 +3849,7 @@
             this.bunifuCustomLabel63.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel63.TabIndex = 6;
             this.bunifuCustomLabel63.Text = "Brand";
+            this.bunifuCustomLabel63.UseWaitCursor = true;
             // 
             // bunifuCustomLabel64
             // 
@@ -3673,6 +3861,7 @@
             this.bunifuCustomLabel64.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel64.TabIndex = 5;
             this.bunifuCustomLabel64.Text = "Sub Category";
+            this.bunifuCustomLabel64.UseWaitCursor = true;
             // 
             // bunifuCustomLabel65
             // 
@@ -3684,6 +3873,7 @@
             this.bunifuCustomLabel65.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel65.TabIndex = 3;
             this.bunifuCustomLabel65.Text = "Category";
+            this.bunifuCustomLabel65.UseWaitCursor = true;
             // 
             // panel9
             // 
@@ -3698,10 +3888,12 @@
             this.panel9.Controls.Add(this.bunifuThinButton215);
             this.panel9.Controls.Add(this.spid);
             this.panel9.Controls.Add(this.panel28);
+            this.panel9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.panel9.Location = new System.Drawing.Point(9, 12);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(589, 644);
             this.panel9.TabIndex = 159;
+            this.panel9.UseWaitCursor = true;
             // 
             // supe
             // 
@@ -3711,6 +3903,7 @@
             this.supe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.supe.TabIndex = 164;
             this.supe.TabStop = false;
+            this.supe.UseWaitCursor = true;
             // 
             // stqtye
             // 
@@ -3720,6 +3913,7 @@
             this.stqtye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.stqtye.TabIndex = 163;
             this.stqtye.TabStop = false;
+            this.stqtye.UseWaitCursor = true;
             // 
             // snqtye
             // 
@@ -3729,6 +3923,7 @@
             this.snqtye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.snqtye.TabIndex = 162;
             this.snqtye.TabStop = false;
+            this.snqtye.UseWaitCursor = true;
             // 
             // saqtye
             // 
@@ -3738,6 +3933,7 @@
             this.saqtye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.saqtye.TabIndex = 161;
             this.saqtye.TabStop = false;
+            this.saqtye.UseWaitCursor = true;
             // 
             // srpre
             // 
@@ -3747,6 +3943,7 @@
             this.srpre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.srpre.TabIndex = 160;
             this.srpre.TabStop = false;
+            this.srpre.UseWaitCursor = true;
             // 
             // pictureBox5
             // 
@@ -3756,6 +3953,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(63, 66);
             this.pictureBox5.TabIndex = 158;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.UseWaitCursor = true;
             // 
             // bunifuThinButton216
             // 
@@ -3767,7 +3965,7 @@
             this.bunifuThinButton216.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton216.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton216.BackgroundImage")));
             this.bunifuThinButton216.ButtonText = "Reset";
-            this.bunifuThinButton216.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton216.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton216.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton216.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.bunifuThinButton216.IdleBorderThickness = 1;
@@ -3781,6 +3979,7 @@
             this.bunifuThinButton216.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton216.TabIndex = 54;
             this.bunifuThinButton216.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton216.UseWaitCursor = true;
             this.bunifuThinButton216.Click += new System.EventHandler(this.bunifuThinButton216_Click);
             // 
             // bunifuThinButton215
@@ -3793,7 +3992,7 @@
             this.bunifuThinButton215.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton215.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton215.BackgroundImage")));
             this.bunifuThinButton215.ButtonText = "Submit";
-            this.bunifuThinButton215.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton215.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton215.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton215.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.bunifuThinButton215.IdleBorderThickness = 1;
@@ -3807,6 +4006,7 @@
             this.bunifuThinButton215.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton215.TabIndex = 55;
             this.bunifuThinButton215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton215.UseWaitCursor = true;
             this.bunifuThinButton215.Click += new System.EventHandler(this.bunifuThinButton215_Click);
             // 
             // spid
@@ -3815,8 +4015,8 @@
             this.spid.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.spid.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.spid.BorderThickness = 2;
-            this.spid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.spid.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.spid.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.spid.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.spid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.spid.isPassword = false;
             this.spid.Location = new System.Drawing.Point(260, 345);
@@ -3825,6 +4025,8 @@
             this.spid.Size = new System.Drawing.Size(240, 26);
             this.spid.TabIndex = 66;
             this.spid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.spid.UseWaitCursor = true;
+            this.spid.OnValueChanged += new System.EventHandler(this.spid_OnValueChanged);
             // 
             // panel28
             // 
@@ -3839,6 +4041,7 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(531, 531);
             this.panel28.TabIndex = 165;
+            this.panel28.UseWaitCursor = true;
             // 
             // sic
             // 
@@ -3848,6 +4051,7 @@
             this.sic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.sic.TabIndex = 164;
             this.sic.TabStop = false;
+            this.sic.UseWaitCursor = true;
             // 
             // sbcodee
             // 
@@ -3857,6 +4061,7 @@
             this.sbcodee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.sbcodee.TabIndex = 163;
             this.sbcodee.TabStop = false;
+            this.sbcodee.UseWaitCursor = true;
             // 
             // sbcode
             // 
@@ -3864,8 +4069,8 @@
             this.sbcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sbcode.BorderThickness = 2;
-            this.sbcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.sbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sbcode.isPassword = false;
             this.sbcode.Location = new System.Drawing.Point(230, 51);
@@ -3874,6 +4079,7 @@
             this.sbcode.Size = new System.Drawing.Size(240, 26);
             this.sbcode.TabIndex = 162;
             this.sbcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sbcode.UseWaitCursor = true;
             this.sbcode.OnValueChanged += new System.EventHandler(this.sbcode_OnValueChanged);
             this.sbcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sbcode_KeyPress);
             // 
@@ -3887,26 +4093,31 @@
             this.bunifuCustomLabel57.Size = new System.Drawing.Size(71, 18);
             this.bunifuCustomLabel57.TabIndex = 161;
             this.bunifuCustomLabel57.Text = "Barcode";
+            this.bunifuCustomLabel57.UseWaitCursor = true;
             // 
             // spname
             // 
             this.spname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.spname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.spname.FormattingEnabled = true;
             this.spname.Location = new System.Drawing.Point(230, 246);
             this.spname.Name = "spname";
-            this.spname.Size = new System.Drawing.Size(240, 24);
+            this.spname.Size = new System.Drawing.Size(240, 20);
             this.spname.TabIndex = 160;
+            this.spname.Text = "Select Supplier";
+            this.spname.UseWaitCursor = true;
             this.spname.SelectedIndexChanged += new System.EventHandler(this.spname_SelectedIndexChanged);
             // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.tabPage5.Controls.Add(this.bunifuCards8);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1211, 685);
+            this.tabPage5.Size = new System.Drawing.Size(1198, 701);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Return Note";
+            this.tabPage5.UseWaitCursor = true;
             // 
             // bunifuCards8
             // 
@@ -3935,6 +4146,7 @@
             this.bunifuCards8.ShadowDepth = 20;
             this.bunifuCards8.Size = new System.Drawing.Size(1182, 674);
             this.bunifuCards8.TabIndex = 2;
+            this.bunifuCards8.UseWaitCursor = true;
             this.bunifuCards8.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards8_Paint);
             // 
             // pictureBox9
@@ -3945,6 +4157,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(63, 57);
             this.pictureBox9.TabIndex = 160;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.UseWaitCursor = true;
             // 
             // rbrand
             // 
@@ -3952,8 +4165,8 @@
             this.rbrand.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rbrand.BorderThickness = 2;
-            this.rbrand.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbrand.isPassword = false;
             this.rbrand.Location = new System.Drawing.Point(267, 278);
@@ -3962,6 +4175,7 @@
             this.rbrand.Size = new System.Drawing.Size(179, 26);
             this.rbrand.TabIndex = 62;
             this.rbrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbrand.UseWaitCursor = true;
             this.rbrand.OnValueChanged += new System.EventHandler(this.rbrand_OnValueChanged);
             // 
             // rname
@@ -3970,8 +4184,8 @@
             this.rname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rname.BorderThickness = 2;
-            this.rname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rname.isPassword = false;
             this.rname.Location = new System.Drawing.Point(266, 180);
@@ -3980,6 +4194,7 @@
             this.rname.Size = new System.Drawing.Size(179, 26);
             this.rname.TabIndex = 61;
             this.rname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rname.UseWaitCursor = true;
             this.rname.OnValueChanged += new System.EventHandler(this.rname_OnValueChanged);
             // 
             // rcode
@@ -3988,8 +4203,8 @@
             this.rcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rcode.BorderThickness = 2;
-            this.rcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rcode.isPassword = false;
             this.rcode.Location = new System.Drawing.Point(266, 110);
@@ -3998,6 +4213,7 @@
             this.rcode.Size = new System.Drawing.Size(179, 26);
             this.rcode.TabIndex = 59;
             this.rcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rcode.UseWaitCursor = true;
             this.rcode.OnValueChanged += new System.EventHandler(this.rcode_OnValueChanged);
             this.rcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rcode_KeyPress);
             // 
@@ -4011,6 +4227,7 @@
             this.bunifuCustomLabel71.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel71.TabIndex = 29;
             this.bunifuCustomLabel71.Text = "Item Name";
+            this.bunifuCustomLabel71.UseWaitCursor = true;
             // 
             // bunifuCustomLabel73
             // 
@@ -4022,25 +4239,32 @@
             this.bunifuCustomLabel73.Size = new System.Drawing.Size(85, 18);
             this.bunifuCustomLabel73.TabIndex = 25;
             this.bunifuCustomLabel73.Text = "Item Code";
+            this.bunifuCustomLabel73.UseWaitCursor = true;
             // 
             // rsubcombo
             // 
             this.rsubcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.rsubcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rsubcombo.FormattingEnabled = true;
             this.rsubcombo.Location = new System.Drawing.Point(267, 249);
             this.rsubcombo.Name = "rsubcombo";
-            this.rsubcombo.Size = new System.Drawing.Size(178, 24);
+            this.rsubcombo.Size = new System.Drawing.Size(178, 20);
             this.rsubcombo.TabIndex = 13;
+            this.rsubcombo.Text = "Select Sub Category";
+            this.rsubcombo.UseWaitCursor = true;
             this.rsubcombo.SelectedIndexChanged += new System.EventHandler(this.rsubcombo_SelectedIndexChanged);
             // 
             // rcombo
             // 
             this.rcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.rcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rcombo.FormattingEnabled = true;
             this.rcombo.Location = new System.Drawing.Point(266, 219);
             this.rcombo.Name = "rcombo";
-            this.rcombo.Size = new System.Drawing.Size(178, 24);
+            this.rcombo.Size = new System.Drawing.Size(178, 20);
             this.rcombo.TabIndex = 12;
+            this.rcombo.Text = "Select Category";
+            this.rcombo.UseWaitCursor = true;
             this.rcombo.SelectedIndexChanged += new System.EventHandler(this.rcombo_SelectedIndexChanged);
             // 
             // bunifuCustomLabel78
@@ -4053,6 +4277,7 @@
             this.bunifuCustomLabel78.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel78.TabIndex = 6;
             this.bunifuCustomLabel78.Text = "Brand";
+            this.bunifuCustomLabel78.UseWaitCursor = true;
             // 
             // bunifuCustomLabel79
             // 
@@ -4064,6 +4289,7 @@
             this.bunifuCustomLabel79.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel79.TabIndex = 5;
             this.bunifuCustomLabel79.Text = "Sub Category";
+            this.bunifuCustomLabel79.UseWaitCursor = true;
             // 
             // bunifuCustomLabel80
             // 
@@ -4075,6 +4301,7 @@
             this.bunifuCustomLabel80.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel80.TabIndex = 3;
             this.bunifuCustomLabel80.Text = "Category";
+            this.bunifuCustomLabel80.UseWaitCursor = true;
             // 
             // bunifuCustomLabel81
             // 
@@ -4087,6 +4314,7 @@
             this.bunifuCustomLabel81.TabIndex = 2;
             this.bunifuCustomLabel81.Text = "Return Note";
             this.bunifuCustomLabel81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel81.UseWaitCursor = true;
             // 
             // panel14
             // 
@@ -4096,6 +4324,7 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(518, 627);
             this.panel14.TabIndex = 161;
+            this.panel14.UseWaitCursor = true;
             // 
             // panel27
             // 
@@ -4112,6 +4341,7 @@
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(485, 510);
             this.panel27.TabIndex = 0;
+            this.panel27.UseWaitCursor = true;
             // 
             // panel29
             // 
@@ -4134,6 +4364,7 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(485, 535);
             this.panel29.TabIndex = 66;
+            this.panel29.UseWaitCursor = true;
             // 
             // rbi
             // 
@@ -4143,6 +4374,7 @@
             this.rbi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.rbi.TabIndex = 166;
             this.rbi.TabStop = false;
+            this.rbi.UseWaitCursor = true;
             // 
             // ric
             // 
@@ -4152,6 +4384,7 @@
             this.ric.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ric.TabIndex = 165;
             this.ric.TabStop = false;
+            this.ric.UseWaitCursor = true;
             // 
             // rbcode
             // 
@@ -4159,8 +4392,8 @@
             this.rbcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rbcode.BorderThickness = 2;
-            this.rbcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbcode.isPassword = false;
             this.rbcode.Location = new System.Drawing.Point(235, 53);
@@ -4169,6 +4402,7 @@
             this.rbcode.Size = new System.Drawing.Size(180, 26);
             this.rbcode.TabIndex = 73;
             this.rbcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbcode.UseWaitCursor = true;
             this.rbcode.OnValueChanged += new System.EventHandler(this.rbcode_OnValueChanged);
             this.rbcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rbcode_KeyPress);
             // 
@@ -4182,16 +4416,20 @@
             this.bunifuCustomLabel72.Size = new System.Drawing.Size(71, 18);
             this.bunifuCustomLabel72.TabIndex = 72;
             this.bunifuCustomLabel72.Text = "Barcode";
+            this.bunifuCustomLabel72.UseWaitCursor = true;
             // 
             // datei
             // 
             this.datei.CustomFormat = "yyyy-MM-dd";
+            this.datei.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.datei.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datei.Location = new System.Drawing.Point(236, 321);
             this.datei.Name = "datei";
-            this.datei.Size = new System.Drawing.Size(178, 22);
+            this.datei.Size = new System.Drawing.Size(178, 20);
             this.datei.TabIndex = 71;
+            this.datei.UseWaitCursor = true;
             this.datei.Value = new System.DateTime(2017, 8, 29, 0, 0, 0, 0);
+            this.datei.ValueChanged += new System.EventHandler(this.datei_ValueChanged);
             // 
             // bunifuCustomLabel37
             // 
@@ -4203,6 +4441,7 @@
             this.bunifuCustomLabel37.Size = new System.Drawing.Size(82, 18);
             this.bunifuCustomLabel37.TabIndex = 70;
             this.bunifuCustomLabel37.Text = "Sold Date";
+            this.bunifuCustomLabel37.UseWaitCursor = true;
             // 
             // bunifuThinButton224
             // 
@@ -4214,7 +4453,7 @@
             this.bunifuThinButton224.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton224.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton224.BackgroundImage")));
             this.bunifuThinButton224.ButtonText = "Reset";
-            this.bunifuThinButton224.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton224.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton224.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton224.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton224.IdleBorderThickness = 1;
@@ -4228,6 +4467,7 @@
             this.bunifuThinButton224.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton224.TabIndex = 69;
             this.bunifuThinButton224.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton224.UseWaitCursor = true;
             this.bunifuThinButton224.Click += new System.EventHandler(this.bunifuThinButton224_Click);
             // 
             // rqty
@@ -4236,8 +4476,8 @@
             this.rqty.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rqty.BorderThickness = 2;
-            this.rqty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rqty.isPassword = false;
             this.rqty.Location = new System.Drawing.Point(236, 216);
@@ -4246,6 +4486,8 @@
             this.rqty.Size = new System.Drawing.Size(180, 26);
             this.rqty.TabIndex = 68;
             this.rqty.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rqty.UseWaitCursor = true;
+            this.rqty.OnValueChanged += new System.EventHandler(this.rqty_OnValueChanged);
             this.rqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rqty_KeyPress);
             // 
             // bunifuCustomLabel21
@@ -4258,6 +4500,7 @@
             this.bunifuCustomLabel21.Size = new System.Drawing.Size(70, 18);
             this.bunifuCustomLabel21.TabIndex = 67;
             this.bunifuCustomLabel21.Text = "Quantity";
+            this.bunifuCustomLabel21.UseWaitCursor = true;
             // 
             // bunifuThinButton223
             // 
@@ -4269,7 +4512,7 @@
             this.bunifuThinButton223.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton223.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton223.BackgroundImage")));
             this.bunifuThinButton223.ButtonText = "Submit";
-            this.bunifuThinButton223.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton223.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton223.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton223.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton223.IdleBorderThickness = 1;
@@ -4283,6 +4526,7 @@
             this.bunifuThinButton223.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton223.TabIndex = 55;
             this.bunifuThinButton223.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton223.UseWaitCursor = true;
             this.bunifuThinButton223.Click += new System.EventHandler(this.bunifuThinButton223_Click);
             // 
             // rrpr
@@ -4291,8 +4535,8 @@
             this.rrpr.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rrpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rrpr.BorderThickness = 2;
-            this.rrpr.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rrpr.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rrpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rrpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rrpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rrpr.isPassword = false;
             this.rrpr.Location = new System.Drawing.Point(236, 250);
@@ -4301,6 +4545,7 @@
             this.rrpr.Size = new System.Drawing.Size(180, 26);
             this.rrpr.TabIndex = 63;
             this.rrpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rrpr.UseWaitCursor = true;
             this.rrpr.OnValueChanged += new System.EventHandler(this.rrpr_OnValueChanged);
             this.rrpr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rrpr_KeyPress);
             // 
@@ -4314,6 +4559,7 @@
             this.bunifuCustomLabel32.Size = new System.Drawing.Size(84, 18);
             this.bunifuCustomLabel32.TabIndex = 10;
             this.bunifuCustomLabel32.Text = "Deduction";
+            this.bunifuCustomLabel32.UseWaitCursor = true;
             // 
             // bunifuCustomLabel34
             // 
@@ -4325,6 +4571,7 @@
             this.bunifuCustomLabel34.Size = new System.Drawing.Size(93, 18);
             this.bunifuCustomLabel34.TabIndex = 37;
             this.bunifuCustomLabel34.Text = "Retail price";
+            this.bunifuCustomLabel34.UseWaitCursor = true;
             // 
             // rded
             // 
@@ -4332,8 +4579,8 @@
             this.rded.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rded.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rded.BorderThickness = 2;
-            this.rded.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rded.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rded.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rded.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rded.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rded.isPassword = false;
             this.rded.Location = new System.Drawing.Point(236, 284);
@@ -4342,6 +4589,8 @@
             this.rded.Size = new System.Drawing.Size(180, 26);
             this.rded.TabIndex = 65;
             this.rded.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rded.UseWaitCursor = true;
+            this.rded.OnValueChanged += new System.EventHandler(this.rded_OnValueChanged);
             this.rded.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rded_KeyPress);
             // 
             // bunifuThinButton212
@@ -4354,7 +4603,7 @@
             this.bunifuThinButton212.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton212.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton212.BackgroundImage")));
             this.bunifuThinButton212.ButtonText = "Submit";
-            this.bunifuThinButton212.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton212.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton212.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton212.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton212.IdleBorderThickness = 1;
@@ -4368,6 +4617,7 @@
             this.bunifuThinButton212.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton212.TabIndex = 55;
             this.bunifuThinButton212.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton212.UseWaitCursor = true;
             this.bunifuThinButton212.Click += new System.EventHandler(this.bunifuThinButton212_Click);
             // 
             // rrprice
@@ -4376,7 +4626,7 @@
             this.rrprice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rrprice.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rrprice.BorderThickness = 2;
-            this.rrprice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.rrprice.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.rrprice.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.rrprice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rrprice.isPassword = false;
@@ -4386,6 +4636,7 @@
             this.rrprice.Size = new System.Drawing.Size(209, 26);
             this.rrprice.TabIndex = 63;
             this.rrprice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rrprice.UseWaitCursor = true;
             // 
             // bunifuCustomLabel77
             // 
@@ -4396,6 +4647,7 @@
             this.bunifuCustomLabel77.Size = new System.Drawing.Size(80, 18);
             this.bunifuCustomLabel77.TabIndex = 9;
             this.bunifuCustomLabel77.Text = "Condition";
+            this.bunifuCustomLabel77.UseWaitCursor = true;
             // 
             // bunifuCustomLabel76
             // 
@@ -4406,6 +4658,7 @@
             this.bunifuCustomLabel76.Size = new System.Drawing.Size(84, 18);
             this.bunifuCustomLabel76.TabIndex = 10;
             this.bunifuCustomLabel76.Text = "Deduction";
+            this.bunifuCustomLabel76.UseWaitCursor = true;
             // 
             // bunifuCustomLabel67
             // 
@@ -4416,6 +4669,7 @@
             this.bunifuCustomLabel67.Size = new System.Drawing.Size(93, 18);
             this.bunifuCustomLabel67.TabIndex = 37;
             this.bunifuCustomLabel67.Text = "Retail price";
+            this.bunifuCustomLabel67.UseWaitCursor = true;
             // 
             // ded
             // 
@@ -4423,7 +4677,7 @@
             this.ded.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ded.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ded.BorderThickness = 2;
-            this.ded.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ded.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.ded.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.ded.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ded.isPassword = false;
@@ -4433,6 +4687,7 @@
             this.ded.Size = new System.Drawing.Size(209, 26);
             this.ded.TabIndex = 65;
             this.ded.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ded.UseWaitCursor = true;
             // 
             // conndition
             // 
@@ -4440,7 +4695,7 @@
             this.conndition.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.conndition.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.conndition.BorderThickness = 2;
-            this.conndition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.conndition.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.conndition.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.conndition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.conndition.isPassword = false;
@@ -4450,6 +4705,7 @@
             this.conndition.Size = new System.Drawing.Size(209, 26);
             this.conndition.TabIndex = 64;
             this.conndition.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.conndition.UseWaitCursor = true;
             // 
             // panel15
             // 
@@ -4463,6 +4719,7 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(615, 627);
             this.panel15.TabIndex = 162;
+            this.panel15.UseWaitCursor = true;
             // 
             // rettot
             // 
@@ -4474,6 +4731,7 @@
             this.rettot.Size = new System.Drawing.Size(58, 25);
             this.rettot.TabIndex = 58;
             this.rettot.Text = "0.00";
+            this.rettot.UseWaitCursor = true;
             // 
             // bunifuCustomLabel35
             // 
@@ -4485,6 +4743,7 @@
             this.bunifuCustomLabel35.Size = new System.Drawing.Size(149, 25);
             this.bunifuCustomLabel35.TabIndex = 57;
             this.bunifuCustomLabel35.Text = "Total :     Rs.";
+            this.bunifuCustomLabel35.UseWaitCursor = true;
             // 
             // panel16
             // 
@@ -4494,6 +4753,7 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(600, 346);
             this.panel16.TabIndex = 0;
+            this.panel16.UseWaitCursor = true;
             // 
             // ret
             // 
@@ -4504,7 +4764,7 @@
             this.ret.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -4525,8 +4785,10 @@
             this.ret.Location = new System.Drawing.Point(8, 22);
             this.ret.Name = "ret";
             this.ret.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.ret.RowHeadersVisible = false;
             this.ret.Size = new System.Drawing.Size(582, 289);
             this.ret.TabIndex = 24;
+            this.ret.UseWaitCursor = true;
             this.ret.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ret_CellContentClick);
             // 
             // cd
@@ -4569,7 +4831,7 @@
             this.bunifuThinButton213.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton213.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton213.BackgroundImage")));
             this.bunifuThinButton213.ButtonText = "Clear";
-            this.bunifuThinButton213.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton213.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton213.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton213.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton213.IdleBorderThickness = 1;
@@ -4583,6 +4845,7 @@
             this.bunifuThinButton213.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton213.TabIndex = 54;
             this.bunifuThinButton213.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton213.UseWaitCursor = true;
             this.bunifuThinButton213.Click += new System.EventHandler(this.bunifuThinButton213_Click);
             // 
             // bunifuThinButton214
@@ -4595,7 +4858,7 @@
             this.bunifuThinButton214.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton214.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton214.BackgroundImage")));
             this.bunifuThinButton214.ButtonText = "Print Receipt";
-            this.bunifuThinButton214.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton214.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton214.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton214.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton214.IdleBorderThickness = 1;
@@ -4609,6 +4872,7 @@
             this.bunifuThinButton214.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton214.TabIndex = 56;
             this.bunifuThinButton214.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton214.UseWaitCursor = true;
             this.bunifuThinButton214.Click += new System.EventHandler(this.bunifuThinButton214_Click);
             // 
             // tabPage6
@@ -4618,11 +4882,12 @@
             this.tabPage6.Controls.Add(this.bunifuCards11);
             this.tabPage6.Controls.Add(this.bunifuCards10);
             this.tabPage6.Controls.Add(this.panel18);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Location = new System.Drawing.Point(4, 21);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1211, 685);
+            this.tabPage6.Size = new System.Drawing.Size(1198, 701);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "Floors";
+            this.tabPage6.UseWaitCursor = true;
             // 
             // bunifuFlatButton2
             // 
@@ -4631,7 +4896,7 @@
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
             this.bunifuFlatButton2.ButtonText = "Reports";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
@@ -4658,6 +4923,7 @@
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.UseWaitCursor = true;
             this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // bunifuCards11
@@ -4683,6 +4949,7 @@
             this.bunifuCards11.ShadowDepth = 20;
             this.bunifuCards11.Size = new System.Drawing.Size(591, 664);
             this.bunifuCards11.TabIndex = 4;
+            this.bunifuCards11.UseWaitCursor = true;
             // 
             // pictureBox10
             // 
@@ -4692,6 +4959,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(92, 93);
             this.pictureBox10.TabIndex = 160;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.UseWaitCursor = true;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // all
@@ -4700,8 +4968,8 @@
             this.all.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.all.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.all.BorderThickness = 2;
-            this.all.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.all.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.all.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.all.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.all.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.all.isPassword = false;
             this.all.Location = new System.Drawing.Point(336, 625);
@@ -4710,6 +4978,7 @@
             this.all.Size = new System.Drawing.Size(192, 26);
             this.all.TabIndex = 54;
             this.all.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.all.UseWaitCursor = true;
             this.all.OnValueChanged += new System.EventHandler(this.all_OnValueChanged);
             // 
             // bunifuCustomLabel136
@@ -4722,6 +4991,7 @@
             this.bunifuCustomLabel136.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel136.TabIndex = 53;
             this.bunifuCustomLabel136.Text = "Total";
+            this.bunifuCustomLabel136.UseWaitCursor = true;
             // 
             // groupBox15
             // 
@@ -4735,6 +5005,7 @@
             this.groupBox15.TabIndex = 52;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Warehouse";
+            this.groupBox15.UseWaitCursor = true;
             // 
             // pictureBox16
             // 
@@ -4744,6 +5015,7 @@
             this.pictureBox16.Size = new System.Drawing.Size(33, 28);
             this.pictureBox16.TabIndex = 33;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.UseWaitCursor = true;
             this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // f5
@@ -4752,8 +5024,8 @@
             this.f5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f5.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.f5.BorderThickness = 2;
-            this.f5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.f5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.f5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.f5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.f5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f5.isPassword = false;
             this.f5.Location = new System.Drawing.Point(174, 36);
@@ -4762,6 +5034,7 @@
             this.f5.Size = new System.Drawing.Size(192, 26);
             this.f5.TabIndex = 32;
             this.f5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.f5.UseWaitCursor = true;
             this.f5.OnValueChanged += new System.EventHandler(this.f5_OnValueChanged);
             // 
             // bunifuCustomLabel137
@@ -4774,6 +5047,7 @@
             this.bunifuCustomLabel137.Size = new System.Drawing.Size(153, 18);
             this.bunifuCustomLabel137.TabIndex = 6;
             this.bunifuCustomLabel137.Text = "Valuation of Goods";
+            this.bunifuCustomLabel137.UseWaitCursor = true;
             // 
             // groupBox12
             // 
@@ -4787,6 +5061,7 @@
             this.groupBox12.TabIndex = 52;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Floor 4";
+            this.groupBox12.UseWaitCursor = true;
             // 
             // pictureBox15
             // 
@@ -4796,6 +5071,7 @@
             this.pictureBox15.Size = new System.Drawing.Size(33, 28);
             this.pictureBox15.TabIndex = 33;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.UseWaitCursor = true;
             this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // f4
@@ -4804,8 +5080,8 @@
             this.f4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.f4.BorderThickness = 2;
-            this.f4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.f4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.f4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.f4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.f4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f4.isPassword = false;
             this.f4.Location = new System.Drawing.Point(174, 36);
@@ -4814,6 +5090,7 @@
             this.f4.Size = new System.Drawing.Size(192, 26);
             this.f4.TabIndex = 32;
             this.f4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.f4.UseWaitCursor = true;
             this.f4.OnValueChanged += new System.EventHandler(this.f4_OnValueChanged);
             // 
             // bunifuCustomLabel133
@@ -4826,6 +5103,7 @@
             this.bunifuCustomLabel133.Size = new System.Drawing.Size(153, 18);
             this.bunifuCustomLabel133.TabIndex = 6;
             this.bunifuCustomLabel133.Text = "Valuation of Goods";
+            this.bunifuCustomLabel133.UseWaitCursor = true;
             // 
             // groupBox13
             // 
@@ -4839,6 +5117,7 @@
             this.groupBox13.TabIndex = 52;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Floor 3";
+            this.groupBox13.UseWaitCursor = true;
             // 
             // pictureBox14
             // 
@@ -4848,6 +5127,7 @@
             this.pictureBox14.Size = new System.Drawing.Size(33, 28);
             this.pictureBox14.TabIndex = 33;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.UseWaitCursor = true;
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // f3
@@ -4856,8 +5136,8 @@
             this.f3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.f3.BorderThickness = 2;
-            this.f3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.f3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.f3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.f3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.f3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f3.isPassword = false;
             this.f3.Location = new System.Drawing.Point(174, 36);
@@ -4866,6 +5146,7 @@
             this.f3.Size = new System.Drawing.Size(192, 26);
             this.f3.TabIndex = 32;
             this.f3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.f3.UseWaitCursor = true;
             this.f3.OnValueChanged += new System.EventHandler(this.f3_OnValueChanged);
             // 
             // bunifuCustomLabel134
@@ -4878,6 +5159,7 @@
             this.bunifuCustomLabel134.Size = new System.Drawing.Size(153, 18);
             this.bunifuCustomLabel134.TabIndex = 6;
             this.bunifuCustomLabel134.Text = "Valuation of Goods";
+            this.bunifuCustomLabel134.UseWaitCursor = true;
             // 
             // groupBox11
             // 
@@ -4891,6 +5173,7 @@
             this.groupBox11.TabIndex = 52;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Floor 2";
+            this.groupBox11.UseWaitCursor = true;
             // 
             // pictureBox11
             // 
@@ -4900,6 +5183,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(33, 28);
             this.pictureBox11.TabIndex = 33;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.UseWaitCursor = true;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // f2
@@ -4908,8 +5192,8 @@
             this.f2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.f2.BorderThickness = 2;
-            this.f2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.f2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.f2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.f2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.f2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f2.isPassword = false;
             this.f2.Location = new System.Drawing.Point(174, 36);
@@ -4918,6 +5202,7 @@
             this.f2.Size = new System.Drawing.Size(192, 26);
             this.f2.TabIndex = 32;
             this.f2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.f2.UseWaitCursor = true;
             this.f2.OnValueChanged += new System.EventHandler(this.f2_OnValueChanged);
             // 
             // bunifuCustomLabel132
@@ -4930,6 +5215,7 @@
             this.bunifuCustomLabel132.Size = new System.Drawing.Size(153, 18);
             this.bunifuCustomLabel132.TabIndex = 6;
             this.bunifuCustomLabel132.Text = "Valuation of Goods";
+            this.bunifuCustomLabel132.UseWaitCursor = true;
             // 
             // groupBox10
             // 
@@ -4943,6 +5229,7 @@
             this.groupBox10.TabIndex = 44;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Floor 1";
+            this.groupBox10.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -4952,6 +5239,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(33, 32);
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.UseWaitCursor = true;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // f1
@@ -4960,8 +5248,8 @@
             this.f1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.f1.BorderThickness = 2;
-            this.f1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.f1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.f1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.f1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.f1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.f1.isPassword = false;
             this.f1.Location = new System.Drawing.Point(174, 36);
@@ -4970,6 +5258,7 @@
             this.f1.Size = new System.Drawing.Size(192, 26);
             this.f1.TabIndex = 32;
             this.f1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.f1.UseWaitCursor = true;
             this.f1.OnValueChanged += new System.EventHandler(this.f1_OnValueChanged);
             // 
             // bunifuCustomLabel135
@@ -4982,6 +5271,7 @@
             this.bunifuCustomLabel135.Size = new System.Drawing.Size(153, 18);
             this.bunifuCustomLabel135.TabIndex = 6;
             this.bunifuCustomLabel135.Text = "Valuation of Goods";
+            this.bunifuCustomLabel135.UseWaitCursor = true;
             // 
             // bunifuCustomLabel141
             // 
@@ -4994,6 +5284,7 @@
             this.bunifuCustomLabel141.TabIndex = 2;
             this.bunifuCustomLabel141.Text = "Floor Details";
             this.bunifuCustomLabel141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel141.UseWaitCursor = true;
             // 
             // panel19
             // 
@@ -5004,6 +5295,7 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(569, 641);
             this.panel19.TabIndex = 161;
+            this.panel19.UseWaitCursor = true;
             // 
             // hidetb
             // 
@@ -5014,7 +5306,7 @@
             this.hidetb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -5023,7 +5315,7 @@
             this.hidetb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -5040,6 +5332,7 @@
             this.hidetb.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.hidetb.Size = new System.Drawing.Size(34, 41);
             this.hidetb.TabIndex = 53;
+            this.hidetb.UseWaitCursor = true;
             // 
             // bunifuThinButton227
             // 
@@ -5051,7 +5344,7 @@
             this.bunifuThinButton227.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton227.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton227.BackgroundImage")));
             this.bunifuThinButton227.ButtonText = "Refresh";
-            this.bunifuThinButton227.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton227.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton227.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton227.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton227.IdleBorderThickness = 1;
@@ -5065,6 +5358,7 @@
             this.bunifuThinButton227.Size = new System.Drawing.Size(116, 37);
             this.bunifuThinButton227.TabIndex = 52;
             this.bunifuThinButton227.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton227.UseWaitCursor = true;
             this.bunifuThinButton227.Click += new System.EventHandler(this.bunifuThinButton227_Click);
             // 
             // bunifuCards10
@@ -5087,6 +5381,7 @@
             this.bunifuCards10.ShadowDepth = 20;
             this.bunifuCards10.Size = new System.Drawing.Size(576, 514);
             this.bunifuCards10.TabIndex = 3;
+            this.bunifuCards10.UseWaitCursor = true;
             // 
             // pictureBox6
             // 
@@ -5096,6 +5391,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(63, 66);
             this.pictureBox6.TabIndex = 159;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.UseWaitCursor = true;
             // 
             // bunifuThinButton219
             // 
@@ -5107,7 +5403,7 @@
             this.bunifuThinButton219.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton219.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton219.BackgroundImage")));
             this.bunifuThinButton219.ButtonText = "Transfer";
-            this.bunifuThinButton219.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton219.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton219.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton219.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.bunifuThinButton219.IdleBorderThickness = 1;
@@ -5121,6 +5417,7 @@
             this.bunifuThinButton219.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton219.TabIndex = 55;
             this.bunifuThinButton219.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton219.UseWaitCursor = true;
             this.bunifuThinButton219.Click += new System.EventHandler(this.bunifuThinButton219_Click);
             // 
             // bunifuThinButton220
@@ -5133,7 +5430,7 @@
             this.bunifuThinButton220.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton220.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton220.BackgroundImage")));
             this.bunifuThinButton220.ButtonText = "Reset";
-            this.bunifuThinButton220.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton220.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton220.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton220.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.bunifuThinButton220.IdleBorderThickness = 1;
@@ -5147,6 +5444,7 @@
             this.bunifuThinButton220.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton220.TabIndex = 54;
             this.bunifuThinButton220.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton220.UseWaitCursor = true;
             this.bunifuThinButton220.Click += new System.EventHandler(this.bunifuThinButton220_Click);
             // 
             // groupBox5
@@ -5172,6 +5470,7 @@
             this.groupBox5.TabIndex = 44;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Item Details";
+            this.groupBox5.UseWaitCursor = true;
             // 
             // gbc
             // 
@@ -5181,6 +5480,7 @@
             this.gbc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.gbc.TabIndex = 167;
             this.gbc.TabStop = false;
+            this.gbc.UseWaitCursor = true;
             // 
             // gic
             // 
@@ -5190,6 +5490,7 @@
             this.gic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.gic.TabIndex = 166;
             this.gic.TabStop = false;
+            this.gic.UseWaitCursor = true;
             // 
             // gbcode
             // 
@@ -5197,8 +5498,8 @@
             this.gbcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gbcode.BorderThickness = 2;
-            this.gbcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbcode.isPassword = false;
             this.gbcode.Location = new System.Drawing.Point(143, 44);
@@ -5207,6 +5508,7 @@
             this.gbcode.Size = new System.Drawing.Size(218, 26);
             this.gbcode.TabIndex = 53;
             this.gbcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gbcode.UseWaitCursor = true;
             this.gbcode.OnValueChanged += new System.EventHandler(this.gbcode_OnValueChanged_1);
             this.gbcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gbcode_KeyPress);
             // 
@@ -5220,6 +5522,7 @@
             this.bunifuCustomLabel111.Size = new System.Drawing.Size(71, 18);
             this.bunifuCustomLabel111.TabIndex = 52;
             this.bunifuCustomLabel111.Text = "Barcode";
+            this.bunifuCustomLabel111.UseWaitCursor = true;
             // 
             // gcat
             // 
@@ -5227,8 +5530,8 @@
             this.gcat.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gcat.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gcat.BorderThickness = 2;
-            this.gcat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gcat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gcat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gcat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gcat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gcat.isPassword = false;
             this.gcat.Location = new System.Drawing.Point(141, 74);
@@ -5237,6 +5540,7 @@
             this.gcat.Size = new System.Drawing.Size(218, 26);
             this.gcat.TabIndex = 51;
             this.gcat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gcat.UseWaitCursor = true;
             this.gcat.OnValueChanged += new System.EventHandler(this.gcat_OnValueChanged);
             // 
             // gscat
@@ -5245,8 +5549,8 @@
             this.gscat.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gscat.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gscat.BorderThickness = 2;
-            this.gscat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gscat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gscat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gscat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gscat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gscat.isPassword = false;
             this.gscat.Location = new System.Drawing.Point(141, 103);
@@ -5255,6 +5559,7 @@
             this.gscat.Size = new System.Drawing.Size(218, 26);
             this.gscat.TabIndex = 50;
             this.gscat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gscat.UseWaitCursor = true;
             this.gscat.OnValueChanged += new System.EventHandler(this.gscat_OnValueChanged);
             // 
             // gcode
@@ -5263,8 +5568,8 @@
             this.gcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gcode.BorderThickness = 2;
-            this.gcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gcode.isPassword = false;
             this.gcode.Location = new System.Drawing.Point(143, 17);
@@ -5273,6 +5578,7 @@
             this.gcode.Size = new System.Drawing.Size(218, 26);
             this.gcode.TabIndex = 48;
             this.gcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gcode.UseWaitCursor = true;
             this.gcode.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox40_OnValueChanged);
             this.gcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gcode_KeyPress);
             // 
@@ -5286,6 +5592,7 @@
             this.bunifuCustomLabel112.Size = new System.Drawing.Size(85, 18);
             this.bunifuCustomLabel112.TabIndex = 46;
             this.bunifuCustomLabel112.Text = "Item Code";
+            this.bunifuCustomLabel112.UseWaitCursor = true;
             // 
             // gname
             // 
@@ -5293,8 +5600,8 @@
             this.gname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gname.BorderThickness = 2;
-            this.gname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gname.isPassword = false;
             this.gname.Location = new System.Drawing.Point(143, 161);
@@ -5303,6 +5610,7 @@
             this.gname.Size = new System.Drawing.Size(218, 26);
             this.gname.TabIndex = 43;
             this.gname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gname.UseWaitCursor = true;
             this.gname.OnValueChanged += new System.EventHandler(this.gname_OnValueChanged);
             // 
             // bunifuCustomLabel103
@@ -5315,6 +5623,7 @@
             this.bunifuCustomLabel103.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel103.TabIndex = 3;
             this.bunifuCustomLabel103.Text = "Category";
+            this.bunifuCustomLabel103.UseWaitCursor = true;
             // 
             // gbrand
             // 
@@ -5322,8 +5631,8 @@
             this.gbrand.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gbrand.BorderThickness = 2;
-            this.gbrand.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbrand.isPassword = false;
             this.gbrand.Location = new System.Drawing.Point(143, 133);
@@ -5332,6 +5641,7 @@
             this.gbrand.Size = new System.Drawing.Size(218, 26);
             this.gbrand.TabIndex = 32;
             this.gbrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gbrand.UseWaitCursor = true;
             this.gbrand.OnValueChanged += new System.EventHandler(this.gbrand_OnValueChanged);
             // 
             // bunifuCustomLabel106
@@ -5344,6 +5654,7 @@
             this.bunifuCustomLabel106.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel106.TabIndex = 4;
             this.bunifuCustomLabel106.Text = "Item Name";
+            this.bunifuCustomLabel106.UseWaitCursor = true;
             // 
             // bunifuCustomLabel109
             // 
@@ -5355,6 +5666,7 @@
             this.bunifuCustomLabel109.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel109.TabIndex = 5;
             this.bunifuCustomLabel109.Text = "Sub Category";
+            this.bunifuCustomLabel109.UseWaitCursor = true;
             // 
             // bunifuCustomLabel110
             // 
@@ -5366,13 +5678,14 @@
             this.bunifuCustomLabel110.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel110.TabIndex = 6;
             this.bunifuCustomLabel110.Text = "Brand";
+            this.bunifuCustomLabel110.UseWaitCursor = true;
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.gby);
             this.groupBox4.Controls.Add(this.pictureBox13);
             this.groupBox4.Controls.Add(this.gsr);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel22);
-            this.groupBox4.Controls.Add(this.gby);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel99);
             this.groupBox4.Controls.Add(this.gamnt);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel98);
@@ -5385,6 +5698,7 @@
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Stock";
+            this.groupBox4.UseWaitCursor = true;
             // 
             // pictureBox13
             // 
@@ -5394,6 +5708,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox13.TabIndex = 168;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.UseWaitCursor = true;
             // 
             // gsr
             // 
@@ -5401,8 +5716,8 @@
             this.gsr.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gsr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gsr.BorderThickness = 2;
-            this.gsr.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gsr.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gsr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gsr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gsr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gsr.isPassword = false;
             this.gsr.Location = new System.Drawing.Point(145, 43);
@@ -5411,6 +5726,7 @@
             this.gsr.Size = new System.Drawing.Size(218, 26);
             this.gsr.TabIndex = 53;
             this.gsr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gsr.UseWaitCursor = true;
             this.gsr.OnValueChanged += new System.EventHandler(this.gsr_OnValueChanged);
             // 
             // bunifuCustomLabel22
@@ -5423,23 +5739,7 @@
             this.bunifuCustomLabel22.Size = new System.Drawing.Size(132, 18);
             this.bunifuCustomLabel22.TabIndex = 52;
             this.bunifuCustomLabel22.Text = "Transfer amount";
-            // 
-            // gby
-            // 
-            this.gby.BorderColorFocused = System.Drawing.Color.Blue;
-            this.gby.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gby.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.gby.BorderThickness = 2;
-            this.gby.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gby.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.gby.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gby.isPassword = false;
-            this.gby.Location = new System.Drawing.Point(145, 102);
-            this.gby.Margin = new System.Windows.Forms.Padding(4);
-            this.gby.Name = "gby";
-            this.gby.Size = new System.Drawing.Size(218, 26);
-            this.gby.TabIndex = 51;
-            this.gby.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuCustomLabel22.UseWaitCursor = true;
             // 
             // bunifuCustomLabel99
             // 
@@ -5451,6 +5751,7 @@
             this.bunifuCustomLabel99.Size = new System.Drawing.Size(113, 18);
             this.bunifuCustomLabel99.TabIndex = 50;
             this.bunifuCustomLabel99.Text = "Transfered By";
+            this.bunifuCustomLabel99.UseWaitCursor = true;
             // 
             // gamnt
             // 
@@ -5458,8 +5759,8 @@
             this.gamnt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gamnt.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gamnt.BorderThickness = 2;
-            this.gamnt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gamnt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gamnt.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gamnt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gamnt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gamnt.isPassword = false;
             this.gamnt.Location = new System.Drawing.Point(145, 72);
@@ -5468,6 +5769,7 @@
             this.gamnt.Size = new System.Drawing.Size(218, 26);
             this.gamnt.TabIndex = 49;
             this.gamnt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gamnt.UseWaitCursor = true;
             this.gamnt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gamnt_KeyPress);
             // 
             // bunifuCustomLabel98
@@ -5480,6 +5782,7 @@
             this.bunifuCustomLabel98.Size = new System.Drawing.Size(90, 18);
             this.bunifuCustomLabel98.TabIndex = 48;
             this.bunifuCustomLabel98.Text = "Showroom";
+            this.bunifuCustomLabel98.UseWaitCursor = true;
             // 
             // gwh
             // 
@@ -5487,8 +5790,8 @@
             this.gwh.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gwh.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gwh.BorderThickness = 2;
-            this.gwh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gwh.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gwh.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gwh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gwh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gwh.isPassword = false;
             this.gwh.Location = new System.Drawing.Point(145, 16);
@@ -5497,6 +5800,7 @@
             this.gwh.Size = new System.Drawing.Size(218, 26);
             this.gwh.TabIndex = 47;
             this.gwh.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gwh.UseWaitCursor = true;
             this.gwh.OnValueChanged += new System.EventHandler(this.gwh_OnValueChanged);
             // 
             // bunifuCustomLabel94
@@ -5509,6 +5813,7 @@
             this.bunifuCustomLabel94.Size = new System.Drawing.Size(94, 18);
             this.bunifuCustomLabel94.TabIndex = 46;
             this.bunifuCustomLabel94.Text = "Warehouse";
+            this.bunifuCustomLabel94.UseWaitCursor = true;
             // 
             // bunifuCustomLabel108
             // 
@@ -5521,16 +5826,19 @@
             this.bunifuCustomLabel108.TabIndex = 2;
             this.bunifuCustomLabel108.Text = "Good Transfer";
             this.bunifuCustomLabel108.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel108.UseWaitCursor = true;
             this.bunifuCustomLabel108.Click += new System.EventHandler(this.bunifuCustomLabel108_Click);
             // 
             // panel17
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.panel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.panel17.Location = new System.Drawing.Point(14, 16);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(538, 495);
             this.panel17.TabIndex = 160;
+            this.panel17.UseWaitCursor = true;
             // 
             // panel18
             // 
@@ -5539,17 +5847,19 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(398, 141);
             this.panel18.TabIndex = 5;
+            this.panel18.UseWaitCursor = true;
             // 
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.tabPage7.Controls.Add(this.bunifuCards13);
             this.tabPage7.Controls.Add(this.bunifuCards9);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Location = new System.Drawing.Point(4, 21);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1211, 685);
+            this.tabPage7.Size = new System.Drawing.Size(1198, 701);
             this.tabPage7.TabIndex = 7;
             this.tabPage7.Text = "Defectives";
+            this.tabPage7.UseWaitCursor = true;
             // 
             // bunifuCards13
             // 
@@ -5574,6 +5884,7 @@
             this.bunifuCards13.ShadowDepth = 20;
             this.bunifuCards13.Size = new System.Drawing.Size(559, 674);
             this.bunifuCards13.TabIndex = 4;
+            this.bunifuCards13.UseWaitCursor = true;
             // 
             // pictureBox8
             // 
@@ -5584,6 +5895,7 @@
             this.pictureBox8.Size = new System.Drawing.Size(63, 66);
             this.pictureBox8.TabIndex = 160;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.UseWaitCursor = true;
             // 
             // tsc
             // 
@@ -5591,8 +5903,8 @@
             this.tsc.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tsc.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tsc.BorderThickness = 2;
-            this.tsc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tsc.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tsc.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tsc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tsc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tsc.isPassword = false;
             this.tsc.Location = new System.Drawing.Point(260, 175);
@@ -5601,6 +5913,7 @@
             this.tsc.Size = new System.Drawing.Size(210, 26);
             this.tsc.TabIndex = 61;
             this.tsc.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tsc.UseWaitCursor = true;
             this.tsc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tsc_KeyPress);
             // 
             // tname
@@ -5609,8 +5922,8 @@
             this.tname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tname.BorderThickness = 2;
-            this.tname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tname.isPassword = false;
             this.tname.Location = new System.Drawing.Point(260, 146);
@@ -5619,6 +5932,7 @@
             this.tname.Size = new System.Drawing.Size(210, 26);
             this.tname.TabIndex = 60;
             this.tname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tname.UseWaitCursor = true;
             // 
             // tcode
             // 
@@ -5626,8 +5940,8 @@
             this.tcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tcode.BorderThickness = 2;
-            this.tcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tcode.isPassword = false;
             this.tcode.Location = new System.Drawing.Point(260, 85);
@@ -5636,6 +5950,7 @@
             this.tcode.Size = new System.Drawing.Size(210, 26);
             this.tcode.TabIndex = 58;
             this.tcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tcode.UseWaitCursor = true;
             this.tcode.OnValueChanged += new System.EventHandler(this.tcode_OnValueChanged);
             this.tcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tcode_KeyPress);
             // 
@@ -5649,7 +5964,7 @@
             this.bunifuThinButton221.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton221.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton221.BackgroundImage")));
             this.bunifuThinButton221.ButtonText = "Track";
-            this.bunifuThinButton221.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton221.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton221.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton221.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton221.IdleBorderThickness = 1;
@@ -5663,6 +5978,7 @@
             this.bunifuThinButton221.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton221.TabIndex = 55;
             this.bunifuThinButton221.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton221.UseWaitCursor = true;
             this.bunifuThinButton221.Click += new System.EventHandler(this.bunifuThinButton221_Click);
             // 
             // bunifuThinButton222
@@ -5675,7 +5991,7 @@
             this.bunifuThinButton222.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton222.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton222.BackgroundImage")));
             this.bunifuThinButton222.ButtonText = "Reset";
-            this.bunifuThinButton222.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton222.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton222.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton222.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton222.IdleBorderThickness = 1;
@@ -5689,6 +6005,7 @@
             this.bunifuThinButton222.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton222.TabIndex = 54;
             this.bunifuThinButton222.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton222.UseWaitCursor = true;
             this.bunifuThinButton222.Click += new System.EventHandler(this.bunifuThinButton222_Click);
             // 
             // bunifuCustomLabel143
@@ -5701,6 +6018,7 @@
             this.bunifuCustomLabel143.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel143.TabIndex = 29;
             this.bunifuCustomLabel143.Text = "Item Name";
+            this.bunifuCustomLabel143.UseWaitCursor = true;
             // 
             // bunifuCustomLabel145
             // 
@@ -5712,6 +6030,7 @@
             this.bunifuCustomLabel145.Size = new System.Drawing.Size(85, 18);
             this.bunifuCustomLabel145.TabIndex = 25;
             this.bunifuCustomLabel145.Text = "Item Code";
+            this.bunifuCustomLabel145.UseWaitCursor = true;
             // 
             // bunifuCustomLabel153
             // 
@@ -5724,6 +6043,7 @@
             this.bunifuCustomLabel153.TabIndex = 2;
             this.bunifuCustomLabel153.Text = "Track Missing Items";
             this.bunifuCustomLabel153.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel153.UseWaitCursor = true;
             // 
             // panel21
             // 
@@ -5733,6 +6053,7 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(549, 621);
             this.panel21.TabIndex = 162;
+            this.panel21.UseWaitCursor = true;
             // 
             // groupBox19
             // 
@@ -5747,6 +6068,7 @@
             this.groupBox19.Size = new System.Drawing.Size(518, 577);
             this.groupBox19.TabIndex = 161;
             this.groupBox19.TabStop = false;
+            this.groupBox19.UseWaitCursor = true;
             // 
             // tbc
             // 
@@ -5756,6 +6078,7 @@
             this.tbc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.tbc.TabIndex = 167;
             this.tbc.TabStop = false;
+            this.tbc.UseWaitCursor = true;
             // 
             // tic
             // 
@@ -5765,6 +6088,7 @@
             this.tic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.tic.TabIndex = 166;
             this.tic.TabStop = false;
+            this.tic.UseWaitCursor = true;
             // 
             // tbcode
             // 
@@ -5772,8 +6096,8 @@
             this.tbcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tbcode.BorderThickness = 2;
-            this.tbcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tbcode.isPassword = false;
             this.tbcode.Location = new System.Drawing.Point(244, 70);
@@ -5782,6 +6106,7 @@
             this.tbcode.Size = new System.Drawing.Size(210, 26);
             this.tbcode.TabIndex = 164;
             this.tbcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tbcode.UseWaitCursor = true;
             this.tbcode.OnValueChanged += new System.EventHandler(this.tbcode_OnValueChanged);
             this.tbcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbcode_KeyPress);
             // 
@@ -5795,6 +6120,7 @@
             this.bunifuCustomLabel144.Size = new System.Drawing.Size(71, 18);
             this.bunifuCustomLabel144.TabIndex = 163;
             this.bunifuCustomLabel144.Text = "Barcode";
+            this.bunifuCustomLabel144.UseWaitCursor = true;
             // 
             // groupBox20
             // 
@@ -5812,6 +6138,7 @@
             this.groupBox20.Size = new System.Drawing.Size(493, 257);
             this.groupBox20.TabIndex = 162;
             this.groupBox20.TabStop = false;
+            this.groupBox20.UseWaitCursor = true;
             // 
             // bunifuCustomLabel138
             // 
@@ -5823,6 +6150,7 @@
             this.bunifuCustomLabel138.Size = new System.Drawing.Size(139, 18);
             this.bunifuCustomLabel138.TabIndex = 37;
             this.bunifuCustomLabel138.Text = "Showroom Stock";
+            this.bunifuCustomLabel138.UseWaitCursor = true;
             // 
             // bunifuCustomLabel149
             // 
@@ -5834,6 +6162,7 @@
             this.bunifuCustomLabel149.Size = new System.Drawing.Size(143, 18);
             this.bunifuCustomLabel149.TabIndex = 9;
             this.bunifuCustomLabel149.Text = "Warehouse Stock";
+            this.bunifuCustomLabel149.UseWaitCursor = true;
             // 
             // bunifuCustomLabel148
             // 
@@ -5845,6 +6174,7 @@
             this.bunifuCustomLabel148.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel148.TabIndex = 10;
             this.bunifuCustomLabel148.Text = "Total";
+            this.bunifuCustomLabel148.UseWaitCursor = true;
             // 
             // bunifuCustomLabel147
             // 
@@ -5856,6 +6186,7 @@
             this.bunifuCustomLabel147.Size = new System.Drawing.Size(133, 18);
             this.bunifuCustomLabel147.TabIndex = 11;
             this.bunifuCustomLabel147.Text = "Missing Quantity";
+            this.bunifuCustomLabel147.UseWaitCursor = true;
             // 
             // tss
             // 
@@ -5863,8 +6194,8 @@
             this.tss.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tss.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tss.BorderThickness = 2;
-            this.tss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tss.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tss.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tss.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tss.isPassword = false;
             this.tss.Location = new System.Drawing.Point(237, 58);
@@ -5873,6 +6204,7 @@
             this.tss.Size = new System.Drawing.Size(210, 26);
             this.tss.TabIndex = 62;
             this.tss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tss.UseWaitCursor = true;
             this.tss.OnValueChanged += new System.EventHandler(this.tss_OnValueChanged);
             // 
             // tmq
@@ -5881,9 +6213,9 @@
             this.tmq.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tmq.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tmq.BorderThickness = 2;
-            this.tmq.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tmq.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tmq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.tmq.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tmq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            this.tmq.ForeColor = System.Drawing.Color.Red;
             this.tmq.isPassword = false;
             this.tmq.Location = new System.Drawing.Point(237, 155);
             this.tmq.Margin = new System.Windows.Forms.Padding(4);
@@ -5891,6 +6223,7 @@
             this.tmq.Size = new System.Drawing.Size(210, 26);
             this.tmq.TabIndex = 65;
             this.tmq.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tmq.UseWaitCursor = true;
             this.tmq.OnValueChanged += new System.EventHandler(this.tmq_OnValueChanged);
             // 
             // tws
@@ -5899,8 +6232,8 @@
             this.tws.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tws.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tws.BorderThickness = 2;
-            this.tws.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tws.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tws.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tws.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tws.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tws.isPassword = false;
             this.tws.Location = new System.Drawing.Point(237, 91);
@@ -5909,6 +6242,7 @@
             this.tws.Size = new System.Drawing.Size(210, 26);
             this.tws.TabIndex = 63;
             this.tws.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tws.UseWaitCursor = true;
             this.tws.OnValueChanged += new System.EventHandler(this.tws_OnValueChanged);
             // 
             // tt
@@ -5917,8 +6251,8 @@
             this.tt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tt.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tt.BorderThickness = 2;
-            this.tt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tt.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.tt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tt.isPassword = false;
             this.tt.Location = new System.Drawing.Point(237, 122);
@@ -5927,6 +6261,7 @@
             this.tt.Size = new System.Drawing.Size(210, 26);
             this.tt.TabIndex = 64;
             this.tt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tt.UseWaitCursor = true;
             this.tt.OnValueChanged += new System.EventHandler(this.tt_OnValueChanged);
             // 
             // panel26
@@ -5937,6 +6272,7 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(458, 179);
             this.panel26.TabIndex = 66;
+            this.panel26.UseWaitCursor = true;
             // 
             // bunifuCustomLabel150
             // 
@@ -5948,6 +6284,7 @@
             this.bunifuCustomLabel150.Size = new System.Drawing.Size(140, 18);
             this.bunifuCustomLabel150.TabIndex = 6;
             this.bunifuCustomLabel150.Text = "Showroom Count";
+            this.bunifuCustomLabel150.UseWaitCursor = true;
             // 
             // bunifuCards9
             // 
@@ -5984,6 +6321,7 @@
             this.bunifuCards9.ShadowDepth = 20;
             this.bunifuCards9.Size = new System.Drawing.Size(649, 674);
             this.bunifuCards9.TabIndex = 3;
+            this.bunifuCards9.UseWaitCursor = true;
             // 
             // bunifuCustomLabel93
             // 
@@ -5996,6 +6334,7 @@
             this.bunifuCustomLabel93.TabIndex = 2;
             this.bunifuCustomLabel93.Text = "Defective Items";
             this.bunifuCustomLabel93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel93.UseWaitCursor = true;
             // 
             // pictureBox7
             // 
@@ -6005,6 +6344,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(63, 66);
             this.pictureBox7.TabIndex = 159;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.UseWaitCursor = true;
             // 
             // dreas
             // 
@@ -6012,8 +6352,8 @@
             this.dreas.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dreas.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dreas.BorderThickness = 2;
-            this.dreas.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dreas.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dreas.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dreas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dreas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dreas.isPassword = false;
             this.dreas.Location = new System.Drawing.Point(281, 393);
@@ -6022,6 +6362,7 @@
             this.dreas.Size = new System.Drawing.Size(209, 26);
             this.dreas.TabIndex = 65;
             this.dreas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dreas.UseWaitCursor = true;
             // 
             // dq
             // 
@@ -6029,8 +6370,8 @@
             this.dq.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dq.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dq.BorderThickness = 2;
-            this.dq.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dq.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dq.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dq.isPassword = false;
             this.dq.Location = new System.Drawing.Point(281, 366);
@@ -6039,6 +6380,7 @@
             this.dq.Size = new System.Drawing.Size(209, 26);
             this.dq.TabIndex = 64;
             this.dq.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dq.UseWaitCursor = true;
             this.dq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dq_KeyPress);
             // 
             // dsid
@@ -6047,8 +6389,8 @@
             this.dsid.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dsid.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dsid.BorderThickness = 2;
-            this.dsid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dsid.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dsid.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dsid.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dsid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dsid.isPassword = false;
             this.dsid.Location = new System.Drawing.Point(281, 335);
@@ -6057,6 +6399,8 @@
             this.dsid.Size = new System.Drawing.Size(209, 26);
             this.dsid.TabIndex = 63;
             this.dsid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dsid.UseWaitCursor = true;
+            this.dsid.OnValueChanged += new System.EventHandler(this.dsid_OnValueChanged);
             // 
             // drp
             // 
@@ -6064,8 +6408,8 @@
             this.drp.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.drp.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.drp.BorderThickness = 2;
-            this.drp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.drp.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.drp.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.drp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.drp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.drp.isPassword = false;
             this.drp.Location = new System.Drawing.Point(281, 275);
@@ -6074,6 +6418,7 @@
             this.drp.Size = new System.Drawing.Size(209, 26);
             this.drp.TabIndex = 61;
             this.drp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.drp.UseWaitCursor = true;
             this.drp.OnValueChanged += new System.EventHandler(this.drp_OnValueChanged);
             // 
             // dbrand
@@ -6082,8 +6427,8 @@
             this.dbrand.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dbrand.BorderThickness = 2;
-            this.dbrand.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbrand.isPassword = false;
             this.dbrand.Location = new System.Drawing.Point(281, 248);
@@ -6092,6 +6437,7 @@
             this.dbrand.Size = new System.Drawing.Size(209, 26);
             this.dbrand.TabIndex = 60;
             this.dbrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dbrand.UseWaitCursor = true;
             this.dbrand.OnValueChanged += new System.EventHandler(this.dbrand_OnValueChanged);
             // 
             // dname
@@ -6100,8 +6446,8 @@
             this.dname.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dname.BorderThickness = 2;
-            this.dname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dname.isPassword = false;
             this.dname.Location = new System.Drawing.Point(282, 153);
@@ -6110,6 +6456,7 @@
             this.dname.Size = new System.Drawing.Size(209, 26);
             this.dname.TabIndex = 59;
             this.dname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dname.UseWaitCursor = true;
             this.dname.OnValueChanged += new System.EventHandler(this.dname_OnValueChanged);
             // 
             // dcode
@@ -6118,8 +6465,8 @@
             this.dcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dcode.BorderThickness = 2;
-            this.dcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dcode.isPassword = false;
             this.dcode.Location = new System.Drawing.Point(281, 96);
@@ -6128,6 +6475,7 @@
             this.dcode.Size = new System.Drawing.Size(209, 26);
             this.dcode.TabIndex = 57;
             this.dcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dcode.UseWaitCursor = true;
             this.dcode.OnValueChanged += new System.EventHandler(this.dcode_OnValueChanged);
             this.dcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dcode_KeyPress);
             // 
@@ -6141,6 +6489,7 @@
             this.bunifuCustomLabel69.Size = new System.Drawing.Size(93, 18);
             this.bunifuCustomLabel69.TabIndex = 37;
             this.bunifuCustomLabel69.Text = "Retail price";
+            this.bunifuCustomLabel69.UseWaitCursor = true;
             // 
             // bunifuCustomLabel70
             // 
@@ -6152,6 +6501,7 @@
             this.bunifuCustomLabel70.Size = new System.Drawing.Size(43, 18);
             this.bunifuCustomLabel70.TabIndex = 35;
             this.bunifuCustomLabel70.Text = "Date";
+            this.bunifuCustomLabel70.UseWaitCursor = true;
             // 
             // bunifuCustomLabel83
             // 
@@ -6163,6 +6513,7 @@
             this.bunifuCustomLabel83.Size = new System.Drawing.Size(89, 18);
             this.bunifuCustomLabel83.TabIndex = 29;
             this.bunifuCustomLabel83.Text = "Item Name";
+            this.bunifuCustomLabel83.UseWaitCursor = true;
             // 
             // bunifuCustomLabel85
             // 
@@ -6174,6 +6525,7 @@
             this.bunifuCustomLabel85.Size = new System.Drawing.Size(85, 18);
             this.bunifuCustomLabel85.TabIndex = 25;
             this.bunifuCustomLabel85.Text = "Item Code";
+            this.bunifuCustomLabel85.UseWaitCursor = true;
             // 
             // bunifuCustomLabel86
             // 
@@ -6185,6 +6537,7 @@
             this.bunifuCustomLabel86.Size = new System.Drawing.Size(66, 18);
             this.bunifuCustomLabel86.TabIndex = 21;
             this.bunifuCustomLabel86.Text = "Reason";
+            this.bunifuCustomLabel86.UseWaitCursor = true;
             // 
             // bunifuCustomLabel87
             // 
@@ -6196,6 +6549,7 @@
             this.bunifuCustomLabel87.Size = new System.Drawing.Size(142, 18);
             this.bunifuCustomLabel87.TabIndex = 11;
             this.bunifuCustomLabel87.Text = "Defected Quantity";
+            this.bunifuCustomLabel87.UseWaitCursor = true;
             // 
             // bunifuCustomLabel88
             // 
@@ -6207,6 +6561,7 @@
             this.bunifuCustomLabel88.Size = new System.Drawing.Size(90, 18);
             this.bunifuCustomLabel88.TabIndex = 10;
             this.bunifuCustomLabel88.Text = "Supplier ID";
+            this.bunifuCustomLabel88.UseWaitCursor = true;
             // 
             // bunifuCustomLabel89
             // 
@@ -6218,6 +6573,7 @@
             this.bunifuCustomLabel89.Size = new System.Drawing.Size(118, 18);
             this.bunifuCustomLabel89.TabIndex = 9;
             this.bunifuCustomLabel89.Text = "Supplier Name";
+            this.bunifuCustomLabel89.UseWaitCursor = true;
             // 
             // bunifuCustomLabel90
             // 
@@ -6229,6 +6585,7 @@
             this.bunifuCustomLabel90.Size = new System.Drawing.Size(52, 18);
             this.bunifuCustomLabel90.TabIndex = 6;
             this.bunifuCustomLabel90.Text = "Brand";
+            this.bunifuCustomLabel90.UseWaitCursor = true;
             // 
             // bunifuCustomLabel91
             // 
@@ -6240,6 +6597,7 @@
             this.bunifuCustomLabel91.Size = new System.Drawing.Size(110, 18);
             this.bunifuCustomLabel91.TabIndex = 5;
             this.bunifuCustomLabel91.Text = "Sub Category";
+            this.bunifuCustomLabel91.UseWaitCursor = true;
             // 
             // bunifuCustomLabel92
             // 
@@ -6251,15 +6609,18 @@
             this.bunifuCustomLabel92.Size = new System.Drawing.Size(76, 18);
             this.bunifuCustomLabel92.TabIndex = 3;
             this.bunifuCustomLabel92.Text = "Category";
+            this.bunifuCustomLabel92.UseWaitCursor = true;
             // 
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.panel25);
+            this.groupBox18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.groupBox18.Location = new System.Drawing.Point(15, 30);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(602, 565);
             this.groupBox18.TabIndex = 160;
             this.groupBox18.TabStop = false;
+            this.groupBox18.UseWaitCursor = true;
             // 
             // panel25
             // 
@@ -6278,6 +6639,7 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(522, 485);
             this.panel25.TabIndex = 0;
+            this.panel25.UseWaitCursor = true;
             // 
             // dbc
             // 
@@ -6287,6 +6649,7 @@
             this.dbc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.dbc.TabIndex = 168;
             this.dbc.TabStop = false;
+            this.dbc.UseWaitCursor = true;
             // 
             // dic
             // 
@@ -6296,6 +6659,7 @@
             this.dic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.dic.TabIndex = 167;
             this.dic.TabStop = false;
+            this.dic.UseWaitCursor = true;
             // 
             // dbcode
             // 
@@ -6303,8 +6667,8 @@
             this.dbcode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dbcode.BorderThickness = 2;
-            this.dbcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbcode.isPassword = false;
             this.dbcode.Location = new System.Drawing.Point(234, 48);
@@ -6313,6 +6677,7 @@
             this.dbcode.Size = new System.Drawing.Size(209, 26);
             this.dbcode.TabIndex = 166;
             this.dbcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dbcode.UseWaitCursor = true;
             this.dbcode.OnValueChanged += new System.EventHandler(this.dbcode_OnValueChanged_1);
             this.dbcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dbcode_KeyPress);
             // 
@@ -6326,16 +6691,20 @@
             this.bunifuCustomLabel84.Size = new System.Drawing.Size(71, 18);
             this.bunifuCustomLabel84.TabIndex = 165;
             this.bunifuCustomLabel84.Text = "Barcode";
+            this.bunifuCustomLabel84.UseWaitCursor = true;
             // 
             // dsname
             // 
             this.dsname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.dsname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dsname.FormattingEnabled = true;
             this.dsname.Location = new System.Drawing.Point(234, 226);
             this.dsname.Name = "dsname";
-            this.dsname.Size = new System.Drawing.Size(210, 26);
+            this.dsname.Size = new System.Drawing.Size(210, 20);
             this.dsname.TabIndex = 164;
+            this.dsname.Text = "Select Supplier";
+            this.dsname.UseWaitCursor = true;
+            this.dsname.SelectedIndexChanged += new System.EventHandler(this.dsname_SelectedIndexChanged);
             // 
             // dsub
             // 
@@ -6343,8 +6712,8 @@
             this.dsub.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dsub.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dsub.BorderThickness = 2;
-            this.dsub.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dsub.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dsub.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dsub.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dsub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dsub.isPassword = false;
             this.dsub.Location = new System.Drawing.Point(235, 137);
@@ -6353,6 +6722,7 @@
             this.dsub.Size = new System.Drawing.Size(209, 26);
             this.dsub.TabIndex = 162;
             this.dsub.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dsub.UseWaitCursor = true;
             this.dsub.OnValueChanged += new System.EventHandler(this.dsub_OnValueChanged);
             // 
             // dcat
@@ -6361,8 +6731,8 @@
             this.dcat.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dcat.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dcat.BorderThickness = 2;
-            this.dcat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dcat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dcat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dcat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dcat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dcat.isPassword = false;
             this.dcat.Location = new System.Drawing.Point(235, 107);
@@ -6371,16 +6741,19 @@
             this.dcat.Size = new System.Drawing.Size(209, 26);
             this.dcat.TabIndex = 163;
             this.dcat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dcat.UseWaitCursor = true;
             this.dcat.OnValueChanged += new System.EventHandler(this.dcat_OnValueChanged);
             // 
             // ddate
             // 
             this.ddate.CustomFormat = "yyyy-MM-dd";
+            this.ddate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ddate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ddate.Location = new System.Drawing.Point(234, 344);
             this.ddate.Name = "ddate";
-            this.ddate.Size = new System.Drawing.Size(209, 22);
+            this.ddate.Size = new System.Drawing.Size(209, 20);
             this.ddate.TabIndex = 162;
+            this.ddate.UseWaitCursor = true;
             this.ddate.Value = new System.DateTime(2017, 8, 29, 0, 0, 0, 0);
             // 
             // bunifuThinButton218
@@ -6393,7 +6766,7 @@
             this.bunifuThinButton218.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton218.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton218.BackgroundImage")));
             this.bunifuThinButton218.ButtonText = "Reset";
-            this.bunifuThinButton218.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton218.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton218.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton218.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton218.IdleBorderThickness = 1;
@@ -6407,6 +6780,7 @@
             this.bunifuThinButton218.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton218.TabIndex = 54;
             this.bunifuThinButton218.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton218.UseWaitCursor = true;
             this.bunifuThinButton218.Click += new System.EventHandler(this.bunifuThinButton218_Click);
             // 
             // bunifuThinButton217
@@ -6419,7 +6793,7 @@
             this.bunifuThinButton217.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuThinButton217.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton217.BackgroundImage")));
             this.bunifuThinButton217.ButtonText = "Submit";
-            this.bunifuThinButton217.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton217.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuThinButton217.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton217.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuThinButton217.IdleBorderThickness = 1;
@@ -6433,6 +6807,7 @@
             this.bunifuThinButton217.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton217.TabIndex = 55;
             this.bunifuThinButton217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton217.UseWaitCursor = true;
             this.bunifuThinButton217.Click += new System.EventHandler(this.bunifuThinButton217_Click);
             // 
             // panel20
@@ -6442,6 +6817,48 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(613, 625);
             this.panel20.TabIndex = 161;
+            this.panel20.UseWaitCursor = true;
+            // 
+            // gby
+            // 
+            this.gby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.gby.FormattingEnabled = true;
+            this.gby.Location = new System.Drawing.Point(145, 105);
+            this.gby.Name = "gby";
+            this.gby.Size = new System.Drawing.Size(218, 20);
+            this.gby.TabIndex = 169;
+            this.gby.Text = "Select Employee";
+            this.gby.UseWaitCursor = true;
+            // 
+            // wro
+            // 
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.wro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.wro.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.wro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.wro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.wro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.wro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.wro.DoubleBuffered = true;
+            this.wro.EnableHeadersVisualStyles = false;
+            this.wro.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
+            this.wro.HeaderForeColor = System.Drawing.Color.White;
+            this.wro.Location = new System.Drawing.Point(14, 15);
+            this.wro.Name = "wro";
+            this.wro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.wro.RowHeadersVisible = false;
+            this.wro.Size = new System.Drawing.Size(494, 206);
+            this.wro.TabIndex = 25;
+            this.wro.UseWaitCursor = true;
+            this.wro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.wro_CellContentClick);
+            this.wro.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.wro_CellValueChanged);
             // 
             // main
             // 
@@ -6520,7 +6937,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.wro)).EndInit();
             this.panel11.ResumeLayout(false);
             this.bunifuCards7.ResumeLayout(false);
             this.bunifuCards7.PerformLayout();
@@ -6601,6 +7017,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wro)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6740,7 +7157,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel109;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel110;
         private System.Windows.Forms.GroupBox groupBox4;
-        private Bunifu.Framework.UI.BunifuMetroTextbox gby;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel99;
         private Bunifu.Framework.UI.BunifuMetroTextbox gamnt;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel98;
@@ -6855,7 +7271,6 @@
         private Bunifu.Framework.UI.BunifuCards bunifuCards14;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel139;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel162;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid wro;
         private Bunifu.Framework.UI.BunifuMetroTextbox stqty;
         private Bunifu.Framework.UI.BunifuMetroTextbox sup;
         private Bunifu.Framework.UI.BunifuMetroTextbox snqty;
@@ -6978,7 +7393,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel112;
         private Bunifu.Framework.UI.BunifuMetroTextbox gsr;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel22;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn cv;
         private Bunifu.Framework.UI.BunifuMetroTextbox gcat;
         private Bunifu.Framework.UI.BunifuMetroTextbox gscat;
         private Bunifu.Framework.UI.BunifuMetroTextbox dsub;
@@ -7022,6 +7436,8 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox gby;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid wro;
     }
 }
 

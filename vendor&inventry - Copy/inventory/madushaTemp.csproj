@@ -210,6 +210,18 @@
       <DependentUpon>sendEmail.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
+    <Compile Include="stock2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stock2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sty.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sty.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="supermarketDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -360,6 +372,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sendEmail.resx">
       <DependentUpon>sendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>stock2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sty.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sty.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SuppEmail.resx">
       <DependentUpon>SuppEmail.cs</DependentUpon>
@@ -639,6 +659,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-Report Card-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\debug\msmsIcon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
