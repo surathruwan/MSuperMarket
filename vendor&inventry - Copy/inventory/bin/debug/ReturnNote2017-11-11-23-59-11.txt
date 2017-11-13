@@ -1,9 +1,0 @@
-	 	 MADUSHA SUPERMARKET 	 	
---------------------------------------------------
-11:59:11 PM	 	Saturday, November 11, 2017
-Cashier: upali
-
-Item Name	 Item Code	 Price	 Quantity 
-2017-08-29		4 	 12000	  4	   
---------------------------------------------------
-Total Amount 	 	 	47996.00
