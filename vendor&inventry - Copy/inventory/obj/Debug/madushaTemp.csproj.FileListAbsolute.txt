@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 3ca929c... f
 =======
 >>>>>>> parent of 3ca929c... f
 =======
@@ -34,6 +37,9 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\stdole.dll
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 3ca929c... f
+=======
 >>>>>>> parent of 3ca929c... f
 =======
 >>>>>>> parent of 3ca929c... f
@@ -74,7 +80,10 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 3ca929c... f
 =======
 >>>>>>> parent of 3ca929c... f
 =======
@@ -200,6 +209,9 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 >>>>>>> e536ac63001dd0fddbcb7b355ccccc2cc0984156
 >>>>>>> 0f58a48299dfe4ac931432bb9a1d62745f9aef18
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 3ca929c... f
+=======
 >>>>>>> parent of 3ca929c... f
 =======
 >>>>>>> parent of 3ca929c... f
