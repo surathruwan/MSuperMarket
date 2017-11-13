@@ -2489,6 +2489,7 @@ namespace inventory
             pdfReport("ITEM LIST-Floor 1","Select Item_code as 'code', Item_name as 'Item', sqty as 'Quantity', Floor, Rprice as 'Price', (Rprice * sqty) as 'Total' from supermarket.Item where Floor = 1 and sqty > 0","1floor.pdf");
 
 
+<<<<<<< HEAD
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -2540,6 +2541,59 @@ namespace inventory
             }
         }
 
+=======
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Floor 2", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=2 and sqty>0", "f2.pdf");
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Floor 3", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=3 and sqty>0", "f3.pdf");
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Floor 4","Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=4 and sqty>0", "f4.pdf");
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            pdfReport("ITEM LIST-Warehouse","Select Item_code as 'code',Item_name as 'Item',wqty as 'Quantity',Rprice as 'Price',(Rprice*wqty) as 'Total' from supermarket.Item where wqty>0", "wh.pdf");
+
+        }
+
+        private void abrand_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void abcode_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tqty_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tqty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+>>>>>>> 3ca929cf3d3e9219e670c23a64ee910511dceda3
         private void roq_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
