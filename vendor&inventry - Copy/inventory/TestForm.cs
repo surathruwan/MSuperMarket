@@ -54,8 +54,9 @@ namespace madushaTemp
             }
             else if (v == 2)
             {
-               
+                //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage4);
+                // ((Control)this.tabPage2).Enabled = false;
                 bunifuThinButton214.Enabled = false;
                 pictureBox12.Enabled = false;
                 btnseized.Enabled = false;
@@ -117,7 +118,7 @@ namespace madushaTemp
             tableLoadDeli();
             tableLoadBankAll();
             tableLoademplo();
-            tableLoadothers();
+
 
             tableLoadBank();
             tableLoadEI();
@@ -971,34 +972,6 @@ namespace madushaTemp
             }
 
         }
-
-        public void tableLoadothers()
-        {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlCommand cmd = new MySqlCommand("select sum(amount) as 'Other Cash' from supermarket.incomeexpense where type='Others' ;", conn);
-            try
-            {
-                conn.Open();
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = cmd;
-                DataTable tab = new DataTable();
-                sda.Fill(tab);
-                BindingSource bsource = new BindingSource();
-                bsource.DataSource = tab;
-                tblo.DataSource = bsource;
-                sda.Update(tab);
-
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-
-        }
-
-
         public void tableLoademplo()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -3622,50 +3595,6 @@ namespace madushaTemp
             //add out table
             doc.Add(table);
 
-                //line separator
-                Paragraph q1a = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-                doc.Add(q1a);
-
-                PdfPTable table1a = new PdfPTable(tblo.Columns.Count);
-
-                //add headers from gridview to table
-                iTextSharp.text.Font fonth1a = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-                for (int j = 0; j < tblo.Columns.Count; j++)
-                {
-                    PdfPCell cell = new PdfPCell();
-                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                    cell.AddElement(new Chunk(tblo.Columns[j].HeaderText.ToUpper(), fonth1a));
-                    table1a.AddCell(cell);
-
-                }
-
-                //flag first row as header
-                table1a.HeaderRows = 1;
-
-
-                //add actual rows from grid to table
-                for (int i = 0; i < tblo.Rows.Count; i++)
-                {
-                    table1a.WidthPercentage = 45;
-
-                    for (int k = 0; k < tblo.Columns.Count; k++)
-                    {
-                        if (tblo[k, i].Value != null)
-                        {
-
-                            table1a.AddCell(new Phrase(tblo[k, i].Value.ToString()));
-                        }
-
-                    }
-
-
-                }
-
-                //add out table
-                doc.Add(table1a);
 
 
 
@@ -3688,96 +3617,7 @@ namespace madushaTemp
                 Paragraph p3q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
                 doc.Add(p3q);
 
-                //line separator
-                Paragraph q1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-                doc.Add(q1);
 
-                PdfPTable table1 = new PdfPTable(tble.Columns.Count);
-
-                //add headers from gridview to table
-                iTextSharp.text.Font fonth1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-                for (int j = 0; j < tble.Columns.Count; j++)
-                {
-                    PdfPCell cell = new PdfPCell();
-                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                    cell.AddElement(new Chunk(tble.Columns[j].HeaderText.ToUpper(), fonth1));
-                    table1.AddCell(cell);
-
-                }
-
-                //flag first row as header
-                table1.HeaderRows = 1;
-
-
-                //add actual rows from grid to table
-                for (int i = 0; i < tble.Rows.Count; i++)
-                {
-                    table1.WidthPercentage = 45;
-
-                    for (int k = 0; k < tble.Columns.Count; k++)
-                    {
-                        if (tblb[k, i].Value != null)
-                        {
-
-                            table1.AddCell(new Phrase(tble[k, i].Value.ToString()));
-                        }
-
-                    }
-
-
-                }
-
-                //add out table
-                doc.Add(table1);
-
-
-                //line separator
-                Paragraph q11 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-                doc.Add(q11);
-
-                PdfPTable table11 = new PdfPTable(tbltax.Columns.Count);
-
-                //add headers from gridview to table
-                iTextSharp.text.Font fonth11 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-                for (int j = 0; j < tbltax.Columns.Count; j++)
-                {
-                    PdfPCell cell = new PdfPCell();
-                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                    cell.AddElement(new Chunk(tbltax.Columns[j].HeaderText.ToUpper(), fonth11));
-                    table11.AddCell(cell);
-
-                }
-
-                //flag first row as header
-                table11.HeaderRows = 1;
-
-
-                //add actual rows from grid to table
-                for (int i = 0; i < tbltax.Rows.Count; i++)
-                {
-                    table11.WidthPercentage = 45;
-
-                    for (int k = 0; k < tbltax.Columns.Count; k++)
-                    {
-                        if (tbltax[k, i].Value != null)
-                        {
-
-                            table11.AddCell(new Phrase(tbltax[k, i].Value.ToString()));
-                        }
-
-                    }
-
-
-                }
-
-                //add out table
-                doc.Add(table11);
 
 
                 doc.Close();
