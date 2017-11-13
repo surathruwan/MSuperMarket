@@ -162,10 +162,5 @@ namespace inventory
         {
 
         }
-
-        private void bunifuThinButton25_Click(object sender, EventArgs e)
-        {
-           // main.pdfReport(y1.Text,"select * from supermarket.transfer where date like '"+y1.Text+"%'","yrep1.pdf");
-        }
     }
 }

@@ -199,7 +199,7 @@ namespace inventory
                 MessageBox.Show(ex.Message);
             }
         }
-        public  void pdfReport(string name,string query,string fname)
+        void pdfReport(string name,string query,string fname)
         {
             string con = "datasource=localhost;port=3306;username=root";
             MySqlConnection dbcon = new MySqlConnection(con);
@@ -1761,7 +1761,7 @@ namespace inventory
                 string con = "datasource=localhost;port=3306;username=root";
                 MySqlConnection dbcon = new MySqlConnection(con);
                 dbcon.Open();
-                MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "')", dbcon);
+                MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "')", dbcon);
                 MySqlDataReader r2;
                 r2 = cmd2.ExecuteReader();
                 MessageBox.Show("Transfered successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
