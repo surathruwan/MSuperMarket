@@ -2461,7 +2461,10 @@ namespace inventory
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 41fc8f8... Merge branch 'master' of https://github.com/surathruwan/MSuperMarket
 =======
 >>>>>>> parent of 41fc8f8... Merge branch 'master' of https://github.com/surathruwan/MSuperMarket
         }
@@ -2516,6 +2519,7 @@ namespace inventory
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         }
 
@@ -2569,6 +2573,8 @@ namespace inventory
         }
 
 
+=======
+>>>>>>> parent of 41fc8f8... Merge branch 'master' of https://github.com/surathruwan/MSuperMarket
 =======
 >>>>>>> parent of 41fc8f8... Merge branch 'master' of https://github.com/surathruwan/MSuperMarket
         private void roq_KeyPress(object sender, KeyPressEventArgs e)
