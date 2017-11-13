@@ -42,6 +42,8 @@
             this.puyt = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.brcdid = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bccode = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bcname = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -52,8 +54,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.brcdid = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
@@ -221,6 +221,33 @@
             this.groupBox11.TabIndex = 53;
             this.groupBox11.TabStop = false;
             // 
+            // brcdid
+            // 
+            this.brcdid.BorderColorFocused = System.Drawing.Color.Blue;
+            this.brcdid.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.brcdid.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.brcdid.BorderThickness = 2;
+            this.brcdid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.brcdid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brcdid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.brcdid.isPassword = false;
+            this.brcdid.Location = new System.Drawing.Point(112, 65);
+            this.brcdid.Margin = new System.Windows.Forms.Padding(4);
+            this.brcdid.Name = "brcdid";
+            this.brcdid.Size = new System.Drawing.Size(217, 26);
+            this.brcdid.TabIndex = 55;
+            this.brcdid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(378, 33);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(92, 18);
+            this.bunifuCustomLabel2.TabIndex = 54;
+            this.bunifuCustomLabel2.Text = "Barcode ID";
+            // 
             // bunifuThinButton23
             // 
             this.bunifuThinButton23.ActiveBorderThickness = 1;
@@ -357,6 +384,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(116, 41);
             this.bunifuThinButton21.TabIndex = 52;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // bunifuThinButton22
             // 
@@ -383,33 +411,6 @@
             this.bunifuThinButton22.TabIndex = 51;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
-            // 
-            // brcdid
-            // 
-            this.brcdid.BorderColorFocused = System.Drawing.Color.Blue;
-            this.brcdid.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.brcdid.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.brcdid.BorderThickness = 2;
-            this.brcdid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.brcdid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brcdid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.brcdid.isPassword = false;
-            this.brcdid.Location = new System.Drawing.Point(112, 65);
-            this.brcdid.Margin = new System.Windows.Forms.Padding(4);
-            this.brcdid.Name = "brcdid";
-            this.brcdid.Size = new System.Drawing.Size(217, 26);
-            this.brcdid.TabIndex = 55;
-            this.brcdid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(378, 33);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(92, 18);
-            this.bunifuCustomLabel2.TabIndex = 54;
-            this.bunifuCustomLabel2.Text = "Barcode ID";
             // 
             // barcode
             // 

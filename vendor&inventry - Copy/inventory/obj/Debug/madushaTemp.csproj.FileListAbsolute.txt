@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d821471071cd4825cb063fda79c1059e1c63507a
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.Shared.dll
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
@@ -16,6 +22,7 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\b
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\stdole.dll
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.AdviceOfDispatch.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.barcode.resources
@@ -32,7 +39,7 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.MainForm.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.POS.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.PosAdmin.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.repair.resources
+C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.repair.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.report.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.sendEmail.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\emailCheck.Form1.resources
@@ -49,6 +56,7 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+<<<<<<< HEAD
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 =======
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
@@ -367,3 +375,5 @@ E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\invent
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+=======
+>>>>>>> d821471071cd4825cb063fda79c1059e1c63507a

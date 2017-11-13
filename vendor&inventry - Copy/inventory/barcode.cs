@@ -12,7 +12,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using BarcodeLib.Symbologies;
-
+using System.Diagnostics;
 
 namespace inventory
 {
@@ -59,7 +59,7 @@ namespace inventory
             {
 
                 puyt.Image.Save(@"b" + bccode.Text + ".jpg", ImageFormat.Jpeg);
-                MessageBox.Show("Barcode successfully saved in Barcodes folder");
+                MessageBox.Show("Barcode successfully saved in Barcodes folder", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -67,6 +67,24 @@ namespace inventory
             }
 
 
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                puyt.Image.Save(@"b" + bccode.Text + ".jpg", ImageFormat.Jpeg);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            ProcessStartInfo psi = new ProcessStartInfo(@"b" + bccode.Text + ".jpg");
+            psi.Verb = "print";
+            Process.Start(psi);
         }
     }
 }
