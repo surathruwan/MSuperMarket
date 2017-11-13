@@ -2489,7 +2489,7 @@ namespace inventory
             pdfReport("ITEM LIST-Floor 1","Select Item_code as 'code', Item_name as 'Item', sqty as 'Quantity', Floor, Rprice as 'Price', (Rprice * sqty) as 'Total' from supermarket.Item where Floor = 1 and sqty > 0","1floor.pdf");
 
 
-<<<<<<< HEAD
+
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -2541,7 +2541,7 @@ namespace inventory
             }
         }
 
-=======
+
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -2593,7 +2593,7 @@ namespace inventory
             }
         }
 
->>>>>>> 3ca929cf3d3e9219e670c23a64ee910511dceda3
+
         private void roq_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
