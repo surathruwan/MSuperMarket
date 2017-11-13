@@ -78,6 +78,15 @@ namespace madushaTemp
             tblhide.Visible = false;
             tblseizedhide.Visible = false;
             tblbankhid.Visible = false;
+            tblloan.Visible = false;
+
+            tblploan.Visible = false;
+            tblin.Visible = false;
+            tblex.Visible = false;
+            tblitm.Visible = false;
+            tbltax.Visible = false;
+            tblsal.Visible = false;
+            tbldeli.Visible = false;
 
             //setting default values
             cmbyear.SelectedIndex = 0;
@@ -105,6 +114,12 @@ namespace madushaTemp
             tableLoadhideexpense();
             tableLoadhitems();
             tableLoadTax();
+            tableLoadSal();
+            tableLoadDeli();
+            tableLoadBankAll();
+            tableLoademplo();
+
+
             tableLoadBank();
             tableLoadEI();
             tableLoadInstallmntformload();
@@ -858,7 +873,7 @@ namespace madushaTemp
         public void tableLoadPLoanAmount()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlCommand cmd = new MySqlCommand("select sum(lamount) as Amount from supermarket.bank where status='Paid' ;", conn);
+            MySqlCommand cmd = new MySqlCommand("select sum(lamount) as Loans from supermarket.bank where status='Paid' ;", conn);
             try
             {
                 conn.Open();
@@ -880,6 +895,33 @@ namespace madushaTemp
             }
 
         }
+
+        public void tableLoadBankAll()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select sum(lamount) as 'Savings Accounts' from supermarket.bank ;", conn);
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+                DataTable tab = new DataTable();
+                sda.Fill(tab);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = tab;
+                tblb.DataSource = bsource;
+                sda.Update(tab);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
         public void tableLoadhideincome()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -908,7 +950,7 @@ namespace madushaTemp
         public void tableLoadhideexpense()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlCommand cmd = new MySqlCommand("select sum(amount) as Amount from supermarket.incomeexpense where type='%Bill%' ;", conn);
+            MySqlCommand cmd = new MySqlCommand("select sum(amount) as Bills from supermarket.incomeexpense where type='Light Bill' ;", conn);
             try
             {
                 conn.Open();
@@ -919,6 +961,31 @@ namespace madushaTemp
                 BindingSource bsource = new BindingSource();
                 bsource.DataSource = tab;
                 tblex.DataSource = bsource;
+                sda.Update(tab);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        public void tableLoademplo()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select sum(amount) as 'Employee Loans' from supermarket.incomeexpense where type='Employee Loans';", conn);
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+                DataTable tab = new DataTable();
+                sda.Fill(tab);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = tab;
+                tble.DataSource = bsource;
                 sda.Update(tab);
 
                 conn.Close();
@@ -985,6 +1052,63 @@ namespace madushaTemp
 
         }
 
+        public void tableLoadSal()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select sum(salary) as 'Payroll' from supermarket. salary ;", conn);
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+                DataTable tab = new DataTable();
+                sda.Fill(tab);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = tab;
+                tblsal.DataSource = bsource;
+                sda.Update(tab);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+        }
+
+        public void tableLoadDeli()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select sum( delivery_cost) as 'Delivery Cost' from supermarket.  delivery_request ;", conn);
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+                DataTable tab = new DataTable();
+                sda.Fill(tab);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = tab;
+                tbldeli.DataSource = bsource;
+                sda.Update(tab);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+        }
 
         private void bunifuCustomDataGrid3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -2503,6 +2627,7 @@ namespace madushaTemp
 
         private void btncustomercopy_Click(object sender, EventArgs e)
         {
+            try { 
             tableLoadInstaSuumary2(txtnicsearch.Text);
 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
@@ -2510,7 +2635,7 @@ namespace madushaTemp
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aCustomer_Copy.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2592,19 +2717,25 @@ namespace madushaTemp
 
             System.Diagnostics.Process.Start(@"aCustomer_Copy.pdf");
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+}
 
-    
+
 
 
 
         private void bunifuThinButton214_Click_1(object sender, EventArgs e)
         {
+            try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\aSeized_Goods.pdf", FileMode.Create));
             doc.Open();
-            
-            MessageBox.Show("PDF Created Sucessfuly!!","",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+           // MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2685,8 +2816,12 @@ namespace madushaTemp
             doc.Close();
 
             System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\aSeized_Goods.pdf");
-
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+}
 
 
         private void pictureBox28_Click(object sender, EventArgs e)
@@ -2706,13 +2841,13 @@ namespace madushaTemp
         private void btnprintrecep_Click(object sender, EventArgs e)
         {
             //printer();
-
+            try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aSummary_Card.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2793,9 +2928,14 @@ namespace madushaTemp
             doc.Close();
 
             System.Diagnostics.Process.Start(@"aSummary_Card.pdf");
-
-
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+
+
+}
 
         private void btnchartgene_Click(object sender, EventArgs e)
         {
@@ -2820,13 +2960,13 @@ namespace madushaTemp
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-
+            try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aUnpaid_List.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           // MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2907,7 +3047,13 @@ namespace madushaTemp
             doc.Close();
 
             System.Diagnostics.Process.Start(@"aUnPaid_List.pdf");
+
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+}
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
@@ -3036,6 +3182,7 @@ namespace madushaTemp
 
         private void btnseized_Click(object sender, EventArgs e)
         {
+            try { 
             tableLoadEIHide();
 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
@@ -3043,7 +3190,7 @@ namespace madushaTemp
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aUnpaid_List.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -3124,8 +3271,13 @@ namespace madushaTemp
             doc.Close();
 
             System.Diagnostics.Process.Start(@"aUnPaid_List.pdf");
-
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+
+}
 
         private void bunifuCards5_Paint(object sender, PaintEventArgs e)
         {
@@ -3134,13 +3286,13 @@ namespace madushaTemp
 
         private void bunifuThinButton230_Click(object sender, EventArgs e)
         {
-
+            try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aAnnualReport.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -3155,7 +3307,7 @@ namespace madushaTemp
 
 
             //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLACK);
             Paragraph prg = new Paragraph();
             prg.Alignment = Element.ALIGN_CENTER;
             prg.Add(new Chunk("Annual Financial Report", font5));
@@ -3226,6 +3378,11 @@ namespace madushaTemp
 
             System.Diagnostics.Process.Start(@"aAnnualReport.pdf");
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+}
 
         private void bunifuThinButton222_Click(object sender, EventArgs e)
         {
@@ -3234,13 +3391,13 @@ namespace madushaTemp
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\Bank.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -3249,7 +3406,7 @@ namespace madushaTemp
             rectangle.Right -= doc.RightMargin - 5;
             rectangle.Top -= doc.TopMargin - 22;
             rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLACK);
+            content.SetColorStroke(BaseColor.BLUE);
             content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
             content.Stroke();
 
@@ -3262,7 +3419,7 @@ namespace madushaTemp
             doc.Add(prg);
 
             //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -3321,17 +3478,23 @@ namespace madushaTemp
             doc.Close();
 
             System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\Bank.pdf");
-        
-    }
+        }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+
+}
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
+            try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\assets.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -3340,46 +3503,69 @@ namespace madushaTemp
             rectangle.Right -= doc.RightMargin - 5;
             rectangle.Top -= doc.TopMargin - 22;
             rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLACK);
+            content.SetColorStroke(BaseColor.BLUE);
             content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
             content.Stroke();
 
 
             //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLACK);
             Paragraph prg = new Paragraph();
             prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Cash Flow", font5));
+            prg.Add(new Chunk("Assets and Liabilities", font5));
             doc.Add(prg);
 
             //Authors
             iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            iTextSharp.text.Font font151 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 21, BaseColor.BLACK);
+
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
             prg2.Alignment = Element.ALIGN_RIGHT;
-            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+
+            Paragraph prg21 = new Paragraph();
+            prg21.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg211 = new Paragraph();
+                prg211.Alignment = Element.ALIGN_RIGHT;
+
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
             prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
-            doc.Add(prg1);
+            prg21.Add(new Chunk("Current Year " , font15));
+                prg211.Add(new Chunk(" " + DateTime.Now.Year.ToString(), font151));
+                doc.Add(prg1);
             doc.Add(prg2);
+            doc.Add(prg21);
+                doc.Add(prg211);
+
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
 
 
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p);
+                iTextSharp.text.Font font3 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
+                Paragraph prg3 = new Paragraph();
+                prg3.Alignment = Element.ALIGN_LEFT;
+                prg3.Add(new Chunk("Assets", font3));
+                doc.Add(prg3);
+                Paragraph p3 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p3);
 
-            PdfPTable table = new PdfPTable(tblinscust.Columns.Count);
+                //line separator
+                Paragraph q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(q);
+
+            PdfPTable table = new PdfPTable(tblb.Columns.Count);
 
             //add headers from gridview to table
             iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
 
 
 
-            for (int j = 0; j < tblbankhid.Columns.Count; j++)
+            for (int j = 0; j < tblb.Columns.Count; j++)
             {
                 PdfPCell cell = new PdfPCell();
                 cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tblbankhid.Columns[j].HeaderText.ToUpper(), fonth));
+                cell.AddElement(new Chunk(tblb.Columns[j].HeaderText.ToUpper(), fonth));
                 table.AddCell(cell);
 
             }
@@ -3389,330 +3575,497 @@ namespace madushaTemp
 
 
             //add actual rows from grid to table
-            for (int i = 0; i < tblbankhid.Rows.Count; i++)
-            {
-                table.WidthPercentage = 100;
-
-                for (int k = 0; k < tblbankhid.Columns.Count; k++)
-                {
-                    if (tblbankhid[k, i].Value != null)
-                    {
-
-                        table.AddCell(new Phrase(tblbankhid[k, i].Value.ToString()));
-                    }
-
-                }
-
-
-            }
-
-            //add out table
-            doc.Add(table);
-
-            doc.Close();
-
-            System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\assets.pdf");
-        }
-
-        private void pictureBox18_Click(object sender, EventArgs e)
-        {
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\cashflow.pdf", FileMode.Create));
-            doc.Open();
-
-            MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //Add border to page
-            PdfContentByte content = w.DirectContent;
-            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
-            rectangle.Left += doc.LeftMargin - 5;
-            rectangle.Right -= doc.RightMargin - 5;
-            rectangle.Top -= doc.TopMargin - 22;
-            rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLACK);
-            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
-            content.Stroke();
-            
-
-            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
-            Paragraph prg = new Paragraph();
-            prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Cash Flow", font5));
-            doc.Add(prg);
-
-            iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
-            image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
-            image1.ScaleToFit(60f, 60f);
-            doc.Add(image1);
-
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 10, BaseColor.BLACK);
-            Paragraph prg1 = new Paragraph();
-            prg1.Alignment = Element.ALIGN_RIGHT;
-            Paragraph prg2 = new Paragraph();
-            prg2.Alignment = Element.ALIGN_RIGHT;
-            
-            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
-            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
-            doc.Add(prg1);
-            doc.Add(prg2);
-
-           
-            
-
-            //1
-            //start
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p);
-
-
-            iTextSharp.text.Font font3 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
-            Paragraph prg3 = new Paragraph();
-            prg3.Alignment = Element.ALIGN_LEFT;
-            prg3.Add(new Chunk("Cash Gain In", font3));
-            doc.Add(prg3);
-            Paragraph p3 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p3);
-
-
-            PdfPTable table = new PdfPTable(tblloan.Columns.Count);
-           
-            table.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-            
-
-            for (int j = 0; j < tblloan.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-               
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-             
-                cell.AddElement(new Chunk(tblloan.Columns[j].HeaderText.ToUpper(), fonth));
-                table.AddCell(cell);
-                
-            }
-
-            //flag first row as header
-            table.HeaderRows = 1;
-            
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < tblloan.Rows.Count; i++)
+            for (int i = 0; i < tblb.Rows.Count; i++)
             {
                 table.WidthPercentage = 45;
 
-                for (int k = 0; k < tblloan.Columns.Count; k++)
+                for (int k = 0; k < tblb.Columns.Count; k++)
                 {
-                    if (tblloan[k, i].Value != null)
+                    if (tblb[k, i].Value != null)
                     {
 
-                        table.AddCell(new Phrase(tblloan[k, i].Value.ToString()));
-                        
+                        table.AddCell(new Phrase(tblb[k, i].Value.ToString()));
                     }
 
                 }
 
 
             }
+
+            //add out table
             doc.Add(table);
-            Paragraph p02 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p02);
 
-            PdfPTable tablea = new PdfPTable(tblin.Columns.Count);
 
-            //add headers from gridview to table
-            iTextSharp.text.Font fontha = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
 
 
 
-            for (int j = 0; j < tblin.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tblin.Columns[j].HeaderText.ToUpper(), fonth));
-                tablea.AddCell(cell);
 
-            }
 
-            //flag first row as header
-            table.HeaderRows = 1;
 
 
-            //add actual rows from grid to table
-            for (int i = 0; i < tblin.Rows.Count; i++)
-            {
-                tablea.WidthPercentage = 45;
 
-                for (int k = 0; k < tblin.Columns.Count; k++)
-                {
-                    if (tblin[k, i].Value != null)
-                    {
+                //start 2nd
+                Paragraph pq = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(pq);
 
-                        tablea.AddCell(new Phrase(tblin[k, i].Value.ToString()));
-                    }
 
-                }
+                iTextSharp.text.Font font3q = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
+                Paragraph prg3q = new Paragraph();
+                prg3q.Alignment = Element.ALIGN_LEFT;
+                prg3q.Add(new Chunk("Liabilities", font3q));
+                doc.Add(prg3q);
+                Paragraph p3q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p3q);
 
 
-            }
 
-            //add out table
-           
-            doc.Add(tablea);
 
-            Paragraph p021 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p02);
+                doc.Close();
 
-            PdfPTable tablea1 = new PdfPTable(tblin.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fontha1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < tblitm.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tblitm.Columns[j].HeaderText.ToUpper(), fonth));
-                tablea1.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            tablea1.HeaderRows = 1;
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < tblitm.Rows.Count; i++)
-            {
-                tablea1.WidthPercentage = 45;
-
-                for (int k = 0; k < tblitm.Columns.Count; k++)
-                {
-                    if (tblitm[k, i].Value != null)
-                    {
-
-                        tablea1.AddCell(new Phrase(tblitm[k, i].Value.ToString()));
-                    }
-
-                }
-
-
-            }
-            doc.Add(tablea1);
-            //end
-
-
-
-
-            //2
-            //line separator
-            Paragraph p1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p1);
-
-            iTextSharp.text.Font font51 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
-            Paragraph prg11 = new Paragraph();
-            prg11.Alignment = Element.ALIGN_LEFT;
-            prg11.Add(new Chunk("Cash Paid Out", font51));
-            doc.Add(prg11);
-            Paragraph p12 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p12);
-            PdfPTable table1 = new PdfPTable(tblploan.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fonth1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < tblploan.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tblploan.Columns[j].HeaderText.ToUpper(), fonth));
-                table1.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            table1.HeaderRows = 1;
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < tblploan.Rows.Count; i++)
-            {
-                table1.WidthPercentage = 45;
-
-                for (int k = 0; k < tblploan.Columns.Count; k++)
-                {
-                    if (tblploan[k, i].Value != null)
-                    {
-
-                        table1.AddCell(new Phrase(tblploan[k, i].Value.ToString()));
-                    }
-
-                }
-
-
-            }
-
-            //add out table
-            doc.Add(table1);
-
-            Paragraph p0211 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p0211);
-
-            PdfPTable tablea111 = new PdfPTable(tbltax.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fontha111 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < tbltax.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tbltax.Columns[j].HeaderText.ToUpper(), fonth));
-                tablea111.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            tablea111.HeaderRows = 1;
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < tbltax.Rows.Count; i++)
-            {
-                tablea111.WidthPercentage = 45;
-
-                for (int k = 0; k < tbltax.Columns.Count; k++)
-                {
-                    if (tbltax[k, i].Value != null)
-                    {
-
-                        tablea111.AddCell(new Phrase(tbltax[k, i].Value.ToString()));
-                    }
-
-                }
-
-
-            }
-            doc.Add(tablea111);
-
-            doc.Close();
-
-            System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\cashflow.pdf");
+            System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\assets.pdf");
         }
+         catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+}
 
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            try {
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\cashflow.pdf", FileMode.Create));
+                doc.Open();
+
+               // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLACK);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Cash Flow", font5));
+                doc.Add(prg);
+
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 10, BaseColor.BLACK);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+
+
+                //1
+                //start
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+
+                iTextSharp.text.Font font3 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
+                Paragraph prg3 = new Paragraph();
+                prg3.Alignment = Element.ALIGN_LEFT;
+                prg3.Add(new Chunk("Cash Gain In", font3));
+                doc.Add(prg3);
+                Paragraph p3 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p3);
+
+
+                PdfPTable table = new PdfPTable(tblloan.Columns.Count);
+
+                table.HorizontalAlignment = Element.ALIGN_JUSTIFIED;
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblloan.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+
+                    cell.AddElement(new Chunk(tblloan.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblloan.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblloan.Columns.Count; k++)
+                    {
+                        if (tblloan[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(tblloan[k, i].Value.ToString()));
+
+                        }
+
+                    }
+
+
+                }
+                doc.Add(table);
+                Paragraph p02 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p02);
+
+                PdfPTable tablea = new PdfPTable(tblin.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fontha = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblin.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblin.Columns[j].HeaderText.ToUpper(), fonth));
+                    tablea.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblin.Rows.Count; i++)
+                {
+                    tablea.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblin.Columns.Count; k++)
+                    {
+                        if (tblin[k, i].Value != null)
+                        {
+
+                            tablea.AddCell(new Phrase(tblin[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+
+                doc.Add(tablea);
+
+                Paragraph p021 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p02);
+
+                PdfPTable tablea1 = new PdfPTable(tblin.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fontha1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblitm.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblitm.Columns[j].HeaderText.ToUpper(), fonth));
+                    tablea1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tablea1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblitm.Rows.Count; i++)
+                {
+                    tablea1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblitm.Columns.Count; k++)
+                    {
+                        if (tblitm[k, i].Value != null)
+                        {
+
+                            tablea1.AddCell(new Phrase(tblitm[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+                doc.Add(tablea1);
+                //end
+
+
+
+
+                //2
+                //line separator
+                Paragraph p1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p1);
+
+                iTextSharp.text.Font font51 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
+                Paragraph prg11 = new Paragraph();
+                prg11.Alignment = Element.ALIGN_LEFT;
+                prg11.Add(new Chunk("Cash Paid Out", font51));
+                doc.Add(prg11);
+                Paragraph p12 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p12);
+                PdfPTable table1 = new PdfPTable(tblploan.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblploan.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblploan.Columns[j].HeaderText.ToUpper(), fonth));
+                    table1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblploan.Rows.Count; i++)
+                {
+                    table1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblploan.Columns.Count; k++)
+                    {
+                        if (tblploan[k, i].Value != null)
+                        {
+
+                            table1.AddCell(new Phrase(tblploan[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table1);
+
+                Paragraph p0211 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p0211);
+
+                PdfPTable tablea111 = new PdfPTable(tbltax.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fontha111 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tbltax.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tbltax.Columns[j].HeaderText.ToUpper(), fonth));
+                    tablea111.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tablea111.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tbltax.Rows.Count; i++)
+                {
+                    tablea111.WidthPercentage = 45;
+
+                    for (int k = 0; k < tbltax.Columns.Count; k++)
+                    {
+                        if (tbltax[k, i].Value != null)
+                        {
+
+                            tablea111.AddCell(new Phrase(tbltax[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+                doc.Add(tablea111);
+
+
+                Paragraph p2 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p2);
+
+                PdfPTable tbl = new PdfPTable(tblsal.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fon = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblsal.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblsal.Columns[j].HeaderText.ToUpper(), fon));
+                    tbl.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tbl.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblsal.Rows.Count; i++)
+                {
+                    tbl.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblsal.Columns.Count; k++)
+                    {
+                        if (tblsal[k, i].Value != null)
+                        {
+
+                            tbl.AddCell(new Phrase(tblsal[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+
+                doc.Add(tbl);
+
+                Paragraph x = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(x);
+
+                PdfPTable y = new PdfPTable(tbldeli.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font z = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tbldeli.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tbldeli.Columns[j].HeaderText.ToUpper(), z));
+                    y.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                y.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tbldeli.Rows.Count; i++)
+                {
+                    y.WidthPercentage = 45;
+
+                    for (int k = 0; k < tbldeli.Columns.Count; k++)
+                    {
+                        if (tbldeli[k, i].Value != null)
+                        {
+
+                            y.AddCell(new Phrase(tbldeli[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+                doc.Add(y);
+
+
+                Paragraph x1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(x);
+
+                PdfPTable y1 = new PdfPTable(tblex.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font z1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblex.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblex.Columns[j].HeaderText.ToUpper(), z1));
+                    y1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                y1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblex.Rows.Count; i++)
+                {
+                    y1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblex.Columns.Count; k++)
+                    {
+                        if (tblex[k, i].Value != null)
+                        {
+
+                            y1.AddCell(new Phrase(tblex[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+                doc.Add(y1);
+                doc.Close();
+
+                System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\cashflow.pdf");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+        }
+       
         private void pictureBox23_Click(object sender, EventArgs e)
         {
 
