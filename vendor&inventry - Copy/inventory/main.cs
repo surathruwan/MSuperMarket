@@ -2336,6 +2336,7 @@ namespace inventory
             MySqlConnection dbcon = new MySqlConnection(con);
 
 
+<<<<<<< HEAD
             MySqlCommand cm = new MySqlCommand("Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=1 and sqty>0", dbcon);
             try
             {
@@ -2353,6 +2354,13 @@ namespace inventory
                 {
                     MessageBox.Show(ex.Message);
                 }
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> parent of 41fc8f8... Merge branch 'master' of https://github.com/surathruwan/MSuperMarket
+        }
+>>>>>>> 37d268a83accffa04e01f76975cbac772b6d5837
 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
@@ -2412,8 +2420,12 @@ namespace inventory
 
             }
 
+<<<<<<< HEAD
             //flag first row as header
             table.HeaderRows = 1;
+=======
+<<<<<<< HEAD
+>>>>>>> 37d268a83accffa04e01f76975cbac772b6d5837
 
 
             //add actual rows from grid to table
@@ -2928,6 +2940,12 @@ namespace inventory
             }
         }
 
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> parent of 41fc8f8... Merge branch 'master' of https://github.com/surathruwan/MSuperMarket
+>>>>>>> 37d268a83accffa04e01f76975cbac772b6d5837
         private void roq_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
@@ -3356,4 +3374,4 @@ namespace inventory
            spid.Enabled = false;
         }
     }
-}
+
