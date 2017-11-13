@@ -67,36 +67,7 @@ namespace inventory
             ret.Columns[2].Width = 70;
             acode.Visible = false;
             hidetb.Visible = false;
-            fillemp();
 
-
-        }
-        void fillemp()
-        {
-
-            string con = "datasource=localhost;port=3306;username=root";
-            MySqlConnection dbcon = new MySqlConnection(con);
-            MySqlCommand cm = new MySqlCommand("Select distinct full_name from supermarket.employee_details", dbcon);
-            MySqlDataReader r;
-
-            try
-            {
-                dbcon.Open();
-                r = cm.ExecuteReader();
-
-                while (r.Read())
-                {
-                    string cat = r.GetString("full_name");
-
-                    gby.Items.Add(cat);
-                   
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
 
         }
       
@@ -198,130 +169,6 @@ namespace inventory
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-        public  void pdfReport(string name,string query,string fname)
-        {
-            string con = "datasource=localhost;port=3306;username=root";
-            MySqlConnection dbcon = new MySqlConnection(con);
-
-
-            MySqlCommand cm = new MySqlCommand(query, dbcon);
-            try
-            {
-                MySqlDataAdapter sda = new MySqlDataAdapter();
-                sda.SelectCommand = cm;
-                DataTable set = new DataTable();
-                sda.Fill(set);
-                BindingSource s = new BindingSource();
-
-                s.DataSource = set;
-                hidetb.DataSource = s;
-                sda.Update(set);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@fname, FileMode.Create));
-            doc.Open();
-
-
-            //Add border to page
-            PdfContentByte content = w.DirectContent;
-            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
-            rectangle.Left += doc.LeftMargin - 5;
-            rectangle.Right -= doc.RightMargin - 5;
-            rectangle.Top -= doc.TopMargin - 22;
-            rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLACK);
-            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
-            content.Stroke();
-
-
-
-
-            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 30, BaseColor.BLACK);
-            Paragraph prg = new Paragraph();
-            prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk(name, font5));
-            doc.Add(prg);
-
-            //image 
-            iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance("msmsIcon1.png");
-            logo.ScaleAbsolute(50f, 50f);
-            doc.Add(logo);
-
-            //line separator
-            Paragraph pd = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.MAGENTA, Element.ALIGN_CENTER, 2.0f)));
-            doc.Add(pd);
-
-
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 8, BaseColor.BLACK);
-            Paragraph prg1 = new Paragraph();
-            prg1.Alignment = Element.ALIGN_RIGHT;
-            Paragraph prg2 = new Paragraph();
-            prg2.Alignment = Element.ALIGN_RIGHT;
-            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
-            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
-            doc.Add(prg1);
-            doc.Add(prg2);
-
-
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.MAGENTA, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p);
-
-            PdfPTable table = new PdfPTable(hidetb.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < hidetb.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.CYAN;
-                cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
-                table.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            table.HeaderRows = 1;
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < hidetb.Rows.Count; i++)
-            {
-                table.WidthPercentage = 100;
-
-                for (int k = 0; k < hidetb.Columns.Count; k++)
-                {
-                    if (hidetb[k, i].Value != null)
-                    {
-
-                        table.AddCell(new Phrase(hidetb[k, i].Value.ToString()));
-                    }
-
-                }
-
-
-            }
-
-            //add out table
-            doc.Add(table);
-
-            doc.Close();
-
-            System.Diagnostics.Process.Start(@fname);
-
-
         }
         void resetstock()
         {
@@ -1761,7 +1608,7 @@ namespace inventory
                 string con = "datasource=localhost;port=3306;username=root";
                 MySqlConnection dbcon = new MySqlConnection(con);
                 dbcon.Open();
-                MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "')", dbcon);
+                MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "')", dbcon);
                 MySqlDataReader r2;
                 r2 = cmd2.ExecuteReader();
                 MessageBox.Show("Transfered successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1917,15 +1764,15 @@ namespace inventory
                 tmq.Text = (Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)).ToString();
                 if (Convert.ToInt32(tsc.Text) == Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show("No Missing Items found", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("No Missing Items found");
                 }
                 else if (Convert.ToInt32(tsc.Text) < Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing");
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Showroom count" ,"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Showroom count");
                 }
 
 
@@ -2097,7 +1944,7 @@ namespace inventory
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"ItemList.pdf", FileMode.Create));
             doc.Open();
 
-            //MessageBox.Show("PDF Created sucessfuly!!");
+            MessageBox.Show("PDF Created sucessfuly!!");
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -2485,31 +2332,571 @@ namespace inventory
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
-            pdfReport("ITEM LIST-Floor 1","Select Item_code as 'code', Item_name as 'Item', sqty as 'Quantity', Floor, Rprice as 'Price', (Rprice * sqty) as 'Total' from supermarket.Item where Floor = 1 and sqty > 0","1floor.pdf");
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
 
 
-<<<<<<< HEAD
+            MySqlCommand cm = new MySqlCommand("Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=1 and sqty>0", dbcon);
+            try
+            {
+                    MySqlDataAdapter sda = new MySqlDataAdapter();
+                    sda.SelectCommand = cm;
+                    DataTable set = new DataTable();
+                    sda.Fill(set);
+                    BindingSource s = new BindingSource();
+
+                    s.DataSource = set;
+                    hidetb.DataSource = s;
+                    sda.Update(set);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"1floor.pdf", FileMode.Create));
+            doc.Open();
+
+            MessageBox.Show("PDF Created sucessfuly!!");
+
+            //Add border to page
+            PdfContentByte content = w.DirectContent;
+            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+            rectangle.Left += doc.LeftMargin - 5;
+            rectangle.Right -= doc.RightMargin - 5;
+            rectangle.Top -= doc.TopMargin - 22;
+            rectangle.Bottom += doc.BottomMargin - 5;
+            content.SetColorStroke(BaseColor.BLUE);
+            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+            content.Stroke();
+
+
+            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            Paragraph prg = new Paragraph();
+            prg.Alignment = Element.ALIGN_CENTER;
+            prg.Add(new Chunk("Item List", font5));
+            doc.Add(prg);
+
+            //Authors
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            Paragraph prg1 = new Paragraph();
+            prg1.Alignment = Element.ALIGN_RIGHT;
+            Paragraph prg2 = new Paragraph();
+            prg2.Alignment = Element.ALIGN_RIGHT;
+            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+            doc.Add(prg1);
+            doc.Add(prg2);
+
+
+            //line separator
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(p);
+
+            PdfPTable table = new PdfPTable(hidetb.Columns.Count);
+
+            //add headers from gridview to table
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+            for (int j = 0; j < hidetb.Columns.Count; j++)
+            {
+                PdfPCell cell = new PdfPCell();
+                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
+                table.AddCell(cell);
+
+            }
+
+            //flag first row as header
+            table.HeaderRows = 1;
+
+
+            //add actual rows from grid to table
+            for (int i = 0; i < hidetb.Rows.Count; i++)
+            {
+                table.WidthPercentage = 100;
+
+                for (int k = 0; k < hidetb.Columns.Count; k++)
+                {
+                    if (hidetb[k, i].Value != null)
+                    {
+
+                        table.AddCell(new Phrase(hidetb[k, i].Value.ToString()));
+                    }
+
+                }
+
+
+            }
+
+            //add out table
+            doc.Add(table);
+
+            doc.Close();
+
+            System.Diagnostics.Process.Start(@"1floor.pdf");
+
+
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            pdfReport("ITEM LIST-Floor 2", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=2 and sqty>0", "f2.pdf");
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
+
+
+            MySqlCommand cm = new MySqlCommand("Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=2 and sqty>0", dbcon);
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cm;
+                DataTable set = new DataTable();
+                sda.Fill(set);
+                BindingSource s = new BindingSource();
+
+                s.DataSource = set;
+                hidetb.DataSource = s;
+                sda.Update(set);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"floor.pdf", FileMode.Create));
+            doc.Open();
+
+            MessageBox.Show("PDF Created sucessfuly!!");
+
+            //Add border to page
+            PdfContentByte content = w.DirectContent;
+            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+            rectangle.Left += doc.LeftMargin - 5;
+            rectangle.Right -= doc.RightMargin - 5;
+            rectangle.Top -= doc.TopMargin - 22;
+            rectangle.Bottom += doc.BottomMargin - 5;
+            content.SetColorStroke(BaseColor.BLUE);
+            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+            content.Stroke();
+
+
+            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            Paragraph prg = new Paragraph();
+            prg.Alignment = Element.ALIGN_CENTER;
+            prg.Add(new Chunk("Item List", font5));
+            doc.Add(prg);
+
+            //Authors
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            Paragraph prg1 = new Paragraph();
+            prg1.Alignment = Element.ALIGN_RIGHT;
+            Paragraph prg2 = new Paragraph();
+            prg2.Alignment = Element.ALIGN_RIGHT;
+            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+            doc.Add(prg1);
+            doc.Add(prg2);
+
+
+            //line separator
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(p);
+
+            PdfPTable table = new PdfPTable(hidetb.Columns.Count);
+
+            //add headers from gridview to table
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+            for (int j = 0; j < hidetb.Columns.Count; j++)
+            {
+                PdfPCell cell = new PdfPCell();
+                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
+                table.AddCell(cell);
+
+            }
+
+            //flag first row as header
+            table.HeaderRows = 1;
+
+
+            //add actual rows from grid to table
+            for (int i = 0; i < hidetb.Rows.Count; i++)
+            {
+                table.WidthPercentage = 100;
+
+                for (int k = 0; k < hidetb.Columns.Count; k++)
+                {
+                    if (hidetb[k, i].Value != null)
+                    {
+
+                        table.AddCell(new Phrase(hidetb[k, i].Value.ToString()));
+                    }
+
+                }
+
+
+            }
+
+            //add out table
+            doc.Add(table);
+
+            doc.Close();
+
+            System.Diagnostics.Process.Start(@"1floor.pdf");
+
+
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            pdfReport("ITEM LIST-Floor 3", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=3 and sqty>0", "f3.pdf");
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
+
+
+            MySqlCommand cm = new MySqlCommand("Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=3 and sqty>0", dbcon);
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cm;
+                DataTable set = new DataTable();
+                sda.Fill(set);
+                BindingSource s = new BindingSource();
+
+                s.DataSource = set;
+                hidetb.DataSource = s;
+                sda.Update(set);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"1floor.pdf", FileMode.Create));
+            doc.Open();
+
+            MessageBox.Show("PDF Created sucessfuly!!");
+
+            //Add border to page
+            PdfContentByte content = w.DirectContent;
+            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+            rectangle.Left += doc.LeftMargin - 5;
+            rectangle.Right -= doc.RightMargin - 5;
+            rectangle.Top -= doc.TopMargin - 22;
+            rectangle.Bottom += doc.BottomMargin - 5;
+            content.SetColorStroke(BaseColor.BLUE);
+            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+            content.Stroke();
+
+
+            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            Paragraph prg = new Paragraph();
+            prg.Alignment = Element.ALIGN_CENTER;
+            prg.Add(new Chunk("Item List", font5));
+            doc.Add(prg);
+
+            //Authors
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            Paragraph prg1 = new Paragraph();
+            prg1.Alignment = Element.ALIGN_RIGHT;
+            Paragraph prg2 = new Paragraph();
+            prg2.Alignment = Element.ALIGN_RIGHT;
+            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+            doc.Add(prg1);
+            doc.Add(prg2);
+
+
+            //line separator
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(p);
+
+            PdfPTable table = new PdfPTable(hidetb.Columns.Count);
+
+            //add headers from gridview to table
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+            for (int j = 0; j < hidetb.Columns.Count; j++)
+            {
+                PdfPCell cell = new PdfPCell();
+                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
+                table.AddCell(cell);
+
+            }
+
+            //flag first row as header
+            table.HeaderRows = 1;
+
+
+            //add actual rows from grid to table
+            for (int i = 0; i < hidetb.Rows.Count; i++)
+            {
+                table.WidthPercentage = 100;
+
+                for (int k = 0; k < hidetb.Columns.Count; k++)
+                {
+                    if (hidetb[k, i].Value != null)
+                    {
+
+                        table.AddCell(new Phrase(hidetb[k, i].Value.ToString()));
+                    }
+
+                }
+
+
+            }
+
+            //add out table
+            doc.Add(table);
+
+            doc.Close();
+
+            System.Diagnostics.Process.Start(@"floor.pdf");
+
+
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            pdfReport("ITEM LIST-Floor 4","Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=4 and sqty>0", "f4.pdf");
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
+
+
+            MySqlCommand cm = new MySqlCommand("Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=4 and sqty>0", dbcon);
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cm;
+                DataTable set = new DataTable();
+                sda.Fill(set);
+                BindingSource s = new BindingSource();
+
+                s.DataSource = set;
+                hidetb.DataSource = s;
+                sda.Update(set);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"floor.pdf", FileMode.Create));
+            doc.Open();
+
+            MessageBox.Show("PDF Created sucessfuly!!");
+
+            //Add border to page
+            PdfContentByte content = w.DirectContent;
+            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+            rectangle.Left += doc.LeftMargin - 5;
+            rectangle.Right -= doc.RightMargin - 5;
+            rectangle.Top -= doc.TopMargin - 22;
+            rectangle.Bottom += doc.BottomMargin - 5;
+            content.SetColorStroke(BaseColor.BLUE);
+            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+            content.Stroke();
+
+
+            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            Paragraph prg = new Paragraph();
+            prg.Alignment = Element.ALIGN_CENTER;
+            prg.Add(new Chunk("Item List", font5));
+            doc.Add(prg);
+
+            //Authors
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            Paragraph prg1 = new Paragraph();
+            prg1.Alignment = Element.ALIGN_RIGHT;
+            Paragraph prg2 = new Paragraph();
+            prg2.Alignment = Element.ALIGN_RIGHT;
+            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+            doc.Add(prg1);
+            doc.Add(prg2);
+
+
+            //line separator
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(p);
+
+            PdfPTable table = new PdfPTable(hidetb.Columns.Count);
+
+            //add headers from gridview to table
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+            for (int j = 0; j < hidetb.Columns.Count; j++)
+            {
+                PdfPCell cell = new PdfPCell();
+                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
+                table.AddCell(cell);
+
+            }
+
+            //flag first row as header
+            table.HeaderRows = 1;
+
+
+            //add actual rows from grid to table
+            for (int i = 0; i < hidetb.Rows.Count; i++)
+            {
+                table.WidthPercentage = 100;
+
+                for (int k = 0; k < hidetb.Columns.Count; k++)
+                {
+                    if (hidetb[k, i].Value != null)
+                    {
+
+                        table.AddCell(new Phrase(hidetb[k, i].Value.ToString()));
+                    }
+
+                }
+
+
+            }
+
+            //add out table
+            doc.Add(table);
+
+            doc.Close();
+
+            System.Diagnostics.Process.Start(@"floor.pdf");
+
+
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-            pdfReport("ITEM LIST-Warehouse","Select Item_code as 'code',Item_name as 'Item',wqty as 'Quantity',Rprice as 'Price',(Rprice*wqty) as 'Total' from supermarket.Item where wqty>0", "wh.pdf");
+            string con = "datasource=localhost;port=3306;username=root";
+            MySqlConnection dbcon = new MySqlConnection(con);
+
+
+            MySqlCommand cm = new MySqlCommand("Select Item_code as 'code',Item_name as 'Item',wqty as 'Quantity',Rprice as 'Price',(Rprice*wqty) as 'Total' from supermarket.Item where wqty>0", dbcon);
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cm;
+                DataTable set = new DataTable();
+                sda.Fill(set);
+                BindingSource s = new BindingSource();
+
+                s.DataSource = set;
+                hidetb.DataSource = s;
+                sda.Update(set);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"floor.pdf", FileMode.Create));
+            doc.Open();
+
+            MessageBox.Show("PDF Created sucessfuly!!");
+
+            //Add border to page
+            PdfContentByte content = w.DirectContent;
+            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+            rectangle.Left += doc.LeftMargin - 5;
+            rectangle.Right -= doc.RightMargin - 5;
+            rectangle.Top -= doc.TopMargin - 22;
+            rectangle.Bottom += doc.BottomMargin - 5;
+            content.SetColorStroke(BaseColor.BLUE);
+            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+            content.Stroke();
+
+
+            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            Paragraph prg = new Paragraph();
+            prg.Alignment = Element.ALIGN_CENTER;
+            prg.Add(new Chunk("Item List", font5));
+            doc.Add(prg);
+
+            //Authors
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            Paragraph prg1 = new Paragraph();
+            prg1.Alignment = Element.ALIGN_RIGHT;
+            Paragraph prg2 = new Paragraph();
+            prg2.Alignment = Element.ALIGN_RIGHT;
+            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+            doc.Add(prg1);
+            doc.Add(prg2);
+
+
+            //line separator
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(p);
+
+            PdfPTable table = new PdfPTable(hidetb.Columns.Count);
+
+            //add headers from gridview to table
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+            for (int j = 0; j < hidetb.Columns.Count; j++)
+            {
+                PdfPCell cell = new PdfPCell();
+                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
+                table.AddCell(cell);
+
+            }
+
+            //flag first row as header
+            table.HeaderRows = 1;
+
+
+            //add actual rows from grid to table
+            for (int i = 0; i < hidetb.Rows.Count; i++)
+            {
+                table.WidthPercentage = 100;
+
+                for (int k = 0; k < hidetb.Columns.Count; k++)
+                {
+                    if (hidetb[k, i].Value != null)
+                    {
+
+                        table.AddCell(new Phrase(hidetb[k, i].Value.ToString()));
+                    }
+
+                }
+
+
+            }
+
+            //add out table
+            doc.Add(table);
+
+            doc.Close();
+
+            System.Diagnostics.Process.Start(@"floor.pdf");
+
 
         }
 
@@ -2541,59 +2928,6 @@ namespace inventory
             }
         }
 
-=======
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            pdfReport("ITEM LIST-Floor 2", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=2 and sqty>0", "f2.pdf");
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            pdfReport("ITEM LIST-Floor 3", "Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=3 and sqty>0", "f3.pdf");
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            pdfReport("ITEM LIST-Floor 4","Select Item_code as 'code',Item_name as 'Item',sqty as 'Quantity',Floor,Rprice as 'Price',(Rprice*sqty) as 'Total' from supermarket.Item where Floor=4 and sqty>0", "f4.pdf");
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-            pdfReport("ITEM LIST-Warehouse","Select Item_code as 'code',Item_name as 'Item',wqty as 'Quantity',Rprice as 'Price',(Rprice*wqty) as 'Total' from supermarket.Item where wqty>0", "wh.pdf");
-
-        }
-
-        private void abrand_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void abcode_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-            char ch = e.KeyChar;
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tqty_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tqty_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            char ch = e.KeyChar;
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
-            {
-                e.Handled = true;
-            }
-        }
-
->>>>>>> 3ca929cf3d3e9219e670c23a64ee910511dceda3
         private void roq_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
@@ -3020,21 +3354,6 @@ namespace inventory
         private void spid_OnValueChanged(object sender, EventArgs e)
         {
            spid.Enabled = false;
-        }
-
-        private void rqty_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rded_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void datei_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
