@@ -1,57 +1,36 @@
 <<<<<<< HEAD
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportSource.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.Shared.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\stdole.dll
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.AdviceOfDispatch.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.barcode.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.categoryform.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.debtors.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.EditAttendance.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.email.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.Emaild.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.Employee.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Form1.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.Form2.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.LeaveForm.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.login.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.MainForm.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.POS.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.PosAdmin.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.repair.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.report.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.sendEmail.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\emailCheck.Form1.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.temp.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.main.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.newcatsub.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Properties.Resources.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.subcatform.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.TestForm.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.updateform.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.upitem.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.vehicle_availa.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\vendor_management.Vendor.resources
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
-C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.AdviceOfDispatch.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.barcode.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.categoryform.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.debtors.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.EditAttendance.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.email.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.Emaild.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.Employee.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Form1.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.Form2.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.LeaveForm.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.login.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.MainForm.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.POS.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.PosAdmin.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.repair.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.report.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.sendEmail.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\emailCheck.Form1.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.temp.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.main.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.newcatsub.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Properties.Resources.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.subcatform.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.TestForm.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.updateform.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.upitem.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.vehicle_availa.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\vendor_management.Vendor.resources
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 =======
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
@@ -108,4 +87,4 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
->>>>>>> d09212f46867bc714772988126bb959b3ee4b0b5
+>>>>>>> 96c9b7faa202ee6ecabbc157268f7cf2f802cdaa
