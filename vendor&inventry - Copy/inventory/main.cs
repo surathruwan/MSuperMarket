@@ -2359,8 +2359,7 @@ namespace inventory
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"1floor.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created sucessfuly!!");
-
+            
             //Add border to page
             PdfContentByte content = w.DirectContent;
             iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
@@ -2368,20 +2367,20 @@ namespace inventory
             rectangle.Right -= doc.RightMargin - 5;
             rectangle.Top -= doc.TopMargin - 22;
             rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLUE);
+            content.SetColorStroke(BaseColor.MAGENTA);
             content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
             content.Stroke();
 
 
             //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 30, BaseColor.DARK_GRAY);
             Paragraph prg = new Paragraph();
             prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Item List", font5));
+            prg.Add(new Chunk("Item List-Floor 1", font5));
             doc.Add(prg);
 
             //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 8, BaseColor.BLACK);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -2393,20 +2392,20 @@ namespace inventory
 
 
             //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.MAGENTA, Element.ALIGN_CENTER, 9.0f)));
             doc.Add(p);
 
             PdfPTable table = new PdfPTable(hidetb.Columns.Count);
 
             //add headers from gridview to table
-            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 8, BaseColor.BLACK);
 
 
 
             for (int j = 0; j < hidetb.Columns.Count; j++)
             {
                 PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.BackgroundColor = BaseColor.CYAN;
                 cell.AddElement(new Chunk(hidetb.Columns[j].HeaderText.ToUpper(), fonth));
                 table.AddCell(cell);
 
