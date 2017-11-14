@@ -1090,20 +1090,28 @@ namespace inventory
                     if ((NewPrice) >= 0)
                     {
                         txtPrice.Text = NewPrice.ToString();
-                       
+
                         txtDiscount.MaxLength = i;
-                        
+
+
+                        if (maximumDiscount < reduce_amount)
+                        {
+                            MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtDiscount.Text = "0";
+                            SearchPriceBarcode();
+                        }
+
+                      
+
                     }
-                    else if(maximumDiscount > reduce_amount)
-                    {
-                        MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                   
-                    else 
+
+                    else
                     {
                         MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtDiscount.Text = "";
+                        SearchPriceBarcode();
                     }
-                    
+                   
 
                 }
                 if ((txtDiscount.Text[i].ToString() == "-"))
