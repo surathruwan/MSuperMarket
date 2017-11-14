@@ -312,6 +312,12 @@
     <Compile Include="Vendor.designer.cs">
       <DependentUpon>Vendor.cs</DependentUpon>
     </Compile>
+    <Compile Include="VendorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorReport.designer.cs">
+      <DependentUpon>VendorReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebCam.cs" />
     <EmbeddedResource Include="addform.resx">
       <DependentUpon>addform.cs</DependentUpon>
@@ -421,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vendor.resx">
       <DependentUpon>Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorReport.resx">
+      <DependentUpon>VendorReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">

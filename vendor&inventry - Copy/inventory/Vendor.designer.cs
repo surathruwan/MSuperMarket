@@ -551,6 +551,7 @@
             this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnReport.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.btnReport.TextFont = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // panel2
             // 
