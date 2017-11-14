@@ -350,12 +350,20 @@ namespace inventory
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
+<<<<<<< HEAD
                 cmd.CommandText = "SELECT Surname,initials from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
+=======
+                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
+>>>>>>> 236a81adad77fae9830db13328a40f786b724f85
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
                 {
                     lblName.Text = Dataread[1].ToString() + " " + Dataread[0].ToString();
+<<<<<<< HEAD
+=======
+                    lblPoints.Text = Dataread[2].ToString();
+>>>>>>> 236a81adad77fae9830db13328a40f786b724f85
                     
                 }
                 else
@@ -575,6 +583,7 @@ namespace inventory
             try
             {
                 string total = lblAmount.Text;
+<<<<<<< HEAD
                 double addPoints = Double.Parse(total) * (0.02);
                 int phone = Convert.ToInt32(txtPhone.Text);
                 //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -585,6 +594,11 @@ namespace inventory
                 //// cmd = new MySqlCommand(@"INSERT INTO supermarket.loyaltycustomer(Points) VALUES ('" + addPoints + "')", conn);
                 //cmd = new MySqlCommand(@"Update supermarket.loyaltycustomer  set Points = Points +7 where Mobile = '"+phone.ToString()+"' ", conn);
                 //cmd.ExecuteNonQuery();
+=======
+                double addPoints = Double.Parse(total) * (0.01);
+                int phone = Convert.ToInt32(txtPhone.Text);
+               
+>>>>>>> 236a81adad77fae9830db13328a40f786b724f85
                 string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=madusha";
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
@@ -597,7 +611,11 @@ namespace inventory
                     cmd.ExecuteNonQuery();
                 
 
+<<<<<<< HEAD
                 MessageBox.Show("testc");
+=======
+               
+>>>>>>> 236a81adad77fae9830db13328a40f786b724f85
             }
             catch(Exception ex)
             {
@@ -1332,6 +1350,14 @@ namespace inventory
                 }
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+>>>>>>> 236a81adad77fae9830db13328a40f786b724f85
     }
     }
 
