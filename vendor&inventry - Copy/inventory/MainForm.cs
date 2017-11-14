@@ -16,7 +16,7 @@ namespace inventory
         public MainForm()
         {
             InitializeComponent();
-
+            this.WindowState = FormWindowState.Maximized;
             timer1.Start();
             panel4.Controls.Clear();
             madushaTemp.TestForm VM = new madushaTemp.TestForm();
