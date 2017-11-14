@@ -38,14 +38,15 @@ namespace inventory
                     if (userType == "admin")
                     {
 
-                        a = 1;
+                        a = 0;
 
                     }
                     else if (userType == "cashier")
                     {
-                        a = 2;
+                        a = 1;
                     }
-                    else { a = 3; }
+                    else if(userType == "doperator")
+                    { a = 2; }
                 }
                 catch (Exception o)
                 {
