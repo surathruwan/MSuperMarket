@@ -30,13 +30,13 @@ namespace inventory
             InitializeComponent();
 
             int v = Session.getUser();
-            if (v == 1)
+            if (v == 0)
             {
                 // btncconfirm.Visible = false;
               
 
             }
-            else if (v == 2)
+            else if (v == 1)
             {
                 tabControl1.TabPages.Remove(tabPage3);
                 tabControl1.TabPages.Remove(tabPage4);
@@ -44,7 +44,7 @@ namespace inventory
                 tabControl1.TabPages.Remove(tabPage7);
                
             }
-            else
+            else if( v == 2 )
             {
                 tabControl1.TabPages.Remove(tabPage5);
                 tabControl1.TabPages.Remove(tabPage6);
