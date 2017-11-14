@@ -1208,7 +1208,7 @@ namespace inventory
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
                 
-                cmd.CommandText = "SELECT user,maximumDiscount from supermarket.users where user LIKE '" + main.lblname.Text + "' ";
+                cmd.CommandText = "SELECT user,maximumDiscount from supermarket.users where user LIKE '" + Session.getUser() + "' ";
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
