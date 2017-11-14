@@ -38,7 +38,7 @@ namespace inventory
             InitializeComponent();
 
             int v = Session.getUser();
-            if (v == 1)
+            if (v == 0)
             {
                 // btncconfirm.Visible = false;
                 //button1.Enabled = false;
@@ -47,7 +47,7 @@ namespace inventory
                 // tabControl1.TabPages.Remove(tabPage4);
 
             }
-            else if (v == 2)
+            else if (v == 1)
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage4);
@@ -1510,82 +1510,119 @@ namespace inventory
 
         private void txtnic_OnValueChanged(object sender, EventArgs e)
         {
-
-
-            MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.customer where  nic like '" + txtt1nic.Text + "'", myConn);
-            MySqlDataAdapter cm1 = new MySqlDataAdapter("Select *  from supermarket.customerrepair where  nic like '" + txtt1nic.Text + "'", myConn);
-            DataTable set = new DataTable();
-            DataTable set2 = new DataTable();
-            cm.Fill(set);
-            cm1.Fill(set2);
-
-            foreach (DataRow dr in set2.Rows)
+            int count = 0;
+            try
             {
+                string con = "datasource=localhost;port=3306;username=root";
+                MySqlConnection dbcon = new MySqlConnection(con);
 
-                cname = dr["name"].ToString();
-                string cphoneNo1 = dr["phoneNo1"].ToString();
-                string cemail = dr["email"].ToString();
-                string cphoneNo2 = dr["landNo"].ToString();
-                string address1 = dr["address"].ToString();
-                string phone = dr["phoneNo2"].ToString();
+                MySqlCommand cmd1 = new MySqlCommand("Select *  from supermarket.customer where  nic like '" + txtt1nic.Text + "'", dbcon);
 
+                dbcon.Open();
+                DataSet d = new DataSet();
+                MySqlDataReader sdr = cmd1.ExecuteReader();
 
-                txtt1email.Text = cemail;
-                txtt1mobileno1.Text = cphoneNo1;
-                txtt1mobileno2.Text = cphoneNo1;
-                txtt1address.Text = address1;
-                txtt1name.Text = cname;
-                txtt1landno.Text = phone;
-
-                //byte[] images = ((byte[])dr[7]);
-
-
-
-                //if (images == null)
-                //{
-                //    t1pic.Image = null;
-                //}
-
-                //else
-                //{
-                //    MemoryStream mstream = new MemoryStream(images);
-                //    t1pic.Image = System.Drawing.Image.FromStream(mstream);
-                //}
-
-
-            }
-            foreach (DataRow dr in set.Rows)
-            {
-
-                cname = dr["fullname"].ToString();
-                string cphoneNo1 = dr["phone"].ToString();
-                string cemail = dr["email"].ToString();
-                string cphoneNo2 = dr["phone"].ToString();
-                string address1 = dr["address"].ToString();
-                string phone = dr["phone"].ToString();
-
-
-                txtt1email.Text = cemail;
-                txtt1mobileno1.Text = cphoneNo1;
-                txtt1mobileno2.Text = cphoneNo1;
-                txtt1address.Text = address1;
-                txtt1name.Text = cname;
-                txtt1landno.Text = phone;
-
-                byte[] images = ((byte[])dr[18]);
-
-
-
-                if (images == null)
+                while (sdr.Read())
                 {
-                    t1pic.Image = null;
-                }
+                    count = count + 1;
 
+                }
+                dbcon.Close();
+
+                if (count != 0)
+                {
+
+                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.customer where  nic like '" + txtt1nic.Text + "'", myConn);
+                    DataTable set = new DataTable();
+                    cm.Fill(set);
+
+                    foreach (DataRow dr in set.Rows)
+                    {
+
+                        cname = dr["fullname"].ToString();
+                        string cphoneNo1 = dr["phone"].ToString();
+                        string cemail = dr["email"].ToString();
+                        string cphoneNo2 = dr["phone"].ToString();
+                        string address1 = dr["address"].ToString();
+                        string phone = dr["phone"].ToString();
+
+
+                        txtt1email.Text = cemail;
+                        txtt1mobileno1.Text = cphoneNo1;
+                        txtt1mobileno2.Text = cphoneNo1;
+                        txtt1address.Text = address1;
+                        txtt1name.Text = cname;
+                        txtt1landno.Text = phone;
+
+                        byte[] images = ((byte[])dr[18]);
+
+                        MessageBox.Show(images.ToString());
+
+                        if (images == null)
+                        {
+                            t1pic.Image = null;
+                        }
+
+                        else
+                        {
+                            MemoryStream mstream = new MemoryStream(images);
+                            t1pic.Image = System.Drawing.Image.FromStream(mstream);
+                        }
+
+                    }
+                }
                 else
                 {
-                    MemoryStream mstream = new MemoryStream(images);
-                    t1pic.Image = System.Drawing.Image.FromStream(mstream);
+
+
+
+                    MySqlDataAdapter cm1 = new MySqlDataAdapter("Select *  from supermarket.customerrepair where  nic like '" + txtt1nic.Text + "'", myConn);
+
+                    DataTable set2 = new DataTable();
+
+                    cm1.Fill(set2);
+
+                    foreach (DataRow dr in set2.Rows)
+                    {
+
+                        cname = dr["name"].ToString();
+                        string cphoneNo1 = dr["phoneNo1"].ToString();
+                        string cemail = dr["email"].ToString();
+                        string cphoneNo2 = dr["landNo"].ToString();
+                        string address1 = dr["address"].ToString();
+                        string phone = dr["phoneNo2"].ToString();
+                        byte[] images2 = (byte[])(dr["image"]);
+
+                        txtt1email.Text = cemail;
+                        txtt1mobileno1.Text = cphoneNo1;
+                        txtt1mobileno2.Text = cphoneNo1;
+                        txtt1address.Text = address1;
+                        txtt1name.Text = cname;
+                        txtt1landno.Text = phone;
+
+                        
+
+
+                        MessageBox.Show(images2.ToString());
+                        //if (images2 == null)
+                        //{
+                        //    t1pic.Image = null;
+                        //}
+
+                        //else
+                        //{
+                            MemoryStream mstream = new MemoryStream(images2);
+                            t1pic.Image = System.Drawing.Image.FromStream(mstream);
+                        //}
+
+
+                    }
                 }
+
+            }
+            catch (Exception ex)
+            {
+
 
             }
             loadcustItem();
