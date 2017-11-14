@@ -26,7 +26,7 @@ namespace madushaTemp
         {
             InitializeComponent();
             int v = Session.getUser();
-            if (v == 1)
+            if (v == 0)
             {
                 // btncconfirm.Visible = false;
                 //button1.Enabled = false;
@@ -35,7 +35,7 @@ namespace madushaTemp
                 // tabControl1.TabPages.Remove(tabPage4);
 
             }
-            else if (v == 2)
+            else if (v == 1)
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage3);
@@ -43,7 +43,7 @@ namespace madushaTemp
                 // ((Control)this.tabPage2).Enabled = false;
 
             }
-            else
+            else if ( v==2 )
             {
                 tabControl1.TabPages.Remove(tabPage3);
                 tabControl1.TabPages.Remove(Reports);

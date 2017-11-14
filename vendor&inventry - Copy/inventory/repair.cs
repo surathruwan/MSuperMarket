@@ -38,7 +38,7 @@ namespace inventory
             InitializeComponent();
 
             int v = Session.getUser();
-            if (v == 1)
+            if (v == 0)
             {
                 // btncconfirm.Visible = false;
                 //button1.Enabled = false;
@@ -47,7 +47,7 @@ namespace inventory
                 // tabControl1.TabPages.Remove(tabPage4);
 
             }
-            else if (v == 2)
+            else if (v == 1)
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage4);
@@ -55,7 +55,7 @@ namespace inventory
               
                 
             }
-            else
+            else if(v == 2 )
             {
                 tabControl1.TabPages.Remove(tabPage1);
                 tabControl1.TabPages.Remove(tabPage4);
@@ -320,13 +320,15 @@ namespace inventory
         }
         private void bunifuThinButton28_Click(object sender, EventArgs e)
         {
-            Regexp1(@"^[0-9]{9}[vVxX]$", txtt1nic, picnic, "Please enter a valid nic");
-            Regexp2(@"^([\w]+)@([\w]+)\.([\w]+)$", txtt1email, picemail, "Please enter a valid email address");
-            Regexp3(@"^[0-9]{10}$", txtt1mobileno1, picmobno1, "phone no should only 10digit and numeric");
-            Regexp4(@"^[0-9]{10}$", txtt1mobileno2, picmobno2, "phone no should only 10digit and numeric");
-            Regexp5(@"^[0-9]{10}$", txtt1landno, picland, "phone no should only 10digit and numeric");
+            if (isNicExist(txtt1nic.Text)==false)
+            {
+                Regexp1(@"^[0-9]{9}[vVxX]$", txtt1nic, picnic, "Please enter a valid nic");
+                Regexp2(@"^([\w]+)@([\w]+)\.([\w]+)$", txtt1email, picemail, "Please enter a valid email address");
+                Regexp3(@"^[0-9]{10}$", txtt1mobileno1, picmobno1, "phone no should only 10digit and numeric");
+                Regexp4(@"^[0-9]{10}$", txtt1mobileno2, picmobno2, "phone no should only 10digit and numeric");
+                Regexp5(@"^[0-9]{10}$", txtt1landno, picland, "phone no should only 10digit and numeric");
 
-            if (String.IsNullOrEmpty(txtt1address.Text) || String.IsNullOrWhiteSpace(txtt1email.Text) || String.IsNullOrWhiteSpace(txtt1landno.Text) || String.IsNullOrWhiteSpace(txtt1mobileno1.Text) || String.IsNullOrWhiteSpace(txtt1mobileno2.Text) || String.IsNullOrWhiteSpace(txtt1name.Text) || String.IsNullOrWhiteSpace(txtt1nic.Text))
+                if (String.IsNullOrEmpty(txtt1address.Text) || String.IsNullOrWhiteSpace(txtt1email.Text) || String.IsNullOrWhiteSpace(txtt1landno.Text) || String.IsNullOrWhiteSpace(txtt1mobileno1.Text) || String.IsNullOrWhiteSpace(txtt1mobileno2.Text) || String.IsNullOrWhiteSpace(txtt1name.Text) || String.IsNullOrWhiteSpace(txtt1nic.Text))
                 {
                     MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -334,48 +336,53 @@ namespace inventory
                 {
                     MessageBox.Show("Image is Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if(a==-99|| b == -99|| c == -99|| d == -99|| h==-99)
-            {
-
-                
-            }
-
-            else if(a ==0 && b ==0 && c == 0&& d == 0 && h ==0)
-            {
-                DialogResult dialogResult = MessageBox.Show("Do you want to add the item?", "Add item", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
+                else if (a == -99 || b == -99 || c == -99 || d == -99 || h == -99)
                 {
 
-                    byte[] imageBt = null;
-                    try
-                    {
 
-                        FileStream fstream = new FileStream(picPath, FileMode.Open, FileAccess.Read);
-
-                        BinaryReader br = new BinaryReader(fstream);
-                        imageBt = br.ReadBytes((int)fstream.Length);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
-
-
-                    myConn.Open();
-                    MySqlCommand cm = new MySqlCommand("INSERT INTO supermarket.customerrepair(`nic`, `name`, `address`, `phoneNo1`, `phoneNo2`, `landNo`, `email`, `image`) VALUES ('" + txtt1nic.Text + "','" + txtt1name.Text + "','" + txtt1address.Text + "','" + txtt1mobileno1.Text + "','" + txtt1mobileno2.Text + "','" + txtt1landno.Text + "','" + txtt1email.Text + "','" + imageBt + "')", myConn);
-                    cm.ExecuteNonQuery();
-                    myConn.Close();
-                    MessageBox.Show("Data Inserted Successfully!");
                 }
-               
+
+                else if (a == 0 && b == 0 && c == 0 && d == 0 && h == 0)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Do you want to add the item?", "Add item", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+
+                        byte[] imageBt = null;
+                        try
+                        {
+
+                            FileStream fstream = new FileStream(picPath, FileMode.Open, FileAccess.Read);
+
+                            BinaryReader br = new BinaryReader(fstream);
+                            imageBt = br.ReadBytes((int)fstream.Length);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+
+
+
+                        myConn.Open();
+                        MySqlCommand cm = new MySqlCommand("INSERT INTO supermarket.customerrepair(`nic`, `name`, `address`, `phoneNo1`, `phoneNo2`, `landNo`, `email`, `image`) VALUES ('" + txtt1nic.Text + "','" + txtt1name.Text + "','" + txtt1address.Text + "','" + txtt1mobileno1.Text + "','" + txtt1mobileno2.Text + "','" + txtt1landno.Text + "','" + txtt1email.Text + "','" + imageBt + "')", myConn);
+                        cm.ExecuteNonQuery();
+                        myConn.Close();
+                        MessageBox.Show("Data Inserted Successfully!");
+                    }
+
                     else if (dialogResult == DialogResult.No)
                     {
                         MessageBox.Show("Not Added!");
                     }
 
-                
 
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Alraday Existing Customer!! ");
             }
         }
 
@@ -719,7 +726,7 @@ namespace inventory
                     string salesman_name = dr["salesman_name"].ToString();
                     string Advance = dr["Advance"].ToString();
 
-                    MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.sendwith ( `cust_id`,`cus_date`,`sent_date`,`item_code`, `item_name`, `brand_name`, `warranty`, `repairing_days`, `details`, `suuplier_name`, `salesman_name`,`sendwith`,`status`,`Advance`) VALUES ( '" + custid + "','" + cus_date + "','" + txtt2sentdate.Text + "','" + itemcode + "', '" + itemname + "', '" + brandname + "', '" + warranty + "', '" + repairing_days + "', '" + details1 + "', '" + suppliername + "', '" + salesman_name + "','" + cbt2employee.Text + "','pending','" + Advance + "')", myConn);
+                    MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.sendwith ( `id`,`cust_id`,`cus_date`,`sent_date`,`item_code`, `item_name`, `brand_name`, `warranty`, `repairing_days`, `details`, `suuplier_name`, `salesman_name`,`sendwith`,`status`,`Advance`) VALUES ('"+id+"', '" + custid + "','" + cus_date + "','" + txtt2sentdate.Text + "','" + itemcode + "', '" + itemname + "', '" + brandname + "', '" + warranty + "', '" + repairing_days + "', '" + details1 + "', '" + suppliername + "', '" + salesman_name + "','" + cbt2employee.Text + "','pending','" + Advance + "')", myConn);
                     cmd1.ExecuteNonQuery();
 
 
@@ -773,9 +780,10 @@ namespace inventory
                     string details1 = dr["details"].ToString();
                     string salesman_name = dr["salesman_name"].ToString();
                     string Advance = dr["Advance"].ToString();
+                   
 
 
-                    MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.needtosendoriginal ( `Date`,`cust_id`,`item_code`, `item_name`, `brand_name`, `warranty`, `repairing_days`, `details`, `suuplier_name`, `salesman_name`,`status`,`Advance`) VALUES ('" + date + "','" + cust_id + "','" + itemcode + "', '" + itemname + "', '" + brandname + "', '" + warranty + "', '" + repairing_days + "', '" + details1 + "', '" + suppliername + "', '" + salesman_name + "','pending','" + Advance + "')", myConn);
+                    MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.needtosendoriginal ( `id`,`Date`,`cust_id`,`item_code`, `item_name`, `brand_name`, `warranty`, `repairing_days`, `details`, `suuplier_name`, `salesman_name`,`status`,`Advance`) VALUES ('"+id+"','" + date + "','" + cust_id + "','" + itemcode + "', '" + itemname + "', '" + brandname + "', '" + warranty + "', '" + repairing_days + "', '" + details1 + "', '" + suppliername + "', '" + salesman_name + "','pending','" + Advance + "')", myConn);
                     cmd1.ExecuteNonQuery();
                    
 
@@ -1149,6 +1157,7 @@ namespace inventory
 
             if (dialogResult == DialogResult.Yes)
             {
+                id = (tablepanel3statuschanging.SelectedCells[0].Value.ToString());
                 itemcode = (tablepanel3statuschanging.SelectedCells[4].Value.ToString());
                 item_name = (tablepanel3statuschanging.SelectedCells[5].Value.ToString());
                 myConn.Open();
@@ -1175,7 +1184,7 @@ namespace inventory
 
 
                 string date = DateTime.Now.ToString("M/d/yyyy");
-                MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.sendmessage(`id`, `date`, `customer_id`, `customer_name`, `item_code`, `item_name`, `emaployee`, `cost`, `note`, `send_by`, `status`) VALUES (null,'" + date + "','" + cust_id + "','" + cname + "','" + itemcode + "','" + item_name + "','" + txtt3smtp.Text + "','" + txtt3cost.Text + "','" + txtt3note.Text + "','" + sendby + "','" + status + "')", myConn);
+                MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.sendmessage(`id`, `date`, `customer_id`, `customer_name`, `item_code`, `item_name`, `emaployee`, `cost`, `note`, `send_by`, `status`) VALUES ('"+id+"','" + date + "','" + cust_id + "','" + cname + "','" + itemcode + "','" + item_name + "','" + txtt3smtp.Text + "','" + txtt3cost.Text + "','" + txtt3note.Text + "','" + sendby + "','" + status + "')", myConn);
                 cmd1.ExecuteNonQuery();
                 MessageBox.Show("yes");
                 loadsendmessage();
@@ -1186,6 +1195,28 @@ namespace inventory
                 MessageBox.Show("Not Addded!");
 
             }
+        }
+        public bool isNicExist(string nic)
+        {
+            bool status=false;
+            MySqlDataAdapter mda = new MySqlDataAdapter("select nic from supermarket.customerrepair where nic='" + nic + "'", myConn);
+            MySqlDataAdapter mda1 = new MySqlDataAdapter("select nic from supermarket.customer where nic='" + nic + "'", myConn);
+            DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
+
+            mda.Fill(dt);
+            mda1.Fill(dt1);
+            if (dt.Rows.Count>=1)
+            {
+                status = true;
+            }
+            if (dt1.Rows.Count >= 1)
+            {
+                status = true;
+            }
+            
+
+            return status;
         }
         private void tableFullSpareParts_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -1482,9 +1513,47 @@ namespace inventory
 
 
             MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.customer where  nic like '" + txtt1nic.Text + "'", myConn);
+            MySqlDataAdapter cm1 = new MySqlDataAdapter("Select *  from supermarket.customerrepair where  nic like '" + txtt1nic.Text + "'", myConn);
             DataTable set = new DataTable();
+            DataTable set2 = new DataTable();
             cm.Fill(set);
+            cm1.Fill(set2);
 
+            foreach (DataRow dr in set2.Rows)
+            {
+
+                cname = dr["name"].ToString();
+                string cphoneNo1 = dr["phoneNo1"].ToString();
+                string cemail = dr["email"].ToString();
+                string cphoneNo2 = dr["landNo"].ToString();
+                string address1 = dr["address"].ToString();
+                string phone = dr["phoneNo2"].ToString();
+
+
+                txtt1email.Text = cemail;
+                txtt1mobileno1.Text = cphoneNo1;
+                txtt1mobileno2.Text = cphoneNo1;
+                txtt1address.Text = address1;
+                txtt1name.Text = cname;
+                txtt1landno.Text = phone;
+
+                //byte[] images = ((byte[])dr[7]);
+
+
+
+                //if (images == null)
+                //{
+                //    t1pic.Image = null;
+                //}
+
+                //else
+                //{
+                //    MemoryStream mstream = new MemoryStream(images);
+                //    t1pic.Image = System.Drawing.Image.FromStream(mstream);
+                //}
+
+
+            }
             foreach (DataRow dr in set.Rows)
             {
 
@@ -1522,6 +1591,7 @@ namespace inventory
             loadcustItem();
 
         }
+        
 
         private void groupBox13_Enter(object sender, EventArgs e)
         {
@@ -1898,9 +1968,9 @@ namespace inventory
             if (!(txtt3search.Text.Length == 0))
             {
 
-                int typeno = cbt3searchby.SelectedIndex;
+                int typeno = combot4Box1.SelectedIndex;
                 String type = "";
-                String key = txtt3search.Text;
+                String key = textt4Box6.Text;
 
 
                 switch (typeno)
@@ -1910,14 +1980,14 @@ namespace inventory
                         break;
 
                     case 1:
-                        type = "id";
+                        type = "Item_code";
                         break;
 
                     case 2:
-                        type = "item_name";
+                        type = "Item_name";
                         break;
                     case 3:
-                        type = "brand_name";
+                        type = "Brand";
                         break;
 
 
@@ -1927,7 +1997,7 @@ namespace inventory
 
                 try
                 {
-                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.sendwith where " + type + " like '" + key + "%'", myConn);
+                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.item where " + type + " like '" + key + "%'", myConn);
                     DataTable set = new DataTable();
                     cm.Fill(set);
 
@@ -2326,6 +2396,69 @@ namespace inventory
 
 
 
+            }
+        }
+
+        private void txtt4balance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtt4discount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtt4serviceCharge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtt4saprepartscharge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtt4total_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtt4advance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtt4grandtotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
             }
         }
 

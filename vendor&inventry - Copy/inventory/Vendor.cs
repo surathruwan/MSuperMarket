@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.IO;
+using inventory;
 
 namespace vendor_management
 {
@@ -27,6 +28,32 @@ namespace vendor_management
         public Vendor()
         {
             InitializeComponent();
+
+            int v = Session.getUser();
+            if (v == 0)
+            {
+                
+
+            }
+            else if (v == 1)
+            {
+                btnSave.Visible = false;
+                btnUpdate.Visible = false;
+                btnDelete.Visible = false;
+                btnClear.Visible = false;
+                btnEmailV.Visible = false;
+                btnReport.Visible = false;
+                tabControl1.TabPages.Remove(tabPage2);
+                tabControl1.TabPages.Remove(tabPage3);
+             
+            }
+            else if(v == 2)
+            {
+                btnEmailV.Visible = false;
+                btnReport.Visible = false;
+
+            }
+
             load_table();
             load_table2();
             load_table3();
@@ -1262,7 +1289,7 @@ namespace vendor_management
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"VendorQuotation.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created sucessfuly!!");
+            //MessageBox.Show("PDF Created sucessfuly!!");
 
             //Add border to page
             PdfContentByte content = w.DirectContent;
@@ -1282,6 +1309,13 @@ namespace vendor_management
             prg.Alignment = Element.ALIGN_CENTER;
             prg.Add(new Chunk("Vendor Quotation", font5));
             doc.Add(prg);
+
+
+            iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+            image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+            image1.ScaleToFit(60f, 60f);
+            doc.Add(image1);
+
 
             //Authors
             iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
@@ -1350,6 +1384,13 @@ namespace vendor_management
         {
             ToolTip n = new ToolTip();
             n.SetToolTip(bunifuImageButton4, "Generate pdf");
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            VendorReport r = new VendorReport();
+            r.Show();
+
         }
     }
 }

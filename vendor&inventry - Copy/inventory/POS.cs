@@ -9,14 +9,18 @@ namespace inventory
 {
     public partial class POS : Form
     {
-
-        ///hiii
+        int pw;
+        bool Hided;
+        
         private StreamReader streamToPrint;
          MainForm ourMain = new MainForm();
         public POS()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            pw = sPanel.Width;
+            Hided = false;
+
         }
 
 
@@ -311,7 +315,7 @@ namespace inventory
             MySqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
             MySqlDataReader r = cmd.ExecuteReader();
-
+           // discountLevel();
             while (r.Read())
             {
                 txtCode.Text = r[1].ToString();
@@ -346,12 +350,14 @@ namespace inventory
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT Surname,initials from supermarket.loyaltycustomer where Mobile LIKE '" + bunifuMaterialTextbox1.Text + "%' ";
+                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
                 {
                     lblName.Text = Dataread[1].ToString() + " " + Dataread[0].ToString();
+                    lblPoint.Text = Dataread[2].ToString();
+                    
                 }
                 else
                 {
@@ -427,7 +433,7 @@ namespace inventory
         }
 
         //Validation
-        public bool Regexp(string re, Bunifu.Framework.UI.BunifuMaterialTextbox tb, PictureBox pc, string s)
+        public bool Regexp(string re, TextBox tb, PictureBox pc, string s)
         {
             ToolTip buttonToolTip = new ToolTip();
             ToolTip n = new ToolTip();
@@ -474,8 +480,8 @@ namespace inventory
         //phone Number Length validate
          public bool ValidatePhoneNumber(string mobile)
         {
-            //Accepts only 10 digits,
-            Regex pattern = new Regex(@"(?<!\d)\d{10}(?!\d)");
+            //Accepts only 9 digits,
+            Regex pattern = new Regex(@"(?<!\d)\d{9}(?!\d)");
 
             if (pattern.IsMatch(mobile))
             {
@@ -554,6 +560,7 @@ namespace inventory
                 cmd1.ExecuteNonQuery();
                 MessageBox.Show("Order Done Succesfully", "Madusha Super Market", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 count_accout();
+                AddPoints();
                 printer();
             }
             catch (Exception ex)
@@ -562,6 +569,36 @@ namespace inventory
             }
 
         }
+
+        //Add points to Loyality Customers
+        public void AddPoints()
+        {
+            try
+            {
+                string total = lblAmount.Text;
+                double addPoints = Double.Parse(total) * (0.02);
+                int phone = Convert.ToInt32(txtPhone.Text);
+               
+                string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=madusha";
+                MySqlConnection conn = new MySqlConnection(constr);
+                conn.Open();
+               
+
+                    MySqlCommand cmd = new MySqlCommand("Update supermarket.loyaltycustomer  set Points= Points + @Addpoint   where Mobile= @mobile ", conn);
+
+                    cmd.Parameters.AddWithValue("@Addpoint",addPoints);
+                    cmd.Parameters.AddWithValue("@mobile", phone);
+                    cmd.ExecuteNonQuery();
+                
+
+               
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         //decrement qty Value
         public bool DecrementQtyValue()
         {
@@ -716,7 +753,7 @@ namespace inventory
             for (int i = 0; i < cart.Rows.Count; i++)
             {
               
-                MySqlCommand cmd = new MySqlCommand("Update madusha.item  set sqty= sqty - @qty   where Item_code= @itemcode ", conn);
+                MySqlCommand cmd = new MySqlCommand("Update supermarket.item  set sqty= sqty - @qty   where Item_code= @itemcode ", conn);
                 
                 cmd.Parameters.AddWithValue("@itemcode", this.cart.Rows[i].Cells[1].Value.ToString());
                 cmd.Parameters.AddWithValue("@qty", this.cart.Rows[i].Cells[3].Value.ToString());
@@ -799,21 +836,7 @@ namespace inventory
             e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back) ;
         }
 
-        private void bunifuMaterialTextbox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-          
-            e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-
-            if (bunifuMaterialTextbox1.Text.Length == 10)
-            {
-                if (e.KeyChar == 13)
-                {
-                    Regexp(@"(?<!\d)\d{10}(?!\d)", bunifuMaterialTextbox1, pictureBox1, "Please Enter 10 digits Phone Number");
-
-                }
-                SearchCustomer();
-            }
-        }
+      
 
         //Data Send to the Database or Complete the order
         private void cart_KeyUp(object sender, KeyEventArgs e)
@@ -1034,7 +1057,7 @@ namespace inventory
         public void DiscountItemWise()
         {
             string discount = txtDiscount.Text;
-
+            
             for (int i = 0; i < discount.ToString().Length; i++)
             {
                 if ((txtDiscount.Text[i].ToString() == "%"))
@@ -1045,10 +1068,18 @@ namespace inventory
 
                     float IPrice = float.Parse(txtPrice.Text);
                     float NewPrice = IPrice - (IPrice * (fRate / 100));
-                    txtPrice.Text = NewPrice.ToString();
-
-                    txtDiscount.MaxLength = i;
-                    break;
+                    if ((NewPrice) >= 0)
+                    {
+                        txtPrice.Text = NewPrice.ToString();
+                       
+                        txtDiscount.MaxLength = i;
+                        break;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    
 
                 }
                 if ((txtDiscount.Text[i].ToString() == "-"))
@@ -1058,11 +1089,18 @@ namespace inventory
 
                     float initialPrice = float.Parse(txtPrice.Text);
                     float ApplyDis = initialPrice - disPrice;
-                    txtPrice.Text = ApplyDis.ToString();
+                    if (ApplyDis >= 0)
+                    {
+                        txtPrice.Text = ApplyDis.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    txtDiscount.MaxLength = 5;
+                    txtDiscount.MaxLength = 6;
 
                 }
             }
@@ -1160,8 +1198,152 @@ namespace inventory
 
     public void discountLevel()
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from discountlevel", conn);
+            //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            //MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from discountlevel", conn);
+            try
+            {
+                MainForm main = new MainForm();
+                string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
+                MySqlConnection conn = new MySqlConnection(constr);
+                conn.Open();
+                MySqlCommand cmd = conn.CreateCommand();
+                
+                cmd.CommandText = "SELECT user,maximumDiscount from supermarket.users where user LIKE '" + Session.getUser() + "' ";
+                MySqlDataReader Dataread = cmd.ExecuteReader();
+                Dataread.Read();
+                if (Dataread.HasRows)
+                {
+                    
+                    maxDis.Text= Dataread[1].ToString();
+
+                }
+                else
+                {
+                    MessageBox.Show("Customer Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            this.timer2.Enabled = true;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+           
+                if (sPanel.Width >= 100)
+                {
+
+
+                this.sPanel.Width = 25;
+                button1.Text = "V\nE\nR\nI\nF\nY";
+                this.timer2.Enabled = false;
+
+
+            }
+                else 
+                {
+                    this.sPanel.Width += 230;
+                    button1.Text = "H\nI\nD\nE";
+                    this.timer2.Enabled = false;
+
+
+            }
+
+           
+            
+        }
+
+        public void smsVerification()
+        {
+            using (System.Net.WebClient client = new System.Net.WebClient())
+            {
+                try
+                {
+                    Random random = new Random();
+                    int value = random.Next(1001, 9999);
+
+                    lblRandom.Text = value.ToString();
+
+
+
+
+                    string url = " http://smsc.vianett.no/v3/send.ashx?" +
+                        "src=" +"94"+ txtPhone.Text + "&" +
+                        "dst=" + "94" + txtPhone.Text + "&" +
+                        "msg=" + System.Web.HttpUtility.UrlEncode("Your Verification Code is :" + value + "\n -From Madusha SuperMarket-", System.Text.Encoding.GetEncoding("ISO-8859-1")) + "&" +
+                        "username=" + System.Web.HttpUtility.UrlEncode("lksurath@gmail.com") + "&" +
+                        "password=" + System.Web.HttpUtility.UrlEncode("w9d9a");
+                    string result = client.DownloadString(url);
+                    if (result.Contains("OK"))
+                    {
+                       MessageBox.Show("Send Sucessfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to Send");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnVerify_Click(object sender, EventArgs e)
+        {
+            if (lblRandom.Text == txtVerify.Text)
+            {
+                lblVeriMsg.Text = "Verified Sucessfully";
+            }
+            else
+            {
+                lblVeriMsg.Text = "Not Verified";
+            }
+        }
+
+        
+
+       
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPhone.Text.Length == 9)
+            {
+                SearchCustomer();
+                
+                Regexp(@"(?<!\d)\d{9}(?!\d)", txtPhone, pictureBox1, "Please Enter 9 digits without 0");
+            }
+            else
+            {
+                pictureBox1.Image = null;
+                lblName.Text = "";
+            }
+        }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        
+            e.Handled = !(e.KeyChar == (char)Keys.Back || char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Space);
+        }
+
+        private void txtPhone_KeyUp(object sender, KeyEventArgs e)
+        {
+            if((txtPhone.Text.Length == 9) && (string.IsNullOrWhiteSpace(txtBarcode.Text)))
+            {
+                if(e.KeyCode == Keys.F1)
+                {
+                   smsVerification();
+                }
+            }
         }
     }
     }
