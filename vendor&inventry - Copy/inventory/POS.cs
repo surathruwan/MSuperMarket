@@ -315,7 +315,7 @@ namespace inventory
             MySqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
             MySqlDataReader r = cmd.ExecuteReader();
-            discountLevel();
+           // discountLevel();
             while (r.Read())
             {
                 txtCode.Text = r[1].ToString();
