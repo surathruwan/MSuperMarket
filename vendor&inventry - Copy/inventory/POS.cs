@@ -9,8 +9,7 @@ namespace inventory
 {
     public partial class POS : Form
     {
-        int pw;
-        bool Hided;
+       
         
         private StreamReader streamToPrint;
          MainForm ourMain = new MainForm();
@@ -18,8 +17,22 @@ namespace inventory
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            pw = sPanel.Width;
-            Hided = false;
+            int v = Session.getUser();
+            if (v == 0)
+            {
+
+
+            }
+            else if (v == 1)
+            {
+                
+
+            }
+            else if (v == 2)
+            {
+                
+
+            }
 
         }
 
@@ -315,7 +328,7 @@ namespace inventory
             MySqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
             MySqlDataReader r = cmd.ExecuteReader();
-           // discountLevel();
+           
             while (r.Read())
             {
                 txtCode.Text = r[1].ToString();
@@ -325,6 +338,7 @@ namespace inventory
                 detailsGrid.AllowUserToAddRows = false;
                 detailsGrid.DataSource = source;
             }
+            
         }
 
         //Search only via Barcode
@@ -408,26 +422,54 @@ namespace inventory
         //Calculate Balance
         public void BalanceCal()
         {
+            
             try
             {
 
                 double cash = Double.Parse(txtCash.Text);
                 double total = Double.Parse(lblAmount.Text);
-
-                double balance = cash - total;
-                if (balance >= 0)
+                double point = Double.Parse(txtPoints.Text);
+                double remainPoints = Double.Parse(lblPoint.Text);
+                double balance;
+                if ((string.IsNullOrWhiteSpace(txtPoints.Text)))
                 {
-                    lblBalanceAmount1.Text = balance.ToString("0.00");
+                    MessageBox.Show("First you need to verify Loyality account", "Verify", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                 }
+
+                else if (!(string.IsNullOrWhiteSpace(txtPoints.Text))&& !(string.IsNullOrWhiteSpace(txtCash.Text)))
+                {
+                    balance =  total - (cash + point);
+                    lblBalanceAmount1.Text = balance.ToString("0.00");
+
+                }
+                else if (!(string.IsNullOrWhiteSpace(txtPoints.Text)) && (string.IsNullOrWhiteSpace(txtCash.Text)))
+                {
+                    balance = (point) - total;
+                    lblBalanceAmount1.Text = balance.ToString("0.00");
+
+                }
+
                 else
                 {
-                    lblBalanceAmount1.Text = "0.00";
+                    balance = cash - total;
+                    lblBalanceAmount1.Text = balance.ToString("0.00");
                 }
-            }
 
+                //if (balance >= 0)
+                //{
+                //    lblBalanceAmount1.Text = balance.ToString("0.00");
+                //}
+                //else
+                //{
+                //    lblBalanceAmount1.Text = "0.00";
+                //}
+                
+               
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
 
             }
         }
@@ -776,10 +818,14 @@ namespace inventory
 
         private void txtBarcode_TextChanged(object sender, EventArgs e)
         {
+            
             if ((txtBarcode.Text.Length >= 13)||(txtBarcode.Text.Length>=15))
             {
                 
                 SearchBarcode();
+             
+
+
 
             }
             if((string.IsNullOrWhiteSpace(txtBarcode.Text)))
@@ -1057,7 +1103,7 @@ namespace inventory
         public void DiscountItemWise()
         {
             string discount = txtDiscount.Text;
-            
+            float maximumDiscount = float.Parse(maxDis.Text);
             for (int i = 0; i < discount.ToString().Length; i++)
             {
                 if ((txtDiscount.Text[i].ToString() == "%"))
@@ -1068,18 +1114,30 @@ namespace inventory
 
                     float IPrice = float.Parse(txtPrice.Text);
                     float NewPrice = IPrice - (IPrice * (fRate / 100));
+                    float reduce_amount = (IPrice * (fRate / 100));
                     if ((NewPrice) >= 0)
                     {
                         txtPrice.Text = NewPrice.ToString();
-                       
+
                         txtDiscount.MaxLength = i;
-                        break;
+
+
+                        if (maximumDiscount < reduce_amount)
+                        {
+                            MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtDiscount.Text = "";
+                            SearchPriceBarcode();
+                        }
+
                     }
+
                     else
                     {
                         MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtDiscount.Text = "";
+                        SearchPriceBarcode();
                     }
-                    
+                   
 
                 }
                 if ((txtDiscount.Text[i].ToString() == "-"))
@@ -1089,9 +1147,16 @@ namespace inventory
 
                     float initialPrice = float.Parse(txtPrice.Text);
                     float ApplyDis = initialPrice - disPrice;
+                    float reduce_amount = disPrice;
                     if (ApplyDis >= 0)
                     {
                         txtPrice.Text = ApplyDis.ToString();
+                        if (maximumDiscount < reduce_amount)
+                        {
+                            MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtDiscount.Text = "";
+                            SearchPriceBarcode();
+                        }
                     }
                     else
                     {
@@ -1109,6 +1174,7 @@ namespace inventory
         //Apply Discount for Item (Precentage Wise and decimal Wise)
         private void txtDiscount_TextChanged(object sender, EventArgs e)
         {
+           
             try
             {
                 DiscountItemWise();
@@ -1116,7 +1182,8 @@ namespace inventory
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                
+               // MessageBox.Show(ex.Message);
             }
         }
 
@@ -1198,29 +1265,24 @@ namespace inventory
 
     public void discountLevel()
         {
-            //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            //MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from discountlevel", conn);
+           
             try
             {
-                MainForm main = new MainForm();
                 string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
-                
-                cmd.CommandText = "SELECT user,maximumDiscount from supermarket.users where user LIKE '" + Session.getUser() + "' ";
+                cmd.CommandText = "SELECT user,maximumDiscount from supermarket.users where user = '"+login.getUsername()+"' ";
+               
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
                 {
-                    
-                    maxDis.Text= Dataread[1].ToString();
+                    maxDis.Text = Dataread[1].ToString() ;
 
+                    
                 }
-                else
-                {
-                    MessageBox.Show("Customer Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                
 
             }
             catch (Exception ex)
@@ -1344,6 +1406,21 @@ namespace inventory
                    smsVerification();
                 }
             }
+        }
+
+        private void txtDiscount_Enter(object sender, EventArgs e)
+        {
+            discountLevel();
+        }
+
+        private void txtBarcode_MouseEnter(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void txtDiscount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
     }
