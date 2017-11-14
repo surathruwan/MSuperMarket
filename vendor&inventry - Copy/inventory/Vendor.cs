@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.IO;
+using inventory;
 
 namespace vendor_management
 {
@@ -27,6 +28,32 @@ namespace vendor_management
         public Vendor()
         {
             InitializeComponent();
+
+            int v = Session.getUser();
+            if (v == 0)
+            {
+                
+
+            }
+            else if (v == 1)
+            {
+                btnSave.Visible = false;
+                btnUpdate.Visible = false;
+                btnDelete.Visible = false;
+                btnClear.Visible = false;
+                btnEmailV.Visible = false;
+                btnReport.Visible = false;
+                tabControl1.TabPages.Remove(tabPage2);
+                tabControl1.TabPages.Remove(tabPage3);
+             
+            }
+            else if(v == 2)
+            {
+                btnEmailV.Visible = false;
+                btnReport.Visible = false;
+
+            }
+
             load_table();
             load_table2();
             load_table3();

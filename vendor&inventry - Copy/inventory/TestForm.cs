@@ -47,12 +47,12 @@ namespace madushaTemp
         {
             InitializeComponent();
             int v = Session.getUser();
-            if (v == 1)
+            if (v == 0)
             {
               
 
             }
-            else if (v == 2)
+            else if (v == 1)
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage4);
@@ -65,7 +65,7 @@ namespace madushaTemp
                 btnprintrecep.Enabled = false;
                 tblei.Enabled = false;
             }
-            else {
+            else if(v  == 2){
                 tabControl1.TabPages.Remove(tabPage1);
                 tabControl1.TabPages.Remove(tabPage4);
 
