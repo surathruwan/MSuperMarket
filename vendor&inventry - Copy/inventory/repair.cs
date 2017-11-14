@@ -55,7 +55,7 @@ namespace inventory
               
                 
             }
-            else
+            else if(v == 2 )
             {
                 tabControl1.TabPages.Remove(tabPage1);
                 tabControl1.TabPages.Remove(tabPage4);
