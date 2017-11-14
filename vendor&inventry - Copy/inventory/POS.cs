@@ -315,7 +315,7 @@ namespace inventory
             MySqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
             MySqlDataReader r = cmd.ExecuteReader();
-
+            discountLevel();
             while (r.Read())
             {
                 txtCode.Text = r[1].ToString();
@@ -350,12 +350,13 @@ namespace inventory
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT Surname,initials from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
+                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
                 {
                     lblName.Text = Dataread[1].ToString() + " " + Dataread[0].ToString();
+                    lblPoint.Text = Dataread[2].ToString();
                     
                 }
                 else
@@ -577,14 +578,7 @@ namespace inventory
                 string total = lblAmount.Text;
                 double addPoints = Double.Parse(total) * (0.02);
                 int phone = Convert.ToInt32(txtPhone.Text);
-                //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-                //conn.Open();
-
-
-                //MySqlCommand cmd = conn.CreateCommand();
-                //// cmd = new MySqlCommand(@"INSERT INTO supermarket.loyaltycustomer(Points) VALUES ('" + addPoints + "')", conn);
-                //cmd = new MySqlCommand(@"Update supermarket.loyaltycustomer  set Points = Points +7 where Mobile = '"+phone.ToString()+"' ", conn);
-                //cmd.ExecuteNonQuery();
+               
                 string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=madusha";
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
@@ -597,7 +591,7 @@ namespace inventory
                     cmd.ExecuteNonQuery();
                 
 
-                MessageBox.Show("testc");
+               
             }
             catch(Exception ex)
             {
@@ -842,22 +836,7 @@ namespace inventory
             e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back) ;
         }
 
-        private void bunifuMaterialTextbox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-          
-            //e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-
-            //if (txtPhone.Text.Length == 9)
-            //{
-            //    if (e.KeyChar == 13)
-            //    {
-            //        Regexp(@"(?<!\d)\d{9}(?!\d)", txtPhone, pictureBox1, "Please Enter 9 digits without 0");
-
-            //    }
-            //    SearchCustomer();
-                
-            //}
-        }
+      
 
         //Data Send to the Database or Complete the order
         private void cart_KeyUp(object sender, KeyEventArgs e)
@@ -1098,7 +1077,7 @@ namespace inventory
                     }
                     else
                     {
-                        MessageBox.Show("erroo");
+                        MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     
 
@@ -1110,11 +1089,18 @@ namespace inventory
 
                     float initialPrice = float.Parse(txtPrice.Text);
                     float ApplyDis = initialPrice - disPrice;
-                    txtPrice.Text = ApplyDis.ToString();
+                    if (ApplyDis >= 0)
+                    {
+                        txtPrice.Text = ApplyDis.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    txtDiscount.MaxLength = 5;
+                    txtDiscount.MaxLength = 6;
 
                 }
             }
@@ -1212,8 +1198,35 @@ namespace inventory
 
     public void discountLevel()
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from discountlevel", conn);
+            //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            //MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * from discountlevel", conn);
+            try
+            {
+                MainForm main = new MainForm();
+                string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
+                MySqlConnection conn = new MySqlConnection(constr);
+                conn.Open();
+                MySqlCommand cmd = conn.CreateCommand();
+                
+                cmd.CommandText = "SELECT user,maximumDiscount from supermarket.users where user LIKE '" + Session.getUser() + "' ";
+                MySqlDataReader Dataread = cmd.ExecuteReader();
+                Dataread.Read();
+                if (Dataread.HasRows)
+                {
+                    
+                    maxDis.Text= Dataread[1].ToString();
+
+                }
+                else
+                {
+                    MessageBox.Show("Customer Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -1328,7 +1341,7 @@ namespace inventory
             {
                 if(e.KeyCode == Keys.F1)
                 {
-                  //  smsVerification();
+                   smsVerification();
                 }
             }
         }
