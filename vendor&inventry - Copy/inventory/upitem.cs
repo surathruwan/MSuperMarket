@@ -189,13 +189,13 @@ namespace inventory
                 {
                     string con = "datasource=localhost;port=3306;username=root";
                     MySqlConnection dbcon = new MySqlConnection(con);
-                    MySqlCommand cm = new MySqlCommand("update supermarket.Item set Brand='" + brand.Text + "',Wprice='" + wprice.Text + "',Description='" + des.Text + "',Item_name='" + name.Text + "',Warrenty='" + warrenty.Text + "',Category='" + catcombo.Text + "',Sub_category='" + subcombo.Text +"',Floor='"+ floor.Text +"',shelf='"+ushelf.Text + "',packSize='"+upsize.Text + "',freeIssue='"+free.Text+"',modifiedD='"+ DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "',Rprice='" + rprice.Text + "' where Item_code='" + code.Text + "'", dbcon);
+                    MySqlCommand cm = new MySqlCommand("update supermarket.Item set Brand='" + brand.Text + "',Wprice='" + wprice.Text + "',Description='" + des.Text + "',Item_name='" + name.Text + "',modifiedBy='" + login.getUsername() + "',Warrenty='" + warrenty.Text + "',Category='" + catcombo.Text + "',Sub_category='" + subcombo.Text +"',Floor='"+ floor.Text +"',shelf='"+ushelf.Text + "',packSize='"+upsize.Text + "',freeIssue='"+free.Text+"',modifiedD='"+ DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "',Rprice='" + rprice.Text + "' where Item_code='" + code.Text + "'", dbcon);
                     MySqlDataReader r;
                     try
                     {
                         dbcon.Open();
                         r = cm.ExecuteReader();
-                        MessageBox.Show("Updated successfully!");
+                        MessageBox.Show("Updated successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         while (r.Read())
                         {
 
