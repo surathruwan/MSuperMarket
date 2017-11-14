@@ -82,7 +82,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPoints = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblBalanceAmount1 = new System.Windows.Forms.Label();
@@ -250,6 +250,7 @@
             this.maxDis.Size = new System.Drawing.Size(16, 17);
             this.maxDis.TabIndex = 27;
             this.maxDis.Text = "..";
+            this.maxDis.Visible = false;
             // 
             // txtBarcode
             // 
@@ -322,6 +323,7 @@
             this.txtDiscount.TabIndex = 5;
             this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
             this.txtDiscount.Enter += new System.EventHandler(this.txtDiscount_Enter);
+            this.txtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiscount_KeyPress);
             this.txtDiscount.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDiscount_KeyUp);
             // 
             // label11
@@ -677,7 +679,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.txtPoints);
             this.panel6.Controls.Add(this.label20);
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.lblBalanceAmount1);
@@ -695,15 +697,16 @@
             this.panel6.Size = new System.Drawing.Size(343, 232);
             this.panel6.TabIndex = 1;
             // 
-            // textBox3
+            // txtPoints
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBox3.Location = new System.Drawing.Point(145, 150);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 29);
-            this.textBox3.TabIndex = 47;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtPoints.Location = new System.Drawing.Point(145, 150);
+            this.txtPoints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPoints.MaxLength = 6;
+            this.txtPoints.Name = "txtPoints";
+            this.txtPoints.Size = new System.Drawing.Size(153, 29);
+            this.txtPoints.TabIndex = 47;
+            this.txtPoints.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label20
             // 
@@ -750,6 +753,7 @@
             this.txtCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txtCash.Location = new System.Drawing.Point(145, 110);
             this.txtCash.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCash.MaxLength = 8;
             this.txtCash.Name = "txtCash";
             this.txtCash.Size = new System.Drawing.Size(153, 29);
             this.txtCash.TabIndex = 1;
@@ -770,6 +774,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.textBox2.Location = new System.Drawing.Point(145, 75);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.MaxLength = 6;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(153, 29);
             this.textBox2.TabIndex = 0;
@@ -1149,7 +1154,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPoints;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel sPanel;
