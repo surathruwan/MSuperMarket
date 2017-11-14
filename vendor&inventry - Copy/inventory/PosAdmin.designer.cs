@@ -276,18 +276,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
-<<<<<<< HEAD
            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-=======
-<<<<<<< HEAD
+
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-=======
+
           // this.tabControl1.Controls.Add(this.tabPage2);
            // this.tabControl1.Controls.Add(this.tabPage3);
->>>>>>> 9f5756fde9eda8e63c3381f4536de1befb81e33a
->>>>>>> d8e94d3805fb29f4c94b6c20c9041e2bc52e7062
+
             this.tabControl1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
