@@ -1322,7 +1322,7 @@ namespace inventory
             {
                 if(e.KeyCode == Keys.F1)
                 {
-                    smsVerification();
+                  //  smsVerification();
                 }
             }
         }
