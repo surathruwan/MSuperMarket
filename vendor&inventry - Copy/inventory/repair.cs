@@ -322,11 +322,11 @@ namespace inventory
         {
             if (isNicExist(txtt1nic.Text)==false)
             {
-                //Regexp1(@"^[0-9]{9}[vVxX]$", txtt1nic, picnic, "Please enter a valid nic");
-                //Regexp2(@"^([\w]+)@([\w]+)\.([\w]+)$", txtt1email, picemail, "Please enter a valid email address");
-                //Regexp3(@"^[0-9]{10}$", txtt1mobileno1, picmobno1, "phone no should only 10digit and numeric");
-                //Regexp4(@"^[0-9]{10}$", txtt1mobileno2, picmobno2, "phone no should only 10digit and numeric");
-                //Regexp5(@"^[0-9]{10}$", txtt1landno, picland, "phone no should only 10digit and numeric");
+                Regexp1(@"^[0-9]{9}[vVxX]$", txtt1nic, picnic, "Please enter a valid nic");
+                Regexp2(@"^([\w]+)@([\w]+)\.([\w]+)$", txtt1email, picemail, "Please enter a valid email address");
+                Regexp3(@"^[0-9]{10}$", txtt1mobileno1, picmobno1, "phone no should only 10digit and numeric");
+                Regexp4(@"^[0-9]{10}$", txtt1mobileno2, picmobno2, "phone no should only 10digit and numeric");
+                Regexp5(@"^[0-9]{10}$", txtt1landno, picland, "phone no should only 10digit and numeric");
 
                 if (String.IsNullOrEmpty(txtt1address.Text) || String.IsNullOrWhiteSpace(txtt1email.Text) || String.IsNullOrWhiteSpace(txtt1landno.Text) || String.IsNullOrWhiteSpace(txtt1mobileno1.Text) || String.IsNullOrWhiteSpace(txtt1mobileno2.Text) || String.IsNullOrWhiteSpace(txtt1name.Text) || String.IsNullOrWhiteSpace(txtt1nic.Text))
                 {
