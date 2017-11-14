@@ -422,26 +422,54 @@ namespace inventory
         //Calculate Balance
         public void BalanceCal()
         {
+            
             try
             {
 
                 double cash = Double.Parse(txtCash.Text);
                 double total = Double.Parse(lblAmount.Text);
-
-                double balance = cash - total;
-                if (balance >= 0)
+                double point = Double.Parse(txtPoints.Text);
+                double remainPoints = Double.Parse(lblPoint.Text);
+                double balance;
+                if ((string.IsNullOrWhiteSpace(txtPoints.Text)))
                 {
-                    lblBalanceAmount1.Text = balance.ToString("0.00");
+                    MessageBox.Show("First you need to verify Loyality account", "Verify", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                 }
+
+                else if (!(string.IsNullOrWhiteSpace(txtPoints.Text))&& !(string.IsNullOrWhiteSpace(txtCash.Text)))
+                {
+                    balance =  total - (cash + point);
+                    lblBalanceAmount1.Text = balance.ToString("0.00");
+
+                }
+                else if (!(string.IsNullOrWhiteSpace(txtPoints.Text)) && (string.IsNullOrWhiteSpace(txtCash.Text)))
+                {
+                    balance = (point) - total;
+                    lblBalanceAmount1.Text = balance.ToString("0.00");
+
+                }
+
                 else
                 {
-                    lblBalanceAmount1.Text = "0.00";
+                    balance = cash - total;
+                    lblBalanceAmount1.Text = balance.ToString("0.00");
                 }
-            }
 
+                //if (balance >= 0)
+                //{
+                //    lblBalanceAmount1.Text = balance.ToString("0.00");
+                //}
+                //else
+                //{
+                //    lblBalanceAmount1.Text = "0.00";
+                //}
+                
+               
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
 
             }
         }
@@ -1097,11 +1125,9 @@ namespace inventory
                         if (maximumDiscount < reduce_amount)
                         {
                             MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            txtDiscount.Text = "0";
+                            txtDiscount.Text = "";
                             SearchPriceBarcode();
                         }
-
-                      
 
                     }
 
@@ -1121,9 +1147,16 @@ namespace inventory
 
                     float initialPrice = float.Parse(txtPrice.Text);
                     float ApplyDis = initialPrice - disPrice;
+                    float reduce_amount = disPrice;
                     if (ApplyDis >= 0)
                     {
                         txtPrice.Text = ApplyDis.ToString();
+                        if (maximumDiscount < reduce_amount)
+                        {
+                            MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtDiscount.Text = "";
+                            SearchPriceBarcode();
+                        }
                     }
                     else
                     {
@@ -1149,7 +1182,8 @@ namespace inventory
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                
+               // MessageBox.Show(ex.Message);
             }
         }
 
@@ -1382,6 +1416,11 @@ namespace inventory
         private void txtBarcode_MouseEnter(object sender, EventArgs e)
         {
           
+        }
+
+        private void txtDiscount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
     }
