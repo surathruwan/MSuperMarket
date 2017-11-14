@@ -81,7 +81,6 @@ namespace inventory
             this.panel1.Controls.Add(this.bunifuFlatButton3);
             this.panel1.Controls.Add(this.bunifuFlatButton2);
             this.panel1.Controls.Add(this.bunifuFlatButton1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 52);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
@@ -607,7 +606,7 @@ namespace inventory
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(213, 52);
+            this.panel3.Location = new System.Drawing.Point(0, 52);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(0, 893);
