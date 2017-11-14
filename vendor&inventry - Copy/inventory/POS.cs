@@ -350,12 +350,13 @@ namespace inventory
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT Surname,initials from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
+                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
                 {
                     lblName.Text = Dataread[1].ToString() + " " + Dataread[0].ToString();
+                    lblPoints.Text = Dataread[2].ToString();
                     
                 }
                 else
@@ -575,16 +576,9 @@ namespace inventory
             try
             {
                 string total = lblAmount.Text;
-                double addPoints = Double.Parse(total) * (0.02);
+                double addPoints = Double.Parse(total) * (0.01);
                 int phone = Convert.ToInt32(txtPhone.Text);
-                //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-                //conn.Open();
-
-
-                //MySqlCommand cmd = conn.CreateCommand();
-                //// cmd = new MySqlCommand(@"INSERT INTO supermarket.loyaltycustomer(Points) VALUES ('" + addPoints + "')", conn);
-                //cmd = new MySqlCommand(@"Update supermarket.loyaltycustomer  set Points = Points +7 where Mobile = '"+phone.ToString()+"' ", conn);
-                //cmd.ExecuteNonQuery();
+               
                 string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=madusha";
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
@@ -597,7 +591,7 @@ namespace inventory
                     cmd.ExecuteNonQuery();
                 
 
-                MessageBox.Show("testc");
+               
             }
             catch(Exception ex)
             {
@@ -1331,6 +1325,11 @@ namespace inventory
                     smsVerification();
                 }
             }
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     }

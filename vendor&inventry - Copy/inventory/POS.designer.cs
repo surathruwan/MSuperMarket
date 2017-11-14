@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POS));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
@@ -94,7 +94,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblRandom = new System.Windows.Forms.Label();
             this.sPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -103,13 +102,14 @@
             this.txtVerify = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblPoints = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.MadushaPrintPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.MadushaPrintDocument = new System.Drawing.Printing.PrintDocument();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -405,21 +405,21 @@
             this.detailsGrid.AllowUserToDeleteRows = false;
             this.detailsGrid.AllowUserToResizeColumns = false;
             this.detailsGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.detailsGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.detailsGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.detailsGrid.AutoGenerateColumns = false;
             this.detailsGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.detailsGrid.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.detailsGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.detailsGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.detailsGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.detailsGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.detailsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.detailsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
@@ -518,19 +518,19 @@
             this.cart.AllowUserToDeleteRows = false;
             this.cart.AllowUserToResizeColumns = false;
             this.cart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.cart.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.cart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.cart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.cart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -805,7 +805,7 @@
             this.panel5.Controls.Add(this.lblRandom);
             this.panel5.Controls.Add(this.sPanel);
             this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.lblPoints);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.lblName);
             this.panel5.Controls.Add(this.label14);
@@ -818,19 +818,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(343, 159);
             this.panel5.TabIndex = 2;
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.txtPhone.Location = new System.Drawing.Point(78, 36);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPhone.MaxLength = 9;
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(153, 29);
-            this.txtPhone.TabIndex = 47;
-            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
-            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
-            this.txtPhone.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPhone_KeyUp);
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // lblRandom
             // 
@@ -840,6 +828,7 @@
             this.lblRandom.Size = new System.Drawing.Size(40, 17);
             this.lblRandom.TabIndex = 44;
             this.lblRandom.Text = "0000";
+            this.lblRandom.Visible = false;
             // 
             // sPanel
             // 
@@ -913,13 +902,15 @@
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
-            // label15
+            // lblPoints
             // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label15.Location = new System.Drawing.Point(82, 100);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(164, 28);
-            this.label15.TabIndex = 41;
+            this.lblPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblPoints.Location = new System.Drawing.Point(82, 108);
+            this.lblPoints.Name = "lblPoints";
+            this.lblPoints.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblPoints.Size = new System.Drawing.Size(145, 28);
+            this.lblPoints.TabIndex = 41;
+            this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label10
             // 
@@ -932,11 +923,10 @@
             // lblName
             // 
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(78, 73);
+            this.lblName.Location = new System.Drawing.Point(78, 75);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(214, 28);
             this.lblName.TabIndex = 39;
-            this.lblName.Text = "Name";
             // 
             // label14
             // 
@@ -950,7 +940,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label12.Location = new System.Drawing.Point(3, 73);
+            this.label12.Location = new System.Drawing.Point(3, 75);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 28);
             this.label12.TabIndex = 36;
@@ -974,6 +964,19 @@
             this.label8.Size = new System.Drawing.Size(255, 26);
             this.label8.TabIndex = 33;
             this.label8.Text = "Customer Information";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtPhone.Location = new System.Drawing.Point(78, 36);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhone.MaxLength = 9;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(153, 29);
+            this.txtPhone.TabIndex = 47;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
+            this.txtPhone.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPhone_KeyUp);
             // 
             // MadushaPrintPreviewDialog
             // 
@@ -1090,7 +1093,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1144,9 +1147,9 @@
         private System.Windows.Forms.Button btnVerify;
         private System.Windows.Forms.TextBox txtVerify;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lblRandom;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label lblRandom;
         //private newdbmadushaDataSetTableAdapters.itemTableAdapter itemTableAdapter1;
     }
 }
