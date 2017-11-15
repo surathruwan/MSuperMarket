@@ -477,11 +477,7 @@ namespace inventory
 
             try
             {
-                    if ((string.IsNullOrWhiteSpace(lblPoint.Text)))
-                    {
-                        MessageBox.Show("Before using the Loyality points user needs to verify the account");
-                        txtPoints.Text = "";
-                    }
+                   
 
                     double Balance;
                 
@@ -499,6 +495,13 @@ namespace inventory
                 }
                 if (!double.TryParse(this.txtCash.Text, out cash))
                 {
+
+                }
+
+                if ((string.IsNullOrWhiteSpace(lblPoint.Text)))
+                {
+                   // txtPoints.Text = "";
+                    MessageBox.Show("Before using the Loyality points user needs to verify the account");
 
                 }
                 if (!(string.IsNullOrWhiteSpace(txtCash.Text)))
@@ -529,12 +532,26 @@ namespace inventory
         //total Amount Changed
         public void totalChanged()
         {
-            double cash = Double.Parse(txtCash.Text);
-            double points = Double.Parse(txtPoints.Text);
-          
-            double Total = Double.Parse(lblAmount.Text);
+            double Balance;
 
-            double updateBalance = (points + cash) - Total;
+            double points = 0;
+            double total = 0;
+            double cash = 0;
+           
+            if (!double.TryParse(this.lblAmount.Text, out total))
+            {
+
+            }
+            if (!double.TryParse(this.txtPoints.Text, out points))
+            {
+
+            }
+            if (!double.TryParse(this.txtCash.Text, out cash))
+            {
+
+            }
+
+            double updateBalance = (points + cash) - total;
             lblBalanceAmount1.Text = updateBalance.ToString("0.00");
 
         }
@@ -1505,10 +1522,37 @@ namespace inventory
 
         private void lblAmount_TextChanged(object sender, EventArgs e)
         {
-            //if (!(string.IsNullOrWhiteSpace(lblPoint.Text)) || (!(string.IsNullOrWhiteSpace(lblPoint.Text))))
-            //{
-            //    totalChanged();
-            //}
+            try
+            {
+                double cash = 0;
+                double points = 0;
+                if (!double.TryParse(this.txtCash.Text, out cash))
+                {
+
+                }
+                if (!double.TryParse(this.txtPoints.Text, out points))
+                {
+
+                }
+
+
+                if (!(string.IsNullOrWhiteSpace(txtCash.Text)) || (!(string.IsNullOrWhiteSpace(txtPoints.Text))))
+                {
+                    totalChanged();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void lblName_TextChanged(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(lblName.Text)))
+            {
+                txtPoints.Enabled = true;
+            }
         }
     }
 

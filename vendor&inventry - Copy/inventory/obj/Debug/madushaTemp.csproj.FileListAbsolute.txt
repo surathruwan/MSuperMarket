@@ -56,9 +56,6 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -79,7 +76,6 @@ C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\stdole.dll
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
-=======
 >>>>>>> 85b6516bb01f9f3812da754837dfd38b9b04b82c
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
@@ -137,8 +133,6 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
-<<<<<<< HEAD
-=======
 >>>>>>> 37639046b681a71e416b54059c57ea198bedccbb
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
@@ -283,5 +277,4 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 >>>>>>> 5e682333afce423fa65c0f3217694b6c896edd04
 >>>>>>> 75cfa1e8d94b1c1c8c64eb403b34cbd3797d00fa
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.VendorReport.resources
->>>>>>> 85b6516bb01f9f3812da754837dfd38b9b04b82c
 >>>>>>> 23a4e2d98830946a9634b66cebe3897dae11d10e
