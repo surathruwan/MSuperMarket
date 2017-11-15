@@ -127,6 +127,15 @@ namespace madushaTemp
             tableLoadBankHidden();
 
             datei.MinDate = DateTime.Now;
+            lblmonth.Text= DateTime.Now.ToString("MMMM");
+
+            double profit = Convert.ToDouble(lblpro.Text);
+            double loss = Convert.ToDouble(los.Text);
+            double g = ((profit - loss)/profit)*100;
+            int per = (int)g;
+            lblvari.Text = per.ToString()+" %";
+
+
 
             // chartLoadIExp();
             //chartLoadProLos();
@@ -2669,103 +2678,112 @@ namespace madushaTemp
 
         private void btncustomercopy_Click(object sender, EventArgs e)
         {
-            try { 
-            tableLoadInstaSuumary2(txtnicsearch.Text);
 
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aCustomer_Copy.pdf", FileMode.Create));
-            doc.Open();
-
-            //MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //Add border to page
-            PdfContentByte content = w.DirectContent;
-            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
-            rectangle.Left += doc.LeftMargin - 5;
-            rectangle.Right -= doc.RightMargin - 5;
-            rectangle.Top -= doc.TopMargin - 22;
-            rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLACK);
-            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
-            content.Stroke();
-
-
-            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
-            Paragraph prg = new Paragraph();
-            prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Customer Installment Copy", font5));
-            doc.Add(prg);
-
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-            Paragraph prg1 = new Paragraph();
-            prg1.Alignment = Element.ALIGN_RIGHT;
-            Paragraph prg2 = new Paragraph();
-            prg2.Alignment = Element.ALIGN_RIGHT;
-            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
-            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
-            doc.Add(prg1);
-            doc.Add(prg2);
-
-
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p);
-
-            PdfPTable table = new PdfPTable(tblhide.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < tblhide.Columns.Count; j++)
+            try
             {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tblhide.Columns[j].HeaderText.ToUpper(), fonth));
-                table.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            table.HeaderRows = 1;
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < tblhide.Rows.Count; i++)
-            {
-                table.WidthPercentage = 100;
-
-                for (int k = 0; k < tblhide.Columns.Count; k++)
+                if (txtnicsearch.Text == null)
                 {
-                    if (tblhide[k, i].Value != null)
-                    {
+                    MessageBox.Show("Customer copy cannot created.Select a customer!", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                else
+                {
+                    tableLoadInstaSuumary2(txtnicsearch.Text);
 
-                        table.AddCell(new Phrase(tblhide[k, i].Value.ToString()));
+                    Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+                    PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\cu.pdf", FileMode.Create));
+                    doc.Open();
+
+                    //MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    //Add border to page
+                    PdfContentByte content = w.DirectContent;
+                    iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                    rectangle.Left += doc.LeftMargin - 5;
+                    rectangle.Right -= doc.RightMargin - 5;
+                    rectangle.Top -= doc.TopMargin - 22;
+                    rectangle.Bottom += doc.BottomMargin - 5;
+                    content.SetColorStroke(BaseColor.BLACK);
+                    content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                    content.Stroke();
+
+
+                    //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                    iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+                    Paragraph prg = new Paragraph();
+                    prg.Alignment = Element.ALIGN_CENTER;
+                    prg.Add(new Chunk("Customer Installment Copy", font5));
+                    doc.Add(prg);
+
+                    //Authors
+                    iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                    Paragraph prg1 = new Paragraph();
+                    prg1.Alignment = Element.ALIGN_RIGHT;
+                    Paragraph prg2 = new Paragraph();
+                    prg2.Alignment = Element.ALIGN_RIGHT;
+                    prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                    prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                    doc.Add(prg1);
+                    doc.Add(prg2);
+
+
+                    //line separator
+                    Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                    doc.Add(p);
+
+                    PdfPTable table = new PdfPTable(tblhide.Columns.Count);
+
+                    //add headers from gridview to table
+                    iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                    for (int j = 0; j < tblhide.Columns.Count; j++)
+                    {
+                        PdfPCell cell = new PdfPCell();
+                        cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                        cell.AddElement(new Chunk(tblhide.Columns[j].HeaderText.ToUpper(), fonth));
+                        table.AddCell(cell);
+
                     }
 
+                    //flag first row as header
+                    table.HeaderRows = 1;
+
+
+                    //add actual rows from grid to table
+                    for (int i = 0; i < tblhide.Rows.Count; i++)
+                    {
+                        table.WidthPercentage = 100;
+
+                        for (int k = 0; k < tblhide.Columns.Count; k++)
+                        {
+                            if (tblhide[k, i].Value != null)
+                            {
+
+                                table.AddCell(new Phrase(tblhide[k, i].Value.ToString()));
+                            }
+
+                        }
+
+
+                    }
+
+                    //add out table
+                    doc.Add(table);
+
+                    doc.Close();
+
+                    System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\cu.pdf");
                 }
-
-
             }
-
-            //add out table
-            doc.Add(table);
-
-            doc.Close();
-
-            System.Diagnostics.Process.Start(@"aCustomer_Copy.pdf");
-        }
-         catch (Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Report already Opened");
             }
-}
+            
 
-
+        }
 
 
 
@@ -4260,7 +4278,7 @@ namespace madushaTemp
         public void Profit()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            string query = "select sum(Amount) as tot from supermarket.instcard ";
+            string query = "select sum(Amount) as tot from supermarket. instcust ";
 
             MySqlCommand cmd = new MySqlCommand(query, conn);
 
@@ -4325,6 +4343,11 @@ namespace madushaTemp
             }
         }
 
+        private void panel31_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public void Bankloan()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -4343,7 +4366,7 @@ namespace madushaTemp
 
                     string tax = myR["tot"].ToString();
                     double p1 = Convert.ToDouble(tax);
-                    loss += p1-707000;
+                    loss += p1-700000;
 
 
 

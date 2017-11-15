@@ -120,23 +120,6 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btninvoice.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGkAAAApCAYAAAA22gdWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKDSURBVHhe7Zs9aBNxGMYdXcRFHMRFFIviJxEVLChFRCtB
-        odXBwUFaERUjOFhsSxpqRZNQolCwig1+4EekpY3SKlrQ+lUjRQsd7CKKgx0c6mLB5THP3XkacnZKm/8f
-        nh88ELjcDf8fd/feve/NeTE8AsXsSJIFkSQLIkkWRJIsiCRZkGklDQ7lcPZcBnvC7dha2YblS09j3twj
-        SgnCteSaVu9MINpyB4+evgl0wPxXUupSLyryBzp4oBP3M+8w9HwcXz5/hygNXEuu6YPsB9QfSqNiWQNa
-        YncDXRRJotF9tRcR3p3CxMQP75Bippmc/JmX1YXtVeeR7X9Z4KRAEgVtWB/FzeuvvF3FbPPk8Ri2bG5F
-        d++zYEk8gySo/PAyyPtVkSTeg3iJE2bQdKYbkUj6ryRWcSwSdA8yh6mpX9gUiuF2ZtCVxBKQFYYwi2R8
-        APV1na4k1uosBYVZjI5+RWhd1JW0ekUjxj9+8zYJU+Alb8H8466kRQtPOnW6MA++nXAk8YcwE0myAEmy
-        AEmyAEmyAEmyAEmyAEmyAF8Sn2r5dCvMw5fEfrta42biS2LLlh1BYRZ8n8r3qo6kE5E0mht7vE3CFG7d
-        eI3ampQrif30tauadV8yjP01HYgne1xJzLGj19Aa6/M2i3KTuZfD3nB74YwDW+jbKtuQe/vJ+5soFxxj
-        WLOyyR+Y9CUx7KdvDMXUACwjFLSjKo6Oyw99LwWSmKtdA87sXeJCv7ebmC2yfe+dM+hfQUyRJIaXvsN1
-        V/JGE06FoSmimYMdcY5xc5y7elcycCY8UNKf0ChLwCWLTzkPVUrpw9EFfhDBDyOCHDDTSlLMiCRZEEmy
-        IJJkQSTJ+IzgNzrPbevAye4GAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btncustomercopy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
         iVBORw0KGgoAAAANSUhEUgAAAJcAAAApCAYAAAA4X7t8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKeSURBVHhe7Zw9aBNhHIcdXcRFHKSLKBbFTyIqWFCKFK0E
         hVYHBwdpRVSM4KDYljTUSk1CiULBKjb4gR+RljZKq2hB63ekaMHBLqJ0sINDXSy4/Mzv7noacwbbu3fq
@@ -152,7 +135,7 @@
         KSbllByN5wNq+KAar3Zoybik9KPiksZUXNKYiksaU3FJQw7jF5VDneaQCaJaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuThinButton217.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btncustomercopy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJcAAAApCAYAAAA4X7t8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKeSURBVHhe7Zw9aBNhHIcdXcRFHKSLKBbFTyIqWFCKFK0E
@@ -544,6 +527,23 @@
 </value>
   </data>
   <data name="btnupdatebank.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHQAAAApCAYAAADkig0OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKESURBVHhe7ZtLSFRRHMZbtok20SLaRJEUPZmoIKGQCDOG
+        Aq1FixahERVN0KJIZRx8UDODTIGQRQ496DGh6BRalFCWVhOiQovcRNEiFy1so9Dma757b7eGubm0OYfv
+        Bx8MnLl3cX7cc849938WvHo7CsWeSKhlkVDLIqGWRUIti4RaljmFDg7l0NKWwf5wO3aWt2L1ynNYtPC4
+        Ms9hv7P/qyoTiDbdw5PnbwJ9Mf8UmrrSi7L8jY4c7sTDzHsMvZzEl8/fIeYf9jv7/1F2HHVH0yhbdR5N
+        sfuB3oqE0v7BmssI70thauqHd0tRSkxPz+TFdmF3xUVk+18X+CsQSplbNkdx++awd6koZZ49/YAd25vR
+        3fsiWCifTMk0Cw7FnF+LhHLO5DArzKPhQjcikfQfoVzNcgGkOdNMZmd/YlsohruZQVcol8JcPQlzScYH
+        UFfb6Qrl+w2XxMJcJia+IrQp6gpdv6Yekx+/eU3CRDjsLll8yhW6bOkZ591GmA13lRyh/CHMR0ItQ0It
+        Q0ItQ0ItQ0ItQ0ItQ0ItwxfKHQbuNAiz8YWyZkXlJebjC2UpA79+C3PhXjz35B2hpyNpNNb3eE3CRO7c
+        GkFNdcoVypqUjesaNY8azKHqDsSTPa5Q5uSJG2iO9XnNwiQyD3I4EG4vrCliGcqu8lbk3n3y/iZMgGVD
+        G9Y2+MXXvlCGNSlbQzF97DYEytxTEUfH1ce+wwKhzPWuAac2N3Gp37tMlCLZvjHnyfxbJlMklOHwe6z2
+        Wt5+wlk9qRqwNGBVCY+l8HhK1d5k4BmXQKG/Q/tcCq9YftZ5aVX+b1gqxINjPEAW5IuZU6hiXiTUskio
+        ZZFQyyKhVmUUvwDI3u489B3tEgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHQAAAApCAYAAADkig0OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKESURBVHhe7ZtLSFRRHMZbtok20SLaRJEUPZmoIKGQCDOG
