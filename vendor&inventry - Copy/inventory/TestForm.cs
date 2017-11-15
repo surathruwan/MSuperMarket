@@ -118,7 +118,7 @@ namespace madushaTemp
             tableLoadDeli();
             tableLoadBankAll();
             tableLoademplo();
-
+            tableLoadCash();
 
             tableLoadBank();
             tableLoadEI();
@@ -910,6 +910,33 @@ namespace madushaTemp
                 BindingSource bsource = new BindingSource();
                 bsource.DataSource = tab;
                 tblb.DataSource = bsource;
+                sda.Update(tab);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        public void tableLoadCash()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select sum(lamount) as 'Cash In Hand ' from supermarket.bank ;", conn);
+            
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+                DataTable tab = new DataTable();
+                sda.Fill(tab);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = tab;
+                tblc.DataSource = bsource;
                 sda.Update(tab);
 
                 conn.Close();
@@ -3417,9 +3444,13 @@ namespace madushaTemp
             prg.Alignment = Element.ALIGN_CENTER;
             prg.Add(new Chunk("Loan Details", font5));
             doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
 
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -3515,8 +3546,13 @@ namespace madushaTemp
             prg.Add(new Chunk("Assets and Liabilities", font5));
             doc.Add(prg);
 
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
             iTextSharp.text.Font font151 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 21, BaseColor.BLACK);
 
             Paragraph prg1 = new Paragraph();
@@ -3550,9 +3586,9 @@ namespace madushaTemp
                 Paragraph p3 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
                 doc.Add(p3);
 
-                //line separator
-                Paragraph q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(q);
+            //    //line separator
+            //    Paragraph q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            //doc.Add(q);
 
             PdfPTable table = new PdfPTable(tblb.Columns.Count);
 
@@ -3595,9 +3631,52 @@ namespace madushaTemp
             //add out table
             doc.Add(table);
 
+               
+
+                Paragraph p3q1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p3q1);
+
+
+                PdfPTable tablet1 = new PdfPTable(tblc.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fontht1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
 
 
 
+                for (int j = 0; j < tblc.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblc.Columns[j].HeaderText.ToUpper(), fontht1));
+                    tablet1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tablet1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblc.Rows.Count; i++)
+                {
+                    tablet1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblc.Columns.Count; k++)
+                    {
+                        if (tblc[k, i].Value != null)
+                        {
+
+                            tablet1.AddCell(new Phrase(tblc[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(tablet1);
 
 
 
@@ -3605,20 +3684,149 @@ namespace madushaTemp
 
 
                 //start 2nd
-                Paragraph pq = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-                doc.Add(pq);
-
-
                 iTextSharp.text.Font font3q = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
                 Paragraph prg3q = new Paragraph();
+                Paragraph pq1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(pq1);
+
+
+                iTextSharp.text.Font font3q1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
+                Paragraph prg3q1 = new Paragraph();
                 prg3q.Alignment = Element.ALIGN_LEFT;
                 prg3q.Add(new Chunk("Liabilities", font3q));
                 doc.Add(prg3q);
+               
+                Paragraph p31 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p31);
+                PdfPTable tabletq = new PdfPTable(tble.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonthtq = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tble.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tble.Columns[j].HeaderText.ToUpper(), fonthtq));
+                    tabletq.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tabletq.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tble.Rows.Count; i++)
+                {
+                    tabletq.WidthPercentage = 45;
+
+                    for (int k = 0; k < tble.Columns.Count; k++)
+                    {
+                        if (tble[k, i].Value != null)
+                        {
+
+                            tabletq.AddCell(new Phrase(tble[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(tabletq);
+
                 Paragraph p3q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
                 doc.Add(p3q);
 
 
+                PdfPTable tablet = new PdfPTable(tbltax.Columns.Count);
 
+                //add headers from gridview to table
+                iTextSharp.text.Font fontht = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tbltax.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tbltax.Columns[j].HeaderText.ToUpper(), fontht));
+                    tablet.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tablet.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tbltax.Rows.Count; i++)
+                {
+                    tablet.WidthPercentage = 45;
+
+                    for (int k = 0; k < tbltax.Columns.Count; k++)
+                    {
+                        if (tbltax[k, i].Value != null)
+                        {
+
+                            tablet.AddCell(new Phrase(tbltax[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(tablet);
+
+
+                Paragraph pp = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(pp);
+                PdfPTable ta1 = new PdfPTable(tblsal.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font f = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblsal.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblsal.Columns[j].HeaderText.ToUpper(), f));
+                    ta1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                ta1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblsal.Rows.Count; i++)
+                {
+                    ta1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblsal.Columns.Count; k++)
+                    {
+                        if (tblsal[k, i].Value != null)
+                        {
+
+                            ta1.AddCell(new Phrase(tblsal[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(ta1);
 
                 doc.Close();
 
