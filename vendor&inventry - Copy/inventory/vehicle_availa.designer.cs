@@ -63,6 +63,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bunifuThinButton27 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textvehino = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -79,7 +80,6 @@
             this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bunifuCards1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -590,6 +590,11 @@
             this.bunifuCustomDataGrid2.TabIndex = 36;
             this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick);
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Select";
+            this.Column2.Name = "Column2";
+            // 
             // bunifuThinButton27
             // 
             this.bunifuThinButton27.ActiveBorderThickness = 1;
@@ -825,11 +830,6 @@
             this.label1.Size = new System.Drawing.Size(123, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Vehicle Availability";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Select";
-            this.Column2.Name = "Column2";
             // 
             // vehicle_availa
             // 
