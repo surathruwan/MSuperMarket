@@ -271,8 +271,7 @@ namespace madushaTemp
 
 
 
-
-        }
+                    }
 
 
       
@@ -386,6 +385,14 @@ namespace madushaTemp
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //if (e.ColumnIndex == bunifuCustomDataGrid2.Columns["Column6"].Index && e.RowIndex >= 0)
+            //{
+            //    //Console.WriteLine("Button on row {0} clicked", e.RowIndex);
+            //    MessageBox.Show("dsfhjdhgfgjhjhgrfghjkk");
+
+
+
+            //}
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.bunifuCustomDataGrid1.Rows[e.RowIndex];
@@ -539,5 +546,20 @@ namespace madushaTemp
                 }
             }
         }
+
+        //private void Column6_Click(object sender, EventArgs e)
+        //{
+        //    email e1 = new email();
+        //    e1.Show();
+
+
+
+
+
+
+
+        //}
+
+
     }
 }
