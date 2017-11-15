@@ -560,6 +560,7 @@
             // 
             // bunifuCustomDataGrid2
             // 
+            this.bunifuCustomDataGrid2.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
