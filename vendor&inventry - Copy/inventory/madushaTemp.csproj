@@ -146,6 +146,12 @@
     <Compile Include="Employee.designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="financial_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="financial_report.Designer.cs">
+      <DependentUpon>financial_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="financial_report.resx">
+      <DependentUpon>financial_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
