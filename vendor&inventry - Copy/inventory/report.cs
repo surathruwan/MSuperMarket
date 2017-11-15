@@ -32,7 +32,7 @@ namespace inventory
             y1.Text = "Select year";
             y2.Text = "Select year";
             y3.Text = "Select year";
-
+            hidetb.Visible = false;
 
         }
         public void pdfReport(string name, string query, string fname)
@@ -282,7 +282,17 @@ namespace inventory
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            if (y1.Text == "Select year" || m1.Text == "Select Month") {
 
+                MessageBox.Show("Please Select a year and a month", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else { 
+
+
+            string x = y1.Text + "-" + (m1.SelectedIndex + 1).ToString("00");
+      
+            pdfReport(y1.Text + " " + m1.Text + " Stock Report", "select * from supermarket.stock where Date like '" + x + "%'", "yrep1.pdf");
+        }
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -292,13 +302,83 @@ namespace inventory
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-           pdfReport(y1.Text,"select * from supermarket.stock where Date like '"+y1.Text+"%'","yrep1.pdf");
+            if (y1.Text == "Select year")
+            {
+
+                MessageBox.Show("Please Select a year", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                pdfReport(y1.Text+" Stock Report", "select * from supermarket.stock where Date like '" + y1.Text + "%'", "yrep1.pdf");
+
+            }
         }
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
-            pdfReport(y3.Text, "select * from supermarket.transfer where date like '" + y1.Text + "%'", "yreps.pdf");
+            if (y3.Text == "Select year")
+            {
 
+                MessageBox.Show("Please Select a year", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                pdfReport(y3.Text+" Good Transfer Report", "select * from supermarket.transfer where date like '" + y3.Text + "%'", "yreps.pdf");
+
+            }
+        }
+
+        private void m1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuThinButton27_Click(object sender, EventArgs e)
+        {
+            if (y3.Text == "Select year" || m3.Text == "Select Month")
+            {
+
+                MessageBox.Show("Please Select a year and a month", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+
+
+                string x = y3.Text + "-" + (m3.SelectedIndex + 1).ToString("00");
+
+                pdfReport(y3.Text + " " + m3.Text + " Good Transfer Report", "select * from supermarket.transfer where date like '" + x + "%'", "yrep1.pdf");
+            }
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            if (y2.Text == "Select year" || m2.Text == "Select Month")
+            {
+
+                MessageBox.Show("Please Select a year and a month", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+
+
+                string x = y2.Text + "-" + (m2.SelectedIndex + 1).ToString("00");
+
+                pdfReport(y2.Text + " " + m2.Text + " Returned Goods Report", "select * from supermarket.returneditem where sdate like '" + x + "%'", "yrep1.pdf");
+            }
+        }
+
+        private void bunifuThinButton22_Click_1(object sender, EventArgs e)
+        {
+            if (y2.Text == "Select year")
+            {
+
+                MessageBox.Show("Please Select a year", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                pdfReport(y2.Text + " Retrned Goods Report", "select * from supermarket.returneditem where sdate like '" + y2.Text + "%'", "yreps.pdf");
+
+            }
         }
     }
 }
