@@ -819,7 +819,42 @@ namespace inventory
 
         }
 
+        //Check Same Item in Quotation bucket
+        public bool QuotatioCheckDuplicate()
+        {
 
+
+            //Boolean to check if he has row has been
+            bool Found = false;
+            if (cartQuotation.Rows.Count > 0)
+            {
+
+                //Check if the product Id exists with the same Price
+                foreach (DataGridViewRow row in cartQuotation.Rows)
+                {
+                    if (Convert.ToString(row.Cells[0].Value) == ItemNameQ.Text && Convert.ToString(row.Cells[1].Value) == txtPrice1.Text)
+                    {
+                        //Update the Quantity of the found row
+                        row.Cells[2].Value = Convert.ToString(Convert.ToInt16(txtQty1.Text) + Convert.ToInt16(row.Cells[2].Value));
+                        Found = true;
+                    }
+
+                }
+                if (!Found)
+                {
+                    Found = false;
+                    //Add the row to grid view
+                    //cart.Rows.Add(txtDescription.Text, txtCode.Text,txtPrice.Text, 1,1000);
+                }
+
+            }
+            else
+            {
+
+            }
+            return Found;
+
+        }
 
 
         //Clear Text Fields
@@ -1674,12 +1709,52 @@ namespace inventory
         }
 
 
+        //when quantity update Total Ammount changed
+
+        public void TotalUpdate()
+        {
+            double sum = 0;
+
+            try
+            {
+
+                for (int i = 0; i < cartQuotation.Rows.Count; i++)
+                {
+
+                    //Total Amount Label will be updated
+                    double total = Convert.ToDouble(cartQuotation.Rows[i].Cells[1].Value) * Convert.ToDouble(cartQuotation.Rows[i].Cells[2].Value);
+                    cartQuotation.Rows[i].Cells[3].Value = total;
+                    sum += Convert.ToDouble(cartQuotation.Rows[i].Cells[3].Value);
+                }
+
+                lblAmount1.Text = sum.ToString("0.00");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            // checker();
-            AddItemtoCartQuotation();
 
+            if ((checker() == false))
+            {
+                if (QuotatioCheckDuplicate() == false)
+                {
+                    AddItemtoCartQuotation();
+                    
+                }
+                else
+                {
+                    txtQty1.Text = "";
+                    txtSearchItem.Text = "";
+                    txtPrice1.Text = "";
+                }
+                
+            }
         }
 
         public bool checker()
@@ -1690,10 +1765,10 @@ namespace inventory
                 return true;
 
             }
-
+            
             else
             {
-                AddItemtoCartQuotation();
+               
                 return false;
             }
         }
@@ -1748,6 +1823,23 @@ namespace inventory
             txtSearchItem.Text = "";
             txtPrice1.Text = "";
             ItemsAutoCompleteItemCode();
+        }
+
+        private void cartQuotation_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            TotalUpdate();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                orderCart.Rows.Clear();
+            }
+            catch (Exception ex)
+            {
+              //  MessageBox.Show(ex.Message);
+            }
         }
     }
     }

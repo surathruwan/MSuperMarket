@@ -193,7 +193,6 @@
             this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.txtnn = new System.Windows.Forms.Label();
             this.lbltot = new System.Windows.Forms.Label();
             this.lblscount = new System.Windows.Forms.Label();
@@ -312,6 +311,8 @@
             this.lblpro = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label108 = new System.Windows.Forms.Label();
             this.tblc = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tble = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tblb = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -337,11 +338,43 @@
             this.label67 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label108 = new System.Windows.Forms.Label();
+            this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.lblmonth = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.label114 = new System.Windows.Forms.Label();
+            this.lblvari = new System.Windows.Forms.Label();
             this.btninvoice = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btncustomercopy = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btniconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSuspend = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -361,6 +394,7 @@
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnsuslist = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btncconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.piccus = new System.Windows.Forms.PictureBox();
             this.btnclearsei = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton214 = new System.Windows.Forms.PictureBox();
@@ -377,6 +411,7 @@
             this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnupdateie = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnaddex = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -396,6 +431,8 @@
             this.bunifuThinButton219 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnupdatebank = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnchartgene = new System.Windows.Forms.PictureBox();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -465,6 +502,7 @@
             this.panel3.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblb)).BeginInit();
@@ -481,7 +519,10 @@
             this.groupBox8.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox9.SuspendLayout();
+            this.bunifuCards1.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -490,6 +531,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).BeginInit();
@@ -498,6 +540,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnseized)).BeginInit();
@@ -579,7 +622,6 @@
             this.groupBox13.Controls.Add(this.btninvoice);
             this.groupBox13.Controls.Add(this.cmbprepare);
             this.groupBox13.Controls.Add(this.btncustomercopy);
-            this.groupBox13.Controls.Add(this.bunifuThinButton217);
             this.groupBox13.Controls.Add(this.txtnoi);
             this.groupBox13.Controls.Add(this.label8);
             this.groupBox13.Controls.Add(this.label9);
@@ -1991,9 +2033,11 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label96);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.pictureBox15);
             this.groupBox3.Controls.Add(this.piccus);
             this.groupBox3.Controls.Add(this.btnclearsei);
-            this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.bunifuThinButton214);
             this.groupBox3.Controls.Add(this.bunifuThinButton21);
             this.groupBox3.Controls.Add(this.btngeneratesticker);
@@ -2028,16 +2072,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Seized Stock";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(191, 280);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 15);
-            this.label16.TabIndex = 59;
-            this.label16.Text = "Seized Stock List";
-            // 
             // txtnn
             // 
             this.txtnn.AutoSize = true;
@@ -2045,9 +2079,8 @@
             this.txtnn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.txtnn.Location = new System.Drawing.Point(145, 80);
             this.txtnn.Name = "txtnn";
-            this.txtnn.Size = new System.Drawing.Size(110, 18);
+            this.txtnn.Size = new System.Drawing.Size(0, 18);
             this.txtnn.TabIndex = 53;
-            this.txtnn.Text = "New Item Code";
             // 
             // lbltot
             // 
@@ -2057,9 +2090,8 @@
             this.lbltot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lbltot.Location = new System.Drawing.Point(347, 281);
             this.lbltot.Name = "lbltot";
-            this.lbltot.Size = new System.Drawing.Size(54, 22);
+            this.lbltot.Size = new System.Drawing.Size(0, 22);
             this.lbltot.TabIndex = 52;
-            this.lbltot.Text = "2001";
             this.lbltot.Click += new System.EventHandler(this.label47_Click);
             // 
             // lblscount
@@ -2070,9 +2102,8 @@
             this.lblscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lblscount.Location = new System.Drawing.Point(516, 280);
             this.lblscount.Name = "lblscount";
-            this.lblscount.Size = new System.Drawing.Size(32, 22);
+            this.lblscount.Size = new System.Drawing.Size(0, 22);
             this.lblscount.TabIndex = 51;
-            this.lblscount.Text = "10";
             // 
             // label33
             // 
@@ -2344,9 +2375,8 @@
             this.lbl.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F);
             this.lbl.Location = new System.Drawing.Point(106, 45);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(69, 18);
+            this.lbl.Size = new System.Drawing.Size(0, 18);
             this.lbl.TabIndex = 45;
-            this.lbl.Text = "Invoice No";
             // 
             // dfg
             // 
@@ -2389,9 +2419,8 @@
             this.lblin.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F);
             this.lblin.Location = new System.Drawing.Point(106, 21);
             this.lblin.Name = "lblin";
-            this.lblin.Size = new System.Drawing.Size(69, 18);
+            this.lblin.Size = new System.Drawing.Size(0, 18);
             this.lblin.TabIndex = 41;
-            this.lblin.Text = "Invoice No";
             // 
             // dates
             // 
@@ -2478,7 +2507,7 @@
             this.tblinscust.AllowUserToDeleteRows = false;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tblinscust.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.tblinscust.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.tblinscust.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tblinscust.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblinscust.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblinscust.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -2517,11 +2546,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label74);
+            this.groupBox2.Controls.Add(this.pictureBox14);
             this.groupBox2.Controls.Add(this.label76);
             this.groupBox2.Controls.Add(this.pictureBox12);
             this.groupBox2.Location = new System.Drawing.Point(348, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(102, 88);
+            this.groupBox2.Size = new System.Drawing.Size(179, 88);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Unpaid List";
@@ -2988,9 +3019,8 @@
             this.lblbtot.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbtot.Location = new System.Drawing.Point(52, 43);
             this.lblbtot.Name = "lblbtot";
-            this.lblbtot.Size = new System.Drawing.Size(76, 22);
+            this.lblbtot.Size = new System.Drawing.Size(0, 22);
             this.lblbtot.TabIndex = 9;
-            this.lblbtot.Text = "200000";
             // 
             // panel18
             // 
@@ -3056,9 +3086,8 @@
             this.lblcount.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcount.Location = new System.Drawing.Point(80, 40);
             this.lblcount.Name = "lblcount";
-            this.lblcount.Size = new System.Drawing.Size(21, 22);
+            this.lblcount.Size = new System.Drawing.Size(0, 22);
             this.lblcount.TabIndex = 9;
-            this.lblcount.Text = "5";
             // 
             // panel15
             // 
@@ -3090,9 +3119,8 @@
             this.lbldate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldate.Location = new System.Drawing.Point(40, 43);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(110, 22);
+            this.lbldate.Size = new System.Drawing.Size(0, 22);
             this.lbldate.TabIndex = 9;
-            this.lbldate.Text = "2017-08-12";
             // 
             // panel10
             // 
@@ -3212,7 +3240,7 @@
             this.tblbank.AllowUserToDeleteRows = false;
             dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tblbank.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.tblbank.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.tblbank.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tblbank.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblbank.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblbank.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -3549,6 +3577,9 @@
             // 
             // groupBox20
             // 
+            this.groupBox20.Controls.Add(this.panel31);
+            this.groupBox20.Controls.Add(this.panel30);
+            this.groupBox20.Controls.Add(this.bunifuCards1);
             this.groupBox20.Controls.Add(this.panel2);
             this.groupBox20.Controls.Add(this.panel21);
             this.groupBox20.Controls.Add(this.panel3);
@@ -3566,7 +3597,7 @@
             this.panel3.Controls.Add(this.los);
             this.panel3.Controls.Add(this.label73);
             this.panel3.Controls.Add(this.pictureBox9);
-            this.panel3.Location = new System.Drawing.Point(313, 58);
+            this.panel3.Location = new System.Drawing.Point(211, 58);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(188, 86);
             this.panel3.TabIndex = 18;
@@ -3576,7 +3607,7 @@
             this.los.AutoSize = true;
             this.los.BackColor = System.Drawing.Color.White;
             this.los.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.los.Location = new System.Drawing.Point(42, 36);
+            this.los.Location = new System.Drawing.Point(12, 36);
             this.los.Name = "los";
             this.los.Size = new System.Drawing.Size(95, 32);
             this.los.TabIndex = 12;
@@ -3600,7 +3631,7 @@
             this.panel22.Controls.Add(this.lblpro);
             this.panel22.Controls.Add(this.label75);
             this.panel22.Controls.Add(this.pictureBox8);
-            this.panel22.Location = new System.Drawing.Point(58, 58);
+            this.panel22.Location = new System.Drawing.Point(8, 58);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(188, 86);
             this.panel22.TabIndex = 150;
@@ -3610,7 +3641,7 @@
             this.lblpro.AutoSize = true;
             this.lblpro.BackColor = System.Drawing.Color.White;
             this.lblpro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpro.Location = new System.Drawing.Point(38, 36);
+            this.lblpro.Location = new System.Drawing.Point(9, 36);
             this.lblpro.Name = "lblpro";
             this.lblpro.Size = new System.Drawing.Size(111, 32);
             this.lblpro.TabIndex = 13;
@@ -3652,6 +3683,27 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1194, 173);
             this.panel11.TabIndex = 1;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.pictureBox23);
+            this.groupBox9.Controls.Add(this.label108);
+            this.groupBox9.Location = new System.Drawing.Point(970, 29);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(134, 100);
+            this.groupBox9.TabIndex = 71;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Profit and Loss";
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label108.Location = new System.Drawing.Point(56, 79);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(24, 12);
+            this.label108.TabIndex = 48;
+            this.label108.Text = "PDF";
             // 
             // tblc
             // 
@@ -4022,11 +4074,11 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(125, 78);
+            this.label36.Location = new System.Drawing.Point(100, 80);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(27, 12);
+            this.label36.Size = new System.Drawing.Size(87, 12);
             this.label36.TabIndex = 47;
-            this.label36.Text = "TEXT";
+            this.label36.Text = "CRYSTAL REPORT";
             // 
             // label35
             // 
@@ -4179,26 +4231,380 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // groupBox9
+            // bunifuCards1
             // 
-            this.groupBox9.Controls.Add(this.pictureBox23);
-            this.groupBox9.Controls.Add(this.label108);
-            this.groupBox9.Location = new System.Drawing.Point(970, 29);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(134, 100);
-            this.groupBox9.TabIndex = 71;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Profit and Loss";
+            this.bunifuCards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuCards1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuCards1.BorderRadius = 5;
+            this.bunifuCards1.BottomSahddow = true;
+            this.bunifuCards1.color = System.Drawing.Color.Turquoise;
+            this.bunifuCards1.Controls.Add(this.groupBox10);
+            this.bunifuCards1.LeftSahddow = false;
+            this.bunifuCards1.Location = new System.Drawing.Point(6, 158);
+            this.bunifuCards1.Name = "bunifuCards1";
+            this.bunifuCards1.RightSahddow = true;
+            this.bunifuCards1.ShadowDepth = 20;
+            this.bunifuCards1.Size = new System.Drawing.Size(567, 335);
+            this.bunifuCards1.TabIndex = 152;
             // 
-            // label108
+            // groupBox10
             // 
-            this.label108.AutoSize = true;
-            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.Location = new System.Drawing.Point(56, 79);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(24, 12);
-            this.label108.TabIndex = 48;
-            this.label108.Text = "PDF";
+            this.groupBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox10.Controls.Add(this.panel29);
+            this.groupBox10.Controls.Add(this.bunifuThinButton22);
+            this.groupBox10.Controls.Add(this.label112);
+            this.groupBox10.Controls.Add(this.label97);
+            this.groupBox10.Controls.Add(this.label98);
+            this.groupBox10.Controls.Add(this.label100);
+            this.groupBox10.Controls.Add(this.label101);
+            this.groupBox10.Controls.Add(this.label102);
+            this.groupBox10.Controls.Add(this.label104);
+            this.groupBox10.Controls.Add(this.label106);
+            this.groupBox10.Controls.Add(this.label107);
+            this.groupBox10.Controls.Add(this.label109);
+            this.groupBox10.Controls.Add(this.label110);
+            this.groupBox10.Controls.Add(this.label111);
+            this.groupBox10.Controls.Add(this.label72);
+            this.groupBox10.Controls.Add(this.label80);
+            this.groupBox10.Controls.Add(this.label82);
+            this.groupBox10.Controls.Add(this.label84);
+            this.groupBox10.Controls.Add(this.label95);
+            this.groupBox10.Controls.Add(this.label69);
+            this.groupBox10.Controls.Add(this.label64);
+            this.groupBox10.Controls.Add(this.label61);
+            this.groupBox10.Controls.Add(this.label59);
+            this.groupBox10.Controls.Add(this.label49);
+            this.groupBox10.Controls.Add(this.label47);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Location = new System.Drawing.Point(8, 7);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(549, 319);
+            this.groupBox10.TabIndex = 30;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Expense Budget";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(32, 20);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(91, 12);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Sales Expenses";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(32, 43);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(25, 12);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "Tax";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(32, 65);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(81, 12);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "Other Utilities";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(32, 89);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(95, 12);
+            this.label59.TabIndex = 3;
+            this.label59.Text = "Rent or Mortage";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(32, 113);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(141, 12);
+            this.label61.TabIndex = 4;
+            this.label61.Text = "Maintenance and Repair";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(31, 136);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(50, 12);
+            this.label64.TabIndex = 5;
+            this.label64.Text = "Delivery";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(31, 159);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(77, 12);
+            this.label69.TabIndex = 6;
+            this.label69.Text = "Depreciation";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(314, 298);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(83, 12);
+            this.label72.TabIndex = 13;
+            this.label72.Text = "Total Expense";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(32, 251);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(61, 12);
+            this.label80.TabIndex = 11;
+            this.label80.Text = "Electricity";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(32, 227);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(49, 12);
+            this.label82.TabIndex = 10;
+            this.label82.Text = "Internet";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(32, 203);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(64, 12);
+            this.label84.TabIndex = 9;
+            this.label84.Text = "Telephone";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(32, 181);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(39, 12);
+            this.label95.TabIndex = 8;
+            this.label95.Text = "Loans";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.Location = new System.Drawing.Point(202, 250);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(54, 15);
+            this.label97.TabIndex = 24;
+            this.label97.Text = "Electricity";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Location = new System.Drawing.Point(202, 226);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(44, 15);
+            this.label98.TabIndex = 23;
+            this.label98.Text = "Internet";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.Location = new System.Drawing.Point(202, 202);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(58, 15);
+            this.label100.TabIndex = 22;
+            this.label100.Text = "Telephone";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(202, 180);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(37, 15);
+            this.label101.TabIndex = 21;
+            this.label101.Text = "Loans";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.Location = new System.Drawing.Point(201, 158);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(68, 15);
+            this.label102.TabIndex = 20;
+            this.label102.Text = "Depreciation";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.Location = new System.Drawing.Point(201, 135);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(47, 15);
+            this.label104.TabIndex = 19;
+            this.label104.Text = "Delivery";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.Location = new System.Drawing.Point(202, 112);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(125, 15);
+            this.label106.TabIndex = 18;
+            this.label106.Text = "Maintenance and Repair";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label107.Location = new System.Drawing.Point(202, 88);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(86, 15);
+            this.label107.TabIndex = 17;
+            this.label107.Text = "Rent or Mortage";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.Location = new System.Drawing.Point(202, 64);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(72, 15);
+            this.label109.TabIndex = 16;
+            this.label109.Text = "Other Utilities";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.Location = new System.Drawing.Point(202, 42);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(26, 15);
+            this.label110.TabIndex = 15;
+            this.label110.Text = "Tax";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.Location = new System.Drawing.Point(202, 19);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(86, 15);
+            this.label111.TabIndex = 14;
+            this.label111.Text = "Sales Expenses";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.Location = new System.Drawing.Point(422, 291);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(49, 21);
+            this.label112.TabIndex = 26;
+            this.label112.Text = "Other";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(85, 73);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(87, 12);
+            this.label74.TabIndex = 49;
+            this.label74.Text = "CRYSTAL REPORT";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(190, 296);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(87, 12);
+            this.label16.TabIndex = 93;
+            this.label16.Text = "CRYSTAL REPORT";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.Location = new System.Drawing.Point(150, 295);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(24, 12);
+            this.label96.TabIndex = 94;
+            this.label96.Text = "PDF";
+            // 
+            // lblmonth
+            // 
+            this.lblmonth.AutoSize = true;
+            this.lblmonth.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmonth.ForeColor = System.Drawing.Color.Purple;
+            this.lblmonth.Location = new System.Drawing.Point(14, 46);
+            this.lblmonth.Name = "lblmonth";
+            this.lblmonth.Size = new System.Drawing.Size(74, 31);
+            this.lblmonth.TabIndex = 145;
+            this.lblmonth.Text = "Sales";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.Location = new System.Drawing.Point(-2, 13);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(156, 27);
+            this.label113.TabIndex = 145;
+            this.label113.Text = "Current Month";
+            // 
+            // panel29
+            // 
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel29.Controls.Add(this.label113);
+            this.panel29.Controls.Add(this.lblmonth);
+            this.panel29.Location = new System.Drawing.Point(375, 12);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(158, 89);
+            this.panel29.TabIndex = 145;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.White;
+            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel30.Controls.Add(this.lblvari);
+            this.panel30.Controls.Add(this.label114);
+            this.panel30.Location = new System.Drawing.Point(413, 60);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(153, 83);
+            this.panel30.TabIndex = 153;
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.BackColor = System.Drawing.Color.White;
+            this.label114.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label114.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label114.Location = new System.Drawing.Point(66, 5);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(78, 23);
+            this.label114.TabIndex = 13;
+            this.label114.Text = "Variance";
+            // 
+            // lblvari
+            // 
+            this.lblvari.AutoSize = true;
+            this.lblvari.BackColor = System.Drawing.Color.White;
+            this.lblvari.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvari.Location = new System.Drawing.Point(26, 29);
+            this.lblvari.Name = "lblvari";
+            this.lblvari.Size = new System.Drawing.Size(122, 40);
+            this.lblvari.TabIndex = 13;
+            this.lblvari.Text = "10000";
             // 
             // btninvoice
             // 
@@ -4218,10 +4624,10 @@
             this.btninvoice.IdleFillColor = System.Drawing.Color.White;
             this.btninvoice.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.btninvoice.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btninvoice.Location = new System.Drawing.Point(50, 368);
+            this.btninvoice.Location = new System.Drawing.Point(107, 368);
             this.btninvoice.Margin = new System.Windows.Forms.Padding(5);
             this.btninvoice.Name = "btninvoice";
-            this.btninvoice.Size = new System.Drawing.Size(105, 41);
+            this.btninvoice.Size = new System.Drawing.Size(151, 41);
             this.btninvoice.TabIndex = 57;
             this.btninvoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btninvoice.Click += new System.EventHandler(this.btninvoice_Click);
@@ -4244,38 +4650,13 @@
             this.btncustomercopy.IdleFillColor = System.Drawing.Color.White;
             this.btncustomercopy.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.btncustomercopy.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncustomercopy.Location = new System.Drawing.Point(207, 368);
+            this.btncustomercopy.Location = new System.Drawing.Point(299, 368);
             this.btncustomercopy.Margin = new System.Windows.Forms.Padding(5);
             this.btncustomercopy.Name = "btncustomercopy";
             this.btncustomercopy.Size = new System.Drawing.Size(151, 41);
             this.btncustomercopy.TabIndex = 54;
             this.btncustomercopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btncustomercopy.Click += new System.EventHandler(this.btncustomercopy_Click);
-            // 
-            // bunifuThinButton217
-            // 
-            this.bunifuThinButton217.ActiveBorderThickness = 1;
-            this.bunifuThinButton217.ActiveCornerRadius = 20;
-            this.bunifuThinButton217.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton217.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton217.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton217.BackgroundImage")));
-            this.bunifuThinButton217.ButtonText = "Company Copy";
-            this.bunifuThinButton217.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton217.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton217.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.IdleBorderThickness = 1;
-            this.bunifuThinButton217.IdleCornerRadius = 20;
-            this.bunifuThinButton217.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton217.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton217.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton217.Location = new System.Drawing.Point(406, 368);
-            this.bunifuThinButton217.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton217.Name = "bunifuThinButton217";
-            this.bunifuThinButton217.Size = new System.Drawing.Size(151, 41);
-            this.bunifuThinButton217.TabIndex = 53;
-            this.bunifuThinButton217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btniconfirm
             // 
@@ -4659,6 +5040,16 @@
             this.btncconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btncconfirm.Click += new System.EventHandler(this.btncconfirm_Click);
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::inventory.Properties.Resources.text_icon;
+            this.pictureBox15.Location = new System.Drawing.Point(207, 245);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox15.TabIndex = 92;
+            this.pictureBox15.TabStop = false;
+            // 
             // piccus
             // 
             this.piccus.Location = new System.Drawing.Point(256, 105);
@@ -4697,7 +5088,7 @@
             // bunifuThinButton214
             // 
             this.bunifuThinButton214.Image = global::inventory.Properties.Resources._3;
-            this.bunifuThinButton214.Location = new System.Drawing.Point(140, 260);
+            this.bunifuThinButton214.Location = new System.Drawing.Point(140, 245);
             this.bunifuThinButton214.Name = "bunifuThinButton214";
             this.bunifuThinButton214.Size = new System.Drawing.Size(48, 48);
             this.bunifuThinButton214.TabIndex = 58;
@@ -4794,7 +5185,7 @@
             this.btndeleteSeized.IdleFillColor = System.Drawing.Color.White;
             this.btndeleteSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.btndeleteSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteSeized.Location = new System.Drawing.Point(131, 214);
+            this.btndeleteSeized.Location = new System.Drawing.Point(131, 203);
             this.btndeleteSeized.Margin = new System.Windows.Forms.Padding(5);
             this.btndeleteSeized.Name = "btndeleteSeized";
             this.btndeleteSeized.Size = new System.Drawing.Size(116, 41);
@@ -4820,7 +5211,7 @@
             this.btnaddSeized.IdleFillColor = System.Drawing.Color.White;
             this.btnaddSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.btnaddSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddSeized.Location = new System.Drawing.Point(8, 214);
+            this.btnaddSeized.Location = new System.Drawing.Point(8, 203);
             this.btnaddSeized.Margin = new System.Windows.Forms.Padding(5);
             this.btnaddSeized.Name = "btnaddSeized";
             this.btnaddSeized.Size = new System.Drawing.Size(116, 41);
@@ -4916,6 +5307,16 @@
             this.bunifuThinButton28.TabIndex = 32;
             this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton28.Click += new System.EventHandler(this.bunifuThinButton28_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::inventory.Properties.Resources.text_icon;
+            this.pictureBox14.Location = new System.Drawing.Point(102, 22);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox14.TabIndex = 48;
+            this.pictureBox14.TabStop = false;
             // 
             // pictureBox12
             // 
@@ -5212,12 +5613,48 @@
             this.btnchartgene.TabStop = false;
             this.btnchartgene.Click += new System.EventHandler(this.btnchartgene_Click);
             // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel31.BackgroundImage = global::inventory.Properties.Resources.icons8_percentage_48;
+            this.panel31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel31.Location = new System.Drawing.Point(425, 29);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(53, 47);
+            this.panel31.TabIndex = 20;
+            this.panel31.Paint += new System.Windows.Forms.PaintEventHandler(this.panel31_Paint);
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Generate";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton22.Location = new System.Drawing.Point(84, 274);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton22.TabIndex = 144;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Down;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(325, 29);
+            this.panel2.Location = new System.Drawing.Point(223, 29);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(53, 47);
             this.panel2.TabIndex = 19;
@@ -5227,7 +5664,7 @@
             this.panel21.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel21.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Up;
             this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel21.Location = new System.Drawing.Point(70, 29);
+            this.panel21.Location = new System.Drawing.Point(20, 29);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(53, 47);
             this.panel21.TabIndex = 151;
@@ -5438,6 +5875,8 @@
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.panel11.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tble)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblb)).EndInit();
@@ -5458,8 +5897,13 @@
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
+            this.bunifuCards1.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -5468,6 +5912,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).EndInit();
@@ -5476,6 +5921,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnseized)).EndInit();
@@ -5650,7 +6096,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtino;
         private Bunifu.Framework.UI.BunifuThinButton2 btndeleteSeized;
         private Bunifu.Framework.UI.BunifuThinButton2 btncustomercopy;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton217;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.GroupBox groupBox18;
@@ -5786,7 +6231,6 @@
         private System.Windows.Forms.PictureBox puty;
         private System.Windows.Forms.PictureBox bunifuThinButton21;
         private System.Windows.Forms.PictureBox btngeneratesticker;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox bunifuThinButton214;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtaddy;
         private System.Windows.Forms.PictureBox pictureBox29;
@@ -5822,5 +6266,44 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Label label108;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards1;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label lblmonth;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Label lblvari;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Panel panel31;
     }
 }
