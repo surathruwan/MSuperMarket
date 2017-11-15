@@ -43,9 +43,11 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="ExcelLibrary">
       <HintPath>..\..\..\..\..\Desktop\ExcelLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="itextsharp, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dll\itextsharp.dll</HintPath>
@@ -67,6 +69,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -95,17 +98,17 @@
     <Compile Include="AdviceOfDispatch.designer.cs">
       <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="bankrep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bankrep.Designer.cs">
+      <DependentUpon>bankrep.cs</DependentUpon>
+    </Compile>
     <Compile Include="categoryform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="categoryform.Designer.cs">
       <DependentUpon>categoryform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="debtors.cs">
       <SubType>Form</SubType>
@@ -312,6 +315,12 @@
     <Compile Include="Vendor.designer.cs">
       <DependentUpon>Vendor.cs</DependentUpon>
     </Compile>
+    <Compile Include="VendorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorReport.designer.cs">
+      <DependentUpon>VendorReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebCam.cs" />
     <EmbeddedResource Include="addform.resx">
       <DependentUpon>addform.cs</DependentUpon>
@@ -319,15 +328,14 @@
     <EmbeddedResource Include="AdviceOfDispatch.resx">
       <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bankrep.resx">
+      <DependentUpon>bankrep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="barcode.resx">
       <DependentUpon>barcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="categoryform.resx">
       <DependentUpon>categoryform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="debtors.resx">
       <DependentUpon>debtors.cs</DependentUpon>
@@ -421,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vendor.resx">
       <DependentUpon>Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorReport.resx">
+      <DependentUpon>VendorReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
