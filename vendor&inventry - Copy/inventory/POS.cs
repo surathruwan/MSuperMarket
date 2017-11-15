@@ -17,6 +17,8 @@ namespace inventory
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+
+         
             int v = Session.getUser();
             if (v == 0)
             {
@@ -419,59 +421,139 @@ namespace inventory
         }
 
 
-        //Calculate Balance
+        //Calculate Balance cash
         public void BalanceCal()
         {
             
             try
             {
-
-                double cash = Double.Parse(txtCash.Text);
-                double total = Double.Parse(lblAmount.Text);
-                double point = Double.Parse(txtPoints.Text);
-                double remainPoints = Double.Parse(lblPoint.Text);
-                double balance;
-                if ((string.IsNullOrWhiteSpace(txtPoints.Text)))
+                double Balance;
+                double cash = 0;
+                double points = 0;
+                if (!double.TryParse(this.txtCash.Text, out cash))
                 {
-                    MessageBox.Show("First you need to verify Loyality account", "Verify", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
+                    //MessageBox.Show(
+                    //    //    String.Format(
+                    //    //        "Bad input from this.Amount.text: \"{0}\"",
+                    //    //        this.txtCash.Text
+                    //    //    )
+                    //    //);
+                }
+                double total = 0;
+                if (!double.TryParse(this.lblAmount.Text, out total))
+                {
+                
                 }
 
-                else if (!(string.IsNullOrWhiteSpace(txtPoints.Text))&& !(string.IsNullOrWhiteSpace(txtCash.Text)))
+                if (!double.TryParse(this.txtPoints.Text, out points))
                 {
-                    balance =  total - (cash + point);
-                    lblBalanceAmount1.Text = balance.ToString("0.00");
 
                 }
-                else if (!(string.IsNullOrWhiteSpace(txtPoints.Text)) && (string.IsNullOrWhiteSpace(txtCash.Text)))
+                if (!(string.IsNullOrWhiteSpace(txtPoints.Text)))
                 {
-                    balance = (point) - total;
-                    lblBalanceAmount1.Text = balance.ToString("0.00");
-
+                    Balance = (cash + points) - total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
                 }
-
                 else
                 {
-                    balance = cash - total;
-                    lblBalanceAmount1.Text = balance.ToString("0.00");
+                    Balance = cash- total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
                 }
 
-                //if (balance >= 0)
-                //{
-                //    lblBalanceAmount1.Text = balance.ToString("0.00");
-                //}
-                //else
-                //{
-                //    lblBalanceAmount1.Text = "0.00";
-                //}
-                
-               
             }
             catch (Exception ex)
             {
                 //MessageBox.Show(ex.Message);
 
             }
+        }
+
+        
+
+
+        //Calculate Balance points
+        public void BalanceCalPoints()
+        {
+
+            try
+            {
+                   
+
+                    double Balance;
+                
+                double points = 0;
+                double total = 0;
+                double cash = 0; 
+                if (!double.TryParse(this.txtPoints.Text, out points))
+                {
+                    
+                }
+                
+                if (!double.TryParse(this.lblAmount.Text, out total))
+                {
+
+                }
+                if (!double.TryParse(this.txtCash.Text, out cash))
+                {
+
+                }
+
+                if ((string.IsNullOrWhiteSpace(lblPoint.Text)))
+                {
+                   // txtPoints.Text = "";
+                    MessageBox.Show("Before using the Loyality points user needs to verify the account");
+
+                }
+                if (!(string.IsNullOrWhiteSpace(txtCash.Text)))
+                {
+                    Balance = (cash + points) - total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
+                }
+                ///// need more implementation 
+                //check enogh points
+                else
+                {
+                    Balance = points - total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+
+            }
+
+
+
+        }
+
+        //total Amount Changed
+        public void totalChanged()
+        {
+            double Balance;
+
+            double points = 0;
+            double total = 0;
+            double cash = 0;
+           
+            if (!double.TryParse(this.lblAmount.Text, out total))
+            {
+
+            }
+            if (!double.TryParse(this.txtPoints.Text, out points))
+            {
+
+            }
+            if (!double.TryParse(this.txtCash.Text, out cash))
+            {
+
+            }
+
+            double updateBalance = (points + cash) - total;
+            lblBalanceAmount1.Text = updateBalance.ToString("0.00");
+
         }
 
         //Validation
@@ -864,7 +946,8 @@ namespace inventory
 
         private void txtCash_TextChanged(object sender, EventArgs e)
         {
-            BalanceCal();
+             BalanceCal();
+           
         }
 
         private void txtCode_KeyPress(object sender, KeyPressEventArgs e)
@@ -1025,7 +1108,7 @@ namespace inventory
             {
                     int height = (cart.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "Canon iP2800 series"; //Specify the printer to use.
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 16"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();
@@ -1422,6 +1505,58 @@ namespace inventory
         {
 
         }
+
+        private void txtPoints_TextChanged(object sender, EventArgs e)
+        {
+            BalanceCalPoints();
+        }
+
+        private void txtCash_KeyUp(object sender, KeyEventArgs e)
+        {
+           
+
+
+               
+                
+            }
+
+        private void lblAmount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double cash = 0;
+                double points = 0;
+                if (!double.TryParse(this.txtCash.Text, out cash))
+                {
+
+                }
+                if (!double.TryParse(this.txtPoints.Text, out points))
+                {
+
+                }
+
+
+                if (!(string.IsNullOrWhiteSpace(txtCash.Text)) || (!(string.IsNullOrWhiteSpace(txtPoints.Text))))
+                {
+                    totalChanged();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void lblName_TextChanged(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(lblName.Text)))
+            {
+                txtPoints.Enabled = true;
+            }
+        }
     }
+
+        
     }
+    
 

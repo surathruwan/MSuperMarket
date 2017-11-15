@@ -1,0 +1,12 @@
+	 	 MADUSHA SUPERMARKET 	 	
+--------------------------------------------------
+8:51:08 PM	 	Tuesday, November 14, 2017
+Cashier: Mr.Upali
+
+	Item Name	 Item Code  Price  Quantity 
+
+	Iron 3105	 50001    12000      3    
+--------------------------------------------------
+	 Total Amount 	 	 	
+	 Down Payment 	 	 	
+	 Balance 	 	 	
