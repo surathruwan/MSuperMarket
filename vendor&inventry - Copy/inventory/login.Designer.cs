@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -41,13 +43,11 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -68,6 +68,33 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(502, 31);
             this.panel2.TabIndex = 3;
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.ExitButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
+            this.ExitButton.ImageActive = null;
+            this.ExitButton.Location = new System.Drawing.Point(462, 0);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(20, 31);
+            this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ExitButton.TabIndex = 13;
+            this.ExitButton.TabStop = false;
+            this.ExitButton.Zoom = 10;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(103, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(297, 17);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Madusha Supermarket Management System";
             // 
             // pictureBox2
             // 
@@ -141,6 +168,8 @@
             this.pw.Size = new System.Drawing.Size(281, 26);
             this.pw.TabIndex = 16;
             this.pw.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.pw.OnValueChanged += new System.EventHandler(this.pw_OnValueChanged);
+            this.pw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pw_KeyDown);
             // 
             // bunifuCustomLabel28
             // 
@@ -198,33 +227,6 @@
             this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton211.Click += new System.EventHandler(this.bunifuThinButton211_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(103, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 17);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Madusha Supermarket Management System";
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.ExitButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
-            this.ExitButton.ImageActive = null;
-            this.ExitButton.Location = new System.Drawing.Point(462, 0);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(20, 31);
-            this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ExitButton.TabIndex = 13;
-            this.ExitButton.TabStop = false;
-            this.ExitButton.Zoom = 10;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,10 +246,10 @@
             this.Text = "login";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

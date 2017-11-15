@@ -73,5 +73,16 @@ namespace inventory
         {
             this.Close();
         }
+
+        private void pw_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pw_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                bunifuThinButton211.Select();
+        }
     }
 }
