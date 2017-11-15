@@ -16,7 +16,7 @@ namespace inventory
         public MainForm()
         {
             InitializeComponent();
-
+           
             timer1.Start();
             panel4.Controls.Clear();
             madushaTemp.TestForm VM = new madushaTemp.TestForm();

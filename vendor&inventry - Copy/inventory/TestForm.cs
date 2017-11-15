@@ -40,6 +40,7 @@ namespace madushaTemp
         int a,a1;
         int b;
         int c;
+        double loss=0;
 
 
 
@@ -47,12 +48,12 @@ namespace madushaTemp
         {
             InitializeComponent();
             int v = Session.getUser();
-            if (v == 1)
+            if (v == 0)
             {
               
 
             }
-            else if (v == 2)
+            else if (v == 1)
             {
                 //button2.Enabled = false;
                 tabControl1.TabPages.Remove(tabPage4);
@@ -65,7 +66,7 @@ namespace madushaTemp
                 btnprintrecep.Enabled = false;
                 tblei.Enabled = false;
             }
-            else {
+            else if(v  == 2){
                 tabControl1.TabPages.Remove(tabPage1);
                 tabControl1.TabPages.Remove(tabPage4);
 
@@ -79,7 +80,7 @@ namespace madushaTemp
             tblseizedhide.Visible = false;
             tblbankhid.Visible = false;
             tblloan.Visible = false;
-
+            tble.Visible = false;
             tblploan.Visible = false;
             tblin.Visible = false;
             tblex.Visible = false;
@@ -87,7 +88,8 @@ namespace madushaTemp
             tbltax.Visible = false;
             tblsal.Visible = false;
             tbldeli.Visible = false;
-
+            tblc.Visible = false;
+            tblb.Visible = false;
             //setting default values
             cmbyear.SelectedIndex = 0;
             cmbprepare.SelectedIndex = 0;
@@ -96,8 +98,7 @@ namespace madushaTemp
             cmdbranch.SelectedIndex = 0;
             cmdaccno.SelectedIndex = 0;
             cmbinex.SelectedIndex = 0;
-            cmbyearselect.SelectedIndex = 0;
-            cmbmonthselect.SelectedIndex = 0;
+          
 
             //sliding panel
             PW = Spanel.Width;
@@ -118,7 +119,7 @@ namespace madushaTemp
             tableLoadDeli();
             tableLoadBankAll();
             tableLoademplo();
-
+            tableLoadCash();
 
             tableLoadBank();
             tableLoadEI();
@@ -146,11 +147,14 @@ namespace madushaTemp
             seizedlblAddDeleteCount();
             BankAddDeleteCount();
 
+            Profit();
+            Tax();
+            Bankloan();
+
             radbnpa.Checked = true;
             radsumm.Checked = true;
             radexp.Checked = true;
-            radgenchat.Checked = true;
-            radfin.Checked = true;
+            
             radbnpa.Checked = true;
             tblinssummary.Visible = false;
 
@@ -184,6 +188,10 @@ namespace madushaTemp
 
             ToolTip n9 = new ToolTip();
             n9.SetToolTip(pictureBox2, "Generate Chart");
+
+
+           
+            los.Text = loss.ToString()+".00";
 
         }
         public void ConvertText()
@@ -392,14 +400,19 @@ namespace madushaTemp
 
         }
 
-        public void chartLoadProLosBar()
-        {
-            chart1.Series["Type"].Points.Clear();
-            chart1.Visible = true;
-            
        
+
+
+        
+
+        public void chartLoadProLosBar1()
+        {
+            chart1.Series["orderid"].Points.Clear();
+            chart1.Visible = true;
+
+
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlCommand cmd = new MySqlCommand("select * from supermarket.incomeexpense ;", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from supermarket.installments ;", conn);
             MySqlDataReader myR;
             try
             {
@@ -408,7 +421,7 @@ namespace madushaTemp
 
                 while (myR.Read())
                 {
-                    this.chart1.Series["Type"].Points.AddXY(myR.GetString("type"), myR.GetInt32("amount"));
+                    this.chart1.Series["orderid"].Points.AddXY(myR.GetString("orderid"), myR.GetInt32("ivalue"));
                 }
 
 
@@ -423,12 +436,16 @@ namespace madushaTemp
 
         }
 
-        public void chartLoadProLosPie()
+
+
+       
+
+        public void chartLoadProLosPie1()
         {
-            chart3.Series["Type"].Points.Clear();
+            chart3.Series["orderid"].Points.Clear();
             chart3.Visible = true;
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlCommand cmd = new MySqlCommand("select * from supermarket.incomeexpense ;", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from supermarket.installments ;", conn);
             MySqlDataReader myR;
             try
             {
@@ -437,7 +454,7 @@ namespace madushaTemp
 
                 while (myR.Read())
                 {
-                    this.chart3.Series["Type"].Points.AddXY(myR.GetString("type"), myR.GetInt32("amount"));
+                    this.chart3.Series["orderid"].Points.AddXY(myR.GetString("orderid"), myR.GetInt32("ivalue"));
                 }
 
 
@@ -451,8 +468,6 @@ namespace madushaTemp
 
 
         }
-
-      
 
         //tab1 tables
         public void tableLoadItems()
@@ -910,6 +925,33 @@ namespace madushaTemp
                 BindingSource bsource = new BindingSource();
                 bsource.DataSource = tab;
                 tblb.DataSource = bsource;
+                sda.Update(tab);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        public void tableLoadCash()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select sum(total) as 'Cash In Hand ' from supermarket.retreceipt ;", conn);
+            
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+                DataTable tab = new DataTable();
+                sda.Fill(tab);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = tab;
+                tblc.DataSource = bsource;
                 sda.Update(tab);
 
                 conn.Close();
@@ -2755,9 +2797,12 @@ namespace madushaTemp
             prg.Alignment = Element.ALIGN_CENTER;
             prg.Add(new Chunk("Seized Goods", font5));
             doc.Add(prg);
-
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -2827,14 +2872,14 @@ namespace madushaTemp
         private void pictureBox28_Click(object sender, EventArgs e)
         {
             cmbyear.Items.Add(txtaddy.Text);
-            cmbyearselect.Items.Add(txtaddy.Text);
+           
             txtaddy.Text = "";
         }
 
         private void pictureBox29_Click(object sender, EventArgs e)
         {
             cmbyear.Items.Remove(txtaddy.Text);
-            cmbyearselect.Items.Remove(txtaddy.Text);
+         
             txtaddy.Text = "";
         }
 
@@ -2939,21 +2984,30 @@ namespace madushaTemp
 
         private void btnchartgene_Click(object sender, EventArgs e)
         {
-            if (cmbchart.SelectedIndex==0)
+            try
             {
-                chart3.Visible = false;
-                
-                chartLoadProLosBar();
+                if (cmbchart.SelectedIndex == 0)
+                {
+                    chart3.Visible = false;
+
+                    chartLoadProLosBar1();
 
 
+                }
+                else if (cmbchart.SelectedIndex == 1)
+                {
+                    chart1.Visible = false;
+                    chart1.Series["orderid"].Points.Clear();
+                    chartLoadProLosPie1();
+
+                }
             }
-            else if(cmbchart.SelectedIndex == 1)
+            catch (Exception)
             {
-                chart1.Visible = false;
-                chart1.Series["Type"].Points.Clear();
-                chartLoadProLosPie();
 
+                MessageBox.Show("Chart is already generated");
             }
+           
 
             
         }
@@ -2987,8 +3041,13 @@ namespace madushaTemp
             prg.Add(new Chunk("Unpaid List", font5));
             doc.Add(prg);
 
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -3211,8 +3270,13 @@ namespace madushaTemp
             prg.Add(new Chunk("Unpaid List", font5));
             doc.Add(prg);
 
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -3286,97 +3350,18 @@ namespace madushaTemp
 
         private void bunifuThinButton230_Click(object sender, EventArgs e)
         {
-            try { 
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aAnnualReport.pdf", FileMode.Create));
-            doc.Open();
-
-           // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //Add border to page
-            PdfContentByte content = w.DirectContent;
-            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
-            rectangle.Left += doc.LeftMargin - 5;
-            rectangle.Right -= doc.RightMargin - 5;
-            rectangle.Top -= doc.TopMargin - 22;
-            rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLACK);
-            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
-            content.Stroke();
-
-
-            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLACK);
-            Paragraph prg = new Paragraph();
-            prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Annual Financial Report", font5));
-            doc.Add(prg);
-
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-            Paragraph prg1 = new Paragraph();
-            prg1.Alignment = Element.ALIGN_RIGHT;
-            Paragraph prg2 = new Paragraph();
-            prg2.Alignment = Element.ALIGN_RIGHT;
-            Paragraph prg3 = new Paragraph();
-            prg3.Alignment = Element.ALIGN_RIGHT;
-            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
-            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
-            prg3.Add(new Chunk("Year: " + cmbyear.Text, font15));
-
-            doc.Add(prg1);
-            doc.Add(prg2);
-
-
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p);
-
-            PdfPTable table = new PdfPTable(tblinscust.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < tblinscust.Columns.Count; j++)
-            {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tblinscust.Columns[j].HeaderText.ToUpper(), fonth));
-                table.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            table.HeaderRows = 1;
-
-
-            //add actual rows from grid to table
-            for (int i = 0; i < tblinscust.Rows.Count; i++)
-            {
-                table.WidthPercentage = 100;
-
-                for (int k = 0; k < tblinscust.Columns.Count; k++)
-                {
-                    if (tblinscust[k, i].Value != null)
-                    {
-
-                        table.AddCell(new Phrase(tblinscust[k, i].Value.ToString()));
-                    }
+            try {
+                if (cmbyear.Text=="2017") {
+                    financial_report re = new financial_report(cmbyear.Text);
+                    re.Show();
+                }
+                else {
+                    MessageBox.Show("Annual Statement is not available for selected year!","",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
 
                 }
 
-
-            }
-
-            //add out table
-            doc.Add(table);
-
-            doc.Close();
-
-            System.Diagnostics.Process.Start(@"aAnnualReport.pdf");
+            
+            
         }
          catch (Exception ex)
             {
@@ -3417,9 +3402,13 @@ namespace madushaTemp
             prg.Alignment = Element.ALIGN_CENTER;
             prg.Add(new Chunk("Loan Details", font5));
             doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
 
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
             Paragraph prg1 = new Paragraph();
             prg1.Alignment = Element.ALIGN_RIGHT;
             Paragraph prg2 = new Paragraph();
@@ -3515,8 +3504,13 @@ namespace madushaTemp
             prg.Add(new Chunk("Assets and Liabilities", font5));
             doc.Add(prg);
 
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
             iTextSharp.text.Font font151 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 21, BaseColor.BLACK);
 
             Paragraph prg1 = new Paragraph();
@@ -3550,9 +3544,9 @@ namespace madushaTemp
                 Paragraph p3 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
                 doc.Add(p3);
 
-                //line separator
-                Paragraph q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(q);
+            //    //line separator
+            //    Paragraph q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            //doc.Add(q);
 
             PdfPTable table = new PdfPTable(tblb.Columns.Count);
 
@@ -3578,6 +3572,7 @@ namespace madushaTemp
             for (int i = 0; i < tblb.Rows.Count; i++)
             {
                 table.WidthPercentage = 45;
+                    
 
                 for (int k = 0; k < tblb.Columns.Count; k++)
                 {
@@ -3595,9 +3590,52 @@ namespace madushaTemp
             //add out table
             doc.Add(table);
 
+               
+
+                Paragraph p3q1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p3q1);
+
+
+                PdfPTable tablet1 = new PdfPTable(tblc.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fontht1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
 
 
 
+                for (int j = 0; j < tblc.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblc.Columns[j].HeaderText.ToUpper(), fontht1));
+                    tablet1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tablet1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblc.Rows.Count; i++)
+                {
+                    tablet1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblc.Columns.Count; k++)
+                    {
+                        if (tblc[k, i].Value != null)
+                        {
+
+                            tablet1.AddCell(new Phrase(tblc[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(tablet1);
 
 
 
@@ -3605,20 +3643,149 @@ namespace madushaTemp
 
 
                 //start 2nd
-                Paragraph pq = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-                doc.Add(pq);
-
-
                 iTextSharp.text.Font font3q = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
                 Paragraph prg3q = new Paragraph();
+                Paragraph pq1 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(pq1);
+
+
+                iTextSharp.text.Font font3q1 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 15, BaseColor.MAGENTA);
+                Paragraph prg3q1 = new Paragraph();
                 prg3q.Alignment = Element.ALIGN_LEFT;
                 prg3q.Add(new Chunk("Liabilities", font3q));
                 doc.Add(prg3q);
+               
+                Paragraph p31 = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p31);
+                PdfPTable tabletq = new PdfPTable(tble.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonthtq = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tble.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tble.Columns[j].HeaderText.ToUpper(), fonthtq));
+                    tabletq.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tabletq.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tble.Rows.Count; i++)
+                {
+                    tabletq.WidthPercentage = 45;
+
+                    for (int k = 0; k < tble.Columns.Count; k++)
+                    {
+                        if (tble[k, i].Value != null)
+                        {
+
+                            tabletq.AddCell(new Phrase(tble[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(tabletq);
+
                 Paragraph p3q = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
                 doc.Add(p3q);
 
 
+                PdfPTable tablet = new PdfPTable(tbltax.Columns.Count);
 
+                //add headers from gridview to table
+                iTextSharp.text.Font fontht = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tbltax.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tbltax.Columns[j].HeaderText.ToUpper(), fontht));
+                    tablet.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                tablet.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tbltax.Rows.Count; i++)
+                {
+                    tablet.WidthPercentage = 45;
+
+                    for (int k = 0; k < tbltax.Columns.Count; k++)
+                    {
+                        if (tbltax[k, i].Value != null)
+                        {
+
+                            tablet.AddCell(new Phrase(tbltax[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(tablet);
+
+
+                Paragraph pp = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.WHITE, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(pp);
+                PdfPTable ta1 = new PdfPTable(tblsal.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font f = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblsal.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblsal.Columns[j].HeaderText.ToUpper(), f));
+                    ta1.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                ta1.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblsal.Rows.Count; i++)
+                {
+                    ta1.WidthPercentage = 45;
+
+                    for (int k = 0; k < tblsal.Columns.Count; k++)
+                    {
+                        if (tblsal[k, i].Value != null)
+                        {
+
+                            ta1.AddCell(new Phrase(tblsal[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(ta1);
 
                 doc.Close();
 
@@ -4071,10 +4238,137 @@ namespace madushaTemp
 
         }
 
+        private void pictureBox23_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            chartLoadIExp();
+            try
+            {
+                chartLoadIExp();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Chart is already generated");
+            }
+            
         }
+
+        public void Profit()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            string query = "select sum(Amount) as tot from supermarket.instcard ";
+
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+
+            MySqlDataReader myR;
+            try
+            {
+                conn.Open();
+                myR = cmd.ExecuteReader();
+
+                if (myR.Read())
+                {
+
+                   string h= myR["tot"].ToString();
+                    double p1 = Convert.ToDouble(h);
+                    int g1 = (int)p1;
+                    lblpro.Text = g1.ToString()+".00";
+
+                }
+
+                conn.Close();
+            }
+            catch (Exception r)
+            {
+
+
+                MessageBox.Show(r.Message);
+            }
+        }
+
+
+        public void Tax()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            string query = "select sum(amount) as tot from supermarket.incomeexpense where type='Tax'";
+
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+
+            MySqlDataReader myR;
+            try
+            {
+                conn.Open();
+                myR = cmd.ExecuteReader();
+
+                if (myR.Read())
+                {
+
+                   string tax = myR["tot"].ToString();
+                    double p1 = Convert.ToDouble(tax);
+                   loss += p1;
+                   
+
+
+                }
+
+                conn.Close();
+            }
+            catch (Exception r)
+            {
+
+
+                MessageBox.Show(r.Message);
+            }
+        }
+
+        public void Bankloan()
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            string query = "select sum(lamount) as tot from supermarket.bank where status='Unpaid' and ldate > 2017-01-01 ";
+
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+
+            MySqlDataReader myR;
+            try
+            {
+                conn.Open();
+                myR = cmd.ExecuteReader();
+
+                if (myR.Read())
+                {
+
+                    string tax = myR["tot"].ToString();
+                    double p1 = Convert.ToDouble(tax);
+                    loss += p1-707000;
+
+
+
+                }
+
+                conn.Close();
+            }
+            catch (Exception r)
+            {
+
+
+                MessageBox.Show(r.Message);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
     }
     

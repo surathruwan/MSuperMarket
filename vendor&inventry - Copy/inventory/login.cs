@@ -63,7 +63,7 @@ namespace inventory
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
         }
          
@@ -72,6 +72,17 @@ namespace inventory
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pw_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pw_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                bunifuThinButton211.Select();
         }
     }
 }

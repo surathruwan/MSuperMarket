@@ -35,22 +35,36 @@ namespace inventory
                     {
                         userType = dr[0].ToString();
                     }
-                    if (userType == "admin")
+                    switch (userType)
                     {
-
-                        a = 1;
-
+                        case "admin":
+                            a = 0;
+                            break;
+                        case "cashier":
+                            a = 1;
+                            break;
+                        case "doperator":
+                            a = 2;
+                            break;
                     }
-                    else if (userType == "cashier")
-                    {
-                        a = 2;
-                    }
-                    else { a = 3; }
                 }
+                //if (userType == "admin")
+                //{
+
+                //    a = 0;
+
+                //}
+                //else if (userType == "cashier")
+                //{
+                //    a = 2;
+                //}
+                //else if (userType == "doperator")
+                //{ a = 1 ; }
+
                 catch (Exception o)
                 {
-                    
-                    MessageBox.Show(o.Message);
+
+                    //MessageBox.Show(o.Message);
                 }
 
 
@@ -67,20 +81,31 @@ namespace inventory
             {
                 return a;
             }
-            else { return a; }
+            else if (userType == "doperator")
+            {
+                return a;
+            }
+
+            else { return 0; }
 
         }
 
         public static string UserLabel()
         {
             if (userType == "admin")
-            { return "admin"; }
+            {
+                return "admin";
+            }
             else if (userType == "cashier")
             {
                 return "cashier";
             }
-            else { return "doperator"; }
-
+            else if(userType == "doperator")
+            { 
+                    return "doperator";
+            }
+            else
+            return null;
         }
 
         public static void windUpSession()
