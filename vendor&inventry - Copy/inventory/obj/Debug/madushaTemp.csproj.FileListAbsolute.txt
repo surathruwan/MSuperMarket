@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -54,10 +53,6 @@ C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 >>>>>>> 2c6f4305f3dd6171fa0a18ba2025359c69556202
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
@@ -114,10 +109,7 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
-<<<<<<< HEAD
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
-=======
-=======
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -196,8 +188,6 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
-<<<<<<< HEAD
-=======
 >>>>>>> 37639046b681a71e416b54059c57ea198bedccbb
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
@@ -343,6 +333,5 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 >>>>>>> 75cfa1e8d94b1c1c8c64eb403b34cbd3797d00fa
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.VendorReport.resources
 >>>>>>> 23a4e2d98830946a9634b66cebe3897dae11d10e
->>>>>>> c4b0d238084a8cbe733512bf88494d5c7d25f7ce
 >>>>>>> 36a2ecca69f797e9ec6504cf91ac5bf504ce6dd2
->>>>>>> 2c6f4305f3dd6171fa0a18ba2025359c69556202
+E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.bankrep.resources
