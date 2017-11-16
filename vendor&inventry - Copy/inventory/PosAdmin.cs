@@ -118,7 +118,7 @@ namespace inventory
         //LoadChartInvoiceWise
         public void LoadChartInvoice()
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
 
             string sInv = txtStartIn.Text;
             string eInv = txtEndIn.Text;
@@ -1930,7 +1930,7 @@ namespace inventory
             }
             else
             {
-                MessageBox.Show("Please Enter Customer Information");   
+                MessageBox.Show("P");
             }
         }
     }
