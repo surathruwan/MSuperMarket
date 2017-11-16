@@ -4464,6 +4464,11 @@ namespace madushaTemp
             ba.Show();
         }
 
+        private void label103_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void Bankloan()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
