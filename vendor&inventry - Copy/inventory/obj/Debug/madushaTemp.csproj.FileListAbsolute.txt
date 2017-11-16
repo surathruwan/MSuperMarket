@@ -56,6 +56,14 @@ C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+<<<<<<< HEAD
+C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.adduser.resources
+C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\FlashControlV71.dll
+=======
 C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -310,3 +318,4 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 >>>>>>> 9e94ff2600dfd559b433ea5ec042723f46bec6db
 >>>>>>> 44bd9241025d09c5690f6b0d737c5f2963320e01
 >>>>>>> 82a7cb5844291e7e0c23ab2eb0510468dedf8d5b
+>>>>>>> 7a4c0bb5757bb84c2c26f744d1670b36eef8513e
