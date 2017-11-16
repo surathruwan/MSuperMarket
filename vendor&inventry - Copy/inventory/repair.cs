@@ -18,16 +18,11 @@ using System.Net;
 using System.IO;
 using System.Drawing.Printing;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
 namespace inventory
 {
 
     public partial class repair : Form
     {
-       
         string itemcode;
         string i;
         string id;
@@ -778,17 +773,10 @@ namespace inventory
             string _hh = _now.Hour.ToString();
             string _min = _now.Minute.ToString();
             string _ss = _now.Second.ToString();
-<<<<<<< HEAD
 
             string _uniqueId = _dd + _hh + _mm + _min + _ss + _yy;
             return _uniqueId;
 
-=======
-
-            string _uniqueId = _dd + _hh + _mm + _min + _ss + _yy;
-            return _uniqueId;
-
->>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
         }
         private void bunifuThinButton216_Click(object sender, EventArgs e)
         {
@@ -1970,21 +1958,12 @@ namespace inventory
 
                     }
 
-<<<<<<< HEAD
 
                 }
 
                 //add out table
                 doc.Add(table);
 
-=======
-
-                }
-
-                //add out table
-                doc.Add(table);
-
->>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
                 doc.Close();
 
                 System.Diagnostics.Process.Start(@"ItemList.pdf");
@@ -2136,7 +2115,6 @@ namespace inventory
             {
                 string tot = txtt4total.Text.ToString();
                 string advance = txtt4advance.Text.ToString();
-<<<<<<< HEAD
 
                 double tot1 = double.Parse(tot);
                 double adv = double.Parse(advance);
@@ -2148,19 +2126,6 @@ namespace inventory
             catch (Exception)
             {
 
-=======
-
-                double tot1 = double.Parse(tot);
-                double adv = double.Parse(advance);
-
-                double subtot = tot1 - adv;
-
-                txtt4balance.Text = subtot.ToString();
-            }
-            catch (Exception)
-            {
-
->>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
                
             }
         }
@@ -2174,19 +2139,11 @@ namespace inventory
 
                 double ser = Convert.ToDouble(servicecharge);
                 double spa = Convert.ToDouble(spareparts);
-<<<<<<< HEAD
 
                 double tot = ser + spa;
 
                 txtt4total.Text = tot.ToString();
 
-=======
-
-                double tot = ser + spa;
-
-                txtt4total.Text = tot.ToString();
-
->>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
             }
             catch (Exception)
             {
@@ -2251,21 +2208,12 @@ namespace inventory
 
                 string balance = txtt4balance.Text.ToString();
                 string discount = txtt4discount.Text.ToString();
-<<<<<<< HEAD
 
                 double bal = double.Parse(balance);
                 double dis = double.Parse(discount);
 
                 double grandtot = bal - dis;
 
-=======
-
-                double bal = double.Parse(balance);
-                double dis = double.Parse(discount);
-
-                double grandtot = bal - dis;
-
->>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
                 txtt4grandtotal.Text = grandtot.ToString();
             }
             catch (Exception)
