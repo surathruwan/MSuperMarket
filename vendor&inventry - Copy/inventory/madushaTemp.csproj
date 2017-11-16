@@ -116,6 +116,18 @@
       <DependentUpon>bankstat.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Barcode1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Barcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Barcodeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcodeform.Designer.cs">
+      <DependentUpon>Barcodeform.cs</DependentUpon>
+    </Compile>
     <Compile Include="categoryform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +145,24 @@
     </Compile>
     <Compile Include="deleteform.Designer.cs">
       <DependentUpon>deleteform.cs</DependentUpon>
+    </Compile>
+    <Compile Include=".cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="drep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="driverReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driverReport.Designer.cs">
+      <DependentUpon>driverReport.cs</DependentUpon>
     </Compile>
     <Compile Include="EditAttendance.cs">
       <SubType>Form</SubType>
@@ -371,11 +401,29 @@
     <EmbeddedResource Include="barcode.resx">
       <DependentUpon>barcode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Barcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Barcode1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcodeform.resx">
+      <DependentUpon>Barcodeform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="categoryform.resx">
       <DependentUpon>categoryform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="debtors.resx">
       <DependentUpon>debtors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include=".rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>drep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driverReport.resx">
+      <DependentUpon>driverReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditAttendance.resx">
       <DependentUpon>EditAttendance.cs</DependentUpon>
