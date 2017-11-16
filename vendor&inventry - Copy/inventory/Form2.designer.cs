@@ -278,6 +278,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.bunifuCustomLabel13);
             this.splitContainer1.Panel1.Controls.Add(this.bunifuCustomLabel11);
             this.splitContainer1.Panel1.Controls.Add(this.bunifuCustomLabel10);
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 

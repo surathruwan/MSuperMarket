@@ -4279,6 +4279,11 @@ namespace madushaTemp
 
         }
 
+        private void label77_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             chartLoadIExp();
