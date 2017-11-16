@@ -262,13 +262,13 @@ namespace madushaTemp
 
             string destination = txtdesti.Text;
 
-            if (String.IsNullOrEmpty(txtsource.Text) || String.IsNullOrWhiteSpace(txtdesti.Text))
-            {
-                MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            //if (String.IsNullOrEmpty(txtsource.Text) || String.IsNullOrWhiteSpace(txtdesti.Text))
+            //{
+            //    MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
 
-            Regexp(@"^[a-zA-Z]$", txtsource, pictureBox6, "source");
-            Regexp(@"^[a-zA-Z]$", txtdesti, pictureBox7, "destination");
+            //Regexp(@"^[a-zA-Z]$", txtsource, pictureBox6, "source");
+            //Regexp(@"^[a-zA-Z]$", txtdesti, pictureBox7, "destination");
          
 
 
