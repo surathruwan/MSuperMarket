@@ -76,7 +76,7 @@ namespace madushaTemp
             chart3.Visible = false;
             chart2.Visible = false;
 
-            tblhide.Visible = false;
+            //tblhide.Visible = false;
             tblseizedhide.Visible = false;
             tblbankhid.Visible = false;
             tblloan.Visible = false;
@@ -216,9 +216,9 @@ namespace madushaTemp
                 try
                 {
 
-                    int height = (tblhide.RowCount) * 10 + 50;
+                    int height = (bunifuCustomDataGrid1.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 16"; //Specify the printer to use.
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 2013"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();
@@ -267,34 +267,45 @@ namespace madushaTemp
 
             int x = 165;
             int x1 = 180;
-            for (int i = 0; i < tblhide.Rows.Count; i++)
+            for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
             {
-                e.Graphics.DrawString(tblhide.Rows[i].Cells[0].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
+
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(100, x));
+
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(150, x));
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[5].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x));
+
                 x = x + 30;
-                if ((Convert.ToInt32(tblhide.Rows[i].Cells[2].Value.ToString().Length) == 5))
-                {
+                //if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString().Length) == 5))
+                //{
 
-                    if ((Convert.ToInt32(tblhide.Rows[i].Cells[4].Value.ToString().Length) >= 5))
-                    {
-                        e.Graphics.DrawString(tblhide.Rows[i].Cells[1].Value.ToString() + "\t" + tblhide.Rows[i].Cells[3].Value.ToString() + "\t  " + tblhide.Rows[i].Cells[2].Value.ToString() + "\t  " + tblhide.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                    }
-                }
-                else if ((Convert.ToInt32(tblhide.Rows[i].Cells[2].Value.ToString().Length) == 4))
-                {
+                //    if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString().Length) >= 5))
+                //    {
+                //        e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
+                //    }
+                //}
+                //else if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString().Length) == 4))
+                //{
 
-                    if ((Convert.ToInt32(tblhide.Rows[i].Cells[4].Value.ToString().Length) >= 4))
-                    {
-                        e.Graphics.DrawString(tblhide.Rows[i].Cells[1].Value.ToString() + "\t" + tblhide.Rows[i].Cells[3].Value.ToString() + "\t    " + tblhide.Rows[i].Cells[2].Value.ToString() + "\t  " + tblhide.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                    }
-                }
-                else
-                {
-                    e.Graphics.DrawString(tblhide.Rows[i].Cells[1].Value.ToString() + "\t" + tblhide.Rows[i].Cells[3].Value.ToString() + "\t" + tblhide.Rows[i].Cells[2].Value.ToString() + "\t" + tblhide.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                }
-                x1 = x1 + 30;
+                //    if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString().Length) >= 4))
+                //    {
+                //        e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t    " + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
+                //    }
+                //}
+                //else
+                //{
+                //    e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
+                //}
+                 // x1 = x1 + 30;
 
             }
+            e.Graphics.DrawString("-------------------------------------------------", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
+            e.Graphics.DrawString(txtgtot.Text, new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x+20));
+            e.Graphics.DrawString("Grand Total", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x + 20));
 
+            e.Graphics.DrawString("Thank You !!!", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 40));
+            e.Graphics.DrawString("Come Again ...", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 50));
         }
 
 
@@ -1759,7 +1770,7 @@ namespace madushaTemp
                 }
                 catch (Exception)
                 {
-                    throw;
+                    MessageBox.Show("Alraedy Exists");
                 }
                 }
 
