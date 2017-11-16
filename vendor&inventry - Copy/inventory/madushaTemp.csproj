@@ -113,7 +113,7 @@
     <Compile Include="Barcodeform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Barcodeform.Designer.cs">
+    <Compile Include="Barcodeform.designer.cs">
       <DependentUpon>Barcodeform.cs</DependentUpon>
     </Compile>
     <Compile Include="categoryform.cs">
