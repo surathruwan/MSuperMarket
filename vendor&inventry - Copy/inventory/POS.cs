@@ -317,7 +317,7 @@ namespace inventory
         public void SearchBarcode()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode LIKE '" + txtBarcode.Text + "%' ", conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode='" + txtBarcode.Text + "' ", conn);
             conn.Open();
             DataTable catetable = new DataTable();
             adapter.Fill(catetable);
@@ -326,7 +326,7 @@ namespace inventory
             source.DataSource = catetable;
 
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
+            cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode = '" + txtBarcode.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
            
             while (r.Read())
