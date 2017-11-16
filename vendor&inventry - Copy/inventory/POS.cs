@@ -320,7 +320,11 @@ namespace inventory
         {
             //Load data into table
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+<<<<<<< HEAD
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode='" + txtBarcode.Text + "' ", conn);
+=======
             MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode = '" + txtBarcode.Text + "' ", conn);
+>>>>>>> 8da99ef4a7a2b48ae6774d9e5771f63e11aa281a
             conn.Open();
             DataTable catetable = new DataTable();
             adapter.Fill(catetable);
@@ -329,8 +333,11 @@ namespace inventory
             source.DataSource = catetable;
 
             MySqlCommand cmd = conn.CreateCommand();
+<<<<<<< HEAD
+=======
 
             //Search item via Barcode
+>>>>>>> 8da99ef4a7a2b48ae6774d9e5771f63e11aa281a
             cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode = '" + txtBarcode.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
            
