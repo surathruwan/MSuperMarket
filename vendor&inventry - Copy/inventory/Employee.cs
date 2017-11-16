@@ -14,6 +14,10 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Net.Mail;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.Xml;
+using System.Net;
 using inventory;
 
 namespace madushaTemp
@@ -60,7 +64,7 @@ namespace madushaTemp
         Boolean cat = true;
         int i = 1050;
         
-        int n = 001;
+        int n = 100;
         //validation
 
         public void Regexp(string re, Bunifu.Framework.UI.BunifuMetroTextbox tb, PictureBox pc, string s)
@@ -566,66 +570,69 @@ namespace madushaTemp
             {
                 MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else { 
-            cat = true;
-         
-            Regexp(@"[0-9]{9}[v|V]$", NIC ,pictureBox10, "NIC");
-            Regexp(@"^[0-9]{10}$", phone, pictureBox8, "phone");
-            Regexp(@"^([\w]+)@([\w]+)\.([\w]+)$", mail, pictureBox1, "Mail");
+            else
+            {
+                cat = true;
+
+                Regexp(@"[0-9]{9}[v|V]$", NIC, pictureBox10, "NIC");
+                Regexp(@"^[0-9]{10}$", phone, pictureBox8, "phone");
+                Regexp(@"^([\w]+)@([\w]+)\.([\w]+)$", mail, pictureBox1, "Mail");
 
 
                 if (cat == true)
                 {
+                    
+                        byte[] imageBt = null;
+                        FileStream fstream = new FileStream(this.textBox_image_path.Text, FileMode.Open, FileAccess.Read);
+                        BinaryReader br = new BinaryReader(fstream);
+                        imageBt = br.ReadBytes((int)fstream.Length);
 
-                    byte[] imageBt = null;
-                    FileStream fstream = new FileStream(this.textBox_image_path.Text, FileMode.Open, FileAccess.Read);
-                    BinaryReader br = new BinaryReader(fstream);
-                    imageBt = br.ReadBytes((int)fstream.Length);
-
-                    string con = "datasource=localhost;port=3306;username=root";
-                    MySqlConnection dbcon = new MySqlConnection(con);
-                    MySqlCommand cm = new MySqlCommand("insert into supermarket.employee_details(Empid,full_name,i_name,gender,position,phone,DOB,sdate,NIC,address,email,image,barcode) values('" + i + "','" + this.fname.Text + "' ,'" + this.iname.Text + "'  ,'" + gender + "','" + this.position.Text + "' ,'" + this.phone.Text + "','" + this.DOB.Text + "' ,'" + this.startdate.Text + "' ,'" + this.NIC.Text + "' ,'" + this.address.Text + "' ,'" + this.mail.Text + "',@IMG,'" + this.barcode.Text + "'  )", dbcon);
-                    MySqlDataReader r;
-
-
-
-                    try
-                    {
-                        dbcon.Open();
-
-                        cm.Parameters.Add(new MySqlParameter("@IMG", imageBt));
-
-                        r = cm.ExecuteReader();
-                        MessageBox.Show("Inserted successfully!");
+                        string con = "datasource=localhost;port=3306;username=root";
+                        MySqlConnection dbcon = new MySqlConnection(con);
+                        MySqlCommand cm = new MySqlCommand("insert into supermarket.employee_details(Empid,full_name,i_name,gender,position,phone,DOB,sdate,NIC,address,email,image,barcode) values('" + i + "','" + this.fname.Text + "' ,'" + this.iname.Text + "'  ,'" + gender + "','" + this.position.Text + "' ,'" + this.phone.Text + "','" + this.DOB.Text + "' ,'" + this.startdate.Text + "' ,'" + this.NIC.Text + "' ,'" + this.address.Text + "' ,'" + this.mail.Text + "',@IMG,'" + this.barcode.Text + "'  )", dbcon);
+                        MySqlDataReader r;
 
 
 
-                        while (r.Read())
+                        try
                         {
+                            dbcon.Open();
+
+                            cm.Parameters.Add(new MySqlParameter("@IMG", imageBt));
+
+                            r = cm.ExecuteReader();
+                            MessageBox.Show("Inserted successfully!");
+
+
+
+                            while (r.Read())
+                            {
+
+                            }
+
+
+                            loadtable2();
+
+                            dbcon.Close();
+                            eid.Text = "";
+                            fname.Text = "";
+                            iname.Text = "";
+                            phone.Text = "";
+                            NIC.Text = "";
+                            address.Text = "";
+                            mail.Text = "";
+                            position.Text = "";
+                            pictureBox2.Image = null;
+
+
 
                         }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Employee Record already in");
+                        }
 
-
-                        loadtable2();
-
-                        dbcon.Close();
-                        eid.Text = "";
-                        fname.Text = "";
-                        iname.Text = "";
-                        phone.Text = "";
-                        NIC.Text = "";
-                        address.Text = "";
-                        mail.Text = "";
-                        position.Text = "";
-                        pictureBox2.Image = null;
-
-
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    
                 }
             }
         }
@@ -1127,6 +1134,7 @@ namespace madushaTemp
                     mail.Text = "";
                     position.Text = "";
                     pictureBox2.Image = null;
+                    loadtable2();
 
 
 
@@ -1135,7 +1143,7 @@ namespace madushaTemp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Record is already deleted");
                 }
             }
         }
@@ -1148,7 +1156,7 @@ namespace madushaTemp
         private void add_Click(object sender, EventArgs e)
         {
             n++;
-            if (String.IsNullOrEmpty(empid.Text) || String.IsNullOrWhiteSpace(ppp.Text) )
+            if (String.IsNullOrEmpty(empid.Text) || String.IsNullOrWhiteSpace(ppp.Text))
             {
                 MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -1159,54 +1167,57 @@ namespace madushaTemp
 
             else
             {
-                string con = "datasource=localhost;port=3306;username=root";
-                MySqlConnection dbcon = new MySqlConnection(con);
-                // MySqlCommand cm = new MySqlCommand("insert into supermarket.salary(empid,position,type,overtime,workinghrs,bonus,basic,epf,loan,sid) values('" + this.empid.Text + "' ,'" + this.ppp.Text + "' ,'" + this.type.Text + "' ,'" + this.oo.Text + "','" + this.hh.Text + "' ,'" + this.bbb.Text + "' ,'" + this.bb.Text + "' ,'" + this.ee.Text + "' ,'" + this.ll.Text + "','" + n + "',whrs='" + this.whrs.Text + "',ohrs='" + this.ohrs.Text + "'  )", dbcon);
-                MySqlCommand cm = new MySqlCommand("insert into supermarket.salary(empid,position,type,overtime,workinghrs,bonus,basic,epf,loan,sid,whrs,ohrs,salary) values('" + this.empid.Text + "' ,'" + this.ppp.Text + "' ,'" + this.type.Text + "' ,'" + this.oo.Text + "','" + this.hh.Text + "' ,'" + this.bbb.Text + "' ,'" + this.bb.Text + "' ,'" + this.ee.Text + "' ,'" + this.ll.Text + "','" + n + "',whrs='" + this.whrs.Text + "',ohrs='" + this.ohrs.Text + "',salary='" + this.sss.Text + "'  )", dbcon);
-
-                MySqlDataReader r;
-
-
-
-                try
+                if (String.IsNullOrEmpty(empid.Text))
                 {
-                    dbcon.Open();
+                    string con = "datasource=localhost;port=3306;username=root";
+                    MySqlConnection dbcon = new MySqlConnection(con);
+                    // MySqlCommand cm = new MySqlCommand("insert into supermarket.salary(empid,position,type,overtime,workinghrs,bonus,basic,epf,loan,sid) values('" + this.empid.Text + "' ,'" + this.ppp.Text + "' ,'" + this.type.Text + "' ,'" + this.oo.Text + "','" + this.hh.Text + "' ,'" + this.bbb.Text + "' ,'" + this.bb.Text + "' ,'" + this.ee.Text + "' ,'" + this.ll.Text + "','" + n + "',whrs='" + this.whrs.Text + "',ohrs='" + this.ohrs.Text + "'  )", dbcon);
+                    MySqlCommand cm = new MySqlCommand("insert into supermarket.salary(empid,position,type,overtime,workinghrs,whrs,ohrs,bonus,basic,epf,loan,salary,month,sid) values('" + this.empid.Text + "' ,'" + this.ppp.Text + "' ,'" + this.type.Text + "' ,'" + this.oo.Text + "','" + this.hh.Text + "' ,'" + this.whrs.Text + "' ,'" + this.ohrs.Text + "' ,'" + this.bbb.Text + "' ,'" + this.bb.Text + "','" + this.ee.Text + "','" + this.ll.Text + "','" + this.sss.Text + "','" + this.month.Text + "','" + n + "'  )", dbcon);
+
+                    MySqlDataReader r;
 
 
-                    r = cm.ExecuteReader();
-                    MessageBox.Show("Inserted successfully!");
 
-
-
-                    while (r.Read())
+                    try
                     {
+                        dbcon.Open();
+
+
+                        r = cm.ExecuteReader();
+                        MessageBox.Show("Inserted successfully!");
+
+
+
+                        while (r.Read())
+                        {
+
+                        }
+
+
+                        loadtable2();
+
+                        dbcon.Close();
+                        empid.Text = "";
+                        ppp.Text = "";
+                        type.Text = "";
+                        oo.Text = "";
+                        hh.Text = "";
+                        bbb.Text = "";
+                        bb.Text = "";
+                        ee.Text = "";
+                        //month.Text = "";
+                        ll.Text = "";
+                        whrs.Text = "";
+                        ohrs.Text = "";
+
+
 
                     }
+                    catch (Exception ex)
+                    {
 
-
-                    loadtable2();
-
-                    dbcon.Close();
-                    empid.Text = "";
-                    ppp.Text = "";
-                    type.Text = "";
-                    oo.Text = "";
-                    hh.Text = "";
-                    bbb.Text = "";
-                    bb.Text = "";
-                    ee.Text = "";
-                    //month.Text = "";
-                    ll.Text = "";
-                    whrs.Text = "";
-                    ohrs.Text = "";
-
-
-
-                }
-                catch (Exception ex)
-                {
-                    
-                   MessageBox.Show("This month salary is already calculated");
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
         }
@@ -1461,7 +1472,7 @@ namespace madushaTemp
             }
             else if (type.SelectedItem.ToString() == "contract")
             {
-                double salary = ((hourrate*whr-8) + (over * ohr)) - (loan + (epf * basic));
+                double salary = ((hourrate*whr-8) + (over * ohr)) - (loan );
                 sss.Text = Convert.ToString(salary);
             }
         }
@@ -1730,6 +1741,220 @@ namespace madushaTemp
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void adduser_Click(object sender, EventArgs e)
+        {
+            adduser f2 = new adduser();
+            f2.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"Employee_Details.pdf", FileMode.Create));
+            doc.Open();
+
+            MessageBox.Show("Create PDF sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //Add border to page
+            PdfContentByte content = w.DirectContent;
+            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+            rectangle.Left += doc.LeftMargin - 5;
+            rectangle.Right -= doc.RightMargin - 5;
+            rectangle.Top -= doc.TopMargin - 22;
+            rectangle.Bottom += doc.BottomMargin - 5;
+            content.SetColorStroke(BaseColor.BLUE);
+            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+            content.Stroke();
+
+
+            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+            Paragraph prg = new Paragraph();
+            prg.Alignment = Element.ALIGN_CENTER;
+            prg.Add(new Chunk("Employee Details", font5));
+            doc.Add(prg);
+
+            //Authors
+            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+            Paragraph prg1 = new Paragraph();
+            prg1.Alignment = Element.ALIGN_RIGHT;
+            Paragraph prg2 = new Paragraph();
+            prg2.Alignment = Element.ALIGN_RIGHT;
+            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+            doc.Add(prg1);
+            doc.Add(prg2);
+
+
+            //line separator
+            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+            doc.Add(p);
+
+            PdfPTable table = new PdfPTable(grr.Columns.Count);
+
+            //add headers from gridview to table
+            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+            for (int j = 0; j < grr.Columns.Count; j++)
+            {
+                PdfPCell cell = new PdfPCell();
+                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                cell.AddElement(new Chunk(grr.Columns[j].HeaderText.ToUpper(), fonth));
+                table.AddCell(cell);
+
+            }
+
+            //flag first row as header
+            table.HeaderRows = 1;
+
+
+            //add actual rows from grid to table
+            for (int i = 0; i < grr.Rows.Count; i++)
+            {
+                table.WidthPercentage = 100;
+
+                for (int k = 0; k < grr.Columns.Count; k++)
+                {
+                    if (grr[k, i].Value != null)
+                    {
+
+                        table.AddCell(new Phrase(grr[k, i].Value.ToString()));
+                    }
+
+                }
+
+
+            }
+
+            //add out table
+            doc.Add(table);
+
+            doc.Close();
+            System.Diagnostics.Process.Start(@"Employee_Details.pdf");
+        }
+
+        private void ddd_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void type_TextChanged(object sender, EventArgs e)
+        {
+            if ((type.Text=="contract")||(type.Text=="Contract"))
+            {
+                empid.Visible = true;
+                ppp.Visible = true;
+                hh.Visible = true;
+                oo.Visible = true;
+                bbb.Visible = true;
+                ll.Visible = true;
+                whrs.Visible = true;
+                ohrs.Visible = true;
+                bb.Visible = false;
+                ee.Visible = false;
+            }
+            else
+            {
+                empid.Visible = true;
+                ppp.Visible = true;
+                hh.Visible = false;
+                oo.Visible = true;
+                bbb.Visible = true;
+                ll.Visible = true;
+                whrs.Visible = true;
+                ohrs.Visible = true;
+                bb.Visible = true;
+                ee.Visible = true;
+            }
+        }
+
+        private void sss_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ooooo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wwww_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Regexp(@"^[0-9]{4}$", empid , pictureBox7, "Empid");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd = new MySqlCommand("select count(*)  from supermarket.employee_details where Empid ='" + empid.Text + "' ;", conn);
+            try
+            {
+                conn.Open();
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = cmd;
+
+                int i = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (i == 1)
+                {
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+
+                        MessageBox.Show("Employee already in  !!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("No Matching Employee Found !!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  
+
+
+
+
+                }
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

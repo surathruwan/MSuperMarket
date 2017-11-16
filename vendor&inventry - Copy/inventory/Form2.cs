@@ -262,6 +262,22 @@ namespace madushaTemp
 
             string destination = txtdesti.Text;
 
+<<<<<<< HEAD
+=======
+            //if (String.IsNullOrEmpty(txtsource.Text) || String.IsNullOrWhiteSpace(txtdesti.Text))
+            //{
+            //    MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+
+            //Regexp(@"^[a-zA-Z]$", txtsource, pictureBox6, "source");
+            //Regexp(@"^[a-zA-Z]$", txtdesti, pictureBox7, "destination");
+         
+
+
+
+
+
+>>>>>>> e0676177702e4a91a5c6357af2e8822b178ae356
 
             try
             {
