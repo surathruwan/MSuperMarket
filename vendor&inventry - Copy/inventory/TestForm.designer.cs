@@ -445,6 +445,7 @@
             this.label67 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.MadushaPrintDocument = new System.Drawing.Printing.PrintDocument();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -4931,14 +4932,14 @@
             this.bunifuCards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.bunifuCards1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuCards1.BorderRadius = 5;
-            this.bunifuCards1.BottomSahddow = true;
+            this.bunifuCards1.BottomSahddow = false;
             this.bunifuCards1.color = System.Drawing.Color.Turquoise;
             this.bunifuCards1.Controls.Add(this.groupBox10);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(8, 194);
             this.bunifuCards1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCards1.Name = "bunifuCards1";
-            this.bunifuCards1.RightSahddow = true;
+            this.bunifuCards1.RightSahddow = false;
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(756, 412);
             this.bunifuCards1.TabIndex = 152;
@@ -6638,5 +6639,6 @@
         private System.Windows.Forms.Label lblvari;
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.Panel panel31;
+        private System.Drawing.Printing.PrintDocument MadushaPrintDocument;
     }
 }
