@@ -29,75 +29,78 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.tblhide = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btninvoice = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cmbprepare = new System.Windows.Forms.ComboBox();
+            this.btncustomercopy = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtnoi = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtgtot = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtivalue = new System.Windows.Forms.Label();
+            this.btniconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -105,12 +108,16 @@
             this.datei = new System.Windows.Forms.DateTimePicker();
             this.lblbal = new System.Windows.Forms.Label();
             this.txtwmonths = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnSuspend = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtdpay = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.tableinstallments = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label34 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtoid = new System.Windows.Forms.Label();
+            this.btnsearchitem = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -130,16 +137,22 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtdis = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label77 = new System.Windows.Forms.Label();
+            this.btnadd = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btndelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnupdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnexecute = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.r6 = new System.Windows.Forms.RadioButton();
             this.r3 = new System.Windows.Forms.RadioButton();
             this.lbl3 = new System.Windows.Forms.Label();
             this.r36 = new System.Windows.Forms.RadioButton();
+            this.btniclear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.r24 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.r12 = new System.Windows.Forms.RadioButton();
@@ -155,7 +168,11 @@
             this.lbl6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.txtnicsearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtaddress2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtjob1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtaddress1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -164,8 +181,12 @@
             this.txtphone2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtphone1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtname1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnnicsearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.label90 = new System.Windows.Forms.Label();
+            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label91 = new System.Windows.Forms.Label();
+            this.btnsuslist = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btncconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -193,14 +214,28 @@
             this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label96 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.piccus = new System.Windows.Forms.PictureBox();
+            this.btnclearsei = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton214 = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton21 = new System.Windows.Forms.PictureBox();
+            this.btngeneratesticker = new System.Windows.Forms.PictureBox();
+            this.puty = new System.Windows.Forms.PictureBox();
             this.txtnn = new System.Windows.Forms.Label();
             this.lbltot = new System.Windows.Forms.Label();
             this.lblscount = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txtino = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btndeleteSeized = new Bunifu.Framework.UI.BunifuThinButton2();
             this.datese = new System.Windows.Forms.DateTimePicker();
+            this.btnaddSeized = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableseized = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtnicse = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtbal = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -215,21 +250,28 @@
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.btnprintrecep = new System.Windows.Forms.PictureBox();
             this.lbl = new System.Windows.Forms.Label();
             this.dfg = new System.Windows.Forms.Label();
             this.radsumm = new System.Windows.Forms.RadioButton();
             this.radsumm1 = new System.Windows.Forms.RadioButton();
             this.lblin = new System.Windows.Forms.Label();
             this.dates = new System.Windows.Forms.DateTimePicker();
+            this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label38 = new System.Windows.Forms.Label();
             this.tblinssummary = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.tblinscust = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dateto = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label76 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.datefrom = new System.Windows.Forms.DateTimePicker();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bunifuCards8 = new Bunifu.Framework.UI.BunifuCards();
@@ -240,15 +282,20 @@
             this.tblseizedhide = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label26 = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
+            this.btnupdateie = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnaddex = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label60 = new System.Windows.Forms.Label();
             this.cmbinex = new System.Windows.Forms.ComboBox();
             this.tblei = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.label99 = new System.Windows.Forms.Label();
+            this.btnseized = new System.Windows.Forms.PictureBox();
             this.dateseizedselect = new System.Windows.Forms.DateTimePicker();
             this.txtamt = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.dateie = new System.Windows.Forms.DateTimePicker();
+            this.btndeleteei = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.radexp = new System.Windows.Forms.RadioButton();
@@ -258,20 +305,29 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.Spanel = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.lblbtot = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label71 = new System.Windows.Forms.Label();
             this.lblpcount = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.lblcount = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label83 = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label70 = new System.Windows.Forms.Label();
+            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
             this.cmdaccno = new System.Windows.Forms.ComboBox();
             this.cmdbuyer = new System.Windows.Forms.ComboBox();
             this.cmdbranch = new System.Windows.Forms.ComboBox();
@@ -279,9 +335,12 @@
             this.txtpurp = new System.Windows.Forms.RichTextBox();
             this.radbnpa = new System.Windows.Forms.RadioButton();
             this.radbpa = new System.Windows.Forms.RadioButton();
+            this.btnaddbank = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tblbank = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.datetak = new System.Windows.Forms.DateTimePicker();
             this.datecom = new System.Windows.Forms.DateTimePicker();
+            this.bunifuThinButton219 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnupdatebank = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtlamt = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblbid = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -302,16 +361,58 @@
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cmbchart = new System.Windows.Forms.ComboBox();
+            this.btnchartgene = new System.Windows.Forms.PictureBox();
             this.label68 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.lblvari = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label113 = new System.Windows.Forms.Label();
+            this.lblmonth = new System.Windows.Forms.Label();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.los = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.lblpro = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.label108 = new System.Windows.Forms.Label();
             this.tblc = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tble = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.tblb = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -325,89 +426,25 @@
             this.tblloan = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tblbankhid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.label105 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label103 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.txtaddy = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.cmbyear = new System.Windows.Forms.ComboBox();
+            this.bunifuThinButton230 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label67 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label108 = new System.Windows.Forms.Label();
-            this.btninvoice = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btncustomercopy = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btniconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSuspend = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnsearchitem = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnadd = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btndelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnupdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnexecute = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btniclear = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnnicsearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnsuslist = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btncconfirm = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.piccus = new System.Windows.Forms.PictureBox();
-            this.btnclearsei = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton214 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton21 = new System.Windows.Forms.PictureBox();
-            this.btngeneratesticker = new System.Windows.Forms.PictureBox();
-            this.puty = new System.Windows.Forms.PictureBox();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btndeleteSeized = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnaddSeized = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnprintrecep = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btnupdateie = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnaddex = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnseized = new System.Windows.Forms.PictureBox();
-            this.btndeleteei = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnaddbank = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton219 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnupdatebank = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnchartgene = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton230 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -417,23 +454,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableinstallments)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).BeginInit();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.bunifuCards5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piccus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableseized)).BeginInit();
             this.panel6.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinssummary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinscust)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.bunifuCards8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -442,16 +498,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblseizedhide)).BeginInit();
             this.panel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblei)).BeginInit();
             this.groupBox19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).BeginInit();
             this.panel8.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.Spanel.SuspendLayout();
             this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblbank)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.bunifuCards10.SuspendLayout();
@@ -460,11 +523,20 @@
             this.panel28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).BeginInit();
             this.panel12.SuspendLayout();
             this.groupBox20.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.bunifuCards1.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.panel29.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel11.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblb)).BeginInit();
@@ -477,43 +549,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblploan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblloan)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblbankhid)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.piccus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblbankhid)).BeginInit();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             this.SuspendLayout();
@@ -579,7 +622,6 @@
             this.groupBox13.Controls.Add(this.btninvoice);
             this.groupBox13.Controls.Add(this.cmbprepare);
             this.groupBox13.Controls.Add(this.btncustomercopy);
-            this.groupBox13.Controls.Add(this.bunifuThinButton217);
             this.groupBox13.Controls.Add(this.txtnoi);
             this.groupBox13.Controls.Add(this.label8);
             this.groupBox13.Controls.Add(this.label9);
@@ -610,20 +652,20 @@
             // 
             this.tblhide.AllowUserToAddRows = false;
             this.tblhide.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblhide.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblhide.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
             this.tblhide.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblhide.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblhide.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblhide.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblhide.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblhide.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.tblhide.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblhide.DoubleBuffered = true;
             this.tblhide.EnableHeadersVisualStyles = false;
@@ -638,6 +680,32 @@
             this.tblhide.Size = new System.Drawing.Size(53, 60);
             this.tblhide.TabIndex = 58;
             // 
+            // btninvoice
+            // 
+            this.btninvoice.ActiveBorderThickness = 1;
+            this.btninvoice.ActiveCornerRadius = 20;
+            this.btninvoice.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btninvoice.ActiveForecolor = System.Drawing.Color.White;
+            this.btninvoice.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btninvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btninvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninvoice.BackgroundImage")));
+            this.btninvoice.ButtonText = "Invoice";
+            this.btninvoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btninvoice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btninvoice.IdleBorderThickness = 1;
+            this.btninvoice.IdleCornerRadius = 20;
+            this.btninvoice.IdleFillColor = System.Drawing.Color.White;
+            this.btninvoice.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btninvoice.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btninvoice.Location = new System.Drawing.Point(107, 368);
+            this.btninvoice.Margin = new System.Windows.Forms.Padding(5);
+            this.btninvoice.Name = "btninvoice";
+            this.btninvoice.Size = new System.Drawing.Size(151, 41);
+            this.btninvoice.TabIndex = 57;
+            this.btninvoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btninvoice.Click += new System.EventHandler(this.btninvoice_Click);
+            // 
             // cmbprepare
             // 
             this.cmbprepare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
@@ -651,6 +719,32 @@
             this.cmbprepare.Size = new System.Drawing.Size(93, 26);
             this.cmbprepare.TabIndex = 56;
             this.cmbprepare.Text = "Select an option";
+            // 
+            // btncustomercopy
+            // 
+            this.btncustomercopy.ActiveBorderThickness = 1;
+            this.btncustomercopy.ActiveCornerRadius = 20;
+            this.btncustomercopy.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncustomercopy.ActiveForecolor = System.Drawing.Color.White;
+            this.btncustomercopy.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncustomercopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btncustomercopy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncustomercopy.BackgroundImage")));
+            this.btncustomercopy.ButtonText = "Customer Copy";
+            this.btncustomercopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncustomercopy.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncustomercopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncustomercopy.IdleBorderThickness = 1;
+            this.btncustomercopy.IdleCornerRadius = 20;
+            this.btncustomercopy.IdleFillColor = System.Drawing.Color.White;
+            this.btncustomercopy.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncustomercopy.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncustomercopy.Location = new System.Drawing.Point(299, 368);
+            this.btncustomercopy.Margin = new System.Windows.Forms.Padding(5);
+            this.btncustomercopy.Name = "btncustomercopy";
+            this.btncustomercopy.Size = new System.Drawing.Size(151, 41);
+            this.btncustomercopy.TabIndex = 54;
+            this.btncustomercopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncustomercopy.Click += new System.EventHandler(this.btncustomercopy_Click);
             // 
             // txtnoi
             // 
@@ -714,6 +808,32 @@
             this.txtivalue.Name = "txtivalue";
             this.txtivalue.Size = new System.Drawing.Size(0, 18);
             this.txtivalue.TabIndex = 46;
+            // 
+            // btniconfirm
+            // 
+            this.btniconfirm.ActiveBorderThickness = 1;
+            this.btniconfirm.ActiveCornerRadius = 20;
+            this.btniconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniconfirm.ActiveForecolor = System.Drawing.Color.White;
+            this.btniconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btniconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniconfirm.BackgroundImage")));
+            this.btniconfirm.ButtonText = "Confirm";
+            this.btniconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btniconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniconfirm.IdleBorderThickness = 1;
+            this.btniconfirm.IdleCornerRadius = 20;
+            this.btniconfirm.IdleFillColor = System.Drawing.Color.White;
+            this.btniconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniconfirm.Location = new System.Drawing.Point(82, 317);
+            this.btniconfirm.Margin = new System.Windows.Forms.Padding(5);
+            this.btniconfirm.Name = "btniconfirm";
+            this.btniconfirm.Size = new System.Drawing.Size(106, 41);
+            this.btniconfirm.TabIndex = 45;
+            this.btniconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btniconfirm.Click += new System.EventHandler(this.btniconfirm_Click);
             // 
             // label12
             // 
@@ -797,6 +917,58 @@
             this.txtwmonths.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtwmonths.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtwmonths_KeyPress);
             // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "Clear";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton24.Location = new System.Drawing.Point(360, 317);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(105, 41);
+            this.bunifuThinButton24.TabIndex = 37;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
+            // 
+            // btnSuspend
+            // 
+            this.btnSuspend.ActiveBorderThickness = 1;
+            this.btnSuspend.ActiveCornerRadius = 20;
+            this.btnSuspend.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnSuspend.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSuspend.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnSuspend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnSuspend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuspend.BackgroundImage")));
+            this.btnSuspend.ButtonText = "Suspend";
+            this.btnSuspend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuspend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnSuspend.IdleBorderThickness = 1;
+            this.btnSuspend.IdleCornerRadius = 20;
+            this.btnSuspend.IdleFillColor = System.Drawing.Color.White;
+            this.btnSuspend.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnSuspend.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnSuspend.Location = new System.Drawing.Point(225, 317);
+            this.btnSuspend.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSuspend.Name = "btnSuspend";
+            this.btnSuspend.Size = new System.Drawing.Size(97, 41);
+            this.btnSuspend.TabIndex = 35;
+            this.btnSuspend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSuspend.Click += new System.EventHandler(this.bunifuThinButton22_Click);
+            // 
             // txtdpay
             // 
             this.txtdpay.BorderColorFocused = System.Drawing.Color.Blue;
@@ -820,20 +992,20 @@
             // 
             this.tableinstallments.AllowUserToAddRows = false;
             this.tableinstallments.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableinstallments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableinstallments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle47;
             this.tableinstallments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tableinstallments.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tableinstallments.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableinstallments.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableinstallments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableinstallments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.tableinstallments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableinstallments.DoubleBuffered = true;
             this.tableinstallments.EnableHeadersVisualStyles = false;
@@ -904,6 +1076,20 @@
             this.groupBox14.Text = "Item Selection";
             this.groupBox14.Enter += new System.EventHandler(this.groupBox14_Enter);
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuImageButton1.Image = global::inventory.Properties.Resources.plus;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(144, 25);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 26);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 80;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // txtoid
             // 
             this.txtoid.AutoSize = true;
@@ -912,6 +1098,20 @@
             this.txtoid.Size = new System.Drawing.Size(33, 12);
             this.txtoid.TabIndex = 79;
             this.txtoid.Text = "1000";
+            // 
+            // btnsearchitem
+            // 
+            this.btnsearchitem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnsearchitem.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.btnsearchitem.ImageActive = null;
+            this.btnsearchitem.Location = new System.Drawing.Point(214, 52);
+            this.btnsearchitem.Name = "btnsearchitem";
+            this.btnsearchitem.Size = new System.Drawing.Size(30, 26);
+            this.btnsearchitem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnsearchitem.TabIndex = 78;
+            this.btnsearchitem.TabStop = false;
+            this.btnsearchitem.Zoom = 10;
+            this.btnsearchitem.Click += new System.EventHandler(this.btnsearchitem_Click);
             // 
             // label1
             // 
@@ -959,20 +1159,20 @@
             // 
             this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
             this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
             this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -1004,19 +1204,19 @@
             // 
             this.bunifuCustomDataGrid3.AllowUserToAddRows = false;
             this.bunifuCustomDataGrid3.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle51;
             this.bunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
             this.bunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid3.DoubleBuffered = true;
             this.bunifuCustomDataGrid3.EnableHeadersVisualStyles = false;
@@ -1181,6 +1381,110 @@
             this.label77.TabIndex = 25;
             this.label77.Text = "Final Amount";
             // 
+            // btnadd
+            // 
+            this.btnadd.ActiveBorderThickness = 1;
+            this.btnadd.ActiveCornerRadius = 20;
+            this.btnadd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.ActiveForecolor = System.Drawing.Color.White;
+            this.btnadd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnadd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadd.BackgroundImage")));
+            this.btnadd.ButtonText = "Add";
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnadd.IdleBorderThickness = 1;
+            this.btnadd.IdleCornerRadius = 20;
+            this.btnadd.IdleFillColor = System.Drawing.Color.White;
+            this.btnadd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnadd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnadd.Location = new System.Drawing.Point(21, 388);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(116, 41);
+            this.btnadd.TabIndex = 20;
+            this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.ActiveBorderThickness = 1;
+            this.btndelete.ActiveCornerRadius = 20;
+            this.btndelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btndelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndelete.BackgroundImage")));
+            this.btndelete.ButtonText = "Delete";
+            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndelete.IdleBorderThickness = 1;
+            this.btndelete.IdleCornerRadius = 20;
+            this.btndelete.IdleFillColor = System.Drawing.Color.White;
+            this.btndelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndelete.Location = new System.Drawing.Point(273, 388);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(5);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(116, 41);
+            this.btndelete.TabIndex = 22;
+            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndelete.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.ActiveBorderThickness = 1;
+            this.btnupdate.ActiveCornerRadius = 20;
+            this.btnupdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdate.BackgroundImage")));
+            this.btnupdate.ButtonText = "Update";
+            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdate.IdleBorderThickness = 1;
+            this.btnupdate.IdleCornerRadius = 20;
+            this.btnupdate.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdate.Location = new System.Drawing.Point(147, 388);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(116, 41);
+            this.btnupdate.TabIndex = 23;
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // btnexecute
+            // 
+            this.btnexecute.ActiveBorderThickness = 1;
+            this.btnexecute.ActiveCornerRadius = 20;
+            this.btnexecute.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnexecute.ActiveForecolor = System.Drawing.Color.White;
+            this.btnexecute.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnexecute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnexecute.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexecute.BackgroundImage")));
+            this.btnexecute.ButtonText = "Execute";
+            this.btnexecute.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexecute.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexecute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnexecute.IdleBorderThickness = 1;
+            this.btnexecute.IdleCornerRadius = 20;
+            this.btnexecute.IdleFillColor = System.Drawing.Color.White;
+            this.btnexecute.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnexecute.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnexecute.Location = new System.Drawing.Point(399, 388);
+            this.btnexecute.Margin = new System.Windows.Forms.Padding(5);
+            this.btnexecute.Name = "btnexecute";
+            this.btnexecute.Size = new System.Drawing.Size(116, 41);
+            this.btnexecute.TabIndex = 24;
+            this.btnexecute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnexecute.Click += new System.EventHandler(this.btnexecute_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label22);
@@ -1269,6 +1573,18 @@
             this.label17.Text = "Months";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::inventory.Properties.Resources.Aha_Soft_Business_Toolbar_Payment;
+            this.pictureBox1.Location = new System.Drawing.Point(126, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 30);
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // r6
             // 
             this.r6.AutoSize = true;
@@ -1315,6 +1631,32 @@
             this.r36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.r36.UseVisualStyleBackColor = true;
             this.r36.CheckedChanged += new System.EventHandler(this.r36_CheckedChanged);
+            // 
+            // btniclear
+            // 
+            this.btniclear.ActiveBorderThickness = 1;
+            this.btniclear.ActiveCornerRadius = 20;
+            this.btniclear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniclear.ActiveForecolor = System.Drawing.Color.White;
+            this.btniclear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btniclear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniclear.BackgroundImage")));
+            this.btniclear.ButtonText = "Clear";
+            this.btniclear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btniclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btniclear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btniclear.IdleBorderThickness = 1;
+            this.btniclear.IdleCornerRadius = 20;
+            this.btniclear.IdleFillColor = System.Drawing.Color.White;
+            this.btniclear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniclear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btniclear.Location = new System.Drawing.Point(33, 193);
+            this.btniclear.Margin = new System.Windows.Forms.Padding(5);
+            this.btniclear.Name = "btniclear";
+            this.btniclear.Size = new System.Drawing.Size(116, 41);
+            this.btniclear.TabIndex = 35;
+            this.btniclear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btniclear.Click += new System.EventHandler(this.btniclear_Click);
             // 
             // r24
             // 
@@ -1516,6 +1858,34 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Customer Registration";
             // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Location = new System.Drawing.Point(754, 115);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox27.TabIndex = 92;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Location = new System.Drawing.Point(754, 148);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox26.TabIndex = 91;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Location = new System.Drawing.Point(214, 23);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox25.TabIndex = 90;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Click += new System.EventHandler(this.pictureBox25_Click);
+            // 
             // txtnicsearch
             // 
             this.txtnicsearch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1534,6 +1904,20 @@
             this.txtnicsearch.Size = new System.Drawing.Size(150, 33);
             this.txtnicsearch.TabIndex = 88;
             this.txtnicsearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuImageButton3.Image = global::inventory.Properties.Resources.Treetog_Junior_User_group;
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(298, 23);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(32, 26);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 87;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // txtaddress2
             // 
@@ -1692,6 +2076,20 @@
             this.txtname1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtname1.OnValueChanged += new System.EventHandler(this.txtname1_OnValueChanged);
             // 
+            // btnnicsearch
+            // 
+            this.btnnicsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnnicsearch.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.btnnicsearch.ImageActive = null;
+            this.btnnicsearch.Location = new System.Drawing.Point(257, 23);
+            this.btnnicsearch.Name = "btnnicsearch";
+            this.btnnicsearch.Size = new System.Drawing.Size(30, 26);
+            this.btnnicsearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnnicsearch.TabIndex = 77;
+            this.btnnicsearch.TabStop = false;
+            this.btnnicsearch.Zoom = 10;
+            this.btnnicsearch.Click += new System.EventHandler(this.btnnicsearch_Click);
+            // 
             // label90
             // 
             this.label90.AutoSize = true;
@@ -1703,6 +2101,32 @@
             this.label90.TabIndex = 75;
             this.label90.Text = "Job 2";
             // 
+            // bunifuThinButton26
+            // 
+            this.bunifuThinButton26.ActiveBorderThickness = 1;
+            this.bunifuThinButton26.ActiveCornerRadius = 20;
+            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
+            this.bunifuThinButton26.ButtonText = "Clear";
+            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton26.IdleBorderThickness = 1;
+            this.bunifuThinButton26.IdleCornerRadius = 20;
+            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton26.Location = new System.Drawing.Point(421, 182);
+            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton26.Name = "bunifuThinButton26";
+            this.bunifuThinButton26.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton26.TabIndex = 36;
+            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton26.Click += new System.EventHandler(this.bunifuThinButton26_Click);
+            // 
             // label91
             // 
             this.label91.AutoSize = true;
@@ -1713,6 +2137,58 @@
             this.label91.Size = new System.Drawing.Size(63, 18);
             this.label91.TabIndex = 73;
             this.label91.Text = "Phone 2";
+            // 
+            // btnsuslist
+            // 
+            this.btnsuslist.ActiveBorderThickness = 1;
+            this.btnsuslist.ActiveCornerRadius = 20;
+            this.btnsuslist.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnsuslist.ActiveForecolor = System.Drawing.Color.White;
+            this.btnsuslist.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnsuslist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnsuslist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsuslist.BackgroundImage")));
+            this.btnsuslist.ButtonText = "Suspension List";
+            this.btnsuslist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsuslist.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuslist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnsuslist.IdleBorderThickness = 1;
+            this.btnsuslist.IdleCornerRadius = 20;
+            this.btnsuslist.IdleFillColor = System.Drawing.Color.White;
+            this.btnsuslist.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnsuslist.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnsuslist.Location = new System.Drawing.Point(547, 182);
+            this.btnsuslist.Margin = new System.Windows.Forms.Padding(5);
+            this.btnsuslist.Name = "btnsuslist";
+            this.btnsuslist.Size = new System.Drawing.Size(129, 41);
+            this.btnsuslist.TabIndex = 47;
+            this.btnsuslist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsuslist.Click += new System.EventHandler(this.bunifuThinButton21_Click_1);
+            // 
+            // btncconfirm
+            // 
+            this.btncconfirm.ActiveBorderThickness = 1;
+            this.btncconfirm.ActiveCornerRadius = 20;
+            this.btncconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncconfirm.ActiveForecolor = System.Drawing.Color.White;
+            this.btncconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btncconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncconfirm.BackgroundImage")));
+            this.btncconfirm.ButtonText = "Update";
+            this.btncconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btncconfirm.IdleBorderThickness = 1;
+            this.btncconfirm.IdleCornerRadius = 20;
+            this.btncconfirm.IdleFillColor = System.Drawing.Color.White;
+            this.btncconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btncconfirm.Location = new System.Drawing.Point(295, 182);
+            this.btncconfirm.Margin = new System.Windows.Forms.Padding(5);
+            this.btncconfirm.Name = "btncconfirm";
+            this.btncconfirm.Size = new System.Drawing.Size(116, 41);
+            this.btncconfirm.TabIndex = 37;
+            this.btncconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncconfirm.Click += new System.EventHandler(this.btncconfirm_Click);
             // 
             // label92
             // 
@@ -1991,9 +2467,11 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label96);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.pictureBox15);
             this.groupBox3.Controls.Add(this.piccus);
             this.groupBox3.Controls.Add(this.btnclearsei);
-            this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.bunifuThinButton214);
             this.groupBox3.Controls.Add(this.bunifuThinButton21);
             this.groupBox3.Controls.Add(this.btngeneratesticker);
@@ -2028,15 +2506,112 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Seized Stock";
             // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.Location = new System.Drawing.Point(150, 295);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(24, 12);
+            this.label96.TabIndex = 94;
+            this.label96.Text = "PDF";
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(191, 280);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(190, 296);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 15);
-            this.label16.TabIndex = 59;
-            this.label16.Text = "Seized Stock List";
+            this.label16.Size = new System.Drawing.Size(87, 12);
+            this.label16.TabIndex = 93;
+            this.label16.Text = "CRYSTAL REPORT";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::inventory.Properties.Resources.text_icon;
+            this.pictureBox15.Location = new System.Drawing.Point(207, 245);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox15.TabIndex = 92;
+            this.pictureBox15.TabStop = false;
+            // 
+            // piccus
+            // 
+            this.piccus.Location = new System.Drawing.Point(256, 105);
+            this.piccus.Name = "piccus";
+            this.piccus.Size = new System.Drawing.Size(37, 31);
+            this.piccus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.piccus.TabIndex = 91;
+            this.piccus.TabStop = false;
+            // 
+            // btnclearsei
+            // 
+            this.btnclearsei.ActiveBorderThickness = 1;
+            this.btnclearsei.ActiveCornerRadius = 20;
+            this.btnclearsei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnclearsei.ActiveForecolor = System.Drawing.Color.White;
+            this.btnclearsei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnclearsei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnclearsei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnclearsei.BackgroundImage")));
+            this.btnclearsei.ButtonText = "Clear";
+            this.btnclearsei.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnclearsei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclearsei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnclearsei.IdleBorderThickness = 1;
+            this.btnclearsei.IdleCornerRadius = 20;
+            this.btnclearsei.IdleFillColor = System.Drawing.Color.White;
+            this.btnclearsei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnclearsei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnclearsei.Location = new System.Drawing.Point(8, 260);
+            this.btnclearsei.Margin = new System.Windows.Forms.Padding(5);
+            this.btnclearsei.Name = "btnclearsei";
+            this.btnclearsei.Size = new System.Drawing.Size(116, 41);
+            this.btnclearsei.TabIndex = 60;
+            this.btnclearsei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnclearsei.Click += new System.EventHandler(this.btnclearsei_Click);
+            // 
+            // bunifuThinButton214
+            // 
+            this.bunifuThinButton214.Image = global::inventory.Properties.Resources._3;
+            this.bunifuThinButton214.Location = new System.Drawing.Point(140, 245);
+            this.bunifuThinButton214.Name = "bunifuThinButton214";
+            this.bunifuThinButton214.Size = new System.Drawing.Size(48, 48);
+            this.bunifuThinButton214.TabIndex = 58;
+            this.bunifuThinButton214.TabStop = false;
+            this.bunifuThinButton214.Click += new System.EventHandler(this.bunifuThinButton214_Click_1);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.Image = global::inventory.Properties.Resources.save1;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(434, 174);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(63, 46);
+            this.bunifuThinButton21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.bunifuThinButton21.TabIndex = 57;
+            this.bunifuThinButton21.TabStop = false;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click_3);
+            // 
+            // btngeneratesticker
+            // 
+            this.btngeneratesticker.Image = global::inventory.Properties.Resources.barcode;
+            this.btngeneratesticker.Location = new System.Drawing.Point(340, 175);
+            this.btngeneratesticker.Name = "btngeneratesticker";
+            this.btngeneratesticker.Size = new System.Drawing.Size(63, 46);
+            this.btngeneratesticker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btngeneratesticker.TabIndex = 56;
+            this.btngeneratesticker.TabStop = false;
+            this.btngeneratesticker.Click += new System.EventHandler(this.btngeneratesticker_Click);
+            // 
+            // puty
+            // 
+            this.puty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.puty.Location = new System.Drawing.Point(298, 11);
+            this.puty.Name = "puty";
+            this.puty.Size = new System.Drawing.Size(263, 158);
+            this.puty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.puty.TabIndex = 54;
+            this.puty.TabStop = false;
             // 
             // txtnn
             // 
@@ -2045,9 +2620,8 @@
             this.txtnn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.txtnn.Location = new System.Drawing.Point(145, 80);
             this.txtnn.Name = "txtnn";
-            this.txtnn.Size = new System.Drawing.Size(110, 18);
+            this.txtnn.Size = new System.Drawing.Size(0, 18);
             this.txtnn.TabIndex = 53;
-            this.txtnn.Text = "New Item Code";
             // 
             // lbltot
             // 
@@ -2057,9 +2631,8 @@
             this.lbltot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lbltot.Location = new System.Drawing.Point(347, 281);
             this.lbltot.Name = "lbltot";
-            this.lbltot.Size = new System.Drawing.Size(54, 22);
+            this.lbltot.Size = new System.Drawing.Size(0, 22);
             this.lbltot.TabIndex = 52;
-            this.lbltot.Text = "2001";
             this.lbltot.Click += new System.EventHandler(this.label47_Click);
             // 
             // lblscount
@@ -2070,9 +2643,8 @@
             this.lblscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lblscount.Location = new System.Drawing.Point(516, 280);
             this.lblscount.Name = "lblscount";
-            this.lblscount.Size = new System.Drawing.Size(32, 22);
+            this.lblscount.Size = new System.Drawing.Size(0, 22);
             this.lblscount.TabIndex = 51;
-            this.lblscount.Text = "10";
             // 
             // label33
             // 
@@ -2086,6 +2658,26 @@
             this.label33.TabIndex = 50;
             this.label33.Text = "Recievable Amount";
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel24.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Mail_Money;
+            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel24.Location = new System.Drawing.Point(307, 229);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(34, 34);
+            this.panel24.TabIndex = 49;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.White;
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox11.Location = new System.Drawing.Point(294, 249);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(141, 59);
+            this.pictureBox11.TabIndex = 48;
+            this.pictureBox11.TabStop = false;
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -2098,6 +2690,26 @@
             this.label27.TabIndex = 47;
             this.label27.Text = "No Of Items Seized";
             this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel23.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box;
+            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel23.Location = new System.Drawing.Point(462, 229);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(34, 34);
+            this.panel23.TabIndex = 46;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.White;
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox10.Location = new System.Drawing.Point(449, 248);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(141, 60);
+            this.pictureBox10.TabIndex = 16;
+            this.pictureBox10.TabStop = false;
             // 
             // txtino
             // 
@@ -2118,6 +2730,32 @@
             this.txtino.OnValueChanged += new System.EventHandler(this.txtino_OnValueChanged);
             this.txtino.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuMetroTextbox1_KeyPress);
             // 
+            // btndeleteSeized
+            // 
+            this.btndeleteSeized.ActiveBorderThickness = 1;
+            this.btndeleteSeized.ActiveCornerRadius = 20;
+            this.btndeleteSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteSeized.ActiveForecolor = System.Drawing.Color.White;
+            this.btndeleteSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndeleteSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteSeized.BackgroundImage")));
+            this.btndeleteSeized.ButtonText = "Delete";
+            this.btndeleteSeized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndeleteSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeleteSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteSeized.IdleBorderThickness = 1;
+            this.btndeleteSeized.IdleCornerRadius = 20;
+            this.btndeleteSeized.IdleFillColor = System.Drawing.Color.White;
+            this.btndeleteSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteSeized.Location = new System.Drawing.Point(131, 203);
+            this.btndeleteSeized.Margin = new System.Windows.Forms.Padding(5);
+            this.btndeleteSeized.Name = "btndeleteSeized";
+            this.btndeleteSeized.Size = new System.Drawing.Size(116, 41);
+            this.btndeleteSeized.TabIndex = 43;
+            this.btndeleteSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndeleteSeized.Click += new System.EventHandler(this.btndeleteSeized_Click);
+            // 
             // datese
             // 
             this.datese.CustomFormat = "yyyy-MM-dd";
@@ -2127,25 +2765,51 @@
             this.datese.Size = new System.Drawing.Size(107, 20);
             this.datese.TabIndex = 42;
             // 
+            // btnaddSeized
+            // 
+            this.btnaddSeized.ActiveBorderThickness = 1;
+            this.btnaddSeized.ActiveCornerRadius = 20;
+            this.btnaddSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddSeized.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnaddSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddSeized.BackgroundImage")));
+            this.btnaddSeized.ButtonText = "Add ";
+            this.btnaddSeized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddSeized.IdleBorderThickness = 1;
+            this.btnaddSeized.IdleCornerRadius = 20;
+            this.btnaddSeized.IdleFillColor = System.Drawing.Color.White;
+            this.btnaddSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddSeized.Location = new System.Drawing.Point(8, 203);
+            this.btnaddSeized.Margin = new System.Windows.Forms.Padding(5);
+            this.btnaddSeized.Name = "btnaddSeized";
+            this.btnaddSeized.Size = new System.Drawing.Size(116, 41);
+            this.btnaddSeized.TabIndex = 40;
+            this.btnaddSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnaddSeized.Click += new System.EventHandler(this.btnaddSeized_Click);
+            // 
             // tableseized
             // 
             this.tableseized.AllowUserToAddRows = false;
             this.tableseized.AllowUserToDeleteRows = false;
             this.tableseized.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableseized.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableseized.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle53;
             this.tableseized.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tableseized.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tableseized.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableseized.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableseized.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableseized.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle54;
             this.tableseized.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableseized.DoubleBuffered = true;
             this.tableseized.EnableHeadersVisualStyles = false;
@@ -2338,15 +3002,25 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Summary Card";
             // 
+            // btnprintrecep
+            // 
+            this.btnprintrecep.Image = global::inventory.Properties.Resources.receipt;
+            this.btnprintrecep.Location = new System.Drawing.Point(152, 138);
+            this.btnprintrecep.Name = "btnprintrecep";
+            this.btnprintrecep.Size = new System.Drawing.Size(48, 48);
+            this.btnprintrecep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnprintrecep.TabIndex = 46;
+            this.btnprintrecep.TabStop = false;
+            this.btnprintrecep.Click += new System.EventHandler(this.btnprintrecep_Click);
+            // 
             // lbl
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F);
             this.lbl.Location = new System.Drawing.Point(106, 45);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(69, 18);
+            this.lbl.Size = new System.Drawing.Size(0, 18);
             this.lbl.TabIndex = 45;
-            this.lbl.Text = "Invoice No";
             // 
             // dfg
             // 
@@ -2389,9 +3063,8 @@
             this.lblin.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F);
             this.lblin.Location = new System.Drawing.Point(106, 21);
             this.lblin.Name = "lblin";
-            this.lblin.Size = new System.Drawing.Size(69, 18);
+            this.lblin.Size = new System.Drawing.Size(0, 18);
             this.lblin.TabIndex = 41;
-            this.lblin.Text = "Invoice No";
             // 
             // dates
             // 
@@ -2401,6 +3074,32 @@
             this.dates.Name = "dates";
             this.dates.Size = new System.Drawing.Size(107, 20);
             this.dates.TabIndex = 40;
+            // 
+            // bunifuThinButton211
+            // 
+            this.bunifuThinButton211.ActiveBorderThickness = 1;
+            this.bunifuThinButton211.ActiveCornerRadius = 20;
+            this.bunifuThinButton211.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton211.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton211.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton211.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
+            this.bunifuThinButton211.ButtonText = "Update";
+            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton211.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton211.IdleBorderThickness = 1;
+            this.bunifuThinButton211.IdleCornerRadius = 20;
+            this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton211.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton211.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton211.Location = new System.Drawing.Point(12, 152);
+            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton211.Name = "bunifuThinButton211";
+            this.bunifuThinButton211.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton211.TabIndex = 38;
+            this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton211.Click += new System.EventHandler(this.bunifuThinButton211_Click);
             // 
             // label38
             // 
@@ -2415,20 +3114,20 @@
             // 
             this.tblinssummary.AllowUserToAddRows = false;
             this.tblinssummary.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblinssummary.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblinssummary.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle55;
             this.tblinssummary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblinssummary.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblinssummary.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblinssummary.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblinssummary.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblinssummary.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
             this.tblinssummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblinssummary.DoubleBuffered = true;
             this.tblinssummary.EnableHeadersVisualStyles = false;
@@ -2476,20 +3175,20 @@
             // 
             this.tblinscust.AllowUserToAddRows = false;
             this.tblinscust.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblinscust.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.tblinscust.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            dataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblinscust.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle57;
+            this.tblinscust.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tblinscust.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblinscust.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblinscust.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblinscust.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle58.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblinscust.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
             this.tblinscust.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblinscust.DoubleBuffered = true;
             this.tblinscust.EnableHeadersVisualStyles = false;
@@ -2506,6 +3205,58 @@
             this.tblinscust.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblinscust_CellContentClick);
             this.tblinscust.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblinscust_CellContentDoubleClick);
             // 
+            // bunifuThinButton29
+            // 
+            this.bunifuThinButton29.ActiveBorderThickness = 1;
+            this.bunifuThinButton29.ActiveCornerRadius = 20;
+            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
+            this.bunifuThinButton29.ButtonText = "Refresh";
+            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.IdleBorderThickness = 1;
+            this.bunifuThinButton29.IdleCornerRadius = 20;
+            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.Location = new System.Drawing.Point(177, 61);
+            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton29.Name = "bunifuThinButton29";
+            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton29.TabIndex = 33;
+            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
+            // 
+            // bunifuThinButton28
+            // 
+            this.bunifuThinButton28.ActiveBorderThickness = 1;
+            this.bunifuThinButton28.ActiveCornerRadius = 20;
+            this.bunifuThinButton28.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton28.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton28.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton28.BackgroundImage")));
+            this.bunifuThinButton28.ButtonText = "Search";
+            this.bunifuThinButton28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton28.IdleBorderThickness = 1;
+            this.bunifuThinButton28.IdleCornerRadius = 20;
+            this.bunifuThinButton28.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton28.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton28.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton28.Location = new System.Drawing.Point(44, 61);
+            this.bunifuThinButton28.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton28.Name = "bunifuThinButton28";
+            this.bunifuThinButton28.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton28.TabIndex = 32;
+            this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton28.Click += new System.EventHandler(this.bunifuThinButton28_Click);
+            // 
             // dateto
             // 
             this.dateto.CustomFormat = "yyyy-MM-dd";
@@ -2517,14 +3268,36 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label74);
+            this.groupBox2.Controls.Add(this.pictureBox14);
             this.groupBox2.Controls.Add(this.label76);
             this.groupBox2.Controls.Add(this.pictureBox12);
             this.groupBox2.Location = new System.Drawing.Point(348, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(102, 88);
+            this.groupBox2.Size = new System.Drawing.Size(179, 88);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Unpaid List";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(85, 73);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(87, 12);
+            this.label74.TabIndex = 49;
+            this.label74.Text = "CRYSTAL REPORT";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::inventory.Properties.Resources.text_icon;
+            this.pictureBox14.Location = new System.Drawing.Point(102, 22);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox14.TabIndex = 48;
+            this.pictureBox14.TabStop = false;
             // 
             // label76
             // 
@@ -2535,6 +3308,16 @@
             this.label76.Size = new System.Drawing.Size(24, 12);
             this.label76.TabIndex = 38;
             this.label76.Text = "PDF";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::inventory.Properties.Resources._31;
+            this.pictureBox12.Location = new System.Drawing.Point(23, 22);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox12.TabIndex = 27;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // datefrom
             // 
@@ -2623,17 +3406,17 @@
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart2.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart2.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart2.Legends.Add(legend4);
             this.chart2.Location = new System.Drawing.Point(-2, 3);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Type";
-            this.chart2.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Type";
+            this.chart2.Series.Add(series4);
             this.chart2.Size = new System.Drawing.Size(425, 280);
             this.chart2.TabIndex = 159;
             this.chart2.Text = "chart2";
@@ -2642,20 +3425,20 @@
             // 
             this.tblseizedhide.AllowUserToAddRows = false;
             this.tblseizedhide.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblseizedhide.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblseizedhide.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle59;
             this.tblseizedhide.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tblseizedhide.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblseizedhide.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblseizedhide.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblseizedhide.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle60.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblseizedhide.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle60;
             this.tblseizedhide.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblseizedhide.DoubleBuffered = true;
             this.tblseizedhide.EnableHeadersVisualStyles = false;
@@ -2692,6 +3475,58 @@
             this.lblid.TabIndex = 164;
             this.lblid.Text = "10";
             // 
+            // btnupdateie
+            // 
+            this.btnupdateie.ActiveBorderThickness = 1;
+            this.btnupdateie.ActiveCornerRadius = 20;
+            this.btnupdateie.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdateie.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdateie.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdateie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdateie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdateie.BackgroundImage")));
+            this.btnupdateie.ButtonText = "Update";
+            this.btnupdateie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdateie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdateie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdateie.IdleBorderThickness = 1;
+            this.btnupdateie.IdleCornerRadius = 20;
+            this.btnupdateie.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdateie.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdateie.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdateie.Location = new System.Drawing.Point(133, 219);
+            this.btnupdateie.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdateie.Name = "btnupdateie";
+            this.btnupdateie.Size = new System.Drawing.Size(116, 41);
+            this.btnupdateie.TabIndex = 163;
+            this.btnupdateie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdateie.Click += new System.EventHandler(this.btnupdateie_Click);
+            // 
+            // btnaddex
+            // 
+            this.btnaddex.ActiveBorderThickness = 1;
+            this.btnaddex.ActiveCornerRadius = 20;
+            this.btnaddex.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddex.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddex.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnaddex.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddex.BackgroundImage")));
+            this.btnaddex.ButtonText = "Add";
+            this.btnaddex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddex.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddex.IdleBorderThickness = 1;
+            this.btnaddex.IdleCornerRadius = 20;
+            this.btnaddex.IdleFillColor = System.Drawing.Color.White;
+            this.btnaddex.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddex.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddex.Location = new System.Drawing.Point(7, 219);
+            this.btnaddex.Margin = new System.Windows.Forms.Padding(5);
+            this.btnaddex.Name = "btnaddex";
+            this.btnaddex.Size = new System.Drawing.Size(116, 41);
+            this.btnaddex.TabIndex = 162;
+            this.btnaddex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnaddex.Click += new System.EventHandler(this.btnaddex_Click);
+            // 
             // panel26
             // 
             this.panel26.Controls.Add(this.pictureBox2);
@@ -2700,6 +3535,16 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(433, 342);
             this.panel26.TabIndex = 161;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
+            this.pictureBox2.Location = new System.Drawing.Point(393, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox2.TabIndex = 161;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // label60
             // 
@@ -2738,20 +3583,20 @@
             // 
             this.tblei.AllowUserToAddRows = false;
             this.tblei.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblei.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblei.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
             this.tblei.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tblei.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblei.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblei.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblei.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle62.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblei.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
             this.tblei.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblei.DoubleBuffered = true;
             this.tblei.EnableHeadersVisualStyles = false;
@@ -2789,6 +3634,16 @@
             this.label99.TabIndex = 156;
             this.label99.Text = "PDF";
             // 
+            // btnseized
+            // 
+            this.btnseized.Image = global::inventory.Properties.Resources._3;
+            this.btnseized.Location = new System.Drawing.Point(143, 19);
+            this.btnseized.Name = "btnseized";
+            this.btnseized.Size = new System.Drawing.Size(48, 48);
+            this.btnseized.TabIndex = 155;
+            this.btnseized.TabStop = false;
+            this.btnseized.Click += new System.EventHandler(this.btnseized_Click);
+            // 
             // dateseizedselect
             // 
             this.dateseizedselect.CustomFormat = "yyyy-MM-dd";
@@ -2824,6 +3679,32 @@
             this.dateie.Name = "dateie";
             this.dateie.Size = new System.Drawing.Size(155, 20);
             this.dateie.TabIndex = 149;
+            // 
+            // btndeleteei
+            // 
+            this.btndeleteei.ActiveBorderThickness = 1;
+            this.btndeleteei.ActiveCornerRadius = 20;
+            this.btndeleteei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteei.ActiveForecolor = System.Drawing.Color.White;
+            this.btndeleteei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndeleteei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteei.BackgroundImage")));
+            this.btndeleteei.ButtonText = "Delete";
+            this.btndeleteei.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndeleteei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeleteei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btndeleteei.IdleBorderThickness = 1;
+            this.btndeleteei.IdleCornerRadius = 20;
+            this.btndeleteei.IdleFillColor = System.Drawing.Color.White;
+            this.btndeleteei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btndeleteei.Location = new System.Drawing.Point(259, 219);
+            this.btndeleteei.Margin = new System.Windows.Forms.Padding(5);
+            this.btndeleteei.Name = "btndeleteei";
+            this.btndeleteei.Size = new System.Drawing.Size(116, 41);
+            this.btndeleteei.TabIndex = 139;
+            this.btndeleteei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndeleteei.Click += new System.EventHandler(this.btndeleteei_Click);
             // 
             // label62
             // 
@@ -2958,6 +3839,16 @@
             this.Spanel.Size = new System.Drawing.Size(632, 267);
             this.Spanel.TabIndex = 161;
             // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel19.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_Bag;
+            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel19.Location = new System.Drawing.Point(392, 140);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(53, 47);
+            this.panel19.TabIndex = 19;
+            // 
             // panel20
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -2988,9 +3879,29 @@
             this.lblbtot.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbtot.Location = new System.Drawing.Point(52, 43);
             this.lblbtot.Name = "lblbtot";
-            this.lblbtot.Size = new System.Drawing.Size(76, 22);
+            this.lblbtot.Size = new System.Drawing.Size(0, 22);
             this.lblbtot.TabIndex = 9;
-            this.lblbtot.Text = "200000";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel16.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Bag;
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel16.Location = new System.Drawing.Point(392, 10);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(53, 47);
+            this.panel16.TabIndex = 17;
             // 
             // panel18
             // 
@@ -3026,6 +3937,27 @@
             this.lblpcount.TabIndex = 9;
             this.lblpcount.Text = "15000";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel13.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box1;
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel13.Location = new System.Drawing.Point(66, 10);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(53, 47);
+            this.panel13.TabIndex = 15;
+            // 
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -3056,9 +3988,29 @@
             this.lblcount.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcount.Location = new System.Drawing.Point(80, 40);
             this.lblcount.Name = "lblcount";
-            this.lblcount.Size = new System.Drawing.Size(21, 22);
+            this.lblcount.Size = new System.Drawing.Size(0, 22);
             this.lblcount.TabIndex = 9;
-            this.lblcount.Text = "5";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel17.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_2;
+            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel17.Location = new System.Drawing.Point(65, 140);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(53, 47);
+            this.panel17.TabIndex = 13;
             // 
             // panel15
             // 
@@ -3090,9 +4042,19 @@
             this.lbldate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldate.Location = new System.Drawing.Point(40, 43);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(110, 22);
+            this.lbldate.Size = new System.Drawing.Size(0, 22);
             this.lbldate.TabIndex = 9;
-            this.lbldate.Text = "2017-08-12";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
             // 
             // panel10
             // 
@@ -3112,6 +4074,21 @@
             this.label70.Size = new System.Drawing.Size(14, 108);
             this.label70.TabIndex = 6;
             this.label70.Text = "D\r\nA\r\nS\r\nH\r\nB\r\nO\r\nA\r\nR\r\nD\r\n";
+            // 
+            // bunifuImageButton5
+            // 
+            this.bunifuImageButton5.BackColor = System.Drawing.Color.MistyRose;
+            this.bunifuImageButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuImageButton5.Image = global::inventory.Properties.Resources.Icons8_Windows_8_Editing_Line_Width;
+            this.bunifuImageButton5.ImageActive = null;
+            this.bunifuImageButton5.Location = new System.Drawing.Point(0, 0);
+            this.bunifuImageButton5.Name = "bunifuImageButton5";
+            this.bunifuImageButton5.Size = new System.Drawing.Size(29, 38);
+            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton5.TabIndex = 5;
+            this.bunifuImageButton5.TabStop = false;
+            this.bunifuImageButton5.Zoom = 10;
+            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click_1);
             // 
             // cmdaccno
             // 
@@ -3206,24 +4183,50 @@
             this.radbpa.UseVisualStyleBackColor = true;
             this.radbpa.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
+            // btnaddbank
+            // 
+            this.btnaddbank.ActiveBorderThickness = 1;
+            this.btnaddbank.ActiveCornerRadius = 20;
+            this.btnaddbank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddbank.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddbank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddbank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnaddbank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddbank.BackgroundImage")));
+            this.btnaddbank.ButtonText = "Add";
+            this.btnaddbank.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddbank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddbank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnaddbank.IdleBorderThickness = 1;
+            this.btnaddbank.IdleCornerRadius = 20;
+            this.btnaddbank.IdleFillColor = System.Drawing.Color.White;
+            this.btnaddbank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddbank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnaddbank.Location = new System.Drawing.Point(101, 244);
+            this.btnaddbank.Margin = new System.Windows.Forms.Padding(5);
+            this.btnaddbank.Name = "btnaddbank";
+            this.btnaddbank.Size = new System.Drawing.Size(116, 41);
+            this.btnaddbank.TabIndex = 152;
+            this.btnaddbank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnaddbank.Click += new System.EventHandler(this.btnaddbank_Click);
+            // 
             // tblbank
             // 
             this.tblbank.AllowUserToAddRows = false;
             this.tblbank.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblbank.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.tblbank.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            dataGridViewCellStyle63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblbank.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle63;
+            this.tblbank.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tblbank.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblbank.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblbank.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblbank.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle64.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle64.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle64.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblbank.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle64;
             this.tblbank.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblbank.DoubleBuffered = true;
             this.tblbank.EnableHeadersVisualStyles = false;
@@ -3259,6 +4262,58 @@
             this.datecom.Name = "datecom";
             this.datecom.Size = new System.Drawing.Size(137, 20);
             this.datecom.TabIndex = 143;
+            // 
+            // bunifuThinButton219
+            // 
+            this.bunifuThinButton219.ActiveBorderThickness = 1;
+            this.bunifuThinButton219.ActiveCornerRadius = 20;
+            this.bunifuThinButton219.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton219.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton219.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton219.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton219.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton219.BackgroundImage")));
+            this.bunifuThinButton219.ButtonText = "Delete";
+            this.bunifuThinButton219.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton219.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton219.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton219.IdleBorderThickness = 1;
+            this.bunifuThinButton219.IdleCornerRadius = 20;
+            this.bunifuThinButton219.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton219.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton219.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton219.Location = new System.Drawing.Point(353, 244);
+            this.bunifuThinButton219.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton219.Name = "bunifuThinButton219";
+            this.bunifuThinButton219.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton219.TabIndex = 136;
+            this.bunifuThinButton219.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton219.Click += new System.EventHandler(this.bunifuThinButton219_Click);
+            // 
+            // btnupdatebank
+            // 
+            this.btnupdatebank.ActiveBorderThickness = 1;
+            this.btnupdatebank.ActiveCornerRadius = 20;
+            this.btnupdatebank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdatebank.ActiveForecolor = System.Drawing.Color.White;
+            this.btnupdatebank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdatebank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnupdatebank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdatebank.BackgroundImage")));
+            this.btnupdatebank.ButtonText = "Update";
+            this.btnupdatebank.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdatebank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdatebank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnupdatebank.IdleBorderThickness = 1;
+            this.btnupdatebank.IdleCornerRadius = 20;
+            this.btnupdatebank.IdleFillColor = System.Drawing.Color.White;
+            this.btnupdatebank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdatebank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnupdatebank.Location = new System.Drawing.Point(227, 244);
+            this.btnupdatebank.Margin = new System.Windows.Forms.Padding(5);
+            this.btnupdatebank.Name = "btnupdatebank";
+            this.btnupdatebank.Size = new System.Drawing.Size(116, 41);
+            this.btnupdatebank.TabIndex = 134;
+            this.btnupdatebank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnupdatebank.Click += new System.EventHandler(this.btnupdatebank_Click);
             // 
             // txtlamt
             // 
@@ -3467,51 +4522,51 @@
             this.chart3.BorderSkin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart3.BorderSkin.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart3.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            chartArea2.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart3.Legends.Add(legend2);
+            chartArea5.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart3.Legends.Add(legend5);
             this.chart3.Location = new System.Drawing.Point(-2, -2);
             this.chart3.Name = "chart3";
-            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Vertical;
-            series2.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            series2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            series2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            series2.LabelBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            series2.Legend = "Legend1";
-            series2.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            series2.Name = "orderid";
-            this.chart3.Series.Add(series2);
+            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series5.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Vertical;
+            series5.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series5.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series5.LabelBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series5.Legend = "Legend1";
+            series5.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series5.Name = "orderid";
+            this.chart3.Series.Add(series5);
             this.chart3.Size = new System.Drawing.Size(530, 411);
             this.chart3.TabIndex = 158;
             this.chart3.Text = "chart3";
-            title1.Name = "Title1";
-            this.chart3.Titles.Add(title1);
+            title3.Name = "Title1";
+            this.chart3.Titles.Add(title3);
             // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart1.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(21, 13);
             this.chart1.Name = "chart1";
-            series3.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "orderid";
-            this.chart1.Series.Add(series3);
+            series6.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "orderid";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(515, 409);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
-            title2.Name = "Title1";
-            this.chart1.Titles.Add(title2);
+            title4.Name = "Title1";
+            this.chart1.Titles.Add(title4);
             // 
             // cmbchart
             // 
@@ -3526,6 +4581,16 @@
             this.cmbchart.Size = new System.Drawing.Size(121, 26);
             this.cmbchart.TabIndex = 157;
             this.cmbchart.Text = "Select an option";
+            // 
+            // btnchartgene
+            // 
+            this.btnchartgene.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
+            this.btnchartgene.Location = new System.Drawing.Point(285, 19);
+            this.btnchartgene.Name = "btnchartgene";
+            this.btnchartgene.Size = new System.Drawing.Size(41, 39);
+            this.btnchartgene.TabIndex = 156;
+            this.btnchartgene.TabStop = false;
+            this.btnchartgene.Click += new System.EventHandler(this.btnchartgene_Click);
             // 
             // label68
             // 
@@ -3549,6 +4614,9 @@
             // 
             // groupBox20
             // 
+            this.groupBox20.Controls.Add(this.panel31);
+            this.groupBox20.Controls.Add(this.panel30);
+            this.groupBox20.Controls.Add(this.bunifuCards1);
             this.groupBox20.Controls.Add(this.panel2);
             this.groupBox20.Controls.Add(this.panel21);
             this.groupBox20.Controls.Add(this.panel3);
@@ -3560,13 +4628,414 @@
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Profit | Loss";
             // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel31.BackgroundImage = global::inventory.Properties.Resources.icons8_percentage_48;
+            this.panel31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel31.Location = new System.Drawing.Point(426, 31);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(53, 47);
+            this.panel31.TabIndex = 20;
+            this.panel31.Paint += new System.Windows.Forms.PaintEventHandler(this.panel31_Paint);
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.White;
+            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel30.Controls.Add(this.lblvari);
+            this.panel30.Controls.Add(this.label114);
+            this.panel30.Location = new System.Drawing.Point(413, 60);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(153, 83);
+            this.panel30.TabIndex = 153;
+            // 
+            // lblvari
+            // 
+            this.lblvari.AutoSize = true;
+            this.lblvari.BackColor = System.Drawing.Color.White;
+            this.lblvari.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvari.Location = new System.Drawing.Point(26, 29);
+            this.lblvari.Name = "lblvari";
+            this.lblvari.Size = new System.Drawing.Size(122, 40);
+            this.lblvari.TabIndex = 13;
+            this.lblvari.Text = "10000";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.BackColor = System.Drawing.Color.White;
+            this.label114.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label114.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label114.Location = new System.Drawing.Point(66, 5);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(78, 23);
+            this.label114.TabIndex = 13;
+            this.label114.Text = "Variance";
+            // 
+            // bunifuCards1
+            // 
+            this.bunifuCards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuCards1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuCards1.BorderRadius = 5;
+            this.bunifuCards1.BottomSahddow = true;
+            this.bunifuCards1.color = System.Drawing.Color.Turquoise;
+            this.bunifuCards1.Controls.Add(this.groupBox10);
+            this.bunifuCards1.LeftSahddow = false;
+            this.bunifuCards1.Location = new System.Drawing.Point(6, 158);
+            this.bunifuCards1.Name = "bunifuCards1";
+            this.bunifuCards1.RightSahddow = true;
+            this.bunifuCards1.ShadowDepth = 20;
+            this.bunifuCards1.Size = new System.Drawing.Size(567, 335);
+            this.bunifuCards1.TabIndex = 152;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox10.Controls.Add(this.panel29);
+            this.groupBox10.Controls.Add(this.bunifuThinButton22);
+            this.groupBox10.Controls.Add(this.label112);
+            this.groupBox10.Controls.Add(this.label97);
+            this.groupBox10.Controls.Add(this.label98);
+            this.groupBox10.Controls.Add(this.label100);
+            this.groupBox10.Controls.Add(this.label101);
+            this.groupBox10.Controls.Add(this.label102);
+            this.groupBox10.Controls.Add(this.label104);
+            this.groupBox10.Controls.Add(this.label106);
+            this.groupBox10.Controls.Add(this.label107);
+            this.groupBox10.Controls.Add(this.label109);
+            this.groupBox10.Controls.Add(this.label110);
+            this.groupBox10.Controls.Add(this.label111);
+            this.groupBox10.Controls.Add(this.label72);
+            this.groupBox10.Controls.Add(this.label80);
+            this.groupBox10.Controls.Add(this.label82);
+            this.groupBox10.Controls.Add(this.label84);
+            this.groupBox10.Controls.Add(this.label95);
+            this.groupBox10.Controls.Add(this.label69);
+            this.groupBox10.Controls.Add(this.label64);
+            this.groupBox10.Controls.Add(this.label61);
+            this.groupBox10.Controls.Add(this.label59);
+            this.groupBox10.Controls.Add(this.label49);
+            this.groupBox10.Controls.Add(this.label47);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Location = new System.Drawing.Point(8, 7);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(549, 319);
+            this.groupBox10.TabIndex = 30;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Expense Budget";
+            // 
+            // panel29
+            // 
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel29.Controls.Add(this.label113);
+            this.panel29.Controls.Add(this.lblmonth);
+            this.panel29.Location = new System.Drawing.Point(375, 12);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(158, 89);
+            this.panel29.TabIndex = 145;
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.Location = new System.Drawing.Point(-2, 13);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(156, 27);
+            this.label113.TabIndex = 145;
+            this.label113.Text = "Current Month";
+            // 
+            // lblmonth
+            // 
+            this.lblmonth.AutoSize = true;
+            this.lblmonth.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmonth.ForeColor = System.Drawing.Color.Purple;
+            this.lblmonth.Location = new System.Drawing.Point(13, 46);
+            this.lblmonth.Name = "lblmonth";
+            this.lblmonth.Size = new System.Drawing.Size(74, 31);
+            this.lblmonth.TabIndex = 145;
+            this.lblmonth.Text = "Sales";
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Generate";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton22.Location = new System.Drawing.Point(84, 274);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton22.TabIndex = 144;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.Location = new System.Drawing.Point(422, 291);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(49, 21);
+            this.label112.TabIndex = 26;
+            this.label112.Text = "Other";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.Location = new System.Drawing.Point(202, 250);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(54, 15);
+            this.label97.TabIndex = 24;
+            this.label97.Text = "Electricity";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Location = new System.Drawing.Point(202, 226);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(44, 15);
+            this.label98.TabIndex = 23;
+            this.label98.Text = "Internet";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.Location = new System.Drawing.Point(202, 202);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(58, 15);
+            this.label100.TabIndex = 22;
+            this.label100.Text = "Telephone";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(202, 180);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(37, 15);
+            this.label101.TabIndex = 21;
+            this.label101.Text = "Loans";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.Location = new System.Drawing.Point(201, 158);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(68, 15);
+            this.label102.TabIndex = 20;
+            this.label102.Text = "Depreciation";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.Location = new System.Drawing.Point(201, 135);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(47, 15);
+            this.label104.TabIndex = 19;
+            this.label104.Text = "Delivery";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.Location = new System.Drawing.Point(202, 112);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(125, 15);
+            this.label106.TabIndex = 18;
+            this.label106.Text = "Maintenance and Repair";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label107.Location = new System.Drawing.Point(202, 88);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(86, 15);
+            this.label107.TabIndex = 17;
+            this.label107.Text = "Rent or Mortage";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.Location = new System.Drawing.Point(202, 64);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(72, 15);
+            this.label109.TabIndex = 16;
+            this.label109.Text = "Other Utilities";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.Location = new System.Drawing.Point(202, 42);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(26, 15);
+            this.label110.TabIndex = 15;
+            this.label110.Text = "Tax";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.Location = new System.Drawing.Point(202, 19);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(86, 15);
+            this.label111.TabIndex = 14;
+            this.label111.Text = "Sales Expenses";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(314, 298);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(83, 12);
+            this.label72.TabIndex = 13;
+            this.label72.Text = "Total Expense";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(32, 251);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(61, 12);
+            this.label80.TabIndex = 11;
+            this.label80.Text = "Electricity";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(32, 227);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(49, 12);
+            this.label82.TabIndex = 10;
+            this.label82.Text = "Internet";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(32, 203);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(64, 12);
+            this.label84.TabIndex = 9;
+            this.label84.Text = "Telephone";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(32, 181);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(39, 12);
+            this.label95.TabIndex = 8;
+            this.label95.Text = "Loans";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(31, 159);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(77, 12);
+            this.label69.TabIndex = 6;
+            this.label69.Text = "Depreciation";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(31, 136);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(50, 12);
+            this.label64.TabIndex = 5;
+            this.label64.Text = "Delivery";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(32, 113);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(141, 12);
+            this.label61.TabIndex = 4;
+            this.label61.Text = "Maintenance and Repair";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(32, 89);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(95, 12);
+            this.label59.TabIndex = 3;
+            this.label59.Text = "Rent or Mortage";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(32, 65);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(81, 12);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "Other Utilities";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(32, 43);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(25, 12);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "Tax";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(32, 20);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(91, 12);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Sales Expenses";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Down;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Location = new System.Drawing.Point(223, 29);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(53, 47);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel21.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Up;
+            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel21.Location = new System.Drawing.Point(20, 29);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(53, 47);
+            this.panel21.TabIndex = 151;
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.los);
             this.panel3.Controls.Add(this.label73);
             this.panel3.Controls.Add(this.pictureBox9);
-            this.panel3.Location = new System.Drawing.Point(313, 58);
+            this.panel3.Location = new System.Drawing.Point(211, 58);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(188, 86);
             this.panel3.TabIndex = 18;
@@ -3576,7 +5045,7 @@
             this.los.AutoSize = true;
             this.los.BackColor = System.Drawing.Color.White;
             this.los.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.los.Location = new System.Drawing.Point(42, 36);
+            this.los.Location = new System.Drawing.Point(12, 36);
             this.los.Name = "los";
             this.los.Size = new System.Drawing.Size(95, 32);
             this.los.TabIndex = 12;
@@ -3594,13 +5063,24 @@
             this.label73.TabIndex = 11;
             this.label73.Text = "Net Loss";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
             // panel22
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel22.Controls.Add(this.lblpro);
             this.panel22.Controls.Add(this.label75);
             this.panel22.Controls.Add(this.pictureBox8);
-            this.panel22.Location = new System.Drawing.Point(58, 58);
+            this.panel22.Location = new System.Drawing.Point(8, 58);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(188, 86);
             this.panel22.TabIndex = 150;
@@ -3610,7 +5090,7 @@
             this.lblpro.AutoSize = true;
             this.lblpro.BackColor = System.Drawing.Color.White;
             this.lblpro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpro.Location = new System.Drawing.Point(38, 36);
+            this.lblpro.Location = new System.Drawing.Point(9, 36);
             this.lblpro.Name = "lblpro";
             this.lblpro.Size = new System.Drawing.Size(111, 32);
             this.lblpro.TabIndex = 13;
@@ -3627,6 +5107,17 @@
             this.label75.Size = new System.Drawing.Size(89, 23);
             this.label75.TabIndex = 12;
             this.label75.Text = "Net Profit";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(184, 82);
+            this.pictureBox8.TabIndex = 8;
+            this.pictureBox8.TabStop = false;
             // 
             // panel11
             // 
@@ -3653,24 +5144,55 @@
             this.panel11.Size = new System.Drawing.Size(1194, 173);
             this.panel11.TabIndex = 1;
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.pictureBox23);
+            this.groupBox9.Controls.Add(this.label108);
+            this.groupBox9.Location = new System.Drawing.Point(970, 29);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(134, 100);
+            this.groupBox9.TabIndex = 71;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Profit and Loss";
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(44, 29);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox23.TabIndex = 47;
+            this.pictureBox23.TabStop = false;
+            this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click_1);
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label108.Location = new System.Drawing.Point(56, 79);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(24, 12);
+            this.label108.TabIndex = 48;
+            this.label108.Text = "PDF";
+            // 
             // tblc
             // 
             this.tblc.AllowUserToAddRows = false;
             this.tblc.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle65;
             this.tblc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblc.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle66.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle66.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle66;
             this.tblc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblc.DoubleBuffered = true;
             this.tblc.EnableHeadersVisualStyles = false;
@@ -3689,20 +5211,20 @@
             // 
             this.tble.AllowUserToAddRows = false;
             this.tble.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tble.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tble.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle67;
             this.tble.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tble.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tble.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tble.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tble.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle68.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle68.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tble.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle68;
             this.tble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tble.DoubleBuffered = true;
             this.tble.EnableHeadersVisualStyles = false;
@@ -3721,20 +5243,20 @@
             // 
             this.tblb.AllowUserToAddRows = false;
             this.tblb.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle69;
             this.tblb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblb.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle70.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle70.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle70.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle70.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle70;
             this.tblb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblb.DoubleBuffered = true;
             this.tblb.EnableHeadersVisualStyles = false;
@@ -3753,20 +5275,20 @@
             // 
             this.tbldeli.AllowUserToAddRows = false;
             this.tbldeli.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbldeli.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbldeli.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle71;
             this.tbldeli.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tbldeli.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tbldeli.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbldeli.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbldeli.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle72.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle72.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbldeli.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle72;
             this.tbldeli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbldeli.DoubleBuffered = true;
             this.tbldeli.EnableHeadersVisualStyles = false;
@@ -3785,20 +5307,20 @@
             // 
             this.tblsal.AllowUserToAddRows = false;
             this.tblsal.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblsal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblsal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle73;
             this.tblsal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblsal.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblsal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblsal.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblsal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle74.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle74.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle74.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblsal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle74;
             this.tblsal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblsal.DoubleBuffered = true;
             this.tblsal.EnableHeadersVisualStyles = false;
@@ -3817,20 +5339,20 @@
             // 
             this.tbltax.AllowUserToAddRows = false;
             this.tbltax.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbltax.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbltax.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle75;
             this.tbltax.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tbltax.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tbltax.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbltax.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbltax.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle76.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle76.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle76.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbltax.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle76;
             this.tbltax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbltax.DoubleBuffered = true;
             this.tbltax.EnableHeadersVisualStyles = false;
@@ -3849,20 +5371,20 @@
             // 
             this.tblitm.AllowUserToAddRows = false;
             this.tblitm.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblitm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblitm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle77;
             this.tblitm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblitm.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblitm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblitm.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblitm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle78.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle78.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle78.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle78.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle78.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblitm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle78;
             this.tblitm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblitm.DoubleBuffered = true;
             this.tblitm.EnableHeadersVisualStyles = false;
@@ -3881,20 +5403,20 @@
             // 
             this.tblex.AllowUserToAddRows = false;
             this.tblex.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblex.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblex.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle79;
             this.tblex.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblex.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblex.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblex.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblex.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle80.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle80.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle80.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle80.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle80.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle80.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle80.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblex.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle80;
             this.tblex.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblex.DoubleBuffered = true;
             this.tblex.EnableHeadersVisualStyles = false;
@@ -3913,20 +5435,20 @@
             // 
             this.tblin.AllowUserToAddRows = false;
             this.tblin.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle81;
             this.tblin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblin.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle82.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle82.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle82.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle82.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle82;
             this.tblin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblin.DoubleBuffered = true;
             this.tblin.EnableHeadersVisualStyles = false;
@@ -3945,20 +5467,20 @@
             // 
             this.tblploan.AllowUserToAddRows = false;
             this.tblploan.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblploan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblploan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle83;
             this.tblploan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblploan.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblploan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblploan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblploan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle84.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle84.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle84.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle84.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle84.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblploan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle84;
             this.tblploan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblploan.DoubleBuffered = true;
             this.tblploan.EnableHeadersVisualStyles = false;
@@ -3977,20 +5499,20 @@
             // 
             this.tblloan.AllowUserToAddRows = false;
             this.tblloan.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblloan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle85.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblloan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle85;
             this.tblloan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblloan.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblloan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblloan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblloan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle86.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle86.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle86.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle86.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle86.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle86.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblloan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle86;
             this.tblloan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblloan.DoubleBuffered = true;
             this.tblloan.EnableHeadersVisualStyles = false;
@@ -4022,11 +5544,21 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(125, 78);
+            this.label36.Location = new System.Drawing.Point(100, 80);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(27, 12);
+            this.label36.Size = new System.Drawing.Size(87, 12);
             this.label36.TabIndex = 47;
-            this.label36.Text = "TEXT";
+            this.label36.Text = "CRYSTAL REPORT";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::inventory.Properties.Resources.text_icon;
+            this.pictureBox13.Location = new System.Drawing.Point(117, 29);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox13.TabIndex = 46;
+            this.pictureBox13.TabStop = false;
             // 
             // label35
             // 
@@ -4038,24 +5570,34 @@
             this.label35.TabIndex = 42;
             this.label35.Text = "PDF";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(37, 29);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.TabIndex = 41;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // tblbankhid
             // 
             this.tblbankhid.AllowUserToAddRows = false;
             this.tblbankhid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tblbankhid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tblbankhid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle87;
             this.tblbankhid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tblbankhid.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.tblbankhid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblbankhid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblbankhid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle88.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle88.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle88.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle88.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle88.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblbankhid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle88;
             this.tblbankhid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblbankhid.DoubleBuffered = true;
             this.tblbankhid.EnableHeadersVisualStyles = false;
@@ -4080,6 +5622,16 @@
             this.groupBox8.TabIndex = 28;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Assets and Liabilities";
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(48, 29);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox20.TabIndex = 41;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
             // label105
             // 
@@ -4112,6 +5664,16 @@
             this.label103.TabIndex = 42;
             this.label103.Text = "PDF";
             // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(37, 29);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox18.TabIndex = 41;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.pictureBox29);
@@ -4126,6 +5688,28 @@
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Annual Financial Statement";
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::inventory.Properties.Resources.minus;
+            this.pictureBox29.Location = new System.Drawing.Point(231, 54);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox29.TabIndex = 158;
+            this.pictureBox29.TabStop = false;
+            this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::inventory.Properties.Resources.plus;
+            this.pictureBox28.Location = new System.Drawing.Point(187, 53);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox28.TabIndex = 157;
+            this.pictureBox28.TabStop = false;
+            this.pictureBox28.Click += new System.EventHandler(this.pictureBox28_Click);
             // 
             // txtaddy
             // 
@@ -4160,1172 +5744,6 @@
             this.cmbyear.TabIndex = 57;
             this.cmbyear.Text = "Select an option";
             // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(5, 23);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(38, 18);
-            this.label67.TabIndex = 0;
-            this.label67.Text = "Year";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.pictureBox23);
-            this.groupBox9.Controls.Add(this.label108);
-            this.groupBox9.Location = new System.Drawing.Point(970, 29);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(134, 100);
-            this.groupBox9.TabIndex = 71;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Profit and Loss";
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.Location = new System.Drawing.Point(56, 79);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(24, 12);
-            this.label108.TabIndex = 48;
-            this.label108.Text = "PDF";
-            // 
-            // btninvoice
-            // 
-            this.btninvoice.ActiveBorderThickness = 1;
-            this.btninvoice.ActiveCornerRadius = 20;
-            this.btninvoice.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btninvoice.ActiveForecolor = System.Drawing.Color.White;
-            this.btninvoice.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btninvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btninvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninvoice.BackgroundImage")));
-            this.btninvoice.ButtonText = "Invoice";
-            this.btninvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btninvoice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btninvoice.IdleBorderThickness = 1;
-            this.btninvoice.IdleCornerRadius = 20;
-            this.btninvoice.IdleFillColor = System.Drawing.Color.White;
-            this.btninvoice.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btninvoice.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btninvoice.Location = new System.Drawing.Point(50, 368);
-            this.btninvoice.Margin = new System.Windows.Forms.Padding(5);
-            this.btninvoice.Name = "btninvoice";
-            this.btninvoice.Size = new System.Drawing.Size(105, 41);
-            this.btninvoice.TabIndex = 57;
-            this.btninvoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btninvoice.Click += new System.EventHandler(this.btninvoice_Click);
-            // 
-            // btncustomercopy
-            // 
-            this.btncustomercopy.ActiveBorderThickness = 1;
-            this.btncustomercopy.ActiveCornerRadius = 20;
-            this.btncustomercopy.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncustomercopy.ActiveForecolor = System.Drawing.Color.White;
-            this.btncustomercopy.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncustomercopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btncustomercopy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncustomercopy.BackgroundImage")));
-            this.btncustomercopy.ButtonText = "Customer Copy";
-            this.btncustomercopy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncustomercopy.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncustomercopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncustomercopy.IdleBorderThickness = 1;
-            this.btncustomercopy.IdleCornerRadius = 20;
-            this.btncustomercopy.IdleFillColor = System.Drawing.Color.White;
-            this.btncustomercopy.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncustomercopy.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncustomercopy.Location = new System.Drawing.Point(207, 368);
-            this.btncustomercopy.Margin = new System.Windows.Forms.Padding(5);
-            this.btncustomercopy.Name = "btncustomercopy";
-            this.btncustomercopy.Size = new System.Drawing.Size(151, 41);
-            this.btncustomercopy.TabIndex = 54;
-            this.btncustomercopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btncustomercopy.Click += new System.EventHandler(this.btncustomercopy_Click);
-            // 
-            // bunifuThinButton217
-            // 
-            this.bunifuThinButton217.ActiveBorderThickness = 1;
-            this.bunifuThinButton217.ActiveCornerRadius = 20;
-            this.bunifuThinButton217.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton217.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton217.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton217.BackgroundImage")));
-            this.bunifuThinButton217.ButtonText = "Company Copy";
-            this.bunifuThinButton217.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton217.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton217.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton217.IdleBorderThickness = 1;
-            this.bunifuThinButton217.IdleCornerRadius = 20;
-            this.bunifuThinButton217.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton217.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton217.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton217.Location = new System.Drawing.Point(406, 368);
-            this.bunifuThinButton217.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton217.Name = "bunifuThinButton217";
-            this.bunifuThinButton217.Size = new System.Drawing.Size(151, 41);
-            this.bunifuThinButton217.TabIndex = 53;
-            this.bunifuThinButton217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btniconfirm
-            // 
-            this.btniconfirm.ActiveBorderThickness = 1;
-            this.btniconfirm.ActiveCornerRadius = 20;
-            this.btniconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniconfirm.ActiveForecolor = System.Drawing.Color.White;
-            this.btniconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btniconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniconfirm.BackgroundImage")));
-            this.btniconfirm.ButtonText = "Confirm";
-            this.btniconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btniconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniconfirm.IdleBorderThickness = 1;
-            this.btniconfirm.IdleCornerRadius = 20;
-            this.btniconfirm.IdleFillColor = System.Drawing.Color.White;
-            this.btniconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniconfirm.Location = new System.Drawing.Point(82, 317);
-            this.btniconfirm.Margin = new System.Windows.Forms.Padding(5);
-            this.btniconfirm.Name = "btniconfirm";
-            this.btniconfirm.Size = new System.Drawing.Size(106, 41);
-            this.btniconfirm.TabIndex = 45;
-            this.btniconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btniconfirm.Click += new System.EventHandler(this.btniconfirm_Click);
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Clear";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton24.Location = new System.Drawing.Point(360, 317);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(105, 41);
-            this.bunifuThinButton24.TabIndex = 37;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
-            // 
-            // btnSuspend
-            // 
-            this.btnSuspend.ActiveBorderThickness = 1;
-            this.btnSuspend.ActiveCornerRadius = 20;
-            this.btnSuspend.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnSuspend.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSuspend.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnSuspend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnSuspend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuspend.BackgroundImage")));
-            this.btnSuspend.ButtonText = "Suspend";
-            this.btnSuspend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuspend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnSuspend.IdleBorderThickness = 1;
-            this.btnSuspend.IdleCornerRadius = 20;
-            this.btnSuspend.IdleFillColor = System.Drawing.Color.White;
-            this.btnSuspend.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnSuspend.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnSuspend.Location = new System.Drawing.Point(225, 317);
-            this.btnSuspend.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSuspend.Name = "btnSuspend";
-            this.btnSuspend.Size = new System.Drawing.Size(97, 41);
-            this.btnSuspend.TabIndex = 35;
-            this.btnSuspend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSuspend.Click += new System.EventHandler(this.bunifuThinButton22_Click);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuImageButton1.Image = global::inventory.Properties.Resources.plus;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(144, 25);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 26);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 80;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // btnsearchitem
-            // 
-            this.btnsearchitem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnsearchitem.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.btnsearchitem.ImageActive = null;
-            this.btnsearchitem.Location = new System.Drawing.Point(214, 52);
-            this.btnsearchitem.Name = "btnsearchitem";
-            this.btnsearchitem.Size = new System.Drawing.Size(30, 26);
-            this.btnsearchitem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnsearchitem.TabIndex = 78;
-            this.btnsearchitem.TabStop = false;
-            this.btnsearchitem.Zoom = 10;
-            this.btnsearchitem.Click += new System.EventHandler(this.btnsearchitem_Click);
-            // 
-            // btnadd
-            // 
-            this.btnadd.ActiveBorderThickness = 1;
-            this.btnadd.ActiveCornerRadius = 20;
-            this.btnadd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnadd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnadd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadd.BackgroundImage")));
-            this.btnadd.ButtonText = "Add";
-            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnadd.IdleBorderThickness = 1;
-            this.btnadd.IdleCornerRadius = 20;
-            this.btnadd.IdleFillColor = System.Drawing.Color.White;
-            this.btnadd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnadd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnadd.Location = new System.Drawing.Point(21, 388);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(116, 41);
-            this.btnadd.TabIndex = 20;
-            this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.ActiveBorderThickness = 1;
-            this.btndelete.ActiveCornerRadius = 20;
-            this.btndelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btndelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndelete.BackgroundImage")));
-            this.btndelete.ButtonText = "Delete";
-            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndelete.IdleBorderThickness = 1;
-            this.btndelete.IdleCornerRadius = 20;
-            this.btndelete.IdleFillColor = System.Drawing.Color.White;
-            this.btndelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndelete.Location = new System.Drawing.Point(273, 388);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(5);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(116, 41);
-            this.btndelete.TabIndex = 22;
-            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndelete.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.ActiveBorderThickness = 1;
-            this.btnupdate.ActiveCornerRadius = 20;
-            this.btnupdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdate.BackgroundImage")));
-            this.btnupdate.ButtonText = "Update";
-            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdate.IdleBorderThickness = 1;
-            this.btnupdate.IdleCornerRadius = 20;
-            this.btnupdate.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdate.Location = new System.Drawing.Point(147, 388);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(116, 41);
-            this.btnupdate.TabIndex = 23;
-            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
-            // 
-            // btnexecute
-            // 
-            this.btnexecute.ActiveBorderThickness = 1;
-            this.btnexecute.ActiveCornerRadius = 20;
-            this.btnexecute.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnexecute.ActiveForecolor = System.Drawing.Color.White;
-            this.btnexecute.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnexecute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnexecute.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexecute.BackgroundImage")));
-            this.btnexecute.ButtonText = "Execute";
-            this.btnexecute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexecute.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexecute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnexecute.IdleBorderThickness = 1;
-            this.btnexecute.IdleCornerRadius = 20;
-            this.btnexecute.IdleFillColor = System.Drawing.Color.White;
-            this.btnexecute.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnexecute.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnexecute.Location = new System.Drawing.Point(399, 388);
-            this.btnexecute.Margin = new System.Windows.Forms.Padding(5);
-            this.btnexecute.Name = "btnexecute";
-            this.btnexecute.Size = new System.Drawing.Size(116, 41);
-            this.btnexecute.TabIndex = 24;
-            this.btnexecute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnexecute.Click += new System.EventHandler(this.btnexecute_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::inventory.Properties.Resources.Aha_Soft_Business_Toolbar_Payment;
-            this.pictureBox1.Location = new System.Drawing.Point(126, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 30);
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btniclear
-            // 
-            this.btniclear.ActiveBorderThickness = 1;
-            this.btniclear.ActiveCornerRadius = 20;
-            this.btniclear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniclear.ActiveForecolor = System.Drawing.Color.White;
-            this.btniclear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btniclear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btniclear.BackgroundImage")));
-            this.btniclear.ButtonText = "Clear";
-            this.btniclear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btniclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniclear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btniclear.IdleBorderThickness = 1;
-            this.btniclear.IdleCornerRadius = 20;
-            this.btniclear.IdleFillColor = System.Drawing.Color.White;
-            this.btniclear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniclear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btniclear.Location = new System.Drawing.Point(33, 193);
-            this.btniclear.Margin = new System.Windows.Forms.Padding(5);
-            this.btniclear.Name = "btniclear";
-            this.btniclear.Size = new System.Drawing.Size(116, 41);
-            this.btniclear.TabIndex = 35;
-            this.btniclear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btniclear.Click += new System.EventHandler(this.btniclear_Click);
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Location = new System.Drawing.Point(754, 115);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(37, 31);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox27.TabIndex = 92;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Location = new System.Drawing.Point(754, 148);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(37, 31);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox26.TabIndex = 91;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Location = new System.Drawing.Point(214, 23);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(37, 31);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox25.TabIndex = 90;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Click += new System.EventHandler(this.pictureBox25_Click);
-            // 
-            // bunifuImageButton3
-            // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuImageButton3.Image = global::inventory.Properties.Resources.Treetog_Junior_User_group;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(298, 23);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(32, 26);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 87;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
-            // 
-            // btnnicsearch
-            // 
-            this.btnnicsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnnicsearch.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.btnnicsearch.ImageActive = null;
-            this.btnnicsearch.Location = new System.Drawing.Point(257, 23);
-            this.btnnicsearch.Name = "btnnicsearch";
-            this.btnnicsearch.Size = new System.Drawing.Size(30, 26);
-            this.btnnicsearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnnicsearch.TabIndex = 77;
-            this.btnnicsearch.TabStop = false;
-            this.btnnicsearch.Zoom = 10;
-            this.btnnicsearch.Click += new System.EventHandler(this.btnnicsearch_Click);
-            // 
-            // bunifuThinButton26
-            // 
-            this.bunifuThinButton26.ActiveBorderThickness = 1;
-            this.bunifuThinButton26.ActiveCornerRadius = 20;
-            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
-            this.bunifuThinButton26.ButtonText = "Clear";
-            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton26.IdleBorderThickness = 1;
-            this.bunifuThinButton26.IdleCornerRadius = 20;
-            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton26.Location = new System.Drawing.Point(421, 182);
-            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton26.Name = "bunifuThinButton26";
-            this.bunifuThinButton26.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton26.TabIndex = 36;
-            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton26.Click += new System.EventHandler(this.bunifuThinButton26_Click);
-            // 
-            // btnsuslist
-            // 
-            this.btnsuslist.ActiveBorderThickness = 1;
-            this.btnsuslist.ActiveCornerRadius = 20;
-            this.btnsuslist.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnsuslist.ActiveForecolor = System.Drawing.Color.White;
-            this.btnsuslist.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnsuslist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnsuslist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsuslist.BackgroundImage")));
-            this.btnsuslist.ButtonText = "Suspension List";
-            this.btnsuslist.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsuslist.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsuslist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnsuslist.IdleBorderThickness = 1;
-            this.btnsuslist.IdleCornerRadius = 20;
-            this.btnsuslist.IdleFillColor = System.Drawing.Color.White;
-            this.btnsuslist.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnsuslist.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnsuslist.Location = new System.Drawing.Point(547, 182);
-            this.btnsuslist.Margin = new System.Windows.Forms.Padding(5);
-            this.btnsuslist.Name = "btnsuslist";
-            this.btnsuslist.Size = new System.Drawing.Size(129, 41);
-            this.btnsuslist.TabIndex = 47;
-            this.btnsuslist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnsuslist.Click += new System.EventHandler(this.bunifuThinButton21_Click_1);
-            // 
-            // btncconfirm
-            // 
-            this.btncconfirm.ActiveBorderThickness = 1;
-            this.btncconfirm.ActiveCornerRadius = 20;
-            this.btncconfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncconfirm.ActiveForecolor = System.Drawing.Color.White;
-            this.btncconfirm.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btncconfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncconfirm.BackgroundImage")));
-            this.btncconfirm.ButtonText = "Update";
-            this.btncconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncconfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncconfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btncconfirm.IdleBorderThickness = 1;
-            this.btncconfirm.IdleCornerRadius = 20;
-            this.btncconfirm.IdleFillColor = System.Drawing.Color.White;
-            this.btncconfirm.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncconfirm.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btncconfirm.Location = new System.Drawing.Point(295, 182);
-            this.btncconfirm.Margin = new System.Windows.Forms.Padding(5);
-            this.btncconfirm.Name = "btncconfirm";
-            this.btncconfirm.Size = new System.Drawing.Size(116, 41);
-            this.btncconfirm.TabIndex = 37;
-            this.btncconfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btncconfirm.Click += new System.EventHandler(this.btncconfirm_Click);
-            // 
-            // piccus
-            // 
-            this.piccus.Location = new System.Drawing.Point(256, 105);
-            this.piccus.Name = "piccus";
-            this.piccus.Size = new System.Drawing.Size(37, 31);
-            this.piccus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.piccus.TabIndex = 91;
-            this.piccus.TabStop = false;
-            // 
-            // btnclearsei
-            // 
-            this.btnclearsei.ActiveBorderThickness = 1;
-            this.btnclearsei.ActiveCornerRadius = 20;
-            this.btnclearsei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnclearsei.ActiveForecolor = System.Drawing.Color.White;
-            this.btnclearsei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnclearsei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnclearsei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnclearsei.BackgroundImage")));
-            this.btnclearsei.ButtonText = "Clear";
-            this.btnclearsei.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnclearsei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclearsei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnclearsei.IdleBorderThickness = 1;
-            this.btnclearsei.IdleCornerRadius = 20;
-            this.btnclearsei.IdleFillColor = System.Drawing.Color.White;
-            this.btnclearsei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnclearsei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnclearsei.Location = new System.Drawing.Point(8, 260);
-            this.btnclearsei.Margin = new System.Windows.Forms.Padding(5);
-            this.btnclearsei.Name = "btnclearsei";
-            this.btnclearsei.Size = new System.Drawing.Size(116, 41);
-            this.btnclearsei.TabIndex = 60;
-            this.btnclearsei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnclearsei.Click += new System.EventHandler(this.btnclearsei_Click);
-            // 
-            // bunifuThinButton214
-            // 
-            this.bunifuThinButton214.Image = global::inventory.Properties.Resources._3;
-            this.bunifuThinButton214.Location = new System.Drawing.Point(140, 260);
-            this.bunifuThinButton214.Name = "bunifuThinButton214";
-            this.bunifuThinButton214.Size = new System.Drawing.Size(48, 48);
-            this.bunifuThinButton214.TabIndex = 58;
-            this.bunifuThinButton214.TabStop = false;
-            this.bunifuThinButton214.Click += new System.EventHandler(this.bunifuThinButton214_Click_1);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.Image = global::inventory.Properties.Resources.save1;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(434, 174);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(63, 46);
-            this.bunifuThinButton21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.bunifuThinButton21.TabIndex = 57;
-            this.bunifuThinButton21.TabStop = false;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click_3);
-            // 
-            // btngeneratesticker
-            // 
-            this.btngeneratesticker.Image = global::inventory.Properties.Resources.barcode;
-            this.btngeneratesticker.Location = new System.Drawing.Point(340, 175);
-            this.btngeneratesticker.Name = "btngeneratesticker";
-            this.btngeneratesticker.Size = new System.Drawing.Size(63, 46);
-            this.btngeneratesticker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btngeneratesticker.TabIndex = 56;
-            this.btngeneratesticker.TabStop = false;
-            this.btngeneratesticker.Click += new System.EventHandler(this.btngeneratesticker_Click);
-            // 
-            // puty
-            // 
-            this.puty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.puty.Location = new System.Drawing.Point(298, 11);
-            this.puty.Name = "puty";
-            this.puty.Size = new System.Drawing.Size(263, 158);
-            this.puty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.puty.TabIndex = 54;
-            this.puty.TabStop = false;
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel24.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Mail_Money;
-            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel24.Location = new System.Drawing.Point(307, 229);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(34, 34);
-            this.panel24.TabIndex = 49;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox11.Location = new System.Drawing.Point(294, 249);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(141, 59);
-            this.pictureBox11.TabIndex = 48;
-            this.pictureBox11.TabStop = false;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel23.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box;
-            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel23.Location = new System.Drawing.Point(462, 229);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(34, 34);
-            this.panel23.TabIndex = 46;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.White;
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox10.Location = new System.Drawing.Point(449, 248);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(141, 60);
-            this.pictureBox10.TabIndex = 16;
-            this.pictureBox10.TabStop = false;
-            // 
-            // btndeleteSeized
-            // 
-            this.btndeleteSeized.ActiveBorderThickness = 1;
-            this.btndeleteSeized.ActiveCornerRadius = 20;
-            this.btndeleteSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteSeized.ActiveForecolor = System.Drawing.Color.White;
-            this.btndeleteSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndeleteSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteSeized.BackgroundImage")));
-            this.btndeleteSeized.ButtonText = "Delete";
-            this.btndeleteSeized.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndeleteSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndeleteSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteSeized.IdleBorderThickness = 1;
-            this.btndeleteSeized.IdleCornerRadius = 20;
-            this.btndeleteSeized.IdleFillColor = System.Drawing.Color.White;
-            this.btndeleteSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteSeized.Location = new System.Drawing.Point(131, 214);
-            this.btndeleteSeized.Margin = new System.Windows.Forms.Padding(5);
-            this.btndeleteSeized.Name = "btndeleteSeized";
-            this.btndeleteSeized.Size = new System.Drawing.Size(116, 41);
-            this.btndeleteSeized.TabIndex = 43;
-            this.btndeleteSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndeleteSeized.Click += new System.EventHandler(this.btndeleteSeized_Click);
-            // 
-            // btnaddSeized
-            // 
-            this.btnaddSeized.ActiveBorderThickness = 1;
-            this.btnaddSeized.ActiveCornerRadius = 20;
-            this.btnaddSeized.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddSeized.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddSeized.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddSeized.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnaddSeized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddSeized.BackgroundImage")));
-            this.btnaddSeized.ButtonText = "Add ";
-            this.btnaddSeized.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddSeized.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddSeized.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddSeized.IdleBorderThickness = 1;
-            this.btnaddSeized.IdleCornerRadius = 20;
-            this.btnaddSeized.IdleFillColor = System.Drawing.Color.White;
-            this.btnaddSeized.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddSeized.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddSeized.Location = new System.Drawing.Point(8, 214);
-            this.btnaddSeized.Margin = new System.Windows.Forms.Padding(5);
-            this.btnaddSeized.Name = "btnaddSeized";
-            this.btnaddSeized.Size = new System.Drawing.Size(116, 41);
-            this.btnaddSeized.TabIndex = 40;
-            this.btnaddSeized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnaddSeized.Click += new System.EventHandler(this.btnaddSeized_Click);
-            // 
-            // btnprintrecep
-            // 
-            this.btnprintrecep.Image = global::inventory.Properties.Resources.receipt;
-            this.btnprintrecep.Location = new System.Drawing.Point(152, 138);
-            this.btnprintrecep.Name = "btnprintrecep";
-            this.btnprintrecep.Size = new System.Drawing.Size(48, 48);
-            this.btnprintrecep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnprintrecep.TabIndex = 46;
-            this.btnprintrecep.TabStop = false;
-            this.btnprintrecep.Click += new System.EventHandler(this.btnprintrecep_Click);
-            // 
-            // bunifuThinButton211
-            // 
-            this.bunifuThinButton211.ActiveBorderThickness = 1;
-            this.bunifuThinButton211.ActiveCornerRadius = 20;
-            this.bunifuThinButton211.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton211.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton211.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton211.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
-            this.bunifuThinButton211.ButtonText = "Update";
-            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton211.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton211.IdleBorderThickness = 1;
-            this.bunifuThinButton211.IdleCornerRadius = 20;
-            this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton211.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton211.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton211.Location = new System.Drawing.Point(12, 152);
-            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton211.Name = "bunifuThinButton211";
-            this.bunifuThinButton211.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton211.TabIndex = 38;
-            this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton211.Click += new System.EventHandler(this.bunifuThinButton211_Click);
-            // 
-            // bunifuThinButton29
-            // 
-            this.bunifuThinButton29.ActiveBorderThickness = 1;
-            this.bunifuThinButton29.ActiveCornerRadius = 20;
-            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
-            this.bunifuThinButton29.ButtonText = "Refresh";
-            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.IdleBorderThickness = 1;
-            this.bunifuThinButton29.IdleCornerRadius = 20;
-            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.Location = new System.Drawing.Point(177, 61);
-            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton29.Name = "bunifuThinButton29";
-            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton29.TabIndex = 33;
-            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
-            // 
-            // bunifuThinButton28
-            // 
-            this.bunifuThinButton28.ActiveBorderThickness = 1;
-            this.bunifuThinButton28.ActiveCornerRadius = 20;
-            this.bunifuThinButton28.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton28.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton28.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton28.BackgroundImage")));
-            this.bunifuThinButton28.ButtonText = "Search";
-            this.bunifuThinButton28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton28.IdleBorderThickness = 1;
-            this.bunifuThinButton28.IdleCornerRadius = 20;
-            this.bunifuThinButton28.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton28.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton28.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton28.Location = new System.Drawing.Point(44, 61);
-            this.bunifuThinButton28.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton28.Name = "bunifuThinButton28";
-            this.bunifuThinButton28.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton28.TabIndex = 32;
-            this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton28.Click += new System.EventHandler(this.bunifuThinButton28_Click);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::inventory.Properties.Resources._31;
-            this.pictureBox12.Location = new System.Drawing.Point(23, 22);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox12.TabIndex = 27;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
-            // 
-            // btnupdateie
-            // 
-            this.btnupdateie.ActiveBorderThickness = 1;
-            this.btnupdateie.ActiveCornerRadius = 20;
-            this.btnupdateie.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdateie.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdateie.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdateie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdateie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdateie.BackgroundImage")));
-            this.btnupdateie.ButtonText = "Update";
-            this.btnupdateie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdateie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdateie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdateie.IdleBorderThickness = 1;
-            this.btnupdateie.IdleCornerRadius = 20;
-            this.btnupdateie.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdateie.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdateie.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdateie.Location = new System.Drawing.Point(133, 219);
-            this.btnupdateie.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdateie.Name = "btnupdateie";
-            this.btnupdateie.Size = new System.Drawing.Size(116, 41);
-            this.btnupdateie.TabIndex = 163;
-            this.btnupdateie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdateie.Click += new System.EventHandler(this.btnupdateie_Click);
-            // 
-            // btnaddex
-            // 
-            this.btnaddex.ActiveBorderThickness = 1;
-            this.btnaddex.ActiveCornerRadius = 20;
-            this.btnaddex.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddex.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddex.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnaddex.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddex.BackgroundImage")));
-            this.btnaddex.ButtonText = "Add";
-            this.btnaddex.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddex.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddex.IdleBorderThickness = 1;
-            this.btnaddex.IdleCornerRadius = 20;
-            this.btnaddex.IdleFillColor = System.Drawing.Color.White;
-            this.btnaddex.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddex.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddex.Location = new System.Drawing.Point(7, 219);
-            this.btnaddex.Margin = new System.Windows.Forms.Padding(5);
-            this.btnaddex.Name = "btnaddex";
-            this.btnaddex.Size = new System.Drawing.Size(116, 41);
-            this.btnaddex.TabIndex = 162;
-            this.btnaddex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnaddex.Click += new System.EventHandler(this.btnaddex_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
-            this.pictureBox2.Location = new System.Drawing.Point(393, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox2.TabIndex = 161;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
-            // 
-            // btnseized
-            // 
-            this.btnseized.Image = global::inventory.Properties.Resources._3;
-            this.btnseized.Location = new System.Drawing.Point(143, 19);
-            this.btnseized.Name = "btnseized";
-            this.btnseized.Size = new System.Drawing.Size(48, 48);
-            this.btnseized.TabIndex = 155;
-            this.btnseized.TabStop = false;
-            this.btnseized.Click += new System.EventHandler(this.btnseized_Click);
-            // 
-            // btndeleteei
-            // 
-            this.btndeleteei.ActiveBorderThickness = 1;
-            this.btndeleteei.ActiveCornerRadius = 20;
-            this.btndeleteei.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteei.ActiveForecolor = System.Drawing.Color.White;
-            this.btndeleteei.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteei.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndeleteei.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeleteei.BackgroundImage")));
-            this.btndeleteei.ButtonText = "Delete";
-            this.btndeleteei.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndeleteei.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndeleteei.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btndeleteei.IdleBorderThickness = 1;
-            this.btndeleteei.IdleCornerRadius = 20;
-            this.btndeleteei.IdleFillColor = System.Drawing.Color.White;
-            this.btndeleteei.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteei.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btndeleteei.Location = new System.Drawing.Point(259, 219);
-            this.btndeleteei.Margin = new System.Windows.Forms.Padding(5);
-            this.btndeleteei.Name = "btndeleteei";
-            this.btndeleteei.Size = new System.Drawing.Size(116, 41);
-            this.btndeleteei.TabIndex = 139;
-            this.btndeleteei.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndeleteei.Click += new System.EventHandler(this.btndeleteei_Click);
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel19.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_Bag;
-            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel19.Location = new System.Drawing.Point(392, 140);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(53, 47);
-            this.panel19.TabIndex = 19;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel16.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Bag;
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel16.Location = new System.Drawing.Point(392, 10);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(53, 47);
-            this.panel16.TabIndex = 17;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel13.BackgroundImage = global::inventory.Properties.Resources.Icons8_Ios7_Finance_Money_Box1;
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel13.Location = new System.Drawing.Point(66, 10);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(53, 47);
-            this.panel13.TabIndex = 15;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.SlateBlue;
-            this.panel17.BackgroundImage = global::inventory.Properties.Resources.Iconsmind_Outline_Money_2;
-            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel17.Location = new System.Drawing.Point(65, 140);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(53, 47);
-            this.panel17.TabIndex = 13;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // bunifuImageButton5
-            // 
-            this.bunifuImageButton5.BackColor = System.Drawing.Color.MistyRose;
-            this.bunifuImageButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuImageButton5.Image = global::inventory.Properties.Resources.Icons8_Windows_8_Editing_Line_Width;
-            this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(0, 0);
-            this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(29, 38);
-            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton5.TabIndex = 5;
-            this.bunifuImageButton5.TabStop = false;
-            this.bunifuImageButton5.Zoom = 10;
-            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click_1);
-            // 
-            // btnaddbank
-            // 
-            this.btnaddbank.ActiveBorderThickness = 1;
-            this.btnaddbank.ActiveCornerRadius = 20;
-            this.btnaddbank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddbank.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddbank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddbank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnaddbank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddbank.BackgroundImage")));
-            this.btnaddbank.ButtonText = "Add";
-            this.btnaddbank.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddbank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddbank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnaddbank.IdleBorderThickness = 1;
-            this.btnaddbank.IdleCornerRadius = 20;
-            this.btnaddbank.IdleFillColor = System.Drawing.Color.White;
-            this.btnaddbank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddbank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnaddbank.Location = new System.Drawing.Point(101, 244);
-            this.btnaddbank.Margin = new System.Windows.Forms.Padding(5);
-            this.btnaddbank.Name = "btnaddbank";
-            this.btnaddbank.Size = new System.Drawing.Size(116, 41);
-            this.btnaddbank.TabIndex = 152;
-            this.btnaddbank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnaddbank.Click += new System.EventHandler(this.btnaddbank_Click);
-            // 
-            // bunifuThinButton219
-            // 
-            this.bunifuThinButton219.ActiveBorderThickness = 1;
-            this.bunifuThinButton219.ActiveCornerRadius = 20;
-            this.bunifuThinButton219.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton219.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton219.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton219.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton219.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton219.BackgroundImage")));
-            this.bunifuThinButton219.ButtonText = "Delete";
-            this.bunifuThinButton219.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton219.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton219.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton219.IdleBorderThickness = 1;
-            this.bunifuThinButton219.IdleCornerRadius = 20;
-            this.bunifuThinButton219.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton219.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton219.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton219.Location = new System.Drawing.Point(353, 244);
-            this.bunifuThinButton219.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton219.Name = "bunifuThinButton219";
-            this.bunifuThinButton219.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton219.TabIndex = 136;
-            this.bunifuThinButton219.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton219.Click += new System.EventHandler(this.bunifuThinButton219_Click);
-            // 
-            // btnupdatebank
-            // 
-            this.btnupdatebank.ActiveBorderThickness = 1;
-            this.btnupdatebank.ActiveCornerRadius = 20;
-            this.btnupdatebank.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdatebank.ActiveForecolor = System.Drawing.Color.White;
-            this.btnupdatebank.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdatebank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnupdatebank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnupdatebank.BackgroundImage")));
-            this.btnupdatebank.ButtonText = "Update";
-            this.btnupdatebank.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnupdatebank.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdatebank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnupdatebank.IdleBorderThickness = 1;
-            this.btnupdatebank.IdleCornerRadius = 20;
-            this.btnupdatebank.IdleFillColor = System.Drawing.Color.White;
-            this.btnupdatebank.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdatebank.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnupdatebank.Location = new System.Drawing.Point(227, 244);
-            this.btnupdatebank.Margin = new System.Windows.Forms.Padding(5);
-            this.btnupdatebank.Name = "btnupdatebank";
-            this.btnupdatebank.Size = new System.Drawing.Size(116, 41);
-            this.btnupdatebank.TabIndex = 134;
-            this.btnupdatebank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnupdatebank.Click += new System.EventHandler(this.btnupdatebank_Click);
-            // 
-            // btnchartgene
-            // 
-            this.btnchartgene.Image = global::inventory.Properties.Resources.Awicons_Vista_Artistic_Chart_search;
-            this.btnchartgene.Location = new System.Drawing.Point(285, 19);
-            this.btnchartgene.Name = "btnchartgene";
-            this.btnchartgene.Size = new System.Drawing.Size(41, 39);
-            this.btnchartgene.TabIndex = 156;
-            this.btnchartgene.TabStop = false;
-            this.btnchartgene.Click += new System.EventHandler(this.btnchartgene_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Down;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(325, 29);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(53, 47);
-            this.panel2.TabIndex = 19;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel21.BackgroundImage = global::inventory.Properties.Resources.Visualpharm_Must_Have_Stock_Index_Up;
-            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel21.Location = new System.Drawing.Point(70, 29);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(53, 47);
-            this.panel21.TabIndex = 151;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.White;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(184, 82);
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(44, 29);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox23.TabIndex = 47;
-            this.pictureBox23.TabStop = false;
-            this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click_1);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::inventory.Properties.Resources.text_icon;
-            this.pictureBox13.Location = new System.Drawing.Point(117, 29);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox13.TabIndex = 46;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(37, 29);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox3.TabIndex = 41;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(48, 29);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox20.TabIndex = 41;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(37, 29);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox18.TabIndex = 41;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::inventory.Properties.Resources.minus;
-            this.pictureBox29.Location = new System.Drawing.Point(231, 54);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox29.TabIndex = 158;
-            this.pictureBox29.TabStop = false;
-            this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::inventory.Properties.Resources.plus;
-            this.pictureBox28.Location = new System.Drawing.Point(187, 53);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox28.TabIndex = 157;
-            this.pictureBox28.TabStop = false;
-            this.pictureBox28.Click += new System.EventHandler(this.pictureBox28_Click);
-            // 
             // bunifuThinButton230
             // 
             this.bunifuThinButton230.ActiveBorderThickness = 1;
@@ -5352,6 +5770,25 @@
             this.bunifuThinButton230.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton230.Click += new System.EventHandler(this.bunifuThinButton230_Click);
             // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(5, 23);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(38, 18);
+            this.label67.TabIndex = 0;
+            this.label67.Text = "Year";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5372,29 +5809,48 @@
             this.panel4.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).EndInit();
             this.groupBox11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.bunifuCards5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piccus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableseized)).EndInit();
             this.panel6.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinssummary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblinscust)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.bunifuCards8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -5405,23 +5861,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblseizedhide)).EndInit();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblei)).EndInit();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).EndInit();
             this.panel8.ResumeLayout(false);
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.Spanel.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblbank)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.bunifuCards10.ResumeLayout(false);
@@ -5431,13 +5894,26 @@
             this.panel28.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).EndInit();
             this.panel12.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            this.bunifuCards1.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel11.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tble)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblb)).EndInit();
@@ -5451,47 +5927,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblloan)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblbankhid)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnsearchitem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.piccus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton214)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuThinButton21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btngeneratesticker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnprintrecep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnseized)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnchartgene)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             this.ResumeLayout(false);
@@ -5650,7 +6096,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtino;
         private Bunifu.Framework.UI.BunifuThinButton2 btndeleteSeized;
         private Bunifu.Framework.UI.BunifuThinButton2 btncustomercopy;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton217;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.GroupBox groupBox18;
@@ -5786,7 +6231,6 @@
         private System.Windows.Forms.PictureBox puty;
         private System.Windows.Forms.PictureBox bunifuThinButton21;
         private System.Windows.Forms.PictureBox btngeneratesticker;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox bunifuThinButton214;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtaddy;
         private System.Windows.Forms.PictureBox pictureBox29;
@@ -5822,5 +6266,44 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Label label108;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards1;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label lblmonth;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Label lblvari;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Panel panel31;
     }
 }

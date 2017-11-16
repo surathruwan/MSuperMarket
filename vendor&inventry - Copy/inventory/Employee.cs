@@ -51,7 +51,7 @@ namespace madushaTemp
             }
 
 
-            loadtable();
+            loadattendance();
             loadtable2();
             loadsalary();
         }
@@ -101,7 +101,7 @@ namespace madushaTemp
 
 
 
-        public void loadtable()
+        public void loadattendance()
         {
             // string x = DateTime.Now.ToString("yyyy-mm-dd");
             string con = "datasource=localhost;port=3306;username=root";
@@ -314,7 +314,7 @@ namespace madushaTemp
                     {
 
                     }
-                    loadtable();
+                    loadattendance();
                     dbcon.Close();
                     aeid.Text = "";
                     ddd.Text = "";
@@ -558,6 +558,7 @@ namespace madushaTemp
 
         private void Eadd_Click(object sender, EventArgs e)
         {
+
             int g= 10010;
             g++;
             i++;
@@ -1039,7 +1040,7 @@ namespace madushaTemp
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show("This date is not available ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -1204,7 +1205,8 @@ namespace madushaTemp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    
+                   MessageBox.Show("This month salary is already calculated");
                 }
             }
         }
@@ -1634,37 +1636,7 @@ namespace madushaTemp
 
 
             }
-            //if (!(barcode.Text.Length == 0))
-            //{
-            //    string con = "datasource=localhost;port=3306;username=root";
-            //    MySqlConnection dbcon = new MySqlConnection(con);
 
-            //    MySqlCommand cm = new MySqlCommand("Select* from supermarket.attendance   where empid='" + barcode.Text + "'", dbcon);
-            //   // MySqlCommand cm1 = new MySqlCommand("update supermarket.salary set arrival = '" + this.astart.Text + "', end_time = '" + this.aend.Text + "'    where empid = '" + this.aeid.Text + "'   where empid='" + barcode.Text + "'", dbcon);
-
-            //    try
-            //    {
-            //        MySqlDataAdapter sda = new MySqlDataAdapter();
-            //        sda.SelectCommand = cm;
-            //        DataTable set = new DataTable();
-            //        sda.Fill(set);
-            //        BindingSource s = new BindingSource();
-
-            //        s.DataSource = set;
-            //        bunifuCustomDataGrid3.DataSource = s;
-            //        sda.Update(set);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message);
-            //    }
-
-
-            //}
-            //else
-            //{
-            //    loadsalary();
-            //}
         }
 
         private void eee_Click(object sender, EventArgs e)
@@ -1675,7 +1647,8 @@ namespace madushaTemp
             }
             else
             {
-                //string x = DateTime.Now.ToString("yyyy-mm-dd");
+                string x = DateTime.Now.ToString("yyyy-mm-dd");
+                
                 string constring = "datasource=localhost;port=3306;username=root";
                 string query = "update supermarket.attendance set end_time='" + this.astart.Text + "' where empid='" + this.barcode.Text + "'and date='" + this.ddd.Text + "' ; ";
                 MySqlConnection dbcon = new MySqlConnection(constring);
@@ -1695,11 +1668,58 @@ namespace madushaTemp
                     {
 
                     }
-                    loadtable();
+                    loadattendance();
                     aeid.Text = "";
                     ddd.Text = "";
                     barcode.Text = "";
                     astart.Text = "";
+
+
+
+
+                }
+
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            if ((String.IsNullOrEmpty(id.Text))|| (String.IsNullOrEmpty(start.Text)))
+            {
+                MessageBox.Show("Please  enter employee id and start date!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string constring = "datasource=localhost;port=3306;username=root";
+                string query = "delete from supermarket.leaving where Empid='" + this.id.Text + "'and sdate='" + this.start.Text + "' ; ";
+                MySqlConnection dbcon = new MySqlConnection(constring);
+                MySqlCommand cmdb = new MySqlCommand(query, dbcon);
+                MySqlDataReader reader;
+
+
+
+                try
+                {
+                    dbcon.Open();
+
+
+                    reader = cmdb.ExecuteReader();
+                    MessageBox.Show("Deleted successfully!");
+                    while (reader.Read())
+                    {
+
+                    }
+
+
+                    dbcon.Close();
+                    id.Text = "";
+                  
+
 
 
 
