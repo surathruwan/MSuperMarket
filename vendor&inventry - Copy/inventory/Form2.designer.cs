@@ -174,6 +174,7 @@
             this.bunifuCustomLabel30 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.ordersTableAdapter1 = new inventory.supermarketDataSet1TableAdapters.ordersTableAdapter();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+<<<<<<< HEAD
             this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton216 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -206,6 +207,10 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuThinButton214 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label36 = new System.Windows.Forms.Label();
+=======
+            this.MadushaPrintDocument = new System.Drawing.Printing.PrintDocument();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+>>>>>>> 6601e1bc1fa4fb381ce8c92be5a355d3597bd514
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -2014,7 +2019,15 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+<<<<<<< HEAD
             // bunifuThinButton211
+=======
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // Form2
+>>>>>>> 6601e1bc1fa4fb381ce8c92be5a355d3597bd514
             // 
             this.bunifuThinButton211.ActiveBorderThickness = 1;
             this.bunifuThinButton211.ActiveCornerRadius = 20;
@@ -2944,7 +2957,12 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PictureBox pictureBox8;
+<<<<<<< HEAD
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label36;
+=======
+        private System.Drawing.Printing.PrintDocument MadushaPrintDocument;
+        private System.Windows.Forms.PrintDialog printDialog1;
+>>>>>>> 6601e1bc1fa4fb381ce8c92be5a355d3597bd514
     }
 }
