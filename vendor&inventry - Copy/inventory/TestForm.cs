@@ -76,7 +76,7 @@ namespace madushaTemp
             chart3.Visible = false;
             chart2.Visible = false;
 
-            tblhide.Visible = false;
+            //tblhide.Visible = false;
             tblseizedhide.Visible = false;
             tblbankhid.Visible = false;
             tblloan.Visible = false;
@@ -203,6 +203,115 @@ namespace madushaTemp
             los.Text = loss.ToString()+".00";
 
         }
+
+
+        //Printer Configured to print Receipt
+        public void printer()
+        {
+            var installedPrinters = PrinterSettings.InstalledPrinters; //I have choosed a printername from 'installedPrinters'
+            try
+            {
+
+
+                try
+                {
+
+                    int height = (bunifuCustomDataGrid1.RowCount) * 10 + 50;
+                    MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 2013"; //Specify the printer to use.
+
+                    MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
+                    MadushaPrintDocument.Print();
+
+
+
+                }
+                finally
+                {
+
+                    // MessageBox.Show("data Exported");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        //Bill Generate and print
+        private void MadushaPrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+
+
+            DateTime time = DateTime.Now;
+            string formatD = "yyyy-MM-dd";
+
+           // string SysTime = TimeTest.Text;
+
+
+            e.Graphics.DrawString("MADUSHA", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(70, 0)); // x,y
+            e.Graphics.DrawString("SUPER MARKET", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(44, 20));
+            e.Graphics.DrawString("No.181 , Galle Road", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
+            e.Graphics.DrawString("Hikkaduwa", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
+            e.Graphics.DrawString("Tel : 091 2277939 / 091 4946386", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
+            e.Graphics.DrawString("Date : " + time.ToString(formatD), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 100));
+           // e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
+            //e.Graphics.DrawString("Invoice No : " + lblINV.Text + lblInvoice.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
+            e.Graphics.DrawString("Terminal : " + "001", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
+            e.Graphics.DrawString("Cashier :" + "Surath", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
+            e.Graphics.DrawString("SalesRep : " + "Ruwan", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
+            e.Graphics.DrawString("Customer : " + "Ruchira", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 145));
+            e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
+
+            int x = 165;
+            int x1 = 180;
+            for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
+            {
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
+
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(100, x));
+
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(150, x));
+                e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[5].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x));
+
+                x = x + 30;
+                //if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString().Length) == 5))
+                //{
+
+                //    if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString().Length) >= 5))
+                //    {
+                //        e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
+                //    }
+                //}
+                //else if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString().Length) == 4))
+                //{
+
+                //    if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString().Length) >= 4))
+                //    {
+                //        e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t    " + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
+                //    }
+                //}
+                //else
+                //{
+                //    e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
+                //}
+                 // x1 = x1 + 30;
+
+            }
+            e.Graphics.DrawString("-------------------------------------------------", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
+            e.Graphics.DrawString(txtgtot.Text, new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x+20));
+            e.Graphics.DrawString("Grand Total", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x + 20));
+
+            e.Graphics.DrawString("Thank You !!!", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 40));
+            e.Graphics.DrawString("Come Again ...", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 50));
+        }
+
+
+
+
+
         public void ConvertText()
         {
             try
@@ -1661,7 +1770,7 @@ namespace madushaTemp
                 }
                 catch (Exception)
                 {
-                    throw;
+                    MessageBox.Show("Alraedy Exists");
                 }
                 }
 
@@ -3206,8 +3315,9 @@ namespace madushaTemp
 
         private void btninvoice_Click(object sender, EventArgs e)
         {
-            ConvertText();
-           
+            printer();
+            //ConvertText();
+
         }
 
         private void btnclearsei_Click(object sender, EventArgs e)
@@ -4344,6 +4454,17 @@ namespace madushaTemp
         }
 
         private void panel31_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            bankrep ba = new bankrep();
+            ba.Show();
+        }
+
+        private void label103_Click(object sender, EventArgs e)
         {
 
         }

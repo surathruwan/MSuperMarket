@@ -11,8 +11,8 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.IO;
-
-
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace inventory
 {
@@ -733,7 +733,7 @@ namespace inventory
                     else
                     {
                         MemoryStream mstream = new MemoryStream(images);
-                        pictureBox1.Image = Image.FromStream(mstream);
+                        pictureBox1.Image = System.Drawing.Image.FromStream(mstream);
                     }
                 }
 
@@ -1839,6 +1839,213 @@ namespace inventory
             catch (Exception ex)
             {
               //  MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"pos.pdf", FileMode.Create));
+                doc.Open();
+
+                // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Loan Details", font5));
+                doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+                PdfPTable table = new PdfPTable(cartQuotation.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < cartQuotation.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(cartQuotation.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < cartQuotation.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 100;
+
+                    for (int k = 0; k < cartQuotation.Columns.Count; k++)
+                    {
+                        if (cartQuotation[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(cartQuotation[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table);
+
+                doc.Close();
+
+                System.Diagnostics.Process.Start(@"pos.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+        }
+
+        private void label103_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"pos2.pdf", FileMode.Create));
+                doc.Open();
+
+                // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Customer Order History", font5));
+                doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+                PdfPTable table = new PdfPTable(OrderDetails.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < OrderDetails.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(OrderDetails.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < OrderDetails.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 100;
+
+                    for (int k = 0; k < OrderDetails.Columns.Count; k++)
+                    {
+                        if (OrderDetails[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(OrderDetails[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table);
+
+                doc.Close();
+
+                System.Diagnostics.Process.Start(@"pos2.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
             }
         }
     }

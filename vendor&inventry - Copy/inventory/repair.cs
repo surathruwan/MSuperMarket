@@ -14,6 +14,10 @@ using System.Net.Mail;
 using System.Text.RegularExpressions;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using System.Net;
+using System.IO;
+using System.Drawing.Printing;
+
 namespace inventory
 {
 
@@ -458,6 +462,18 @@ namespace inventory
         }
         private void bunifuThinButton21_Click_1(object sender, EventArgs e)
         {
+            DateTime _now = DateTime.Now;
+            string _dd = _now.ToString("dd"); //
+            string _mm = _now.ToString("MM");
+            string _yy = _now.ToString("yyyy");
+            string _hh = _now.Hour.ToString();
+            string _min = _now.Minute.ToString();
+            string _ss = _now.Second.ToString();
+
+            string _uniqueId = _dd + _hh + _mm + _min + _ss + _yy;
+
+            
+
             if (checkradio() == false || String.IsNullOrEmpty(txtt1itemcode.Text) || String.IsNullOrWhiteSpace(txtt1brandname.Text) || String.IsNullOrWhiteSpace(txtt1noofdays.Text) || String.IsNullOrWhiteSpace(txtt1itemname.Text) || String.IsNullOrWhiteSpace(txtt1suppliername.Text) || String.IsNullOrWhiteSpace(txtt1advance.Text))
             {
                 MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -483,9 +499,9 @@ namespace inventory
                     {
                         warrenty = "no";
                     }
-
+                   
                     myConn.Open();
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO supermarket.needtosendtemp (`id`,date,`cust_id`, `item_code`, `item_name`, `brand_name`, `warranty`, `repairing_days`, `details`, `suuplier_name`, `salesman_name`,`Advance`) VALUES(null,'" + date + "','" + txtt1nic.Text + "','" + txtt1itemcode.Text + "', '" + txtt1itemname.Text + "', '" + txtt1brandname.Text + "', '" + warrenty + "', '" + txtt1noofdays.Value + "', '" + txtt1detail.Text + "', '" + txtt1suppliername.Text + "', '" + cbt1employee.Text + "','" + txtt1advance.Text + "')", myConn);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO supermarket.needtosendtemp (`id`,date,`cust_id`, `item_code`, `item_name`, `brand_name`, `warranty`, `repairing_days`, `details`, `suuplier_name`, `salesman_name`,`Advance`) VALUES('"+_uniqueId+"','" + date + "','" + txtt1nic.Text + "','" + txtt1itemcode.Text + "', '" + txtt1itemname.Text + "', '" + txtt1brandname.Text + "', '" + warrenty + "', '" + txtt1noofdays.Value + "', '" + txtt1detail.Text + "', '" + txtt1suppliername.Text + "', '" + cbt1employee.Text + "','" + txtt1advance.Text + "')", myConn);
                     MySqlDataReader myR;
 
 
@@ -693,7 +709,7 @@ namespace inventory
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
 
-            if ((datagridpanel2sendto.Rows.Count!=1))
+            if ((datagridpanel2sendto.Rows.Count!=0))
             { 
                 DialogResult dialogResult = MessageBox.Show("Do you want to add the items?", "Add item", MessageBoxButtons.YesNo);
 
@@ -748,7 +764,20 @@ namespace inventory
                 MessageBox.Show("Table cannot Be Empty! ");
             }
         }
+        public string uniqueID()
+        {
+            DateTime _now = DateTime.Now;
+            string _dd = _now.ToString("dd"); //
+            string _mm = _now.ToString("MM");
+            string _yy = _now.ToString("yyyy");
+            string _hh = _now.Hour.ToString();
+            string _min = _now.Minute.ToString();
+            string _ss = _now.Second.ToString();
 
+            string _uniqueId = _dd + _hh + _mm + _min + _ss + _yy;
+            return _uniqueId;
+
+        }
         private void bunifuThinButton216_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Do you want to complete?", "Complete Adding", MessageBoxButtons.YesNo);
@@ -1075,6 +1104,9 @@ namespace inventory
                     case 3:
                         type = "brand_name";
                         break;
+                    case 4:
+                        type = "cust_id";
+                        break;
 
 
 
@@ -1144,9 +1176,9 @@ namespace inventory
 
 
 
-                txtt3emailbody.Text = "Dear valued customer this is to inform that " + itemname + " you bought has suucessfully repaired.please come and collect item.Thankyou.Madhusha supermarket ";
-                txtt3messagebody.Text = "Dear valued  this is to inform that " + itemname + " you bought has suucessfully repaired.please come and collect item.Thankyou.Madhusha supermarket ";
-
+                txtt3emailbody.Text = "Dear valued customer this is to inform that " + itemname + " you bought has suucessfully repaired.please come and collect item.\n Thank you..\n --Madhusha supermarket-- ";
+                txtt3messagebody.Text = "Dear valued  this is to inform that " + itemname + " you bought has suucessfully repaired.please come and collect item\n Thank you..\n --Madhusha supermarket-- ";
+                txtt3subject.Text = "--Informing the repair completion--";
             }
 
         }
@@ -1366,20 +1398,7 @@ namespace inventory
 
         private void bunifuThinButton218_Click(object sender, EventArgs e)
         {
-
-            string price = txtt4price.Text;
-            string qty = txtt4qty.Value.ToString();
-            myConn.Open();
-
-            string date = DateTime.Now.ToString("M/d/yyyy");
-
-            MySqlCommand cmd1 = new MySqlCommand("INSERT INTO supermarket.payment(`invoice_id`, `Repair_id`, `item_code`, `cust_id`, `Date`, `service charge`, `spareparts_charge`, `Total`, `advance`, `balance`, `discount`, `grandtotal`, `payment_mode`) VALUES(null,'" + txtt4Rid.Text + "','" + txtt4itemcode.Text + "','" + txtt4cusID.Text + "','" + date + "','" + txtt4serviceCharge.Text + "','" + txtt4saprepartscharge.Text + "','" + txtt4total.Text + "','" + txtt4advance.Text + "','" + txtt4balance.Text + "','" + txtt4discount.Text + "','" + txtt4grandtotal.Text + "','" + txtt4pay_mod.SelectedItem + "')", myConn);
-            cmd1.ExecuteNonQuery();
-
-            MessageBox.Show("inserted Successfully");
-
-
-            myConn.Close();
+            printer();
 
         }
 
@@ -1516,7 +1535,7 @@ namespace inventory
                 string con = "datasource=localhost;port=3306;username=root";
                 MySqlConnection dbcon = new MySqlConnection(con);
 
-                MySqlCommand cmd1 = new MySqlCommand("Select *  from supermarket.customer where  nic like '" + txtt1nic.Text + "'", dbcon);
+                MySqlCommand cmd1 = new MySqlCommand("Select *  from supermarket.customer where  nic = '" + txtt1nic.Text + "'", dbcon);
 
                 dbcon.Open();
                 DataSet d = new DataSet();
@@ -1532,7 +1551,7 @@ namespace inventory
                 if (count != 0)
                 {
 
-                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.customer where  nic like '" + txtt1nic.Text + "'", myConn);
+                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.customer where  nic = '" + txtt1nic.Text + "'", myConn);
                     DataTable set = new DataTable();
                     cm.Fill(set);
 
@@ -1556,7 +1575,7 @@ namespace inventory
 
                         byte[] images = ((byte[])dr[18]);
 
-                        MessageBox.Show(images.ToString());
+                       // MessageBox.Show(images.ToString());
 
                         if (images == null)
                         {
@@ -1576,7 +1595,7 @@ namespace inventory
 
 
 
-                    MySqlDataAdapter cm1 = new MySqlDataAdapter("Select *  from supermarket.customerrepair where  nic like '" + txtt1nic.Text + "'", myConn);
+                    MySqlDataAdapter cm1 = new MySqlDataAdapter("Select *  from supermarket.customerrepair where  nic = '" + txtt1nic.Text + "'", myConn);
 
                     DataTable set2 = new DataTable();
 
@@ -1591,7 +1610,8 @@ namespace inventory
                         string cphoneNo2 = dr["landNo"].ToString();
                         string address1 = dr["address"].ToString();
                         string phone = dr["phoneNo2"].ToString();
-                        byte[] images2 = (byte[])(dr["image"]);
+                        // byte[] images2 = (byte[])(dr["image"]);
+                        byte[] images12 = ((byte[])dr["image"]);
 
                         txtt1email.Text = cemail;
                         txtt1mobileno1.Text = cphoneNo1;
@@ -1600,20 +1620,15 @@ namespace inventory
                         txtt1name.Text = cname;
                         txtt1landno.Text = phone;
 
+                        MessageBox.Show("beffore");
+                        MemoryStream mstream1 = new MemoryStream(images12);
+                        MessageBox.Show("middle");
+                        t1pic.Image = System.Drawing.Image.FromStream(mstream1);
+                        MessageBox.Show("error2");
+                        MessageBox.Show("errorefefefefr");
+
+                        //MessageBox.Show(images2.ToString());
                         
-
-
-                        MessageBox.Show(images2.ToString());
-                        //if (images2 == null)
-                        //{
-                        //    t1pic.Image = null;
-                        //}
-
-                        //else
-                        //{
-                            MemoryStream mstream = new MemoryStream(images2);
-                            t1pic.Image = System.Drawing.Image.FromStream(mstream);
-                        //}
 
 
                     }
@@ -1671,7 +1686,7 @@ namespace inventory
             txtt4balance.Text = "";
             txtt4discount.Text = "";
             txtt4grandtotal.Text = "";
-            txtt4pay_mod.Text = "";
+            
 
 
         }
@@ -1697,8 +1712,8 @@ namespace inventory
                 txtt1noofdays.Text = " ";
                 txtt1advance.Text = " ";
                 txtt1itemname.Text = " ";
-                radiot1Button1.Text = " ";
-                radiot1Button2.Text = " ";
+                radiot1Button1 = null;
+                radiot1Button2.Text = null;
                 txtt1detail.Text = " ";
                 txtt1suppliername.Text = " ";
                 listBoxt11.Visible = false;
@@ -1835,7 +1850,9 @@ namespace inventory
                     case 3:
                         type = "brand_name";
                         break;
-
+                    case 4:
+                        type = "cust_id";
+                        break;
 
 
                 }
@@ -1860,93 +1877,102 @@ namespace inventory
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"C:\Users\Ruchira Dhananjaya\Desktop\ItemList.pdf", FileMode.Create));
-            doc.Open();
-
-            MessageBox.Show("PDF Created sucessfuly!!");
-
-            //Add border to page
-            PdfContentByte content = w.DirectContent;
-            iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
-            rectangle.Left += doc.LeftMargin - 5;
-            rectangle.Right -= doc.RightMargin - 5;
-            rectangle.Top -= doc.TopMargin - 22;
-            rectangle.Bottom += doc.BottomMargin - 5;
-            content.SetColorStroke(BaseColor.BLUE);
-            content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
-            content.Stroke();
-
-
-            //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
-            Paragraph prg = new Paragraph();
-            prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Item List", font5));
-            doc.Add(prg);
-
-            //Authors
-            iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-            Paragraph prg1 = new Paragraph();
-            prg1.Alignment = Element.ALIGN_RIGHT;
-            Paragraph prg2 = new Paragraph();
-            prg2.Alignment = Element.ALIGN_RIGHT;
-            prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
-            prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
-            doc.Add(prg1);
-            doc.Add(prg2);
-
-
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
-            doc.Add(p);
-
-            PdfPTable table = new PdfPTable(tablet3messagesend.Columns.Count);
-
-            //add headers from gridview to table
-            iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
-
-
-
-            for (int j = 0; j < tablet3messagesend.Columns.Count; j++)
+            try
             {
-                PdfPCell cell = new PdfPCell();
-                cell.BackgroundColor = BaseColor.LIGHT_GRAY;
-                cell.AddElement(new Chunk(tablet3messagesend.Columns[j].HeaderText.ToUpper(), fonth));
-                table.AddCell(cell);
-
-            }
-
-            //flag first row as header
-            table.HeaderRows = 1;
 
 
-            //add actual rows from grid to table
-            for (int i = 0; i < tablet3messagesend.Rows.Count; i++)
-            {
-                table.WidthPercentage = 100;
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
-                for (int k = 0; k < tablet3messagesend.Columns.Count; k++)
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"ItemList.pdf", FileMode.Create));
+                doc.Open();
+
+                MessageBox.Show("PDF Created sucessfuly!!");
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Item List", font5));
+                doc.Add(prg);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+                PdfPTable table = new PdfPTable(tablet3messagesend.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tablet3messagesend.Columns.Count; j++)
                 {
-                    if (tablet3messagesend[k, i].Value != null)
-                    {
-
-                        table.AddCell(new Phrase(tablet3messagesend[k, i].Value.ToString()));
-                    }
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tablet3messagesend.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
 
                 }
 
+                //flag first row as header
+                table.HeaderRows = 1;
 
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tablet3messagesend.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 100;
+
+                    for (int k = 0; k < tablet3messagesend.Columns.Count; k++)
+                    {
+                        if (tablet3messagesend[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(tablet3messagesend[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table);
+
+                doc.Close();
+
+                System.Diagnostics.Process.Start(@"ItemList.pdf");
             }
+            catch (Exception ex)
+            {
 
-            //add out table
-            doc.Add(table);
-
-            doc.Close();
-
-            System.Diagnostics.Process.Start(@"C:\\Users\\Ruchira Dhananjaya\\Desktop\\ItemList.pdf");
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -2002,7 +2028,7 @@ namespace inventory
 
         private void btnnicsearch_Click(object sender, EventArgs e)
         {
-            if (!(txtt3search.Text.Length == 0))
+            if (!(textt4Box6.Text.Length == 0))
             {
 
                 int typeno = combot4Box1.SelectedIndex;
@@ -2039,7 +2065,7 @@ namespace inventory
                     cm.Fill(set);
 
 
-                    tablepanel3statuschanging.DataSource = set;
+                    tableFullSpareParts.DataSource = set;
 
                 }
                 catch (Exception ex)
@@ -2085,32 +2111,67 @@ namespace inventory
 
         private void txtt4total_OnValueChanged(object sender, EventArgs e)
         {
-            string tot = txtt4total.Text.ToString();
-            string advance = txtt4advance.Text.ToString();
+            try
+            {
+                string tot = txtt4total.Text.ToString();
+                string advance = txtt4advance.Text.ToString();
 
-            double tot1 = double.Parse(tot);
-            double adv = double.Parse(advance);
+                double tot1 = double.Parse(tot);
+                double adv = double.Parse(advance);
 
-            double subtot = tot1 - adv;
+                double subtot = tot1 - adv;
 
-            txtt4balance.Text = subtot.ToString();
+                txtt4balance.Text = subtot.ToString();
+            }
+            catch (Exception)
+            {
+
+               
+            }
         }
 
         private void txtt4saprepartscharge_OnValueChanged(object sender, EventArgs e)
         {
-            string servicecharge = txtt4serviceCharge.Text.ToString();
-            string spareparts = txtt4saprepartscharge.Text.ToString();
+            try
+            {
+                string servicecharge = txtt4serviceCharge.Text.ToString();
+                string spareparts = txtt4saprepartscharge.Text.ToString();
 
-            double ser = Convert.ToDouble(servicecharge);
-            double spa = Convert.ToDouble(spareparts);
+                double ser = Convert.ToDouble(servicecharge);
+                double spa = Convert.ToDouble(spareparts);
 
-            double tot = ser + spa;
+                double tot = ser + spa;
 
-            txtt4total.Text = tot.ToString();
+                txtt4total.Text = tot.ToString();
+
+            }
+            catch (Exception)
+            {
+
+               
+            }
+           
         }
 
         private void txtt4serviceCharge_OnValueChanged(object sender, EventArgs e)
         {
+            try
+            {
+                string servicecharge = txtt4serviceCharge.Text.ToString();
+                string spareparts = txtt4saprepartscharge.Text.ToString();
+
+                int ser = Convert.ToInt32(servicecharge);
+                int spa = Convert.ToInt32(spareparts);
+
+                int tot = ser + spa;
+
+                txtt4total.Text = tot.ToString();
+            }
+            catch (Exception)
+            {
+
+               
+            }
             
         }
 
@@ -2121,20 +2182,45 @@ namespace inventory
 
         private void txtt4advance_OnValueChanged(object sender, EventArgs e)
         {
-           
+            try
+            {
+                string balance = txtt4total.Text.ToString();
+                string discount = txtt4advance.Text.ToString();
+
+                double bal = double.Parse(balance);
+                double dis = double.Parse(discount);
+
+                double grandtot = bal - dis;
+
+                txtt4balance.Text = grandtot.ToString();
+            }
+            catch (Exception)
+            {
+
+                
+            }
         }
 
         private void txtt4discount_OnValueChanged(object sender, EventArgs e)
         {
-            string balance = txtt4balance.Text.ToString();
-            string  discount= txtt4discount.Text.ToString();
+            try
+            {
 
-            double bal = double.Parse(balance);
-            double dis = double.Parse(discount);
+                string balance = txtt4balance.Text.ToString();
+                string discount = txtt4discount.Text.ToString();
 
-            double grandtot = bal - dis;
+                double bal = double.Parse(balance);
+                double dis = double.Parse(discount);
 
-            txtt4grandtotal.Text = grandtot.ToString();
+                double grandtot = bal - dis;
+
+                txtt4grandtotal.Text = grandtot.ToString();
+            }
+            catch (Exception)
+            {
+
+              
+            }
         }
 
         private void txtt1mobileno1_OnValueChanged(object sender, EventArgs e)
@@ -2181,12 +2267,13 @@ namespace inventory
             bunifuCircleProgressbar1.Show();
             try
             {
-                MailMessage mail = new MailMessage(txtt3from.Text, txtt3password.Text, txtt3subject.Text, txtt3emailbody.Text);
-                SmtpClient client = new SmtpClient(txtt3smtp.Text);
+                MailMessage mail = new MailMessage(txtt3from.Text, txtt3toemail.Text, txtt3subject.Text, txtt3emailbody.Text);
+                //mail.Attachments.Add(new Attachment(label7.Text.ToString()));
+                SmtpClient client = new SmtpClient(comboBox1.Text);
                 // SmtpClient client = new SmtpClient("smtp.gmail.com",587);
-                if (txtt3smtp.Text == "smtp.gmail.com")
+                if (comboBox1.Text == "smtp.gmail.com")
                     client.Port = 587;
-                else if (txtt3smtp.Text == "smtp.mail.yahoo.com")
+                else if (comboBox1.Text == "smtp.mail.yahoo.com")
                     client.Port = 587;
                 //  client.Credentials = new System.Net.NetworkCredential(username.Text, password.Text);
                 client.Credentials = new System.Net.NetworkCredential(txtt3from.Text, txtt3password.Text);
@@ -2197,64 +2284,21 @@ namespace inventory
 
                 ProgresBar();
                 MessageBox.Show("Mail Sent!", "Success", MessageBoxButtons.OK);
-                this.Close();
+                
             }
-            catch (Exception)
+            catch (Exception ee)
             {
-                MessageBox.Show("Mailing failed");
-                this.Close();
+
+                //  throw;
+                MessageBox.Show(ee.Message);
+                //this.Close();
             }
+
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            if (!(txtt2search.Text.Length == 0))
-            {
-
-                int typeno = comboBox2.SelectedIndex;
-                string type = "";
-                string key = txtt2search.Text;
-
-
-                switch (typeno)
-                {
-                    case 0:
-                        type = "";
-                        break;
-
-                    case 1:
-                        type = "id";
-                        break;
-
-                    case 2:
-                        type = "item_name";
-                        break;
-                    case 3:
-                        type = "brand_name";
-                        break;
-
-
-
-                }
-
-
-                try
-                {
-                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.sendwith where " + type + " like '" + key + "%'", myConn);
-                    DataTable set = new DataTable();
-                    cm.Fill(set);
-
-
-                    bunifuCustomDataGrid5.DataSource = set;
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-            }
+            
         }
 
         private void txtt1itemcode_KeyPress(object sender, KeyPressEventArgs e)
@@ -2334,7 +2378,7 @@ namespace inventory
         private void btnupdate_Click(object sender, EventArgs e)
         {
             string i;
-            i = (tablet3messagesend.SelectedCells[1].Value.ToString());
+            i = (tablet3messagesend.SelectedCells[0].Value.ToString());
             DialogResult dialogResult = MessageBox.Show("Do you want to update this item?", "Update item", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -2367,7 +2411,7 @@ namespace inventory
 
 
                 myConn.Open();
-                MySqlCommand cmd1 = new MySqlCommand("UPDATE supermarket.sendmessage SET `emaployee`='"+txtt3smtp+"',`cost`='"+ txtt3cost .Text+ "',`note`='"+ txtt3note .Text+ "',`send_by`='"+sendby+"',`status`='"+status+"' WHERE id='"+i+"'", myConn);
+                MySqlCommand cmd1 = new MySqlCommand("UPDATE supermarket.sendmessage SET `emaployee`='" + txtt3smtp.Text+"',`cost`='"+ txtt3cost .Text+ "',`note`='"+ txtt3note .Text+ "',`send_by`='"+sendby+"',`status`='"+status+"' WHERE id='"+i+"'", myConn);
                 cmd1.ExecuteNonQuery();
 
                 MessageBox.Show("Updated successfully!!");
@@ -2497,6 +2541,244 @@ namespace inventory
             {
                 e.Handled = true;
             }
+        }
+
+        private void bunifuImageButton3_Click_1(object sender, EventArgs e)
+        {
+            if (!(txtt2search.Text.Length == 0))
+            {
+
+                int typeno = comboBox2.SelectedIndex;
+                string type = "";
+                string key = txtt2search.Text;
+
+
+                switch (typeno)
+                {
+                    case 0:
+                        type = "";
+                        break;
+
+                    case 1:
+                        type = "id";
+                        break;
+
+                    case 2:
+                        type = "item_name";
+                        break;
+                    case 3:
+                        type = "brand_name";
+                        break;
+                    case 4:
+                        type = "cust_id";
+                        break;
+
+
+                }
+
+
+                try
+                {
+                    MySqlDataAdapter cm = new MySqlDataAdapter("Select *  from supermarket.sendwith where " + type + " like '" + key + "%'", myConn);
+                    DataTable set = new DataTable();
+                    cm.Fill(set);
+
+
+                    bunifuCustomDataGrid5.DataSource = set;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+            }
+        }
+
+        private void txtt2search_TextChanged(object sender, EventArgs e)
+        {
+            if (txtt3search2.Text == "")
+            {
+                loadsendwith();
+            }
+        }
+
+        private void txtt3search2_TextChanged(object sender, EventArgs e)
+        {
+            if (txtt3search.Text == "")
+            {
+                loadsendmessage();
+            }
+        }
+
+        private void textt4Box6_TextChanged(object sender, EventArgs e)
+        {
+            if (textt4Box6.Text == "")
+            {
+                loadtableFullSpareParts();
+            }
+        }
+
+        private void bunifuThinButton219_Click_1(object sender, EventArgs e)
+        {
+            myConn.Open();
+            MySqlCommand cmd1 = new MySqlCommand("DELETE FROM supermarket.selected_spartitem", myConn);
+            cmd1.ExecuteNonQuery();
+
+            MessageBox.Show("Clear all successfully!!");
+            myConn.Close();
+            loadtableselecteditem();
+            myConn.Close();
+        }
+
+        private void bunifuThinButton223_Click(object sender, EventArgs e)
+        {
+            DateTime _now = DateTime.Now;
+            string _dd = _now.ToString("dd"); //
+            string _mm = _now.ToString("MM");
+            string _yy = _now.ToString("yyyy");
+            string _hh = _now.Hour.ToString();
+            string _min = _now.Minute.ToString();
+            string _ss = _now.Second.ToString();
+
+            string _uniqueId = _dd + _hh + _mm + _min + _ss + _yy;
+            MessageBox.Show(_uniqueId);
+        }
+        public void smsVerification()
+        {
+            using (System.Net.WebClient client = new System.Net.WebClient())
+            {
+                try
+                {
+
+
+
+
+                    string url = " http://smsc.vianett.no/v3/send.ashx?" +
+                        "src=" + txtt3mobileno.Text + "&" +
+                        "dst=" + txtt3mobileno.Text + "&" +
+                        "msg=" + System.Web.HttpUtility.UrlEncode( txtt3messagebody.Text, System.Text.Encoding.GetEncoding("ISO-8859-1")) + "&" +
+                        "username=" + System.Web.HttpUtility.UrlEncode("webruchira@gmail.com") + "&" +
+                        "password=" + System.Web.HttpUtility.UrlEncode("gadjx");
+                    string result = client.DownloadString(url);
+                    if (result.Contains("OK"))
+                    {
+                        MessageBox.Show("Send Sucessfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to Send");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void bunifuThinButton222_Click(object sender, EventArgs e)
+        {
+            smsVerification();
+
+
+        }
+        //Printer Configured to print Receipt
+        public void printer()
+        {
+            var installedPrinters = PrinterSettings.InstalledPrinters; //I have choosed a printername from 'installedPrinters'
+            try
+            {
+
+
+                try
+                {
+
+                    int height = 100;
+                    MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "EPSON TM-U220 Receipt"; //Specify the printer to use.
+
+                    MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
+                    MadushaPrintDocument.Print();
+
+
+
+                }
+                finally
+                {
+
+                    // MessageBox.Show("data Exported");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void MadushaPrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+        
+
+            DateTime time = DateTime.Now;
+            string formatD = "yyyy-MM-dd";
+
+            //string SysTime = TimeTest.Text;
+
+
+            e.Graphics.DrawString("MADUSHA", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(70, 0)); // x,y
+            e.Graphics.DrawString("SUPER MARKET", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(44, 20));
+            e.Graphics.DrawString("No. 46, ", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
+            e.Graphics.DrawString("Deraniyagala", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
+            e.Graphics.DrawString("Tel : 036 2249369 / 071 5555533", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
+            e.Graphics.DrawString("Date : " + time.ToString(formatD), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 100));
+            //e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
+            e.Graphics.DrawString("Invoice No : " + txtt4invoiceno.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
+            e.Graphics.DrawString("Repair ID : " + txtt4Rid.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
+            e.Graphics.DrawString("Cashier :" + "Surath", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
+            e.Graphics.DrawString("SalesRep : " + "Ruwan", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
+            e.Graphics.DrawString("Customer : " + "Ruchira", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 145));
+            e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
+            e.Graphics.DrawString("Item code           :" + txtt4itemcode.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 175));
+            e.Graphics.DrawString("Item name           :" + txtt4ItemName.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 190));
+            
+            e.Graphics.DrawString("Service Charge", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 210));
+            e.Graphics.DrawString(":" + txtt4serviceCharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 210));
+            e.Graphics.DrawString("Spareparts Charge", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 230));
+            e.Graphics.DrawString(":" + txtt4saprepartscharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 230));
+
+            e.Graphics.DrawString("Total" + txtt4serviceCharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 250));
+            e.Graphics.DrawString(":" + txtt4serviceCharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 250));
+            e.Graphics.DrawString("Advance", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 270));
+            e.Graphics.DrawString(":" + txtt4saprepartscharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 270));
+            e.Graphics.DrawString("Balance", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 290));
+            e.Graphics.DrawString(":" + txtt4serviceCharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 290));
+            e.Graphics.DrawString("Discount", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 310));
+            e.Graphics.DrawString(":" + txtt4saprepartscharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 310));
+
+            e.Graphics.DrawString("Grand Total", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 330));
+            e.Graphics.DrawString(":" +txtt4saprepartscharge.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, 330));
+
+
+            e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
+        }
+
+        private void bunifuCustomLabel22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton223_Click_1(object sender, EventArgs e)
+        {
+            Barcodeform B = new Barcodeform();
+            B.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void txtt1advance_OnValueChanged(object sender, EventArgs e)
