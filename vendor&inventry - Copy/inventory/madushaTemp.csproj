@@ -116,6 +116,18 @@
       <DependentUpon>bankstat.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Barcode1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Barcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Barcodeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcodeform.Designer.cs">
+      <DependentUpon>Barcodeform.cs</DependentUpon>
+    </Compile>
     <Compile Include="categoryform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -370,6 +382,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="barcode.resx">
       <DependentUpon>barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Barcode1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcodeform.resx">
+      <DependentUpon>Barcodeform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="categoryform.resx">
       <DependentUpon>categoryform.cs</DependentUpon>
