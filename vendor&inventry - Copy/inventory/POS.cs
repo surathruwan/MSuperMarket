@@ -83,7 +83,7 @@ namespace inventory
             txtDescription.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtDescription.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
             string sqlquery = "SELECT Item_name from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -313,13 +313,14 @@ namespace inventory
             }
 
         }
- 
-        //Search item via Barcode
 
+
+        //Search item via Barcode && Load data into table
         public void SearchBarcode()
         {
+            //Load data into table
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode LIKE '" + txtBarcode.Text + "%' ", conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode = '" + txtBarcode.Text + "' ", conn);
             conn.Open();
             DataTable catetable = new DataTable();
             adapter.Fill(catetable);
@@ -328,7 +329,9 @@ namespace inventory
             source.DataSource = catetable;
 
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
+
+            //Search item via Barcode
+            cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode = '" + txtBarcode.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
            
             while (r.Read())
@@ -343,13 +346,13 @@ namespace inventory
             
         }
 
-        //Search only via Barcode
+        //Searchprice only via Barcode
         public void SearchPriceBarcode()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = ("SELECT Rprice from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
+            cmd.CommandText = ("SELECT Rprice from supermarket.item where Barcode = '" + txtBarcode.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
 
             while (r.Read())
@@ -366,7 +369,7 @@ namespace inventory
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
+                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile = '" + txtPhone.Text + "' ";
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
@@ -1553,6 +1556,11 @@ namespace inventory
             {
                 txtPoints.Enabled = true;
             }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

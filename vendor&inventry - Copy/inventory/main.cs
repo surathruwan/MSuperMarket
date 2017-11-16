@@ -1359,7 +1359,7 @@ namespace inventory
                         MessageBox.Show("Updated successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         r.Close();
 
-                        MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.stock values('" + scode.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd hh:mm tt") + "','" + spname.Text + "','" + spid.Text + "','" + sup.Text + "','" + snqty.Text + "')", dbcon);
+                        MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.stock values('" + scode.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + spname.Text + "','" + spid.Text + "','" + sup.Text + "','" + snqty.Text + "')", dbcon);
                         MySqlDataReader r2;
                         r2 = cmd2.ExecuteReader();
                         loadtable();
@@ -1374,7 +1374,7 @@ namespace inventory
                 }
                 else if (dialogResult == DialogResult.No)
                 {
-                    MessageBox.Show("Stock Update Cancelled");
+                    MessageBox.Show("Stock Update Cancelled", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -1423,7 +1423,7 @@ namespace inventory
             }
             else if (dialogResult == DialogResult.No)
             {
-                MessageBox.Show("Not Deleted!");
+                MessageBox.Show("Not Deleted!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -1542,7 +1542,7 @@ namespace inventory
                             comm.ExecuteNonQuery();
 
                         }
-                        MessageBox.Show("Success");
+                        MessageBox.Show("Success", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception ex)
                     {
@@ -1917,15 +1917,15 @@ namespace inventory
                 tmq.Text = (Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)).ToString();
                 if (Convert.ToInt32(tsc.Text) == Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show("No Missing Items found");
+                    MessageBox.Show("No Missing Items found", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (Convert.ToInt32(tsc.Text) < Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing");
+                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Showroom count");
+                    MessageBox.Show("Invalid Showroom count", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
 
@@ -2097,7 +2097,7 @@ namespace inventory
             PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"ItemList.pdf", FileMode.Create));
             doc.Open();
 
-            MessageBox.Show("PDF Created sucessfuly!!");
+            //MessageBox.Show("PDF Created sucessfuly!!");
 
             //Add border to page
             PdfContentByte content = w.DirectContent;

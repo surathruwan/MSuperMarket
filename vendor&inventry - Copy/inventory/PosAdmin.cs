@@ -23,6 +23,7 @@ namespace inventory
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             startDate.Format = DateTimePickerFormat.Custom;
+            OrderDetails.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             startDate.CustomFormat = "yyyy-MM-dd";
             startDate.ShowUpDown = false;
 
@@ -589,7 +590,7 @@ namespace inventory
 
             string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
             MySqlConnection conn = new MySqlConnection(constr);
-            MySqlCommand cmd = new MySqlCommand("Select Item_code from supermarket.item where Item_name = '" + txtItem.Text + "'", conn);
+            MySqlCommand cmd = new MySqlCommand("Select Item_code from supermarket.item where Item_name = '" + txtItem.Text + "' OR Item_name = '"+txtSearchItem.Text+"'", conn);
             
             conn.Open();
 
@@ -622,7 +623,7 @@ namespace inventory
 
             string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
             MySqlConnection conn = new MySqlConnection(constr);
-            MySqlCommand cmd = new MySqlCommand("Select Item_code from supermarket.item where Item_code = '" + txtItem.Text + "'", conn);
+            MySqlCommand cmd = new MySqlCommand("Select Item_code from supermarket.item where Item_code = '" + txtItem.Text + "' OR Item_code = '" + txtSearchItem.Text + "'", conn);
 
             conn.Open();
 
@@ -818,6 +819,44 @@ namespace inventory
 
         }
 
+        //Check Same Item in Quotation bucket
+        public bool QuotatioCheckDuplicate()
+        {
+
+
+            //Boolean to check if he has row has been
+            bool Found = false;
+            if (cartQuotation.Rows.Count > 0)
+            {
+
+                //Check if the product Id exists with the same Price
+                foreach (DataGridViewRow row in cartQuotation.Rows)
+                {
+                    if (Convert.ToString(row.Cells[0].Value) == ItemNameQ.Text && Convert.ToString(row.Cells[1].Value) == txtPrice1.Text)
+                    {
+                        //Update the Quantity of the found row
+                        row.Cells[2].Value = Convert.ToString(Convert.ToInt16(txtQty1.Text) + Convert.ToInt16(row.Cells[2].Value));
+                        Found = true;
+                    }
+
+                }
+                if (!Found)
+                {
+                    Found = false;
+                    //Add the row to grid view
+                    //cart.Rows.Add(txtDescription.Text, txtCode.Text,txtPrice.Text, 1,1000);
+                }
+
+            }
+            else
+            {
+
+            }
+            return Found;
+
+        }
+
+
         //Clear Text Fields
 
         public void clearFields()
@@ -883,34 +922,31 @@ namespace inventory
 
         }
      
-        //When Row Added Calculate the amount
+        //When Row Added Calculate the amount for Quotation
         public void AddedAndCal()
         {
             try
             {
-                if (validateform() == false)
-                {
-                    String Sqty = txtQty.Text;
-                    String Sprice = txtPrice.Text;
+               
 
 
-                    double qty = double.Parse(Sqty);
-                    double tot = double.Parse(Sprice);
+                    double qty = double.Parse(txtQty1.Text);
+                    double tot = double.Parse(txtPrice1.Text);
 
                     double amount = qty * tot;
                     double sum = amount;
 
-                    for (int i = 0; i < orderCart.Rows.Count; i++)
+                    for (int i = 0; i < cartQuotation.Rows.Count; i++)
                     {
-                        sum += Convert.ToDouble(orderCart.Rows[i].Cells[4].Value);
+                        sum += Convert.ToDouble(cartQuotation.Rows[i].Cells[3].Value);
 
                     }
 
 
 
-                    lblAmount.Text = sum.ToString();
+                lblAmount1.Text = sum.ToString();
 
-                }
+                
                 //MessageBox.Show(sum.ToString());
             }
             catch (Exception ex)
@@ -998,7 +1034,7 @@ namespace inventory
         }
 
 
-
+        //Search Price using ItemCode
         public void SearchPriceItemcode()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -1008,12 +1044,13 @@ namespace inventory
 
             MySqlCommand cmd = conn.CreateCommand();
 
-            cmd.CommandText = ("SELECT Rprice from supermarket.item where Item_code LIKE '%" + txtItem.Text + "%' ");
+            cmd.CommandText = ("SELECT Rprice,Item_name from supermarket.item where Item_code ='" + txtItem.Text + "' OR Item_code ='" + txtSearchItem.Text + "'");
             MySqlDataReader r = cmd.ExecuteReader();
 
             while (r.Read())
             {
 
+                ItemNameQ.Text = r[1].ToString();
                 txtPrice.Text = r[0].ToString();
                 txtPrice1.Text = r[0].ToString();
 
@@ -1021,7 +1058,7 @@ namespace inventory
 
             }
         }
-
+        //Search Item Price
         public void SearchPriceItemName()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -1031,12 +1068,12 @@ namespace inventory
 
             MySqlCommand cmd = conn.CreateCommand();
 
-            cmd.CommandText = ("SELECT Rprice from supermarket.item where Item_name LIKE '%" + txtItem.Text + "%' ");
+            cmd.CommandText = ("SELECT Rprice,Item_name from supermarket.item where Item_name = '" + txtItem.Text + "' OR Item_name = '" + txtSearchItem.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
 
             while (r.Read())
             {
-
+                ItemNameQ.Text = r[1].ToString();
                 txtPrice.Text = r[0].ToString();
                 txtPrice1.Text = r[0].ToString();
 
@@ -1044,6 +1081,8 @@ namespace inventory
 
             }
         }
+
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -1454,6 +1493,8 @@ namespace inventory
             }
         }
 
+       
+
 
         private void OrderDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -1552,8 +1593,8 @@ namespace inventory
 
         private void radItemName1_CheckedChanged(object sender, EventArgs e)
         {
-            txtItem.Text = "";
-            txtPrice.Text = "";
+            txtSearchItem.Text = "";
+            txtPrice1.Text = "";
             ItemsAutoCompleteItemCode();
         }
 
@@ -1561,19 +1602,29 @@ namespace inventory
         {
             if (e.KeyCode == Keys.F1)
             {
-                if ((radIteam1.Checked == true) )
+                if ((radItem1.Checked == true) && (ItemExist() == true))
+                {
+                  
+                    SearchPriceItemName();
+
+                    txtQty1.Text = "1";
+
+
+
+                }
+                else if ((radItemCode1.Checked == true) && ItemCodeExist() == true)
                 {
 
-                    SearchPriceItemName();
-                    //getDetails();
+                    
+                    SearchPriceItemcode();
                     txtQty1.Text = "1";
 
                 }
-                
             }
             if (e.KeyCode == Keys.Back)
             {
                 txtPrice.Text = "";
+                txtQty1.Text = "";
             }
         }
 
@@ -1624,24 +1675,21 @@ namespace inventory
             }
         }
 
-
+        //Add Item Quotation cart
         public void AddItemtoCartQuotation()
         {
-
-
-                if (CheckDuplicate() == false)
-                {
+            
+            
                     int n = cartQuotation.Rows.Add();
 
-                    cartQuotation.Rows[n].Cells[0].Value = txtSearchItem.Text;
+                    cartQuotation.Rows[n].Cells[0].Value = ItemNameQ.Text;
                     cartQuotation.Rows[n].Cells[1].Value = txtPrice1.Text;
                     cartQuotation.Rows[n].Cells[2].Value = txtQty1.Text;
     
-                    String Sqty = txtQty1.Text;
-                    String Sprice = txtPrice1.Text;
+                   
 
-                    float qty = float.Parse(Sqty);
-                    float tot = float.Parse(Sprice);
+                    float qty = float.Parse(txtQty1.Text);
+                    float tot = float.Parse(txtPrice1.Text);
 
                     float amount = qty * tot;
 
@@ -1652,18 +1700,61 @@ namespace inventory
                     string strAmount = Convert.ToString(amount);
                     cartQuotation.Rows[n].Cells[3].Value = amount;
 
-                }
-                else
-                {
-                    clearFields();
-                }
+                //}
+                //else
+                //{
+                //    clearFields();
+                //}
    
         }
 
+
+        //when quantity update Total Ammount changed
+
+        public void TotalUpdate()
+        {
+            double sum = 0;
+
+            try
+            {
+
+                for (int i = 0; i < cartQuotation.Rows.Count; i++)
+                {
+
+                    //Total Amount Label will be updated
+                    double total = Convert.ToDouble(cartQuotation.Rows[i].Cells[1].Value) * Convert.ToDouble(cartQuotation.Rows[i].Cells[2].Value);
+                    cartQuotation.Rows[i].Cells[3].Value = total;
+                    sum += Convert.ToDouble(cartQuotation.Rows[i].Cells[3].Value);
+                }
+
+                lblAmount1.Text = sum.ToString("0.00");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            checker();
 
+            if ((checker() == false))
+            {
+                if (QuotatioCheckDuplicate() == false)
+                {
+                    AddItemtoCartQuotation();
+                    
+                }
+                else
+                {
+                    txtQty1.Text = "";
+                    txtSearchItem.Text = "";
+                    txtPrice1.Text = "";
+                }
+                
+            }
         }
 
         public bool checker()
@@ -1674,10 +1765,10 @@ namespace inventory
                 return true;
 
             }
-
+            
             else
             {
-                AddItemtoCartQuotation();
+               
                 return false;
             }
         }
@@ -1686,29 +1777,8 @@ namespace inventory
         {
             try
            {
-               
-                    String Sqty = txtQty1.Text;
-                    String Sprice = txtPrice1.Text;
 
-
-                    double qty = double.Parse(Sqty);
-                    double tot = double.Parse(Sprice);
-
-                    double amount = qty * tot;
-                    double sum = amount;
-
-                    for (int i = 0; i < orderCart.Rows.Count; i++)
-                    {
-                        sum =+ Convert.ToDouble(orderCart.Rows[i].Cells[3].Value);
-
-                    }
-
-
-
-                lblAmount1.Text = sum.ToString();
-
-                
-                //MessageBox.Show(sum.ToString());
+                AddedAndCal();
             }
             catch (Exception ex)
             {
@@ -1740,6 +1810,35 @@ namespace inventory
             catch(Exception ex)
             {
                 
+            }
+        }
+
+        private void txtSearchItem_Enter(object sender, EventArgs e)
+        {
+           // ItemsAutoCompleteItemName();
+        }
+
+        private void radItemCode1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtSearchItem.Text = "";
+            txtPrice1.Text = "";
+            ItemsAutoCompleteItemCode();
+        }
+
+        private void cartQuotation_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            TotalUpdate();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                orderCart.Rows.Clear();
+            }
+            catch (Exception ex)
+            {
+              //  MessageBox.Show(ex.Message);
             }
         }
     }

@@ -307,6 +307,7 @@
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.MaxLength = 6;
             this.txtPrice.Name = "txtPrice";
+            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(147, 29);
             this.txtPrice.TabIndex = 4;
             this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
@@ -632,7 +633,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tabControl1.Location = new System.Drawing.Point(5, 4);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(329, 300);
@@ -642,9 +643,9 @@
             // 
             this.tabPage1.Controls.Add(this.listBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(321, 271);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Shortcuts";
@@ -673,6 +674,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(308, 213);
             this.listBox1.TabIndex = 1;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
             // panel6
@@ -722,7 +724,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(301, 111);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 32);
             this.pictureBox2.TabIndex = 45;
@@ -921,7 +923,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(252, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 32);
             this.pictureBox1.TabIndex = 42;
@@ -1035,7 +1037,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.ClientSize = new System.Drawing.Size(1607, 772);
+            this.ClientSize = new System.Drawing.Size(1604, 905);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);

@@ -211,7 +211,7 @@ namespace inventory
 
                 else if (dialogResult == DialogResult.No)
                 {
-                    MessageBox.Show("Not Updated!");
+                    MessageBox.Show("Not Updated!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
             }

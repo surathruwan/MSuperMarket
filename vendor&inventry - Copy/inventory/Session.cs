@@ -43,8 +43,8 @@ namespace inventory
                         case "cashier":
                             a = 1;
                             break;
-                        case "doperator":
-                            a = 2;
+                        default:
+                            a = 4;
                             break;
                     }
                 }
@@ -64,7 +64,7 @@ namespace inventory
                 catch (Exception o)
                 {
 
-                    //MessageBox.Show(o.Message);
+                    MessageBox.Show(o.Message);
                 }
 
 
@@ -81,12 +81,12 @@ namespace inventory
             {
                 return a;
             }
-            else if (userType == "doperator")
-            {
-                return a;
-            }
+            //else if (userType == "doperator")
+            //{
+            //    return a;
+            //}
 
-            else { return 0; }
+            else { return a; }
 
         }
 
@@ -100,12 +100,12 @@ namespace inventory
             {
                 return "cashier";
             }
-            else if(userType == "doperator")
-            { 
-                    return "doperator";
-            }
+            //else if(userType == "doperator")
+            //{ 
+            //        return "doperator";
+            //}
             else
-            return null;
+            return "doperator";
         }
 
         public static void windUpSession()

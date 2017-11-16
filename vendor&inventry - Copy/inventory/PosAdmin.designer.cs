@@ -102,8 +102,6 @@
             this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.orderCart = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.recordsellingdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.supermarketDataSet2 = new inventory.supermarketDataSet2();
             this.label51 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -176,8 +174,10 @@
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label37 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.ItemNameQ = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.lblAmount1 = new System.Windows.Forms.Label();
@@ -205,6 +205,7 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.radItemCode1 = new System.Windows.Forms.RadioButton();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtPrice1 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -212,14 +213,22 @@
             this.txtQty1 = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.radIteam1 = new System.Windows.Forms.RadioButton();
+            this.radItem1 = new System.Windows.Forms.RadioButton();
             this.label38 = new System.Windows.Forms.Label();
             this.txtSearchItem = new System.Windows.Forms.TextBox();
+            this.recordsellingdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supermarketDataSet2 = new inventory.supermarketDataSet2();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ordersTableAdapter = new inventory.supermarketDataSet1TableAdapters.ordersTableAdapter();
             this.recordsellingdetailsTableAdapter = new inventory.supermarketDataSet2TableAdapters.recordsellingdetailsTableAdapter();
+            this.btnClear = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.QUOID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CUSTOMER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TOTALAMOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUOTITION_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -236,8 +245,6 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderCart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).BeginInit();
             this.panel5.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -262,6 +269,8 @@
             this.groupboxss.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -276,20 +285,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
-
-            //this.tabControl1.Controls.Add(this.tabPage2);
-            // this.tabControl1.Controls.Add(this.tabPage3);
-
-
-            // this.tabControl1.Controls.Add(this.tabPage2);
-            // this.tabControl1.Controls.Add(this.tabPage3);
-
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-
             this.tabControl1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1629, 1178);
@@ -299,9 +299,9 @@
             // 
             this.tabPage1.Controls.Add(this.bunifuCards1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1621, 1149);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Analyze Sales";
@@ -739,9 +739,9 @@
             // 
             this.tabPage2.Controls.Add(this.bunifuCards2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1621, 1149);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Place Order";
@@ -855,7 +855,7 @@
             this.panel11.Controls.Add(this.label33);
             this.panel11.Controls.Add(this.radName);
             this.panel11.Location = new System.Drawing.Point(13, 176);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(449, 278);
             this.panel11.TabIndex = 106;
@@ -866,6 +866,7 @@
             this.txtPrice.Location = new System.Drawing.Point(297, 144);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
+            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(137, 29);
             this.txtPrice.TabIndex = 107;
             // 
@@ -888,7 +889,7 @@
             "Reserve",
             "Home Delivery"});
             this.cmbToBuy.Location = new System.Drawing.Point(89, 7);
-            this.cmbToBuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbToBuy.Margin = new System.Windows.Forms.Padding(4);
             this.cmbToBuy.Name = "cmbToBuy";
             this.cmbToBuy.Size = new System.Drawing.Size(189, 32);
             this.cmbToBuy.TabIndex = 105;
@@ -1019,6 +1020,7 @@
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel10.Controls.Add(this.btnClear);
             this.panel10.Controls.Add(this.lblAmount);
             this.panel10.Controls.Add(this.label53);
             this.panel10.Controls.Add(this.btnInsert);
@@ -1027,7 +1029,7 @@
             this.panel10.Controls.Add(this.label51);
             this.panel10.Controls.Add(this.textBox5);
             this.panel10.Location = new System.Drawing.Point(13, 460);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(927, 374);
             this.panel10.TabIndex = 98;
@@ -1146,16 +1148,6 @@
             this.orderCart.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.orderCart_RowsAdded);
             this.orderCart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.orderCart_KeyPress);
             this.orderCart.KeyUp += new System.Windows.Forms.KeyEventHandler(this.orderCart_KeyUp);
-            // 
-            // recordsellingdetailsBindingSource
-            // 
-            this.recordsellingdetailsBindingSource.DataMember = "recordsellingdetails";
-            this.recordsellingdetailsBindingSource.DataSource = this.supermarketDataSet2;
-            // 
-            // supermarketDataSet2
-            // 
-            this.supermarketDataSet2.DataSetName = "supermarketDataSet2";
-            this.supermarketDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label51
             // 
@@ -1717,7 +1709,7 @@
             this.txtPhone.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtPhone.LineThickness = 3;
             this.txtPhone.Location = new System.Drawing.Point(189, 82);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(5);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(136, 33);
             this.txtPhone.TabIndex = 36;
@@ -1766,7 +1758,7 @@
             // 
             this.tabPage3.Controls.Add(this.bunifuCards3);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1621, 1149);
             this.tabPage3.TabIndex = 2;
@@ -1800,7 +1792,7 @@
             this.panel12.Controls.Add(this.richTextBox1);
             this.panel12.Controls.Add(this.groupBox6);
             this.panel12.Location = new System.Drawing.Point(9, 703);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1564, 122);
             this.panel12.TabIndex = 72;
@@ -1820,7 +1812,7 @@
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.richTextBox1.Location = new System.Drawing.Point(836, 4);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(712, 110);
             this.richTextBox1.TabIndex = 0;
@@ -1847,7 +1839,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Location = new System.Drawing.Point(99, 12);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(64, 59);
             this.pictureBox12.TabIndex = 73;
@@ -1856,7 +1848,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Location = new System.Drawing.Point(196, 14);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(64, 59);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1929,44 +1921,66 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.label59);
             this.panel6.Controls.Add(this.bunifuCustomDataGrid3);
-            this.panel6.Location = new System.Drawing.Point(1103, 201);
+            this.panel6.Location = new System.Drawing.Point(838, 201);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(471, 482);
+            this.panel6.Size = new System.Drawing.Size(736, 482);
             this.panel6.TabIndex = 70;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label59.Location = new System.Drawing.Point(446, 18);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(275, 26);
+            this.label59.TabIndex = 94;
+            this.label59.Text = "Customer Order History";
             // 
             // bunifuCustomDataGrid3
             // 
+            this.bunifuCustomDataGrid3.AllowUserToAddRows = false;
+            this.bunifuCustomDataGrid3.AllowUserToDeleteRows = false;
+            this.bunifuCustomDataGrid3.AllowUserToResizeColumns = false;
+            this.bunifuCustomDataGrid3.AllowUserToResizeRows = false;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.bunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.bunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.QUOID,
+            this.CUSTOMER,
+            this.PHONE,
+            this.TOTALAMOUNT,
+            this.QUOTITION_DATE});
             this.bunifuCustomDataGrid3.DoubleBuffered = true;
             this.bunifuCustomDataGrid3.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid3.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid3.Location = new System.Drawing.Point(16, 18);
+            this.bunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
+            this.bunifuCustomDataGrid3.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuCustomDataGrid3.Location = new System.Drawing.Point(16, 56);
             this.bunifuCustomDataGrid3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuCustomDataGrid3.Name = "bunifuCustomDataGrid3";
             this.bunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid3.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(440, 446);
+            this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(705, 413);
             this.bunifuCustomDataGrid3.TabIndex = 4;
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.Controls.Add(this.ItemNameQ);
             this.panel7.Controls.Add(this.label39);
             this.panel7.Controls.Add(this.label40);
             this.panel7.Controls.Add(this.lblAmount1);
@@ -1979,14 +1993,24 @@
             this.panel7.Location = new System.Drawing.Point(9, 201);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1069, 482);
+            this.panel7.Size = new System.Drawing.Size(823, 482);
             this.panel7.TabIndex = 5;
+            // 
+            // ItemNameQ
+            // 
+            this.ItemNameQ.AutoSize = true;
+            this.ItemNameQ.Location = new System.Drawing.Point(642, 104);
+            this.ItemNameQ.Name = "ItemNameQ";
+            this.ItemNameQ.Size = new System.Drawing.Size(76, 16);
+            this.ItemNameQ.TabIndex = 114;
+            this.ItemNameQ.Text = "ItemName";
+            this.ItemNameQ.Visible = false;
             // 
             // label39
             // 
             this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.label39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label39.Location = new System.Drawing.Point(837, 447);
+            this.label39.Location = new System.Drawing.Point(653, 449);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(153, 23);
             this.label39.TabIndex = 77;
@@ -1995,7 +2019,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label40.Location = new System.Drawing.Point(684, 443);
+            this.label40.Location = new System.Drawing.Point(500, 445);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(122, 24);
             this.label40.TabIndex = 76;
@@ -2006,7 +2030,7 @@
             // 
             this.lblAmount1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.lblAmount1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAmount1.Location = new System.Drawing.Point(837, 385);
+            this.lblAmount1.Location = new System.Drawing.Point(653, 387);
             this.lblAmount1.Name = "lblAmount1";
             this.lblAmount1.Size = new System.Drawing.Size(153, 23);
             this.lblAmount1.TabIndex = 75;
@@ -2038,7 +2062,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(836, 416);
+            this.textBox3.Location = new System.Drawing.Point(652, 418);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(153, 23);
@@ -2072,7 +2096,7 @@
             // label41
             // 
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label41.Location = new System.Drawing.Point(684, 415);
+            this.label41.Location = new System.Drawing.Point(500, 417);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(107, 28);
             this.label41.TabIndex = 74;
@@ -2082,7 +2106,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label42.Location = new System.Drawing.Point(684, 385);
+            this.label42.Location = new System.Drawing.Point(500, 387);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(76, 24);
             this.label42.TabIndex = 72;
@@ -2093,6 +2117,8 @@
             // 
             this.cartQuotation.AllowUserToAddRows = false;
             this.cartQuotation.AllowUserToDeleteRows = false;
+            this.cartQuotation.AllowUserToResizeColumns = false;
+            this.cartQuotation.AllowUserToResizeRows = false;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cartQuotation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.cartQuotation.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -2122,8 +2148,10 @@
             this.cartQuotation.ReadOnly = true;
             this.cartQuotation.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.cartQuotation.RowTemplate.Height = 24;
-            this.cartQuotation.Size = new System.Drawing.Size(1033, 357);
+            this.cartQuotation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.cartQuotation.Size = new System.Drawing.Size(786, 357);
             this.cartQuotation.TabIndex = 4;
+            this.cartQuotation.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartQuotation_CellValueChanged);
             this.cartQuotation.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.cartQuotation_RowsAdded);
             // 
             // Column1
@@ -2174,9 +2202,9 @@
             this.groupboxss.Controls.Add(this.txtCustomerPhone);
             this.groupboxss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.groupboxss.Location = new System.Drawing.Point(1043, 17);
-            this.groupboxss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupboxss.Margin = new System.Windows.Forms.Padding(4);
             this.groupboxss.Name = "groupboxss";
-            this.groupboxss.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupboxss.Padding = new System.Windows.Forms.Padding(4);
             this.groupboxss.Size = new System.Drawing.Size(507, 123);
             this.groupboxss.TabIndex = 77;
             this.groupboxss.TabStop = false;
@@ -2204,7 +2232,7 @@
             this.txtCustomerName.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtCustomerName.LineThickness = 3;
             this.txtCustomerName.Location = new System.Drawing.Point(201, 32);
-            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(5);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(221, 33);
             this.txtCustomerName.TabIndex = 38;
@@ -2232,7 +2260,7 @@
             this.txtCustomerPhone.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtCustomerPhone.LineThickness = 3;
             this.txtCustomerPhone.Location = new System.Drawing.Point(201, 73);
-            this.txtCustomerPhone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCustomerPhone.Margin = new System.Windows.Forms.Padding(5);
             this.txtCustomerPhone.Name = "txtCustomerPhone";
             this.txtCustomerPhone.Size = new System.Drawing.Size(221, 33);
             this.txtCustomerPhone.TabIndex = 36;
@@ -2318,6 +2346,7 @@
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel9.Controls.Add(this.radItemCode1);
             this.panel9.Controls.Add(this.bunifuThinButton21);
             this.panel9.Controls.Add(this.txtPrice1);
             this.panel9.Controls.Add(this.label35);
@@ -2325,14 +2354,27 @@
             this.panel9.Controls.Add(this.txtQty1);
             this.panel9.Controls.Add(this.label55);
             this.panel9.Controls.Add(this.label56);
-            this.panel9.Controls.Add(this.radIteam1);
+            this.panel9.Controls.Add(this.radItem1);
             this.panel9.Controls.Add(this.label38);
             this.panel9.Controls.Add(this.txtSearchItem);
             this.panel9.Location = new System.Drawing.Point(357, 15);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(676, 125);
             this.panel9.TabIndex = 76;
+            // 
+            // radItemCode1
+            // 
+            this.radItemCode1.AutoSize = true;
+            this.radItemCode1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.radItemCode1.Location = new System.Drawing.Point(526, 6);
+            this.radItemCode1.Name = "radItemCode1";
+            this.radItemCode1.Size = new System.Drawing.Size(117, 28);
+            this.radItemCode1.TabIndex = 113;
+            this.radItemCode1.TabStop = true;
+            this.radItemCode1.Text = "Item Code";
+            this.radItemCode1.UseVisualStyleBackColor = true;
+            this.radItemCode1.CheckedChanged += new System.EventHandler(this.radItemCode1_CheckedChanged);
             // 
             // bunifuThinButton21
             // 
@@ -2366,6 +2408,7 @@
             this.txtPrice1.Location = new System.Drawing.Point(151, 37);
             this.txtPrice1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice1.Name = "txtPrice1";
+            this.txtPrice1.ReadOnly = true;
             this.txtPrice1.Size = new System.Drawing.Size(205, 29);
             this.txtPrice1.TabIndex = 111;
             // 
@@ -2419,19 +2462,19 @@
             this.label56.TabIndex = 108;
             this.label56.Text = "Discount";
             // 
-            // radIteam1
+            // radItem1
             // 
-            this.radIteam1.AutoSize = true;
-            this.radIteam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.radIteam1.Location = new System.Drawing.Point(383, 4);
-            this.radIteam1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radIteam1.Name = "radIteam1";
-            this.radIteam1.Size = new System.Drawing.Size(122, 28);
-            this.radIteam1.TabIndex = 58;
-            this.radIteam1.TabStop = true;
-            this.radIteam1.Text = "Item Name";
-            this.radIteam1.UseVisualStyleBackColor = true;
-            this.radIteam1.CheckedChanged += new System.EventHandler(this.radIteam1_CheckedChanged);
+            this.radItem1.AutoSize = true;
+            this.radItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.radItem1.Location = new System.Drawing.Point(383, 4);
+            this.radItem1.Margin = new System.Windows.Forms.Padding(4);
+            this.radItem1.Name = "radItem1";
+            this.radItem1.Size = new System.Drawing.Size(122, 28);
+            this.radItem1.TabIndex = 58;
+            this.radItem1.TabStop = true;
+            this.radItem1.Text = "Item Name";
+            this.radItem1.UseVisualStyleBackColor = true;
+            this.radItem1.CheckedChanged += new System.EventHandler(this.radIteam1_CheckedChanged);
             // 
             // label38
             // 
@@ -2454,6 +2497,16 @@
             this.txtSearchItem.TabIndex = 56;
             this.txtSearchItem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchItem_KeyUp);
             // 
+            // recordsellingdetailsBindingSource
+            // 
+            this.recordsellingdetailsBindingSource.DataMember = "recordsellingdetails";
+            this.recordsellingdetailsBindingSource.DataSource = this.supermarketDataSet2;
+            // 
+            // supermarketDataSet2
+            // 
+            this.supermarketDataSet2.DataSetName = "supermarketDataSet2";
+            this.supermarketDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // ordersBindingSource
             // 
             this.ordersBindingSource.DataMember = "orders";
@@ -2466,6 +2519,57 @@
             // 
             this.recordsellingdetailsTableAdapter.ClearBeforeFill = true;
             // 
+            // btnClear
+            // 
+            this.btnClear.ActiveBorderThickness = 1;
+            this.btnClear.ActiveCornerRadius = 20;
+            this.btnClear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
+            this.btnClear.ButtonText = "Clear";
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.IdleBorderThickness = 1;
+            this.btnClear.IdleCornerRadius = 20;
+            this.btnClear.IdleFillColor = System.Drawing.Color.White;
+            this.btnClear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.Location = new System.Drawing.Point(282, 305);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(184, 41);
+            this.btnClear.TabIndex = 111;
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // QUOID
+            // 
+            this.QUOID.HeaderText = "QUOTATION ID";
+            this.QUOID.Name = "QUOID";
+            // 
+            // CUSTOMER
+            // 
+            this.CUSTOMER.HeaderText = "CUSTOMER";
+            this.CUSTOMER.Name = "CUSTOMER";
+            // 
+            // PHONE
+            // 
+            this.PHONE.HeaderText = "PHONE";
+            this.PHONE.Name = "PHONE";
+            // 
+            // TOTALAMOUNT
+            // 
+            this.TOTALAMOUNT.HeaderText = "TOTAL AMOUNT";
+            this.TOTALAMOUNT.Name = "TOTALAMOUNT";
+            // 
+            // QUOTITION_DATE
+            // 
+            this.QUOTITION_DATE.HeaderText = "QUOTITION DATE";
+            this.QUOTITION_DATE.Name = "QUOTITION_DATE";
+            // 
             // PosAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2473,7 +2577,7 @@
             this.ClientSize = new System.Drawing.Size(1633, 892);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PosAdmin";
             this.Text = "inv";
             this.Load += new System.EventHandler(this.inv_Load);
@@ -2502,8 +2606,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderCart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -2526,6 +2628,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -2537,6 +2640,8 @@
             this.groupBox7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -2649,7 +2754,6 @@
         private System.Windows.Forms.Panel panel6;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid3;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.RadioButton radIteam1;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
@@ -2734,5 +2838,15 @@
         private supermarketDataSet2 supermarketDataSet2;
         private System.Windows.Forms.BindingSource recordsellingdetailsBindingSource;
         private supermarketDataSet2TableAdapters.recordsellingdetailsTableAdapter recordsellingdetailsTableAdapter;
+        private System.Windows.Forms.RadioButton radItem1;
+        private System.Windows.Forms.RadioButton radItemCode1;
+        private System.Windows.Forms.Label ItemNameQ;
+        private System.Windows.Forms.Label label59;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnClear;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUOID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CUSTOMER;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TOTALAMOUNT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUOTITION_DATE;
     }
 }
