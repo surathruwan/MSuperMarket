@@ -92,6 +92,12 @@
     <Compile Include="addform.Designer.cs">
       <DependentUpon>addform.cs</DependentUpon>
     </Compile>
+    <Compile Include="adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adduser.Designer.cs">
+      <DependentUpon>adduser.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdviceOfDispatch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +354,9 @@
     <Compile Include="WebCam.cs" />
     <EmbeddedResource Include="addform.resx">
       <DependentUpon>addform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adduser.resx">
+      <DependentUpon>adduser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdviceOfDispatch.resx">
       <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
