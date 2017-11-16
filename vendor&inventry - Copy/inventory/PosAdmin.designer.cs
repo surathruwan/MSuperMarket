@@ -176,9 +176,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuotationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.ItemNameQ = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -226,6 +223,12 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ordersTableAdapter = new inventory.supermarketDataSet1TableAdapters.ordersTableAdapter();
             this.recordsellingdetailsTableAdapter = new inventory.supermarketDataSet2TableAdapters.recordsellingdetailsTableAdapter();
+            this.btnClear = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.QUOID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CUSTOMER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TOTALAMOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUOTITION_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -863,6 +866,7 @@
             this.txtPrice.Location = new System.Drawing.Point(297, 144);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
+            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(137, 29);
             this.txtPrice.TabIndex = 107;
             // 
@@ -1016,6 +1020,7 @@
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel10.Controls.Add(this.btnClear);
             this.panel10.Controls.Add(this.lblAmount);
             this.panel10.Controls.Add(this.label53);
             this.panel10.Controls.Add(this.btnInsert);
@@ -1955,9 +1960,11 @@
             this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.bunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Customer,
-            this.Amount,
-            this.QuotationDate});
+            this.QUOID,
+            this.CUSTOMER,
+            this.PHONE,
+            this.TOTALAMOUNT,
+            this.QUOTITION_DATE});
             this.bunifuCustomDataGrid3.DoubleBuffered = true;
             this.bunifuCustomDataGrid3.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -1969,20 +1976,6 @@
             this.bunifuCustomDataGrid3.RowTemplate.Height = 24;
             this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(705, 413);
             this.bunifuCustomDataGrid3.TabIndex = 4;
-            // 
-            // Customer
-            // 
-            this.Customer.Name = "Customer";
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "AMOUNT";
-            this.Amount.Name = "Amount";
-            // 
-            // QuotationDate
-            // 
-            this.QuotationDate.HeaderText = "QUO.DATE";
-            this.QuotationDate.Name = "QuotationDate";
             // 
             // panel7
             // 
@@ -2158,6 +2151,7 @@
             this.cartQuotation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.cartQuotation.Size = new System.Drawing.Size(786, 357);
             this.cartQuotation.TabIndex = 4;
+            this.cartQuotation.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartQuotation_CellValueChanged);
             this.cartQuotation.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.cartQuotation_RowsAdded);
             // 
             // Column1
@@ -2414,6 +2408,7 @@
             this.txtPrice1.Location = new System.Drawing.Point(151, 37);
             this.txtPrice1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice1.Name = "txtPrice1";
+            this.txtPrice1.ReadOnly = true;
             this.txtPrice1.Size = new System.Drawing.Size(205, 29);
             this.txtPrice1.TabIndex = 111;
             // 
@@ -2523,6 +2518,57 @@
             // recordsellingdetailsTableAdapter
             // 
             this.recordsellingdetailsTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.ActiveBorderThickness = 1;
+            this.btnClear.ActiveCornerRadius = 20;
+            this.btnClear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
+            this.btnClear.ButtonText = "Clear";
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.IdleBorderThickness = 1;
+            this.btnClear.IdleCornerRadius = 20;
+            this.btnClear.IdleFillColor = System.Drawing.Color.White;
+            this.btnClear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.Location = new System.Drawing.Point(282, 305);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(184, 41);
+            this.btnClear.TabIndex = 111;
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // QUOID
+            // 
+            this.QUOID.HeaderText = "QUOTATION ID";
+            this.QUOID.Name = "QUOID";
+            // 
+            // CUSTOMER
+            // 
+            this.CUSTOMER.HeaderText = "CUSTOMER";
+            this.CUSTOMER.Name = "CUSTOMER";
+            // 
+            // PHONE
+            // 
+            this.PHONE.HeaderText = "PHONE";
+            this.PHONE.Name = "PHONE";
+            // 
+            // TOTALAMOUNT
+            // 
+            this.TOTALAMOUNT.HeaderText = "TOTAL AMOUNT";
+            this.TOTALAMOUNT.Name = "TOTALAMOUNT";
+            // 
+            // QUOTITION_DATE
+            // 
+            this.QUOTITION_DATE.HeaderText = "QUOTITION DATE";
+            this.QUOTITION_DATE.Name = "QUOTITION_DATE";
             // 
             // PosAdmin
             // 
@@ -2796,10 +2842,11 @@
         private System.Windows.Forms.RadioButton radItemCode1;
         private System.Windows.Forms.Label ItemNameQ;
         private System.Windows.Forms.Label label59;
-       // private System.Windows.Forms.DataGridViewTextBoxColumn OrderID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Customer;
-     //   private System.Windows.Forms.DataGridViewTextBoxColumn Mobile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuotationDate;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnClear;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUOID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CUSTOMER;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TOTALAMOUNT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUOTITION_DATE;
     }
 }
