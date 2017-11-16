@@ -4256,11 +4256,7 @@ namespace madushaTemp
 
         }
 
-<<<<<<< HEAD
-        private void label77_Click(object sender, EventArgs e)
-=======
         private void pictureBox23_Click_1(object sender, EventArgs e)
->>>>>>> fa96ddf8306886fca6506a4a6ad4c476ea15bf86
         {
 
         }

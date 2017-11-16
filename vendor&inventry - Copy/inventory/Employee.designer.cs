@@ -220,6 +220,7 @@
             this.bunifuDropdown9 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.employeedetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.adduser = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -1629,6 +1630,7 @@
             // 
             // groupBox17
             // 
+            this.groupBox17.Controls.Add(this.adduser);
             this.groupBox17.Controls.Add(this.search);
             this.groupBox17.Controls.Add(this.grr);
             this.groupBox17.Controls.Add(this.bunifuCustomLabel3);
@@ -3012,6 +3014,31 @@
             this.bunifuCards5.Size = new System.Drawing.Size(1214, 708);
             this.bunifuCards5.TabIndex = 30;
             // 
+            // adduser
+            // 
+            this.adduser.ActiveBorderThickness = 1;
+            this.adduser.ActiveCornerRadius = 20;
+            this.adduser.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.adduser.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.adduser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adduser.BackgroundImage")));
+            this.adduser.ButtonText = "Add user";
+            this.adduser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adduser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adduser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.IdleBorderThickness = 1;
+            this.adduser.IdleCornerRadius = 20;
+            this.adduser.IdleFillColor = System.Drawing.Color.White;
+            this.adduser.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.adduser.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.adduser.Location = new System.Drawing.Point(256, 568);
+            this.adduser.Margin = new System.Windows.Forms.Padding(5);
+            this.adduser.Name = "adduser";
+            this.adduser.Size = new System.Drawing.Size(106, 41);
+            this.adduser.TabIndex = 174;
+            this.adduser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3267,5 +3294,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox ddd;
         private Bunifu.Framework.UI.BunifuThinButton2 eee;
         private Bunifu.Framework.UI.BunifuMetroTextbox astart;
+        private Bunifu.Framework.UI.BunifuThinButton2 adduser;
     }
 }
