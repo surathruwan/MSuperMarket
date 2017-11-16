@@ -154,6 +154,7 @@
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Vehicle Details";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // radioinact
             // 
