@@ -111,7 +111,7 @@ namespace inventory
             txtBarcode.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtBarcode.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
             string sqlquery = "SELECT Barcode from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -140,7 +140,7 @@ namespace inventory
             txtCode.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtCode.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
             string sqlquery = "SELECT Item_code from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -706,7 +706,7 @@ namespace inventory
                 double addPoints = Double.Parse(total) * (0.02);
                 int phone = Convert.ToInt32(txtPhone.Text);
                
-                string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
+                string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=madusha";
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                
@@ -874,7 +874,7 @@ namespace inventory
         public void StockUpdate()
         {
             
-            string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=supermarket";
+            string constr = "server=localhost;user id=root;persistsecurityinfo=True;database=madusha";
             MySqlConnection conn = new MySqlConnection(constr);
             conn.Open();
             for (int i = 0; i < cart.Rows.Count; i++)
@@ -1111,7 +1111,7 @@ namespace inventory
             {
                     int height = (cart.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 16"; //Specify the printer to use.
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "EPSON TM-U220 Receipt"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();

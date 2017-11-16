@@ -58,6 +58,7 @@ C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\D
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+<<<<<<< HEAD
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.pdb
@@ -173,3 +174,7 @@ C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Barcodeform.resources
+=======
+C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Seizedrep.resources
+>>>>>>> 6c886021eaf758cb72af37324358bb4e057a091d

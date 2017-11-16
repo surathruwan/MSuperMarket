@@ -97,6 +97,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.radName = new System.Windows.Forms.RadioButton();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnClear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblAmount = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -166,9 +167,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label36 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -176,6 +175,11 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.QUOID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CUSTOMER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TOTALAMOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUOTITION_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.ItemNameQ = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -223,12 +227,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ordersTableAdapter = new inventory.supermarketDataSet1TableAdapters.ordersTableAdapter();
             this.recordsellingdetailsTableAdapter = new inventory.supermarketDataSet2TableAdapters.recordsellingdetailsTableAdapter();
-            this.btnClear = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.QUOID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CUSTOMER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTALAMOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QUOTITION_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label103 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -259,7 +261,6 @@
             this.bunifuCards3.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
@@ -272,6 +273,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -753,6 +756,8 @@
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = false;
             this.bunifuCards2.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards2.Controls.Add(this.label60);
+            this.bunifuCards2.Controls.Add(this.pictureBox2);
             this.bunifuCards2.Controls.Add(this.bunifuThinButton26);
             this.bunifuCards2.Controls.Add(this.bunifuThinButton24);
             this.bunifuCards2.Controls.Add(this.TimeTest);
@@ -1033,6 +1038,32 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(927, 374);
             this.panel10.TabIndex = 98;
+            // 
+            // btnClear
+            // 
+            this.btnClear.ActiveBorderThickness = 1;
+            this.btnClear.ActiveCornerRadius = 20;
+            this.btnClear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
+            this.btnClear.ButtonText = "Clear";
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.IdleBorderThickness = 1;
+            this.btnClear.IdleCornerRadius = 20;
+            this.btnClear.IdleFillColor = System.Drawing.Color.White;
+            this.btnClear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.Location = new System.Drawing.Point(282, 305);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(184, 41);
+            this.btnClear.TabIndex = 111;
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lblAmount
             // 
@@ -1820,9 +1851,9 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.pictureBox12);
+            this.groupBox6.Controls.Add(this.label103);
+            this.groupBox6.Controls.Add(this.pictureBox18);
             this.groupBox6.Controls.Add(this.pictureBox13);
-            this.groupBox6.Controls.Add(this.radioButton3);
             this.groupBox6.Controls.Add(this.label36);
             this.groupBox6.Controls.Add(this.radioButton4);
             this.groupBox6.Controls.Add(this.bunifuThinButton23);
@@ -1836,15 +1867,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Export As";
             // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Location = new System.Drawing.Point(99, 12);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox12.TabIndex = 73;
-            this.pictureBox12.TabStop = false;
-            // 
             // pictureBox13
             // 
             this.pictureBox13.Location = new System.Drawing.Point(196, 14);
@@ -1854,18 +1876,6 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox13.TabIndex = 72;
             this.pictureBox13.TabStop = false;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(99, 75);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(56, 20);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "PDF";
-            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // label36
             // 
@@ -1976,6 +1986,31 @@
             this.bunifuCustomDataGrid3.RowTemplate.Height = 24;
             this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(705, 413);
             this.bunifuCustomDataGrid3.TabIndex = 4;
+            // 
+            // QUOID
+            // 
+            this.QUOID.HeaderText = "QUOTATION ID";
+            this.QUOID.Name = "QUOID";
+            // 
+            // CUSTOMER
+            // 
+            this.CUSTOMER.HeaderText = "CUSTOMER";
+            this.CUSTOMER.Name = "CUSTOMER";
+            // 
+            // PHONE
+            // 
+            this.PHONE.HeaderText = "PHONE";
+            this.PHONE.Name = "PHONE";
+            // 
+            // TOTALAMOUNT
+            // 
+            this.TOTALAMOUNT.HeaderText = "TOTAL AMOUNT";
+            this.TOTALAMOUNT.Name = "TOTALAMOUNT";
+            // 
+            // QUOTITION_DATE
+            // 
+            this.QUOTITION_DATE.HeaderText = "QUOTITION DATE";
+            this.QUOTITION_DATE.Name = "QUOTITION_DATE";
             // 
             // panel7
             // 
@@ -2519,56 +2554,50 @@
             // 
             this.recordsellingdetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // btnClear
+            // label103
             // 
-            this.btnClear.ActiveBorderThickness = 1;
-            this.btnClear.ActiveCornerRadius = 20;
-            this.btnClear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnClear.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnClear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
-            this.btnClear.ButtonText = "Clear";
-            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnClear.IdleBorderThickness = 1;
-            this.btnClear.IdleCornerRadius = 20;
-            this.btnClear.IdleFillColor = System.Drawing.Color.White;
-            this.btnClear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnClear.Location = new System.Drawing.Point(282, 305);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(184, 41);
-            this.btnClear.TabIndex = 111;
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.label103.AutoSize = true;
+            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.Location = new System.Drawing.Point(119, 79);
+            this.label103.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(31, 15);
+            this.label103.TabIndex = 77;
+            this.label103.Text = "PDF";
+            this.label103.Click += new System.EventHandler(this.label103_Click);
             // 
-            // QUOID
+            // pictureBox18
             // 
-            this.QUOID.HeaderText = "QUOTATION ID";
-            this.QUOID.Name = "QUOID";
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(103, 18);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox18.TabIndex = 76;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
-            // CUSTOMER
+            // label60
             // 
-            this.CUSTOMER.HeaderText = "CUSTOMER";
-            this.CUSTOMER.Name = "CUSTOMER";
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(923, 423);
+            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(31, 15);
+            this.label60.TabIndex = 110;
+            this.label60.Text = "PDF";
             // 
-            // PHONE
+            // pictureBox2
             // 
-            this.PHONE.HeaderText = "PHONE";
-            this.PHONE.Name = "PHONE";
-            // 
-            // TOTALAMOUNT
-            // 
-            this.TOTALAMOUNT.HeaderText = "TOTAL AMOUNT";
-            this.TOTALAMOUNT.Name = "TOTALAMOUNT";
-            // 
-            // QUOTITION_DATE
-            // 
-            this.QUOTITION_DATE.HeaderText = "QUOTITION DATE";
-            this.QUOTITION_DATE.Name = "QUOTITION_DATE";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(907, 362);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox2.TabIndex = 109;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // PosAdmin
             // 
@@ -2625,7 +2654,6 @@
             this.panel12.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -2643,6 +2671,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2728,9 +2758,7 @@
         private System.Windows.Forms.TextBox txtQty1;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.RadioButton radioButton4;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
@@ -2848,5 +2876,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
         private System.Windows.Forms.DataGridViewTextBoxColumn TOTALAMOUNT;
         private System.Windows.Forms.DataGridViewTextBoxColumn QUOTITION_DATE;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

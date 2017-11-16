@@ -16,14 +16,14 @@ namespace inventory {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class seized : ReportClass {
+    public class sei : ReportClass {
         
-        public seized() {
+        public sei() {
         }
         
         public override string ResourceName {
             get {
-                return "seized.rpt";
+                return "sei.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace inventory {
         
         public override string FullResourceName {
             get {
-                return "inventory.seized.rpt";
+                return "inventory.sei.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace inventory {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedseized : Component, ICachedReport {
+    public class Cachedsei : Component, ICachedReport {
         
-        public Cachedseized() {
+        public Cachedsei() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace inventory {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            seized rpt = new seized();
+            sei rpt = new sei();
             rpt.Site = this.Site;
             return rpt;
         }

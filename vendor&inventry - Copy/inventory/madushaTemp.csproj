@@ -225,11 +225,17 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="seized.cs">
+    <Compile Include="sei.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>seized.rpt</DependentUpon>
+      <DependentUpon>sei.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seizedrep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seizedrep.Designer.cs">
+      <DependentUpon>Seizedrep.cs</DependentUpon>
     </Compile>
     <Compile Include="sendEmail.cs">
       <SubType>Form</SubType>
@@ -413,9 +419,12 @@
     <EmbeddedResource Include="report.resx">
       <DependentUpon>report.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="seized.rpt">
+    <EmbeddedResource Include="sei.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>seized.cs</LastGenOutput>
+      <LastGenOutput>sei.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seizedrep.resx">
+      <DependentUpon>Seizedrep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sendEmail.resx">
       <DependentUpon>sendEmail.cs</DependentUpon>
