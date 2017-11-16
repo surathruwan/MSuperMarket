@@ -118,3 +118,4 @@ C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
 >>>>>>> 925142fb528def2225955d4c4fac6b1621a5588f
+C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
