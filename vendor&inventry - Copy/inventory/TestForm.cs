@@ -218,7 +218,7 @@ namespace madushaTemp
 
                     int height = (bunifuCustomDataGrid1.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "EPSON TM-U220 Receipt"; //Specify the printer to use.
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 2013"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();
