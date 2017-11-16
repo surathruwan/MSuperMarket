@@ -68,6 +68,7 @@ namespace madushaTemp
 
                     }
                 }
+
                 catch (Exception)
                 {
 
@@ -545,11 +546,6 @@ namespace madushaTemp
                     MessageBox.Show(r.Message);
                 }
             }
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
         }
 
         //private void Column6_Click(object sender, EventArgs e)

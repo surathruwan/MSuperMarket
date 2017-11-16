@@ -1,0 +1,9 @@
+	 	 MADUSHA SUPERMARKET 	 	
+--------------------------------------------------
+4:00:47 PM	 	Thursday, November 16, 2017
+Cashier: i
+
+Item Name	 Item Code	 Price	 Quantity 
+2017-08-29		2 	 12000	  2	   
+--------------------------------------------------
+Total Amount 	 	 	23998.00

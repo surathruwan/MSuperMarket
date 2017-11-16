@@ -27,7 +27,11 @@ namespace inventory
 
         private void Barcodeform_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             crystal.Load(@"C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\Barcode.rpt");
+=======
+            crystal.Load(@"C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\Barcode.rpt");
+>>>>>>> 80c56ecc2d0bb5fa641eb80e3de5d50800c6f82e
         }
 
         private void btnadd_Click(object sender, EventArgs e)
