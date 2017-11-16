@@ -832,7 +832,7 @@ namespace inventory
                 //Check if the product Id exists with the same Price
                 foreach (DataGridViewRow row in cartQuotation.Rows)
                 {
-                    if (Convert.ToString(row.Cells[0].Value) == lblTextItemNameQu.Text && Convert.ToString(row.Cells[1].Value) == txtPrice1.Text)
+                    if (Convert.ToString(row.Cells[0].Value) == ItemNameQ.Text && Convert.ToString(row.Cells[1].Value) == txtPrice1.Text)
                     {
                         //Update the Quantity of the found row
                         row.Cells[2].Value = Convert.ToString(Convert.ToInt16(txtQty1.Text) + Convert.ToInt16(row.Cells[2].Value));
@@ -944,7 +944,7 @@ namespace inventory
 
 
 
-                lblAmountQ.Text = sum.ToString();
+                lblAmount1.Text = sum.ToString();
 
                 
                 //MessageBox.Show(sum.ToString());
@@ -1050,7 +1050,7 @@ namespace inventory
             while (r.Read())
             {
 
-                lblTextItemNameQu.Text = r[1].ToString();
+                ItemNameQ.Text = r[1].ToString();
                 txtPrice.Text = r[0].ToString();
                 txtPrice1.Text = r[0].ToString();
 
@@ -1073,7 +1073,7 @@ namespace inventory
 
             while (r.Read())
             {
-                lblTextItemNameQu.Text = r[1].ToString();
+                ItemNameQ.Text = r[1].ToString();
                 txtPrice.Text = r[0].ToString();
                 txtPrice1.Text = r[0].ToString();
 
@@ -1435,86 +1435,6 @@ namespace inventory
 
         }
 
-        //Getters Setters for Quotation
-        public string QuoID
-        { get; set; }
-        public string ItemCodeQu
-        { get; set; }
-        public string ItemNameQu
-        { get; set; }
-        public string PriceQu
-        { get; set; }
-        public string QuantityQu
-        { get; set; }
-        public string DiscountQu
-        { get; set; }
-        public string CustomerNameQu
-        { get; set; }
-   
-        public string subAmountQ
-        { get; set; }
-
-        public string TotalAmountQ
-        { get; set; }
-
-        public string MobileQ
-        { get; set; }
-
-        public string UnitPriceQ
-        { get; set; }
-        /// <summary>
-        /// /
-        /// 
-        /// 
-        /// </summary>
-        public void SendOrderforQuotatation()
-        {
-            try
-            {
-                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-                conn.Open();
-
-                for (int i = 0; i < cartQuotation.Rows.Count; i++)
-                {
-
-
-
-
-
-                    MySqlCommand cmd2 = conn.CreateCommand();
-
-
-                    QuoID = this.lblQUO.Text + this.lblNum.Text;
-                    CustomerNameQu = this.txtCustomerNameQ.Text;
-                    MobileQ = this.txtCustomerPhoneQ.Text;
-                    
-                    TotalAmountQ = this.lblAmountQ.Text;
-                    
-
-                    //ItemCode = this.orderCart.Rows[i].Cells[1].Value.ToString();
-                    ItemNameQu = this.cartQuotation.Rows[i].Cells[0].Value.ToString();
-                    UnitPriceQ = this.cartQuotation.Rows[i].Cells[1].Value.ToString();
-                    QuantityQu = this.cartQuotation.Rows[i].Cells[2].Value.ToString();
-                    
-                    subAmountQ = this.cartQuotation.Rows[i].Cells[3].Value.ToString();
-
-                    cmd2 = new MySqlCommand(@"INSERT INTO supermarket.quotationdetails(quoID,item_name,unit_price,qty,subTotal) VALUES ('" + QuoID + "','" + ItemNameQu + "','" + UnitPriceQ + "','" + QuantityQu + "','" + subAmountQ + "')", conn);
-
-                    cmd2.ExecuteNonQuery();
-                }
-
-                MySqlCommand cmd1 = conn.CreateCommand();
-                cmd1 = new MySqlCommand("INSERT INTO supermarket.customerquotation(quoID,Customer,Phone,Total,Quotation_date) VALUES ('" + QuoID + "','" + CustomerNameQu + "','" + MobileQ + "','" + subAmountQ + "','" + TimeTest.Text + "')", conn);
-                cmd1.ExecuteNonQuery();
-                MessageBox.Show("Quotation Done Succesfully", "Madusha Super Market", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-
-        }
 
         //LoadItemTable
         public void LoadOrderTable()
@@ -1762,7 +1682,7 @@ namespace inventory
             
                     int n = cartQuotation.Rows.Add();
 
-                    cartQuotation.Rows[n].Cells[0].Value = lblTextItemNameQu.Text;
+                    cartQuotation.Rows[n].Cells[0].Value = ItemNameQ.Text;
                     cartQuotation.Rows[n].Cells[1].Value = txtPrice1.Text;
                     cartQuotation.Rows[n].Cells[2].Value = txtQty1.Text;
     
@@ -1807,7 +1727,7 @@ namespace inventory
                     sum += Convert.ToDouble(cartQuotation.Rows[i].Cells[3].Value);
                 }
 
-                lblAmountQ.Text = sum.ToString("0.00");
+                lblAmount1.Text = sum.ToString("0.00");
 
             }
             catch (Exception ex)
@@ -1919,18 +1839,6 @@ namespace inventory
             catch (Exception ex)
             {
               //  MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
-        {
-            if (!(string.IsNullOrWhiteSpace(txtCustomerNameQ.Text)) || !(string.IsNullOrWhiteSpace(txtCustomerNameQ.Text)))
-            {
-                SendOrderforQuotatation();
-            }
-            else
-            {
-                MessageBox.Show("Please Enter Customer Information");   
             }
         }
     }

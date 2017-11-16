@@ -4348,6 +4348,12 @@ namespace madushaTemp
 
         }
 
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            bankrep ba = new bankrep();
+            ba.Show();
+        }
+
         public void Bankloan()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
