@@ -219,7 +219,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="sei.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -232,14 +231,6 @@
     <Compile Include="Seizedrep.Designer.cs">
       <DependentUpon>Seizedrep.cs</DependentUpon>
     </Compile>
-=======
-    <Compile Include="seized.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>seized.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
->>>>>>> 5150cae6b036858d41b944571ffb61d09d940544
     <Compile Include="sendEmail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,12 +345,6 @@
     <Compile Include="VendorReport.designer.cs">
       <DependentUpon>VendorReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="vendorReport2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>vendorReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="WebCam.cs" />
     <EmbeddedResource Include="addform.resx">
       <DependentUpon>addform.cs</DependentUpon>
@@ -425,18 +410,12 @@
     <EmbeddedResource Include="report.resx">
       <DependentUpon>report.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="sei.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>sei.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Seizedrep.resx">
       <DependentUpon>Seizedrep.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="seized.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>seized.cs</LastGenOutput>
->>>>>>> 5150cae6b036858d41b944571ffb61d09d940544
     </EmbeddedResource>
     <EmbeddedResource Include="sendEmail.resx">
       <DependentUpon>sendEmail.cs</DependentUpon>
@@ -491,10 +470,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VendorReport.resx">
       <DependentUpon>VendorReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vendorReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>vendorReport2.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
