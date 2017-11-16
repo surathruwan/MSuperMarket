@@ -98,25 +98,17 @@
     <Compile Include="AdviceOfDispatch.designer.cs">
       <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Barcode1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Barcode.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Barcodeform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Barcodeform.Designer.cs">
-      <DependentUpon>Barcodeform.cs</DependentUpon>
-=======
     <Compile Include="bankrep.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="bankrep.Designer.cs">
       <DependentUpon>bankrep.cs</DependentUpon>
->>>>>>> 8da99ef4a7a2b48ae6774d9e5771f63e11aa281a
+    </Compile>
+    <Compile Include="bankstat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bankstat.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="categoryform.cs">
       <SubType>Form</SubType>
@@ -226,6 +218,12 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seized.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>seized.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="sendEmail.cs">
       <SubType>Form</SubType>
@@ -341,12 +339,6 @@
     <Compile Include="VendorReport.designer.cs">
       <DependentUpon>VendorReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="vendorReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>vendorReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="WebCam.cs" />
     <EmbeddedResource Include="addform.resx">
       <DependentUpon>addform.cs</DependentUpon>
@@ -357,15 +349,12 @@
     <EmbeddedResource Include="bankrep.resx">
       <DependentUpon>bankrep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bankstat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>bankstat.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="barcode.resx">
       <DependentUpon>barcode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Barcode.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Barcode1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Barcodeform.resx">
-      <DependentUpon>Barcodeform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="categoryform.resx">
       <DependentUpon>categoryform.cs</DependentUpon>
@@ -414,6 +403,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="report.resx">
       <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seized.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>seized.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="sendEmail.resx">
       <DependentUpon>sendEmail.cs</DependentUpon>
@@ -468,10 +461,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VendorReport.resx">
       <DependentUpon>VendorReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vendorReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>vendorReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
