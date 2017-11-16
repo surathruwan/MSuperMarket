@@ -71,41 +71,6 @@ namespace inventory
 
 
         }
-        public void printer()
-        {
-            var installedPrinters = PrinterSettings.InstalledPrinters; //I have choosed a printername from 'installedPrinters'
-            try
-            {
-
-
-                try
-                {
-
-                    int height = (ret.RowCount) * 10 + 50;
-                    MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 16"; //Specify the printer to use.
-
-                    MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage_1);
-                    MadushaPrintDocument.Print();
-
-
-
-                }
-                finally
-                {
-
-                    // MessageBox.Show("data Exported");
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        
-
         public void pdfReport(string name, string query, string fname)
         {
             string con = "datasource=localhost;port=3306;username=root";
@@ -1605,8 +1570,8 @@ namespace inventory
                  {
                      MessageBox.Show(ex.Message);
                  }
-            printer();
-               // ConvertText();
+
+                ConvertText();
             //    MessageBox.Show("Done");
                 resetret();
                 ret.Rows.Clear();
@@ -3005,63 +2970,6 @@ namespace inventory
         private void spid_OnValueChanged(object sender, EventArgs e)
         {
            spid.Enabled = false;
-        }
-
-        private void MadushaPrintDocument_PrintPage_1(object sender, PrintPageEventArgs e)
-        {
-
-
-
-            DateTime time = DateTime.Now;
-            string formatD = "yyyy-MM-dd";
-
-            string SysTime = DateTime.Now.ToString("yyyy-MM-dd hh:mm tt");
-
-
-            e.Graphics.DrawString("MADUSHA", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(70, 0)); // x,y
-            e.Graphics.DrawString("SUPER MARKET", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(44, 20));
-            e.Graphics.DrawString("No.181 , Galle Road", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
-            e.Graphics.DrawString("Hikkaduwa", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
-            e.Graphics.DrawString("Tel : 091 2277939 / 091 4946386", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
-            e.Graphics.DrawString("Date : " + time.ToString(formatD), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 100));
-            e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
-            // e.Graphics.DrawString("Invoice No : " + lblINV.Text + lblInvoice.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
-            e.Graphics.DrawString("Terminal : " + "001", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
-            e.Graphics.DrawString("Cashier :" + "Surath", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
-            e.Graphics.DrawString("SalesRep : " + "Ruwan", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
-            e.Graphics.DrawString("Customer : " + "Ruchira", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 145));
-            e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
-
-            int x = 165;
-            int x1 = 180;
-            for (int i = 0; i < ret.Rows.Count; i++)
-            {
-                e.Graphics.DrawString(ret.Rows[i].Cells[0].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
-                x = x + 30;
-                if ((Convert.ToInt32(ret.Rows[i].Cells[2].Value.ToString().Length) == 5))
-                {
-
-                    if ((Convert.ToInt32(ret.Rows[i].Cells[4].Value.ToString().Length) >= 5))
-                    {
-                        e.Graphics.DrawString(ret.Rows[i].Cells[1].Value.ToString() + "\t" + ret.Rows[i].Cells[3].Value.ToString() + "\t  " + ret.Rows[i].Cells[2].Value.ToString() + "\t  " + ret.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                    }
-                }
-                else if ((Convert.ToInt32(ret.Rows[i].Cells[2].Value.ToString().Length) == 4))
-                {
-
-                    if ((Convert.ToInt32(ret.Rows[i].Cells[4].Value.ToString().Length) >= 4))
-                    {
-                        e.Graphics.DrawString(ret.Rows[i].Cells[1].Value.ToString() + "\t" + ret.Rows[i].Cells[3].Value.ToString() + "\t    " + ret.Rows[i].Cells[2].Value.ToString() + "\t  " + ret.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                    }
-                }
-                else
-                {
-                    e.Graphics.DrawString(ret.Rows[i].Cells[1].Value.ToString() + "\t" + ret.Rows[i].Cells[3].Value.ToString() + "\t" + ret.Rows[i].Cells[2].Value.ToString() + "\t" + ret.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                }
-                x1 = x1 + 30;
-
-            }
-
         }
     }
 }
