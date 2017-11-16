@@ -574,7 +574,11 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(7, 5);
             this.tabControl1.SelectedIndex = 0;
+<<<<<<< HEAD
             this.tabControl1.Size = new System.Drawing.Size(1187, 634);
+=======
+            this.tabControl1.Size = new System.Drawing.Size(1210, 736);
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -585,7 +589,11 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+<<<<<<< HEAD
             this.tabPage1.Size = new System.Drawing.Size(1179, 605);
+=======
+            this.tabPage1.Size = new System.Drawing.Size(1202, 707);
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Register";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -2435,7 +2443,11 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+<<<<<<< HEAD
             this.tabPage2.Size = new System.Drawing.Size(1179, 605);
+=======
+            this.tabPage2.Size = new System.Drawing.Size(1198, 697);
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pending Installments";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -3336,7 +3348,11 @@
             this.tabPage3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
+<<<<<<< HEAD
             this.tabPage3.Size = new System.Drawing.Size(1179, 605);
+=======
+            this.tabPage3.Size = new System.Drawing.Size(1198, 697);
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Income | Expense";
             // 
@@ -3407,6 +3423,7 @@
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart2.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart2.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+<<<<<<< HEAD
             chartArea4.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
@@ -3419,6 +3436,37 @@
             series4.Name = "Type";
             this.chart2.Series.Add(series4);
             this.chart2.Size = new System.Drawing.Size(425, 280);
+=======
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+<<<<<<< HEAD
+            this.chart2.Location = new System.Drawing.Point(-2, 3);
+=======
+<<<<<<< HEAD
+            this.chart2.Location = new System.Drawing.Point(-2, 3);
+=======
+            this.chart2.Location = new System.Drawing.Point(-3, 4);
+            this.chart2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Type";
+            this.chart2.Series.Add(series1);
+<<<<<<< HEAD
+            this.chart2.Size = new System.Drawing.Size(425, 280);
+=======
+<<<<<<< HEAD
+            this.chart2.Size = new System.Drawing.Size(425, 280);
+=======
+            this.chart2.Size = new System.Drawing.Size(567, 345);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.chart2.TabIndex = 159;
             this.chart2.Text = "chart2";
             // 
@@ -4461,7 +4509,11 @@
             this.tabPage4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
+<<<<<<< HEAD
             this.tabPage4.Size = new System.Drawing.Size(1179, 605);
+=======
+            this.tabPage4.Size = new System.Drawing.Size(1198, 697);
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Reports";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -4523,6 +4575,7 @@
             this.chart3.BorderSkin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart3.BorderSkin.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart3.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+<<<<<<< HEAD
             chartArea5.Name = "ChartArea1";
             this.chart3.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
@@ -4543,6 +4596,45 @@
             series5.Name = "orderid";
             this.chart3.Series.Add(series5);
             this.chart3.Size = new System.Drawing.Size(530, 411);
+=======
+            chartArea2.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart3.Legends.Add(legend2);
+<<<<<<< HEAD
+            this.chart3.Location = new System.Drawing.Point(-2, -2);
+=======
+<<<<<<< HEAD
+            this.chart3.Location = new System.Drawing.Point(-2, -2);
+=======
+            this.chart3.Location = new System.Drawing.Point(-3, -2);
+            this.chart3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
+            this.chart3.Name = "chart3";
+            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Vertical;
+            series2.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series2.LabelBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series2.Legend = "Legend1";
+            series2.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            series2.Name = "orderid";
+            this.chart3.Series.Add(series2);
+<<<<<<< HEAD
+            this.chart3.Size = new System.Drawing.Size(530, 411);
+=======
+<<<<<<< HEAD
+            this.chart3.Size = new System.Drawing.Size(530, 411);
+=======
+            this.chart3.Size = new System.Drawing.Size(707, 506);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.chart3.TabIndex = 158;
             this.chart3.Text = "chart3";
             title3.Name = "Title1";
@@ -4552,6 +4644,7 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             this.chart1.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+<<<<<<< HEAD
             chartArea6.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
@@ -4564,6 +4657,37 @@
             series6.Name = "orderid";
             this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(515, 409);
+=======
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+<<<<<<< HEAD
+            this.chart1.Location = new System.Drawing.Point(21, 13);
+=======
+<<<<<<< HEAD
+            this.chart1.Location = new System.Drawing.Point(21, 13);
+=======
+            this.chart1.Location = new System.Drawing.Point(28, 16);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
+            this.chart1.Name = "chart1";
+            series3.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "orderid";
+            this.chart1.Series.Add(series3);
+<<<<<<< HEAD
+            this.chart1.Size = new System.Drawing.Size(515, 409);
+=======
+<<<<<<< HEAD
+            this.chart1.Size = new System.Drawing.Size(515, 409);
+=======
+            this.chart1.Size = new System.Drawing.Size(687, 503);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
             title4.Name = "Title1";
@@ -5796,7 +5920,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1187, 634);
+=======
+            this.ClientSize = new System.Drawing.Size(1210, 736);
+>>>>>>> 08c2cb9f3d67bc3201c760720bd2d6f0fcd50b08
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TestForm";
