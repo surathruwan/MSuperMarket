@@ -61,3 +61,15 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9e94ff2600dfd559b433ea5ec042723f46bec6db
+<<<<<<< HEAD
+C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.Seizedrep.resources
+=======
+>>>>>>> 44bd9241025d09c5690f6b0d737c5f2963320e01
+>>>>>>> 82a7cb5844291e7e0c23ab2eb0510468dedf8d5b
+>>>>>>> 7a4c0bb5757bb84c2c26f744d1670b36eef8513e
+>>>>>>> c675c3545786e04465f649751c33789964b80eed
+>>>>>>> 47c313c74f3491c73f82bb55f9fe5ced9a25a0ec
