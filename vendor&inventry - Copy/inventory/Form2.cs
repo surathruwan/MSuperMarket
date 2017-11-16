@@ -258,9 +258,22 @@ namespace madushaTemp
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            string source = txtsource.Text;
+            string source = txtsource.Text; 
 
             string destination = txtdesti.Text;
+
+            if (String.IsNullOrEmpty(txtsource.Text) || String.IsNullOrWhiteSpace(txtdesti.Text))
+            {
+                MessageBox.Show("One or More Fields are Empty ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            Regexp(@"^[a-zA-Z]$", txtsource, pictureBox6, "source");
+            Regexp(@"^[a-zA-Z]$", txtdesti, pictureBox7, "destination");
+         
+
+
+
+
 
 
             try
@@ -297,7 +310,8 @@ namespace madushaTemp
             string st = "datasource=localhost;port=3306;username=root";
 
             MySqlConnection condb = new MySqlConnection(st);
-            string q = "select * from supermarket.driver_availability where driver_id like '%"+ txtdrivrid.Text +"%' and delivery_date  like '%"+ dateTimePicker1.Text +"%'";
+                 string q = "select* from supermarket.driver_availability where driver_id like '%"+ txtdrivrid.Text +"%' and delivery_date  like '%"+ dateTimePicker1.Text +"%'";
+               // string q = "select e.Empid,a.date from supermarket.employee_details e,attendance a where e.Empid=a.empid and e.position='Driver'";
                 MySqlCommand cmddb = new MySqlCommand(q, condb);
                // MySqlDataReader myReader;
 
@@ -1254,7 +1268,7 @@ namespace madushaTemp
                 string st = "datasource=localhost;port=3306;username=root";
 
                 MySqlConnection condb = new MySqlConnection(st);
-                string q = "select  driver_name,vehicle_no,vehicle_type from supermarket.vehicle_details where driver_name like '%" + txtdname.Text + "%'";
+                string q = "select  driver_name,vehicle_no,vehicle_type from supermarket.vehicle_details  where driver_name like '%" + txtdname.Text + "%'";
                 MySqlCommand cmddb = new MySqlCommand(q, condb);
                 MySqlDataReader myReader;
 
@@ -1364,6 +1378,26 @@ namespace madushaTemp
 
         private void txtdrid_OnValueChanged(object sender, EventArgs e)
 
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+        }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
         {
 
         }
