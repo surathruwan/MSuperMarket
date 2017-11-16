@@ -110,6 +110,12 @@
     <Compile Include="bankrep.Designer.cs">
       <DependentUpon>bankrep.cs</DependentUpon>
     </Compile>
+    <Compile Include="bankstat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bankstat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="categoryform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,18 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sei.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sei.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seizedrep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seizedrep.Designer.cs">
+      <DependentUpon>Seizedrep.cs</DependentUpon>
     </Compile>
     <Compile Include="sendEmail.cs">
       <SubType>Form</SubType>
@@ -346,6 +364,10 @@
     <EmbeddedResource Include="bankrep.resx">
       <DependentUpon>bankrep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bankstat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>bankstat.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="barcode.resx">
       <DependentUpon>barcode.cs</DependentUpon>
     </EmbeddedResource>
@@ -396,6 +418,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="report.resx">
       <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sei.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sei.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seizedrep.resx">
+      <DependentUpon>Seizedrep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sendEmail.resx">
       <DependentUpon>sendEmail.cs</DependentUpon>
