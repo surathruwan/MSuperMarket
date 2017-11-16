@@ -132,6 +132,9 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.adduser = new Bunifu.Framework.UI.BunifuThinButton2();
             this.search = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.grr = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -147,6 +150,9 @@
             this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.month = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label15 = new System.Windows.Forms.Label();
             this.refresh = new Bunifu.Framework.UI.BunifuThinButton2();
             this.sss = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.ooooo = new System.Windows.Forms.Label();
@@ -193,7 +199,6 @@
             this.bunifuDropdown10 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label67 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuDropdown6 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
@@ -207,7 +212,6 @@
             this.radioButton16 = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.radioButton17 = new System.Windows.Forms.RadioButton();
             this.bunifuThinButton231 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -220,7 +224,6 @@
             this.bunifuDropdown9 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.employeedetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.adduser = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -240,6 +243,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grr)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -247,6 +251,7 @@
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -255,12 +260,10 @@
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -903,6 +906,7 @@
             this.ddd.Size = new System.Drawing.Size(130, 27);
             this.ddd.TabIndex = 175;
             this.ddd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ddd.OnValueChanged += new System.EventHandler(this.ddd_OnValueChanged);
             // 
             // aSave
             // 
@@ -1106,6 +1110,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox11.TabIndex = 171;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox10
             // 
@@ -1115,6 +1120,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox10.TabIndex = 170;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox8
             // 
@@ -1630,6 +1636,8 @@
             // 
             // groupBox17
             // 
+            this.groupBox17.Controls.Add(this.label14);
+            this.groupBox17.Controls.Add(this.pictureBox6);
             this.groupBox17.Controls.Add(this.adduser);
             this.groupBox17.Controls.Add(this.search);
             this.groupBox17.Controls.Add(this.grr);
@@ -1642,6 +1650,51 @@
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Select Employee";
             this.groupBox17.Enter += new System.EventHandler(this.groupBox17_Enter);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(438, 626);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(103, 12);
+            this.label14.TabIndex = 176;
+            this.label14.Text = "Employee Details ";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::inventory.Properties.Resources._3;
+            this.pictureBox6.Location = new System.Drawing.Point(462, 568);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(47, 58);
+            this.pictureBox6.TabIndex = 175;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // adduser
+            // 
+            this.adduser.ActiveBorderThickness = 1;
+            this.adduser.ActiveCornerRadius = 20;
+            this.adduser.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.adduser.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.adduser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adduser.BackgroundImage")));
+            this.adduser.ButtonText = "Add user";
+            this.adduser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adduser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adduser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.IdleBorderThickness = 1;
+            this.adduser.IdleCornerRadius = 20;
+            this.adduser.IdleFillColor = System.Drawing.Color.White;
+            this.adduser.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.adduser.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.adduser.Location = new System.Drawing.Point(256, 568);
+            this.adduser.Margin = new System.Windows.Forms.Padding(5);
+            this.adduser.Name = "adduser";
+            this.adduser.Size = new System.Drawing.Size(106, 41);
+            this.adduser.TabIndex = 174;
+            this.adduser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.adduser.Click += new System.EventHandler(this.adduser_Click);
             // 
             // search
             // 
@@ -1903,6 +1956,9 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.pictureBox7);
+            this.groupBox6.Controls.Add(this.month);
+            this.groupBox6.Controls.Add(this.label15);
             this.groupBox6.Controls.Add(this.refresh);
             this.groupBox6.Controls.Add(this.sss);
             this.groupBox6.Controls.Add(this.ooooo);
@@ -1947,6 +2003,46 @@
             this.groupBox6.Text = "Add Salary Details";
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.pictureBox7.Location = new System.Drawing.Point(412, 64);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(37, 31);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox7.TabIndex = 183;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // month
+            // 
+            this.month.BorderColorFocused = System.Drawing.Color.Blue;
+            this.month.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.month.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.month.BorderThickness = 2;
+            this.month.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.month.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.month.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.month.isPassword = false;
+            this.month.Location = new System.Drawing.Point(156, 469);
+            this.month.Margin = new System.Windows.Forms.Padding(4);
+            this.month.Name = "month";
+            this.month.Size = new System.Drawing.Size(245, 26);
+            this.month.TabIndex = 182;
+            this.month.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.label15.Location = new System.Drawing.Point(11, 473);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 18);
+            this.label15.TabIndex = 180;
+            this.label15.Text = "month";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
             // refresh
             // 
             this.refresh.ActiveBorderThickness = 1;
@@ -1983,34 +2079,37 @@
             this.sss.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.sss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sss.isPassword = false;
-            this.sss.Location = new System.Drawing.Point(219, 503);
+            this.sss.Location = new System.Drawing.Point(230, 528);
             this.sss.Margin = new System.Windows.Forms.Padding(4);
             this.sss.Name = "sss";
             this.sss.Size = new System.Drawing.Size(89, 26);
             this.sss.TabIndex = 180;
             this.sss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sss.OnValueChanged += new System.EventHandler(this.sss_OnValueChanged);
             // 
             // ooooo
             // 
             this.ooooo.AutoSize = true;
             this.ooooo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ooooo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.ooooo.Location = new System.Drawing.Point(10, 460);
+            this.ooooo.Location = new System.Drawing.Point(10, 443);
             this.ooooo.Name = "ooooo";
             this.ooooo.Size = new System.Drawing.Size(122, 18);
             this.ooooo.TabIndex = 179;
             this.ooooo.Text = "Over Time Hours";
+            this.ooooo.Click += new System.EventHandler(this.ooooo_Click);
             // 
             // wwww
             // 
             this.wwww.AutoSize = true;
             this.wwww.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wwww.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.wwww.Location = new System.Drawing.Point(8, 415);
+            this.wwww.Location = new System.Drawing.Point(8, 402);
             this.wwww.Name = "wwww";
             this.wwww.Size = new System.Drawing.Size(109, 18);
             this.wwww.TabIndex = 178;
             this.wwww.Text = "Working Hours";
+            this.wwww.Click += new System.EventHandler(this.wwww_Click);
             // 
             // ohrs
             // 
@@ -2022,7 +2121,7 @@
             this.ohrs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.ohrs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ohrs.isPassword = false;
-            this.ohrs.Location = new System.Drawing.Point(156, 450);
+            this.ohrs.Location = new System.Drawing.Point(156, 435);
             this.ohrs.Margin = new System.Windows.Forms.Padding(4);
             this.ohrs.Name = "ohrs";
             this.ohrs.Size = new System.Drawing.Size(245, 26);
@@ -2039,7 +2138,7 @@
             this.whrs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.whrs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.whrs.isPassword = false;
-            this.whrs.Location = new System.Drawing.Point(156, 407);
+            this.whrs.Location = new System.Drawing.Point(156, 394);
             this.whrs.Margin = new System.Windows.Forms.Padding(4);
             this.whrs.Name = "whrs";
             this.whrs.Size = new System.Drawing.Size(245, 26);
@@ -2064,10 +2163,10 @@
             this.calc.IdleFillColor = System.Drawing.Color.White;
             this.calc.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.calc.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.calc.Location = new System.Drawing.Point(46, 483);
+            this.calc.Location = new System.Drawing.Point(36, 515);
             this.calc.Margin = new System.Windows.Forms.Padding(5);
             this.calc.Name = "calc";
-            this.calc.Size = new System.Drawing.Size(106, 61);
+            this.calc.Size = new System.Drawing.Size(139, 61);
             this.calc.TabIndex = 175;
             this.calc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.calc.Click += new System.EventHandler(this.calc_Click);
@@ -2082,6 +2181,8 @@
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(121, 20);
             this.type.TabIndex = 174;
+            this.type.SelectedIndexChanged += new System.EventHandler(this.type_SelectedIndexChanged);
+            this.type.TextChanged += new System.EventHandler(this.type_TextChanged);
             // 
             // pictureBox22
             // 
@@ -2094,19 +2195,20 @@
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Location = new System.Drawing.Point(434, 68);
+            this.pictureBox21.Location = new System.Drawing.Point(455, 64);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(37, 31);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox21.TabIndex = 172;
             this.pictureBox21.TabStop = false;
+            this.pictureBox21.Click += new System.EventHandler(this.pictureBox21_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox4.Location = new System.Drawing.Point(199, 483);
+            this.pictureBox4.Location = new System.Drawing.Point(213, 515);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(135, 71);
+            this.pictureBox4.Size = new System.Drawing.Size(127, 51);
             this.pictureBox4.TabIndex = 153;
             this.pictureBox4.TabStop = false;
             // 
@@ -2151,7 +2253,7 @@
             this.payslip.IdleFillColor = System.Drawing.Color.White;
             this.payslip.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.payslip.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.payslip.Location = new System.Drawing.Point(188, 605);
+            this.payslip.Location = new System.Drawing.Point(188, 611);
             this.payslip.Margin = new System.Windows.Forms.Padding(5);
             this.payslip.Name = "payslip";
             this.payslip.Size = new System.Drawing.Size(173, 41);
@@ -2177,7 +2279,7 @@
             this.Deleta.IdleFillColor = System.Drawing.Color.White;
             this.Deleta.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.Deleta.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.Deleta.Location = new System.Drawing.Point(365, 561);
+            this.Deleta.Location = new System.Drawing.Point(365, 575);
             this.Deleta.Margin = new System.Windows.Forms.Padding(5);
             this.Deleta.Name = "Deleta";
             this.Deleta.Size = new System.Drawing.Size(106, 41);
@@ -2203,7 +2305,7 @@
             this.update.IdleFillColor = System.Drawing.Color.White;
             this.update.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.update.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.update.Location = new System.Drawing.Point(213, 561);
+            this.update.Location = new System.Drawing.Point(213, 575);
             this.update.Margin = new System.Windows.Forms.Padding(5);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(106, 41);
@@ -2229,7 +2331,7 @@
             this.add.IdleFillColor = System.Drawing.Color.White;
             this.add.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.add.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.add.Location = new System.Drawing.Point(36, 561);
+            this.add.Location = new System.Drawing.Point(36, 575);
             this.add.Margin = new System.Windows.Forms.Padding(5);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(106, 41);
@@ -2242,7 +2344,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.label1.Location = new System.Drawing.Point(8, 381);
+            this.label1.Location = new System.Drawing.Point(11, 360);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 18);
             this.label1.TabIndex = 132;
@@ -2281,7 +2383,7 @@
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.label41.Location = new System.Drawing.Point(8, 343);
+            this.label41.Location = new System.Drawing.Point(10, 332);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(69, 18);
             this.label41.TabIndex = 129;
@@ -2361,7 +2463,7 @@
             this.ll.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.ll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ll.isPassword = false;
-            this.ll.Location = new System.Drawing.Point(156, 373);
+            this.ll.Location = new System.Drawing.Point(156, 360);
             this.ll.Margin = new System.Windows.Forms.Padding(4);
             this.ll.Name = "ll";
             this.ll.Size = new System.Drawing.Size(245, 26);
@@ -2378,7 +2480,7 @@
             this.ee.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.ee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ee.isPassword = false;
-            this.ee.Location = new System.Drawing.Point(156, 335);
+            this.ee.Location = new System.Drawing.Point(156, 324);
             this.ee.Margin = new System.Windows.Forms.Padding(4);
             this.ee.Name = "ee";
             this.ee.Size = new System.Drawing.Size(245, 26);
@@ -2643,7 +2745,6 @@
             // groupBox20
             // 
             this.groupBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.groupBox20.Controls.Add(this.pictureBox6);
             this.groupBox20.Controls.Add(this.pictureBox5);
             this.groupBox20.Controls.Add(this.bunifuDropdown6);
             this.groupBox20.Controls.Add(this.bunifuDropdown4);
@@ -2660,14 +2761,6 @@
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Total Salary Summary";
             this.groupBox20.Enter += new System.EventHandler(this.groupBox20_Enter);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(77, 175);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox6.TabIndex = 154;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -2829,7 +2922,6 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.groupBox9.Controls.Add(this.pictureBox7);
             this.groupBox9.Controls.Add(this.groupBox10);
             this.groupBox9.Controls.Add(this.bunifuDropdown5);
             this.groupBox9.Controls.Add(this.chart2);
@@ -2844,15 +2936,6 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Total Salary Summary";
             this.groupBox9.Enter += new System.EventHandler(this.groupBox9_Enter);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(140, 245);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(262, 194);
-            this.pictureBox7.TabIndex = 160;
-            this.pictureBox7.TabStop = false;
             // 
             // groupBox10
             // 
@@ -3014,31 +3097,6 @@
             this.bunifuCards5.Size = new System.Drawing.Size(1214, 708);
             this.bunifuCards5.TabIndex = 30;
             // 
-            // adduser
-            // 
-            this.adduser.ActiveBorderThickness = 1;
-            this.adduser.ActiveCornerRadius = 20;
-            this.adduser.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.adduser.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.adduser.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.adduser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.adduser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adduser.BackgroundImage")));
-            this.adduser.ButtonText = "Add user";
-            this.adduser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.adduser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adduser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.adduser.IdleBorderThickness = 1;
-            this.adduser.IdleCornerRadius = 20;
-            this.adduser.IdleFillColor = System.Drawing.Color.White;
-            this.adduser.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.adduser.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.adduser.Location = new System.Drawing.Point(256, 568);
-            this.adduser.Margin = new System.Windows.Forms.Padding(5);
-            this.adduser.Name = "adduser";
-            this.adduser.Size = new System.Drawing.Size(106, 41);
-            this.adduser.TabIndex = 174;
-            this.adduser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3074,6 +3132,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grr)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -3083,6 +3142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -3093,14 +3153,12 @@
             this.groupBox14.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
@@ -3251,9 +3309,7 @@
         private System.Windows.Forms.Label sfname;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.Framework.UI.BunifuThinButton2 image;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private Bunifu.Framework.UI.BunifuThinButton2 SendMail;
         private Bunifu.Framework.UI.BunifuThinButton2 Edit;
         private System.Windows.Forms.ComboBox position;
@@ -3295,5 +3351,10 @@
         private Bunifu.Framework.UI.BunifuThinButton2 eee;
         private Bunifu.Framework.UI.BunifuMetroTextbox astart;
         private Bunifu.Framework.UI.BunifuThinButton2 adduser;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private Bunifu.Framework.UI.BunifuMetroTextbox month;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
