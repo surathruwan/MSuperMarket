@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 214ff5a... 10.53
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
@@ -17,6 +20,9 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 <<<<<<< HEAD
 =======
 >>>>>>> d821471071cd4825cb063fda79c1059e1c63507a
+<<<<<<< HEAD
+>>>>>>> parent of 214ff5a... 10.53
+=======
 >>>>>>> parent of 214ff5a... 10.53
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
@@ -70,6 +76,7 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.vehicle_availa.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\vendor_management.Vendor.resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.VendorReport.resources
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
@@ -79,6 +86,8 @@ C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\b
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\ShockwaveFlashObjects.dll
 =======
 =======
+=======
+>>>>>>> parent of 214ff5a... 10.53
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
@@ -343,6 +352,9 @@ C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 >>>>>>> 546493fd559a9260a4b72d618e7d78cd1e9dc681
 >>>>>>> 81f59980160e011d984c0a0ecbaff05f5a07ec48
 C:\Users\Hp\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+>>>>>>> parent of 214ff5a... 10.53
+=======
 >>>>>>> parent of 214ff5a... 10.53
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe
@@ -365,7 +377,10 @@ C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\stdole.dll
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 214ff5a... 10.53
 >>>>>>> 85b6516bb01f9f3812da754837dfd38b9b04b82c
 >>>>>>> c4b0d238084a8cbe733512bf88494d5c7d25f7ce
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
@@ -383,6 +398,9 @@ C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory
 >>>>>>> 81f59980160e011d984c0a0ecbaff05f5a07ec48
 >>>>>>> 37639046b681a71e416b54059c57ea198bedccbb
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+>>>>>>> parent of 214ff5a... 10.53
+=======
 >>>>>>> parent of 214ff5a... 10.53
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.AdviceOfDispatch.resources
@@ -415,6 +433,7 @@ C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.vehicle_availa.resources
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\vendor_management.Vendor.resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.VendorReport.resources
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
@@ -428,6 +447,8 @@ C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 214ff5a... 10.53
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 C:\Users\Ruchira\Source\Repos\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
@@ -451,6 +472,9 @@ E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\invent
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\stdole.dll
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\BarcodeLib.pdb
+<<<<<<< HEAD
+>>>>>>> parent of 214ff5a... 10.53
+=======
 >>>>>>> parent of 214ff5a... 10.53
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csprojResolveAssemblyReference.cache
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.addform.resources
@@ -486,6 +510,7 @@ E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\invent
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\madushaTemp.csproj.GenerateResource.Cache
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.exe
 E:\GitHubProject\MSuperMarketOnGitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.pdb
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 C:\Users\viraj pc\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\bin\Debug\inventory.exe.config
@@ -609,6 +634,8 @@ C:\Users\acer\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj
 >>>>>>> b0b19d2022c2d6dee916d840b4b44831a80b272f
 >>>>>>> 8da99ef4a7a2b48ae6774d9e5771f63e11aa281a
 =======
+=======
+>>>>>>> parent of 214ff5a... 10.53
 >>>>>>> e1fb263d3e802e4c817d63d9462915c79dcf5de4
 C:\Users\Ashane\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\obj\Debug\inventory.VendorReport.resources
 >>>>>>> 5e682333afce423fa65c0f3217694b6c896edd04
@@ -626,4 +653,7 @@ C:\Users\Lenovo\Documents\GitHub\MSuperMarket\vendor&inventry - Copy\inventory\o
 >>>>>>> b42094f7830216cab739a65db3551103e554d9fe
 >>>>>>> f66c0feb97f8c10223454eca1026765c09e7e2b2
 >>>>>>> 81f59980160e011d984c0a0ecbaff05f5a07ec48
+<<<<<<< HEAD
+>>>>>>> parent of 214ff5a... 10.53
+=======
 >>>>>>> parent of 214ff5a... 10.53
