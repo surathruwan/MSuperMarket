@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.pack = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel125 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -337,22 +337,42 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCards11 = new Bunifu.Framework.UI.BunifuCards();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel136 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.f5 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel41 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.f4 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel40 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.f3 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel39 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.f2 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel38 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.f1 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel135 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel141 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.all = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel136 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.hidetb = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuThinButton227 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCards10 = new Bunifu.Framework.UI.BunifuCards();
@@ -450,26 +470,7 @@
             this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel20 = new System.Windows.Forms.Panel();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.f2 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel38 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.f3 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel39 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.f4 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel40 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.f5 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel41 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.all = new System.Windows.Forms.Label();
+            this.MadushaPrintDocument = new System.Drawing.Printing.PrintDocument();
             this.bunifuCards1.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sgr)).BeginInit();
@@ -549,17 +550,22 @@
             this.bunifuCards11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidetb)).BeginInit();
             this.bunifuCards10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -583,11 +589,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -975,19 +976,19 @@
             // 
             // sgr
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.sgr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.sgr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
             this.sgr.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.sgr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sgr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sgr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sgr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.sgr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sgr.DoubleBuffered = true;
             this.sgr.EnableHeadersVisualStyles = false;
@@ -1270,28 +1271,28 @@
             // 
             // gr
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.gr.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.gr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.gr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gr.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gr.DefaultCellStyle = dataGridViewCellStyle33;
             this.gr.DoubleBuffered = true;
             this.gr.EnableHeadersVisualStyles = false;
             this.gr.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -3350,19 +3351,19 @@
             // 
             // sro
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.sro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.sro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
             this.sro.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.sro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.sro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sro.DoubleBuffered = true;
             this.sro.EnableHeadersVisualStyles = false;
@@ -3473,19 +3474,19 @@
             // 
             // wro
             // 
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.wro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.wro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
             this.wro.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.wro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.wro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.wro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.wro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
             this.wro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.wro.DoubleBuffered = true;
             this.wro.EnableHeadersVisualStyles = false;
@@ -4805,19 +4806,19 @@
             // 
             // ret
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ret.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ret.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle38;
             this.ret.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.ret.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ret.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ret.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ret.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle39;
             this.ret.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ret.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cd,
@@ -5008,19 +5009,6 @@
             this.pictureBox10.UseWaitCursor = true;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // bunifuCustomLabel136
-            // 
-            this.bunifuCustomLabel136.AutoSize = true;
-            this.bunifuCustomLabel136.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel136.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel136.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuCustomLabel136.Location = new System.Drawing.Point(126, 603);
-            this.bunifuCustomLabel136.Name = "bunifuCustomLabel136";
-            this.bunifuCustomLabel136.Size = new System.Drawing.Size(120, 18);
-            this.bunifuCustomLabel136.TabIndex = 53;
-            this.bunifuCustomLabel136.Text = "Total Valuation";
-            this.bunifuCustomLabel136.UseWaitCursor = true;
-            // 
             // groupBox15
             // 
             this.groupBox15.Controls.Add(this.label5);
@@ -5036,6 +5024,56 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Warehouse";
             this.groupBox15.UseWaitCursor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(162, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 22);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Rs.";
+            this.label5.UseWaitCursor = true;
+            // 
+            // f5
+            // 
+            this.f5.AutoSize = true;
+            this.f5.BackColor = System.Drawing.Color.White;
+            this.f5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f5.ForeColor = System.Drawing.Color.Maroon;
+            this.f5.Location = new System.Drawing.Point(202, 49);
+            this.f5.Name = "f5";
+            this.f5.Size = new System.Drawing.Size(32, 22);
+            this.f5.TabIndex = 43;
+            this.f5.Text = "35";
+            this.f5.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel41
+            // 
+            this.bunifuCustomLabel41.AutoSize = true;
+            this.bunifuCustomLabel41.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel41.Location = new System.Drawing.Point(56, 32);
+            this.bunifuCustomLabel41.Name = "bunifuCustomLabel41";
+            this.bunifuCustomLabel41.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel41.TabIndex = 41;
+            this.bunifuCustomLabel41.Text = "Valuation ";
+            this.bunifuCustomLabel41.UseWaitCursor = true;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.Color.White;
+            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox21.Location = new System.Drawing.Point(41, 19);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox21.TabIndex = 42;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.UseWaitCursor = true;
             // 
             // pictureBox16
             // 
@@ -5064,6 +5102,56 @@
             this.groupBox12.Text = "Floor 4";
             this.groupBox12.UseWaitCursor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(162, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 22);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Rs.";
+            this.label4.UseWaitCursor = true;
+            // 
+            // f4
+            // 
+            this.f4.AutoSize = true;
+            this.f4.BackColor = System.Drawing.Color.White;
+            this.f4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f4.ForeColor = System.Drawing.Color.Maroon;
+            this.f4.Location = new System.Drawing.Point(202, 49);
+            this.f4.Name = "f4";
+            this.f4.Size = new System.Drawing.Size(32, 22);
+            this.f4.TabIndex = 39;
+            this.f4.Text = "35";
+            this.f4.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel40
+            // 
+            this.bunifuCustomLabel40.AutoSize = true;
+            this.bunifuCustomLabel40.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel40.Location = new System.Drawing.Point(56, 32);
+            this.bunifuCustomLabel40.Name = "bunifuCustomLabel40";
+            this.bunifuCustomLabel40.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel40.TabIndex = 37;
+            this.bunifuCustomLabel40.Text = "Valuation ";
+            this.bunifuCustomLabel40.UseWaitCursor = true;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.Color.White;
+            this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox20.Location = new System.Drawing.Point(41, 19);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox20.TabIndex = 38;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.UseWaitCursor = true;
+            // 
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
@@ -5090,6 +5178,56 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Floor 3";
             this.groupBox13.UseWaitCursor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
+            this.label3.Location = new System.Drawing.Point(162, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 22);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Rs.";
+            this.label3.UseWaitCursor = true;
+            // 
+            // f3
+            // 
+            this.f3.AutoSize = true;
+            this.f3.BackColor = System.Drawing.Color.White;
+            this.f3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f3.ForeColor = System.Drawing.Color.Maroon;
+            this.f3.Location = new System.Drawing.Point(202, 47);
+            this.f3.Name = "f3";
+            this.f3.Size = new System.Drawing.Size(32, 22);
+            this.f3.TabIndex = 39;
+            this.f3.Text = "35";
+            this.f3.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel39
+            // 
+            this.bunifuCustomLabel39.AutoSize = true;
+            this.bunifuCustomLabel39.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel39.Location = new System.Drawing.Point(56, 30);
+            this.bunifuCustomLabel39.Name = "bunifuCustomLabel39";
+            this.bunifuCustomLabel39.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel39.TabIndex = 37;
+            this.bunifuCustomLabel39.Text = "Valuation ";
+            this.bunifuCustomLabel39.UseWaitCursor = true;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackColor = System.Drawing.Color.White;
+            this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox19.Location = new System.Drawing.Point(41, 17);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox19.TabIndex = 38;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.UseWaitCursor = true;
             // 
             // pictureBox14
             // 
@@ -5118,6 +5256,56 @@
             this.groupBox11.Text = "Floor 2";
             this.groupBox11.UseWaitCursor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(162, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 22);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Rs.";
+            this.label2.UseWaitCursor = true;
+            // 
+            // f2
+            // 
+            this.f2.AutoSize = true;
+            this.f2.BackColor = System.Drawing.Color.White;
+            this.f2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f2.ForeColor = System.Drawing.Color.Maroon;
+            this.f2.Location = new System.Drawing.Point(202, 55);
+            this.f2.Name = "f2";
+            this.f2.Size = new System.Drawing.Size(32, 22);
+            this.f2.TabIndex = 39;
+            this.f2.Text = "35";
+            this.f2.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel38
+            // 
+            this.bunifuCustomLabel38.AutoSize = true;
+            this.bunifuCustomLabel38.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel38.Location = new System.Drawing.Point(56, 38);
+            this.bunifuCustomLabel38.Name = "bunifuCustomLabel38";
+            this.bunifuCustomLabel38.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel38.TabIndex = 37;
+            this.bunifuCustomLabel38.Text = "Valuation ";
+            this.bunifuCustomLabel38.UseWaitCursor = true;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.White;
+            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox18.Location = new System.Drawing.Point(41, 25);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox18.TabIndex = 38;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.UseWaitCursor = true;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
@@ -5145,6 +5333,19 @@
             this.groupBox10.Text = "Floor 1";
             this.groupBox10.UseWaitCursor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(162, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 22);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Rs.";
+            this.label1.UseWaitCursor = true;
+            // 
             // f1
             // 
             this.f1.AutoSize = true;
@@ -5171,17 +5372,6 @@
             this.bunifuCustomLabel135.Text = "Valuation ";
             this.bunifuCustomLabel135.UseWaitCursor = true;
             // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.Color.White;
-            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox17.Location = new System.Drawing.Point(41, 19);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(306, 59);
-            this.pictureBox17.TabIndex = 34;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.UseWaitCursor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -5192,6 +5382,17 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.UseWaitCursor = true;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.Color.White;
+            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox17.Location = new System.Drawing.Point(41, 19);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox17.TabIndex = 34;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.UseWaitCursor = true;
             // 
             // bunifuCustomLabel141
             // 
@@ -5221,30 +5422,80 @@
             this.panel19.TabIndex = 161;
             this.panel19.UseWaitCursor = true;
             // 
+            // all
+            // 
+            this.all.AutoSize = true;
+            this.all.BackColor = System.Drawing.Color.White;
+            this.all.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all.ForeColor = System.Drawing.Color.Purple;
+            this.all.Location = new System.Drawing.Point(327, 600);
+            this.all.Name = "all";
+            this.all.Size = new System.Drawing.Size(32, 22);
+            this.all.TabIndex = 45;
+            this.all.Text = "35";
+            this.all.UseWaitCursor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Purple;
+            this.label6.Location = new System.Drawing.Point(287, 599);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 22);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "Rs.";
+            this.label6.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel136
+            // 
+            this.bunifuCustomLabel136.AutoSize = true;
+            this.bunifuCustomLabel136.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel136.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel136.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bunifuCustomLabel136.Location = new System.Drawing.Point(126, 603);
+            this.bunifuCustomLabel136.Name = "bunifuCustomLabel136";
+            this.bunifuCustomLabel136.Size = new System.Drawing.Size(120, 18);
+            this.bunifuCustomLabel136.TabIndex = 53;
+            this.bunifuCustomLabel136.Text = "Total Valuation";
+            this.bunifuCustomLabel136.UseWaitCursor = true;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.Color.White;
+            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox22.Location = new System.Drawing.Point(111, 588);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(366, 43);
+            this.pictureBox22.TabIndex = 54;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.UseWaitCursor = true;
+            // 
             // hidetb
             // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.hidetb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hidetb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
             this.hidetb.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.hidetb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hidetb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.hidetb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.hidetb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.hidetb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.hidetb.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.hidetb.DefaultCellStyle = dataGridViewCellStyle42;
             this.hidetb.DoubleBuffered = true;
             this.hidetb.EnableHeadersVisualStyles = false;
             this.hidetb.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -6753,255 +7004,9 @@
             this.panel20.TabIndex = 161;
             this.panel20.UseWaitCursor = true;
             // 
-            // label1
+            // MadushaPrintDocument
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(162, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 22);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Rs.";
-            this.label1.UseWaitCursor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(162, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 22);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Rs.";
-            this.label2.UseWaitCursor = true;
-            // 
-            // f2
-            // 
-            this.f2.AutoSize = true;
-            this.f2.BackColor = System.Drawing.Color.White;
-            this.f2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.f2.ForeColor = System.Drawing.Color.Maroon;
-            this.f2.Location = new System.Drawing.Point(202, 55);
-            this.f2.Name = "f2";
-            this.f2.Size = new System.Drawing.Size(32, 22);
-            this.f2.TabIndex = 39;
-            this.f2.Text = "35";
-            this.f2.UseWaitCursor = true;
-            // 
-            // bunifuCustomLabel38
-            // 
-            this.bunifuCustomLabel38.AutoSize = true;
-            this.bunifuCustomLabel38.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel38.Location = new System.Drawing.Point(56, 38);
-            this.bunifuCustomLabel38.Name = "bunifuCustomLabel38";
-            this.bunifuCustomLabel38.Size = new System.Drawing.Size(82, 18);
-            this.bunifuCustomLabel38.TabIndex = 37;
-            this.bunifuCustomLabel38.Text = "Valuation ";
-            this.bunifuCustomLabel38.UseWaitCursor = true;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.White;
-            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox18.Location = new System.Drawing.Point(41, 25);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(306, 59);
-            this.pictureBox18.TabIndex = 38;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.UseWaitCursor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(162, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 22);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Rs.";
-            this.label3.UseWaitCursor = true;
-            // 
-            // f3
-            // 
-            this.f3.AutoSize = true;
-            this.f3.BackColor = System.Drawing.Color.White;
-            this.f3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.f3.ForeColor = System.Drawing.Color.Maroon;
-            this.f3.Location = new System.Drawing.Point(202, 47);
-            this.f3.Name = "f3";
-            this.f3.Size = new System.Drawing.Size(32, 22);
-            this.f3.TabIndex = 39;
-            this.f3.Text = "35";
-            this.f3.UseWaitCursor = true;
-            // 
-            // bunifuCustomLabel39
-            // 
-            this.bunifuCustomLabel39.AutoSize = true;
-            this.bunifuCustomLabel39.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel39.Location = new System.Drawing.Point(56, 30);
-            this.bunifuCustomLabel39.Name = "bunifuCustomLabel39";
-            this.bunifuCustomLabel39.Size = new System.Drawing.Size(82, 18);
-            this.bunifuCustomLabel39.TabIndex = 37;
-            this.bunifuCustomLabel39.Text = "Valuation ";
-            this.bunifuCustomLabel39.UseWaitCursor = true;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackColor = System.Drawing.Color.White;
-            this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox19.Location = new System.Drawing.Point(41, 17);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(306, 59);
-            this.pictureBox19.TabIndex = 38;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.UseWaitCursor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(162, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 22);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Rs.";
-            this.label4.UseWaitCursor = true;
-            // 
-            // f4
-            // 
-            this.f4.AutoSize = true;
-            this.f4.BackColor = System.Drawing.Color.White;
-            this.f4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.f4.ForeColor = System.Drawing.Color.Maroon;
-            this.f4.Location = new System.Drawing.Point(202, 49);
-            this.f4.Name = "f4";
-            this.f4.Size = new System.Drawing.Size(32, 22);
-            this.f4.TabIndex = 39;
-            this.f4.Text = "35";
-            this.f4.UseWaitCursor = true;
-            // 
-            // bunifuCustomLabel40
-            // 
-            this.bunifuCustomLabel40.AutoSize = true;
-            this.bunifuCustomLabel40.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel40.Location = new System.Drawing.Point(56, 32);
-            this.bunifuCustomLabel40.Name = "bunifuCustomLabel40";
-            this.bunifuCustomLabel40.Size = new System.Drawing.Size(82, 18);
-            this.bunifuCustomLabel40.TabIndex = 37;
-            this.bunifuCustomLabel40.Text = "Valuation ";
-            this.bunifuCustomLabel40.UseWaitCursor = true;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.White;
-            this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox20.Location = new System.Drawing.Point(41, 19);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(306, 59);
-            this.pictureBox20.TabIndex = 38;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.UseWaitCursor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(162, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 22);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Rs.";
-            this.label5.UseWaitCursor = true;
-            // 
-            // f5
-            // 
-            this.f5.AutoSize = true;
-            this.f5.BackColor = System.Drawing.Color.White;
-            this.f5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.f5.ForeColor = System.Drawing.Color.Maroon;
-            this.f5.Location = new System.Drawing.Point(202, 49);
-            this.f5.Name = "f5";
-            this.f5.Size = new System.Drawing.Size(32, 22);
-            this.f5.TabIndex = 43;
-            this.f5.Text = "35";
-            this.f5.UseWaitCursor = true;
-            // 
-            // bunifuCustomLabel41
-            // 
-            this.bunifuCustomLabel41.AutoSize = true;
-            this.bunifuCustomLabel41.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel41.Location = new System.Drawing.Point(56, 32);
-            this.bunifuCustomLabel41.Name = "bunifuCustomLabel41";
-            this.bunifuCustomLabel41.Size = new System.Drawing.Size(82, 18);
-            this.bunifuCustomLabel41.TabIndex = 41;
-            this.bunifuCustomLabel41.Text = "Valuation ";
-            this.bunifuCustomLabel41.UseWaitCursor = true;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackColor = System.Drawing.Color.White;
-            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox21.Location = new System.Drawing.Point(41, 19);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(306, 59);
-            this.pictureBox21.TabIndex = 42;
-            this.pictureBox21.TabStop = false;
-            this.pictureBox21.UseWaitCursor = true;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.BackColor = System.Drawing.Color.White;
-            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox22.Location = new System.Drawing.Point(111, 588);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(366, 43);
-            this.pictureBox22.TabIndex = 54;
-            this.pictureBox22.TabStop = false;
-            this.pictureBox22.UseWaitCursor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Purple;
-            this.label6.Location = new System.Drawing.Point(287, 599);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 22);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "Rs.";
-            this.label6.UseWaitCursor = true;
-            // 
-            // all
-            // 
-            this.all.AutoSize = true;
-            this.all.BackColor = System.Drawing.Color.White;
-            this.all.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.all.ForeColor = System.Drawing.Color.Purple;
-            this.all.Location = new System.Drawing.Point(327, 600);
-            this.all.Name = "all";
-            this.all.Size = new System.Drawing.Size(32, 22);
-            this.all.TabIndex = 45;
-            this.all.Text = "35";
-            this.all.UseWaitCursor = true;
+            this.MadushaPrintDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.MadushaPrintDocument_PrintPage_1);
             // 
             // main
             // 
@@ -7116,22 +7121,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidetb)).EndInit();
             this.bunifuCards10.ResumeLayout(false);
             this.bunifuCards10.PerformLayout();
@@ -7163,11 +7173,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7600,6 +7605,7 @@
         private System.Windows.Forms.Label all;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Drawing.Printing.PrintDocument MadushaPrintDocument;
     }
 }
 

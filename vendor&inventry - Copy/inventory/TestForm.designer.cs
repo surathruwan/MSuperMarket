@@ -3411,14 +3411,31 @@
             this.chart2.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart2.Legends.Add(legend1);
+<<<<<<< HEAD
             this.chart2.Location = new System.Drawing.Point(-2, 3);
+=======
+<<<<<<< HEAD
+            this.chart2.Location = new System.Drawing.Point(-2, 3);
+=======
+            this.chart2.Location = new System.Drawing.Point(-3, 4);
+            this.chart2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Type";
             this.chart2.Series.Add(series1);
+<<<<<<< HEAD
             this.chart2.Size = new System.Drawing.Size(425, 280);
+=======
+<<<<<<< HEAD
+            this.chart2.Size = new System.Drawing.Size(425, 280);
+=======
+            this.chart2.Size = new System.Drawing.Size(567, 345);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
             this.chart2.TabIndex = 159;
             this.chart2.Text = "chart2";
             // 
@@ -4527,7 +4544,16 @@
             this.chart3.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart3.Legends.Add(legend2);
+<<<<<<< HEAD
             this.chart3.Location = new System.Drawing.Point(-2, -2);
+=======
+<<<<<<< HEAD
+            this.chart3.Location = new System.Drawing.Point(-2, -2);
+=======
+            this.chart3.Location = new System.Drawing.Point(-3, -2);
+            this.chart3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
             this.chart3.Name = "chart3";
             series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
             series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Vertical;
@@ -4542,7 +4568,15 @@
             series2.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
             series2.Name = "orderid";
             this.chart3.Series.Add(series2);
+<<<<<<< HEAD
             this.chart3.Size = new System.Drawing.Size(530, 411);
+=======
+<<<<<<< HEAD
+            this.chart3.Size = new System.Drawing.Size(530, 411);
+=======
+            this.chart3.Size = new System.Drawing.Size(707, 506);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
             this.chart3.TabIndex = 158;
             this.chart3.Text = "chart3";
             title1.Name = "Title1";
@@ -4556,14 +4590,31 @@
             this.chart1.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart1.Legends.Add(legend3);
+<<<<<<< HEAD
             this.chart1.Location = new System.Drawing.Point(21, 13);
+=======
+<<<<<<< HEAD
+            this.chart1.Location = new System.Drawing.Point(21, 13);
+=======
+            this.chart1.Location = new System.Drawing.Point(28, 16);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
             this.chart1.Name = "chart1";
             series3.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "orderid";
             this.chart1.Series.Add(series3);
+<<<<<<< HEAD
             this.chart1.Size = new System.Drawing.Size(515, 409);
+=======
+<<<<<<< HEAD
+            this.chart1.Size = new System.Drawing.Size(515, 409);
+=======
+            this.chart1.Size = new System.Drawing.Size(687, 503);
+>>>>>>> 7fa8670bede4a1589ed85b9e237af97111f94ed0
+>>>>>>> d1e9431b119ebfa95d3b12705baec6364b064269
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
             title2.Name = "Title1";
