@@ -13,6 +13,7 @@ using iTextSharp.text.pdf;
 using System.Xml;
 using System.Net;
 using inventory;
+using System.Drawing.Printing;
 
 namespace madushaTemp
 {
@@ -101,6 +102,93 @@ namespace madushaTemp
 
         }
 
+
+
+
+        //Printer Configured to print Receipt
+        public void printer()
+        {
+            var installedPrinters = PrinterSettings.InstalledPrinters; //I have choosed a printername from 'installedPrinters'
+            try
+            {
+
+
+                try
+                {
+
+                    int height = 100;
+                    MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 2013"; //Specify the printer to use.
+
+                    MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
+                    MadushaPrintDocument.Print();
+
+
+
+                }
+                finally
+                {
+
+                    // MessageBox.Show("data Exported");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void MadushaPrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+
+
+            DateTime time = DateTime.Now;
+            string formatD = "yyyy-MM-dd";
+
+            e.Graphics.DrawString("MADUSHA", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(70, 0)); // x,y
+            e.Graphics.DrawString("SUPER MARKET", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(44, 20));
+            e.Graphics.DrawString("No. 46, ", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
+            e.Graphics.DrawString("Deraniyagala", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
+            e.Graphics.DrawString("Tel : 036 2249369 / 071 5555533", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
+            e.Graphics.DrawString("Date : " + time.ToString(formatD), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 100));
+            //e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
+            //e.Graphics.DrawString("Invoice No : " + txtt4invoiceno.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
+           // e.Graphics.DrawString("Repair ID : " + txtt4Rid.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
+            e.Graphics.DrawString("Cashier :" + "Surath", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
+            e.Graphics.DrawString("SalesRep : " + "Ruwan", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
+            e.Graphics.DrawString("Customer : " + "Ruchira", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 145));
+            e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
+            
+
+            e.Graphics.DrawString("Serial No", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 210));
+            e.Graphics.DrawString(":" + bunifuCustomLabel43.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 210));
+            e.Graphics.DrawString("Date", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 230));
+            e.Graphics.DrawString(":" + bunifuCustomLabel44.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 230));
+
+            e.Graphics.DrawString("Driver Name", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 250));
+            e.Graphics.DrawString(":" + bunifuCustomLabel12.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 250));
+            e.Graphics.DrawString("Driver NIC", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 270));
+            e.Graphics.DrawString(":" + bunifuCustomLabel18.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 270));
+            e.Graphics.DrawString("Vehicle No", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 290));
+            e.Graphics.DrawString(":" + bunifuCustomLabel45.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 290));
+            e.Graphics.DrawString("Customer Name", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 310));
+            e.Graphics.DrawString(":" + bunifuCustomLabel47.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 310));
+
+            e.Graphics.DrawString("Address", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 330));
+            e.Graphics.DrawString(":" + bunifuCustomLabel48.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 330));
+
+            e.Graphics.DrawString("Phone No", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 350));
+            e.Graphics.DrawString(":" + bunifuCustomLabel51.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 350));
+
+            e.Graphics.DrawString("Driver Signature", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 370));
+            e.Graphics.DrawString(":" + ".......................", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 370));
+
+            e.Graphics.DrawString("Manager Signature", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 390));
+            e.Graphics.DrawString(":" + ".......................", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(160, 390));
+
+            e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
+        }
 
 
         public void LoadTableDriver_Availability()
@@ -1355,7 +1443,7 @@ namespace madushaTemp
 
         private void bunifuThinButton215_Click(object sender, EventArgs e)
         {
-            
+            printer();
         }
 
         private void bunifuThinButton214_Click(object sender, EventArgs e)
@@ -1400,6 +1488,12 @@ namespace madushaTemp
         private void groupBox8_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            driverReport d = new driverReport();
+            d.Show();
         }
     }
 }
