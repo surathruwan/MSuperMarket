@@ -50,7 +50,6 @@
             this.barcode = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.uu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.approve = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.save = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -63,7 +62,7 @@
             this.reason = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.dates = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.print = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.delete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel21 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel19 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -221,7 +220,7 @@
             this.bunifuDropdown9 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.employeedetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usr = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.adduser = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -353,7 +352,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.uu);
             this.groupBox5.Controls.Add(this.approve);
             this.groupBox5.Controls.Add(this.pictureBox18);
             this.groupBox5.Controls.Add(this.save);
@@ -366,7 +364,7 @@
             this.groupBox5.Controls.Add(this.reason);
             this.groupBox5.Controls.Add(this.dates);
             this.groupBox5.Controls.Add(this.bunifuCustomLabel22);
-            this.groupBox5.Controls.Add(this.print);
+            this.groupBox5.Controls.Add(this.delete);
             this.groupBox5.Controls.Add(this.bunifuCustomLabel21);
             this.groupBox5.Controls.Add(this.bunifuCustomLabel19);
             this.groupBox5.Controls.Add(this.bunifuCustomLabel16);
@@ -379,33 +377,6 @@
             this.groupBox5.Size = new System.Drawing.Size(392, 698);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
-            // 
-            // uu
-            // 
-            this.uu.ActiveBorderThickness = 1;
-            this.uu.ActiveCornerRadius = 20;
-            this.uu.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.uu.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.uu.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.uu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.uu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uu.BackgroundImage")));
-            this.uu.ButtonText = "Update";
-            this.uu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.uu.IdleBorderThickness = 1;
-            this.uu.IdleCornerRadius = 20;
-            this.uu.IdleFillColor = System.Drawing.Color.White;
-            this.uu.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.uu.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.uu.Location = new System.Drawing.Point(262, 604);
-            this.uu.Margin = new System.Windows.Forms.Padding(5);
-            this.uu.Name = "uu";
-            this.uu.Size = new System.Drawing.Size(106, 41);
-            this.uu.TabIndex = 176;
-            this.uu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uu.Visible = false;
-            this.uu.Click += new System.EventHandler(this.uu_Click);
             // 
             // approve
             // 
@@ -451,7 +422,7 @@
             this.save.IdleFillColor = System.Drawing.Color.White;
             this.save.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
             this.save.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.save.Location = new System.Drawing.Point(179, 553);
+            this.save.Location = new System.Drawing.Point(69, 604);
             this.save.Margin = new System.Windows.Forms.Padding(5);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(106, 41);
@@ -592,31 +563,31 @@
             this.bunifuCustomLabel22.TabIndex = 48;
             this.bunifuCustomLabel22.Text = "Approved by";
             // 
-            // print
+            // delete
             // 
-            this.print.ActiveBorderThickness = 1;
-            this.print.ActiveCornerRadius = 20;
-            this.print.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.print.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.print.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.print.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("print.BackgroundImage")));
-            this.print.ButtonText = "Print";
-            this.print.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.print.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.print.IdleBorderThickness = 1;
-            this.print.IdleCornerRadius = 20;
-            this.print.IdleFillColor = System.Drawing.Color.White;
-            this.print.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.print.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.print.Location = new System.Drawing.Point(146, 604);
-            this.print.Margin = new System.Windows.Forms.Padding(5);
-            this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(106, 41);
-            this.print.TabIndex = 47;
-            this.print.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.print.Visible = false;
+            this.delete.ActiveBorderThickness = 1;
+            this.delete.ActiveCornerRadius = 20;
+            this.delete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.delete.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.delete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delete.BackgroundImage")));
+            this.delete.ButtonText = "Delete";
+            this.delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.delete.IdleBorderThickness = 1;
+            this.delete.IdleCornerRadius = 20;
+            this.delete.IdleFillColor = System.Drawing.Color.White;
+            this.delete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.delete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.delete.Location = new System.Drawing.Point(238, 604);
+            this.delete.Margin = new System.Windows.Forms.Padding(5);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(106, 41);
+            this.delete.TabIndex = 47;
+            this.delete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // bunifuCustomLabel21
             // 
@@ -1659,7 +1630,7 @@
             // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.usr);
+            this.groupBox17.Controls.Add(this.adduser);
             this.groupBox17.Controls.Add(this.search);
             this.groupBox17.Controls.Add(this.grr);
             this.groupBox17.Controls.Add(this.bunifuCustomLabel3);
@@ -3043,30 +3014,30 @@
             this.bunifuCards5.Size = new System.Drawing.Size(1214, 708);
             this.bunifuCards5.TabIndex = 30;
             // 
-            // usr
+            // adduser
             // 
-            this.usr.ActiveBorderThickness = 1;
-            this.usr.ActiveCornerRadius = 20;
-            this.usr.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.usr.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.usr.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.usr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.usr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("usr.BackgroundImage")));
-            this.usr.ButtonText = "Add User";
-            this.usr.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.usr.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.usr.IdleBorderThickness = 1;
-            this.usr.IdleCornerRadius = 20;
-            this.usr.IdleFillColor = System.Drawing.Color.White;
-            this.usr.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.usr.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.usr.Location = new System.Drawing.Point(264, 563);
-            this.usr.Margin = new System.Windows.Forms.Padding(5);
-            this.usr.Name = "usr";
-            this.usr.Size = new System.Drawing.Size(106, 41);
-            this.usr.TabIndex = 132;
-            this.usr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.adduser.ActiveBorderThickness = 1;
+            this.adduser.ActiveCornerRadius = 20;
+            this.adduser.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.adduser.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.adduser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adduser.BackgroundImage")));
+            this.adduser.ButtonText = "Add user";
+            this.adduser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adduser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adduser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.adduser.IdleBorderThickness = 1;
+            this.adduser.IdleCornerRadius = 20;
+            this.adduser.IdleFillColor = System.Drawing.Color.White;
+            this.adduser.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.adduser.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.adduser.Location = new System.Drawing.Point(256, 568);
+            this.adduser.Margin = new System.Windows.Forms.Padding(5);
+            this.adduser.Name = "adduser";
+            this.adduser.Size = new System.Drawing.Size(106, 41);
+            this.adduser.TabIndex = 174;
+            this.adduser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Employee
             // 
@@ -3229,7 +3200,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox reason;
         private Bunifu.Framework.UI.BunifuMetroTextbox dates;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel22;
-        private Bunifu.Framework.UI.BunifuThinButton2 print;
+        private Bunifu.Framework.UI.BunifuThinButton2 delete;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel21;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel19;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
@@ -3312,7 +3283,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox ohrs;
         private Bunifu.Framework.UI.BunifuMetroTextbox whrs;
         private Bunifu.Framework.UI.BunifuMetroTextbox sss;
-        private Bunifu.Framework.UI.BunifuThinButton2 uu;
         private Bunifu.Framework.UI.BunifuMaterialTextbox signature;
         private Bunifu.Framework.UI.BunifuThinButton2 refresh;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
@@ -3324,6 +3294,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox ddd;
         private Bunifu.Framework.UI.BunifuThinButton2 eee;
         private Bunifu.Framework.UI.BunifuMetroTextbox astart;
-        private Bunifu.Framework.UI.BunifuThinButton2 usr;
+        private Bunifu.Framework.UI.BunifuThinButton2 adduser;
     }
 }

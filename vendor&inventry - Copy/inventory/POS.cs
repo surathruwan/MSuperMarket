@@ -17,6 +17,8 @@ namespace inventory
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+
+         
             int v = Session.getUser();
             if (v == 0)
             {
@@ -81,7 +83,7 @@ namespace inventory
             txtDescription.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtDescription.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=madusha");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
             string sqlquery = "SELECT Item_name from item ";
             MySqlCommand cmd = new MySqlCommand(sqlquery, conn);
             MySqlDataReader msReader;
@@ -311,13 +313,14 @@ namespace inventory
             }
 
         }
- 
-        //Search item via Barcode
 
+
+        //Search item via Barcode && Load data into table
         public void SearchBarcode()
         {
+            //Load data into table
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode LIKE '" + txtBarcode.Text + "%' ", conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT item_code,Barcode,item_name,Warrenty,freeIssue,sqty,Rprice  from supermarket.item where Barcode = '" + txtBarcode.Text + "' ", conn);
             conn.Open();
             DataTable catetable = new DataTable();
             adapter.Fill(catetable);
@@ -326,7 +329,9 @@ namespace inventory
             source.DataSource = catetable;
 
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
+
+            //Search item via Barcode
+            cmd.CommandText = ("SELECT item_name,Item_code,Rprice,item_name from supermarket.item where Barcode = '" + txtBarcode.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
            
             while (r.Read())
@@ -341,13 +346,13 @@ namespace inventory
             
         }
 
-        //Search only via Barcode
+        //Searchprice only via Barcode
         public void SearchPriceBarcode()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = ("SELECT Rprice from supermarket.item where Barcode LIKE '%" + txtBarcode.Text + "%' ");
+            cmd.CommandText = ("SELECT Rprice from supermarket.item where Barcode = '" + txtBarcode.Text + "' ");
             MySqlDataReader r = cmd.ExecuteReader();
 
             while (r.Read())
@@ -364,7 +369,7 @@ namespace inventory
                 MySqlConnection conn = new MySqlConnection(constr);
                 conn.Open();
                 MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile LIKE '" + txtPhone.Text + "' ";
+                cmd.CommandText = "SELECT Surname,initials,Points from supermarket.loyaltycustomer where Mobile = '" + txtPhone.Text + "' ";
                 MySqlDataReader Dataread = cmd.ExecuteReader();
                 Dataread.Read();
                 if (Dataread.HasRows)
@@ -419,31 +424,139 @@ namespace inventory
         }
 
 
-        //Calculate Balance
+        //Calculate Balance cash
         public void BalanceCal()
         {
+            
             try
             {
-
-                double cash = Double.Parse(txtCash.Text);
-                double total = Double.Parse(lblAmount.Text);
-
-                double balance = cash - total;
-                if (balance >= 0)
+                double Balance;
+                double cash = 0;
+                double points = 0;
+                if (!double.TryParse(this.txtCash.Text, out cash))
                 {
-                    lblBalanceAmount1.Text = balance.ToString("0.00");
+                    //MessageBox.Show(
+                    //    //    String.Format(
+                    //    //        "Bad input from this.Amount.text: \"{0}\"",
+                    //    //        this.txtCash.Text
+                    //    //    )
+                    //    //);
+                }
+                double total = 0;
+                if (!double.TryParse(this.lblAmount.Text, out total))
+                {
+                
+                }
+
+                if (!double.TryParse(this.txtPoints.Text, out points))
+                {
+
+                }
+                if (!(string.IsNullOrWhiteSpace(txtPoints.Text)))
+                {
+                    Balance = (cash + points) - total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
                 }
                 else
                 {
-                    lblBalanceAmount1.Text = "0.00";
+                    Balance = cash- total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
                 }
-            }
 
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
 
             }
+        }
+
+        
+
+
+        //Calculate Balance points
+        public void BalanceCalPoints()
+        {
+
+            try
+            {
+                   
+
+                    double Balance;
+                
+                double points = 0;
+                double total = 0;
+                double cash = 0; 
+                if (!double.TryParse(this.txtPoints.Text, out points))
+                {
+                    
+                }
+                
+                if (!double.TryParse(this.lblAmount.Text, out total))
+                {
+
+                }
+                if (!double.TryParse(this.txtCash.Text, out cash))
+                {
+
+                }
+
+                if ((string.IsNullOrWhiteSpace(lblPoint.Text)))
+                {
+                   // txtPoints.Text = "";
+                    MessageBox.Show("Before using the Loyality points user needs to verify the account");
+
+                }
+                if (!(string.IsNullOrWhiteSpace(txtCash.Text)))
+                {
+                    Balance = (cash + points) - total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
+                }
+                ///// need more implementation 
+                //check enogh points
+                else
+                {
+                    Balance = points - total;
+                    lblBalanceAmount1.Text = Balance.ToString("0.00");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+
+            }
+
+
+
+        }
+
+        //total Amount Changed
+        public void totalChanged()
+        {
+            double Balance;
+
+            double points = 0;
+            double total = 0;
+            double cash = 0;
+           
+            if (!double.TryParse(this.lblAmount.Text, out total))
+            {
+
+            }
+            if (!double.TryParse(this.txtPoints.Text, out points))
+            {
+
+            }
+            if (!double.TryParse(this.txtCash.Text, out cash))
+            {
+
+            }
+
+            double updateBalance = (points + cash) - total;
+            lblBalanceAmount1.Text = updateBalance.ToString("0.00");
+
         }
 
         //Validation
@@ -836,7 +949,8 @@ namespace inventory
 
         private void txtCash_TextChanged(object sender, EventArgs e)
         {
-            BalanceCal();
+             BalanceCal();
+           
         }
 
         private void txtCode_KeyPress(object sender, KeyPressEventArgs e)
@@ -997,7 +1111,7 @@ namespace inventory
             {
                     int height = (cart.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "Canon iP2800 series"; //Specify the printer to use.
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 16"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();
@@ -1090,20 +1204,26 @@ namespace inventory
                     if ((NewPrice) >= 0)
                     {
                         txtPrice.Text = NewPrice.ToString();
-                       
+
                         txtDiscount.MaxLength = i;
-                        
+
+
+                        if (maximumDiscount < reduce_amount)
+                        {
+                            MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtDiscount.Text = "";
+                            SearchPriceBarcode();
+                        }
+
                     }
-                    else if(maximumDiscount > reduce_amount)
-                    {
-                        MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                   
-                    else 
+
+                    else
                     {
                         MessageBox.Show("Invalid Discount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtDiscount.Text = "";
+                        SearchPriceBarcode();
                     }
-                    
+                   
 
                 }
                 if ((txtDiscount.Text[i].ToString() == "-"))
@@ -1113,9 +1233,16 @@ namespace inventory
 
                     float initialPrice = float.Parse(txtPrice.Text);
                     float ApplyDis = initialPrice - disPrice;
+                    float reduce_amount = disPrice;
                     if (ApplyDis >= 0)
                     {
                         txtPrice.Text = ApplyDis.ToString();
+                        if (maximumDiscount < reduce_amount)
+                        {
+                            MessageBox.Show("Sorry !! Your Discount amount exceeded for a item  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtDiscount.Text = "";
+                            SearchPriceBarcode();
+                        }
                     }
                     else
                     {
@@ -1141,7 +1268,8 @@ namespace inventory
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                
+               // MessageBox.Show(ex.Message);
             }
         }
 
@@ -1375,6 +1503,68 @@ namespace inventory
         {
           
         }
+
+        private void txtDiscount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtPoints_TextChanged(object sender, EventArgs e)
+        {
+            BalanceCalPoints();
+        }
+
+        private void txtCash_KeyUp(object sender, KeyEventArgs e)
+        {
+           
+
+
+               
+                
+            }
+
+        private void lblAmount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double cash = 0;
+                double points = 0;
+                if (!double.TryParse(this.txtCash.Text, out cash))
+                {
+
+                }
+                if (!double.TryParse(this.txtPoints.Text, out points))
+                {
+
+                }
+
+
+                if (!(string.IsNullOrWhiteSpace(txtCash.Text)) || (!(string.IsNullOrWhiteSpace(txtPoints.Text))))
+                {
+                    totalChanged();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void lblName_TextChanged(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(lblName.Text)))
+            {
+                txtPoints.Enabled = true;
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
+        
     }
+    
 

@@ -98,17 +98,17 @@
     <Compile Include="AdviceOfDispatch.designer.cs">
       <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="bankrep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bankrep.Designer.cs">
+      <DependentUpon>bankrep.cs</DependentUpon>
+    </Compile>
     <Compile Include="categoryform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="categoryform.Designer.cs">
       <DependentUpon>categoryform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="debtors.cs">
       <SubType>Form</SubType>
@@ -145,6 +145,12 @@
     </Compile>
     <Compile Include="Employee.designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="financial_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="financial_report.Designer.cs">
+      <DependentUpon>financial_report.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -334,15 +340,14 @@
     <EmbeddedResource Include="AdviceOfDispatch.resx">
       <DependentUpon>AdviceOfDispatch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bankrep.resx">
+      <DependentUpon>bankrep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="barcode.resx">
       <DependentUpon>barcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="categoryform.resx">
       <DependentUpon>categoryform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="debtors.resx">
       <DependentUpon>debtors.cs</DependentUpon>
@@ -358,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="financial_report.resx">
+      <DependentUpon>financial_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -685,6 +693,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\debug\msmsIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-percentage-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-percentage-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
