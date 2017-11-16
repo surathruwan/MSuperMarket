@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.pack = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel125 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -239,7 +239,6 @@
             this.bunifuThinButton225 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel12 = new System.Windows.Forms.Panel();
             this.wro = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.cv = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel11 = new System.Windows.Forms.Panel();
             this.bunifuThinButton226 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -338,28 +337,20 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCards11 = new Bunifu.Framework.UI.BunifuCards();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.all = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel136 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.f5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel137 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.f4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel133 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.f3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel134 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.f2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomLabel132 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.f1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.f1 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel135 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel141 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.hidetb = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -384,10 +375,10 @@
             this.bunifuCustomLabel109 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel110 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gby = new System.Windows.Forms.ComboBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.gsr = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.gby = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel99 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.gamnt = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel98 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -459,6 +450,26 @@
             this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel20 = new System.Windows.Forms.Panel();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.f2 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel38 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.f3 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel39 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.f4 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel40 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.f5 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel41 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.all = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sgr)).BeginInit();
@@ -546,6 +557,7 @@
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hidetb)).BeginInit();
@@ -571,6 +583,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -958,19 +975,19 @@
             // 
             // sgr
             // 
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.sgr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.sgr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.sgr.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.sgr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sgr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sgr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sgr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.sgr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sgr.DoubleBuffered = true;
             this.sgr.EnableHeadersVisualStyles = false;
@@ -980,6 +997,7 @@
             this.sgr.Name = "sgr";
             this.sgr.ReadOnly = true;
             this.sgr.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.sgr.RowHeadersVisible = false;
             this.sgr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.sgr.Size = new System.Drawing.Size(540, 111);
             this.sgr.TabIndex = 25;
@@ -1252,28 +1270,28 @@
             // 
             // gr
             // 
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gr.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.gr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gr.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gr.DefaultCellStyle = dataGridViewCellStyle5;
             this.gr.DoubleBuffered = true;
             this.gr.EnableHeadersVisualStyles = false;
             this.gr.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -1282,6 +1300,7 @@
             this.gr.Name = "gr";
             this.gr.ReadOnly = true;
             this.gr.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gr.RowHeadersVisible = false;
             this.gr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gr.Size = new System.Drawing.Size(481, 158);
             this.gr.TabIndex = 24;
@@ -1498,7 +1517,7 @@
             this.p4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p4.BorderThickness = 2;
             this.p4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.p4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.p4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p4.isPassword = false;
             this.p4.Location = new System.Drawing.Point(168, 147);
@@ -1517,7 +1536,7 @@
             this.q4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q4.BorderThickness = 2;
             this.q4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.q4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.q4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q4.isPassword = false;
             this.q4.Location = new System.Drawing.Point(79, 147);
@@ -1536,7 +1555,7 @@
             this.p3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p3.BorderThickness = 2;
             this.p3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.p3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.p3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p3.isPassword = false;
             this.p3.Location = new System.Drawing.Point(168, 119);
@@ -1555,7 +1574,7 @@
             this.q3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q3.BorderThickness = 2;
             this.q3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.q3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.q3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q3.isPassword = false;
             this.q3.Location = new System.Drawing.Point(79, 119);
@@ -1574,7 +1593,7 @@
             this.p2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p2.BorderThickness = 2;
             this.p2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.p2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p2.isPassword = false;
             this.p2.Location = new System.Drawing.Point(168, 91);
@@ -1593,7 +1612,7 @@
             this.q2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q2.BorderThickness = 2;
             this.q2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.q2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.q2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q2.isPassword = false;
             this.q2.Location = new System.Drawing.Point(79, 91);
@@ -1612,7 +1631,7 @@
             this.p1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.p1.BorderThickness = 2;
             this.p1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.p1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.p1.isPassword = false;
             this.p1.Location = new System.Drawing.Point(168, 64);
@@ -1631,7 +1650,7 @@
             this.q1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.q1.BorderThickness = 2;
             this.q1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.q1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.q1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.q1.isPassword = false;
             this.q1.Location = new System.Drawing.Point(79, 64);
@@ -2333,7 +2352,7 @@
             this.whpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.whpr.BorderThickness = 2;
             this.whpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.whpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.whpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.whpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.whpr.isPassword = false;
             this.whpr.Location = new System.Drawing.Point(172, 81);
@@ -2352,7 +2371,7 @@
             this.rpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rpr.BorderThickness = 2;
             this.rpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rpr.isPassword = false;
             this.rpr.Location = new System.Drawing.Point(172, 51);
@@ -2371,7 +2390,7 @@
             this.psize.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.psize.BorderThickness = 2;
             this.psize.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.psize.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psize.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.psize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.psize.isPassword = false;
             this.psize.Location = new System.Drawing.Point(172, 23);
@@ -2486,7 +2505,7 @@
             this.abcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.abcode.BorderThickness = 2;
             this.abcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.abcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.abcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.abcode.isPassword = false;
             this.abcode.Location = new System.Drawing.Point(172, 149);
@@ -2518,7 +2537,7 @@
             this.acode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.acode.BorderThickness = 2;
             this.acode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.acode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.acode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.acode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.acode.isPassword = false;
             this.acode.Location = new System.Drawing.Point(173, 372);
@@ -2553,7 +2572,7 @@
             // afloor
             // 
             this.afloor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.afloor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.afloor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.afloor.FormattingEnabled = true;
             this.afloor.Items.AddRange(new object[] {
             "1",
@@ -2562,8 +2581,9 @@
             "4"});
             this.afloor.Location = new System.Drawing.Point(172, 319);
             this.afloor.Name = "afloor";
-            this.afloor.Size = new System.Drawing.Size(281, 26);
+            this.afloor.Size = new System.Drawing.Size(281, 20);
             this.afloor.TabIndex = 23;
+            this.afloor.Text = "Select Floor";
             this.afloor.UseWaitCursor = true;
             this.afloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.afloor_KeyPress);
             // 
@@ -2574,7 +2594,7 @@
             this.ashelf.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ashelf.BorderThickness = 2;
             this.ashelf.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.ashelf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ashelf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ashelf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ashelf.isPassword = false;
             this.ashelf.Location = new System.Drawing.Point(173, 348);
@@ -2616,7 +2636,7 @@
             this.roq.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.roq.BorderThickness = 2;
             this.roq.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.roq.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.roq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.roq.isPassword = false;
             this.roq.Location = new System.Drawing.Point(172, 289);
@@ -2648,7 +2668,7 @@
             this.tqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tqty.BorderThickness = 2;
             this.tqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tqty.isPassword = false;
             this.tqty.Location = new System.Drawing.Point(172, 260);
@@ -2668,7 +2688,7 @@
             this.issue.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.issue.BorderThickness = 2;
             this.issue.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.issue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.issue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.issue.isPassword = false;
             this.issue.Location = new System.Drawing.Point(172, 232);
@@ -2686,7 +2706,7 @@
             this.awarrenty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.awarrenty.BorderThickness = 2;
             this.awarrenty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.awarrenty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.awarrenty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.awarrenty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.awarrenty.isPassword = false;
             this.awarrenty.Location = new System.Drawing.Point(172, 205);
@@ -2704,7 +2724,7 @@
             this.ades.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ades.BorderThickness = 2;
             this.ades.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.ades.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ades.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ades.isPassword = false;
             this.ades.Location = new System.Drawing.Point(172, 177);
@@ -2740,7 +2760,7 @@
             this.aname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aname.BorderThickness = 2;
             this.aname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.aname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aname.isPassword = false;
             this.aname.Location = new System.Drawing.Point(172, 119);
@@ -2783,7 +2803,7 @@
             this.abrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.abrand.BorderThickness = 2;
             this.abrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.abrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.abrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.abrand.isPassword = false;
             this.abrand.Location = new System.Drawing.Point(172, 88);
@@ -2811,12 +2831,13 @@
             // subcombo
             // 
             this.subcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.subcombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.subcombo.FormattingEnabled = true;
             this.subcombo.Location = new System.Drawing.Point(172, 56);
             this.subcombo.Name = "subcombo";
-            this.subcombo.Size = new System.Drawing.Size(281, 26);
+            this.subcombo.Size = new System.Drawing.Size(281, 20);
             this.subcombo.TabIndex = 13;
+            this.subcombo.Text = "Select Sub Category";
             this.subcombo.UseWaitCursor = true;
             // 
             // fis
@@ -2834,12 +2855,13 @@
             // catcombo
             // 
             this.catcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.catcombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.catcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.catcombo.FormattingEnabled = true;
             this.catcombo.Location = new System.Drawing.Point(172, 24);
             this.catcombo.Name = "catcombo";
-            this.catcombo.Size = new System.Drawing.Size(281, 26);
+            this.catcombo.Size = new System.Drawing.Size(281, 20);
             this.catcombo.TabIndex = 12;
+            this.catcombo.Text = "Select Category";
             this.catcombo.UseWaitCursor = true;
             this.catcombo.SelectedIndexChanged += new System.EventHandler(this.catcombo_SelectedIndexChanged_1);
             // 
@@ -3084,7 +3106,7 @@
             this.ap4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap4.BorderThickness = 2;
             this.ap4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.ap4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap4.isPassword = false;
             this.ap4.Location = new System.Drawing.Point(262, 173);
@@ -3104,7 +3126,7 @@
             this.aq4.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq4.BorderThickness = 2;
             this.aq4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.aq4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq4.isPassword = false;
             this.aq4.Location = new System.Drawing.Point(86, 173);
@@ -3123,7 +3145,7 @@
             this.ap3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap3.BorderThickness = 2;
             this.ap3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.ap3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap3.isPassword = false;
             this.ap3.Location = new System.Drawing.Point(262, 139);
@@ -3142,7 +3164,7 @@
             this.aq3.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq3.BorderThickness = 2;
             this.aq3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.aq3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq3.isPassword = false;
             this.aq3.Location = new System.Drawing.Point(86, 139);
@@ -3161,7 +3183,7 @@
             this.ap2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap2.BorderThickness = 2;
             this.ap2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.ap2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap2.isPassword = false;
             this.ap2.Location = new System.Drawing.Point(262, 105);
@@ -3180,7 +3202,7 @@
             this.aq2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq2.BorderThickness = 2;
             this.aq2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.aq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq2.isPassword = false;
             this.aq2.Location = new System.Drawing.Point(86, 105);
@@ -3199,7 +3221,7 @@
             this.ap1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.ap1.BorderThickness = 2;
             this.ap1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.ap1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ap1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ap1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ap1.isPassword = false;
             this.ap1.Location = new System.Drawing.Point(262, 72);
@@ -3218,7 +3240,7 @@
             this.aq1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.aq1.BorderThickness = 2;
             this.aq1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.aq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aq1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.aq1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aq1.isPassword = false;
             this.aq1.Location = new System.Drawing.Point(86, 72);
@@ -3328,19 +3350,19 @@
             // 
             // sro
             // 
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.sro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.sro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.sro.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.sro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.sro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sro.DoubleBuffered = true;
             this.sro.EnableHeadersVisualStyles = false;
@@ -3349,6 +3371,7 @@
             this.sro.Location = new System.Drawing.Point(54, 439);
             this.sro.Name = "sro";
             this.sro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.sro.RowHeadersVisible = false;
             this.sro.Size = new System.Drawing.Size(494, 179);
             this.sro.TabIndex = 159;
             this.sro.UseWaitCursor = true;
@@ -3450,22 +3473,20 @@
             // 
             // wro
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.wro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.wro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.wro.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.wro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.wro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.wro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.wro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.wro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.wro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cv});
             this.wro.DoubleBuffered = true;
             this.wro.EnableHeadersVisualStyles = false;
             this.wro.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -3473,17 +3494,12 @@
             this.wro.Location = new System.Drawing.Point(14, 15);
             this.wro.Name = "wro";
             this.wro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.wro.RowHeadersVisible = false;
             this.wro.Size = new System.Drawing.Size(494, 206);
             this.wro.TabIndex = 25;
             this.wro.UseWaitCursor = true;
             this.wro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.wro_CellContentClick);
             this.wro.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.wro_CellValueChanged);
-            // 
-            // cv
-            // 
-            this.cv.HeaderText = "";
-            this.cv.Name = "cv";
-            this.cv.Width = 40;
             // 
             // panel11
             // 
@@ -3591,7 +3607,7 @@
             this.stqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.stqty.BorderThickness = 2;
             this.stqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.stqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.stqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.stqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.stqty.isPassword = false;
             this.stqty.Location = new System.Drawing.Point(272, 461);
@@ -3611,7 +3627,7 @@
             this.sup.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sup.BorderThickness = 2;
             this.sup.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.sup.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sup.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sup.isPassword = false;
             this.sup.Location = new System.Drawing.Point(271, 495);
@@ -3630,7 +3646,7 @@
             this.snqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.snqty.BorderThickness = 2;
             this.snqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.snqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.snqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.snqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.snqty.isPassword = false;
             this.snqty.Location = new System.Drawing.Point(271, 427);
@@ -3650,7 +3666,7 @@
             this.saqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.saqty.BorderThickness = 2;
             this.saqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.saqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.saqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.saqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.saqty.isPassword = false;
             this.saqty.Location = new System.Drawing.Point(271, 393);
@@ -3670,7 +3686,7 @@
             this.srpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.srpr.BorderThickness = 2;
             this.srpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.srpr.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.srpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.srpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.srpr.isPassword = false;
             this.srpr.Location = new System.Drawing.Point(271, 296);
@@ -3690,7 +3706,7 @@
             this.sbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sbrand.BorderThickness = 2;
             this.sbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.sbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sbrand.isPassword = false;
             this.sbrand.Location = new System.Drawing.Point(271, 262);
@@ -3709,7 +3725,7 @@
             this.sname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sname.BorderThickness = 2;
             this.sname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.sname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sname.isPassword = false;
             this.sname.Location = new System.Drawing.Point(271, 168);
@@ -3728,7 +3744,7 @@
             this.scode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.scode.BorderThickness = 2;
             this.scode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.scode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.scode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.scode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.scode.isPassword = false;
             this.scode.Location = new System.Drawing.Point(271, 100);
@@ -3816,22 +3832,26 @@
             // ssubcombo
             // 
             this.ssubcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.ssubcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ssubcombo.FormattingEnabled = true;
             this.ssubcombo.Location = new System.Drawing.Point(271, 231);
             this.ssubcombo.Name = "ssubcombo";
             this.ssubcombo.Size = new System.Drawing.Size(240, 20);
             this.ssubcombo.TabIndex = 13;
+            this.ssubcombo.Text = "Select Sub Category";
             this.ssubcombo.UseWaitCursor = true;
             this.ssubcombo.SelectedIndexChanged += new System.EventHandler(this.ssubcombo_SelectedIndexChanged);
             // 
             // scatcombo
             // 
             this.scatcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.scatcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.scatcombo.FormattingEnabled = true;
             this.scatcombo.Location = new System.Drawing.Point(271, 201);
             this.scatcombo.Name = "scatcombo";
             this.scatcombo.Size = new System.Drawing.Size(240, 20);
             this.scatcombo.TabIndex = 12;
+            this.scatcombo.Text = "Select Category";
             this.scatcombo.UseWaitCursor = true;
             this.scatcombo.SelectedIndexChanged += new System.EventHandler(this.scatcombo_SelectedIndexChanged);
             // 
@@ -4047,7 +4067,7 @@
             this.spid.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.spid.BorderThickness = 2;
             this.spid.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.spid.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.spid.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.spid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.spid.isPassword = false;
             this.spid.Location = new System.Drawing.Point(260, 345);
@@ -4101,7 +4121,7 @@
             this.sbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.sbcode.BorderThickness = 2;
             this.sbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.sbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.sbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.sbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sbcode.isPassword = false;
             this.sbcode.Location = new System.Drawing.Point(230, 51);
@@ -4129,11 +4149,13 @@
             // spname
             // 
             this.spname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.spname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.spname.FormattingEnabled = true;
             this.spname.Location = new System.Drawing.Point(230, 246);
             this.spname.Name = "spname";
             this.spname.Size = new System.Drawing.Size(240, 20);
             this.spname.TabIndex = 160;
+            this.spname.Text = "Select Supplier";
             this.spname.UseWaitCursor = true;
             this.spname.SelectedIndexChanged += new System.EventHandler(this.spname_SelectedIndexChanged);
             // 
@@ -4195,7 +4217,7 @@
             this.rbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rbrand.BorderThickness = 2;
             this.rbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbrand.isPassword = false;
             this.rbrand.Location = new System.Drawing.Point(267, 278);
@@ -4214,7 +4236,7 @@
             this.rname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rname.BorderThickness = 2;
             this.rname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rname.isPassword = false;
             this.rname.Location = new System.Drawing.Point(266, 180);
@@ -4233,7 +4255,7 @@
             this.rcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rcode.BorderThickness = 2;
             this.rcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rcode.isPassword = false;
             this.rcode.Location = new System.Drawing.Point(266, 110);
@@ -4273,22 +4295,26 @@
             // rsubcombo
             // 
             this.rsubcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.rsubcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rsubcombo.FormattingEnabled = true;
             this.rsubcombo.Location = new System.Drawing.Point(267, 249);
             this.rsubcombo.Name = "rsubcombo";
             this.rsubcombo.Size = new System.Drawing.Size(178, 20);
             this.rsubcombo.TabIndex = 13;
+            this.rsubcombo.Text = "Select Sub Category";
             this.rsubcombo.UseWaitCursor = true;
             this.rsubcombo.SelectedIndexChanged += new System.EventHandler(this.rsubcombo_SelectedIndexChanged);
             // 
             // rcombo
             // 
             this.rcombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.rcombo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rcombo.FormattingEnabled = true;
             this.rcombo.Location = new System.Drawing.Point(266, 219);
             this.rcombo.Name = "rcombo";
             this.rcombo.Size = new System.Drawing.Size(178, 20);
             this.rcombo.TabIndex = 12;
+            this.rcombo.Text = "Select Category";
             this.rcombo.UseWaitCursor = true;
             this.rcombo.SelectedIndexChanged += new System.EventHandler(this.rcombo_SelectedIndexChanged);
             // 
@@ -4418,7 +4444,7 @@
             this.rbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rbcode.BorderThickness = 2;
             this.rbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbcode.isPassword = false;
             this.rbcode.Location = new System.Drawing.Point(235, 53);
@@ -4446,6 +4472,7 @@
             // datei
             // 
             this.datei.CustomFormat = "yyyy-MM-dd";
+            this.datei.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.datei.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datei.Location = new System.Drawing.Point(236, 321);
             this.datei.Name = "datei";
@@ -4500,7 +4527,7 @@
             this.rqty.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rqty.BorderThickness = 2;
             this.rqty.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rqty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rqty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rqty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rqty.isPassword = false;
             this.rqty.Location = new System.Drawing.Point(236, 216);
@@ -4558,7 +4585,7 @@
             this.rrpr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rrpr.BorderThickness = 2;
             this.rrpr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rrpr.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rrpr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rrpr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rrpr.isPassword = false;
             this.rrpr.Location = new System.Drawing.Point(236, 250);
@@ -4602,7 +4629,7 @@
             this.rded.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.rded.BorderThickness = 2;
             this.rded.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.rded.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.rded.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.rded.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rded.isPassword = false;
             this.rded.Location = new System.Drawing.Point(236, 284);
@@ -4778,19 +4805,19 @@
             // 
             // ret
             // 
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ret.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ret.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.ret.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.ret.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ret.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ret.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ret.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.ret.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ret.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cd,
@@ -4806,6 +4833,7 @@
             this.ret.Location = new System.Drawing.Point(8, 22);
             this.ret.Name = "ret";
             this.ret.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.ret.RowHeadersVisible = false;
             this.ret.Size = new System.Drawing.Size(582, 289);
             this.ret.TabIndex = 24;
             this.ret.UseWaitCursor = true;
@@ -4953,8 +4981,6 @@
             this.bunifuCards11.BottomSahddow = false;
             this.bunifuCards11.color = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuCards11.Controls.Add(this.pictureBox10);
-            this.bunifuCards11.Controls.Add(this.all);
-            this.bunifuCards11.Controls.Add(this.bunifuCustomLabel136);
             this.bunifuCards11.Controls.Add(this.groupBox15);
             this.bunifuCards11.Controls.Add(this.groupBox12);
             this.bunifuCards11.Controls.Add(this.groupBox13);
@@ -4982,42 +5008,26 @@
             this.pictureBox10.UseWaitCursor = true;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // all
-            // 
-            this.all.BorderColorFocused = System.Drawing.Color.Blue;
-            this.all.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.all.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.all.BorderThickness = 2;
-            this.all.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.all.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.all.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.all.isPassword = false;
-            this.all.Location = new System.Drawing.Point(336, 625);
-            this.all.Margin = new System.Windows.Forms.Padding(4);
-            this.all.Name = "all";
-            this.all.Size = new System.Drawing.Size(192, 26);
-            this.all.TabIndex = 54;
-            this.all.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.all.UseWaitCursor = true;
-            this.all.OnValueChanged += new System.EventHandler(this.all_OnValueChanged);
-            // 
             // bunifuCustomLabel136
             // 
             this.bunifuCustomLabel136.AutoSize = true;
+            this.bunifuCustomLabel136.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel136.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel136.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel136.Location = new System.Drawing.Point(252, 629);
+            this.bunifuCustomLabel136.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bunifuCustomLabel136.Location = new System.Drawing.Point(126, 603);
             this.bunifuCustomLabel136.Name = "bunifuCustomLabel136";
-            this.bunifuCustomLabel136.Size = new System.Drawing.Size(46, 18);
+            this.bunifuCustomLabel136.Size = new System.Drawing.Size(120, 18);
             this.bunifuCustomLabel136.TabIndex = 53;
-            this.bunifuCustomLabel136.Text = "Total";
+            this.bunifuCustomLabel136.Text = "Total Valuation";
             this.bunifuCustomLabel136.UseWaitCursor = true;
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.pictureBox16);
+            this.groupBox15.Controls.Add(this.label5);
             this.groupBox15.Controls.Add(this.f5);
-            this.groupBox15.Controls.Add(this.bunifuCustomLabel137);
+            this.groupBox15.Controls.Add(this.bunifuCustomLabel41);
+            this.groupBox15.Controls.Add(this.pictureBox21);
+            this.groupBox15.Controls.Add(this.pictureBox16);
             this.groupBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.groupBox15.Location = new System.Drawing.Point(27, 512);
             this.groupBox15.Name = "groupBox15";
@@ -5038,42 +5048,13 @@
             this.pictureBox16.UseWaitCursor = true;
             this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
-            // f5
-            // 
-            this.f5.BorderColorFocused = System.Drawing.Color.Blue;
-            this.f5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f5.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.f5.BorderThickness = 2;
-            this.f5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.f5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.f5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f5.isPassword = false;
-            this.f5.Location = new System.Drawing.Point(174, 36);
-            this.f5.Margin = new System.Windows.Forms.Padding(4);
-            this.f5.Name = "f5";
-            this.f5.Size = new System.Drawing.Size(192, 26);
-            this.f5.TabIndex = 32;
-            this.f5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.f5.UseWaitCursor = true;
-            this.f5.OnValueChanged += new System.EventHandler(this.f5_OnValueChanged);
-            // 
-            // bunifuCustomLabel137
-            // 
-            this.bunifuCustomLabel137.AutoSize = true;
-            this.bunifuCustomLabel137.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel137.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel137.Location = new System.Drawing.Point(12, 38);
-            this.bunifuCustomLabel137.Name = "bunifuCustomLabel137";
-            this.bunifuCustomLabel137.Size = new System.Drawing.Size(153, 18);
-            this.bunifuCustomLabel137.TabIndex = 6;
-            this.bunifuCustomLabel137.Text = "Valuation of Goods";
-            this.bunifuCustomLabel137.UseWaitCursor = true;
-            // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.pictureBox15);
+            this.groupBox12.Controls.Add(this.label4);
             this.groupBox12.Controls.Add(this.f4);
-            this.groupBox12.Controls.Add(this.bunifuCustomLabel133);
+            this.groupBox12.Controls.Add(this.bunifuCustomLabel40);
+            this.groupBox12.Controls.Add(this.pictureBox20);
+            this.groupBox12.Controls.Add(this.pictureBox15);
             this.groupBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.groupBox12.Location = new System.Drawing.Point(27, 406);
             this.groupBox12.Name = "groupBox12";
@@ -5094,42 +5075,13 @@
             this.pictureBox15.UseWaitCursor = true;
             this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
-            // f4
-            // 
-            this.f4.BorderColorFocused = System.Drawing.Color.Blue;
-            this.f4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f4.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.f4.BorderThickness = 2;
-            this.f4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.f4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.f4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f4.isPassword = false;
-            this.f4.Location = new System.Drawing.Point(174, 36);
-            this.f4.Margin = new System.Windows.Forms.Padding(4);
-            this.f4.Name = "f4";
-            this.f4.Size = new System.Drawing.Size(192, 26);
-            this.f4.TabIndex = 32;
-            this.f4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.f4.UseWaitCursor = true;
-            this.f4.OnValueChanged += new System.EventHandler(this.f4_OnValueChanged);
-            // 
-            // bunifuCustomLabel133
-            // 
-            this.bunifuCustomLabel133.AutoSize = true;
-            this.bunifuCustomLabel133.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel133.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel133.Location = new System.Drawing.Point(12, 38);
-            this.bunifuCustomLabel133.Name = "bunifuCustomLabel133";
-            this.bunifuCustomLabel133.Size = new System.Drawing.Size(153, 18);
-            this.bunifuCustomLabel133.TabIndex = 6;
-            this.bunifuCustomLabel133.Text = "Valuation of Goods";
-            this.bunifuCustomLabel133.UseWaitCursor = true;
-            // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.pictureBox14);
+            this.groupBox13.Controls.Add(this.label3);
             this.groupBox13.Controls.Add(this.f3);
-            this.groupBox13.Controls.Add(this.bunifuCustomLabel134);
+            this.groupBox13.Controls.Add(this.bunifuCustomLabel39);
+            this.groupBox13.Controls.Add(this.pictureBox19);
+            this.groupBox13.Controls.Add(this.pictureBox14);
             this.groupBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.groupBox13.Location = new System.Drawing.Point(27, 299);
             this.groupBox13.Name = "groupBox13";
@@ -5150,42 +5102,13 @@
             this.pictureBox14.UseWaitCursor = true;
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // f3
-            // 
-            this.f3.BorderColorFocused = System.Drawing.Color.Blue;
-            this.f3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f3.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.f3.BorderThickness = 2;
-            this.f3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.f3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.f3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f3.isPassword = false;
-            this.f3.Location = new System.Drawing.Point(174, 36);
-            this.f3.Margin = new System.Windows.Forms.Padding(4);
-            this.f3.Name = "f3";
-            this.f3.Size = new System.Drawing.Size(192, 26);
-            this.f3.TabIndex = 32;
-            this.f3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.f3.UseWaitCursor = true;
-            this.f3.OnValueChanged += new System.EventHandler(this.f3_OnValueChanged);
-            // 
-            // bunifuCustomLabel134
-            // 
-            this.bunifuCustomLabel134.AutoSize = true;
-            this.bunifuCustomLabel134.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel134.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel134.Location = new System.Drawing.Point(12, 38);
-            this.bunifuCustomLabel134.Name = "bunifuCustomLabel134";
-            this.bunifuCustomLabel134.Size = new System.Drawing.Size(153, 18);
-            this.bunifuCustomLabel134.TabIndex = 6;
-            this.bunifuCustomLabel134.Text = "Valuation of Goods";
-            this.bunifuCustomLabel134.UseWaitCursor = true;
-            // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.pictureBox11);
+            this.groupBox11.Controls.Add(this.label2);
             this.groupBox11.Controls.Add(this.f2);
-            this.groupBox11.Controls.Add(this.bunifuCustomLabel132);
+            this.groupBox11.Controls.Add(this.bunifuCustomLabel38);
+            this.groupBox11.Controls.Add(this.pictureBox18);
+            this.groupBox11.Controls.Add(this.pictureBox11);
             this.groupBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.groupBox11.Location = new System.Drawing.Point(27, 190);
             this.groupBox11.Name = "groupBox11";
@@ -5206,42 +5129,13 @@
             this.pictureBox11.UseWaitCursor = true;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
-            // f2
-            // 
-            this.f2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.f2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.f2.BorderThickness = 2;
-            this.f2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.f2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.f2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f2.isPassword = false;
-            this.f2.Location = new System.Drawing.Point(174, 36);
-            this.f2.Margin = new System.Windows.Forms.Padding(4);
-            this.f2.Name = "f2";
-            this.f2.Size = new System.Drawing.Size(192, 26);
-            this.f2.TabIndex = 32;
-            this.f2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.f2.UseWaitCursor = true;
-            this.f2.OnValueChanged += new System.EventHandler(this.f2_OnValueChanged);
-            // 
-            // bunifuCustomLabel132
-            // 
-            this.bunifuCustomLabel132.AutoSize = true;
-            this.bunifuCustomLabel132.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel132.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel132.Location = new System.Drawing.Point(12, 39);
-            this.bunifuCustomLabel132.Name = "bunifuCustomLabel132";
-            this.bunifuCustomLabel132.Size = new System.Drawing.Size(153, 18);
-            this.bunifuCustomLabel132.TabIndex = 6;
-            this.bunifuCustomLabel132.Text = "Valuation of Goods";
-            this.bunifuCustomLabel132.UseWaitCursor = true;
-            // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.pictureBox2);
+            this.groupBox10.Controls.Add(this.label1);
             this.groupBox10.Controls.Add(this.f1);
             this.groupBox10.Controls.Add(this.bunifuCustomLabel135);
+            this.groupBox10.Controls.Add(this.pictureBox2);
+            this.groupBox10.Controls.Add(this.pictureBox17);
             this.groupBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.groupBox10.Location = new System.Drawing.Point(27, 82);
             this.groupBox10.Name = "groupBox10";
@@ -5250,6 +5144,43 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Floor 1";
             this.groupBox10.UseWaitCursor = true;
+            // 
+            // f1
+            // 
+            this.f1.AutoSize = true;
+            this.f1.BackColor = System.Drawing.Color.White;
+            this.f1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f1.ForeColor = System.Drawing.Color.Maroon;
+            this.f1.Location = new System.Drawing.Point(202, 49);
+            this.f1.Name = "f1";
+            this.f1.Size = new System.Drawing.Size(32, 22);
+            this.f1.TabIndex = 35;
+            this.f1.Text = "35";
+            this.f1.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel135
+            // 
+            this.bunifuCustomLabel135.AutoSize = true;
+            this.bunifuCustomLabel135.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel135.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel135.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel135.Location = new System.Drawing.Point(56, 32);
+            this.bunifuCustomLabel135.Name = "bunifuCustomLabel135";
+            this.bunifuCustomLabel135.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel135.TabIndex = 6;
+            this.bunifuCustomLabel135.Text = "Valuation ";
+            this.bunifuCustomLabel135.UseWaitCursor = true;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.Color.White;
+            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox17.Location = new System.Drawing.Point(41, 19);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox17.TabIndex = 34;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -5261,37 +5192,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.UseWaitCursor = true;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // f1
-            // 
-            this.f1.BorderColorFocused = System.Drawing.Color.Blue;
-            this.f1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f1.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.f1.BorderThickness = 2;
-            this.f1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.f1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.f1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.f1.isPassword = false;
-            this.f1.Location = new System.Drawing.Point(174, 36);
-            this.f1.Margin = new System.Windows.Forms.Padding(4);
-            this.f1.Name = "f1";
-            this.f1.Size = new System.Drawing.Size(192, 26);
-            this.f1.TabIndex = 32;
-            this.f1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.f1.UseWaitCursor = true;
-            this.f1.OnValueChanged += new System.EventHandler(this.f1_OnValueChanged);
-            // 
-            // bunifuCustomLabel135
-            // 
-            this.bunifuCustomLabel135.AutoSize = true;
-            this.bunifuCustomLabel135.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel135.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
-            this.bunifuCustomLabel135.Location = new System.Drawing.Point(12, 38);
-            this.bunifuCustomLabel135.Name = "bunifuCustomLabel135";
-            this.bunifuCustomLabel135.Size = new System.Drawing.Size(153, 18);
-            this.bunifuCustomLabel135.TabIndex = 6;
-            this.bunifuCustomLabel135.Text = "Valuation of Goods";
-            this.bunifuCustomLabel135.UseWaitCursor = true;
             // 
             // bunifuCustomLabel141
             // 
@@ -5309,6 +5209,10 @@
             // panel19
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel19.Controls.Add(this.all);
+            this.panel19.Controls.Add(this.label6);
+            this.panel19.Controls.Add(this.bunifuCustomLabel136);
+            this.panel19.Controls.Add(this.pictureBox22);
             this.panel19.Controls.Add(this.hidetb);
             this.panel19.Controls.Add(this.bunifuThinButton227);
             this.panel19.Location = new System.Drawing.Point(10, 20);
@@ -5319,28 +5223,28 @@
             // 
             // hidetb
             // 
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.hidetb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hidetb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.hidetb.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.hidetb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hidetb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.hidetb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.hidetb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.hidetb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.hidetb.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.hidetb.DefaultCellStyle = dataGridViewCellStyle14;
             this.hidetb.DoubleBuffered = true;
             this.hidetb.EnableHeadersVisualStyles = false;
             this.hidetb.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -5519,7 +5423,7 @@
             this.gbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gbcode.BorderThickness = 2;
             this.gbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbcode.isPassword = false;
             this.gbcode.Location = new System.Drawing.Point(143, 44);
@@ -5551,7 +5455,7 @@
             this.gcat.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gcat.BorderThickness = 2;
             this.gcat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gcat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gcat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gcat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gcat.isPassword = false;
             this.gcat.Location = new System.Drawing.Point(141, 74);
@@ -5570,7 +5474,7 @@
             this.gscat.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gscat.BorderThickness = 2;
             this.gscat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gscat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gscat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gscat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gscat.isPassword = false;
             this.gscat.Location = new System.Drawing.Point(141, 103);
@@ -5589,7 +5493,7 @@
             this.gcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gcode.BorderThickness = 2;
             this.gcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gcode.isPassword = false;
             this.gcode.Location = new System.Drawing.Point(143, 17);
@@ -5621,7 +5525,7 @@
             this.gname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gname.BorderThickness = 2;
             this.gname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gname.isPassword = false;
             this.gname.Location = new System.Drawing.Point(143, 161);
@@ -5652,7 +5556,7 @@
             this.gbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gbrand.BorderThickness = 2;
             this.gbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbrand.isPassword = false;
             this.gbrand.Location = new System.Drawing.Point(143, 133);
@@ -5702,10 +5606,10 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.gby);
             this.groupBox4.Controls.Add(this.pictureBox13);
             this.groupBox4.Controls.Add(this.gsr);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel22);
-            this.groupBox4.Controls.Add(this.gby);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel99);
             this.groupBox4.Controls.Add(this.gamnt);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel98);
@@ -5719,6 +5623,18 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Stock";
             this.groupBox4.UseWaitCursor = true;
+            // 
+            // gby
+            // 
+            this.gby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.gby.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            this.gby.FormattingEnabled = true;
+            this.gby.Location = new System.Drawing.Point(145, 105);
+            this.gby.Name = "gby";
+            this.gby.Size = new System.Drawing.Size(218, 20);
+            this.gby.TabIndex = 169;
+            this.gby.Text = "Select Employee";
+            this.gby.UseWaitCursor = true;
             // 
             // pictureBox13
             // 
@@ -5737,7 +5653,7 @@
             this.gsr.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gsr.BorderThickness = 2;
             this.gsr.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gsr.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gsr.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gsr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gsr.isPassword = false;
             this.gsr.Location = new System.Drawing.Point(145, 43);
@@ -5761,24 +5677,6 @@
             this.bunifuCustomLabel22.Text = "Transfer amount";
             this.bunifuCustomLabel22.UseWaitCursor = true;
             // 
-            // gby
-            // 
-            this.gby.BorderColorFocused = System.Drawing.Color.Blue;
-            this.gby.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gby.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.gby.BorderThickness = 2;
-            this.gby.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gby.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.gby.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gby.isPassword = false;
-            this.gby.Location = new System.Drawing.Point(145, 102);
-            this.gby.Margin = new System.Windows.Forms.Padding(4);
-            this.gby.Name = "gby";
-            this.gby.Size = new System.Drawing.Size(218, 26);
-            this.gby.TabIndex = 51;
-            this.gby.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gby.UseWaitCursor = true;
-            // 
             // bunifuCustomLabel99
             // 
             this.bunifuCustomLabel99.AutoSize = true;
@@ -5798,7 +5696,7 @@
             this.gamnt.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gamnt.BorderThickness = 2;
             this.gamnt.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gamnt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gamnt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gamnt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gamnt.isPassword = false;
             this.gamnt.Location = new System.Drawing.Point(145, 72);
@@ -5829,7 +5727,7 @@
             this.gwh.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.gwh.BorderThickness = 2;
             this.gwh.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.gwh.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.gwh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.gwh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gwh.isPassword = false;
             this.gwh.Location = new System.Drawing.Point(145, 16);
@@ -5941,7 +5839,7 @@
             this.tsc.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tsc.BorderThickness = 2;
             this.tsc.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tsc.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tsc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tsc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tsc.isPassword = false;
             this.tsc.Location = new System.Drawing.Point(260, 175);
@@ -5960,7 +5858,7 @@
             this.tname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tname.BorderThickness = 2;
             this.tname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tname.isPassword = false;
             this.tname.Location = new System.Drawing.Point(260, 146);
@@ -5978,7 +5876,7 @@
             this.tcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tcode.BorderThickness = 2;
             this.tcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tcode.isPassword = false;
             this.tcode.Location = new System.Drawing.Point(260, 85);
@@ -6134,7 +6032,7 @@
             this.tbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tbcode.BorderThickness = 2;
             this.tbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tbcode.isPassword = false;
             this.tbcode.Location = new System.Drawing.Point(244, 70);
@@ -6232,7 +6130,7 @@
             this.tss.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tss.BorderThickness = 2;
             this.tss.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tss.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tss.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tss.isPassword = false;
             this.tss.Location = new System.Drawing.Point(237, 58);
@@ -6251,7 +6149,7 @@
             this.tmq.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tmq.BorderThickness = 2;
             this.tmq.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tmq.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tmq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tmq.ForeColor = System.Drawing.Color.Red;
             this.tmq.isPassword = false;
             this.tmq.Location = new System.Drawing.Point(237, 155);
@@ -6270,7 +6168,7 @@
             this.tws.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tws.BorderThickness = 2;
             this.tws.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tws.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tws.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tws.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tws.isPassword = false;
             this.tws.Location = new System.Drawing.Point(237, 91);
@@ -6289,7 +6187,7 @@
             this.tt.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.tt.BorderThickness = 2;
             this.tt.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.tt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.tt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.tt.isPassword = false;
             this.tt.Location = new System.Drawing.Point(237, 122);
@@ -6390,7 +6288,7 @@
             this.dreas.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dreas.BorderThickness = 2;
             this.dreas.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dreas.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dreas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dreas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dreas.isPassword = false;
             this.dreas.Location = new System.Drawing.Point(281, 393);
@@ -6408,7 +6306,7 @@
             this.dq.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dq.BorderThickness = 2;
             this.dq.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dq.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dq.isPassword = false;
             this.dq.Location = new System.Drawing.Point(281, 366);
@@ -6427,7 +6325,7 @@
             this.dsid.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dsid.BorderThickness = 2;
             this.dsid.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dsid.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dsid.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dsid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dsid.isPassword = false;
             this.dsid.Location = new System.Drawing.Point(281, 335);
@@ -6446,7 +6344,7 @@
             this.drp.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.drp.BorderThickness = 2;
             this.drp.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.drp.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.drp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.drp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.drp.isPassword = false;
             this.drp.Location = new System.Drawing.Point(281, 275);
@@ -6465,7 +6363,7 @@
             this.dbrand.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dbrand.BorderThickness = 2;
             this.dbrand.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dbrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dbrand.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dbrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbrand.isPassword = false;
             this.dbrand.Location = new System.Drawing.Point(281, 248);
@@ -6484,7 +6382,7 @@
             this.dname.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dname.BorderThickness = 2;
             this.dname.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dname.isPassword = false;
             this.dname.Location = new System.Drawing.Point(282, 153);
@@ -6503,7 +6401,7 @@
             this.dcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dcode.BorderThickness = 2;
             this.dcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dcode.isPassword = false;
             this.dcode.Location = new System.Drawing.Point(281, 96);
@@ -6704,7 +6602,7 @@
             this.dbcode.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dbcode.BorderThickness = 2;
             this.dbcode.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dbcode.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dbcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dbcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbcode.isPassword = false;
             this.dbcode.Location = new System.Drawing.Point(234, 48);
@@ -6732,12 +6630,13 @@
             // dsname
             // 
             this.dsname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.dsname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsname.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dsname.FormattingEnabled = true;
             this.dsname.Location = new System.Drawing.Point(234, 226);
             this.dsname.Name = "dsname";
-            this.dsname.Size = new System.Drawing.Size(210, 26);
+            this.dsname.Size = new System.Drawing.Size(210, 20);
             this.dsname.TabIndex = 164;
+            this.dsname.Text = "Select Supplier";
             this.dsname.UseWaitCursor = true;
             this.dsname.SelectedIndexChanged += new System.EventHandler(this.dsname_SelectedIndexChanged);
             // 
@@ -6748,7 +6647,7 @@
             this.dsub.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dsub.BorderThickness = 2;
             this.dsub.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dsub.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dsub.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dsub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dsub.isPassword = false;
             this.dsub.Location = new System.Drawing.Point(235, 137);
@@ -6767,7 +6666,7 @@
             this.dcat.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.dcat.BorderThickness = 2;
             this.dcat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.dcat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dcat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.dcat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dcat.isPassword = false;
             this.dcat.Location = new System.Drawing.Point(235, 107);
@@ -6782,6 +6681,7 @@
             // ddate
             // 
             this.ddate.CustomFormat = "yyyy-MM-dd";
+            this.ddate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
             this.ddate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ddate.Location = new System.Drawing.Point(234, 344);
             this.ddate.Name = "ddate";
@@ -6852,6 +6752,256 @@
             this.panel20.Size = new System.Drawing.Size(613, 625);
             this.panel20.TabIndex = 161;
             this.panel20.UseWaitCursor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(162, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 22);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Rs.";
+            this.label1.UseWaitCursor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(162, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 22);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Rs.";
+            this.label2.UseWaitCursor = true;
+            // 
+            // f2
+            // 
+            this.f2.AutoSize = true;
+            this.f2.BackColor = System.Drawing.Color.White;
+            this.f2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f2.ForeColor = System.Drawing.Color.Maroon;
+            this.f2.Location = new System.Drawing.Point(202, 55);
+            this.f2.Name = "f2";
+            this.f2.Size = new System.Drawing.Size(32, 22);
+            this.f2.TabIndex = 39;
+            this.f2.Text = "35";
+            this.f2.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel38
+            // 
+            this.bunifuCustomLabel38.AutoSize = true;
+            this.bunifuCustomLabel38.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel38.Location = new System.Drawing.Point(56, 38);
+            this.bunifuCustomLabel38.Name = "bunifuCustomLabel38";
+            this.bunifuCustomLabel38.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel38.TabIndex = 37;
+            this.bunifuCustomLabel38.Text = "Valuation ";
+            this.bunifuCustomLabel38.UseWaitCursor = true;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.White;
+            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox18.Location = new System.Drawing.Point(41, 25);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox18.TabIndex = 38;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.UseWaitCursor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
+            this.label3.Location = new System.Drawing.Point(162, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 22);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Rs.";
+            this.label3.UseWaitCursor = true;
+            // 
+            // f3
+            // 
+            this.f3.AutoSize = true;
+            this.f3.BackColor = System.Drawing.Color.White;
+            this.f3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f3.ForeColor = System.Drawing.Color.Maroon;
+            this.f3.Location = new System.Drawing.Point(202, 47);
+            this.f3.Name = "f3";
+            this.f3.Size = new System.Drawing.Size(32, 22);
+            this.f3.TabIndex = 39;
+            this.f3.Text = "35";
+            this.f3.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel39
+            // 
+            this.bunifuCustomLabel39.AutoSize = true;
+            this.bunifuCustomLabel39.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel39.Location = new System.Drawing.Point(56, 30);
+            this.bunifuCustomLabel39.Name = "bunifuCustomLabel39";
+            this.bunifuCustomLabel39.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel39.TabIndex = 37;
+            this.bunifuCustomLabel39.Text = "Valuation ";
+            this.bunifuCustomLabel39.UseWaitCursor = true;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackColor = System.Drawing.Color.White;
+            this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox19.Location = new System.Drawing.Point(41, 17);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox19.TabIndex = 38;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.UseWaitCursor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(162, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 22);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Rs.";
+            this.label4.UseWaitCursor = true;
+            // 
+            // f4
+            // 
+            this.f4.AutoSize = true;
+            this.f4.BackColor = System.Drawing.Color.White;
+            this.f4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f4.ForeColor = System.Drawing.Color.Maroon;
+            this.f4.Location = new System.Drawing.Point(202, 49);
+            this.f4.Name = "f4";
+            this.f4.Size = new System.Drawing.Size(32, 22);
+            this.f4.TabIndex = 39;
+            this.f4.Text = "35";
+            this.f4.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel40
+            // 
+            this.bunifuCustomLabel40.AutoSize = true;
+            this.bunifuCustomLabel40.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel40.Location = new System.Drawing.Point(56, 32);
+            this.bunifuCustomLabel40.Name = "bunifuCustomLabel40";
+            this.bunifuCustomLabel40.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel40.TabIndex = 37;
+            this.bunifuCustomLabel40.Text = "Valuation ";
+            this.bunifuCustomLabel40.UseWaitCursor = true;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.Color.White;
+            this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox20.Location = new System.Drawing.Point(41, 19);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox20.TabIndex = 38;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.UseWaitCursor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(162, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 22);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Rs.";
+            this.label5.UseWaitCursor = true;
+            // 
+            // f5
+            // 
+            this.f5.AutoSize = true;
+            this.f5.BackColor = System.Drawing.Color.White;
+            this.f5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f5.ForeColor = System.Drawing.Color.Maroon;
+            this.f5.Location = new System.Drawing.Point(202, 49);
+            this.f5.Name = "f5";
+            this.f5.Size = new System.Drawing.Size(32, 22);
+            this.f5.TabIndex = 43;
+            this.f5.Text = "35";
+            this.f5.UseWaitCursor = true;
+            // 
+            // bunifuCustomLabel41
+            // 
+            this.bunifuCustomLabel41.AutoSize = true;
+            this.bunifuCustomLabel41.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
+            this.bunifuCustomLabel41.Location = new System.Drawing.Point(56, 32);
+            this.bunifuCustomLabel41.Name = "bunifuCustomLabel41";
+            this.bunifuCustomLabel41.Size = new System.Drawing.Size(82, 18);
+            this.bunifuCustomLabel41.TabIndex = 41;
+            this.bunifuCustomLabel41.Text = "Valuation ";
+            this.bunifuCustomLabel41.UseWaitCursor = true;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.Color.White;
+            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox21.Location = new System.Drawing.Point(41, 19);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(306, 59);
+            this.pictureBox21.TabIndex = 42;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.UseWaitCursor = true;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.Color.White;
+            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox22.Location = new System.Drawing.Point(111, 588);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(366, 43);
+            this.pictureBox22.TabIndex = 54;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.UseWaitCursor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Purple;
+            this.label6.Location = new System.Drawing.Point(287, 599);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 22);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "Rs.";
+            this.label6.UseWaitCursor = true;
+            // 
+            // all
+            // 
+            this.all.AutoSize = true;
+            this.all.BackColor = System.Drawing.Color.White;
+            this.all.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all.ForeColor = System.Drawing.Color.Purple;
+            this.all.Location = new System.Drawing.Point(327, 600);
+            this.all.Name = "all";
+            this.all.Size = new System.Drawing.Size(32, 22);
+            this.all.TabIndex = 45;
+            this.all.Text = "35";
+            this.all.UseWaitCursor = true;
             // 
             // main
             // 
@@ -6978,8 +7128,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hidetb)).EndInit();
             this.bunifuCards10.ResumeLayout(false);
             this.bunifuCards10.PerformLayout();
@@ -7011,6 +7163,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7150,7 +7307,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel109;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel110;
         private System.Windows.Forms.GroupBox groupBox4;
-        private Bunifu.Framework.UI.BunifuMetroTextbox gby;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel99;
         private Bunifu.Framework.UI.BunifuMetroTextbox gamnt;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel98;
@@ -7224,22 +7380,12 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton29;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton211;
         private Bunifu.Framework.UI.BunifuCards bunifuCards11;
-        private Bunifu.Framework.UI.BunifuMetroTextbox all;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel136;
         private System.Windows.Forms.GroupBox groupBox15;
-        private Bunifu.Framework.UI.BunifuMetroTextbox f5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel137;
         private System.Windows.Forms.GroupBox groupBox12;
-        private Bunifu.Framework.UI.BunifuMetroTextbox f4;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel133;
         private System.Windows.Forms.GroupBox groupBox13;
-        private Bunifu.Framework.UI.BunifuMetroTextbox f3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel134;
         private System.Windows.Forms.GroupBox groupBox11;
-        private Bunifu.Framework.UI.BunifuMetroTextbox f2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel132;
         private System.Windows.Forms.GroupBox groupBox10;
-        private Bunifu.Framework.UI.BunifuMetroTextbox f1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel135;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel141;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton214;
@@ -7388,7 +7534,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel112;
         private Bunifu.Framework.UI.BunifuMetroTextbox gsr;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel22;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn cv;
         private Bunifu.Framework.UI.BunifuMetroTextbox gcat;
         private Bunifu.Framework.UI.BunifuMetroTextbox gscat;
         private Bunifu.Framework.UI.BunifuMetroTextbox dsub;
@@ -7432,6 +7577,29 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox gby;
+        private System.Windows.Forms.Label f1;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label f5;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel41;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label f4;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel40;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label f3;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel39;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label f2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel38;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Label all;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox22;
     }
 }
 
