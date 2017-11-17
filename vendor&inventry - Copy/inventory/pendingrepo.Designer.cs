@@ -1,6 +1,6 @@
 ﻿namespace inventory
 {
-    partial class bankrep
+    partial class pendingrepo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.stock21 = new inventory.stock2();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.bankstat1 = new inventory.bankstat();
+            this.pendingreppo1 = new inventory.pendingreppo();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -42,27 +41,27 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.bankstat1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(839, 741);
+            this.crystalReportViewer1.ReportSource = this.pendingreppo1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(858, 741);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // bankrep
+            // pendingrepo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 741);
+            this.ClientSize = new System.Drawing.Size(858, 741);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "bankrep";
+            this.Name = "pendingrepo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bank Details Report";
+            this.Text = "Pending Installments";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private stock2 stock21;
+
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private bankstat bankstat1;
+        private pendingreppo pendingreppo1;
     }
 }

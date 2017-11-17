@@ -48,18 +48,7 @@ namespace inventory
                             break;
                     }
                 }
-                //if (userType == "admin")
-                //{
-
-                //    a = 0;
-
-                //}
-                //else if (userType == "cashier")
-                //{
-                //    a = 2;
-                //}
-                //else if (userType == "doperator")
-                //{ a = 1 ; }
+               
 
                 catch (Exception o)
                 {
@@ -81,10 +70,7 @@ namespace inventory
             {
                 return a;
             }
-            //else if (userType == "doperator")
-            //{
-            //    return a;
-            //}
+           
 
             else { return a; }
 
@@ -100,10 +86,7 @@ namespace inventory
             {
                 return "cashier";
             }
-            //else if(userType == "doperator")
-            //{ 
-            //        return "doperator";
-            //}
+          
             else
             return "doperator";
         }

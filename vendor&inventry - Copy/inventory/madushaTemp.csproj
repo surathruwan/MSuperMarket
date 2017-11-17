@@ -140,6 +140,18 @@
     <Compile Include="debtors.designer.cs">
       <DependentUpon>debtors.cs</DependentUpon>
     </Compile>
+    <Compile Include="defreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defreport.Designer.cs">
+      <DependentUpon>defreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defreport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>defreport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="deleteform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +225,25 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
+<<<<<<< HEAD
+    <Compile Include="ilevelrep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilevelrep.Designer.cs">
+      <DependentUpon>ilevelrep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilevrep1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ilevrep1.rpt</DependentUpon>
+=======
+    <Compile Include="instpenrepo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>instpenrepo.rpt</DependentUpon>
+>>>>>>> d0fecd1b20391633990e6ae4813a793a52ac8f10
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LeaveForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +255,18 @@
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pendingrepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pendingrepo.Designer.cs">
+      <DependentUpon>pendingrepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pendingreppo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pendingreppo.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="POS.cs">
       <SubType>Form</SubType>
@@ -425,6 +468,14 @@
     <EmbeddedResource Include="debtors.resx">
       <DependentUpon>debtors.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="defreport.resx">
+      <DependentUpon>defreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defreport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>defreport1.cs</LastGenOutput>
+=======
     <EmbeddedResource Include=".rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>.cs</LastGenOutput>
@@ -435,6 +486,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="driverReport.resx">
       <DependentUpon>driverReport.cs</DependentUpon>
+>>>>>>> d0fecd1b20391633990e6ae4813a793a52ac8f10
     </EmbeddedResource>
     <EmbeddedResource Include="EditAttendance.resx">
       <DependentUpon>EditAttendance.cs</DependentUpon>
@@ -457,6 +509,19 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="ilevelrep.resx">
+      <DependentUpon>ilevelrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilevrep1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ilevrep1.cs</LastGenOutput>
+=======
+    <EmbeddedResource Include="instpenrepo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>instpenrepo.cs</LastGenOutput>
+>>>>>>> d0fecd1b20391633990e6ae4813a793a52ac8f10
+    </EmbeddedResource>
     <EmbeddedResource Include="LeaveForm.resx">
       <DependentUpon>LeaveForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -465,6 +530,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pendingrepo.resx">
+      <DependentUpon>pendingrepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pendingreppo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pendingreppo.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="POS.resx">
       <DependentUpon>POS.cs</DependentUpon>
@@ -599,7 +671,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

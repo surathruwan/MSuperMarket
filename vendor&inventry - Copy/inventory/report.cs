@@ -380,5 +380,17 @@ namespace inventory
 
             }
         }
+
+        private void bunifuThinButton28_Click(object sender, EventArgs e)
+        {
+            defreport d = new defreport();
+            d.Show();
+        }
+
+        private void bunifuThinButton29_Click(object sender, EventArgs e)
+        {
+            ilevelrep l = new ilevelrep();
+            l.Show();
+        }
     }
 }
