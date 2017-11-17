@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdviceOfDispatch));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdviceOfDispatch));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateaod = new System.Windows.Forms.DateTimePicker();
+            this.btndatese = new Bunifu.Framework.UI.BunifuImageButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnremoveaod = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
@@ -44,26 +47,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tblsuspend = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnnicsearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtnicaod = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label35 = new System.Windows.Forms.Label();
+            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.minimizeButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btndatese = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnremoveaod = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnnicsearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label14 = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btndatese)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblsuspend)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
@@ -71,8 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btndatese)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -119,6 +119,20 @@
             this.dateaod.Size = new System.Drawing.Size(110, 20);
             this.dateaod.TabIndex = 163;
             // 
+            // btndatese
+            // 
+            this.btndatese.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btndatese.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.btndatese.ImageActive = null;
+            this.btndatese.Location = new System.Drawing.Point(509, 11);
+            this.btndatese.Name = "btndatese";
+            this.btndatese.Size = new System.Drawing.Size(30, 26);
+            this.btndatese.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btndatese.TabIndex = 162;
+            this.btndatese.TabStop = false;
+            this.btndatese.Zoom = 10;
+            this.btndatese.Click += new System.EventHandler(this.btndatese_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -129,6 +143,58 @@
             this.label3.Size = new System.Drawing.Size(39, 18);
             this.label3.TabIndex = 160;
             this.label3.Text = "Date";
+            // 
+            // btnremoveaod
+            // 
+            this.btnremoveaod.ActiveBorderThickness = 1;
+            this.btnremoveaod.ActiveCornerRadius = 20;
+            this.btnremoveaod.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnremoveaod.ActiveForecolor = System.Drawing.Color.White;
+            this.btnremoveaod.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnremoveaod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnremoveaod.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnremoveaod.BackgroundImage")));
+            this.btnremoveaod.ButtonText = "Remove From AOD";
+            this.btnremoveaod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnremoveaod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnremoveaod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnremoveaod.IdleBorderThickness = 1;
+            this.btnremoveaod.IdleCornerRadius = 20;
+            this.btnremoveaod.IdleFillColor = System.Drawing.Color.White;
+            this.btnremoveaod.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnremoveaod.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnremoveaod.Location = new System.Drawing.Point(77, 341);
+            this.btnremoveaod.Margin = new System.Windows.Forms.Padding(5);
+            this.btnremoveaod.Name = "btnremoveaod";
+            this.btnremoveaod.Size = new System.Drawing.Size(167, 41);
+            this.btnremoveaod.TabIndex = 159;
+            this.btnremoveaod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnremoveaod.Click += new System.EventHandler(this.btnremoveaod_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Generate AOD List";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(268, 341);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(167, 41);
+            this.bunifuThinButton21.TabIndex = 158;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // groupBox1
             // 
@@ -164,9 +230,8 @@
             this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lbl1.Location = new System.Drawing.Point(180, 27);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(50, 18);
+            this.lbl1.Size = new System.Drawing.Size(0, 18);
             this.lbl1.TabIndex = 157;
-            this.lbl1.Text = "Status";
             // 
             // lbl2
             // 
@@ -175,9 +240,8 @@
             this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lbl2.Location = new System.Drawing.Point(180, 50);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(50, 18);
+            this.lbl2.Size = new System.Drawing.Size(0, 18);
             this.lbl2.TabIndex = 156;
-            this.lbl2.Text = "Status";
             // 
             // lbl3
             // 
@@ -186,9 +250,8 @@
             this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(21)))), ((int)(((byte)(65)))));
             this.lbl3.Location = new System.Drawing.Point(180, 73);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(50, 18);
+            this.lbl3.Size = new System.Drawing.Size(0, 18);
             this.lbl3.TabIndex = 155;
-            this.lbl3.Text = "Status";
             // 
             // label5
             // 
@@ -249,6 +312,20 @@
             this.tblsuspend.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblsuspend_CellContentClick);
             this.tblsuspend.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblsuspend_CellContentDoubleClick);
             // 
+            // btnnicsearch
+            // 
+            this.btnnicsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnnicsearch.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
+            this.btnnicsearch.ImageActive = null;
+            this.btnnicsearch.Location = new System.Drawing.Point(263, 11);
+            this.btnnicsearch.Name = "btnnicsearch";
+            this.btnnicsearch.Size = new System.Drawing.Size(30, 26);
+            this.btnnicsearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnnicsearch.TabIndex = 154;
+            this.btnnicsearch.TabStop = false;
+            this.btnnicsearch.Zoom = 10;
+            this.btnnicsearch.Click += new System.EventHandler(this.btnnicsearch_Click);
+            // 
             // txtnicaod
             // 
             this.txtnicaod.BorderColorFocused = System.Drawing.Color.Blue;
@@ -277,6 +354,32 @@
             this.label35.TabIndex = 106;
             this.label35.Text = "NIC";
             // 
+            // bunifuThinButton29
+            // 
+            this.bunifuThinButton29.ActiveBorderThickness = 1;
+            this.bunifuThinButton29.ActiveCornerRadius = 20;
+            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
+            this.bunifuThinButton29.ButtonText = "Refresh";
+            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.bunifuThinButton29.IdleBorderThickness = 1;
+            this.bunifuThinButton29.IdleCornerRadius = 20;
+            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.bunifuThinButton29.Location = new System.Drawing.Point(578, 2);
+            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton29.Name = "bunifuThinButton29";
+            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
+            this.bunifuThinButton29.TabIndex = 105;
+            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 5;
@@ -297,18 +400,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(898, 42);
             this.panel2.TabIndex = 2;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.label14.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label14.Location = new System.Drawing.Point(41, 10);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(133, 17);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Advice Of Dispatch";
             // 
             // pictureBox2
             // 
@@ -391,111 +482,17 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // btndatese
+            // label14
             // 
-            this.btndatese.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btndatese.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.btndatese.ImageActive = null;
-            this.btndatese.Location = new System.Drawing.Point(509, 11);
-            this.btndatese.Name = "btndatese";
-            this.btndatese.Size = new System.Drawing.Size(30, 26);
-            this.btndatese.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btndatese.TabIndex = 162;
-            this.btndatese.TabStop = false;
-            this.btndatese.Zoom = 10;
-            this.btndatese.Click += new System.EventHandler(this.btndatese_Click);
-            // 
-            // btnremoveaod
-            // 
-            this.btnremoveaod.ActiveBorderThickness = 1;
-            this.btnremoveaod.ActiveCornerRadius = 20;
-            this.btnremoveaod.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnremoveaod.ActiveForecolor = System.Drawing.Color.White;
-            this.btnremoveaod.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnremoveaod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnremoveaod.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnremoveaod.BackgroundImage")));
-            this.btnremoveaod.ButtonText = "Remove From AOD";
-            this.btnremoveaod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnremoveaod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremoveaod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnremoveaod.IdleBorderThickness = 1;
-            this.btnremoveaod.IdleCornerRadius = 20;
-            this.btnremoveaod.IdleFillColor = System.Drawing.Color.White;
-            this.btnremoveaod.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnremoveaod.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnremoveaod.Location = new System.Drawing.Point(77, 341);
-            this.btnremoveaod.Margin = new System.Windows.Forms.Padding(5);
-            this.btnremoveaod.Name = "btnremoveaod";
-            this.btnremoveaod.Size = new System.Drawing.Size(167, 41);
-            this.btnremoveaod.TabIndex = 159;
-            this.btnremoveaod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnremoveaod.Click += new System.EventHandler(this.btnremoveaod_Click);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Generate AOD List";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(268, 341);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(167, 41);
-            this.bunifuThinButton21.TabIndex = 158;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // btnnicsearch
-            // 
-            this.btnnicsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnnicsearch.Image = global::inventory.Properties.Resources.Ampeross_Qetto_2_Search;
-            this.btnnicsearch.ImageActive = null;
-            this.btnnicsearch.Location = new System.Drawing.Point(263, 11);
-            this.btnnicsearch.Name = "btnnicsearch";
-            this.btnnicsearch.Size = new System.Drawing.Size(30, 26);
-            this.btnnicsearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnnicsearch.TabIndex = 154;
-            this.btnnicsearch.TabStop = false;
-            this.btnnicsearch.Zoom = 10;
-            this.btnnicsearch.Click += new System.EventHandler(this.btnnicsearch_Click);
-            // 
-            // bunifuThinButton29
-            // 
-            this.bunifuThinButton29.ActiveBorderThickness = 1;
-            this.bunifuThinButton29.ActiveCornerRadius = 20;
-            this.bunifuThinButton29.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton29.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
-            this.bunifuThinButton29.ButtonText = "Refresh";
-            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton29.IdleBorderThickness = 1;
-            this.bunifuThinButton29.IdleCornerRadius = 20;
-            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.bunifuThinButton29.Location = new System.Drawing.Point(578, 2);
-            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton29.Name = "bunifuThinButton29";
-            this.bunifuThinButton29.Size = new System.Drawing.Size(116, 41);
-            this.bunifuThinButton29.TabIndex = 105;
-            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton29.Click += new System.EventHandler(this.bunifuThinButton29_Click);
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.label14.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label14.Location = new System.Drawing.Point(41, 10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(133, 17);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Advice Of Dispatch";
             // 
             // AdviceOfDispatch
             // 
@@ -512,9 +509,11 @@
             this.bunifuCards1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btndatese)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblsuspend)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -523,8 +522,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btndatese)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnnicsearch)).EndInit();
             this.ResumeLayout(false);
 
         }

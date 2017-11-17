@@ -18,13 +18,9 @@ namespace vendor_management
 {
     public partial class Vendor : Form
     {
-        
-
         //SSlmode =none because it gave an error in connecting
         string constring = "Sslmode=none;datasource=localhost;port=3306;username=root;password=  ";
         
-
-
         public Vendor()
         {
             InitializeComponent();
@@ -32,8 +28,7 @@ namespace vendor_management
             int v = Session.getUser();
             if (v == 0)
             {
-                
-
+               
             }
             else if (v == 1)
             {
@@ -150,8 +145,7 @@ namespace vendor_management
 
                 conDatabase.Open();
                 myReader = cmdDatabase.ExecuteReader();
-
-
+                
 
                 while (myReader.Read())
                 {
@@ -210,27 +204,19 @@ namespace vendor_management
         {
             string Query = "select * from supermarket.vendorscorecard order by year desc ;";
             load_tab(Query, bunifuCustomDataGrid2);
-
         }
 
         void load_table3()//for quotation form,references
         {
             string Query = "select * from supermarket.vendorquotation ;";
             load_tab(Query, bunifuCustomDataGrid3);
-
         }
 
         void load_table4()//for quotation form,items
         {
-
             string Query = "select * from supermarket.vendorquotation1 order by RefNo;";
             load_tab(Query, bunifuCustomDataGrid4);
-
         }
-
-
-
-
 
 
         //email sending
@@ -404,10 +390,11 @@ namespace vendor_management
                 }
                 catch (Exception ee)
                 {
-                    MessageBox.Show(ee.Message);
+                   // MessageBox.Show(ee.Message);
                     MessageBox.Show("Please make sure this deletion will not affect other tables");
                 }
                 load_table();
+                fillCombo();
             }
         }
         //vendor form
@@ -486,7 +473,7 @@ namespace vendor_management
 
         private void faxNo_txt_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !(e.KeyChar == (char)Keys.Back || char.IsNumber(e.KeyChar) || char.IsPunctuation(e.KeyChar));
+            e.Handled = !(e.KeyChar == (char)Keys.Back || char.IsNumber(e.KeyChar));
 
         }
 
@@ -513,15 +500,10 @@ namespace vendor_management
 
         }
 
-
-
-
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-
-
 
                 DataGridViewRow row = this.bunifuCustomDataGrid1.Rows[e.RowIndex];
                 code = row.Cells["code"].Value.ToString();
@@ -548,26 +530,19 @@ namespace vendor_management
                 this.accNo_txt.Text = AccNo;
                 this.bankName_txt.Text = bankName;
 
-
             }
         }
 
         private void btnadd_Click(object sender, EventArgs e)
         {
 
-
-            //Regexp(@"^[A-Z]{2}[1-9]{4}$", txtVendor, pictureBox5, "Invalid");
-
-
             if ((txtRef.Text.Length == 0) || (txtVendor.Text.Length == 0) || (date.Text.Length == 0) || (dateValidUpto.Text.Length == 0))
                 MessageBox.Show("Please fill all fields");
 
+          //  else if (z == -99)
+           // {
 
-            else if (z == -99)
-            {
-
-            }
-
+            //}
 
             else
             {
@@ -590,7 +565,6 @@ namespace vendor_management
 
                     }
 
-
                 }
                 catch (Exception ee)
                 {
@@ -605,16 +579,14 @@ namespace vendor_management
         {
 
 
-            //  Regexp(@"^[A-Z]{2}[1-9]{4}$", txtVendor, pictureBox5, "Vendor code length should be 6 ");
-
             if ((txtRef.Text.Length == 0) || (cmbType.Text.Length == 0) || (txtCode.Text.Length == 0) || (txtDescription.Text.Length == 0) || (txtQty.Text.Length == 0) || (txtDiscount.Text.Length == 0) || (txtAmount.Text.Length == 0))
                 MessageBox.Show("Please fill all fields");
 
 
-            else if (z == -99)
-            {
+         //   else if (z == -99)
+          //  {
 
-            }
+           // }
 
 
             else
@@ -765,11 +737,7 @@ namespace vendor_management
         {
             if (txtRef.Text.Length == 0)
                 MessageBox.Show("Please fill reference number");
-
-
-
-
-
+            
             else
             {
                 try
@@ -805,11 +773,7 @@ namespace vendor_management
         {
             if ((txtRef.Text.Length == 0) || (txtCode.Text.Length == 0))
                 MessageBox.Show("You need to fill both reference number and item code");
-
-
-
-
-
+            
             else
             {
                 try
@@ -1016,6 +980,7 @@ namespace vendor_management
                 int cred = Convert.ToInt32(creditTxt.Text.ToString());
                 int negate = Convert.ToInt32(negativesTxt.Text.ToString());
 
+                //This should be changed according to clients request
                 grd = ((cred * 0.8) - (DEF * 0.5) - (fal * 0.5) + (prof * 0.001) - (negate * 1));
 
 
@@ -1104,6 +1069,12 @@ namespace vendor_management
                     }
 
                 }
+                defectiveTxt.Text = "0";
+                failuresTxt.Text = "0";
+                profitsTxt.Text = "0";
+                creditTxt.Text = "0";
+                negativesTxt.Text = "0";
+                label5.Text = "";
 
 
                 load_table2();
@@ -1120,17 +1091,11 @@ namespace vendor_management
         private void cmbType_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-
-
         }
-
-
-
 
        //Search function
         public void searchVendor(String valueTosearch, String query, Bunifu.Framework.UI.BunifuCustomDataGrid tablee)
         {
-
 
             try
             {
@@ -1222,8 +1187,6 @@ namespace vendor_management
                     this.chart1.Series["Grading"].Points.AddXY(myReader.GetString("vendorCode"), myReader.GetString("point"));
                     
                 }
-                // conDatabase.Close();
-
                 
             }
 
@@ -1238,16 +1201,11 @@ namespace vendor_management
             if (e.RowIndex >= 0)
             {
 
-
-
                 DataGridViewRow row = this.bunifuCustomDataGrid2.Rows[e.RowIndex];
                 comboBox1.Text= row.Cells["vendorCode"].Value.ToString();
                // nameTxt.Text = row.Cells["VendorName"].Value.ToString();
                 comboBox2.Text = row.Cells["month"].Value.ToString();
                 comboBox3.Text = row.Cells["year"].Value.ToString();
-
-                       
-
 
             }
         }

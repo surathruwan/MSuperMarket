@@ -52,6 +52,7 @@
             this.ClientSize = new System.Drawing.Size(849, 741);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "Seizedrep";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seized Stock Report";
             this.ResumeLayout(false);
 
