@@ -11,8 +11,8 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.IO;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
+
+
 
 namespace inventory
 {
@@ -735,7 +735,7 @@ namespace inventory
                     else
                     {
                         MemoryStream mstream = new MemoryStream(images);
-                        pictureBox1.Image = System.Drawing.Image.FromStream(mstream);
+                        pictureBox1.Image = Image.FromStream(mstream);
                     }
                 }
 
@@ -1978,6 +1978,7 @@ namespace inventory
               //  MessageBox.Show(ex.Message);
             }
         }
+<<<<<<< HEAD
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
@@ -2205,6 +2206,8 @@ namespace inventory
                 MessageBox.Show("P");
             }
         }
+=======
+>>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
     }
     }
   
