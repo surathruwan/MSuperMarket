@@ -116,21 +116,21 @@ namespace inventory
             DateTime time = DateTime.Now;
             string formatD = "yyyy-MM-dd";
 
-            string SysTime = DateTime.Now.ToString("hh:mm tt");
+            // string SysTime = TimeTest.Text;
 
 
             e.Graphics.DrawString("MADUSHA", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(70, 0)); // x,y
             e.Graphics.DrawString("SUPER MARKET", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(44, 20));
-            e.Graphics.DrawString("No.45 , Dehiowita Road", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
-            e.Graphics.DrawString("Deraniyagala", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
-            e.Graphics.DrawString("Tel : 071 5555533 / 036 2249369", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
+            e.Graphics.DrawString("No.181 , Galle Road", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
+            e.Graphics.DrawString("Hikkaduwa", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
+            e.Graphics.DrawString("Tel : 091 2277939 / 091 4946386", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
             e.Graphics.DrawString("Date : " + time.ToString(formatD), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 100));
-            e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
-            //e.Graphics.DrawString("RETURN NOTE", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
-            e.Graphics.DrawString("Accepted by :" + login.getUsername(), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
-           // e.Graphics.DrawString("Accepted by :" + login.getUsername(), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
-            e.Graphics.DrawString("User Type : " + Session.UserLabel(), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
-            e.Graphics.DrawString("RETURN NOTE", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(65, 145));
+            // e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
+            //e.Graphics.DrawString("Invoice No : " + lblINV.Text + lblInvoice.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
+            e.Graphics.DrawString("Terminal : " + "001", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
+            e.Graphics.DrawString("Cashier :" + "Surath", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
+            e.Graphics.DrawString("SalesRep : " + "Ruwan", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
+            e.Graphics.DrawString("Customer : " + "Ruchira", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 145));
             e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
 
             int x = 165;
@@ -169,7 +169,7 @@ namespace inventory
 
             }
             e.Graphics.DrawString("-------------------------------------------------", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
-            e.Graphics.DrawString(rettot.Text, new System.Drawing.Font("Times New Roman", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(150, x + 20));
+            e.Graphics.DrawString(rettot.Text, new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x + 20));
             e.Graphics.DrawString("Grand Total", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x + 20));
 
             e.Graphics.DrawString("Thank You !!!", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 40));
@@ -1424,72 +1424,65 @@ namespace inventory
 
         private void bunifuThinButton215_Click(object sender, EventArgs e)
         {
-            if (!(spname.Text == "" || snqty.Text == "" || stqty.Text == "" || sup.Text == ""))
-            {
-                status = true;
-                Regexp("^[0-9]+$", sbcode, sbcodee, "Only Numeric values allowed");
-                Regexp("^[0-9]+$", srpr, srpre, "Only Numeric values allowed");
-                Regexp("^[0-9]+$", saqty, saqtye, "Only Numeric values allowed");
-                Regexp("^[0-9]+$", snqty, snqtye, "Only Numeric values allowed");
-                Regexp("^[0-9]+$", stqty, stqtye, "Only Numeric values allowed");
-                Regexp("^[0-9]+$", sup, supe, "Only Numeric values allowed");
+            status = true;
+            Regexp("^[0-9]+$", sbcode, sbcodee, "Only Numeric values allowed");
+            Regexp("^[0-9]+$", srpr, srpre, "Only Numeric values allowed");
+            Regexp("^[0-9]+$", saqty, saqtye, "Only Numeric values allowed");
+            Regexp("^[0-9]+$", snqty, snqtye, "Only Numeric values allowed");
+            Regexp("^[0-9]+$", stqty, stqtye, "Only Numeric values allowed");
+            Regexp("^[0-9]+$", sup, supe, "Only Numeric values allowed");
 
-                if (status == true)
+            if (status == true)
+            {
+
+                DialogResult dialogResult = MessageBox.Show("Do you want to update this Stock?", "Update", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
                 {
 
-                    DialogResult dialogResult = MessageBox.Show("Do you want to update this Stock?", "Update", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
+                    try
                     {
+                        string con = "datasource=localhost;port=3306;username=root";
+                        MySqlConnection dbcon = new MySqlConnection(con);
 
-                        try
+                        MySqlCommand cm = new MySqlCommand("Select wqty from supermarket.Item where Item_code='" + scode.Text + "'", dbcon);
+
+                        dbcon.Open();
+                        DataSet d = new DataSet();
+                        MySqlDataReader ssdr = cm.ExecuteReader();
+
+                        while (ssdr.Read())
                         {
-                            string con = "datasource=localhost;port=3306;username=root";
-                            MySqlConnection dbcon = new MySqlConnection(con);
 
-                            MySqlCommand cm = new MySqlCommand("Select wqty from supermarket.Item where Item_code='" + scode.Text + "'", dbcon);
-
-                            dbcon.Open();
-                            DataSet d = new DataSet();
-                            MySqlDataReader ssdr = cm.ExecuteReader();
-
-                            while (ssdr.Read())
-                            {
-
-                                awh = Convert.ToInt32(ssdr["wqty"].ToString());
+                            awh = Convert.ToInt32(ssdr["wqty"].ToString());
 
 
-                            }
-                            int nst = awh + Convert.ToInt32(snqty.Text);
-                            ssdr.Close();
-
-                            MySqlCommand cmd = new MySqlCommand("Update supermarket.Item set wqty=wqty+'" + Convert.ToInt32(snqty.Text) + "' where Item_code='" + scode.Text + "'", dbcon);
-                            MySqlDataReader r;
-                            r = cmd.ExecuteReader();
-                            MessageBox.Show("Updated successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            r.Close();
-
-                            MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.stock values('" + scode.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + spname.Text + "','" + spid.Text + "','" + sup.Text + "','" + snqty.Text + "')", dbcon);
-                            MySqlDataReader r2;
-                            r2 = cmd2.ExecuteReader();
-                            loadtable();
-                            dbcon.Close();
                         }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
+                        int nst = awh + Convert.ToInt32(snqty.Text);
+                        ssdr.Close();
 
-                        //  resetstock();
+                        MySqlCommand cmd = new MySqlCommand("Update supermarket.Item set wqty=wqty+'" + Convert.ToInt32(snqty.Text) + "' where Item_code='" + scode.Text + "'", dbcon);
+                        MySqlDataReader r;
+                        r = cmd.ExecuteReader();
+                        MessageBox.Show("Updated successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        r.Close();
+
+                        MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.stock values('" + scode.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + spname.Text + "','" + spid.Text + "','" + sup.Text + "','" + snqty.Text + "')", dbcon);
+                        MySqlDataReader r2;
+                        r2 = cmd2.ExecuteReader();
+                        loadtable();
+                        dbcon.Close();
                     }
-                    else if (dialogResult == DialogResult.No)
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Stock Update Cancelled", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(ex.Message);
                     }
+
+                  //  resetstock();
                 }
-            }
-            else
-            {
-                MessageBox.Show("One or more fields cannot be empty", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if (dialogResult == DialogResult.No)
+                {
+                    MessageBox.Show("Stock Update Cancelled", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
@@ -1565,39 +1558,31 @@ namespace inventory
 
         private void bunifuThinButton223_Click(object sender, EventArgs e)
         {
-            if (!(rded.Text == "" || rqty.Text == ""))
+            try {
+                int q = Convert.ToInt32(rqty.Text);
+                double p = Convert.ToDouble(rrpr.Text);
+                double tp = (q * p) - Convert.ToDouble(rded.Text);
+           
+            DataGridViewRow row = new DataGridViewRow();
+            row.CreateCells(this.ret, rcode.Text, datei.Text, rqty.Text, rrpr.Text, rded.Text, tp.ToString());
+            this.ret.Rows.Add(row);
+
+            decimal Total = 0;
+
+            for (int i = 0; i < ret.Rows.Count; i++)
             {
-                try
-                {
-                    int q = Convert.ToInt32(rqty.Text);
-                    double p = Convert.ToDouble(rrpr.Text);
-                    double tp = (q * p) - Convert.ToDouble(rded.Text);
-
-                    DataGridViewRow row = new DataGridViewRow();
-                    row.CreateCells(this.ret, rcode.Text, datei.Text, rqty.Text, rrpr.Text, rded.Text, tp.ToString());
-                    this.ret.Rows.Add(row);
-
-                    decimal Total = 0;
-
-                    for (int i = 0; i < ret.Rows.Count; i++)
-                    {
-                        Total += Convert.ToDecimal(ret.Rows[i].Cells["tot"].Value);
-                    }
-
-                    rettot.Text = Total.ToString("#.00");
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-                resetret();
+                Total += Convert.ToDecimal(ret.Rows[i].Cells["tot"].Value);
             }
-            else
+
+            rettot.Text = Total.ToString("#.00");
+
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("One or more fields cannot be empty", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
             }
+
+            resetret();
         }
 
         private void bunifuThinButton213_Click(object sender, EventArgs e)
@@ -1878,45 +1863,39 @@ namespace inventory
 
         private void bunifuThinButton219_Click(object sender, EventArgs e)
         {
-            if (!(gamnt.Text == "" || gby.Text == "Select Employee"))
+            try
             {
-                try
-                {
-                    string con = "datasource=localhost;port=3306;username=root";
-                    MySqlConnection dbcon = new MySqlConnection(con);
-                    dbcon.Open();
-                    MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "')", dbcon);
-                    MySqlDataReader r2;
-                    r2 = cmd2.ExecuteReader();
-                    MessageBox.Show("Transfered successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string con = "datasource=localhost;port=3306;username=root";
+                MySqlConnection dbcon = new MySqlConnection(con);
+                dbcon.Open();
+                MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.transfer values('" + gcode.Text + "','" + gamnt.Text + "','" + gby.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "')", dbcon);
+                MySqlDataReader r2;
+                r2 = cmd2.ExecuteReader();
+                MessageBox.Show("Transfered successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    r2.Close();
+                r2.Close();
 
-                    MySqlCommand cmd = new MySqlCommand("Update supermarket.Item set wqty=wqty-'" + Convert.ToInt32(gamnt.Text) + "' where Item_code='" + gcode.Text + "'", dbcon);
-                    MySqlDataReader r;
-                    r = cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand("Update supermarket.Item set wqty=wqty-'" + Convert.ToInt32(gamnt.Text) + "' where Item_code='" + gcode.Text + "'", dbcon);
+                MySqlDataReader r;
+                r = cmd.ExecuteReader();
 
 
-                    r.Close();
+                r.Close();
 
-                    MySqlCommand cmd3 = new MySqlCommand("Update supermarket.Item set sqty=sqty+'" + Convert.ToInt32(gamnt.Text) + "' where Item_code='" + gcode.Text + "'", dbcon);
-                    MySqlDataReader rs;
-                    rs = cmd3.ExecuteReader();
+                MySqlCommand cmd3 = new MySqlCommand("Update supermarket.Item set sqty=sqty+'" + Convert.ToInt32(gamnt.Text) + "' where Item_code='" + gcode.Text + "'", dbcon);
+                MySqlDataReader rs;
+                rs = cmd3.ExecuteReader();
 
-                    dbcon.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-                resetgud();
+                dbcon.Close();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("One or more fields cannot be empty", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
             }
+
+
+            resetgud();
+
 
         }
 
@@ -2022,83 +2001,71 @@ namespace inventory
 
         private void bunifuThinButton221_Click(object sender, EventArgs e)
         {
-            if (!(tsc.Text == ""))
+            try
             {
-                try
+                string con = "datasource=localhost;port=3306;username=root";
+                MySqlConnection dbcon = new MySqlConnection(con);
+
+                MySqlCommand cm = new MySqlCommand("Select wqty,sqty from supermarket.Item where Item_code='" + tcode.Text + "'", dbcon);
+
+                dbcon.Open();
+                DataSet d = new DataSet();
+                MySqlDataReader sdr = cm.ExecuteReader();
+
+                while (sdr.Read())
                 {
-                    string con = "datasource=localhost;port=3306;username=root";
-                    MySqlConnection dbcon = new MySqlConnection(con);
-
-                    MySqlCommand cm = new MySqlCommand("Select wqty,sqty from supermarket.Item where Item_code='" + tcode.Text + "'", dbcon);
-
-                    dbcon.Open();
-                    DataSet d = new DataSet();
-                    MySqlDataReader sdr = cm.ExecuteReader();
-
-                    while (sdr.Read())
-                    {
-                        tws.Text = sdr["wqty"].ToString();
-                        int a = Convert.ToInt32(sdr["wqty"].ToString());
-                        tss.Text = sdr["sqty"].ToString();
-                        int v = Convert.ToInt32(sdr["sqty"].ToString());
-                        tt.Text = (a + v).ToString();
-                    }
-                    dbcon.Close();
-                    tmq.Text = (Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)).ToString();
-                    if (Convert.ToInt32(tsc.Text) == Convert.ToInt32(tss.Text))
-                    {
-                        MessageBox.Show("No Missing Items found", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else if (Convert.ToInt32(tsc.Text) < Convert.ToInt32(tss.Text))
-                    {
-                        MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid Showroom count", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-
-
+                    tws.Text = sdr["wqty"].ToString();
+                    int a = Convert.ToInt32(sdr["wqty"].ToString());
+                    tss.Text = sdr["sqty"].ToString();
+                    int v = Convert.ToInt32(sdr["sqty"].ToString());
+                    tt.Text = (a + v).ToString();
                 }
-                catch (Exception ex)
+                dbcon.Close();
+                tmq.Text = (Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)).ToString();
+                if (Convert.ToInt32(tsc.Text) == Convert.ToInt32(tss.Text))
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("No Missing Items found", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                else if (Convert.ToInt32(tsc.Text) < Convert.ToInt32(tss.Text))
+                {
+                    MessageBox.Show((Convert.ToInt32(tss.Text) - Convert.ToInt32(tsc.Text)) + " Items Missing", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Showroom count", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Showroom Count cannot be empty", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void bunifuThinButton217_Click(object sender, EventArgs e)
         {
-            if (!(dsname.Text == "Select Supplier" || dq.Text == "" || dreas.Text == ""))
+
+            try
             {
-                try
-                {
-                    string con = "datasource=localhost;port=3306;username=root";
-                    MySqlConnection dbcon = new MySqlConnection(con);
-                    dbcon.Open();
-                    MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.defItem values('" + dcode.Text + "','" + dbcode.Text + "','" + dsid.Text + "','" + dq.Text + "','" + dreas.Text + "','" + ddate.Text + "')", dbcon);
-                    MySqlDataReader r2;
-                    r2 = cmd2.ExecuteReader();
-                    MessageBox.Show("Inserted successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-                resetdef();
-
-
+                string con = "datasource=localhost;port=3306;username=root";
+                MySqlConnection dbcon = new MySqlConnection(con);
+                dbcon.Open();
+                MySqlCommand cmd2 = new MySqlCommand("insert into supermarket.defItem values('" + dcode.Text + "','" + dbcode.Text + "','" + dsid.Text + "','" + dq.Text + "','" + dreas.Text + "','" + ddate.Text + "')", dbcon);
+                MySqlDataReader r2;
+                r2 = cmd2.ExecuteReader();
+                MessageBox.Show("Inserted successfully!" ,"",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("One or more fields cannot be empty", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
             }
+
+
+            resetdef();
+
+
+
 
         }
 
@@ -3110,11 +3077,6 @@ namespace inventory
         private void spid_OnValueChanged(object sender, EventArgs e)
         {
            spid.Enabled = false;
-        }
-
-        private void tsc_OnValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
