@@ -255,6 +255,11 @@
     <Compile Include="PosAdmin.designer.cs">
       <DependentUpon>PosAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="repair.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +403,12 @@
     </Compile>
     <Compile Include="VendorReport.designer.cs">
       <DependentUpon>VendorReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendorReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vendorReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WebCam.cs" />
     <EmbeddedResource Include="addform.resx">
@@ -557,6 +568,10 @@
     <EmbeddedResource Include="VendorReport.resx">
       <DependentUpon>VendorReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vendorReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>vendorReport3.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -567,6 +582,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuoDataSet.xsc">
+      <DependentUpon>QuoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuoDataSet.xss">
+      <DependentUpon>QuoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="supermarketDataSet.xsc">
       <DependentUpon>supermarketDataSet.xsd</DependentUpon>
     </None>
