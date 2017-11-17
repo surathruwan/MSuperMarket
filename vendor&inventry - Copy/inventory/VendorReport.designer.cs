@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VendorReport));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.minimizeButton = new Bunifu.Framework.UI.BunifuImageButton();
@@ -39,7 +40,6 @@
             this.ExitButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,9 +61,24 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1342, 707);
+            this.panel1.Size = new System.Drawing.Size(1354, 697);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 42);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ShowGroupTreeButton = false;
+            this.crystalReportViewer1.ShowLogo = false;
+            this.crystalReportViewer1.ShowParameterPanelButton = false;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1352, 653);
+            this.crystalReportViewer1.TabIndex = 33;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // panel2
             // 
@@ -77,7 +92,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1340, 42);
+            this.panel2.Size = new System.Drawing.Size(1352, 42);
             this.panel2.TabIndex = 32;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -97,7 +112,7 @@
             this.minimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.minimizeButton.Image = ((System.Drawing.Image)(resources.GetObject("minimizeButton.Image")));
             this.minimizeButton.ImageActive = null;
-            this.minimizeButton.Location = new System.Drawing.Point(1270, 0);
+            this.minimizeButton.Location = new System.Drawing.Point(1282, 0);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(20, 42);
             this.minimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -112,7 +127,7 @@
             this.bunifuImageButton3.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(1290, 0);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(1302, 0);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
             this.bunifuImageButton3.Size = new System.Drawing.Size(10, 42);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,7 +142,7 @@
             this.bunifuImageButton2.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1300, 0);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1312, 0);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(10, 42);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +157,7 @@
             this.ExitButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
             this.ExitButton.ImageActive = null;
-            this.ExitButton.Location = new System.Drawing.Point(1310, 0);
+            this.ExitButton.Location = new System.Drawing.Point(1322, 0);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(20, 42);
             this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -157,7 +172,7 @@
             this.bunifuImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1330, 0);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1342, 0);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(10, 42);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,18 +185,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // crystalReportViewer1
-            // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 42);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ShowLogo = false;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1340, 663);
-            this.crystalReportViewer1.TabIndex = 33;
             // 
             // VendorReport
             // 

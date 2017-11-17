@@ -1171,9 +1171,27 @@ namespace vendor_management
             }
 
         }
+        //tab2
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            String valueTosearch = textBox2.Text.ToString();
+            if (radioButton4.Checked)
+            {
+                string query = "select * from supermarket.vendorscorecard where vendorCode like '%" + valueTosearch + "%';";
+                searchVendor(valueTosearch, query, bunifuCustomDataGrid2);
+            }
+            else if(radioButton3.Checked)
+            {
+                string query = "select * from supermarket.vendorscorecard where month like '%" + valueTosearch + "%';";
+                searchVendor(valueTosearch, query, bunifuCustomDataGrid2);
+            }
+            else 
+            {
+                string query = "select * from supermarket.vendorscorecard where year like '%" + valueTosearch + "%';";
+                searchVendor(valueTosearch, query, bunifuCustomDataGrid2);
+            }
+        }
 
-
-  
         //tab3
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
@@ -1395,6 +1413,8 @@ namespace vendor_management
             r.Show();
 
         }
+
+       
     }
 }
 

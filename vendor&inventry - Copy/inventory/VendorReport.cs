@@ -18,9 +18,11 @@ namespace inventory
         {
             
             InitializeComponent();
+            
             vendorReport cr = new vendorReport();
             crystalReportViewer1.ReportSource = cr;
             crystalReportViewer1.Refresh();
+            crystalReportViewer1.RefreshReport();
         }
 
  
