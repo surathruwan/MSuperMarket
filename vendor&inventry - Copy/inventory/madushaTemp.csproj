@@ -140,6 +140,18 @@
     <Compile Include="debtors.designer.cs">
       <DependentUpon>debtors.cs</DependentUpon>
     </Compile>
+    <Compile Include="defreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defreport.Designer.cs">
+      <DependentUpon>defreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defreport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>defreport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="deleteform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +207,18 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
+    <Compile Include="ilevelrep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilevelrep.Designer.cs">
+      <DependentUpon>ilevelrep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilevrep1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ilevrep1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LeaveForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,6 +420,13 @@
     <EmbeddedResource Include="debtors.resx">
       <DependentUpon>debtors.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="defreport.resx">
+      <DependentUpon>defreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defreport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>defreport1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditAttendance.resx">
       <DependentUpon>EditAttendance.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +447,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilevelrep.resx">
+      <DependentUpon>ilevelrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilevrep1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ilevrep1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="LeaveForm.resx">
       <DependentUpon>LeaveForm.cs</DependentUpon>
@@ -544,7 +582,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
