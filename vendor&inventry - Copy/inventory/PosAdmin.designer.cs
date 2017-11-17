@@ -99,6 +99,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.radName = new System.Windows.Forms.RadioButton();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnClear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblAmount = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -168,21 +169,15 @@
             this.label58 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-<<<<<<< HEAD
             this.label103 = new System.Windows.Forms.Label();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-=======
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label36 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label37 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.QoutationHistoryGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.quoIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -191,9 +186,6 @@
             this.quotationdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerquotationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quoDataSet = new inventory.QuoDataSet();
-=======
-            this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             this.panel7 = new System.Windows.Forms.Panel();
             this.ItemNameQ = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -235,7 +227,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ordersTableAdapter = new inventory.supermarketDataSet1TableAdapters.ordersTableAdapter();
             this.recordsellingdetailsTableAdapter = new inventory.supermarketDataSet2TableAdapters.recordsellingdetailsTableAdapter();
-<<<<<<< HEAD
             this.customerquotationTableAdapter = new inventory.QuoDataSetTableAdapters.customerquotationTableAdapter();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UNITPRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -243,14 +234,6 @@
             this.SUBTOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelQuo = new System.Windows.Forms.Label();
             this.lblInvoice = new System.Windows.Forms.Label();
-=======
-            this.btnClear = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.QUOID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CUSTOMER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTALAMOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QUOTITION_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -282,11 +265,7 @@
             this.bunifuCards3.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox6.SuspendLayout();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QoutationHistoryGrid)).BeginInit();
@@ -782,6 +761,8 @@
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = false;
             this.bunifuCards2.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards2.Controls.Add(this.label60);
+            this.bunifuCards2.Controls.Add(this.pictureBox2);
             this.bunifuCards2.Controls.Add(this.bunifuThinButton26);
             this.bunifuCards2.Controls.Add(this.bunifuThinButton24);
             this.bunifuCards2.Controls.Add(this.TimeTest);
@@ -1084,6 +1065,32 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(927, 374);
             this.panel10.TabIndex = 98;
+            // 
+            // btnClear
+            // 
+            this.btnClear.ActiveBorderThickness = 1;
+            this.btnClear.ActiveCornerRadius = 20;
+            this.btnClear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
+            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
+            this.btnClear.ButtonText = "Clear";
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
+            this.btnClear.IdleBorderThickness = 1;
+            this.btnClear.IdleCornerRadius = 20;
+            this.btnClear.IdleFillColor = System.Drawing.Color.White;
+            this.btnClear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
+            this.btnClear.Location = new System.Drawing.Point(282, 305);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(184, 41);
+            this.btnClear.TabIndex = 111;
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lblAmount
             // 
@@ -1871,9 +1878,9 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.pictureBox12);
+            this.groupBox6.Controls.Add(this.label103);
+            this.groupBox6.Controls.Add(this.pictureBox18);
             this.groupBox6.Controls.Add(this.pictureBox13);
-            this.groupBox6.Controls.Add(this.radioButton3);
             this.groupBox6.Controls.Add(this.label36);
             this.groupBox6.Controls.Add(this.radioButton4);
             this.groupBox6.Controls.Add(this.bunifuThinButton23);
@@ -1887,7 +1894,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Export As";
             // 
-<<<<<<< HEAD
             // label103
             // 
             this.label103.AutoSize = true;
@@ -1910,16 +1916,6 @@
             this.pictureBox18.TabIndex = 76;
             this.pictureBox18.TabStop = false;
             this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
-=======
-            // pictureBox12
-            // 
-            this.pictureBox12.Location = new System.Drawing.Point(99, 12);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox12.TabIndex = 73;
-            this.pictureBox12.TabStop = false;
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             // 
             // pictureBox13
             // 
@@ -1930,18 +1926,6 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox13.TabIndex = 72;
             this.pictureBox13.TabStop = false;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(99, 75);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(56, 20);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "PDF";
-            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // label36
             // 
@@ -2035,7 +2019,6 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-<<<<<<< HEAD
             this.QoutationHistoryGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.QoutationHistoryGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.QoutationHistoryGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2104,27 +2087,6 @@
             // 
             this.quoDataSet.DataSetName = "QuoDataSet";
             this.quoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-=======
-            this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.bunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.QUOID,
-            this.CUSTOMER,
-            this.PHONE,
-            this.TOTALAMOUNT,
-            this.QUOTITION_DATE});
-            this.bunifuCustomDataGrid3.DoubleBuffered = true;
-            this.bunifuCustomDataGrid3.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
-            this.bunifuCustomDataGrid3.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid3.Location = new System.Drawing.Point(16, 56);
-            this.bunifuCustomDataGrid3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuCustomDataGrid3.Name = "bunifuCustomDataGrid3";
-            this.bunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid3.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(705, 413);
-            this.bunifuCustomDataGrid3.TabIndex = 4;
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             // 
             // panel7
             // 
@@ -2622,7 +2584,6 @@
             // 
             this.recordsellingdetailsTableAdapter.ClearBeforeFill = true;
             // 
-<<<<<<< HEAD
             // customerquotationTableAdapter
             // 
             this.customerquotationTableAdapter.ClearBeforeFill = true;
@@ -2670,58 +2631,6 @@
             this.lblInvoice.Size = new System.Drawing.Size(27, 24);
             this.lblInvoice.TabIndex = 79;
             this.lblInvoice.Text = "ID";
-=======
-            // btnClear
-            // 
-            this.btnClear.ActiveBorderThickness = 1;
-            this.btnClear.ActiveCornerRadius = 20;
-            this.btnClear.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnClear.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnClear.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(205)))));
-            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
-            this.btnClear.ButtonText = "Clear";
-            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(82)))), ((int)(((byte)(140)))));
-            this.btnClear.IdleBorderThickness = 1;
-            this.btnClear.IdleCornerRadius = 20;
-            this.btnClear.IdleFillColor = System.Drawing.Color.White;
-            this.btnClear.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(8)))), ((int)(((byte)(104)))));
-            this.btnClear.Location = new System.Drawing.Point(282, 305);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(184, 41);
-            this.btnClear.TabIndex = 111;
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // QUOID
-            // 
-            this.QUOID.HeaderText = "QUOTATION ID";
-            this.QUOID.Name = "QUOID";
-            // 
-            // CUSTOMER
-            // 
-            this.CUSTOMER.HeaderText = "CUSTOMER";
-            this.CUSTOMER.Name = "CUSTOMER";
-            // 
-            // PHONE
-            // 
-            this.PHONE.HeaderText = "PHONE";
-            this.PHONE.Name = "PHONE";
-            // 
-            // TOTALAMOUNT
-            // 
-            this.TOTALAMOUNT.HeaderText = "TOTAL AMOUNT";
-            this.TOTALAMOUNT.Name = "TOTALAMOUNT";
-            // 
-            // QUOTITION_DATE
-            // 
-            this.QUOTITION_DATE.HeaderText = "QUOTITION DATE";
-            this.QUOTITION_DATE.Name = "QUOTITION_DATE";
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             // 
             // PosAdmin
             // 
@@ -2779,11 +2688,7 @@
             this.panel12.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -2888,9 +2793,7 @@
         private System.Windows.Forms.TextBox txtQty1;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.RadioButton radioButton4;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
@@ -2997,7 +2900,6 @@
         private System.Windows.Forms.Label ItemNameQ;
         private System.Windows.Forms.Label label59;
         private Bunifu.Framework.UI.BunifuThinButton2 btnClear;
-<<<<<<< HEAD
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Label label60;
@@ -3016,12 +2918,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SUBTOTAL;
         private System.Windows.Forms.Label labelQuo;
         private System.Windows.Forms.Label lblInvoice;
-=======
-        private System.Windows.Forms.DataGridViewTextBoxColumn QUOID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CUSTOMER;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TOTALAMOUNT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QUOTITION_DATE;
->>>>>>> 1672c80036ea0a910d5327686235fbe45e0c0d6d
     }
 }
