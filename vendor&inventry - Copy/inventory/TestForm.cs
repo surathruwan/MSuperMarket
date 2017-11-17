@@ -3072,6 +3072,8 @@ namespace madushaTemp
             string valueFrom = datefrom.Text.ToString();
             string valueTo = dateto.Text.ToString();
 
+            
+
             searchDebtors(valueFrom,valueTo);
         }
 
@@ -3079,7 +3081,7 @@ namespace madushaTemp
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
 
-            MySqlCommand cmd = new MySqlCommand("select * from supermarket.instcust where Date_Due between '"+ valueFrom + "' AND '"+ valueTo + "' ;", conn);
+            MySqlCommand cmd = new MySqlCommand("select * from supermarket.instcust where Date_Due like '"+ valueFrom + "' ;", conn);
 
             MySqlDataAdapter sda = new MySqlDataAdapter();
             sda.SelectCommand = cmd;
@@ -3089,6 +3091,7 @@ namespace madushaTemp
 
             bS.DataSource = dbt;
             tblinscust.DataSource = bS;
+           
 
 
         }

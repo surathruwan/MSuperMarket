@@ -255,9 +255,8 @@
             this.lblyear.ForeColor = System.Drawing.Color.DarkRed;
             this.lblyear.Location = new System.Drawing.Point(44, 35);
             this.lblyear.Name = "lblyear";
-            this.lblyear.Size = new System.Drawing.Size(42, 43);
+            this.lblyear.Size = new System.Drawing.Size(0, 43);
             this.lblyear.TabIndex = 21;
-            this.lblyear.Text = "Y";
             // 
             // flowLayoutPanel3
             // 
@@ -309,9 +308,8 @@
             this.pro.ForeColor = System.Drawing.Color.Black;
             this.pro.Location = new System.Drawing.Point(3, 16);
             this.pro.Name = "pro";
-            this.pro.Size = new System.Drawing.Size(131, 22);
+            this.pro.Size = new System.Drawing.Size(0, 22);
             this.pro.TabIndex = 21;
-            this.pro.Text = "Cash In Hand";
             // 
             // flowLayoutPanel7
             // 
@@ -371,9 +369,8 @@
             this.dep.ForeColor = System.Drawing.Color.Black;
             this.dep.Location = new System.Drawing.Point(3, 16);
             this.dep.Name = "dep";
-            this.dep.Size = new System.Drawing.Size(131, 22);
+            this.dep.Size = new System.Drawing.Size(0, 22);
             this.dep.TabIndex = 21;
-            this.dep.Text = "Cash In Hand";
             // 
             // flowLayoutPanel6
             // 
@@ -417,9 +414,8 @@
             this.intere.ForeColor = System.Drawing.Color.Black;
             this.intere.Location = new System.Drawing.Point(3, 16);
             this.intere.Name = "intere";
-            this.intere.Size = new System.Drawing.Size(131, 22);
+            this.intere.Size = new System.Drawing.Size(0, 22);
             this.intere.TabIndex = 21;
-            this.intere.Text = "Cash In Hand";
             // 
             // lbla
             // 
@@ -428,9 +424,8 @@
             this.lbla.ForeColor = System.Drawing.Color.Black;
             this.lbla.Location = new System.Drawing.Point(246, 317);
             this.lbla.Name = "lbla";
-            this.lbla.Size = new System.Drawing.Size(114, 18);
+            this.lbla.Size = new System.Drawing.Size(0, 18);
             this.lbla.TabIndex = 40;
-            this.lbla.Text = "Cash In Hand";
             // 
             // lblafter
             // 
@@ -439,9 +434,8 @@
             this.lblafter.ForeColor = System.Drawing.Color.Black;
             this.lblafter.Location = new System.Drawing.Point(246, 276);
             this.lblafter.Name = "lblafter";
-            this.lblafter.Size = new System.Drawing.Size(114, 18);
+            this.lblafter.Size = new System.Drawing.Size(0, 18);
             this.lblafter.TabIndex = 39;
-            this.lblafter.Text = "Cash In Hand";
             // 
             // lblt
             // 
@@ -450,9 +444,8 @@
             this.lblt.ForeColor = System.Drawing.Color.Black;
             this.lblt.Location = new System.Drawing.Point(245, 238);
             this.lblt.Name = "lblt";
-            this.lblt.Size = new System.Drawing.Size(114, 18);
+            this.lblt.Size = new System.Drawing.Size(0, 18);
             this.lblt.TabIndex = 38;
-            this.lblt.Text = "Cash In Hand";
             // 
             // lblp
             // 
@@ -461,9 +454,8 @@
             this.lblp.ForeColor = System.Drawing.Color.Black;
             this.lblp.Location = new System.Drawing.Point(244, 201);
             this.lblp.Name = "lblp";
-            this.lblp.Size = new System.Drawing.Size(114, 18);
+            this.lblp.Size = new System.Drawing.Size(0, 18);
             this.lblp.TabIndex = 37;
-            this.lblp.Text = "Cash In Hand";
             // 
             // lble
             // 
@@ -472,9 +464,8 @@
             this.lble.ForeColor = System.Drawing.Color.Black;
             this.lble.Location = new System.Drawing.Point(245, 157);
             this.lble.Name = "lble";
-            this.lble.Size = new System.Drawing.Size(114, 18);
+            this.lble.Size = new System.Drawing.Size(0, 18);
             this.lble.TabIndex = 36;
-            this.lble.Text = "Cash In Hand";
             // 
             // label10
             // 
@@ -581,9 +572,8 @@
             this.reve.ForeColor = System.Drawing.Color.Black;
             this.reve.Location = new System.Drawing.Point(3, 16);
             this.reve.Name = "reve";
-            this.reve.Size = new System.Drawing.Size(131, 22);
+            this.reve.Size = new System.Drawing.Size(0, 22);
             this.reve.TabIndex = 21;
-            this.reve.Text = "Cash In Hand";
             // 
             // financial_report
             // 
