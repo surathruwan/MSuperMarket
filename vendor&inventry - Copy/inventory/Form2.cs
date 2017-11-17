@@ -1489,5 +1489,11 @@ namespace madushaTemp
         {
 
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            driverReport d = new driverReport();
+            d.Show();
+        }
     }
 }

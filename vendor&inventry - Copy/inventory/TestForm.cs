@@ -41,6 +41,7 @@ namespace madushaTemp
         int b;
         int c;
         double loss=0;
+        double totale = 0;
 
 
 
@@ -76,7 +77,7 @@ namespace madushaTemp
             chart3.Visible = false;
             chart2.Visible = false;
 
-            //tblhide.Visible = false;
+            tblhide.Visible = false;
             tblseizedhide.Visible = false;
             tblbankhid.Visible = false;
             tblloan.Visible = false;
@@ -125,16 +126,18 @@ namespace madushaTemp
             tableLoadEI();
             tableLoadInstallmntformload();
             tableLoadBankHidden();
-
+            Profit();
+            Tax();
+            Bankloan();
             datei.MinDate = DateTime.Now;
             lblmonth.Text= DateTime.Now.ToString("MMMM");
-
+            los.Text = loss.ToString();
             double profit = Convert.ToDouble(lblpro.Text);
-            double loss = Convert.ToDouble(los.Text);
-            double g = ((profit - loss)/profit)*100;
+            double loss1 = Convert.ToDouble(los.Text);
+            double g = ((profit - loss1)/profit)*100;
             int per = (int)g;
             lblvari.Text = per.ToString()+" %";
-
+            
 
 
             // chartLoadIExp();
@@ -156,9 +159,8 @@ namespace madushaTemp
             seizedlblAddDeleteCount();
             BankAddDeleteCount();
 
-            Profit();
-            Tax();
-            Bankloan();
+           
+            
 
             radbnpa.Checked = true;
             radsumm.Checked = true;
@@ -218,7 +220,7 @@ namespace madushaTemp
 
                     int height = (bunifuCustomDataGrid1.RowCount) * 10 + 50;
                     MadushaPrintDocument.DefaultPageSettings.PaperSize = new PaperSize("Bill", 76, height);
-                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 2013"; //Specify the printer to use.
+                    MadushaPrintDocument.PrinterSettings.PrinterName = "Send To OneNote 16"; //Specify the printer to use.
 
                     MadushaPrintDocument.PrintPage += new PrintPageEventHandler(this.MadushaPrintDocument_PrintPage);
                     MadushaPrintDocument.Print();
@@ -248,19 +250,19 @@ namespace madushaTemp
             DateTime time = DateTime.Now;
             string formatD = "yyyy-MM-dd";
 
-           // string SysTime = TimeTest.Text;
+            string SysTime = DateTime.Now.ToShortTimeString();
 
 
             e.Graphics.DrawString("MADUSHA", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(70, 0)); // x,y
             e.Graphics.DrawString("SUPER MARKET", new System.Drawing.Font("Century", 12, System.Drawing.FontStyle.Bold), System.Drawing.Brushes.Black, new System.Drawing.Point(44, 20));
-            e.Graphics.DrawString("No.181 , Galle Road", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
-            e.Graphics.DrawString("Hikkaduwa", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
-            e.Graphics.DrawString("Tel : 091 2277939 / 091 4946386", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
+            e.Graphics.DrawString("No.46 , Dehiyowita Road", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(50, 40));
+            e.Graphics.DrawString("Deraniyagala", new System.Drawing.Font("Century", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(77, 55));
+            e.Graphics.DrawString("Tel : 071555533 / 0362249369", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(32, 75));
             e.Graphics.DrawString("Date : " + time.ToString(formatD), new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 100));
-           // e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
-            //e.Graphics.DrawString("Invoice No : " + lblINV.Text + lblInvoice.Text, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
+             e.Graphics.DrawString("Time : " + SysTime, new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 100));
+            e.Graphics.DrawString("Invoice No : " + txtoid.Text , new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 115));
             e.Graphics.DrawString("Terminal : " + "001", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 115));
-            e.Graphics.DrawString("Cashier :" + "Surath", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
+            e.Graphics.DrawString("Cashier :" + "Kamal", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 130));
             e.Graphics.DrawString("SalesRep : " + "Ruwan", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(130, 130));
             e.Graphics.DrawString("Customer : " + "Ruchira", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 145));
             e.Graphics.DrawString("-----------------------------------------------------------", new System.Drawing.Font("Century", 8, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, 155));
@@ -277,35 +279,22 @@ namespace madushaTemp
                 e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[5].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x));
 
                 x = x + 30;
-                //if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString().Length) == 5))
-                //{
-
-                //    if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString().Length) >= 5))
-                //    {
-                //        e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                //    }
-                //}
-                //else if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString().Length) == 4))
-                //{
-
-                //    if ((Convert.ToInt32(bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString().Length) >= 4))
-                //    {
-                //        e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t    " + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t  " + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                //    }
-                //}
-                //else
-                //{
-                //    e.Graphics.DrawString(bunifuCustomDataGrid1.Rows[i].Cells[1].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[3].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[2].Value.ToString() + "\t" + bunifuCustomDataGrid1.Rows[i].Cells[4].Value.ToString(), new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x1));
-                //}
-                 // x1 = x1 + 30;
+               
 
             }
             e.Graphics.DrawString("-------------------------------------------------", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x));
             e.Graphics.DrawString(txtgtot.Text, new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x+20));
             e.Graphics.DrawString("Grand Total", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x + 20));
 
-            e.Graphics.DrawString("Thank You !!!", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 40));
-            e.Graphics.DrawString("Come Again ...", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 50));
+            e.Graphics.DrawString(txtdpay.Text, new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x + 35));
+            e.Graphics.DrawString("Down Payment", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x + 35));
+
+            e.Graphics.DrawString(lblbal.Text, new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(190, x + 50));
+            e.Graphics.DrawString("Balance", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(10, x + 50));
+
+
+            e.Graphics.DrawString("Thank You !!!", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 70));
+            e.Graphics.DrawString("Come Again ...", new System.Drawing.Font("Times New Roman", 10, System.Drawing.FontStyle.Regular), System.Drawing.Brushes.Black, new System.Drawing.Point(60, x + 85));
         }
 
 
@@ -358,7 +347,337 @@ namespace madushaTemp
             }
         }
 
-              
+        public void eTax()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month+1, 1);
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where type='Tax' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    lbletax.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(lbletax.Text);
+                    totale += t;
+
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+           
+        }
+        
+        public void eadd() {
+           
+                totlab.Text = totale.ToString() + ".00";
+               
+        }
+        public void eUtility()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month+1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where type='Others' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    lbluti.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(lbluti.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+        public void eRent()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month+1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where type='Rent' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    lblrent.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(lblrent.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+        public void eRepair()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Repairing Cost' and  date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    lblemain.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(lblemain.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+        public void eDelivery()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Petty Cash' and  date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    lbledeli.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(lbledeli.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+
+        public void eLoans()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Employee Loans' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    elo.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(elo.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+
+        public void eTele()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Light Bill' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    etele.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(etele.Text);
+                    totale += t;
+
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+
+        public void eInter()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Internet Bill' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    einternet.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(einternet.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+        public void eElectr()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Water Bill' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    elec.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(elec.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+        public void eAdver()
+        {
+            DateTime now = DateTime.Now;
+            var startDate = new DateTime(now.Year, now.Month, 1);
+            var endDate = new DateTime(now.Year, now.Month + 1, 1);
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+            MySqlCommand cmd1 = new MySqlCommand("select sum(amount) as tot from supermarket.incomeexpense where Type='Advertising' and date between '" + startDate.ToString("yyyy-MM-dd") + "' and '" + endDate.ToString("yyyy-MM-dd") + "'", conn);
+            MySqlDataReader myR1;
+            try
+            {
+                conn.Open();
+                myR1 = cmd1.ExecuteReader();
+
+                if (myR1.Read())
+                {
+
+                    esales.Text = myR1["tot"].ToString();
+                    double t = Convert.ToDouble(elec.Text);
+                    totale += t;
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message);
+            }
+
+        }
+
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
@@ -1639,7 +1958,7 @@ namespace madushaTemp
                 catch (Exception)
                 {
 
-                    throw;
+                    MessageBox.Show("Confirmation Cancelled !! ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
 
@@ -1746,7 +2065,7 @@ namespace madushaTemp
                 catch (Exception)
                 {
 
-                    throw;
+                    MessageBox.Show("Invoice Already Exsists !! ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
 
@@ -1770,7 +2089,7 @@ namespace madushaTemp
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Alraedy Exists");
+                    MessageBox.Show("Invoice Already Exsists !! ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 }
 
@@ -1864,7 +2183,7 @@ namespace madushaTemp
         {
             Regexp2(@"^\d{9}(x|v)$", txtnicsearch, pictureBox25, "NIC");
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
-            MySqlCommand cmd = new MySqlCommand("select count(*),fullname,nwinitials,address,email,phone,dob,job,city  from supermarket.customer where nic ='"+txtnicsearch.Text+"' ;", conn);
+            MySqlCommand cmd = new MySqlCommand("select count(*),fullname,nwinitials,address,email,phone,dob,job,city,name1,name2,address1,address2,phone1,phone2,job1,job2  from supermarket.customer where nic ='" + txtnicsearch.Text+"' ;", conn);
             try
             {
                 conn.Open();
@@ -1887,6 +2206,17 @@ namespace madushaTemp
                         lbldob.Text = dr["dob"].ToString();
                         lbljob.Text = dr["job"].ToString();
                         lblcity.Text = dr["city"].ToString();
+                        txtname1.Text = dr["name1"].ToString();
+                        txtname2.Text = dr["name2"].ToString();
+                        txtaddress1.Text = dr["address1"].ToString();
+                        txtaddress2.Text = dr["address2"].ToString();
+                        txtphone1.Text = dr["phone1"].ToString();
+                        txtphone2.Text = dr["phone2"].ToString();
+                        txtjob1.Text = dr["job1"].ToString();
+                        txtjob2.Text = dr["job2"].ToString();
+
+
+
                     }
 
 
@@ -1902,7 +2232,14 @@ namespace madushaTemp
                     lbldob.Text = "";
                     lbljob.Text = "";
                     lblcity.Text = "";
-
+                    txtname1.Text = "";
+                    txtname2.Text = "";
+                    txtaddress1.Text = "";
+                    txtaddress2.Text = "";
+                    txtphone1.Text = "";
+                    txtphone2.Text = "";
+                    txtjob1.Text = "";
+                    txtjob2.Text = "";
 
 
 
@@ -1913,7 +2250,7 @@ namespace madushaTemp
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Cannot Find Customer");
             }
 
         }
@@ -2596,7 +2933,7 @@ namespace madushaTemp
                     MessageBox.Show("Data Added Successfully !! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     while (myR.Read()) { }
                     tableLoadEI();
-                    chartLoadIExp();
+                    //chartLoadIExp();
                     conn.Close();
 
                     txtamt.Text = "";
@@ -3012,7 +3349,7 @@ namespace madushaTemp
 
         private void btnprintrecep_Click(object sender, EventArgs e)
         {
-            //printer();
+            
             try { 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
@@ -3051,9 +3388,12 @@ namespace madushaTemp
             doc.Add(prg1);
             doc.Add(prg2);
 
-
-            //line separator
-            Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
             doc.Add(p);
 
             PdfPTable table = new PdfPTable(tblinssummary.Columns.Count);
@@ -3374,7 +3714,7 @@ namespace madushaTemp
 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
-            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"aUnpaid_List.pdf", FileMode.Create));
+            PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\aUnpaid_List.pdf", FileMode.Create));
             doc.Open();
 
             //MessageBox.Show("PDF Created Sucessfuly!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -3395,7 +3735,7 @@ namespace madushaTemp
             iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
             Paragraph prg = new Paragraph();
             prg.Alignment = Element.ALIGN_CENTER;
-            prg.Add(new Chunk("Unpaid List", font5));
+            prg.Add(new Chunk("Income and Expense", font5));
             doc.Add(prg);
 
                 iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
@@ -3462,7 +3802,7 @@ namespace madushaTemp
 
             doc.Close();
 
-            System.Diagnostics.Process.Start(@"aUnPaid_List.pdf");
+            System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\aUnpaid_List.pdf");
         }
          catch (Exception ex)
             {
@@ -4361,14 +4701,107 @@ namespace madushaTemp
             }
         }
        
-        private void pictureBox23_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void pictureBox23_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
 
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\viraj pc\\Desktop\\New folder\\ins.pdf", FileMode.Create));
+                doc.Open();
+
+                // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLACK);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Pending Installments", font5));
+                doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+                PdfPTable table = new PdfPTable(tblinscust.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < tblinscust.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(tblinscust.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < tblinscust.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 100;
+
+                    for (int k = 0; k < tblinscust.Columns.Count; k++)
+                    {
+                        if (tblinscust[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(tblinscust[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table);
+
+                doc.Close();
+
+                System.Diagnostics.Process.Start("C:\\Users\\viraj pc\\Desktop\\New folder\\ins.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
@@ -4464,6 +4897,39 @@ namespace madushaTemp
             ba.Show();
         }
 
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            Seizedrep se = new Seizedrep();
+            se.Show();
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexpen_Click(object sender, EventArgs e)
+        {
+            eTax();
+            eUtility();
+            eRent();
+            eRepair();
+            eDelivery();
+            eLoans();
+            eTele();
+            eInter();
+            eElectr();
+            eAdver();
+            eadd();
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            pendingrepo pe = new pendingrepo();
+            pe.Show();
+        }
+
         public void Bankloan()
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
@@ -4482,7 +4948,7 @@ namespace madushaTemp
 
                     string tax = myR["tot"].ToString();
                     double p1 = Convert.ToDouble(tax);
-                    loss += p1-700000;
+                    loss += p1-909900;
 
 
 

@@ -55,7 +55,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "bankrep";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "bankrep";
+            this.Text = "Bank Details Report";
             this.ResumeLayout(false);
 
         }

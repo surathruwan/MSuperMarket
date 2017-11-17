@@ -1,0 +1,12 @@
+	 	 MADUSHA SUPERMARKET 	 	
+--------------------------------------------------
+12:10:45 PM	 	Thursday, November 16, 2017
+Cashier: Mr.Upali
+
+	Item Name	 Item Code  Price  Quantity 
+
+	Gas Oven 3245	 50004    125000      22    
+--------------------------------------------------
+	 Total Amount 	 	 	2695000
+	 Down Payment 	 	 	10000
+	 Balance 	 	 	2685000
