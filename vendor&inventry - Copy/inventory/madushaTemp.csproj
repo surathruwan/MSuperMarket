@@ -213,6 +213,12 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
+    <Compile Include="instpenrepo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>instpenrepo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LeaveForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,18 @@
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pendingrepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pendingrepo.Designer.cs">
+      <DependentUpon>pendingrepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pendingreppo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pendingreppo.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="POS.cs">
       <SubType>Form</SubType>
@@ -446,6 +464,10 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="instpenrepo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>instpenrepo.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="LeaveForm.resx">
       <DependentUpon>LeaveForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,6 +476,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pendingrepo.resx">
+      <DependentUpon>pendingrepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pendingreppo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pendingreppo.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="POS.resx">
       <DependentUpon>POS.cs</DependentUpon>
