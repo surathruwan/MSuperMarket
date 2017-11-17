@@ -247,5 +247,80 @@ namespace madushaTemp
                 load();
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aname_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aend_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void astart_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aeid_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

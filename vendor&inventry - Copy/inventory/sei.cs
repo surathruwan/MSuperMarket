@@ -16,14 +16,14 @@ namespace inventory {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class vendorReport : ReportClass {
+    public class sei : ReportClass {
         
-        public vendorReport() {
+        public sei() {
         }
         
         public override string ResourceName {
             get {
-                return "vendorReport.rpt";
+                return "sei.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace inventory {
         
         public override string FullResourceName {
             get {
-                return "inventory.vendorReport.rpt";
+                return "inventory.sei.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace inventory {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace inventory {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,33 @@ namespace inventory {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[6];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedvendorReport : Component, ICachedReport {
+    public class Cachedsei : Component, ICachedReport {
         
-        public CachedvendorReport() {
+        public Cachedsei() {
         }
         
         [Browsable(false)]
@@ -129,7 +145,7 @@ namespace inventory {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            vendorReport rpt = new vendorReport();
+            sei rpt = new sei();
             rpt.Site = this.Site;
             return rpt;
         }

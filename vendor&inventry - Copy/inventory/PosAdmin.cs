@@ -11,8 +11,8 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.IO;
-
-
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace inventory
 {
@@ -51,7 +51,9 @@ namespace inventory
 
         private void inv_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'quoDataSet.customerquotation' table. You can move, or remove it, as needed.
+            this.customerquotationTableAdapter.Fill(this.quoDataSet.customerquotation);
+
             this.recordsellingdetailsTableAdapter.Fill(this.supermarketDataSet2.recordsellingdetails);
             
             this.ordersTableAdapter.Fill(this.supermarketDataSet1.orders);
@@ -733,7 +735,7 @@ namespace inventory
                     else
                     {
                         MemoryStream mstream = new MemoryStream(images);
-                        pictureBox1.Image = Image.FromStream(mstream);
+                        pictureBox1.Image = System.Drawing.Image.FromStream(mstream);
                     }
                 }
 
@@ -1493,7 +1495,37 @@ namespace inventory
             }
         }
 
-       
+        //Get Quotation Details
+        public void LoadQuotationDetails()
+        {
+           
+
+                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT qd.item_name,qd.qty,qd.unit_price,qd.subTotal FROM supermarket.customerquotation Q, supermarket.quotationdetails qd    where qd.quoID = Q.quoID AND Q.quoID ='" + QoutationHistoryGrid.SelectedRows[0].Cells[0].Value.ToString() + "' ", conn);
+            
+
+            try
+            {
+                MessageBox.Show("SS");
+                cartQuotation.Columns.Clear();
+
+                MessageBox.Show("SSs");
+                //conn.Open();
+                DataSet ds1 = new DataSet();
+                MessageBox.Show("S3");
+                adapter.Fill(ds1, "QuotationDetails");
+                MessageBox.Show("SS2e");
+                cartQuotation.DataSource = ds1.Tables["QuotationDetails"];
+                MessageBox.Show("Final");
+                //  cartQuotation.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                // conn.Close();
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show("HIII");
+            }
+        }
 
 
         private void OrderDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -1507,8 +1539,7 @@ namespace inventory
 
         private void orderCart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int columnIndex = orderCart.CurrentCell.ColumnIndex;
-            MessageBox.Show(columnIndex.ToString());
+           
 
         }
 
@@ -1736,7 +1767,113 @@ namespace inventory
             }
         }
 
+        //Getters Setters for Quotation
+        public string QuoID
+        { get; set; }
+        public string ItemCodeQu
+        { get; set; }
+        public string ItemNameQu
+        { get; set; }
+        public string PriceQu
+        { get; set; }
+        public string QuantityQu
+        { get; set; }
+        public string DiscountQu
+        { get; set; }
+        public string CustomerNameQu
+        { get; set; }
 
+        public string subAmountQ
+        { get; set; }
+
+        public string TotalAmountQ
+        { get; set; }
+
+        public string MobileQ
+        { get; set; }
+
+        public string UnitPriceQ
+        { get; set; }
+
+
+        public void SendOrderforQuotatation()
+        {
+            try
+            {
+                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+                conn.Open();
+
+                for (int i = 0; i < cartQuotation.Rows.Count; i++)
+                {
+
+
+
+
+
+                    MySqlCommand cmd2 = conn.CreateCommand();
+
+
+                    QuoID = this.labelQuo.Text + this.lblInvoice.Text;
+                    CustomerNameQu = this.txtCustomerName.Text;
+                    MobileQ = this.txtCustomerPhone.Text;
+
+                    TotalAmountQ = this.lblAmount1.Text;
+
+
+                    //ItemCode = this.orderCart.Rows[i].Cells[1].Value.ToString();
+                    ItemNameQu = this.cartQuotation.Rows[i].Cells[0].Value.ToString();
+                    UnitPriceQ = this.cartQuotation.Rows[i].Cells[1].Value.ToString();
+                    QuantityQu = this.cartQuotation.Rows[i].Cells[2].Value.ToString();
+
+                    subAmountQ = this.cartQuotation.Rows[i].Cells[3].Value.ToString();
+
+                    cmd2 = new MySqlCommand(@"INSERT INTO supermarket.quotationdetails(quoID,item_name,unit_price,qty,subTotal) VALUES ('" + QuoID + "','" + ItemNameQu + "','" + UnitPriceQ + "','" + QuantityQu + "','" + subAmountQ + "')", conn);
+
+                    cmd2.ExecuteNonQuery();
+                }
+
+                MySqlCommand cmd1 = conn.CreateCommand();
+                cmd1 = new MySqlCommand("INSERT INTO supermarket.customerquotation(quoID,Customer,Phone,Total,Quotation_date) VALUES ('" + QuoID + "','" + CustomerNameQu + "','" + MobileQ + "','" + subAmountQ + "','" + TimeTest.Text + "')", conn);
+                cmd1.ExecuteNonQuery();
+                MessageBox.Show("Quotation Done Succesfully", "Madusha Super Market", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        //Auto Increment invoiceID
+        public void count_accoutQuotation()
+        {
+            try
+            {
+                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+                string query = "select quoID from supermarket.customerquotation order by ID";
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                {
+                    while (dr.Read())
+                        lblInvoice.Text = dr["quoID"].ToString();
+                }
+
+                int i = int.Parse(lblInvoice.Text);
+                i = i + 1;
+                lblInvoice.Text = i.ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+
+      
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
 
@@ -1839,6 +1976,233 @@ namespace inventory
             catch (Exception ex)
             {
               //  MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"pos.pdf", FileMode.Create));
+                doc.Open();
+
+                // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Loan Details", font5));
+                doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLUE);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+                PdfPTable table = new PdfPTable(cartQuotation.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < cartQuotation.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(cartQuotation.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < cartQuotation.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 100;
+
+                    for (int k = 0; k < cartQuotation.Columns.Count; k++)
+                    {
+                        if (cartQuotation[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(cartQuotation[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table);
+
+                doc.Close();
+
+                System.Diagnostics.Process.Start(@"pos.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+        }
+
+        private void label103_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+
+                PdfWriter w = PdfWriter.GetInstance(doc, new FileStream(@"pos2.pdf", FileMode.Create));
+                doc.Open();
+
+                // MessageBox.Show("PDF Created Sucessfully!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Add border to page
+                PdfContentByte content = w.DirectContent;
+                iTextSharp.text.Rectangle rectangle = new iTextSharp.text.Rectangle(doc.PageSize);
+                rectangle.Left += doc.LeftMargin - 5;
+                rectangle.Right -= doc.RightMargin - 5;
+                rectangle.Top -= doc.TopMargin - 22;
+                rectangle.Bottom += doc.BottomMargin - 5;
+                content.SetColorStroke(BaseColor.BLUE);
+                content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
+                content.Stroke();
+
+
+                //BaseFont bfntHead = BaseFont.CreateFont(BaseFont.TIMES_ROMAN,BaseFont.CP1252,BaseFont.NOT_EMBEDDED);
+                iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 30, BaseColor.BLUE);
+                Paragraph prg = new Paragraph();
+                prg.Alignment = Element.ALIGN_CENTER;
+                prg.Add(new Chunk("Customer Order History", font5));
+                doc.Add(prg);
+                iTextSharp.text.Image image1 = iTextSharp.text.Image.GetInstance(@"msmsIcon1.png");
+                image1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+                image1.ScaleToFit(60f, 60f);
+                doc.Add(image1);
+
+                //Authors
+                iTextSharp.text.Font font15 = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+                Paragraph prg1 = new Paragraph();
+                prg1.Alignment = Element.ALIGN_RIGHT;
+                Paragraph prg2 = new Paragraph();
+                prg2.Alignment = Element.ALIGN_RIGHT;
+                prg1.Add(new Chunk("Prepared By: Upali Kariyawasam", font15));
+                prg2.Add(new Chunk("Prepared Date: " + DateTime.Now.ToShortDateString(), font15));
+                doc.Add(prg1);
+                doc.Add(prg2);
+
+
+                //line separator
+                Paragraph p = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(2.0f, 100.0f, BaseColor.BLACK, Element.ALIGN_CENTER, 9.0f)));
+                doc.Add(p);
+
+                PdfPTable table = new PdfPTable(OrderDetails.Columns.Count);
+
+                //add headers from gridview to table
+                iTextSharp.text.Font fonth = iTextSharp.text.FontFactory.GetFont(FontFactory.TIMES_ROMAN, 8, BaseColor.BLACK);
+
+
+
+                for (int j = 0; j < OrderDetails.Columns.Count; j++)
+                {
+                    PdfPCell cell = new PdfPCell();
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    cell.AddElement(new Chunk(OrderDetails.Columns[j].HeaderText.ToUpper(), fonth));
+                    table.AddCell(cell);
+
+                }
+
+                //flag first row as header
+                table.HeaderRows = 1;
+
+
+                //add actual rows from grid to table
+                for (int i = 0; i < OrderDetails.Rows.Count; i++)
+                {
+                    table.WidthPercentage = 100;
+
+                    for (int k = 0; k < OrderDetails.Columns.Count; k++)
+                    {
+                        if (OrderDetails[k, i].Value != null)
+                        {
+
+                            table.AddCell(new Phrase(OrderDetails[k, i].Value.ToString()));
+                        }
+
+                    }
+
+
+                }
+
+                //add out table
+                doc.Add(table);
+
+                doc.Close();
+
+                System.Diagnostics.Process.Start(@"pos2.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Report already Opened");
+            }
+        }
+
+        private void QoutationHistoryGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           LoadQuotationDetails();
+           cartQuotation.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(txtCustomerName.Text)) || !(string.IsNullOrWhiteSpace(txtCustomerPhone.Text)))
+            {
+                SendOrderforQuotatation();
+                count_accoutQuotation();
+            }
+            else
+            {
+                MessageBox.Show("P");
             }
         }
     }
