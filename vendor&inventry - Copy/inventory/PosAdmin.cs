@@ -51,7 +51,9 @@ namespace inventory
 
         private void inv_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'quoDataSet.customerquotation' table. You can move, or remove it, as needed.
+            this.customerquotationTableAdapter.Fill(this.quoDataSet.customerquotation);
+
             this.recordsellingdetailsTableAdapter.Fill(this.supermarketDataSet2.recordsellingdetails);
             
             this.ordersTableAdapter.Fill(this.supermarketDataSet1.orders);
@@ -1493,7 +1495,37 @@ namespace inventory
             }
         }
 
-       
+        //Get Quotation Details
+        public void LoadQuotationDetails()
+        {
+           
+
+                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT qd.item_name,qd.qty,qd.unit_price,qd.subTotal FROM supermarket.customerquotation Q, supermarket.quotationdetails qd    where qd.quoID = Q.quoID AND Q.quoID ='" + QoutationHistoryGrid.SelectedRows[0].Cells[0].Value.ToString() + "' ", conn);
+            
+
+            try
+            {
+                MessageBox.Show("SS");
+                cartQuotation.Columns.Clear();
+
+                MessageBox.Show("SSs");
+                //conn.Open();
+                DataSet ds1 = new DataSet();
+                MessageBox.Show("S3");
+                adapter.Fill(ds1, "QuotationDetails");
+                MessageBox.Show("SS2e");
+                cartQuotation.DataSource = ds1.Tables["QuotationDetails"];
+                MessageBox.Show("Final");
+                //  cartQuotation.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                // conn.Close();
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show("HIII");
+            }
+        }
 
 
         private void OrderDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -1507,8 +1539,7 @@ namespace inventory
 
         private void orderCart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int columnIndex = orderCart.CurrentCell.ColumnIndex;
-            MessageBox.Show(columnIndex.ToString());
+           
 
         }
 
@@ -1736,7 +1767,113 @@ namespace inventory
             }
         }
 
+        //Getters Setters for Quotation
+        public string QuoID
+        { get; set; }
+        public string ItemCodeQu
+        { get; set; }
+        public string ItemNameQu
+        { get; set; }
+        public string PriceQu
+        { get; set; }
+        public string QuantityQu
+        { get; set; }
+        public string DiscountQu
+        { get; set; }
+        public string CustomerNameQu
+        { get; set; }
 
+        public string subAmountQ
+        { get; set; }
+
+        public string TotalAmountQ
+        { get; set; }
+
+        public string MobileQ
+        { get; set; }
+
+        public string UnitPriceQ
+        { get; set; }
+
+
+        public void SendOrderforQuotatation()
+        {
+            try
+            {
+                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+                conn.Open();
+
+                for (int i = 0; i < cartQuotation.Rows.Count; i++)
+                {
+
+
+
+
+
+                    MySqlCommand cmd2 = conn.CreateCommand();
+
+
+                    QuoID = this.labelQuo.Text + this.lblInvoice.Text;
+                    CustomerNameQu = this.txtCustomerName.Text;
+                    MobileQ = this.txtCustomerPhone.Text;
+
+                    TotalAmountQ = this.lblAmount1.Text;
+
+
+                    //ItemCode = this.orderCart.Rows[i].Cells[1].Value.ToString();
+                    ItemNameQu = this.cartQuotation.Rows[i].Cells[0].Value.ToString();
+                    UnitPriceQ = this.cartQuotation.Rows[i].Cells[1].Value.ToString();
+                    QuantityQu = this.cartQuotation.Rows[i].Cells[2].Value.ToString();
+
+                    subAmountQ = this.cartQuotation.Rows[i].Cells[3].Value.ToString();
+
+                    cmd2 = new MySqlCommand(@"INSERT INTO supermarket.quotationdetails(quoID,item_name,unit_price,qty,subTotal) VALUES ('" + QuoID + "','" + ItemNameQu + "','" + UnitPriceQ + "','" + QuantityQu + "','" + subAmountQ + "')", conn);
+
+                    cmd2.ExecuteNonQuery();
+                }
+
+                MySqlCommand cmd1 = conn.CreateCommand();
+                cmd1 = new MySqlCommand("INSERT INTO supermarket.customerquotation(quoID,Customer,Phone,Total,Quotation_date) VALUES ('" + QuoID + "','" + CustomerNameQu + "','" + MobileQ + "','" + subAmountQ + "','" + TimeTest.Text + "')", conn);
+                cmd1.ExecuteNonQuery();
+                MessageBox.Show("Quotation Done Succesfully", "Madusha Super Market", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        //Auto Increment invoiceID
+        public void count_accoutQuotation()
+        {
+            try
+            {
+                MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=supermarket");
+                string query = "select quoID from supermarket.customerquotation order by ID";
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                {
+                    while (dr.Read())
+                        lblInvoice.Text = dr["quoID"].ToString();
+                }
+
+                int i = int.Parse(lblInvoice.Text);
+                i = i + 1;
+                lblInvoice.Text = i.ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+
+      
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
 
@@ -2046,6 +2183,26 @@ namespace inventory
             catch (Exception ex)
             {
                 MessageBox.Show("Report already Opened");
+            }
+        }
+
+        private void QoutationHistoryGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           LoadQuotationDetails();
+           cartQuotation.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(txtCustomerName.Text)) || !(string.IsNullOrWhiteSpace(txtCustomerPhone.Text)))
+            {
+                SendOrderforQuotatation();
+                count_accoutQuotation();
+            }
+            else
+            {
+                MessageBox.Show("P");
             }
         }
     }

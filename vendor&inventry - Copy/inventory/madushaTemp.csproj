@@ -201,6 +201,11 @@
     <Compile Include="PosAdmin.designer.cs">
       <DependentUpon>PosAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="repair.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -481,6 +486,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuoDataSet.xsc">
+      <DependentUpon>QuoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuoDataSet.xss">
+      <DependentUpon>QuoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="supermarketDataSet.xsc">
       <DependentUpon>supermarketDataSet.xsd</DependentUpon>
     </None>

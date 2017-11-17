@@ -79,6 +79,8 @@
             this.SpeedChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
+            this.label60 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.TimeTest = new System.Windows.Forms.Label();
@@ -167,6 +169,8 @@
             this.label58 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label36 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -174,12 +178,14 @@
             this.label37 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
-            this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.QUOID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CUSTOMER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTALAMOUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QUOTITION_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QoutationHistoryGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.quoIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quotationdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerquotationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quoDataSet = new inventory.QuoDataSet();
             this.panel7 = new System.Windows.Forms.Panel();
             this.ItemNameQ = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -191,10 +197,6 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.cartQuotation = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupboxss = new System.Windows.Forms.GroupBox();
             this.label57 = new System.Windows.Forms.Label();
@@ -203,10 +205,8 @@
             this.txtCustomerPhone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.radItemCode1 = new System.Windows.Forms.RadioButton();
@@ -227,10 +227,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ordersTableAdapter = new inventory.supermarketDataSet1TableAdapters.ordersTableAdapter();
             this.recordsellingdetailsTableAdapter = new inventory.supermarketDataSet2TableAdapters.recordsellingdetailsTableAdapter();
-            this.label103 = new System.Windows.Forms.Label();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.customerquotationTableAdapter = new inventory.QuoDataSetTableAdapters.customerquotationTableAdapter();
+            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UNITPRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SUBTOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelQuo = new System.Windows.Forms.Label();
+            this.lblInvoice = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -244,6 +247,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SpeedChart)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderCart)).BeginInit();
@@ -261,9 +265,12 @@
             this.bunifuCards3.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QoutationHistoryGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerquotationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quoDataSet)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cartQuotation)).BeginInit();
             this.panel8.SuspendLayout();
@@ -273,8 +280,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -779,6 +784,28 @@
             this.bunifuCards2.ShadowDepth = 20;
             this.bunifuCards2.Size = new System.Drawing.Size(1625, 862);
             this.bunifuCards2.TabIndex = 1;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(923, 423);
+            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(31, 15);
+            this.label60.TabIndex = 110;
+            this.label60.Text = "PDF";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(907, 362);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox2.TabIndex = 109;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // bunifuThinButton26
             // 
@@ -1867,6 +1894,29 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Export As";
             // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.Location = new System.Drawing.Point(119, 79);
+            this.label103.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(31, 15);
+            this.label103.TabIndex = 77;
+            this.label103.Text = "PDF";
+            this.label103.Click += new System.EventHandler(this.label103_Click);
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(103, 18);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox18.TabIndex = 76;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
+            // 
             // pictureBox13
             // 
             this.pictureBox13.Location = new System.Drawing.Point(196, 14);
@@ -1932,7 +1982,7 @@
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.label59);
-            this.panel6.Controls.Add(this.bunifuCustomDataGrid3);
+            this.panel6.Controls.Add(this.QoutationHistoryGrid);
             this.panel6.Location = new System.Drawing.Point(838, 201);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
@@ -1949,17 +1999,19 @@
             this.label59.TabIndex = 94;
             this.label59.Text = "Customer Order History";
             // 
-            // bunifuCustomDataGrid3
+            // QoutationHistoryGrid
             // 
-            this.bunifuCustomDataGrid3.AllowUserToAddRows = false;
-            this.bunifuCustomDataGrid3.AllowUserToDeleteRows = false;
-            this.bunifuCustomDataGrid3.AllowUserToResizeColumns = false;
-            this.bunifuCustomDataGrid3.AllowUserToResizeRows = false;
+            this.QoutationHistoryGrid.AllowUserToAddRows = false;
+            this.QoutationHistoryGrid.AllowUserToDeleteRows = false;
+            this.QoutationHistoryGrid.AllowUserToResizeColumns = false;
+            this.QoutationHistoryGrid.AllowUserToResizeRows = false;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.bunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.QoutationHistoryGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.QoutationHistoryGrid.AutoGenerateColumns = false;
+            this.QoutationHistoryGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.QoutationHistoryGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.QoutationHistoryGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QoutationHistoryGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
@@ -1967,50 +2019,74 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.bunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.QUOID,
-            this.CUSTOMER,
-            this.PHONE,
-            this.TOTALAMOUNT,
-            this.QUOTITION_DATE});
-            this.bunifuCustomDataGrid3.DoubleBuffered = true;
-            this.bunifuCustomDataGrid3.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
-            this.bunifuCustomDataGrid3.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid3.Location = new System.Drawing.Point(16, 56);
-            this.bunifuCustomDataGrid3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuCustomDataGrid3.Name = "bunifuCustomDataGrid3";
-            this.bunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid3.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(705, 413);
-            this.bunifuCustomDataGrid3.TabIndex = 4;
+            this.QoutationHistoryGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.QoutationHistoryGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.QoutationHistoryGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.quoIDDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.totalDataGridViewTextBoxColumn,
+            this.quotationdateDataGridViewTextBoxColumn});
+            this.QoutationHistoryGrid.DataSource = this.customerquotationBindingSource;
+            this.QoutationHistoryGrid.DoubleBuffered = true;
+            this.QoutationHistoryGrid.EnableHeadersVisualStyles = false;
+            this.QoutationHistoryGrid.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
+            this.QoutationHistoryGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.QoutationHistoryGrid.Location = new System.Drawing.Point(16, 56);
+            this.QoutationHistoryGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.QoutationHistoryGrid.Name = "QoutationHistoryGrid";
+            this.QoutationHistoryGrid.ReadOnly = true;
+            this.QoutationHistoryGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.QoutationHistoryGrid.RowTemplate.Height = 24;
+            this.QoutationHistoryGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.QoutationHistoryGrid.Size = new System.Drawing.Size(705, 413);
+            this.QoutationHistoryGrid.TabIndex = 4;
+            this.QoutationHistoryGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.QoutationHistoryGrid_CellContentClick);
             // 
-            // QUOID
+            // quoIDDataGridViewTextBoxColumn
             // 
-            this.QUOID.HeaderText = "QUOTATION ID";
-            this.QUOID.Name = "QUOID";
+            this.quoIDDataGridViewTextBoxColumn.DataPropertyName = "quoID";
+            this.quoIDDataGridViewTextBoxColumn.HeaderText = "Quo_ID";
+            this.quoIDDataGridViewTextBoxColumn.Name = "quoIDDataGridViewTextBoxColumn";
+            this.quoIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // CUSTOMER
+            // dataGridViewTextBoxColumn12
             // 
-            this.CUSTOMER.HeaderText = "CUSTOMER";
-            this.CUSTOMER.Name = "CUSTOMER";
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Customer";
+            this.dataGridViewTextBoxColumn12.HeaderText = "CUSTOMER";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
-            // PHONE
+            // dataGridViewTextBoxColumn13
             // 
-            this.PHONE.HeaderText = "PHONE";
-            this.PHONE.Name = "PHONE";
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn13.HeaderText = "PHONE";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
-            // TOTALAMOUNT
+            // totalDataGridViewTextBoxColumn
             // 
-            this.TOTALAMOUNT.HeaderText = "TOTAL AMOUNT";
-            this.TOTALAMOUNT.Name = "TOTALAMOUNT";
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "TOTAL";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // QUOTITION_DATE
+            // quotationdateDataGridViewTextBoxColumn
             // 
-            this.QUOTITION_DATE.HeaderText = "QUOTITION DATE";
-            this.QUOTITION_DATE.Name = "QUOTITION_DATE";
+            this.quotationdateDataGridViewTextBoxColumn.DataPropertyName = "Quotation_date";
+            this.quotationdateDataGridViewTextBoxColumn.HeaderText = "QUO_DATE";
+            this.quotationdateDataGridViewTextBoxColumn.Name = "quotationdateDataGridViewTextBoxColumn";
+            this.quotationdateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerquotationBindingSource
+            // 
+            this.customerquotationBindingSource.DataMember = "customerquotation";
+            this.customerquotationBindingSource.DataSource = this.quoDataSet;
+            // 
+            // quoDataSet
+            // 
+            this.quoDataSet.DataSetName = "QuoDataSet";
+            this.quoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel7
             // 
@@ -2094,6 +2170,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(184, 41);
             this.bunifuThinButton22.TabIndex = 113;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // textBox3
             // 
@@ -2156,6 +2233,7 @@
             this.cartQuotation.AllowUserToResizeRows = false;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cartQuotation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.cartQuotation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.cartQuotation.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cartQuotation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cartQuotation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -2169,10 +2247,10 @@
             this.cartQuotation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.cartQuotation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cartQuotation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column5,
-            this.Column4,
-            this.Column6});
+            this.Item,
+            this.UNITPRICE,
+            this.QTY,
+            this.SUBTOTAL});
             this.cartQuotation.DoubleBuffered = true;
             this.cartQuotation.EnableHeadersVisualStyles = false;
             this.cartQuotation.HeaderBgColor = System.Drawing.Color.DarkSlateBlue;
@@ -2188,34 +2266,6 @@
             this.cartQuotation.TabIndex = 4;
             this.cartQuotation.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartQuotation_CellValueChanged);
             this.cartQuotation.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.cartQuotation_RowsAdded);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "ITEM NAME";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.HeaderText = "UNIT PRICE";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "QUANTITY";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column6.HeaderText = "TOTAL";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
             // 
             // panel8
             // 
@@ -2303,11 +2353,11 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.labelQuo);
+            this.groupBox7.Controls.Add(this.lblInvoice);
             this.groupBox7.Controls.Add(this.label47);
-            this.groupBox7.Controls.Add(this.label43);
             this.groupBox7.Controls.Add(this.label48);
             this.groupBox7.Controls.Add(this.label49);
-            this.groupBox7.Controls.Add(this.label44);
             this.groupBox7.Controls.Add(this.label46);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.groupBox7.Location = new System.Drawing.Point(13, 2);
@@ -2329,16 +2379,6 @@
             this.label47.TabIndex = 77;
             this.label47.Text = "87";
             // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label43.Location = new System.Drawing.Point(236, 43);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(30, 24);
-            this.label43.TabIndex = 34;
-            this.label43.Text = "87";
-            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -2358,16 +2398,6 @@
             this.label49.Size = new System.Drawing.Size(149, 24);
             this.label49.TabIndex = 76;
             this.label49.Text = "Reference Code";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label44.Location = new System.Drawing.Point(185, 43);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(53, 24);
-            this.label44.TabIndex = 35;
-            this.label44.Text = "QUO";
             // 
             // label46
             // 
@@ -2554,50 +2584,53 @@
             // 
             this.recordsellingdetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // label103
+            // customerquotationTableAdapter
             // 
-            this.label103.AutoSize = true;
-            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label103.Location = new System.Drawing.Point(119, 79);
-            this.label103.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(31, 15);
-            this.label103.TabIndex = 77;
-            this.label103.Text = "PDF";
-            this.label103.Click += new System.EventHandler(this.label103_Click);
+            this.customerquotationTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox18
+            // Item
             // 
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(103, 18);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox18.TabIndex = 76;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
+            this.Item.HeaderText = "ITEM";
+            this.Item.Name = "Item";
+            this.Item.ReadOnly = true;
             // 
-            // label60
+            // UNITPRICE
             // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(923, 423);
-            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(31, 15);
-            this.label60.TabIndex = 110;
-            this.label60.Text = "PDF";
+            this.UNITPRICE.HeaderText = "UNITPRICE";
+            this.UNITPRICE.Name = "UNITPRICE";
+            this.UNITPRICE.ReadOnly = true;
             // 
-            // pictureBox2
+            // QTY
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(907, 362);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox2.TabIndex = 109;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.QTY.HeaderText = "QTY";
+            this.QTY.Name = "QTY";
+            this.QTY.ReadOnly = true;
+            // 
+            // SUBTOTAL
+            // 
+            this.SUBTOTAL.HeaderText = "SUBTOTAL";
+            this.SUBTOTAL.Name = "SUBTOTAL";
+            this.SUBTOTAL.ReadOnly = true;
+            // 
+            // labelQuo
+            // 
+            this.labelQuo.AutoSize = true;
+            this.labelQuo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.labelQuo.Location = new System.Drawing.Point(184, 43);
+            this.labelQuo.Name = "labelQuo";
+            this.labelQuo.Size = new System.Drawing.Size(53, 24);
+            this.labelQuo.TabIndex = 80;
+            this.labelQuo.Text = "QUO";
+            // 
+            // lblInvoice
+            // 
+            this.lblInvoice.AutoSize = true;
+            this.lblInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblInvoice.Location = new System.Drawing.Point(235, 43);
+            this.lblInvoice.Name = "lblInvoice";
+            this.lblInvoice.Size = new System.Drawing.Size(27, 24);
+            this.lblInvoice.TabIndex = 79;
+            this.lblInvoice.Text = "ID";
             // 
             // PosAdmin
             // 
@@ -2630,6 +2663,7 @@
             this.tabPage2.ResumeLayout(false);
             this.bunifuCards2.ResumeLayout(false);
             this.bunifuCards2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -2654,10 +2688,13 @@
             this.panel12.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QoutationHistoryGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerquotationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quoDataSet)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cartQuotation)).EndInit();
@@ -2671,8 +2708,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.recordsellingdetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supermarketDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2775,12 +2810,10 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid cartQuotation;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel panel6;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid3;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid QoutationHistoryGrid;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
@@ -2850,10 +2883,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private supermarketDataSet1 supermarketDataSet1;
         private System.Windows.Forms.BindingSource ordersBindingSource1;
         private supermarketDataSet1TableAdapters.ordersTableAdapter ordersTableAdapter;
@@ -2871,14 +2900,23 @@
         private System.Windows.Forms.Label ItemNameQ;
         private System.Windows.Forms.Label label59;
         private Bunifu.Framework.UI.BunifuThinButton2 btnClear;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QUOID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CUSTOMER;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TOTALAMOUNT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QUOTITION_DATE;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private QuoDataSet quoDataSet;
+        private System.Windows.Forms.BindingSource customerquotationBindingSource;
+        private QuoDataSetTableAdapters.customerquotationTableAdapter customerquotationTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quoIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quotationdateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UNITPRICE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QTY;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SUBTOTAL;
+        private System.Windows.Forms.Label labelQuo;
+        private System.Windows.Forms.Label lblInvoice;
     }
 }
